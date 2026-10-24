@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "total_coord0_slots": 126,
+  "admitted_elements": 118,
+  "unretained_c22_cutoff_slots": 8,
+  "gamma_m_boundaries": [
+    6,
+    14,
+    24,
+    36,
+    50,
+    66,
+    84,
+    104,
+    126
+  ],
+  "admitted_occupancy_fraction": "59/63",
+  "c22_retained_fraction": "7/11",
+  "counts_by_class": {
+    "filled_enclosure_anchors": 8,
+    "seated_retained_closures": 66,
+    "open_seat_acceptors": 9,
+    "exoshedding_yro_routes": 37,
+    "unretained_open_cutoff": 8
+  },
+  "audits": {
+    "5.17.1_spine_audit": "PASS (126/126 rows have Pi^- + H_mu + Pi^+ = RD_fuse)",
+    "5.17.4_seat_enclosure_routing_audit": "PASS (9/9 Gamma_m boundaries & m:m:0::2m verified distinct from n_F log n_F)",
+    "5.17.5_sheddic_path_audit": "PASS (37/37 shedding rows + 8/8 cutoff rows declare SheddicPath & TTL_C < |omega|)",
+    "5.17.7_cycle_audit": "PASS (126/126 rows bind C_f[Sigma]_AO before scalar RD)",
+    "5.17.8_fusion_closure_audit": "PASS (126/126 rows verify S_{n+1} = P^D - C_close and X_shedding = max(0, S_{n+1}))",
+    "5.17.10_naming_audit": "PASS (Z=1..118 carrier labels bound to coord-0 constructions; Z=119..126 marked '--')"
+  }
+}

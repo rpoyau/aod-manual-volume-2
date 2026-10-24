@@ -1,0 +1,29 @@
+\section{Simulation and Prediction-Test Fixtures}\label{manual2:app:simulation-fixtures}
+
+\subsection{Scope and required outputs}\label{manual2:app:sim-scope}
+This appendix preserves exact simulation fixtures and four-step closure reductions downstream from \mainref{App.~H} and \mainref{App.~I}. Required exact outputs for each elemental rung are
+\[
+\Pi(p{:}q), \quad RD^{(1)}_{\AO}, \quad \Gamma_m, \quad RD_{\mathrm{fuse}}, \quad P^D_{n+1}, \quad C_{\mathrm{close},n+1}, \quad S_{n+1}, \quad X_{\mathrm{shedding},n+1}.
+\]
+
+\subsection{Four-step arithmetic fixtures across \texorpdfstring{$\mathsf{C}_6 \dots \mathsf{C}_{22}$}{C6..C22}}\label{manual2:app:four-step}
+Specializing \mainref{App.~I.2} ($L = 4c_L + r_L,\; r_L \in \{0,1,2,3\}$) to the nine outer even support enclosures $L = 2m \in \{6, 8, 10, 12, 14, 16, 18, 20, 22\}$ gives the exact integer decompositions:
+\[
+\begin{aligned}
+6 &= 4(1) + 2, &\qquad 8 &= 4(2) + 0, &\qquad 10 &= 4(2) + 2,\\
+12 &= 4(3) + 0, &\qquad 14 &= 4(3) + 2, &\qquad 16 &= 4(4) + 0,\\
+18 &= 4(4) + 2, &\qquad 20 &= 4(5) + 0, &\qquad 22 &= 4(5) + 2.
+\end{aligned}
+\]
+Every even outer enclosure has $r_L \in \{0, 2\}$; odd-window $\operatorname{Yro}_{2m+1}$ routes between $\mathsf{C}_{2m}$ and $\mathsf{C}_{2m+2}$ have $r_{2m+1} \in \{1, 3\}$.
+
+\subsection{Exact rational occupancy invariants}\label{manual2:app:occupancy}
+Across $m = 3 \dots 11$, total coord-0 capacity is $\Gamma_{11} = 126$. The admitted elemental ladder $Z = 1 \dots 118$ and the terminal ring $\mathsf{C}_{22}$ ($22$ seats, $14$ admitted, $8$ cutoff) satisfy the exact rational identities verified in \texttt{manual2/scripts/verify\_matter1\_ledger.py}:
+\[
+\frac{Z_{\max}}{\Gamma_{11}} = \frac{118}{126} = \frac{59}{63}, \qquad \frac{N_{\mathrm{adm}}(\mathsf{C}_{22})}{22} = \frac{14}{22} = \frac{7}{11}, \qquad \frac{N_{\mathrm{cutoff}}(\mathsf{C}_{22})}{22} = \frac{8}{22} = \frac{4}{11}.
+\]
+
+\subsection{Falsification}\label{manual2:app:sim-falsification}
+A four-step decomposition with non-integer $c_L$ or $r_L \notin \{0,1,2,3\}$, or an even enclosure with odd remainder $r_L \in \{1,3\}$, falsifies the fixture on that scope (\mainref{App.~I.4}).
+
+\aodprovenance{\mainref{\S3.5}, \mainref{\S5.7.13}, \mainref{\S5.9.1}, \mainref{App.~H.5}, \mainref{App.~I.2}.}

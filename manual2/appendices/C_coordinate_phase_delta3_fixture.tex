@@ -1,0 +1,24 @@
+\section{Coord-0 Shell-Seat Phase-Cycle \texorpdfstring{$\delta_3$}{delta3} Fixture Specification}\label{manual2:app:coordinate-phase-delta3}
+
+\subsection{Active integer data form and hemisphere/parity comparators}\label{manual2:app:delta3-form}
+This appendix records the exact integer $\delta_3$ comparator specification (Manual~\S1.7.1, App.~C) for the nine concentric coord-0 support enclosures $\mathsf{C}_{2m}$ ($m = 3 \dots 11$). On each ring $\mathsf{C}_{2m}$ of $2m$ seats:
+\begin{enumerate}[nosep]
+  \item The \textbf{parity count} partitions seats $s \in \{1, \dots, 2m\}$ into odd open-seat steps ($c = 1$: $O_{\mathrm{odd},m} = m$) and even duad-closed steps ($c = 0$: $O_{\mathrm{even},m} = m$). Against the balanced integer comparator $\widehat{O}_m = m$, the exact residual is
+  \[
+  \Delta^{\mathbb{Z}}_{\mathrm{parity},m} = \widehat{O}_m - O_{\mathrm{even},m} = 0, \qquad \delta_{3,\mathrm{parity},m} = (0, 0).
+  \]
+  \item The \textbf{hemisphere count} partitions the $2m$ seats into outbound $\Pi_\alpha$ seats ($s \in \{1, \dots, m-1\}$, count $m-1$), the 6~o'clock $H_\mu$ turnaround seat ($s = m$, count $1$), return $\Pi_\Omega$ seats ($s \in \{m+1, \dots, 2m-1\}$, count $m-1$), and the 12~o'clock filled enclosure spine seat ($s = 2m$, count $1$). Against the symmetric branch comparator $\widehat{\Pi}_m = m-1$,
+  \[
+  \Delta^{\mathbb{Z}}_{\mathrm{branch},m} = |\Pi_{\alpha,m}| - |\Pi_{\Omega,m}| = (m-1) - (m-1) = 0, \qquad \delta_{3,\mathrm{branch},m} = (0, 0).
+  \]
+  \item On the terminal ring $\mathsf{C}_{22}$ ($m = 11$, $22$ seats), comparing the admitted element count $T^\times_{\mathsf{C}_{22}} = 14$ ($Z = 105 \dots 118$) against the full ring seat capacity $O_{\mathsf{C}_{22}} = 22$ gives the exact cutoff residual
+  \[
+  \Delta^{\mathbb{Z}}_{\mathsf{C}_{22}} = T^\times_{\mathsf{C}_{22}} - O_{\mathsf{C}_{22}} = 14 - 22 = -8, \qquad \delta_{3,\mathsf{C}_{22}} = (-1, 8),
+  \]
+  recording the $8$ unretained open cutoff slots $Z = 119 \dots 126$.
+\end{enumerate}
+
+\subsection{Final lock}\label{manual2:app:delta3-lock}
+All $\delta_3$ tallies in this volume use exact integer counts $\Delta^{\mathbb{Z}}_k = s^{(3)}_k m_k$ with $s^{(3)}_k \in \{-1, 0, +1\}$ and $m_k = |\Delta^{\mathbb{Z}}_k| \in \mathbb{Z}_{\ge 0}$.
+
+\aodprovenance{\mainref{\S5.7.10--\S5.7.13}; Manual~\S1.7.1 (RG10), App.~C.}

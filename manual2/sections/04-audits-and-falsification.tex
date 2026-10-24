@@ -1,0 +1,60 @@
+\section{Mandatory Audit Hooks, D.E.C. Verification, and Falsification}\label{sec:audits-and-falsification}
+
+\subsection{Execution of the six mandatory \mainref{\S5.17} audit hooks}\label{subsec:six-audit-hooks}
+
+\paragraph{Setup.}
+Every row of the Matter~I ledger (\tabref{tab:matter1-full-ledger}) is subjected to the six structural audit hooks imported from \mainref{\S5.17} and executed as automated exact-arithmetic assertions in \texttt{scripts/verify\_matter1\_ledger.py}.
+
+\paragraph{Derivation.}
+For each coord-0 slot $Z \in \{1, \dots, 126\}$:
+\begin{enumerate}[nosep]
+  \item \textbf{Spine audit (\mainref{\S5.17.1}):} Checks that every retained occurrence at every finite depth has explicit branch/hinge/branch incidence $(\Pi^-_{\widehat{F}}, H_{\mu,\widehat{F},\widehat{G}}, \Pi^+_{\widehat{G}})$ with $\Pi^-_{\widehat{F}} > 0$, $H_{\mu,\widehat{F},\widehat{G}} \ge 1$, $\Pi^+_{\widehat{G}} > 0$, and $RD_{\mathrm{fuse}} = \Pi^-_{\widehat{F}} + H_{\mu,\widehat{F},\widehat{G}} + \Pi^+_{\widehat{G}}$.
+  \item \textbf{Seat/enclosure routing audit (\mainref{\S5.17.4}):} Checks that field-count scaling $\mathcal{O}_{\partial F}(B) = n_F(B)\log n_F(B)$ (\mainref{(90)}) and seat-compatible shell/enclosure routing ($\Gamma_{m-1} < Z \le \Gamma_m$, $a{:}b{:}c\,{:}{:}\,2m$, $X_{\mathcal{C}}(B)$) remain distinct calculations on the same declared boundary/window $B_Z$.
+  \item \textbf{Sheddic path audit (\mainref{\S5.17.5}):} Checks that whenever $X_{\mathrm{shedding}}(B_Z) > 0$, a sheddic path is explicitly declared through $\{E_2, \mathsf{C}_6, \mathsf{C}_8, \mathsf{C}_{10}, \dots, \mathsf{C}_{2n}\}$ and the seat-compatible retention condition $\mathrm{TTL}_{\mathcal{C}}(\partial F,\omega) < |\omega|$ is recorded; whenever $X_{\mathrm{shedding}}(B_Z) = 0$, $\mathrm{TTL}_{\mathcal{C}}(\partial F,\omega) \ge |\omega|$ holds.
+  \item \textbf{Cycle audit (\mainref{\S5.17.7}):} Checks that the certified cycle-valued field compression $C_f[a{:}b{:}c\,{:}{:}\,2m]_{\AO}$ (\mainref{(40)}) is constructed and bound before any scalar duration accessor $RD(C_f[p{:}q])$ is evaluated.
+  \item \textbf{Fusion closure audit (\mainref{\S5.17.8}):} Checks that admitted curling-curl support forms $\widehat{F}_n, \widehat{G}_n$, hinge $\mu$, closure scope $B_{n+1}$, fusion duration $RD_{\mathrm{fuse}}$, and signed rung residual $S_{n+1} = P^D_{n+1} - C_{\mathrm{close},n+1}$ are declared before forming $X_{\mathrm{shedding},n+1} = \max(0, S_{n+1})$ or any exoshedding lift $K^{r+1}_{\mathrm{prop}}$.
+  \item \textbf{Naming audit (\mainref{\S5.17.10}):} Checks that every label identifies its declared distinction, relation, motif, or dynamic, while measured-sector carrier symbols ($\mathrm{H} \dots \mathrm{Og}$ for $Z = 1 \dots 118$, and $--$ for unretained cutoff slots $Z = 119 \dots 126$) remain restricted to the application layer.
+\end{enumerate}
+
+\paragraph{Specialization.}
+\tabref{tab:matter1-audit-summary} records the verified pass counts across all 126 coord-0 rows ($118$ admitted elements plus $8$ unretained $\mathsf{C}_{22}$ cutoff slots).
+
+\begin{table}[H]
+\centering
+\small
+\caption{\textbf{Automated verification summary of \mainref{\S5.17} audit hooks (\texttt{scripts/verify\_matter1\_ledger.py}).}}
+\label{tab:matter1-audit-summary}
+\begin{tabularx}{\textwidth}{@{}llX@{}}
+\toprule
+Audit hook & Reference & Verified invariant and pass count\\
+\midrule
+Spine audit & \mainref{\S5.17.1} & \textbf{PASS} ($126/126$ rows verify $\Pi^- + H_\mu + \Pi^+ = RD_{\mathrm{fuse}}$ with $H_\mu = 1$)\\
+Seat/enclosure routing audit & \mainref{\S5.17.4} & \textbf{PASS} ($9/9$ $\Gamma_m = m(m+1)-6$ boundaries and $m{:}m{:}0\,{:}{:}\,2m$ anchors verified distinct from $n_F\log n_F$)\\
+Sheddic path audit & \mainref{\S5.17.5} & \textbf{PASS} ($37/37$ admitted shedding rows and $8/8$ cutoff rows declare $\operatorname{SheddicPath} \in \{\mathsf{C}_{16}\dots\mathsf{C}_{24}\}$ and $\mathrm{TTL}_{\mathcal{C}} < |\omega|$)\\
+Cycle audit & \mainref{\S5.17.7} & \textbf{PASS} ($126/126$ rows bind $C_f[a{:}b{:}c\,{:}{:}\,2m]_{\AO}$ prior to $RD_{\mathrm{fuse}}$)\\
+Fusion closure audit & \mainref{\S5.17.8} & \textbf{PASS} ($126/126$ rows verify $S_{n+1} = P^D_{n+1} - C_{\mathrm{close},n+1}$ and $X_{\mathrm{shedding},n+1} = \max(0, S_{n+1})$)\\
+Naming audit & \mainref{\S5.17.10} & \textbf{PASS} ($118/118$ element symbols quarantined as carrier labels; $8/8$ cutoff slots marked $--$)\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Calibration.}
+In the D.E.C. (Declared Edge Computation) ledger representation (Manual~\S4.1--\S4.9), each elemental rung corresponds to a 9-tuple row
+\[
+\bigl(B_Z,\; v,\; e,\; v_e,\; \sigma(e),\; \operatorname{adm}(e;B_Z),\; w(e;B_Z),\; P(e;B_Z),\; \operatorname{route}(e;B_Z)\bigr)
+\]
+satisfying $\sum_e P(e;B_Z) = 1$ on admissible support, $\operatorname{adm}(e;B_Z) = 0 \implies P(e;B_Z) = 0$, and antisymmetric SADAR pairing $\SADARop_B(C_{\bar{e}}) = -\SADARop_B(C_e)$ (\mainref{(95)}).
+
+\paragraph{Falsification.}
+Any ledger row in which:
+\begin{enumerate}[nosep]
+  \item $RD_{\mathrm{fuse}} \ne \Pi^-_{\widehat{F}} + H_{\mu,\widehat{F},\widehat{G}} + \Pi^+_{\widehat{G}}$,
+  \item $Z$ falls outside $(\Gamma_{m-1}, \Gamma_m]$ for its declared $\mathsf{C}_{2m}$,
+  \item a filled shared enclosure at $Z = \Gamma_m$ fails $a = b = m, c = 0$,
+  \item a deficit acceptor ($S_{n+1} < 0$) is assigned positive $X_{\mathrm{shedding}}$, or
+  \item a shedding row ($X_{\mathrm{shedding}} > 0$) lacks a declared even enclosure route or violates $\mathrm{TTL}_{\mathcal{C}} < |\omega|$
+\end{enumerate}
+contradicts the rung construction and fails automated verification in \texttt{verify\_matter1\_ledger.py}.
+
+\aodprovenance{\mainref{\S5.17.1--\S5.17.11}, \mainref{(40)}, \mainref{(90)}, \mainref{(95)}, \mainref{(107)--(121)}; Manual~\S4.1--\S4.9.}
+\aodliteraturenote{D.E.C. ledger execution and audit invariants: Poyau~\cite{poyau-aod-v4102} (Manual~\S4).}

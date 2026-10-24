@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{nist-asd}
+{National Institute of Standards and Technology}.
+\newblock Atomic spectra database ({ASD}) and ground levels and ionization
+  energies for the neutral atoms, 2025.
+\newblock NIST Physical Measurement Laboratory,
+  \url{https://physics.nist.gov/PhysRefData/ASD/}.
+
+\bibitem{poyau-af}
+Reginald Poyau.
+\newblock Axiomatic fundamentalism ({AF}): A logical protocol for traceable
+  research (all versions), 2025.
+\newblock All versions. DOI: \url{https://doi.org/10.5281/zenodo.17561186}.
+
+\bibitem{poyau-afc}
+Reginald Poyau.
+\newblock Axiomatic fundamentalism calculus ({AFC}) (all versions), 2025.
+\newblock All versions. DOI: \url{https://doi.org/10.5281/zenodo.17795590}.
+
+\bibitem{poyau-aod-v4102}
+Reginald Poyau.
+\newblock Alpha$\leftrightarrow$omega dynamics ({A$\Omega$D}): The hidden
+  temporal dynamics of stokes; the art of the leprechaun: Fractal calculus --
+  $\mathfrak{S}$ (v41.02, main and manual), 2026.
+\newblock DOI: \url{https://doi.org/10.5281/zenodo.23426642}.
+
+\bibitem{iupac-ame}
+M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.
+\newblock The {AME} 2020 atomic mass evaluation ({II}).
+\newblock {\em Chinese Physics C}, 45:030003, 2021.
+
+\end{thebibliography}
