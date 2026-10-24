@@ -105,8 +105,8 @@ def build_concentric_wheel(out_path: str = "figures/aod_matter1_wheel_accessible
                 fc, ec, tc, ls, lw = "#FFF0E0", "#D55E00", "#000000", "--", 1.35
                 label = f"{z}↑\n{ELEMENTS[z]}"
             elif z in ACCEPTOR_Z:
-                # [4] Deficit / Open-Seat Acceptor (S_{n+1} < 0, E_2^0): Sky Cyan + Dash-dot + ∘
-                fc, ec, tc, ls, lw = "#D5F0FF", "#004D80", "#000000", "-.", 1.3
+                # [4] Deficit / Open-Seat Acceptor (S_{n+1} < 0, E_2^0): Okabe-Ito Purple/Magenta + Dash-dot + ∘
+                fc, ec, tc, ls, lw = "#F3E8FF", "#6B21A8", "#000000", "-.", 1.4
                 label = f"{z}∘\n{ELEMENTS[z]}"
             else:
                 # [5] Seated Retained Closure (X_shedding = 0): Crisp White + Okabe Blue solid
@@ -121,7 +121,7 @@ def build_concentric_wheel(out_path: str = "figures/aod_matter1_wheel_accessible
             )
 
             rot_angle = theta_deg - 90.0
-            if np.sin(theta_rad) < -0.01:
+            if np.sin(theta_rad) < -0.01 or np.isclose(theta_deg % 360.0, 180.0):
                 rot_angle += 180.0
             t = Affine2D().rotate_deg(rot_angle).translate(x, y) + ax.transData
             ax.add_patch(pill)
@@ -137,8 +137,8 @@ def build_concentric_wheel(out_path: str = "figures/aod_matter1_wheel_accessible
                       label=r"[◆] Filled Enclosure Anchor ($Z=\Gamma_m$, Navy / Solid Gold)"),
         patches.Patch(facecolor="#FFFFFF", edgecolor="#0072B2", lw=1.3, ls="-",
                       label=r"Seated Closure ($S_{n+1}=0, X_{\mathrm{shedding}}=0$, White / Solid Blue)"),
-        patches.Patch(facecolor="#D5F0FF", edgecolor="#004D80", lw=1.3, ls="-.",
-                      label=r"[∘] Open-Seat Acceptor ($S_{n+1}<0, E_2^0$, Cyan / Dash-Dot)"),
+        patches.Patch(facecolor="#F3E8FF", edgecolor="#6B21A8", lw=1.4, ls="-.",
+                      label=r"[∘] Open-Seat Acceptor ($S_{n+1}<0, E_2^0$, Purple / Dash-Dot)"),
         patches.Patch(facecolor="#FFF0E0", edgecolor="#D55E00", lw=1.4, ls="--",
                       label=r"[↑] Exoshedding / Yro Route ($X_{\mathrm{shedding}}>0$, Vermilion / Dashed)"),
         patches.Patch(facecolor="none", edgecolor="#64748B", lw=1.1, ls=":",
