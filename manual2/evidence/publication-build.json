@@ -1,0 +1,80 @@
+{
+  "profile": "static_reference_publication",
+  "foundation_source_digest": "7928559e929beeb3b957d1e365fd2dacef77d79512de2a7d05cf9fa6aa7bd0b4",
+  "manual_inputs": {
+    "manual2/appendices/A_simulation_fixtures_and_context.tex": "566be2917830485cac014631772bbb6f9afb64901b5442ede16cf834ccf7f100",
+    "manual2/appendices/B_quarantined_external_comparison.tex": "9243d93b599b03b3c8463bad016a57b55b568ed1bf5bbc71cf59fb50dfc05daa",
+    "manual2/appendices/C_coordinate_phase_delta3_fixture.tex": "482f586cefa6bfff2621a1efe6f72eae1b24f7259ffc81f45ab096913fee447b",
+    "manual2/data/m1/field_migration.json": "bd572ec782eb661038e7fac74b784e7c23403141b9999bb9d39284d6503863d9",
+    "manual2/data/m1/history/declaration_crosswalk.csv": "a8c008ec4ec25451476a7b41ea881ecacf78a644b4fa5599e23cc5f28963e7a6",
+    "manual2/data/m1/history/observable_coverage.csv": "4243aa316e25bba9553d763ba8829abcf51a6a791e2a4cc6d17439919de3fe85",
+    "manual2/data/m1/history/r24_occurrence_cards.csv": "8b0f1e740c5c4630692cf3ad9de6627f3e23c12216b6c7d8ae28d742dbef2fb1",
+    "manual2/data/m1/history/r24_sadar_declarations.csv": "d0d3788a2a192b9416c4889d393ad5dc7687d20747329a99dea168c4fa61bc19",
+    "manual2/data/m1/history/r24_transition_packets.csv": "4bda5fbd2585dd0dc795db8c35b30f6f1ee32953c5018e2f6a18a1824cea6f80",
+    "manual2/data/m1/history/v94_observable_matrix.csv": "a7d4afe041bf2cade6969763abaac330c2b9df38056fb1d61b0b094ee53eaf39",
+    "manual2/data/m1/history/v94_placements.csv": "0d1421804754958ea7d3819c8e749b680f2f89f988f5cda98a7e5b62e990985c",
+    "manual2/data/m1/history/v94_value_maps.csv": "a1bdff48cbd661680a7b51b7a027696be093bfc136281a79eef49a0e19c6c1b7",
+    "manual2/data/m1/history/value_map_status.csv": "bc862e172cb306067c4061b39f3241d562a81113eb7d2913b96e5419833b16b6",
+    "manual2/data/m1/input_provenance.json": "9352019cd46d846f8563464f3dc0fbd3a580a8edfa6cf9104cfe3b3adb9de7a5",
+    "manual2/data/m1/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
+    "manual2/data/m1/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
+    "manual2/data/m1/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
+    "manual2/data/m1/model_inputs.json": "2a04c01ba292456611b79926dc786da99dd9b4f9238bf4e7c88220c6c3a0fa43",
+    "manual2/data/m1/reference_inputs.csv": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232",
+    "manual2/data/m1/schema.json": "17d1ca9092ed16fc3b88ea415a4dfb18f8730b10c7c083916271df4bfe13abe4",
+    "manual2/data/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
+    "manual2/data/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
+    "manual2/data/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
+    "manual2/figures/aod_matter1_wheel_accessible.pdf": "902561a426f41b411ca33a8b6783f9f85ca9cc003e4f1f47ffca31249ebe5fab",
+    "manual2/figures/aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
+    "manual2/figures/matter1_figure_manifest.json": "29de7d855685f49c245b893f235c8b09cc9880ad2089a23b4d5c8280268e979b",
+    "manual2/main.tex": "35aa2f0516c7a2524eed885ddb1c49af7c623ff625b47b6dc2f6859c9ba45913",
+    "manual2/preamble.tex": "8deb3a45d7cdc119c9b92e1482516ca07d5def5d8a4de4a90a2b2ff3e97562be",
+    "manual2/refs.bib": "d2119c0670ac542e53a62e708bd39982b3921029b5492dcc142b98fa247ff991",
+    "manual2/sections/00_scope.tex": "6b1646f9818d2ac73d98177dfdd8443b176a51d0e2a96a22b58a2d235f77184d",
+    "manual2/sections/01-scope-and-spine.tex": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118",
+    "manual2/sections/02-coord0-enclosures.tex": "54f4e86eca2a638acede3c94565dab36c2ebacd2cef8940a6bd5f23ca1cc9fa1",
+    "manual2/sections/03-fusion-contact-ledger.tex": "1362e0a1fc45928db7216f979a78e07168d0f3f6e9b223eee78d36d697eb54a1",
+    "manual2/sections/04-audits-and-falsification.tex": "0aee4f50d0ba854a6f529c35447cf95f31b0e3f66592da224d742027bbe9d4b6",
+    "manual2/sections/09_prediction_test_fixture_registry.tex": "63f791fb426c6969091bf96f535fcd9be7173d6674a249b0c5d589add6c5986a",
+    "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2"
+  },
+  "published_artifacts": {
+    "main.pdf": "030c669b506f9ee9f932ab04f7d1afd19d4639e6e1a64ea22f4dffb41abb1935",
+    "manual2/main.pdf": "529d81d9de7974f47ce2aa78709069d8a600ea1812b496dd75e0e2fbc0124617",
+    "manual2.pdf": "694db82dd678430a7e38270fa1b59b9e925852298fbbd60e28004cb9ed3602bc"
+  },
+  "main_pages": 69,
+  "commands": [
+    [
+      "latexmk",
+      "-xelatex",
+      "-recorder",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    [
+      "latexmk",
+      "-xelatex",
+      "-recorder",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    [
+      "latexmk",
+      "-xelatex",
+      "-recorder",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main-root.tex"
+    ]
+  ],
+  "engine": "XeLaTeX via latexmk",
+  "tool_versions": {
+    "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
+    "latexmk": "Latexmk, John Collins, 9 March 2026. Version 4.88"
+  },
+  "scope": "Source, publication and static-reference checks; no native execution or empirical scoring."
+}

@@ -1,91 +1,88 @@
-\section{Seat Compatibility, Enclosures, and Coord-0 Grouping}\label{sec:coord0-enclosures}
+\section{Enclosure Membership and the Visual Model}\label{sec:coord0-enclosures}
 
-\subsection{Even enclosure sequence and cumulative coord-0 boundaries}\label{subsec:coord0-grouping-derivation}
-
+\subsection{Even enclosure sequence and cumulative boundaries}\label{subsec:coord0-grouping-derivation}
 \paragraph{Setup.}
-Import the seat-compatibility and shell/enclosure routing hierarchy of \mainref{\S5.7.1--\S5.7.13} and \mainref{\S5.8}:
-\begin{enumerate}[nosep]
-  \item \textbf{Current-side double forms (\mainref{\S5.7.2--\S5.7.3}):} $E_2 = \mathrm{duon}$, $E_2^0 = \text{open-seat duon}$, and $E_2^\pm = \mathrm{duad}$ (the seat-taken state of $E_2$).
-  \item \textbf{Default inner enclosure (\mainref{\S5.7.4}):} $E_4 = \mathrm{tetron}$, the default four-seat inner enclosure anchored at local origin $0\vdash$.
-  \item \textbf{Outer even support enclosures (\mainref{\S5.7.5--\S5.7.9}, \mainref{App.~B.3}):} $\mathsf{C}_{2m}$ denotes the outer support enclosure of even order $2m$ for $m \ge 3$, beginning with $\mathsf{C}_6 = \mathrm{hexon}$ ($\mathsf{H}_3 + \mathsf{H}_3 = 6$), $\mathsf{C}_8 = \mathrm{octon}$, $\mathsf{C}_{10} = \mathrm{decon}$, and continuing through higher even orders $\mathsf{C}_{2m}$ ($m > 5$).
-\end{enumerate}
+The inherited enclosure grammar distinguishes \(E_2\) (duon), its open and seated states \(E_2^0,E_2^\pm\), the inner \(E_4\) tetron, and outer even support enclosures \(\mathsf C_{2m}\), \(m\ge3\). The present chart uses \(\mathsf C_6\) through \(\mathsf C_{22}\) as nested enclosure interfaces. Their displayed geometry represents declared enclosure membership; no measured radius or metric scale is assigned. The semantic sources are \mainsection{sec:seat-shell-enclosure-routing} and \mainappendix{app:cc-support-enclosure-names}.
 
 \paragraph{Derivation.}
-At coordinate $0$, a coord-0 shell-stack declaration has the canonical form (\mainref{\S5.7.13})
+The coord-0 declaration and filled boundary form are
 \begin{equation}
-0\vdash :: Z : A : 0 : L\langle a : b : c :: L\rangle,
+0\mid-::Z:A:0:L\langle a:b:c::L\rangle,
 \label{eq:matter1-coord0-declaration}
 \end{equation}
-and a filled shared support enclosure of order $2m$ ($m \ge 3$) has the canonical form (\mainref{\S5.7.10, \S5.7.13, App.~B.4.3})
 \begin{equation}
-0\vdash :: Z : A : 0 : 2m\langle m : m : 0 :: 2m\rangle \;=\; \mathrm{Tritrio}^m :: \mathrm{Tetratrio}^m :: \operatorname{out}(2m).
+0\mid-::Z:A:0:2m\langle m:m:0::2m\rangle.
 \label{eq:matter1-filled-shared-enclosure}
 \end{equation}
-Summing the even seat capacities $2k$ from the first outer enclosure $k = 3$ ($\mathsf{C}_6$) through $k = m$ yields the cumulative coord-0 group boundary (\mainref{\S5.7.13}):
+Following \mainsection{subsec:coord-zero-support-enclosure-grouping},
 \begin{equation}
-\Gamma_m = \sum_{k=3}^{m} 2k = m(m+1) - 6, \qquad \Gamma_2 = 0.
+\Gamma_m=\sum_{k=3}^{m}2k=m(m+1)-6,\qquad \Gamma_2=0,
 \label{eq:matter1-gamma-m}
 \end{equation}
-The strict interval condition
+and
 \begin{equation}
-\Gamma_{m-1} < Z \le \Gamma_m
+\Gamma_{m-1}<Z\le\Gamma_m,\qquad s=Z-\Gamma_{m-1}
 \label{eq:matter1-group-selection}
 \end{equation}
-uniquely selects the coord-0 support-enclosure group $\mathsf{C}_{2m}$ and local seat index $s = Z - \Gamma_{m-1} \in \{1, \dots, 2m\}$ for every integer $Z \ge 1$. Along each ring $\mathsf{C}_{2m}$, the $2m$ seats partition into:
+select the unique group and seat. Here \(Z=1,\ldots,118\) identifies the labelled elements; integers 119--126 are unfilled reference-slot indices in the same grouping.
+
+The local tuple is
 \begin{equation}
-a(s) = \left\lceil \frac{s}{2}\right\rceil, \qquad b(s) = \left\lfloor \frac{s}{2}\right\rfloor, \qquad c(s) = s \bmod 2,
+a(s)=\left\lceil s/2\right\rceil,\qquad
+b(s)=\left\lfloor s/2\right\rfloor,\qquad c(s)=s\bmod2.
 \label{eq:matter1-seat-abc}
 \end{equation}
-so that $s = 2$ on $\mathsf{C}_6$ gives $1{:}1{:}0\,{:}{:}\,6$ (\mainref{\S5.8.1}), odd seats $s = 2j-1$ carry one open-seat duon ($c = 1, E_2^0$), even seats $s = 2j$ close $j$ seated duads ($a = b = j, c = 0, E_2^\pm$), half-shell turnaround occurs at $s = m$ on the 6~o'clock $H_\mu$ hinge axis ($\Pi_\alpha \to \Pi_\Omega$), and $s = 2m$ ($Z = \Gamma_m$) locks the filled shared enclosure $m{:}m{:}0\,{:}{:}\,2m$ on the 12~o'clock spine.
+Thus \(c=1\) records odd local parity and \(c=0\) even local parity. It does not determine an assigned acceptor, neutral or shedding class. For example, Li has \(s=3,c=1\) but an assigned neutral class; O has \(s=2,c=0\) but an assigned acceptor class. The tuple and those input classifications are distinct relations.
 
 \paragraph{Specialization.}
-Evaluating \eqnref{eq:matter1-gamma-m}--\eqnref{eq:matter1-seat-abc} across $m = 3 \dots 11$ yields the nine concentric outer support enclosures $\mathsf{C}_6 \dots \mathsf{C}_{22}$ summarized in \tabref{tab:matter1-enclosure-groups} and rendered in \figref{fig:matter1-concentric-wheel}. Across $m = 3 \dots 11$, total coord-0 capacity is $\Gamma_{11} = 11(12) - 6 = 126$ slots; the admitted elemental ladder $Z = 1 \dots 118$ occupies the exact rational fraction $118/126 = 59/63$ of $\Gamma_{11}$ (and $14/22 = 7/11$ on $\mathsf{C}_{22}$), while slots $Z = 119 \dots 126$ on $\mathsf{C}_{22}$ form the unretained open cutoff ($\mathrm{TTL}_{\mathcal{C}}(\partial F,\omega) < |\omega|$).
+The nine groups in \tabref{tab:matter1-enclosure-groups} contain 126 reference slots, of which 118 carry element labels:
+\[
+118/126=59/63,\qquad
+N_{\mathrm{labelled}}(\mathsf C_{22})/22=14/22=7/11.
+\]
+These are labelled-reference occupancy fractions. No retention duration or physical limit beyond 118 follows from them.
 
 \begin{table}[H]
 \centering
-\scriptsize
-\setlength{\tabcolsep}{2.6pt}
-\caption{\textbf{Coord-0 support-enclosure groups across $m = 3 \dots 11$ (\mainref{\S5.7.10--\S5.7.13}, \mainref{\S5.8}).}}
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Declared enclosure groups and local role positions.} The last endpoint is an unfilled reference slot.}
 \label{tab:matter1-enclosure-groups}
-\begin{tabular}{@{}rllrrlllllr@{}}
+\begin{tabular}{@{}rrrrlll@{}}
 \toprule
-$m$ & Encl. & Name & $2m$ & $\Gamma_{m-1}$ & $\Gamma_m$ & $Z$ range & $H_\mu$ turn ($s=m$) & Anchor ($Z=\Gamma_m$) & Filled $m{:}m{:}0\,{:}{:}\,2m$ & $C_{\mathrm{close}}$\\
+\(m\) & \(2m\) & \(\Gamma_{m-1}\) & \(\Gamma_m\) & Index range & Hinge \(s=m\) & Boundary \(s=2m\)\\
 \midrule
-3 & $\mathsf{C}_6$ & hexon & 6 & 0 & 6 & $1 \dots 6$ & $Z=3$ (Li) & $Z=6$ (C) & $3{:}3{:}0\,{:}{:}\,6$ & 18\\
-4 & $\mathsf{C}_8$ & octon & 8 & 6 & 14 & $7 \dots 14$ & $Z=10$ (Ne) & $Z=14$ (Si) & $4{:}4{:}0\,{:}{:}\,8$ & 24\\
-5 & $\mathsf{C}_{10}$ & decon & 10 & 14 & 24 & $15 \dots 24$ & $Z=19$ (K) & $Z=24$ (Cr) & $5{:}5{:}0\,{:}{:}\,10$ & 30\\
-6 & $\mathsf{C}_{12}$ & $\mathsf{C}_{12}$ & 12 & 24 & 36 & $25 \dots 36$ & $Z=30$ (Zn) & $Z=36$ (Kr) & $6{:}6{:}0\,{:}{:}\,12$ & 36\\
-7 & $\mathsf{C}_{14}$ & $\mathsf{C}_{14}$ & 14 & 36 & 50 & $37 \dots 50$ & $Z=43$ (Tc$\uparrow$) & $Z=50$ (Sn) & $7{:}7{:}0\,{:}{:}\,14$ & 42\\
-8 & $\mathsf{C}_{16}$ & $\mathsf{C}_{16}$ & 16 & 50 & 66 & $51 \dots 66$ & $Z=58$ (Ce) & $Z=66$ (Dy) & $8{:}8{:}0\,{:}{:}\,16$ & 48\\
-9 & $\mathsf{C}_{18}$ & $\mathsf{C}_{18}$ & 18 & 66 & 84 & $67 \dots 84$ & $Z=75$ (Re) & $Z=84$ (Po$\uparrow$) & $9{:}9{:}0\,{:}{:}\,18$ & 54\\
-10 & $\mathsf{C}_{20}$ & $\mathsf{C}_{20}$ & 20 & 84 & 104 & $85 \dots 104$ & $Z=94$ (Pu$\uparrow$) & $Z=104$ (Rf$\uparrow$) & $10{:}10{:}0\,{:}{:}\,20$ & 60\\
-11 & $\mathsf{C}_{22}$ & $\mathsf{C}_{22}$ & 22 & 104 & 126 & $105 \dots 126^*$ & $Z=115$ (Mc$\uparrow$) & $Z=126$ ($--$) & $11{:}11{:}0\,{:}{:}\,22$ & 66\\
+3 & 6 & 0 & 6 & 1--6 & 3 Li & 6 C\\
+4 & 8 & 6 & 14 & 7--14 & 10 Ne & 14 Si\\
+5 & 10 & 14 & 24 & 15--24 & 19 K & 24 Cr\\
+6 & 12 & 24 & 36 & 25--36 & 30 Zn & 36 Kr\\
+7 & 14 & 36 & 50 & 37--50 & 43 Tc & 50 Sn\\
+8 & 16 & 50 & 66 & 51--66 & 58 Ce & 66 Dy\\
+9 & 18 & 66 & 84 & 67--84 & 75 Re & 84 Po\\
+10 & 20 & 84 & 104 & 85--104 & 94 Pu & 104 Rf\\
+11 & 22 & 104 & 126 & 105--126 & 115 Mc & 126 --\\
 \bottomrule
 \end{tabular}
-\par\smallskip\noindent
-{\footnotesize $^*$On $\mathsf{C}_{22}$, $Z = 105 \dots 118$ ($\mathrm{Db} \dots \mathrm{Og}$) are admitted exoshedding/yro routes; $Z = 119 \dots 126$ are unretained open cutoff slots.}
 \end{table}
 
-\paragraph{Calibration.}
-By \mainref{\S5.2.4, (90)} and \mainref{\S5.17.4}, field-count scaling $\mathcal{O}_{\partial F}(\mathcal{B}) = n_F(\mathcal{B})\log n_F(\mathcal{B})$ (for $n_F(\mathcal{B}) \ge 1$) and seat-compatible shell/enclosure routing (\eqnref{eq:matter1-coord0-declaration}--\eqnref{eq:matter1-seat-abc}) are distinct calculations on the same declared boundary/window:
-\begin{equation}
-\begin{aligned}
-B &\to \mathcal{F}_B \to n_F(B) \to \ADAR_{i\leftarrow j} \to \mathcal{O}_{\partial F}(B) \to \SADAR,\\
-\mathsf{C}_{2m} &\to X_{\mathrm{shedding}} \to \operatorname{SheddicPath}(X_{\mathrm{shedding}}).
-\end{aligned}
-\label{eq:matter1-calculation-split}
-\end{equation}
+\subsection{Relations before layout}\label{subsec:matter1-visual-model}
+\paragraph{Setup.}
+The visual model preserves the mapping \(Z\mapsto(m,s,a,b,c)\). Within each enclosure the declared role projection assigns \(1\le s<m\) to the first branch, \(s=m\) to the hinge, \(m<s<2m\) to the counterbranch, and \(s=2m\) to the filled-tuple boundary position. This repeating organization expresses the inherited motif without supplying an executed inter-element edge.
+
+\paragraph{Derivation.}
+Nested outlines express enclosure membership; label positions express local order and role. A guide through consecutive seats is an index-order guide. A spiral may project that order while preserving membership, but its curvature is not a temporal trajectory or a transition witness. Assigned classes, when displayed in the companion or table, retain their assigned-input meaning from \secref{sec:fusion-contact-ledger}.
 
 \paragraph{Falsification.}
-Assigning an element $Z$ to an odd support enclosure, shifting $\Gamma_m$ away from $m(m+1)-6$, or conflating $n_F \log n_F$ field-count weighting with $\mathsf{C}_{2m}$ seat routing fails the seat/enclosure routing audit (\mainref{\S5.17.4}).
+Changing a preserved \(Z,m,s\) placement, confusing odd parity with an assigned acceptor state, or treating the eight unfilled slots as demonstrated physical non-retention contradicts the declared visual model. Field count \(n_F\log n_F\) in \mainequation{eq:field-count-term} is a different scoped construction; a ring count cannot serve as its field-family witness.
 
-\aodprovenance{\mainref{\S5.2.4 (89)--(90)}, \mainref{\S5.7.1--\S5.7.13 (112)--(113)}, \mainref{\S5.8.1--\S5.8.2}, \mainref{App.~B.3--B.4}.}
-\aodliteraturenote{Coord-0 support-enclosure ladder and nested shell-stack pattern: Poyau~\cite{poyau-aod-v4102} (\mainref{\S5.7--\S5.8}).}
+\aodprovenance{\mainsection{subsec:filled-shared-enclosures}, \mainsection{subsec:coord-zero-support-enclosure-grouping}, \mainsection{sec:shell-paths}, \mainsection{subsec:support-enclosure-retention-condition}, \eqnref{eq:matter1-group-selection}, \eqnref{eq:matter1-seat-abc}.}
 
 \begin{figure}[p]
-  \centering
-  \includegraphics[width=0.96\textwidth]{figures/aod_matter1_wheel_accessible.pdf}
-  \caption{\textbf{Concentric coord-0 support-enclosure chart ($Z = 1 \dots 118$).}
-  The default four-seat inner enclosure $E_4$ (\text{tetron}) anchors the concentric outer even support enclosures $C_{2m}$ ($m = 3 \dots 11$, orders $C_6 \dots C_{22}$) partitioned by $\Gamma_m = \sum_{k=3}^m 2k = m(m+1)-6$ with $\Gamma_{m-1} < Z \le \Gamma_m$. Filled shared enclosures $0\vdash :: Z:A:0:2m\langle m:m:0::2m\rangle$ lock along the 12~o'clock spine ($\blacklozenge$), while half-shell branch turnarounds ($\Pi_\alpha \to \Pi_\Omega$) align along the 6~o'clock $H_\mu$ hinge axis. Seated closures ($X_{\mathrm{shedding}}=0$, solid blue), open-seat acceptors ($E_2^0$, dash-dot purple $\circ$), exoshedding/yro routes ($X_{\mathrm{shedding}}>0$, dashed vermilion $\uparrow$), and the unretained open cutoff at $Z = 119 \dots 126$ on $C_{22}$ (dotted hollow) use redundant glyph and stroke encoding.}
-  \label{fig:matter1-concentric-wheel}
+\centering
+\makebox[\textwidth][c]{\includegraphics[width=180mm]{figures/aod_matter1_wheel_accessible.pdf}}
+\caption{\textbf{Matter I static relational reference.} Nested enclosure membership and repeated branch/hinge/counterbranch roles organize all 118 element labels. The line is a seat-order guide. Positions 119--126 are unfilled reference slots in the declared grouping. Geometry supplies neither physical scale nor an executed network.}
+\label{fig:matter1-concentric-wheel}
 \end{figure}
+
+% Keep the dedicated chart page before the following derivation.
+\clearpage

@@ -10,10 +10,15 @@
 \usepackage{refcount}
 \usepackage{bookmark}
 
-% Bind to paired ../main.aux when built alongside Main
+% The paired-build preflight binds source, PDF, AUX and FLS hashes.
+% The publication wrapper overrides this for the root manual2.pdf variant.
+\providecommand{\MainPDFTarget}{../main.pdf}
+\IfFileExists{../main-build-binding.tex}{%
+  \input{../main-build-binding.tex}%
+}{\PackageError{matter1}{Missing paired Main build binding}{Run the clean Main-first paired build.}}
 \IfFileExists{../main.aux}{%
-  \externaldocument[main:][nocite]{../main}[main.pdf]%
-}{}
+  \externaldocument[main:][nocite]{../main}[\MainPDFTarget]%
+}{\PackageError{matter1}{Missing paired Main AUX}{Run the clean Main-first paired build.}}
 
 \setlength{\tabcolsep}{3pt}
 \setlength{\parskip}{0.5em}
@@ -23,8 +28,8 @@
 \hypersetup{
   pdftitle={Alpha<->Omega Dynamics (AOD) - Manual Volume II: Matter I (Elements 1-118)},
   pdfauthor={Reginald Poyau},
-  pdfsubject={The Hidden Temporal Dynamics of Stokes Manual Volume II; The Art Of The Leprechaun: Fractal Calculus; Matter I: Elements 1-118, coord-0 support enclosures, fusion closure, exoshedding lift},
-  pdfkeywords={Axiomatic Fundamentalism, AFC, AOD, Stokes, SADAR, Manual Volume II, Matter I, Elements 1-118, Curling-curls, Coord-0 grouping, Fusion closure, Exoshedding}
+  pdfsubject={The Hidden Temporal Dynamics of Stokes Manual Volume II; The Art Of The Leprechaun: Fractal Calculus; Matter I: Elements 1-118, static relational reference, declared enclosure grouping, conditional support arithmetic},
+  pdfkeywords={Axiomatic Fundamentalism, AFC, AOD, Stokes, SADAR, Manual Volume II, Matter I, Elements 1-118, Curling-curls, Coord-0 grouping, Static reference, Conditional support}
 }
 
 \setcounter{secnumdepth}{3}
@@ -58,7 +63,14 @@
 \newcommand{\eqnref}[1]{\eqref{#1}}
 \newcommand{\figref}[1]{Fig.~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
-\newcommand{\mainref}[1]{Main~#1}
+\makeatletter
+\newcommand{\maincheck}[1]{\@ifundefined{r@main:#1}{%
+  \PackageError{matter1}{Missing semantic Main label: #1}{Rebuild the paired Main source and check the reference key.}}{}}
+\makeatother
+\newcommand{\mainequation}[1]{\maincheck{#1}Main~\eqref{main:#1}}
+\newcommand{\mainsection}[1]{\maincheck{#1}Main~\S\ref{main:#1}}
+\newcommand{\mainappendix}[1]{\maincheck{#1}Main~App.~\ref{main:#1}}
+\newcommand{\maintable}[1]{\maincheck{#1}Main~Table~\ref{main:#1}}
 
 \newcommand{\aodnoteblock}[2]{\medskip\begingroup\emergencystretch=3em\sloppy\noindent\emph{#1.}\ #2\par\endgroup}
 \newcommand{\aodprovenance}[1]{\aodnoteblock{Provenance}{#1}}

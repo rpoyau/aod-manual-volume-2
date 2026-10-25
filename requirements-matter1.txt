@@ -1,0 +1,5 @@
+# Exact data/model code uses only Python's standard library.
+# Figure generation, actual PDF inspection and publication verification:
+matplotlib==3.10.8
+pypdf==6.10.0
+pdfplumber==0.11.9

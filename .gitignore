@@ -9,3 +9,10 @@ __pycache__/
 *.pyc
 .mpl-cache/
 *.blg
+
+# Recreated by the paired publication build
+main-build-binding.json
+main-build-binding.tex
+*.xdv
+
+node_modules/

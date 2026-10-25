@@ -1,0 +1,68 @@
+name: Matter I static reference
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  static-reference:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      MPLCONFIGDIR: /tmp/matter1-mpl
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+      - name: Install and record environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-xetex texlive-latex-extra texlive-science texlive-fonts-recommended
+          python -m pip install -r requirements-matter1.txt
+          npm install --ignore-scripts --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          mkdir -p /tmp/matter1-checks
+          python --version > /tmp/matter1-checks/environment.txt
+          python -m pip freeze >> /tmp/matter1-checks/environment.txt
+          node --version >> /tmp/matter1-checks/environment.txt
+          xelatex --version >> /tmp/matter1-checks/environment.txt
+          latexmk --version >> /tmp/matter1-checks/environment.txt
+          dpkg-query -W 'texlive*' >> /tmp/matter1-checks/environment.txt
+      - name: Verify delivered data, exports and browser before any generation
+        run: |
+          python -B manual2/scripts/verify_matter1_ledger.py | tee /tmp/matter1-checks/ledger.json
+          python -B -O manual2/scripts/verify_matter1_ledger.py --check-data
+          python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
+          node manual2/scripts/check_matter1_companion.cjs --screenshots-dir /tmp/matter1-checks/browser | tee /tmp/matter1-checks/browser.json
+      - name: Build paired publication and verify actual PDF references
+        run: |
+          python -B scripts/build_matter1_documents.py --build-dir /tmp/matter1-paired-build | tee /tmp/matter1-checks/build.json
+          python -B scripts/verify_matter1_publication.py | tee /tmp/matter1-checks/publication.json
+      - name: Actual hostile mutations and disposable reproduction
+        run: |
+          python -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v 2>&1 | tee /tmp/matter1-checks/tests.txt
+          python -B -O -m unittest discover -s manual2/tests -p 'test_matter1_data.py' -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+          python -B scripts/check_matter1_reproduction.py | tee /tmp/matter1-checks/reproduction.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: matter1-static-reference
+          path: |
+            main.pdf
+            manual2.pdf
+            manual2/figures/
+            manual2/visuals/
+            manual2/evidence/
+            /tmp/matter1-checks/
+            /tmp/matter1-paired-build/*-console.txt
+            /tmp/matter1-paired-build/manual2/*-console.txt

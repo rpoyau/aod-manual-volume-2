@@ -1,77 +1,85 @@
-\section{Fusion Closure, Rung Residuals, and Complete Contact Ledger}\label{sec:fusion-contact-ledger}
+\section{Conditional Support Expressions and Assigned Inputs}\label{sec:fusion-contact-ledger}
 
-\subsection{Fusion closure, rung residuals, and exoshedding lift}\label{subsec:fusion-closure-derivation}
-
+\subsection{Inherited fusion domain and the present calculation}\label{subsec:fusion-closure-derivation}
 \paragraph{Setup.}
-Let $F$ and $G$ be admitted curling-curl support forms on $B = (\partial_T F, \omega)$ with certified cycle-valued compressions $\widehat{F} = \operatorname{Compress}(F)$ and $\widehat{G} = \operatorname{Compress}(G)$ (\mainref{Def.~13, (40)}). Import the fusion closure operator of \mainref{\S5.9.1, (114)}:
+For admitted forms \(F,G\) with certificate-bound cycle-valued compressions \(\widehat F,\widehat G\), Main defines
 \begin{equation}
-\operatorname{Fuse}_B(F, G) := \operatorname{Close}_B\left(\widehat{F}\;\mu\;\widehat{G}\right).
+\operatorname{Fuse}_B(F,G)
+=\operatorname{Close}_B(\widehat F\,\mu\,\widehat G)
 \label{eq:matter1-fusion-closure}
 \end{equation}
-Closed or reclosed admitted forms fuse; exposed fragments or open proposals without bound inner certificates are outside the domain of \eqnref{eq:matter1-fusion-closure}.
-
-\paragraph{Derivation.}
-By \mainref{(115)}, the branch/hinge/branch fusion duration across the shared hinge $\mu$ is
+and
 \begin{equation}
-RD_{\mathrm{fuse}}(F, G; B) = \Pi^-_{\widehat{F}}(B) + H_{\mu,\widehat{F},\widehat{G}}(B) + \Pi^+_{\widehat{G}}(B).
+RD_{\mathrm{fuse}}(F,G;B)
+=\Pi^-_{\widehat F}(B)+H_{\mu,\widehat F,\widehat G}(B)+\Pi^+_{\widehat G}(B).
 \label{eq:matter1-rd-fuse}
 \end{equation}
-For each elemental closure rung $n+1$ ($Z = 1 \dots 118$, plus cutoff slots $119 \dots 126$ on $\mathsf{C}_{22}$), the rung closure, signed rung residual, and sheddic surplus are (\mainref{\S5.9.1, (116)--(118)}):
-\begin{equation}
-C^{\mathrm{ret}}_{n+1} = \operatorname{Close}_{B_{n+1}}\left(\widehat{F}_n\;\mu\;\widehat{G}_n\right),
-\qquad
-S_{n+1} = P^D_{n+1} - C_{\mathrm{close},n+1},
-\qquad
-X_{\mathrm{shedding},n+1} = \max(0, S_{n+1}).
-\label{eq:matter1-rung-residual-shedding}
-\end{equation}
-By \mainref{\S5.6.4, (107)--(108)} and \mainref{\S5.9.1}, the sign of $S_{n+1}$ partitions the rungs into three distinct operational regimes:
-\begin{enumerate}[nosep]
-  \item \textbf{Neutral / Seated Closure ($S_{n+1} = 0 \implies X_{\mathrm{shedding},n+1} = 0$):} Local duonic pressure balances enclosure closure compatibility $C_{\mathrm{close},n+1} = 3(2m)$, and seat-compatible retention satisfies $\mathrm{TTL}_{\mathcal{C}}(\partial F,\omega) \ge |\omega|$ (\mainref{(113)}).
-  \item \textbf{Deficit / Open-Seat Acceptor ($S_{n+1} < 0 \implies X_{\mathrm{shedding},n+1} = 0$):} A negative closure residual is a deficit/open check ($E_2^0$ open-seat acceptor), never sheddic surplus (\mainref{\S5.6.4}).
-  \item \textbf{Surplus / Exoshedding Route ($S_{n+1} > 0 \implies X_{\mathrm{shedding},n+1} = S_{n+1} > 0$):} Positive surplus is placed on a declared sheddic path (\mainref{\S5.6.5, (109)--(110)})
-  \begin{equation}
-  \operatorname{SheddicPath}(X_{\mathrm{shedding}}) \in \{E_2, \mathsf{C}_6, \mathsf{C}_8, \mathsf{C}_{10}, \dots, \mathsf{C}_{2n}\},
-  \qquad
-  X_{\mathrm{shedding}} = X_{\mathrm{endo}} + X_{\mathrm{exo}} + X_{\mathrm{redir}} + X_{\mathrm{open}}.
-  \label{eq:matter1-sheddic-partition}
-  \end{equation}
-\end{enumerate}
-When $X_{\mathrm{exo},r} > 0$ at scope $B_r$, exoshedding routes surplus support to the next enclosure scope via the lift and higher-scope fusion chain (\mainref{\S5.9.2, (119)--(121)}):
-\begin{equation}
-K^{r+1}_{\mathrm{prop}} = \operatorname{Lift}_{B_r \to B_{r+1}}(X_{\mathrm{exo},r}) \xrightarrow{\,HT(K;B_{r+1})\,} K^{r+1}_{\mathrm{adm}}(B_{r+1}),
-\qquad
-C^{\mathrm{ret}}_{r+1} = \operatorname{Close}_{B_{r+1}}\left(\widehat{F}_r\;\mu\;K^{r+1}_{\mathrm{adm}}(B_{r+1})\right).
-\label{eq:matter1-exoshedding-lift}
-\end{equation}
-When instability occurs across an odd window length $L = 2k+1$ between adjacent even support enclosures $\mathsf{C}_{2k}$ and $\mathsf{C}_{2k+2}$, it is recorded by the odd-window route-status suffix $\operatorname{Yro}_L(K;B)$ (\mainref{\S5.6.6}).
+Their exact predecessors are \mainequation{eq:cycle-valued-field-compression}, \mainequation{eq:fusion-closure} and \mainequation{eq:fusion-branch-hinge-duration}. These operators retain their domains. The present elemental table supplies no inner or outer fusion certificate and does not assert an instance of \eqnref{eq:matter1-fusion-closure}.
 
-\paragraph{Specialization.}
-For each rung $Z$ with reference nucleon count $A$ on enclosure $\mathsf{C}_{2m}$ (seat $s = Z - \Gamma_{m-1}$):
+\paragraph{Derivation.}
+The declared reference operands use the exact polynomial values in \tabref{tab:matter1-curling-curl-primitives}:
 \begin{equation}
-\Pi^-_{\widehat{F}}(B_Z) = 30 Z + 68(A - Z), \qquad H_{\mu,\widehat{F},\widehat{G}}(B_Z) = 1, \qquad \Pi^+_{\widehat{G}}(B_Z) = 4s,
+u_-=30Z+68(A-Z),\qquad h=1,\qquad u_+=4s.
 \label{eq:matter1-rung-operands}
 \end{equation}
-where $\Pi(3{:}3) = 30$ ($\mathrm{Tritrio}$), $\Pi(3{:}4) = 68$ ($\mathrm{Tetratrio}$), and $\Pi(1{:}2) = 4$ ($\mathrm{Dimon}$). Substituting \eqnref{eq:matter1-rung-operands} into \eqnref{eq:matter1-rd-fuse} yields the exact integer fusion duration $RD_{\mathrm{fuse}}(Z,A,s) = 30Z + 68(A-Z) + 1 + 4s$.
+Define their conditional support sum
+\begin{equation}
+U(Z,A,s)=u_-+h+u_+=30Z+68(A-Z)+1+4s.
+\label{eq:matter1-support-sum}
+\end{equation}
+This preserves the scalar expression formerly stored as \texttt{rd\_fuse}. The active field \texttt{support\_sum} names its established arithmetic scope. Equality to a native reflection-duration accessor additionally requires the inherited instance prerequisites.
 
-\paragraph{Calibration.}
-Across $Z = 1 \dots 118$, the 118 admitted elements partition into:
-\begin{itemize}[nosep]
-  \item \textbf{8 Filled Shared Enclosure Anchors ($Z = \Gamma_m \le 104$):} $Z \in \{6, 14, 24, 36, 50, 66, 84, 104\}$ ($\mathrm{C, Si, Cr, Kr, Sn, Dy, Po, Rf}$), of which $Z \in \{6, 14, 24, 36, 50, 66\}$ are neutral seated anchors ($S_Z = 0$) and $Z \in \{84, 104\}$ carry active exoshedding ($X_{\mathrm{shedding}} > 0$).
-  \item \textbf{66 Non-Anchor Seated Retained Closures ($S_Z = 0, X_{\mathrm{shedding}} = 0$):} Retained $E_2^\pm$ duad closures with $\mathrm{TTL}_{\mathcal{C}} \ge |\omega|$.
-  \item \textbf{9 Open-Seat Acceptors ($S_Z = -3 < 0, X_{\mathrm{shedding}} = 0$):} $Z \in \{1, 8, 9, 16, 17, 34, 35, 52, 53\}$ ($\mathrm{H, O, F, S, Cl, Se, Br, Te, I}$), carrying an unseated $E_2^0$ deficit channel.
-  \item \textbf{37 Exoshedding / Yro Route Elements ($S_Z > 0, X_{\mathrm{shedding}} > 0$):} The two mid-shell hinge-instability elements $Z \in \{43\text{ (Tc)}, 61\text{ (Pm)}\}$ together with the post-bismuth shedding ladder $Z \in \{84\text{ (Po)} \dots 118\text{ (Og)}\}$ (including anchors $Z = 84, 104$), each routing positive surplus $X_{\mathrm{shedding}}$ into $\mathsf{C}_{2m+2}$ with $\mathrm{TTL}_{\mathcal{C}} < |\omega|$.
-  \item \textbf{8 Unretained Open Cutoff Slots ($Z = 119 \dots 126$ on $\mathsf{C}_{22}$):} Slots $s = 15 \dots 22$ on $\mathsf{C}_{22}$ have $\mathrm{TTL}_{\mathcal{C}} = 0 < |\omega|$ and route entirely to unretained open loss $X_{\mathrm{open}}$.
-\end{itemize}
+\paragraph{Specialization.}
+The nuclear count pair \((Z,A-Z)\) in \eqnref{eq:matter1-rung-operands} is distinct from the local tuple \((a,b,c)\) in \eqnref{eq:matter1-seat-abc}. At fixed \(Z\), changing the supplied integer \(A\) leaves \(m,s,a,b,c\) unchanged and gives
+\[
+U(Z,A+\Delta A,s)-U(Z,A,s)=68\Delta A.
+\]
+For carbon, \(Z=s=6\), the conditional choices \(A=12,13,14\) give \(U=613,681,749\). This is an algebraic illustration, not a sourced isotope catalog, stability statement or decay/fusion transition.
+
+The reference A values are carried from the reviewed candidate's input list without alteration. Their original per-element selection policy was not recorded. The input provenance identifies that candidate source and this limitation; no broad AME or NIST citation establishes each selected A. Reference A is an integer nucleon-count input, not standard atomic weight. Projected A values for slots 119--126 remain explicitly illustrative fixture operands, not observed nuclide records. The inputs are recorded in \path{manual2/data/m1/reference_inputs.csv}, \path{model_inputs.json} and \path{input_provenance.json} in the same directory.
 
 \paragraph{Falsification.}
-Reporting $X_{\mathrm{shedding}} > 0$ for a negative closure residual $S_{n+1} < 0$, omitting a declared $\operatorname{SheddicPath}$ when $X_{\mathrm{shedding}} > 0$, or treating an odd-window $\operatorname{Yro}_L$ route-status suffix as an even support enclosure name contradicts \mainref{\S5.6.4--\S5.6.6} and \mainref{\S5.17.5}.
+A change in A that changes the grouping or local tuple violates this specialization. Calling a numerically correct \(U\) a certified fusion duration without its input and outer certificates exceeds its domain.
 
-\aodprovenance{\mainref{\S5.6.4--\S5.6.6 (107)--(110)}, \mainref{\S5.7.11--\S5.7.12 (112)--(113)}, \mainref{\S5.9.1--\S5.9.3 (114)--(123)}.}
-\aodliteraturenote{Reference nuclear mass numbers and ground-state shell designations: Wang et al.~\cite{iupac-ame}; NIST ASD~\cite{nist-asd}.}
+\aodprovenance{\mainequation{eq:curling-support-model}, \mainequation{eq:fusion-branch-hinge-duration}, \eqnref{eq:matter1-rung-operands}, \eqnref{eq:matter1-seat-abc}.}
 
-\subsection{Complete coord-0 elemental ledger (\texorpdfstring{$Z = 1 \dots 118$ and $\mathsf{C}_{22}$ cutoff $119 \dots 126$}{Z = 1..118 and C22 cutoff 119..126})}\label{subsec:complete-elemental-ledger}
+\subsection{Assigned classifications, residuals and occupancy}\label{subsec:matter1-assigned-inputs}
+\paragraph{Setup.}
+The fixture keeps the candidate's assignment sets:
+\[
+\mathcal A=\{1,8,9,16,17,34,35,52,53\},\qquad
+\mathcal X=\{43,61\}\cup\{84,\ldots,118\}.
+\]
+They define assigned acceptor and assigned shedding classes. They are input classifications; they are not derived from \(Z,A\), parity, or an executed native calculation. Let \(L=2m\), \(C^{\mathrm{fix}}_{\mathrm{close}}=3L\), and \(w^{\mathrm{fix}}=L\).
 
-\aodnoteblock{Source artifacts}{The exact integer ledger rows and audit assertions in \tabref{tab:matter1-full-ledger} are generated and verified deterministically by \texttt{manual2/scripts/verify\_matter1\_ledger.py}, with outputs stored in \texttt{manual2/data/m1/matter1\_elements\_1\_118\_ledger.csv} and \texttt{manual2/data/m1/matter1\_audit\_report.json}.}
+\paragraph{Derivation.}
+With assigned pressure \(P^{\mathrm{fix}}\), retain the residual arithmetic
+\begin{equation}
+S^{\mathrm{fix}}=P^{\mathrm{fix}}-C^{\mathrm{fix}}_{\mathrm{close}},
+\qquad
+X^{\mathrm{fix}}=\max(0,S^{\mathrm{fix}}).
+\label{eq:matter1-rung-residual-shedding}
+\end{equation}
+The pressure input is \(C^{\mathrm{fix}}_{\mathrm{close}}-3\) on \(\mathcal A\), equal to \(C^{\mathrm{fix}}_{\mathrm{close}}\) on the remaining labelled neutral rows, and \(C^{\mathrm{fix}}_{\mathrm{close}}+3u_Z\) on \(\mathcal X\), where
+\[
+u_Z=1\ \ (Z=43,61),\qquad
+u_Z=\lfloor(Z-84)/6\rfloor+1\ \ (84\le Z\le118).
+\]
+For illustrative unfilled slots it is \(C^{\mathrm{fix}}_{\mathrm{close}}+3(Z-118)\). Assigned duration values are respectively \(L\), \(L+2\), \(L-1\), and \(0\). Assigned route and Yro labels are carried as fixture data. These values do not demonstrate retention, instability, transfer or non-retention.
+
+The arithmetic uses the form of \mainequation{eq:closure-residual} and \mainequation{eq:shedding-excess}; it does not supply their native pressure, field and window evidence. Likewise, a declared route label does not execute the sheddic partition, lift or higher-scope fusion in \mainequation{eq:shedding-route-partition}, \mainequation{eq:exoshedding-lift} and \mainequation{eq:higher-scope-fusion}.
+
+\paragraph{Specialization.}
+The 118 labelled rows have disjoint assigned residual classes: 72 neutral, 9 deficit/acceptor and 37 positive-surplus/shedding. Boundary position is a separate attribute: eight labelled endpoints are \(\{6,14,24,36,50,66,84,104\}\). Po and Rf are both endpoints and assigned shedding rows. Adding endpoint counts to route-class counts would double-count those attributes. Of the 72 neutral rows, six are endpoints and 66 are not.
+
+The \(\mathsf C_{22}\) fraction \(7/11\) records 14 labelled slots out of 22. Slots 119--126 are unfilled in this reference; their assigned fixture values establish neither a physical cutoff nor an impossibility of further elements.
+
+\paragraph{Falsification.}
+The assignment table and its equations must agree exactly. Positive \(X^{\mathrm{fix}}\) for negative \(S^{\mathrm{fix}}\), or a changed assigned set without a new input binding, fails the fixture. Agreement with these definitions is not empirical validation.
+
+\aodprovenance{\mainequation{eq:closure-residual}, \mainequation{eq:shedding-excess}, \mainsection{subsec:support-enclosure-retention-condition}, \mainsection{subsec:yro-odd-window-route-status}.}
+
+\subsection{Complete reference ledger}\label{subsec:complete-elemental-ledger}
+The authoritative generated ledger is \path{manual2/data/m1/matter1_elements_1_118_ledger.csv}. It binds each static declaration to its input record, distinguishes labelled elements from unfilled slots, and carries pending admission and unexecuted native status. The support declaration is syntax; the support sum and assigned fields retain the scopes above. Assigned route codes are \texttt{neutral}, \texttt{deficit}, \texttt{surplus} and \texttt{unfilled}; group-boundary and named-anchor flags are independent attributes. The generated table and figure consume the same validated data. Declared compatibility copies must compare equal.
 
 \input{sections/generated_elements_longtable.tex}

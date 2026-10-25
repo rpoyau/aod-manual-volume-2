@@ -1,25 +1,22 @@
-\section{Quarantined External Comparison}\label{manual2:app:quarantined-external}
+\section{Pending External Comparison}\label{manual2:app:quarantined-external}
 
-\subsection{Scope and presentation-numeric policy}\label{manual2:app:qext-scope}
-This appendix compares A\(\Omega\) outputs against external measured-sector coordinates without importing external units, constants, or decimals into the A\(\Omega\) calculation (Manual~App.~B). An active Matter~I calculation produces an exact integer or rational candidate $\nu_{Z,\AO}$ first; only after that candidate is frozen may an external comparison record evaluate
+\subsection{Scope and numeric policy}\label{manual2:app:qext-scope}
+No measured comparison is executed in this release. A future comparison must bind an established candidate, its declared value map and a sourced target record before evaluating
 \begin{equation}
-\Qext\bigl(\nu_{Z,\AO};\; \mathcal{T}_Z\bigr),
+\Qext(\nu_{Z,\AO};\mathcal T_Z).
 \label{eq:manual2-qext}
 \end{equation}
-where $\mathcal{T}_Z$ is a declared measured-sector target record (such as an AME atomic mass record~\cite{iupac-ame} or NIST ASD spectral/ionization record~\cite{nist-asd}). Every released decimal presentation value carries the 6-tuple precision record (Manual~\S1.7.1)
+A conditional support sum does not become a measured prediction merely by being frozen. Candidate selection and the mathematical/physical meaning of the value map must be explicit before joining targets.
+
+External mass, spectral or isotope data retain their sources and units. A displayed measured decimal requires
 \begin{equation}
-\bigl(x_{\mathrm{disp}},\; u_x,\; \mathrm{unit}(x),\; \mathrm{src}(x),\; \mathrm{round}(x),\; \mathrm{scope}(x)\bigr).
+(x_{\mathrm{disp}},u_x,\mathrm{unit}(x),\mathrm{src}(x),\mathrm{round}(x),\mathrm{scope}(x)).
 \label{eq:manual2-decimal-precision}
 \end{equation}
+These records are distinct from the exact integer reference A and from \((Z,A-Z)\). AME and NIST references below identify possible comparison sources; no per-element selection of the present A inputs is attributed to them.
 
-\subsection{Quarantine audit hooks (F1--F5)}\label{manual2:app:qext-audit}
-\begin{itemize}[nosep]
-  \item \textbf{F1.} External-comparison audit records the active $\nu_{Z,\AO}$ candidate before the external comparison.
-  \item \textbf{F2.} Speed/transition-ratio audit records exact integer or rational $\AO$ ratios before wavelength or energy conversion.
-  \item \textbf{F3.} Direction-cycle audit records branch/hinge orientation $\chi_\mu \in \{-1, +1\}$ relative to one complete closure cycle $1_C$.
-  \item \textbf{F4.} Charge/seat-comparison audit records integer coord-0 index $Z$ and seat status ($E_2^0$ vs.\ $E_2^\pm$) before external charge symbols.
-  \item \textbf{F5.} Quarantine audit records external constants ($c, h_{\mathrm{ext}}, e, \eta_{\mathrm{ext}}$) and measured units ($\mathrm{MeV}, \mathrm{eV}, \mathrm{nm}$) only after the active A\(\Omega\) calculation.
-\end{itemize}
+\subsection{Pending comparison gates}\label{manual2:app:qext-audit}
+A future measured lane must identify the candidate and frozen inputs, applicable admission/execution evidence, value map, target version and row identity, units and precision, comparison formula, and resulting status. Missing inputs remain explicitly pending. No spectral, isotope-stability, charge, decay or reaction agreement is inferred from the reference figure.
 
-\aodprovenance{\mainref{(79)}, \mainref{(98)}; Manual~\S1.7, \S1.8, App.~B.}
-\aodliteraturenote{Atomic mass and spectral target databases: Wang et al.~\cite{iupac-ame}; NIST ASD~\cite{nist-asd}.}
+\aodprovenance{\mainsection{subsec:external-comparison-quarantine}; released AOD Manual v41.02, \S1.7--\S1.8 and App.~B.}
+\aodliteraturenote{Potential external comparison sources: Wang et al.~\cite{iupac-ame}; NIST ASD~\cite{nist-asd}.}

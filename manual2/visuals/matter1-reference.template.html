@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matter I — element reference</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--ink:#182737;--muted:#536270;--line:#a4afb9;--surface:#eff4f5;--alpha:#f8eee0;--omega:#e7f0f7;--hinge:#eef0f3;--boundary:#e1e7ed;--selected:#07578c;--selection-ink:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#121b23;--ink:#eff4f8;--muted:#bdcbd5;--line:#657582;--surface:#1b2c38;--alpha:#4b3824;--omega:#203e55;--hinge:#364049;--boundary:#445565;--selected:#a5d8ff;--selection-ink:#102434}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,sans-serif}main{max-width:736px;margin:auto;padding:16px}h1{font-size:22px;line-height:1.25;margin:0 0 10px}p{margin:8px 0}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--selected);outline-offset:3px}svg{display:block;width:100%;height:auto}svg text{fill:var(--ink);font:13px system-ui,sans-serif}svg .surface{fill:var(--surface);stroke:var(--line);stroke-width:.55}svg .badge{fill:var(--bg);stroke:var(--muted);stroke-width:.8}svg .alpha .badge{fill:var(--alpha)}svg .omega .badge{fill:var(--omega)}svg .hinge .badge{fill:var(--hinge)}svg .boundary .badge{fill:var(--boundary)}svg .unfilled .badge{fill:var(--bg);stroke-dasharray:2 2}svg .edge{stroke:var(--ink);stroke-width:2;fill:none}svg .selected .badge{fill:var(--selected)}svg .selected text{fill:var(--selection-ink)}svg .selected .edge{stroke:var(--selection-ink)}svg [role=button]{cursor:pointer}svg [role=button]:focus-visible .badge{stroke:var(--selected);stroke-width:3}svg .order{stroke:var(--muted);fill:none;stroke-width:.75;opacity:.6}svg .axis{stroke:var(--muted);stroke-width:.7}svg .secondary{fill:var(--muted)}.legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin:8px 0}.legend span{display:inline-flex;align-items:center;gap:6px}.sample{display:inline-block;position:relative;width:23px;height:15px;border:1px solid var(--muted);border-radius:3px;background:var(--bg)}.sample:after,.tile:after{content:"";position:absolute;background:var(--ink)}.sample.alpha,.tile.alpha{background:var(--alpha)}.sample.omega,.tile.omega{background:var(--omega)}.sample.hinge,.tile.hinge{background:var(--hinge)}.sample.boundary,.tile.boundary{background:var(--boundary)}.alpha:after{left:0;top:3px;bottom:3px;width:2px}.omega:after{right:0;top:3px;bottom:3px;width:2px}.hinge:after{bottom:0;left:3px;right:3px;height:2px}.boundary:after{top:0;left:3px;right:3px;height:2px}.sample.unfilled{border-style:dotted;background:var(--bg)}.sample.line{border:0;background:none}.sample.line:after{left:0;right:0;top:7px;height:1px;background:var(--muted)}.scope{font-size:13px;color:var(--muted)}.selected-detail{padding:10px 0;border-top:1px solid var(--line);font-variant-numeric:tabular-nums;min-height:42px}details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer;font-weight:600}.fields{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-top:10px}label{display:block}input{background:var(--bg);color:var(--ink);border:1px solid var(--muted);border-radius:4px;padding:7px;width:120px}#error{color:#b72e36;font-weight:600}[hidden]{display:none!important}.strip{display:grid;grid-template-columns:34px minmax(0,1fr);gap:6px;margin:8px 0}.strip-title{padding-top:8px;font-size:13px}.strip-cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(58px,1fr));gap:4px}.tile{position:relative;min-height:42px;padding:6px 3px;border:1px solid var(--muted);border-radius:4px;color:var(--ink);white-space:nowrap}.tile[aria-pressed=true]{background:var(--selected);color:var(--selection-ink)}.tile[aria-pressed=true]:after{background:var(--selection-ink)}.empty{display:flex;align-items:center;justify-content:center;position:relative;min-height:42px;border:1px dotted var(--muted);border-radius:4px;color:var(--muted)}.empty:after{content:"";position:absolute;background:var(--ink)}footer{margin-top:14px;font-size:12px;color:var(--muted)}@media(max-width:639px){main{padding:12px}h1{font-size:20px}.legend{font-size:12px;gap:7px 14px}}@media print{main{width:180mm;max-width:none;padding:0}details,.selected-detail,footer{display:none}#strips{display:none!important}#chart{display:block!important}}
+</style>
+</head>
+<body>
+<main id="matter1">
+<h1>AΩD · Matter I — element reference</h1>
+<svg id="chart" role="group" aria-label="All 118 element references and eight unfilled reference slots in enclosure and seat order"></svg>
+<div id="strips" hidden></div>
+<div class="legend" aria-label="Role and guide legend">
+<span><i class="sample alpha" aria-hidden="true"></i>Πα role</span>
+<span><i class="sample hinge" aria-hidden="true"></i>Hμ hinge</span>
+<span><i class="sample omega" aria-hidden="true"></i>ΠΩ role</span>
+<span><i class="sample boundary" aria-hidden="true"></i>Boundary seat</span>
+<span><i class="sample omega unfilled" aria-hidden="true"></i>Unfilled reference slot</span>
+<span><i class="sample line" aria-hidden="true"></i>Line: seat order</span>
+</div>
+<p class="scope">Reference set: Z = 1–118. Slots 119–126 are unfilled in this reference. Shading and spacing are display cues.</p>
+<div id="selection" class="selected-detail" aria-live="polite"></div>
+<details id="isotopes">
+<summary>Isotope-count detail</summary>
+<div class="fields">
+<div><label for="mass-a">Nucleon count A</label><input id="mass-a" type="number" min="6" max="1000000" step="1" value="12" aria-describedby="count-scope error"></div>
+<div id="values" aria-live="polite"></div>
+</div>
+<p id="error" role="alert" hidden></p>
+<p id="count-scope" class="scope">Conditional count comparison, not an observed isotope inventory. Reference A is a candidate fixture input. Isotope occurrence and transition data are not supplied.</p>
+</details>
+<footer>Static PDF/SVG and this companion share the same bound ledger and layout. <span id="binding"></span></footer>
+</main>
+<script id="matter1-data" type="application/json">__MATTER1_LAYOUT_JSON__</script>
+<script>
+"use strict";
+(()=>{
+const data=JSON.parse(document.getElementById('matter1-data').textContent),root=document.getElementById('matter1');
+const chart=document.getElementById('chart'),strips=document.getElementById('strips'),input=document.getElementById('mass-a'),error=document.getElementById('error');
+const ns='http://www.w3.org/2000/svg',sub=value=>String(value).replace(/[0-9]/g,c=>'₀₁₂₃₄₅₆₇₈₉'[+c]);
+let selected=6,A=data.marks[5].reference_a;
+const s=(tag,attrs={},text=null,parent=chart)=>{const e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,String(v));if(text!==null)e.textContent=text;parent.append(e);return e;};
+const roleWords={alpha:'Πα role',hinge:'Hμ hinge',omega:'ΠΩ role',boundary:'boundary seat'};
+const describe=r=>`${r.z} ${r.symbol}; C${r.enclosure}, seat ${r.seat}; ${roleWords[r.role]}; reference A ${r.reference_a}`;
+function edge(r,parent){const x=r.x,y=r.y,w=r.width/2,h=r.height/2;let d;
+if(r.role==='alpha')d=`M ${x-w} ${y-h+3} V ${y+h-3}`;
+else if(r.role==='omega')d=`M ${x+w} ${y-h+3} V ${y+h-3}`;
+else if(r.role==='hinge')d=`M ${x-w+3} ${y+h} H ${x+w-3}`;
+else d=`M ${x-w+3} ${y-h} H ${x+w-3}`;
+s('path',{d,class:'edge'},null,parent);}
+function draw(){chart.setAttribute('viewBox','0 38 704 643');
+s('desc',{},'Nine nested enclosures. Each thick badge edge indicates a role, as in the legend. The spiral line is seat order, not a transition path.');
+for(const r of [...data.enclosures].reverse())s('circle',{cx:r.x,cy:r.y,r:r.radius,class:'surface'});
+s('path',{d:data.marks.map((r,i)=>(i?'L':'M')+r.x+','+r.y).join(' '),class:'order','data-relation':'seat_order'});
+s('path',{d:'M352 320V47 M352 380V653',class:'axis'});
+s('circle',{cx:352,cy:350,r:29,fill:'var(--bg)',stroke:'var(--muted)'});s('text',{x:352,y:355,'text-anchor':'middle'},'E₄');
+for(const r of data.enclosures)s('text',{x:321,y:350-r.radius-4,'text-anchor':'end',class:'secondary'},'C'+sub(r.order));
+for(const r of data.marks){const filled=r.record_kind==='element_reference';
+const attrs={class:r.role+(filled?'':' unfilled'),'data-slot':r.z,'data-m':r.m,'data-seat':r.seat,'aria-label':filled?describe(r):`Unfilled reference slot ${r.z}; C22, seat ${r.seat}; ${roleWords[r.role]}`};
+if(filled)Object.assign(attrs,{'data-element':r.z,tabindex:0,role:'button','aria-pressed':'false'});
+const g=s('g',attrs);s('rect',{x:r.x-r.width/2,y:r.y-r.height/2,width:r.width,height:r.height,rx:3,class:'badge'},null,g);edge(r,g);s('text',{x:r.x,y:r.y+4.5,'text-anchor':'middle'},r.label,g);
+if(filled){g.addEventListener('click',()=>choose(r.z));g.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose(r.z);}});}}
+s('text',{x:352,y:673,'text-anchor':'middle',class:'secondary'},'Hμ · hinge axis');}
+function makeStrips(){for(const enclosure of data.enclosures){const row=document.createElement('div');row.className='strip';const label=document.createElement('span');label.className='strip-title';label.textContent='C'+sub(enclosure.order);row.append(label);const cells=document.createElement('div');cells.className='strip-cells';row.append(cells);
+for(const r of data.marks.filter(r=>r.m===enclosure.m)){const filled=r.record_kind==='element_reference',tile=document.createElement(filled?'button':'span');tile.className=(filled?'tile ':'empty ')+r.role;tile.dataset.slot=r.z;tile.textContent=r.label;if(filled){tile.type='button';tile.dataset.element=r.z;tile.setAttribute('aria-label',describe(r));tile.setAttribute('aria-pressed','false');tile.addEventListener('click',()=>choose(r.z));}else tile.setAttribute('aria-label',`Unfilled reference slot ${r.z}; ${roleWords[r.role]}`);cells.append(tile);}strips.append(row);}}
+function select(){const r=data.marks[selected-1],value=30*r.z+68*(A-r.z)+1+4*r.seat;
+document.getElementById('selection').textContent=`${r.label} · reference A ${r.reference_a} · C${sub(r.enclosure)} / seat ${r.seat} · local ${r.local.join(':')}`;
+document.getElementById('values').textContent=`Nuclear counts ${r.z}:${A-r.z} · support sum ${value} · Δ ${value-r.support_sum>=0?'+':''}${value-r.support_sum}`;
+Object.assign(root.dataset,{z:selected,a:A,m:r.m,seat:r.seat,local:r.local.join(':'),supportSum:value});
+for(const e of document.querySelectorAll('[data-element]')){const chosen=+e.dataset.element===selected;e.classList.toggle('selected',chosen);e.setAttribute('aria-pressed',String(chosen));}}
+function choose(z){selected=z;A=data.marks[z-1].reference_a;input.min=z;input.value=A;error.hidden=true;input.removeAttribute('aria-invalid');select();}
+input.addEventListener('input',()=>{const value=input.valueAsNumber;if(!Number.isInteger(value)||value<selected||value>1000000){error.textContent=`Use an integer A from ${selected} to 1,000,000. This is an input bound, not an isotope boundary.`;error.hidden=false;input.setAttribute('aria-invalid','true');return;}error.hidden=true;input.removeAttribute('aria-invalid');A=value;select();});
+function resize(){const narrow=root.getBoundingClientRect().width<640;chart.toggleAttribute('hidden',narrow);strips.hidden=!narrow;}
+draw();makeStrips();choose(selected);document.getElementById('binding').textContent='Ledger SHA-256 '+data.source_sha256.slice(0,16)+'…';
+new ResizeObserver(resize).observe(root);resize();
+})();
+</script>
+</body>
+</html>

@@ -15,15 +15,19 @@ Reginald Poyau.
 
 \bibitem{poyau-afc}
 Reginald Poyau.
-\newblock Axiomatic fundamentalism calculus ({AFC}) (all versions), 2025.
-\newblock All versions. DOI: \url{https://doi.org/10.5281/zenodo.17795590}.
+\newblock Axiomatic fundamentalism calculus ({AFC}), v2.4, 2025.
+\newblock Authority binding: v2.4, source commit
+  \texttt{21e66cd46b9a69a1996ed4fcecda53d831b414f8}. Concept DOI:
+  \url{https://doi.org/10.5281/zenodo.17795590}.
 
 \bibitem{poyau-aod-v4102}
 Reginald Poyau.
 \newblock Alpha$\leftrightarrow$omega dynamics ({A$\Omega$D}): The hidden
   temporal dynamics of stokes; the art of the leprechaun: Fractal calculus --
   $\mathfrak{S}$ (v41.02, main and manual), 2026.
-\newblock DOI: \url{https://doi.org/10.5281/zenodo.23426642}.
+\newblock Released v41.02; source commit
+  \texttt{6ac87ad518652249fed67af491ea4aab9d7225ce}. DOI:
+  \url{https://doi.org/10.5281/zenodo.23426642}.
 
 \bibitem{iupac-ame}
 M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.

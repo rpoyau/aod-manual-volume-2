@@ -1,156 +1,288 @@
 #!/usr/bin/env python3
+"""Generate the static Matter I reference and its same-data HTML companion.
+
+This renderer reads the canonical v2 ledger. Geometry expresses declared
+enclosure membership, role and seat order; it is not a physical trajectory.
+Generation is explicit. Importing this module does not read or write files.
 """
-Generates figures/aod_matter1_wheel_accessible.pdf
-Concentric Coord-0 Enclosure Wheel for Matter I: Elements 1-118 (AOD v41.02)
-Okabe-Ito Colorblind-Safe + WCAG AAA Contrast + Redundant Glyph/Stroke Encoding
-"""
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import math
 from pathlib import Path
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-from matplotlib.transforms import Affine2D
-import numpy as np
 
-ELEMENTS = [
-    "", "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",
-    "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca",
-    "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn",
-    "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr",
-    "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn",
-    "Sb", "Te", "I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd",
-    "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb",
-    "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg",
-    "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th",
-    "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm",
-    "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds",
-    "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
-]
-
-# Exoshedding / Yro unstable route elements (Tc=43, Pm=61, Po=84..Og=118)
-SHEDDING_Z = {43, 61} | set(range(84, 119))
-# Deficit / Open-Seat high-affinity acceptors (Halogens / Chalcogens / H)
-ACCEPTOR_Z = {1, 8, 9, 16, 17, 34, 35, 52, 53}
-# Coord-0 cumulative boundaries: Gamma_m = m(m+1) - 6 for m = 3..11
-GAMMA_M = {m * (m + 1) - 6 for m in range(3, 12)}
+WIDTH = 704.0
+HEIGHT = 804.0
+WIDTH_MM = 180.0
+HEIGHT_MM = WIDTH_MM * HEIGHT / WIDTH
+FONT_PT = 9.3
+MM_PER_INCH = 25.4
+POINTS_PER_INCH = 72.0
+BASE = 85.0
+PITCH = 26.0
+CX, CY = 352.0, 350.0
+BADGE_WIDTH, BADGE_HEIGHT = 52.0, 24.0
+COLORS = {
+    "ink": "#182737", "muted": "#536270", "line": "#a4afb9",
+    "alpha": "#f8eee0", "omega": "#e7f0f7", "hinge": "#eef0f3",
+    "boundary": "#e1e7ed", "slot": "#ffffff", "surface": "#eff4f5",
+}
+INT_FIELDS = (
+    "z", "mass_a", "m_order", "enclosure_l", "seat_s", "a_tritrio",
+    "b_tetratrio", "c_dimon", "support_sum", "is_group_boundary",
+    "is_named_anchor",
+)
 
 
-def build_concentric_wheel(out_path: str = "figures/aod_matter1_wheel_accessible.pdf") -> None:
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+def digest(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
-    fig, ax = plt.subplots(figsize=(10.2, 11.2), dpi=300)
-    ax.set_xlim(-12.6, 12.6)
-    ax.set_ylim(-13.6, 12.6)
-    ax.set_aspect("equal")
+
+def role(m: int, seat: int) -> str:
+    if seat < m:
+        return "alpha"
+    if seat == m:
+        return "hinge"
+    if seat < 2 * m:
+        return "omega"
+    return "boundary"
+
+
+def read_rows(path: Path) -> list[dict]:
+    with path.open(newline="", encoding="utf-8") as source:
+        reader = csv.DictReader(source)
+        required = {*INT_FIELDS, "symbol", "record_kind", "declaration_id"}
+        if not required.issubset(reader.fieldnames or []):
+            raise ValueError(f"{path}: missing v2 fields {sorted(required - set(reader.fieldnames or []))}")
+        records = []
+        for number, raw in enumerate(reader, 2):
+            try:
+                row = dict(raw)
+                for key in INT_FIELDS:
+                    if not raw[key] or raw[key].strip() != raw[key]:
+                        raise ValueError(f"invalid {key}")
+                    row[key] = int(raw[key])
+            except (KeyError, ValueError) as error:
+                raise ValueError(f"{path}:{number}: malformed integer: {error}") from error
+            records.append(row)
+    if [r["z"] for r in records] != list(range(1, 127)):
+        raise ValueError(f"{path}: expected ordered unique slots 1 through 126")
+    if len({r["declaration_id"] for r in records}) != 126:
+        raise ValueError(f"{path}: declaration IDs must be unique")
+    for row in records:
+        z, m, seat = row["z"], row["m_order"], row["seat_s"]
+        if not (3 <= m <= 11 and m * (m - 1) - 6 < z <= m * (m + 1) - 6):
+            raise ValueError(f"{path}: Z={z}: incorrect enclosure")
+        if seat != z - (m * (m - 1) - 6) or row["enclosure_l"] != 2 * m:
+            raise ValueError(f"{path}: Z={z}: incorrect seat or enclosure order")
+        if [row[k] for k in ("a_tritrio", "b_tetratrio", "c_dimon")] != [(seat + 1) // 2, seat // 2, seat % 2]:
+            raise ValueError(f"{path}: Z={z}: incorrect local tuple")
+        expected = 30 * z + 68 * (row["mass_a"] - z) + 1 + 4 * seat
+        if row["mass_a"] < z or row["support_sum"] != expected:
+            raise ValueError(f"{path}: Z={z}: inconsistent reference count/support sum")
+        kind = "element_reference" if z <= 118 else "unfilled_reference_slot"
+        if row["record_kind"] != kind:
+            raise ValueError(f"{path}: Z={z}: expected {kind}")
+        if row["is_group_boundary"] != int(seat == 2 * m) or row["is_named_anchor"] != int(seat == 2 * m and z <= 118):
+            raise ValueError(f"{path}: Z={z}: incorrect boundary attribute")
+        if z <= 118 and (not row["symbol"].isalpha() or len(row["symbol"]) > 2):
+            raise ValueError(f"{path}: Z={z}: malformed element symbol")
+    return records
+
+
+def build_layout(rows: list[dict]) -> dict:
+    marks = []
+    for row in rows:
+        z, m, seat = row["z"], row["m_order"], row["seat_s"]
+        theta = math.pi * seat / m
+        radius = BASE + PITCH * (m - 3) - PITCH * (1 - seat / (2 * m))
+        marks.append({
+            "z": z, "symbol": row["symbol"] if z <= 118 else None,
+            "record_kind": row["record_kind"], "declaration_id": row["declaration_id"],
+            "reference_a": row["mass_a"], "m": m, "enclosure": 2 * m,
+            "seat": seat, "local": [row[k] for k in ("a_tritrio", "b_tetratrio", "c_dimon")],
+            "support_sum": row["support_sum"], "role": role(m, seat),
+            "label": f"{z} {row['symbol']}" if z <= 118 else str(z),
+            "x": CX + radius * math.sin(theta), "y": CY - radius * math.cos(theta),
+            "width": BADGE_WIDTH, "height": BADGE_HEIGHT,
+        })
+    return {
+        "schema": "matter1-visual-layout-v1", "width": WIDTH, "height": HEIGHT,
+        "width_mm": WIDTH_MM, "height_mm": HEIGHT_MM, "font_pt": FONT_PT,
+        "coordinate_scope": "display coordinates, not physical radii",
+        "guide_relation": "seat_order", "marks": marks,
+        "enclosures": [{"m": m, "order": 2 * m, "x": CX, "y": CY,
+                        "radius": BASE + PITCH * (m - 3)} for m in range(3, 12)],
+    }
+
+
+def intersects(a: list[float], b: list[float], tolerance: float = 0.05) -> bool:
+    return min(a[2], b[2]) > max(a[0], b[0]) + tolerance and min(a[3], b[3]) > max(a[1], b[1]) + tolerance
+
+
+def validate_geometry(layout: dict, objects: list[dict]) -> dict:
+    """Check the actual renderer's text bounds, not estimated character widths."""
+    marks = layout["marks"]
+    badges = {m["z"]: [m["x"] - m["width"] / 2, m["y"] - m["height"] / 2,
+                       m["x"] + m["width"] / 2, m["y"] + m["height"] / 2] for m in marks}
+    errors = []
+    for index, mark in enumerate(marks):
+        for other in marks[index + 1:]:
+            if intersects(badges[mark["z"]], badges[other["z"]]):
+                errors.append(f"badge overlap {mark['z']}/{other['z']}")
+    for obj in objects:
+        bounds = obj["bounds"]
+        if bounds[0] < 0 or bounds[1] < 0 or bounds[2] > WIDTH or bounds[3] > HEIGHT:
+            errors.append(f"clipped text {obj['id']}")
+        if obj["font_pt"] < 9.0:
+            errors.append(f"undersized text {obj['id']}")
+        own = obj.get("z")
+        if own is not None:
+            badge = badges[own]
+            if bounds[0] < badge[0] + 1 or bounds[1] < badge[1] + 1 or bounds[2] > badge[2] - 1 or bounds[3] > badge[3] - 1:
+                errors.append(f"badge text overflow {own}")
+        for z, badge in badges.items():
+            if z != own and intersects(bounds, badge):
+                errors.append(f"text {obj['id']} overlaps badge {z}")
+    for index, obj in enumerate(objects):
+        for other in objects[index + 1:]:
+            if intersects(obj["bounds"], other["bounds"]):
+                errors.append(f"text collision {obj['id']}/{other['id']}")
+    if errors:
+        raise ValueError("figure geometry failed: " + "; ".join(errors))
+    return {"status": "PASS", "marks_checked": len(marks), "text_objects_checked": len(objects),
+            "badge_overlaps": [], "text_collisions": [], "clipping": [], "minimum_font_pt": min(x["font_pt"] for x in objects)}
+
+
+def draw_figure(layout: dict):
+    import matplotlib
+    matplotlib.use("Agg")
+    from matplotlib import pyplot as plt
+    from matplotlib.patches import Circle, FancyBboxPatch
+    from matplotlib.lines import Line2D
+
+    matplotlib.rcParams.update({"font.family": "DejaVu Sans", "pdf.fonttype": 42,
+                               "svg.fonttype": "none", "svg.hashsalt": "matter1-static-reference-v1"})
+    fig = plt.figure(figsize=(WIDTH_MM / MM_PER_INCH, HEIGHT_MM / MM_PER_INCH), dpi=144, facecolor="white")
+    ax = fig.add_axes([0, 0, 1, 1])
+    ax.set(xlim=(0, WIDTH), ylim=(HEIGHT, 0), aspect="equal")
     ax.axis("off")
+    texts = []
 
-    # Hemisphere background guides: Right = Alpha outbound (Pi_alpha), Left = Omega return (Pi_Omega)
-    wedge_alpha = patches.Wedge((0, 0), 11.45, -90, 90, facecolor="#F8FAFC", edgecolor="none", zorder=0)
-    wedge_omega = patches.Wedge((0, 0), 11.45, 90, 270, facecolor="#F1F5F9", edgecolor="none", zorder=0)
-    ax.add_patch(wedge_alpha)
-    ax.add_patch(wedge_omega)
+    def label(identifier, x, y, value, size=FONT_PT, ha="center", z=None, color=None, weight="normal"):
+        artist = ax.text(x, y, value, fontsize=size, ha=ha, va="center", color=color or COLORS["ink"], weight=weight, zorder=8)
+        artist.set_gid(identifier)
+        texts.append((identifier, artist, z))
 
-    # 12 o'clock Filled Enclosure Spine & 6 o'clock Hinge Axis
-    ax.plot([0, 0], [1.2, 11.65], color="#003366", lw=1.8, ls="-", zorder=1)
-    ax.plot([0, 0], [-11.65, -1.2], color="#334155", lw=1.4, ls="--", zorder=1)
-    ax.text(
-        0, 11.9,
-        r"12 o'clock Filled Enclosure Spine ($\Gamma_m = m(m+1)-6$, $m:m:0::2m$) [◆]",
-        ha="center", va="bottom", fontsize=9.2, fontweight="bold", color="#003366"
-    )
-    ax.text(
-        0, -11.95,
-        r"6 o'clock Structural Hinge Axis ($H_\mu$ Turnaround: $\Pi_\alpha \to \Pi_\Omega$)",
-        ha="center", va="top", fontsize=8.8, fontweight="bold", color="#1E293B"
-    )
-    ax.text(6.2, 11.3, r"$\Pi_\alpha$ Outbound ($\chi_\mu = +1$)",
-            ha="center", va="center", fontsize=8.0, fontweight="bold", color="#004D80")
-    ax.text(-6.2, 11.3, r"$\Pi_\Omega$ Return ($\chi_\mu = -1$)",
-            ha="center", va="center", fontsize=8.0, fontweight="bold", color="#334155")
+    def badge(x, y, w, h, which, empty=False, identifier=None):
+        patch = FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=3",
+                              linewidth=.55, edgecolor=COLORS["muted"],
+                              linestyle=(0, (1.5, 1.5)) if empty else "solid",
+                              facecolor=COLORS["slot" if empty else which], zorder=5)
+        if identifier:
+            patch.set_gid(identifier)
+        ax.add_patch(patch)
+        left, right, top, bottom = x - w / 2, x + w / 2, y - h / 2, y + h / 2
+        if which == "alpha":
+            xs, ys = [left, left], [top + 3, bottom - 3]
+        elif which == "omega":
+            xs, ys = [right, right], [top + 3, bottom - 3]
+        elif which == "hinge":
+            xs, ys = [left + 3, right - 3], [bottom, bottom]
+        else:
+            xs, ys = [left + 3, right - 3], [top, top]
+        ax.add_line(Line2D(xs, ys, linewidth=1.5, color=COLORS["ink"], solid_capstyle="butt", zorder=6))
 
-    # Core E4 Tetron Anchor
-    core = patches.Circle((0, 0), 1.18, facecolor="#000000", edgecolor="#E69F00", lw=2.4, zorder=4)
-    ax.add_patch(core)
-    ax.text(0, 0, "$E_4$\nTetron\n$0\\vdash$", ha="center", va="center",
-            color="#FFFFFF", fontsize=8.2, fontweight="bold", zorder=5)
+    label("title", CX, 23, "AΩD · Matter I — element reference", 13, weight="bold")
+    for shell in reversed(layout["enclosures"]):
+        ax.add_patch(Circle((CX, CY), shell["radius"], facecolor=COLORS["surface"], edgecolor=COLORS["line"], lw=.4, zorder=0))
+    marks = layout["marks"]
+    ax.plot([m["x"] for m in marks], [m["y"] for m in marks], color="#758797", alpha=.6, lw=.55, zorder=1)
+    ax.plot([CX, CX], [CY - 30, CY - 303], color=COLORS["muted"], lw=.55, zorder=2)
+    ax.plot([CX, CX], [CY + 30, CY + 303], color=COLORS["muted"], lw=.55, ls="--", zorder=2)
+    ax.add_patch(Circle((CX, CY), 29, facecolor="white", edgecolor=COLORS["muted"], lw=.7, zorder=3))
+    label("core", CX, CY, "E₄", 11)
+    for shell in layout["enclosures"]:
+        order = str(shell["order"]).translate(str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉"))
+        label(f"enclosure-{shell['order']}", CX - 31, CY - shell["radius"] - 8, "C" + order, ha="right")
+    for mark in marks:
+        z = mark["z"]
+        badge(mark["x"], mark["y"], BADGE_WIDTH, BADGE_HEIGHT, mark["role"], z > 118, f"slot-{z}")
+        label(f"label-{z}", mark["x"], mark["y"], mark["label"], z=z)
+    label("hinge-axis", CX, 669, "Hμ · hinge axis")
+    # Samples use exactly the same edge-role function as the element badges.
+    for x, which, wording in [(42, "alpha", "Πα role"), (198, "hinge", "Hμ hinge"),
+                              (351, "omega", "ΠΩ role"), (506, "boundary", "Boundary seat")]:
+        badge(x, 704, 23, 15, which)
+        label("legend-" + which, x + 20, 704, wording, ha="left")
+    badge(42, 735, 23, 15, "omega", True)
+    label("legend-unfilled", 62, 735, "Unfilled reference slot", ha="left")
+    ax.plot([351 - 12, 351 + 12], [735, 735], color="#758797", alpha=.6, lw=.55)
+    label("legend-order", 371, 735, "Line: seat order", ha="left")
+    label("scope-reference", CX, 768, "Reference set: Z = 1–118. Slots 119–126 are unfilled in this reference.")
+    label("scope-geometry", CX, 789, "Enclosure and seat relations · shading and spacing are display cues.")
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    inverse = ax.transData.inverted()
+    measured = []
+    for identifier, artist, z in texts:
+        box = artist.get_window_extent(renderer)
+        corners = inverse.transform([[box.x0, box.y0], [box.x1, box.y1]])
+        bounds = [float(min(corners[:, 0])), float(min(corners[:, 1])),
+                  float(max(corners[:, 0])), float(max(corners[:, 1]))]
+        measured.append({"id": identifier, "text": artist.get_text(), "font_pt": artist.get_fontsize(),
+                         "bounds": bounds, **({"z": z} if z is not None else {})})
+    checks = validate_geometry(layout, measured)
+    return fig, measured, checks
 
-    # Concentric C_{2m} Rings (m = 3..11 -> C_6..C_22)
-    z_prev = 0
-    for idx, m in enumerate(range(3, 12)):
-        seats = 2 * m
-        gamma = m * (m + 1) - 6
-        r = 2.02 + idx * 1.02
 
-        ring = patches.Circle((0, 0), r, fill=False, edgecolor="#94A3B8", lw=1.0, zorder=2)
-        ax.add_patch(ring)
+def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path) -> dict:
+    rows = read_rows(ledger)
+    layout = build_layout(rows)
+    layout["source_sha256"] = digest(ledger)
+    figure, measured, checks = draw_figure(layout)
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    visual_dir.mkdir(parents=True, exist_ok=True)
+    basename = "aod_matter1_wheel_accessible"
+    pdf, svg = figure_dir / (basename + ".pdf"), figure_dir / (basename + ".svg")
+    figure.savefig(pdf, metadata={"Title": "Matter I — declared enclosure and seat reference", "Author": "Reginald Poyau",
+                                 "Subject": "118 element references and eight unfilled reference slots; seat order, not physical trajectories",
+                                 "CreationDate": None, "ModDate": None})
+    figure.savefig(svg, metadata={"Title": "Matter I — declared enclosure and seat reference", "Date": None})
+    from matplotlib import pyplot as plt
+    plt.close(figure)
+    # The companion and checks receive the same typed records and coordinates.
+    serialized = json.dumps(layout, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
+    (visual_dir / "matter1-layout.json").write_text(serialized, encoding="utf-8")
+    html = template.read_text(encoding="utf-8")
+    if html.count("__MATTER1_LAYOUT_JSON__") != 1:
+        raise ValueError("companion template must contain exactly one data binding")
+    html = html.replace("__MATTER1_LAYOUT_JSON__", serialized.replace("</", "<\\/"))
+    (visual_dir / "matter1-reference.html").write_text(html, encoding="utf-8")
+    manifest = {"schema": "matter1-figure-manifest-v1", "source_sha256": digest(ledger),
+                "profile": "static relational reference", "width_mm": WIDTH_MM, "height_mm": HEIGHT_MM,
+                "geometry_checks": checks, "measured_text": measured,
+                "files": {pdf.name: digest(pdf), svg.name: digest(svg),
+                          "matter1-layout.json": digest(visual_dir / "matter1-layout.json"),
+                          "matter1-reference.html": digest(visual_dir / "matter1-reference.html")}}
+    (figure_dir / "matter1_figure_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return manifest
 
-        ax.text(-0.42, r + 0.34, f"$C_{{{seats}}}$", fontsize=7.0, fontweight="bold",
-                color="#1E293B", ha="right", va="center")
 
-        for s in range(1, seats + 1):
-            z = z_prev + s
-            theta_deg = 90.0 - (s / seats) * 360.0
-            theta_rad = np.deg2rad(theta_deg)
-            x, y = r * np.cos(theta_rad), r * np.sin(theta_rad)
-
-            if z > 118:
-                # [1] Unretained Open Cutoff (Z > 118 on C_22): hollow dotted slot
-                fc, ec, tc, ls, lw = "#F8FAFC", "#64748B", "#475569", ":", 1.1
-                label = f"{z}\n--"
-            elif z in GAMMA_M:
-                # [2] Filled Shared Enclosure Anchor (Z = Gamma_m): Deep Navy + Gold border + ◆
-                fc, ec, tc, ls, lw = "#003366", "#E69F00", "#FFFFFF", "-", 2.0
-                suffix = "↑" if z in SHEDDING_Z else ""
-                label = f"{z}◆\n{ELEMENTS[z]}{suffix}"
-            elif z in SHEDDING_Z:
-                # [3] Exoshedding / Yro Route (X_shedding > 0): Vermilion-Orange + Dashed + ↑
-                fc, ec, tc, ls, lw = "#FFF0E0", "#D55E00", "#000000", "--", 1.35
-                label = f"{z}↑\n{ELEMENTS[z]}"
-            elif z in ACCEPTOR_Z:
-                # [4] Deficit / Open-Seat Acceptor (S_{n+1} < 0, E_2^0): Okabe-Ito Purple/Magenta + Dash-dot + ∘
-                fc, ec, tc, ls, lw = "#F3E8FF", "#6B21A8", "#000000", "-.", 1.4
-                label = f"{z}∘\n{ELEMENTS[z]}"
-            else:
-                # [5] Seated Retained Closure (X_shedding = 0): Crisp White + Okabe Blue solid
-                fc, ec, tc, ls, lw = "#FFFFFF", "#0072B2", "#000000", "-", 1.25
-                label = f"{z}\n{ELEMENTS[z]}"
-
-            w, h = 0.80, 0.54
-            pill = patches.FancyBboxPatch(
-                (-w / 2, -h / 2), w, h,
-                boxstyle="round,pad=0.04,rounding_size=0.16",
-                facecolor=fc, edgecolor=ec, linewidth=lw, linestyle=ls, zorder=4
-            )
-
-            rot_angle = theta_deg - 90.0
-            if np.sin(theta_rad) < -0.01 or np.isclose(theta_deg % 360.0, 180.0):
-                rot_angle += 180.0
-            t = Affine2D().rotate_deg(rot_angle).translate(x, y) + ax.transData
-            ax.add_patch(pill)
-            pill.set_transform(t)
-
-            ax.text(x, y, label, ha="center", va="center", fontsize=5.8,
-                    fontweight="bold", color=tc, rotation=rot_angle, zorder=5)
-
-        z_prev = gamma
-
-    legend_items = [
-        patches.Patch(facecolor="#003366", edgecolor="#E69F00", lw=2.0, ls="-",
-                      label=r"[◆] Filled Enclosure Anchor ($Z=\Gamma_m$, Navy / Solid Gold)"),
-        patches.Patch(facecolor="#FFFFFF", edgecolor="#0072B2", lw=1.3, ls="-",
-                      label=r"Seated Closure ($S_{n+1}=0, X_{\mathrm{shedding}}=0$, White / Solid Blue)"),
-        patches.Patch(facecolor="#F3E8FF", edgecolor="#6B21A8", lw=1.4, ls="-.",
-                      label=r"[∘] Open-Seat Acceptor ($S_{n+1}<0, E_2^0$, Purple / Dash-Dot)"),
-        patches.Patch(facecolor="#FFF0E0", edgecolor="#D55E00", lw=1.4, ls="--",
-                      label=r"[↑] Exoshedding / Yro Route ($X_{\mathrm{shedding}}>0$, Vermilion / Dashed)"),
-        patches.Patch(facecolor="none", edgecolor="#64748B", lw=1.1, ls=":",
-                      label=r"[--] Unretained Open Cutoff ($Z=119\dots 126$ on $C_{22}$, Dotted Hollow)")
-    ]
-    ax.legend(handles=legend_items, loc="lower center", bbox_to_anchor=(0.5, -0.04),
-              ncol=2, frameon=True, fontsize=7.6, edgecolor="#334155")
-
-    plt.tight_layout()
-    plt.savefig(out_path, bbox_inches="tight")
-    plt.close(fig)
+def main() -> None:
+    root = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--ledger", type=Path, default=root / "data/m1/matter1_elements_1_118_ledger.csv")
+    parser.add_argument("--figure-dir", type=Path, default=root / "figures")
+    parser.add_argument("--visual-dir", type=Path, default=root / "visuals")
+    parser.add_argument("--template", type=Path, default=root / "visuals/matter1-reference.template.html")
+    args = parser.parse_args()
+    report = generate(args.ledger, args.figure_dir, args.visual_dir, args.template)
+    print(f"Generated 118 element references + 8 unfilled slots; {report['width_mm']} × {report['height_mm']:.3f} mm; geometry PASS")
 
 
 if __name__ == "__main__":
-    build_concentric_wheel()
+    main()

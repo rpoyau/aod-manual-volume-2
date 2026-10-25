@@ -1,0 +1,709 @@
+AtomicNumber,Symbol,Name,lane,lane_name,source_fields,aod_prediction,error_coordinate,coord0_group_m,closure_lane,row_status
+1,H,Hydrogen,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+1,H,Hydrogen,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+1,H,Hydrogen,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+1,H,Hydrogen,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+1,H,Hydrogen,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+1,H,Hydrogen,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+2,He,Helium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+2,He,Helium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+2,He,Helium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+2,He,Helium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+2,He,Helium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+2,He,Helium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+3,Li,Lithium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+3,Li,Lithium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+3,Li,Lithium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+3,Li,Lithium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+3,Li,Lithium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+3,Li,Lithium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+4,Be,Beryllium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+4,Be,Beryllium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+4,Be,Beryllium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+4,Be,Beryllium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+4,Be,Beryllium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+4,Be,Beryllium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+5,B,Boron,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+5,B,Boron,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+5,B,Boron,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+5,B,Boron,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+5,B,Boron,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+5,B,Boron,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+6,C,Carbon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,3,C_6,active_registry
+6,C,Carbon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,3,C_6,declared_lane_not_scored_in_v94
+6,C,Carbon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,3,C_6,declared_lane_not_scored_in_v94
+6,C,Carbon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,3,C_6,declared_lane_not_scored_in_v94
+6,C,Carbon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,3,C_6,declared_lane_not_scored_in_v94
+6,C,Carbon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,3,C_6,declared_lane_not_scored_in_v94
+7,N,Nitrogen,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+7,N,Nitrogen,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+7,N,Nitrogen,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+7,N,Nitrogen,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+7,N,Nitrogen,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+7,N,Nitrogen,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+8,O,Oxygen,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+8,O,Oxygen,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+8,O,Oxygen,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+8,O,Oxygen,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+8,O,Oxygen,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+8,O,Oxygen,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+9,F,Fluorine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+9,F,Fluorine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+9,F,Fluorine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+9,F,Fluorine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+9,F,Fluorine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+9,F,Fluorine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+10,Ne,Neon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+10,Ne,Neon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+10,Ne,Neon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+10,Ne,Neon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+10,Ne,Neon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+10,Ne,Neon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+11,Na,Sodium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+11,Na,Sodium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+11,Na,Sodium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+11,Na,Sodium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+11,Na,Sodium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+11,Na,Sodium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+12,Mg,Magnesium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+12,Mg,Magnesium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+12,Mg,Magnesium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+12,Mg,Magnesium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+12,Mg,Magnesium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+12,Mg,Magnesium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+13,Al,Aluminium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+13,Al,Aluminium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+13,Al,Aluminium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+13,Al,Aluminium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+13,Al,Aluminium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+13,Al,Aluminium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+14,Si,Silicon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,4,C_8,active_registry
+14,Si,Silicon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,4,C_8,declared_lane_not_scored_in_v94
+14,Si,Silicon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,4,C_8,declared_lane_not_scored_in_v94
+14,Si,Silicon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,4,C_8,declared_lane_not_scored_in_v94
+14,Si,Silicon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,4,C_8,declared_lane_not_scored_in_v94
+14,Si,Silicon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,4,C_8,declared_lane_not_scored_in_v94
+15,P,Phosphorus,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+15,P,Phosphorus,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+15,P,Phosphorus,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+15,P,Phosphorus,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+15,P,Phosphorus,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+15,P,Phosphorus,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+16,S,Sulfur,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+16,S,Sulfur,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+16,S,Sulfur,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+16,S,Sulfur,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+16,S,Sulfur,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+16,S,Sulfur,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+17,Cl,Chlorine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+17,Cl,Chlorine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+17,Cl,Chlorine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+17,Cl,Chlorine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+17,Cl,Chlorine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+17,Cl,Chlorine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+18,Ar,Argon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+18,Ar,Argon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+18,Ar,Argon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+18,Ar,Argon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+18,Ar,Argon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+18,Ar,Argon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+19,K,Potassium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+19,K,Potassium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+19,K,Potassium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+19,K,Potassium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+19,K,Potassium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+19,K,Potassium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+20,Ca,Calcium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+20,Ca,Calcium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+20,Ca,Calcium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+20,Ca,Calcium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+20,Ca,Calcium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+20,Ca,Calcium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+21,Sc,Scandium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+21,Sc,Scandium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+21,Sc,Scandium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+21,Sc,Scandium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+21,Sc,Scandium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+21,Sc,Scandium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+22,Ti,Titanium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+22,Ti,Titanium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+22,Ti,Titanium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+22,Ti,Titanium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+22,Ti,Titanium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+22,Ti,Titanium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+23,V,Vanadium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+23,V,Vanadium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+23,V,Vanadium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+23,V,Vanadium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+23,V,Vanadium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+23,V,Vanadium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+24,Cr,Chromium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,5,C_10,active_registry
+24,Cr,Chromium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,5,C_10,declared_lane_not_scored_in_v94
+24,Cr,Chromium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,5,C_10,declared_lane_not_scored_in_v94
+24,Cr,Chromium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,5,C_10,declared_lane_not_scored_in_v94
+24,Cr,Chromium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,5,C_10,declared_lane_not_scored_in_v94
+24,Cr,Chromium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,5,C_10,declared_lane_not_scored_in_v94
+25,Mn,Manganese,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+25,Mn,Manganese,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+25,Mn,Manganese,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+25,Mn,Manganese,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+25,Mn,Manganese,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+25,Mn,Manganese,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+26,Fe,Iron,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+26,Fe,Iron,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+26,Fe,Iron,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+26,Fe,Iron,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+26,Fe,Iron,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+26,Fe,Iron,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+27,Co,Cobalt,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+27,Co,Cobalt,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+27,Co,Cobalt,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+27,Co,Cobalt,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+27,Co,Cobalt,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+27,Co,Cobalt,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+28,Ni,Nickel,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+28,Ni,Nickel,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+28,Ni,Nickel,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+28,Ni,Nickel,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+28,Ni,Nickel,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+28,Ni,Nickel,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+29,Cu,Copper,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+29,Cu,Copper,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+29,Cu,Copper,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+29,Cu,Copper,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+29,Cu,Copper,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+29,Cu,Copper,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+30,Zn,Zinc,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+30,Zn,Zinc,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+30,Zn,Zinc,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+30,Zn,Zinc,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+30,Zn,Zinc,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+30,Zn,Zinc,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+31,Ga,Gallium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+31,Ga,Gallium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+31,Ga,Gallium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+31,Ga,Gallium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+31,Ga,Gallium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+31,Ga,Gallium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+32,Ge,Germanium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+32,Ge,Germanium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+32,Ge,Germanium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+32,Ge,Germanium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+32,Ge,Germanium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+32,Ge,Germanium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+33,As,Arsenic,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+33,As,Arsenic,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+33,As,Arsenic,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+33,As,Arsenic,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+33,As,Arsenic,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+33,As,Arsenic,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+34,Se,Selenium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+34,Se,Selenium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+34,Se,Selenium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+34,Se,Selenium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+34,Se,Selenium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+34,Se,Selenium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+35,Br,Bromine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+35,Br,Bromine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+35,Br,Bromine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+35,Br,Bromine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+35,Br,Bromine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+35,Br,Bromine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+36,Kr,Krypton,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,6,C_12,active_registry
+36,Kr,Krypton,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,6,C_12,declared_lane_not_scored_in_v94
+36,Kr,Krypton,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,6,C_12,declared_lane_not_scored_in_v94
+36,Kr,Krypton,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,6,C_12,declared_lane_not_scored_in_v94
+36,Kr,Krypton,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,6,C_12,declared_lane_not_scored_in_v94
+36,Kr,Krypton,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,6,C_12,declared_lane_not_scored_in_v94
+37,Rb,Rubidium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+37,Rb,Rubidium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+37,Rb,Rubidium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+37,Rb,Rubidium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+37,Rb,Rubidium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+37,Rb,Rubidium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+38,Sr,Strontium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+38,Sr,Strontium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+38,Sr,Strontium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+38,Sr,Strontium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+38,Sr,Strontium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+38,Sr,Strontium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+39,Y,Yttrium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+39,Y,Yttrium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+39,Y,Yttrium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+39,Y,Yttrium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+39,Y,Yttrium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+39,Y,Yttrium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+40,Zr,Zirconium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+40,Zr,Zirconium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+40,Zr,Zirconium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+40,Zr,Zirconium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+40,Zr,Zirconium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+40,Zr,Zirconium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+41,Nb,Niobium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+41,Nb,Niobium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+41,Nb,Niobium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+41,Nb,Niobium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+41,Nb,Niobium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+41,Nb,Niobium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+42,Mo,Molybdenum,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+42,Mo,Molybdenum,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+42,Mo,Molybdenum,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+42,Mo,Molybdenum,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+42,Mo,Molybdenum,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+42,Mo,Molybdenum,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+43,Tc,Technetium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+43,Tc,Technetium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+43,Tc,Technetium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+43,Tc,Technetium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+43,Tc,Technetium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+43,Tc,Technetium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+44,Ru,Ruthenium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+44,Ru,Ruthenium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+44,Ru,Ruthenium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+44,Ru,Ruthenium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+44,Ru,Ruthenium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+44,Ru,Ruthenium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+45,Rh,Rhodium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+45,Rh,Rhodium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+45,Rh,Rhodium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+45,Rh,Rhodium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+45,Rh,Rhodium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+45,Rh,Rhodium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+46,Pd,Palladium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+46,Pd,Palladium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+46,Pd,Palladium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+46,Pd,Palladium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+46,Pd,Palladium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+46,Pd,Palladium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+47,Ag,Silver,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+47,Ag,Silver,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+47,Ag,Silver,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+47,Ag,Silver,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+47,Ag,Silver,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+47,Ag,Silver,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+48,Cd,Cadmium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+48,Cd,Cadmium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+48,Cd,Cadmium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+48,Cd,Cadmium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+48,Cd,Cadmium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+48,Cd,Cadmium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+49,In,Indium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+49,In,Indium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+49,In,Indium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+49,In,Indium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+49,In,Indium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+49,In,Indium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+50,Sn,Tin,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,7,C_14,active_registry
+50,Sn,Tin,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,7,C_14,declared_lane_not_scored_in_v94
+50,Sn,Tin,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,7,C_14,declared_lane_not_scored_in_v94
+50,Sn,Tin,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,7,C_14,declared_lane_not_scored_in_v94
+50,Sn,Tin,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,7,C_14,declared_lane_not_scored_in_v94
+50,Sn,Tin,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,7,C_14,declared_lane_not_scored_in_v94
+51,Sb,Antimony,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+51,Sb,Antimony,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+51,Sb,Antimony,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+51,Sb,Antimony,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+51,Sb,Antimony,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+51,Sb,Antimony,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+52,Te,Tellurium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+52,Te,Tellurium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+52,Te,Tellurium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+52,Te,Tellurium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+52,Te,Tellurium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+52,Te,Tellurium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+53,I,Iodine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+53,I,Iodine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+53,I,Iodine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+53,I,Iodine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+53,I,Iodine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+53,I,Iodine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+54,Xe,Xenon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+54,Xe,Xenon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+54,Xe,Xenon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+54,Xe,Xenon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+54,Xe,Xenon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+54,Xe,Xenon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+55,Cs,Caesium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+55,Cs,Caesium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+55,Cs,Caesium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+55,Cs,Caesium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+55,Cs,Caesium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+55,Cs,Caesium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+56,Ba,Barium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+56,Ba,Barium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+56,Ba,Barium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+56,Ba,Barium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+56,Ba,Barium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+56,Ba,Barium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+57,La,Lanthanum,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+57,La,Lanthanum,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+57,La,Lanthanum,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+57,La,Lanthanum,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+57,La,Lanthanum,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+57,La,Lanthanum,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+58,Ce,Cerium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+58,Ce,Cerium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+58,Ce,Cerium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+58,Ce,Cerium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+58,Ce,Cerium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+58,Ce,Cerium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+59,Pr,Praseodymium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+59,Pr,Praseodymium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+59,Pr,Praseodymium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+59,Pr,Praseodymium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+59,Pr,Praseodymium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+59,Pr,Praseodymium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+60,Nd,Neodymium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+60,Nd,Neodymium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+60,Nd,Neodymium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+60,Nd,Neodymium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+60,Nd,Neodymium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+60,Nd,Neodymium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+61,Pm,Promethium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+61,Pm,Promethium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+61,Pm,Promethium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+61,Pm,Promethium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+61,Pm,Promethium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+61,Pm,Promethium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+62,Sm,Samarium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+62,Sm,Samarium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+62,Sm,Samarium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+62,Sm,Samarium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+62,Sm,Samarium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+62,Sm,Samarium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+63,Eu,Europium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+63,Eu,Europium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+63,Eu,Europium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+63,Eu,Europium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+63,Eu,Europium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+63,Eu,Europium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+64,Gd,Gadolinium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+64,Gd,Gadolinium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+64,Gd,Gadolinium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+64,Gd,Gadolinium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+64,Gd,Gadolinium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+64,Gd,Gadolinium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+65,Tb,Terbium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+65,Tb,Terbium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+65,Tb,Terbium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+65,Tb,Terbium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+65,Tb,Terbium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+65,Tb,Terbium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+66,Dy,Dysprosium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,8,C_16,active_registry
+66,Dy,Dysprosium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,8,C_16,declared_lane_not_scored_in_v94
+66,Dy,Dysprosium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,8,C_16,declared_lane_not_scored_in_v94
+66,Dy,Dysprosium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,8,C_16,declared_lane_not_scored_in_v94
+66,Dy,Dysprosium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,8,C_16,declared_lane_not_scored_in_v94
+66,Dy,Dysprosium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,8,C_16,declared_lane_not_scored_in_v94
+67,Ho,Holmium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+67,Ho,Holmium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+67,Ho,Holmium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+67,Ho,Holmium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+67,Ho,Holmium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+67,Ho,Holmium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+68,Er,Erbium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+68,Er,Erbium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+68,Er,Erbium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+68,Er,Erbium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+68,Er,Erbium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+68,Er,Erbium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+69,Tm,Thulium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+69,Tm,Thulium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+69,Tm,Thulium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+69,Tm,Thulium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+69,Tm,Thulium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+69,Tm,Thulium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+70,Yb,Ytterbium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+70,Yb,Ytterbium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+70,Yb,Ytterbium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+70,Yb,Ytterbium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+70,Yb,Ytterbium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+70,Yb,Ytterbium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+71,Lu,Lutetium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+71,Lu,Lutetium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+71,Lu,Lutetium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+71,Lu,Lutetium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+71,Lu,Lutetium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+71,Lu,Lutetium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+72,Hf,Hafnium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+72,Hf,Hafnium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+72,Hf,Hafnium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+72,Hf,Hafnium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+72,Hf,Hafnium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+72,Hf,Hafnium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+73,Ta,Tantalum,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+73,Ta,Tantalum,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+73,Ta,Tantalum,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+73,Ta,Tantalum,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+73,Ta,Tantalum,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+73,Ta,Tantalum,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+74,W,Tungsten,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+74,W,Tungsten,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+74,W,Tungsten,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+74,W,Tungsten,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+74,W,Tungsten,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+74,W,Tungsten,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+75,Re,Rhenium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+75,Re,Rhenium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+75,Re,Rhenium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+75,Re,Rhenium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+75,Re,Rhenium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+75,Re,Rhenium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+76,Os,Osmium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+76,Os,Osmium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+76,Os,Osmium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+76,Os,Osmium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+76,Os,Osmium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+76,Os,Osmium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+77,Ir,Iridium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+77,Ir,Iridium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+77,Ir,Iridium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+77,Ir,Iridium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+77,Ir,Iridium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+77,Ir,Iridium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+78,Pt,Platinum,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+78,Pt,Platinum,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+78,Pt,Platinum,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+78,Pt,Platinum,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+78,Pt,Platinum,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+78,Pt,Platinum,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+79,Au,Gold,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+79,Au,Gold,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+79,Au,Gold,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+79,Au,Gold,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+79,Au,Gold,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+79,Au,Gold,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+80,Hg,Mercury,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+80,Hg,Mercury,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+80,Hg,Mercury,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+80,Hg,Mercury,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+80,Hg,Mercury,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+80,Hg,Mercury,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+81,Tl,Thallium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+81,Tl,Thallium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+81,Tl,Thallium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+81,Tl,Thallium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+81,Tl,Thallium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+81,Tl,Thallium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+82,Pb,Lead,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+82,Pb,Lead,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+82,Pb,Lead,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+82,Pb,Lead,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+82,Pb,Lead,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+82,Pb,Lead,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+83,Bi,Bismuth,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+83,Bi,Bismuth,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+83,Bi,Bismuth,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+83,Bi,Bismuth,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+83,Bi,Bismuth,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+83,Bi,Bismuth,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+84,Po,Polonium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,9,C_18,active_registry
+84,Po,Polonium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,9,C_18,declared_lane_not_scored_in_v94
+84,Po,Polonium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,9,C_18,declared_lane_not_scored_in_v94
+84,Po,Polonium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,9,C_18,declared_lane_not_scored_in_v94
+84,Po,Polonium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,9,C_18,declared_lane_not_scored_in_v94
+84,Po,Polonium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,9,C_18,declared_lane_not_scored_in_v94
+85,At,Astatine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+85,At,Astatine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+85,At,Astatine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+85,At,Astatine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+85,At,Astatine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+85,At,Astatine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+86,Rn,Radon,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+86,Rn,Radon,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+86,Rn,Radon,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+86,Rn,Radon,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+86,Rn,Radon,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+86,Rn,Radon,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+87,Fr,Francium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+87,Fr,Francium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+87,Fr,Francium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+87,Fr,Francium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+87,Fr,Francium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+87,Fr,Francium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+88,Ra,Radium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+88,Ra,Radium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+88,Ra,Radium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+88,Ra,Radium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+88,Ra,Radium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+88,Ra,Radium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+89,Ac,Actinium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+89,Ac,Actinium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+89,Ac,Actinium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+89,Ac,Actinium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+89,Ac,Actinium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+89,Ac,Actinium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+90,Th,Thorium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+90,Th,Thorium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+90,Th,Thorium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+90,Th,Thorium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+90,Th,Thorium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+90,Th,Thorium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+91,Pa,Protactinium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+91,Pa,Protactinium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+91,Pa,Protactinium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+91,Pa,Protactinium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+91,Pa,Protactinium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+91,Pa,Protactinium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+92,U,Uranium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+92,U,Uranium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+92,U,Uranium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+92,U,Uranium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+92,U,Uranium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+92,U,Uranium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+93,Np,Neptunium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+93,Np,Neptunium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+93,Np,Neptunium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+93,Np,Neptunium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+93,Np,Neptunium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+93,Np,Neptunium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+94,Pu,Plutonium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+94,Pu,Plutonium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+94,Pu,Plutonium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+94,Pu,Plutonium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+94,Pu,Plutonium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+94,Pu,Plutonium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+95,Am,Americium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+95,Am,Americium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+95,Am,Americium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+95,Am,Americium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+95,Am,Americium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+95,Am,Americium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+96,Cm,Curium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+96,Cm,Curium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+96,Cm,Curium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+96,Cm,Curium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+96,Cm,Curium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+96,Cm,Curium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+97,Bk,Berkelium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+97,Bk,Berkelium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+97,Bk,Berkelium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+97,Bk,Berkelium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+97,Bk,Berkelium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+97,Bk,Berkelium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+98,Cf,Californium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+98,Cf,Californium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+98,Cf,Californium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+98,Cf,Californium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+98,Cf,Californium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+98,Cf,Californium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+99,Es,Einsteinium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+99,Es,Einsteinium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+99,Es,Einsteinium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+99,Es,Einsteinium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+99,Es,Einsteinium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+99,Es,Einsteinium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+100,Fm,Fermium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+100,Fm,Fermium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+100,Fm,Fermium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+100,Fm,Fermium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+100,Fm,Fermium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+100,Fm,Fermium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+101,Md,Mendelevium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+101,Md,Mendelevium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+101,Md,Mendelevium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+101,Md,Mendelevium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+101,Md,Mendelevium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+101,Md,Mendelevium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+102,No,Nobelium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+102,No,Nobelium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+102,No,Nobelium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+102,No,Nobelium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+102,No,Nobelium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+102,No,Nobelium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+103,Lr,Lawrencium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+103,Lr,Lawrencium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+103,Lr,Lawrencium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+103,Lr,Lawrencium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+103,Lr,Lawrencium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+103,Lr,Lawrencium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+104,Rf,Rutherfordium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,10,C_20,active_registry
+104,Rf,Rutherfordium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,10,C_20,declared_lane_not_scored_in_v94
+104,Rf,Rutherfordium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,10,C_20,declared_lane_not_scored_in_v94
+104,Rf,Rutherfordium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,10,C_20,declared_lane_not_scored_in_v94
+104,Rf,Rutherfordium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,10,C_20,declared_lane_not_scored_in_v94
+104,Rf,Rutherfordium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,10,C_20,declared_lane_not_scored_in_v94
+105,Db,Dubnium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+105,Db,Dubnium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+105,Db,Dubnium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+105,Db,Dubnium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+105,Db,Dubnium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+105,Db,Dubnium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+106,Sg,Seaborgium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+106,Sg,Seaborgium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+106,Sg,Seaborgium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+106,Sg,Seaborgium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+106,Sg,Seaborgium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+106,Sg,Seaborgium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+107,Bh,Bohrium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+107,Bh,Bohrium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+107,Bh,Bohrium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+107,Bh,Bohrium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+107,Bh,Bohrium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+107,Bh,Bohrium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+108,Hs,Hassium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+108,Hs,Hassium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+108,Hs,Hassium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+108,Hs,Hassium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+108,Hs,Hassium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+108,Hs,Hassium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+109,Mt,Meitnerium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+109,Mt,Meitnerium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+109,Mt,Meitnerium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+109,Mt,Meitnerium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+109,Mt,Meitnerium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+109,Mt,Meitnerium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+110,Ds,Darmstadtium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+110,Ds,Darmstadtium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+110,Ds,Darmstadtium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+110,Ds,Darmstadtium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+110,Ds,Darmstadtium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+110,Ds,Darmstadtium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+111,Rg,Roentgenium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+111,Rg,Roentgenium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+111,Rg,Roentgenium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+111,Rg,Roentgenium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+111,Rg,Roentgenium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+111,Rg,Roentgenium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+112,Cn,Copernicium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+112,Cn,Copernicium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+112,Cn,Copernicium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+112,Cn,Copernicium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+112,Cn,Copernicium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+112,Cn,Copernicium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+113,Nh,Nihonium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+113,Nh,Nihonium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+113,Nh,Nihonium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+113,Nh,Nihonium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+113,Nh,Nihonium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+113,Nh,Nihonium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+114,Fl,Flerovium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+114,Fl,Flerovium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+114,Fl,Flerovium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+114,Fl,Flerovium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+114,Fl,Flerovium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+114,Fl,Flerovium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+115,Mc,Moscovium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+115,Mc,Moscovium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+115,Mc,Moscovium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+115,Mc,Moscovium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+115,Mc,Moscovium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+115,Mc,Moscovium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+116,Lv,Livermorium,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+116,Lv,Livermorium,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+116,Lv,Livermorium,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+116,Lv,Livermorium,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+116,Lv,Livermorium,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+116,Lv,Livermorium,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+117,Ts,Tennessine,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+117,Ts,Tennessine,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+117,Ts,Tennessine,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+117,Ts,Tennessine,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+117,Ts,Tennessine,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+117,Ts,Tennessine,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94
+118,Og,Oganesson,E0,identity / registry,AtomicNumber;Symbol;Name,"Z,m,C_2m,range position",registry audit / DeltaZ,11,C_22,active_registry
+118,Og,Oganesson,E1,placement / classification,GroupBlock;ElectronConfiguration;StandardState metadata,coord-0 placement packet,classification residual,11,C_22,declared_lane_not_scored_in_v94
+118,Og,Oganesson,E2,atomic mass / standard atomic weight,AtomicMass / source Ar(Z),x_hat_Z,epsilon_A / interval hit,11,C_22,declared_lane_not_scored_in_v94
+118,Og,Oganesson,E3,isotope support,isotope support target,I_hat_Z,TP/FP/FN/J,11,C_22,declared_lane_not_scored_in_v94
+118,Og,Oganesson,E4,spectral lane,wavelength / line records,R_AOD,Delta_R / epsilon_percent,11,C_22,declared_lane_not_scored_in_v94
+118,Og,Oganesson,E5,reaction / route lane,reaction products,Delta_close / route packet,product / route residual,11,C_22,declared_lane_not_scored_in_v94

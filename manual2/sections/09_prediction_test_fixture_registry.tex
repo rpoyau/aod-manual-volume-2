@@ -1,31 +1,36 @@
-\section{Prediction-Test Fixture Registry}\label{manual2:prediction-test-registry}
-\aodnoteblock{Scope}{This registry records completion fields for Matter~I ($Z = 1 \dots 118$ and $\mathsf{C}_{22}$ cutoff $119 \dots 126$) fixtures and comparisons. Rows carry their data-support class, active fields, required A\(\Omega\) calculation, and audit artifact.}
+\section{Reference, History and Pending-Comparison Registry}\label{manual2:prediction-test-registry}
+\paragraph{Setup.}
+This registry distinguishes active static calculations, preserved historical declarations and pending native or measured comparisons. It does not classify every integer table as a completed native simulation.
 
-{\scriptsize
-\setlength{\tabcolsep}{3.5pt}
-\begin{longtable}{@{}p{0.20\textwidth}p{0.07\textwidth}p{0.21\textwidth}p{0.27\textwidth}p{0.19\textwidth}@{}}
-\caption{\textbf{Matter~I prediction-test fixture registry.}}\label{tab:manual2-prediction-test-registry}\\
+\begin{table}[H]
+\centering
+\small
+\caption{\textbf{Matter I evidence inventory.}}
+\label{tab:manual2-prediction-test-registry}
+\begin{tabularx}{\textwidth}{@{}p{0.25\textwidth}p{0.23\textwidth}X@{}}
 \toprule
-Record & Class & Active fields & Required A\(\Omega\) calculation & Artifact\\
+Record & Present scope & Completion boundary\\
 \midrule
-\endfirsthead
-\toprule
-Record & Class & Active fields & Required A\(\Omega\) calculation & Artifact\\
-\midrule
-\endhead
-Curling-curl primitives ($1{:}2, 3{:}1, 3{:}2, 3{:}3, 3{:}4$) & D0 & integer $p, q, H_\mu = 1$ & $\Pi(p{:}q) = q^p+q$, $RD^{(1)}_{\AO} = 2\Pi+1$ & \tabref{tab:matter1-curling-curl-primitives}\\
-Coord-0 enclosure groups ($m = 3 \dots 11$) & D0 & integer $m, 2m, \Gamma_{m-1}, \Gamma_m$ & $\Gamma_m = \sum_{k=3}^m 2k = m(m+1)-6$, $m{:}m{:}0\,{:}{:}\,2m$ & \tabref{tab:matter1-enclosure-groups}, \texttt{data/m1/}\\
-Filled shared anchors ($Z = \Gamma_m \in \{6,\dots,104\}$) & D0 & integer $Z = \Gamma_m$, $a=b=m, c=0$ & $0\vdash :: Z:A:0:2m\langle m{:}m{:}0\,{:}{:}\,2m\rangle$, $RD_{\mathrm{fuse}}$ & \tabref{tab:matter1-full-ledger}, \figref{fig:matter1-concentric-wheel}\\
-Seated retained closures ($66$ non-anchor rungs) & D0 & integer $Z, A, s, E_2^\pm$ & $S_{n+1} = P^D_{n+1} - C_{\mathrm{close},n+1} = 0$, $X_{\mathrm{shedding}} = 0$, $\mathrm{TTL}_{\mathcal{C}} \ge |\omega|$ & \tabref{tab:matter1-full-ledger}\\
-Open-seat acceptors ($9$ rungs: $\text{H}, \text{O}..\text{I}$) & D0 & integer $Z, A, s, E_2^0$ & $S_{n+1} = -3 < 0$ (deficit/open check), $X_{\mathrm{shedding}} = 0$ & \tabref{tab:matter1-full-ledger}\\
-Mid-shell hinge exoshedding ($Z \in \{43, 61\}$) & D0 & integer $Z, A, s$, odd-window $\operatorname{Yro}_{2m+1}$ & $S_{n+1} = +3 > 0$, $X_{\mathrm{shedding}} = 3$, $\operatorname{Lift}_{B_r \to B_{r+1}}$ & \tabref{tab:matter1-full-ledger}\\
-Post-bismuth shedding ladder ($Z = 84 \dots 118$) & D0 & integer $Z, A, s$, $\operatorname{Yro}_{2m+1}$ & $S_{n+1} > 0$, $X_{\mathrm{shedding}} > 0$, $\mathrm{TTL}_{\mathcal{C}} < |\omega|$, $\operatorname{SheddicPath} = \mathsf{C}_{2m+2}$ & \tabref{tab:matter1-full-ledger}\\
-Unretained $\mathsf{C}_{22}$ cutoff ($Z = 119 \dots 126$) & D0 & integer $Z, s \in \{15 \dots 22\}$ & $\mathrm{TTL}_{\mathcal{C}} = 0 < |\omega|$, $X_{\mathrm{shedding}} = X_{\mathrm{open}} > 0$ & \tabref{tab:matter1-full-ledger}\\
-Four-step closure load ($L = 6 \dots 22$) & D0 & integer $L = 4c_L + r_L$ & $c_L = \lfloor L/4\rfloor$, $r_L = L \bmod 4 \in \{0,1,2,3\}$ & \appref{manual2:app:simulation-fixtures}\\
-Shell-seat parity and hemisphere $\delta_3$ fixture & D0 & integer comparator bins $O_k, \widehat{O}_k$ & $\Delta^{\mathbb{Z}}_k = \widehat{O}_k - O_k$, $\delta_{3,k} = (s^{(3)}_k, m_k)$ & \appref{manual2:app:coordinate-phase-delta3}\\
-Elemental mass and spectral target manifest & O0 & quarantined target rows $\mathcal{T}_Z$ & $\Qext(\nu_{Z,\AO}; \mathcal{T}_Z)$ after internal candidate freeze & \appref{manual2:app:quarantined-external}\\
+Support polynomial & Exact integer expression & Does not admit a motif\\
+Enclosure groups and local tuples & Exact grouping and role projection & Does not execute a path\\
+Reference-A and assigned classes & Pinned candidate fixture inputs & Original selection provenance unresolved\\
+Conditional support and residuals & Exact consequences of those inputs & Native accessor/retention claims pending\\
+v94 placement crosswalk & 118 rows, six compared fields & 708 comparisons; separate from lane inventory\\
+v94 observable inventory & 118 elements across E0--E5 & Preserve original per-lane statuses\\
+r24 occurrence/packet crosswalk & Historical declaration identities & Native transition and SADAR execution deferred\\
+Native D.E.C. and certificates & Required schema and obligations & Not executed; admission pending\\
+Isotope, mass and spectral comparisons & Future sourced input/comparison lanes & No catalog, calibration or scores supplied\\
 \bottomrule
-\end{longtable}
-}
+\end{tabularx}
+\end{table}
 
-\aodnoteblock{Completion rule}{Exact $D0$ rows record integer support, $RD_{\mathrm{fuse}}$, $P^D$, $C_{\mathrm{close}}$, $S_{n+1}$, $X_{\mathrm{shedding}}$, and audit status. Quarantined $O0$ comparison rows attach external targets only after internal coord-0 declarations freeze.}
+\paragraph{Specialization.}
+The original v94 observable matrix has 708 rows: 118 E0 identity/registry rows marked \texttt{active\_registry}, and 118 rows in each of E1 placement/classification, E2 atomic mass/standard atomic weight, E3 isotope support, E4 spectra and E5 reaction/routes marked \texttt{declared\_lane\_not\_scored\_in\_v94}. Its ten value maps remain \texttt{deferred\_not\_attached}. These statuses are separate from the successful six-field placement comparison.
+
+The r24 crosswalk retains occurrence, transition-packet and SADAR declaration IDs as historical IDs. Its execution remains declared but unexecuted; target values are not read, measured reports are closed and scores absent. It does not contain source-to-destination event witnesses. Correspondence of the original and public atlas is bound by parsed manifest content and five matching file hashes; it is not an identity claim about an entire public repository.
+
+\paragraph{Falsification.}
+A historical pending lane promoted to a current execution result without new evidence, or a hash comparison described as scientific admission, violates the inventory. Preserve predecessor status and current status in distinct fields. Prerecorded counterfactual outcomes do not count as actual hostile tests.
+
+\paragraph{Provenance.}
+The release provenance records the reviewed PR, original v94/r24 archive hashes, extracted member hashes, the six-field mapping, historical identifier joins and the current input bindings. Small verified source extracts and the generated \path{declaration_crosswalk.csv}, \path{observable_coverage.csv} and \path{value_map_status.csv} are stored under \path{manual2/data/m1/history/}. Their bindings are in \path{manual2/evidence/historical_sources.json}; current input hashes are in \path{manual2/evidence/input_manifest.json}. Exact static checks, source identity checks and any future scientific claims retain separate result scopes.
