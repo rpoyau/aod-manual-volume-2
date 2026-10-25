@@ -25,13 +25,14 @@
     "manual2/data/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
     "manual2/data/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
     "manual2/data/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
-    "manual2/figures/aod_matter1_wheel_accessible.pdf": "902561a426f41b411ca33a8b6783f9f85ca9cc003e4f1f47ffca31249ebe5fab",
+    "manual2/evidence/renderer-lock.json": "a1aaf0b138242446fa50faa2d6b74bf20e28843528a2736d1c3be1e0930b3ab0",
+    "manual2/figures/aod_matter1_wheel_accessible.pdf": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d",
     "manual2/figures/aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
-    "manual2/figures/matter1_figure_manifest.json": "29de7d855685f49c245b893f235c8b09cc9880ad2089a23b4d5c8280268e979b",
+    "manual2/figures/matter1_figure_manifest.json": "69da9e4765075fe084a409d7bf7beffe5c6e791f8e01280f486da47f072e466a",
     "manual2/main.tex": "35aa2f0516c7a2524eed885ddb1c49af7c623ff625b47b6dc2f6859c9ba45913",
     "manual2/preamble.tex": "8deb3a45d7cdc119c9b92e1482516ca07d5def5d8a4de4a90a2b2ff3e97562be",
     "manual2/refs.bib": "d2119c0670ac542e53a62e708bd39982b3921029b5492dcc142b98fa247ff991",
-    "manual2/sections/00_scope.tex": "6b1646f9818d2ac73d98177dfdd8443b176a51d0e2a96a22b58a2d235f77184d",
+    "manual2/sections/00_scope.tex": "5b6f62e65b9f4e7ddf0dcbbeaf46839af7f1204e4864bc69a88c0687277da465",
     "manual2/sections/01-scope-and-spine.tex": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118",
     "manual2/sections/02-coord0-enclosures.tex": "54f4e86eca2a638acede3c94565dab36c2ebacd2cef8940a6bd5f23ca1cc9fa1",
     "manual2/sections/03-fusion-contact-ledger.tex": "1362e0a1fc45928db7216f979a78e07168d0f3f6e9b223eee78d36d697eb54a1",
@@ -40,9 +41,9 @@
     "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2"
   },
   "published_artifacts": {
-    "main.pdf": "030c669b506f9ee9f932ab04f7d1afd19d4639e6e1a64ea22f4dffb41abb1935",
-    "manual2/main.pdf": "529d81d9de7974f47ce2aa78709069d8a600ea1812b496dd75e0e2fbc0124617",
-    "manual2.pdf": "694db82dd678430a7e38270fa1b59b9e925852298fbbd60e28004cb9ed3602bc"
+    "main.pdf": "53f4a9fff6d916115a32358d30ae5d8516a0f11e43ddcfb4334e4191c6da6ab4",
+    "manual2/main.pdf": "98717ef9f51e4929d4be32332474a5087307694f31d09a20396b6d1ae8128511",
+    "manual2.pdf": "252434279cb4d2a2f41a0fc9a0a951779533cf0e8f0d2f0a932f6bd07626f2a2"
   },
   "main_pages": 69,
   "commands": [

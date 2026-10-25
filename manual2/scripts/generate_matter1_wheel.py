@@ -13,6 +13,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+from matter1_renderer import font_paths, verify_renderer
 
 WIDTH = 704.0
 HEIGHT = 804.0
@@ -158,12 +159,16 @@ def validate_geometry(layout: dict, objects: list[dict]) -> dict:
 
 
 def draw_figure(layout: dict):
+    verify_renderer()
     import matplotlib
     matplotlib.use("Agg")
     from matplotlib import pyplot as plt
     from matplotlib.patches import Circle, FancyBboxPatch
     from matplotlib.lines import Line2D
+    from matplotlib.font_manager import FontProperties
 
+    # A user matplotlibrc must not alter the bound release layout or metrics.
+    matplotlib.rcdefaults()
     matplotlib.rcParams.update({"font.family": "DejaVu Sans", "pdf.fonttype": 42,
                                "svg.fonttype": "none", "svg.hashsalt": "matter1-static-reference-v1"})
     fig = plt.figure(figsize=(WIDTH_MM / MM_PER_INCH, HEIGHT_MM / MM_PER_INCH), dpi=144, facecolor="white")
@@ -171,9 +176,11 @@ def draw_figure(layout: dict):
     ax.set(xlim=(0, WIDTH), ylim=(HEIGHT, 0), aspect="equal")
     ax.axis("off")
     texts = []
+    fonts = font_paths()
 
     def label(identifier, x, y, value, size=FONT_PT, ha="center", z=None, color=None, weight="normal"):
-        artist = ax.text(x, y, value, fontsize=size, ha=ha, va="center", color=color or COLORS["ink"], weight=weight, zorder=8)
+        properties = FontProperties(family="DejaVu Sans", fname=str(fonts[weight]), weight=weight)
+        artist = ax.text(x, y, value, fontproperties=properties, fontsize=size, ha=ha, va="center", color=color or COLORS["ink"], zorder=8)
         artist.set_gid(identifier)
         texts.append((identifier, artist, z))
 
@@ -240,6 +247,7 @@ def draw_figure(layout: dict):
 
 
 def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path) -> dict:
+    renderer_binding = verify_renderer()
     rows = read_rows(ledger)
     layout = build_layout(rows)
     layout["source_sha256"] = digest(ledger)
@@ -263,6 +271,7 @@ def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path) -
     html = html.replace("__MATTER1_LAYOUT_JSON__", serialized.replace("</", "<\\/"))
     (visual_dir / "matter1-reference.html").write_text(html, encoding="utf-8")
     manifest = {"schema": "matter1-figure-manifest-v1", "source_sha256": digest(ledger),
+                "renderer_binding": renderer_binding,
                 "profile": "static relational reference", "width_mm": WIDTH_MM, "height_mm": HEIGHT_MM,
                 "geometry_checks": checks, "measured_text": measured,
                 "files": {pdf.name: digest(pdf), svg.name: digest(svg),
@@ -280,7 +289,10 @@ def main() -> None:
     parser.add_argument("--visual-dir", type=Path, default=root / "visuals")
     parser.add_argument("--template", type=Path, default=root / "visuals/matter1-reference.template.html")
     args = parser.parse_args()
-    report = generate(args.ledger, args.figure_dir, args.visual_dir, args.template)
+    try:
+        report = generate(args.ledger, args.figure_dir, args.visual_dir, args.template)
+    except (ValueError, OSError, KeyError) as exc:
+        parser.exit(1, f"FAIL_GENERATION: {exc}\n")
     print(f"Generated 118 element references + 8 unfilled slots; {report['width_mm']} × {report['height_mm']:.3f} mm; geometry PASS")
 
 

@@ -15,6 +15,7 @@ import re
 import xml.etree.ElementTree as ET
 
 from generate_matter1_wheel import build_layout, read_rows, intersects
+from matter1_renderer import release_binding
 
 
 def need(condition: bool, message: str) -> None:
@@ -44,6 +45,7 @@ def verify(ledger: Path, figures: Path, visuals: Path) -> dict:
     need(layout == expected, "layout differs from canonical ledger/projection")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     need(manifest["source_sha256"] == sha(ledger), "figure manifest source hash mismatch")
+    need(manifest.get("renderer_binding") == release_binding(), "figure renderer binding mismatch")
     for p in [pdf_path, svg_path, layout_path, html_path]:
         need(manifest["files"].get(p.name) == sha(p), f"artifact hash mismatch: {p.name}")
     match = re.search(r'<script id="matter1-data" type="application/json">(.*?)</script>', html_path.read_text(encoding="utf-8"), re.S)

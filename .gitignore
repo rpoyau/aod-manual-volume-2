@@ -16,3 +16,4 @@ main-build-binding.tex
 *.xdv
 
 node_modules/
+.venv/

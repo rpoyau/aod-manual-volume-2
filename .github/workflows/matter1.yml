@@ -32,6 +32,7 @@ jobs:
           npm install --ignore-scripts --no-audit --no-fund
           npx playwright install --with-deps chromium
           mkdir -p /tmp/matter1-checks
+          python -B manual2/scripts/matter1_renderer.py | tee /tmp/matter1-checks/renderer.json
           python --version > /tmp/matter1-checks/environment.txt
           python -m pip freeze >> /tmp/matter1-checks/environment.txt
           node --version >> /tmp/matter1-checks/environment.txt

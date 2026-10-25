@@ -6,8 +6,10 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 spec = importlib.util.spec_from_file_location("figure_generator", ROOT / "scripts/generate_matter1_wheel.py")
 visual = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(visual)

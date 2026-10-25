@@ -42,6 +42,8 @@ def manual_files(root):
             paths.append(p)
         elif rel.startswith('manual2/data/') and p.suffix in ('.csv', '.json'):
             paths.append(p)
+        elif rel == 'manual2/evidence/renderer-lock.json':
+            paths.append(p)
     return {p.relative_to(root).as_posix(): digest(p) for p in sorted(paths)}
 
 
