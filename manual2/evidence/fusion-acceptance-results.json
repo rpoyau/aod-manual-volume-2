@@ -1,0 +1,3162 @@
+{
+  "acceptance_plan_sha256": "9fc614047fa54f2941b041f49807a68e8f6e622f55dadb6b2ee5d3182d7dce88",
+  "atomic_mapping_status": "pending",
+  "check_receipt_paths": [
+    "manual2/evidence/fusion-checks/ledger.json",
+    "manual2/evidence/fusion-checks/ledger-optimized.json",
+    "manual2/evidence/fusion-checks/figure.json",
+    "manual2/evidence/fusion-checks/conservation.json",
+    "manual2/evidence/fusion-checks/publication.json",
+    "manual2/evidence/fusion-checks/browser.json",
+    "manual2/evidence/fusion-checks/reproduction.json",
+    "manual2/evidence/fusion-checks/folding.json",
+    "manual2/evidence/fusion-checks/folding-optimized.json",
+    "manual2/evidence/fusion-checks/temporal.json",
+    "manual2/evidence/fusion-checks/temporal-optimized.json",
+    "manual2/evidence/fusion-checks/hyperfine.json",
+    "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+  ],
+  "document_kind": "executed_scoped_acceptance_receipt",
+  "evidence_binding_scope": "Supplied successful test/check outputs plus current source/test/model hashes at recording. Plain logs are not independently attested execution provenance. Run the listed commands separately before recording; no tests are run by this recorder.",
+  "evidence_sha256": {
+    "manual2/evidence/fusion-checks/browser.json": {
+      "bytes": 1739,
+      "sha256": "c69bb36ba0b7feba0e49306340bb9651d4da0701fad1aed561ef854fa8d54af4"
+    },
+    "manual2/evidence/fusion-checks/conservation.json": {
+      "bytes": 592,
+      "sha256": "a586f80be231ed1596bbd7894e9e391c5e9a8da6622be848d3873131b58a96d8"
+    },
+    "manual2/evidence/fusion-checks/figure.json": {
+      "bytes": 560,
+      "sha256": "16a4a00cb21d739a3e5225cdc2d52926cc9f590fad4a4d83f78a5195dfe9f002"
+    },
+    "manual2/evidence/fusion-checks/folding-optimized.json": {
+      "bytes": 1767,
+      "sha256": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1"
+    },
+    "manual2/evidence/fusion-checks/folding.json": {
+      "bytes": 1767,
+      "sha256": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1"
+    },
+    "manual2/evidence/fusion-checks/hyperfine-optimized.json": {
+      "bytes": 2377,
+      "sha256": "6bed7dbd36098a95346ca2071787767f6898e406b07ac0c25f0446943eab46f9"
+    },
+    "manual2/evidence/fusion-checks/hyperfine.json": {
+      "bytes": 2377,
+      "sha256": "6bed7dbd36098a95346ca2071787767f6898e406b07ac0c25f0446943eab46f9"
+    },
+    "manual2/evidence/fusion-checks/ledger-optimized.json": {
+      "bytes": 1641,
+      "sha256": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2"
+    },
+    "manual2/evidence/fusion-checks/ledger.json": {
+      "bytes": 1641,
+      "sha256": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2"
+    },
+    "manual2/evidence/fusion-checks/publication.json": {
+      "bytes": 9525,
+      "sha256": "c5ba3f76eb78b177e702b5ee54cf29d86e751e9e9150c5b0105edded10e06608"
+    },
+    "manual2/evidence/fusion-checks/reproduction.json": {
+      "bytes": 2345,
+      "sha256": "f82333226ecf86301172cb7f295715eb9e3a26cf1f4947e347077a386fa8f87c"
+    },
+    "manual2/evidence/fusion-checks/temporal-optimized.json": {
+      "bytes": 5835,
+      "sha256": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53"
+    },
+    "manual2/evidence/fusion-checks/temporal.json": {
+      "bytes": 5835,
+      "sha256": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53"
+    },
+    "manual2/evidence/fusion-checks/tests-optimized.txt": {
+      "bytes": 11611,
+      "sha256": "77defd6fb621dcfbcbceeda6088d8923b5fe2829b9bb055e8fdfbe12c82233de"
+    },
+    "manual2/evidence/fusion-checks/tests-publication-final.txt": {
+      "bytes": 1963,
+      "sha256": "ab0843a7931409734b888be1eddcebe1cccc013049e5aa989d87b322924a13b2"
+    },
+    "manual2/evidence/fusion-checks/tests.txt": {
+      "bytes": 14479,
+      "sha256": "b874a4368e048e2d0e80300320e59e4fec0ded54c9fb1297d85c9d706077bcda"
+    }
+  },
+  "interpretation": "All recorded assertions passed in their stated scope. Finite geometry, declared-model execution, guard rejection and publication integrity do not establish native motif admission, atomic prediction or empirical agreement.",
+  "mutation_count": null,
+  "mutation_count_scope": "Not inferred from unittest method totals or subtest descriptions.",
+  "native_admission_status": "pending",
+  "physical_empirical_status": "not_compared",
+  "record_count": 39,
+  "records": [
+    {
+      "assertion_scope": "Validate the recorded intake head/tree, request archive hash and preservation receipt. The bundle verifier established the intake binding; this receipt is historical and does not substitute for refreshing the remote immediately before push.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/conservation.json",
+        "manual2/evidence/fusion-checks/ledger.json",
+        "manual2/evidence/fusion-checks/ledger-optimized.json"
+      ],
+      "commands": [
+        "python3 -B scripts/check_matter1_application.py --root ."
+      ],
+      "evidence_paths": [
+        "manual2/evidence/fusion-request.json"
+      ],
+      "expected": "Compare and rebind before patching",
+      "id": "P0-01",
+      "observed_tests": [],
+      "outcome": "executed_scope_pass",
+      "physical_status": "no_native_or_physical_claim",
+      "remaining_dependency": "Refresh remote PR head immediately before normal push; compare/rebind and revalidate any intervening commit.",
+      "request_status": "PLANNED",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "stage": "P0",
+      "stimulus": "PR head moves",
+      "subject": "Candidate binding",
+      "subtest_labels": [],
+      "test_ids": []
+    },
+    {
+      "assertion_scope": "Preserve 118 elemental placements, all 126 frozen numeric reference rows, history joins and declared statuses; the application checker also verifies protected released-source and compact-chart bytes.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/conservation.json",
+        "manual2/evidence/fusion-checks/ledger.json",
+        "manual2/evidence/fusion-checks/ledger-optimized.json"
+      ],
+      "commands": [
+        "python3 -B scripts/check_matter1_application.py --root .",
+        "python3 -B manual2/scripts/verify_matter1_ledger.py --check-data",
+        "python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data",
+        "python3 -B -m unittest manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Preserve 118 placements and 126 static slots",
+      "id": "P0-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "no_native_or_physical_claim",
+      "remaining_dependency": "No scientific native/empirical conclusion follows from baseline conservation.",
+      "request_status": "PLANNED",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "stage": "P0",
+      "stimulus": "Add levels and transitions",
+      "subject": "Conservation",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked"
+      ]
+    },
+    {
+      "assertion_scope": "The six used Q4 addresses are injective and share exactly the declared edge; persist E=D/F=C and reject under normal and optimized Python.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Six distinct Q4 addresses; exactly the declared shared edge in coordinates; reject aliases",
+      "id": "P1-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Geometric validity is not native structural admission.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Glue the specified faces; mutate E=D and F=C",
+      "subject": "Cell incidence",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject"
+      ]
+    },
+    {
+      "assertion_scope": "Persist reversal of one oriented face and reject failure of shared-interface cancellation.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject non-cancelling interface",
+      "id": "P1-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "An oriented cellular example does not establish a physical fusion.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Reverse one face incorrectly",
+      "subject": "Orientation",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects"
+      ]
+    },
+    {
+      "assertion_scope": "Persist a distance-two edge and false changed-coordinate/endpoint witnesses; reject against stored Q4 addresses.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject the trace",
+      "id": "P1-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Native dynamics and atomic realization remain separate.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Insert a Hamming-distance-two edge",
+      "subject": "Atomic support",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked"
+      ]
+    },
+    {
+      "assertion_scope": "Remove a side role or one interface endpoint from the persisted example; reject incomplete declared ternary geometry.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject fully realized triad claim",
+      "id": "P1-04",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Three geometric roles do not supply a physical time unit.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Remove side or interface",
+      "subject": "Ternary scope",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects"
+      ]
+    },
+    {
+      "assertion_scope": "Read serialized event records for n=1..64 and count 3n outbound plus 3n return traversals; checked persisted default n=3 yields 18 events.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Count exactly 3n plus 3n traversals",
+      "id": "P1-05",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "6n is the traversal count of this declared trace, not a universal closed-walk theorem or native closure certificate.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Repeat the specified pattern n times",
+      "subject": "Counting",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only"
+      ]
+    },
+    {
+      "assertion_scope": "Reject duplicate event/serialization IDs, a relabeled replay, changed scope/lineage and invalid predecessor/occurrence binding in persisted records.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject duplicate accounting",
+      "id": "P1-06",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "An event ledger identity test is not native admission.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Reuse event ID or recount serialization",
+      "subject": "Identity",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject"
+      ]
+    },
+    {
+      "assertion_scope": "Reject substituting three role names for event units and deleting an event while retaining the 6n claim.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Require trace-level derivation",
+      "id": "P1-07",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "A physical tick/recurrence observation map remains required.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Infer three ticks from role names",
+      "subject": "Role and tick types",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks"
+      ]
+    },
+    {
+      "assertion_scope": "Reject a unit hinge-support record counted as an H1 traversal or appended as another edge.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Require explicit map",
+      "id": "P1-08",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Any support-to-time map must account explicitly for the structural hinge.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Insert hinge weight as another H1 edge",
+      "subject": "Support and tick types",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge"
+      ]
+    },
+    {
+      "assertion_scope": "Check all 64 directed Q4 edges and a valid four-edge closed walk; closure evenness does not force divisibility by six; no admission claim is added.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Graph closure alone does not force six; no automatic admission",
+      "id": "P1-09",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Native closure admission requires more than graph closure.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "stage": "P1",
+      "stimulus": "Use four-edge closed Q4 support walk",
+      "subject": "Generality",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible"
+      ]
+    },
+    {
+      "assertion_scope": "Reject a formatted certificate label, wrong scope and rehashed false retained-start/scope witnesses using structural validation before finite consumers.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reject before native consumer",
+      "id": "P2-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Forge certificate or change its scope",
+      "subject": "Admission",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates"
+      ]
+    },
+    {
+      "assertion_scope": "Reject removal of the structural hinge or a forged hinge witness; separately accept a six-traversal trace with optional dwell removed while retaining its hinge.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reject native construction",
+      "id": "P2-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Drop structural hinge with optional dwell",
+      "subject": "Hinge",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory"
+      ]
+    },
+    {
+      "assertion_scope": "Retain unequal inner and outer scopes through explicit incidence maps; reject a missing/substituted map, forced cross-scale equality, or an inner certificate substituted for the outer return.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Accept compatible cross-scale provenance only with maps and outer witness; forced scope equality is not required",
+      "id": "P2-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Fold distinct inner scopes with explicit maps; omit or substitute a map; reuse an inner return",
+      "subject": "Outer fold",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps"
+      ]
+    },
+    {
+      "assertion_scope": "The declared capacity response exposes exactly the stored inner maps when outer retention is lost; persisted mutations removing certificates, orientation or lineage fail.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Recover each inner identity scope lineage orientation history and certificate through its retained mapping",
+      "id": "P2-04",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Expose outer fold after boundary cancellation",
+      "subject": "Exposure",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+      ]
+    },
+    {
+      "assertion_scope": "A replayed complete return or re-certified duplicate event is rejected; count two distinct returns in the declared later window and four committed returns from the origin.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "No additional beat",
+      "id": "P2-05",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Replay sample or repackage certificate",
+      "subject": "Reclosure",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat"
+      ]
+    },
+    {
+      "assertion_scope": "Persist desired-period and measured-hydrogen input fields in the finite update specification, or promote its predictive status; strict input/status validation rejects each before native-like consumers.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reject predictive status",
+      "id": "P2-06",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The mathematical schedule is declared, not a physical period derivation. Atomic prediction requires independently selected physical dynamics and an observation map.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Read desired period or measured target",
+      "subject": "Dynamics",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+      ]
+    },
+    {
+      "assertion_scope": "For positive-reference finite beat windows, exchanging lineages gives an exact reciprocal cadence ratio and negated bias/unwrapped lag; reject a forged reverse ratio.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reciprocal exact ratio under declared comparator",
+      "id": "P3-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Exchange positive-reference lineages",
+      "subject": "Cadence",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison"
+      ]
+    },
+    {
+      "assertion_scope": "Keep equal cadence with distinct bias/lag; later window beat counts [2,2] and cumulative counts [3,2] preserve unwrapped lag 3/2; reject wrapping away a whole closure or wrong drift.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Keep temporal records distinct",
+      "id": "P3-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Equal cadence with unequal bias or lag",
+      "subject": "Bias",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window"
+      ]
+    },
+    {
+      "assertion_scope": "Reject one-contact comparison, uncoupled identity substitution and contact-certificate replay; completed finite comparison requires repeated independent bound contacts.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "No completed relational-time claim",
+      "id": "P3-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "One contact or uncoupled waves",
+      "subject": "Coupling",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts"
+      ]
+    },
+    {
+      "assertion_scope": "Check declared directional durations 5 and 7 and contact support 3; reject missing duration map or forced symmetric reflected input/output.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reject consumed duration claim or mark incomplete",
+      "id": "P3-04",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The finite duration map is explicitly declared; its values are not measured atomic durations or a derived SI conversion.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Omit interface or force RCD symmetry",
+      "subject": "Duration",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map"
+      ]
+    },
+    {
+      "assertion_scope": "Each response commits at input_cut+1; reject same-step self-input and a response ID substituted for its own input comparison.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Reject causal cycle",
+      "id": "P3-05",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Use same-step response to create its own input",
+      "subject": "Causality",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality"
+      ]
+    },
+    {
+      "assertion_scope": "Inventory two states per isotope with separate IDs and fixed Z/A/charge; reject isotope/element aliases and removal of each required P4a/P2/P3 dependency.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "P4 requires P4a P2 and P3; distinct state IDs preserve element identity and native model bindings",
+      "id": "P4-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "P4a is an external inventory. Native atomic P2 admission, P3 lineages and a physical observation map remain unestablished.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Map two hyperfine levels of the same isotope after inventory",
+      "subject": "Atomic identity",
+      "subtest_labels": [
+        "P4-01 isotope changed",
+        "P4-01 same state twice",
+        "P4-01 element alias",
+        "P4-01 invalid charge",
+        "P4-01 invalid quantum state",
+        "P4-01 missing P2",
+        "P4-01 missing P3",
+        "P4-01 missing inventory"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Persist a sigma_equals_mF identification and reject it; native spin/role mapping remains explicitly unestablished.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Require explicit physical observation map",
+      "id": "P4-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "A physical observation map cannot be inferred from the similar symbols or cardinality.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Identify sigma and m_F by resemblance",
+      "subject": "Role and spin map",
+      "subtest_labels": [
+        "P4-02 sigma is mF"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Reject replacing stabilized oscillator-cycle recurrence or frequency with detected state-population counts.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject observable substitution",
+      "id": "P4-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "Native certified reclosures and quantum phase require an explicit recurrence/phase comparison map.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Count detections as oscillator cycles",
+      "subject": "Observable",
+      "subtest_labels": [
+        "P4-03 detection is cycles",
+        "P4-03 wrong frequency observable",
+        "P4-03 wrong native recurrence map"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Record exposure by 2026-10-26, unknown earliest date and model decision history. Reject blind/held-out promotion, erasure of exposure, allowed native target access and invented independence. The finite generator specification also rejects injected measured-target or desired-period fields.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Record exposure and model decisions; retrospective by default; require separate independence evidence for held-out claims",
+      "id": "P5-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "The known hydrogen pilot is retrospective. Independent prediction requires a different eligible target and separately documented selection history.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P5",
+      "stimulus": "Use already exposed hydrogen target; freeze after exposure; inject target into candidate selection",
+      "subject": "Target isolation",
+      "subtest_labels": [
+        "P5-01 retroactive freeze",
+        "P5-01 erased exposure",
+        "P5-01 target selection access",
+        "P5-01 invented independence"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+      ]
+    },
+    {
+      "assertion_scope": "Reject marking the defining reference/calibrant as held out; no independent score is produced.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject independent score",
+      "id": "P5-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "A distinct independent comparison target and explicit calibration provenance are required.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P5",
+      "stimulus": "Score calibrant as held out",
+      "subject": "Calibration",
+      "subtest_labels": [
+        "P5-02 calibrant reused"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Bind H frequency 1420405751.768 Hz and one-sigma 0.002 Hz to visually checked printed page 200. Reject OCR 0.02, omitted corrections, replaced reference and treating unknown covariance/realization uncertainty as zero. Compute only the retrospective ratio of quoted inputs.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/hyperfine/sources/hellwig1970-page200.png",
+        "manual2/data/m1/hyperfine/target_inventory.json"
+      ],
+      "expected": "Use historical 0.002 Hz from visually verified page 200; retain source conditions and uncertainty dependencies",
+      "id": "P5-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "The two original evaluations share NBS-III. A new combination/precision score requires a quantitative realization/covariance budget; source measurement is not exact physics.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P5",
+      "stimulus": "Mis-transcribe hydrogen uncertainty or omit corrections/shared-reference covariance",
+      "subject": "Uncertainty",
+      "subtest_labels": [
+        "P5-03 OCR uncertainty",
+        "P5-03 omitted corrections",
+        "P5-03 ignored covariance",
+        "P5-03 unknown covariance zero",
+        "P5-03 realization zero",
+        "P5-03 reference replaced"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Snapshot persisted trees before real normal/-O verifier processes; invalid input/report/source evidence fails without repair/new files. Explicit generation writes only declared outputs in a separate root.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/ledger.json",
+        "manual2/evidence/fusion-checks/ledger-optimized.json",
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json",
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json",
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Fail without changing its bytes",
+      "id": "P5-04",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "no_native_or_physical_claim",
+      "remaining_dependency": "Read-only integrity does not prove the modeled dynamics.",
+      "request_status": "PLANNED",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "stage": "P5",
+      "stimulus": "Corrupt persisted input",
+      "subject": "Read-only verification",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction"
+      ]
+    },
+    {
+      "assertion_scope": "Build Main first then Manual, verify foundation/source/PDF semantic links and publication receipts; inspect changed rendered pages, all static chart exports and browser behavior; regenerate only explicit outputs in a disposable root.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/publication.json",
+        "manual2/evidence/fusion-checks/figure.json",
+        "manual2/evidence/fusion-checks/browser.json",
+        "manual2/evidence/fusion-checks/reproduction.json"
+      ],
+      "commands": [
+        "python3 -B scripts/build_matter1_documents.py",
+        "python3 -B scripts/verify_matter1_publication.py",
+        "python3 -B manual2/scripts/check_matter1_figure.py",
+        "node manual2/scripts/check_matter1_companion.cjs",
+        "python3 -B scripts/check_matter1_reproduction.py",
+        "python3 -B -m unittest manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Verify paired semantic links and actual output inventory",
+      "id": "P5-05",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "publication_final"
+          ],
+          "test_id": "manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure"
+        },
+        {
+          "successful_logs": [
+            "normal"
+          ],
+          "test_id": "manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "no_native_or_physical_claim",
+      "remaining_dependency": "Publication validity is distinct from native or empirical validity; inspect hosted CI for the final pushed head.",
+      "request_status": "PLANNED",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "stage": "P5",
+      "stimulus": "Add manuscript or figure",
+      "subject": "Publication",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure",
+        "manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree"
+      ]
+    },
+    {
+      "assertion_scope": "Reject missing/unsupported fixture, native admission/execution and empirical status fields consumed by each verifier and reject forged persisted report statuses.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/ledger.json",
+        "manual2/evidence/fusion-checks/ledger-optimized.json",
+        "manual2/evidence/fusion-checks/folding.json",
+        "manual2/evidence/fusion-checks/folding-optimized.json",
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json",
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Validate all consumed status fields and report scope; reject unsupported promotion without claiming a physical test",
+      "id": "P5-06",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "A guard passing does not establish native execution or physical agreement.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P5",
+      "stimulus": "Promote or omit fixture class native admission/execution or empirical status",
+      "subject": "Status promotion",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types"
+      ]
+    },
+    {
+      "assertion_scope": "Opposite oriented outer traces share support_sum 7 but retain distinct identities/chiralities; reject changing orientation labels without changing the witnessed trace.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Retain distinct orientations and coupling records; do not merge by scalar RD",
+      "id": "F-01",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Equal RD with opposite chi_mu",
+      "subject": "Handedness",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support"
+      ]
+    },
+    {
+      "assertion_scope": "Reject future/substituted committed prefixes, same-oriented boundary pairs, unrelated boundary identity and edges not actually reversed; check exact antisymmetric finite SADAR values from the same boundary.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Consumers bind compatible mapped histories and committed prefixes; retain distinct inner outer and comparator lineages",
+      "id": "F-02",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "Finite mapped histories and a declared response law are executed; complete native returned-current dynamics and atomic mapping remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Compute cadence lag SADAR and route across nested scopes",
+      "subject": "Common history",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair"
+      ]
+    },
+    {
+      "assertion_scope": "The first two declared responses have nonzero lag and negative residual but zero excess/no route; reject converting lag alone to excess or replacing capacity domain with hertz.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "No positive sheddic excess solely from lag",
+      "id": "F-03",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The response/capacity rule is declared. This guard does not derive atomic shedding or emitted radiation.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Nonzero lag with non-positive closure surplus",
+      "subject": "Lag and shedding",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed"
+      ]
+    },
+    {
+      "assertion_scope": "A declared capacity failure removes outer retention while preserving exactly the inner lineage/orientation/certificate maps; mutations losing preserved provenance are rejected.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Expose surviving inner lineage and record the correct route/status",
+      "id": "F-04",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P3",
+      "stimulus": "Lose outer retention while inner certificates persist",
+      "subject": "Outer retention",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+      ]
+    },
+    {
+      "assertion_scope": "Preserve external before/after state pair at fixed isotope and require one common frozen model policy; reject invented or mismatched native configuration/model bindings.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Bind before/after configurations to the same frozen fusion/reclosure model",
+      "id": "F-05",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity"
+        },
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "Actual atomic before/after configuration bindings remain null until the physical common-model map is established.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Hyperfine transition at fixed isotope",
+      "subject": "Atomic reclosure",
+      "subtest_labels": [
+        "F-05 unbound before state",
+        "F-05 mismatched frozen model"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Reject per-line fitting and replacement of the single common-model policy by separate line laws.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Reject independent predictive status",
+      "id": "F-06",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "No independent physical prediction has been run; a frozen law and eligible independent targets are still required.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Fit a different transition law per spectral line",
+      "subject": "Model consistency",
+      "subtest_labels": [
+        "F-06 per-line fit",
+        "F-06 per-line policy"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Reject identifying a detection as sheddic output or marking an unbound transfer as executed; require source/destination windows and physical-map identity before future consumption.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/hyperfine.json",
+        "manual2/evidence/fusion-checks/hyperfine-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "evidence_paths": [],
+      "expected": "Require source/destination window and physical observation-map binding",
+      "id": "F-07",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "guard_only_physical_application_pending",
+      "remaining_dependency": "Radiation/transfer observation map and atomic route model remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "guard_only_physical_pending",
+      "stage": "P4",
+      "stimulus": "Label a detection as sheddic output",
+      "subject": "Transferred radiation",
+      "subtest_labels": [
+        "F-07 detection promoted shedding",
+        "F-07 fake transfer"
+      ],
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ]
+    },
+    {
+      "assertion_scope": "Remove fold evidence while keeping oriented/certified trace data; reject an orientation-only fusion claim.",
+      "check_evidence": [
+        "manual2/evidence/fusion-checks/temporal.json",
+        "manual2/evidence/fusion-checks/temporal-optimized.json"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion -v"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ],
+      "expected": "Require actual fold/outer-return evidence for the claim",
+      "id": "F-08",
+      "observed_tests": [
+        {
+          "successful_logs": [
+            "normal",
+            "optimized"
+          ],
+          "test_id": "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion"
+        }
+      ],
+      "outcome": "executed_scope_pass",
+      "physical_status": "native_and_physical_admission_pending",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "request_status": "PLANNED",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "stage": "P2",
+      "stimulus": "Promote an orientation flip alone to completed fusion",
+      "subject": "Fusion evidence",
+      "subtest_labels": [],
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion"
+      ]
+    }
+  ],
+  "request_acceptance_sha256": "bd2e5b0796b2a5214d5cecd44027d6dfcff33209e596b05881d36ac05f32a646",
+  "request_archive_sha256": "6d19d3dd8a9d6e88ee6f642359ac29156fb4632dda6d562b5b4cad82e3bcb689",
+  "schema_version": 1,
+  "source_test_model_artifact_inventory": {
+    ".agents/skills/aod-ontology-compaction/SKILL.md": {
+      "bytes": 5821,
+      "sha256": "13195be85c8a0863d2226e9a2c024272becd8c09081abc8f87da30aba86a91ff"
+    },
+    ".agents/skills/aod-style-and-format/SKILL.md": {
+      "bytes": 19789,
+      "sha256": "a0396af933fcd6ab62825cd184fc478cdffc727050effbf16e330180a14b86bf"
+    },
+    ".agents/skills/aod-style-and-format/references/aod-main-v41-02.pdf": {
+      "bytes": 1842293,
+      "sha256": "c65d44bfa3ab44f6fa0e8a3506a282a2918abb54aada4f5cb05de640a5909ed1"
+    },
+    ".agents/skills/aod-style-and-format/references/aod-manual-v41-02.pdf": {
+      "bytes": 2474271,
+      "sha256": "1dcd907b5a1b65c68e814a71a382f982e96ce54493378a128e6d6d58e8e404a7"
+    },
+    ".agents/skills/aod-style-and-format/references/ontology-and-dec-reference.md": {
+      "bytes": 20418,
+      "sha256": "0c35ea77e005ad2915760c45bcbee96488811788125d6c4a9a4fa33efe4f318a"
+    },
+    ".agents/skills/aod-style-and-format/references/usage-paper-template.md": {
+      "bytes": 6211,
+      "sha256": "ba0268609b934d58bcc85f5f7b723b3ed3ec90bcac14a44d30c68cb8e729cec7"
+    },
+    ".agents/skills/axiomatic-fundamentalism/SKILL.md": {
+      "bytes": 3219,
+      "sha256": "7c0f03a5264fd4b9a89a2d92cdceb6da03a6eca2288ce25d041551fedde74cec"
+    },
+    ".agents/skills/axiomatic-fundamentalism/axiomatic-fundamentalism.pdf": {
+      "bytes": 130268,
+      "sha256": "2ca94a78ee80476bc7dadd367a47a40be5bd5fd54bcb446f27f9cbae0b5572a6"
+    },
+    ".agents/skills/general-mechanics-style/SKILL.md": {
+      "bytes": 2528,
+      "sha256": "1625ec510763c6d080050719641a8584be0b1069feba2084a57d452e005cecfb"
+    },
+    ".agents/skills/general-mechanics-style/references/general-mechanics-2025-11-08.pdf": {
+      "bytes": 200742,
+      "sha256": "88ec30e7500358d60b4a1a0671771a059260326dce4469b7cea1c26260179a36"
+    },
+    ".agents/skills/paper-formatter-gm/SKILL.md": {
+      "bytes": 3438,
+      "sha256": "2cb12fd5e1f115320195eea19925654179f7dfb6635f303d196fd92d5ef0881a"
+    },
+    ".github/workflows/matter1.yml": {
+      "bytes": 3951,
+      "sha256": "77c7220e16a922cf1f375f639f30760a6bda8dbd395292028b8ae602014e555f"
+    },
+    "README.md": {
+      "bytes": 11083,
+      "sha256": "1e42feb6c747113321e636ffc67475f8f5ff274a87880d1b99f244dcebedea90"
+    },
+    "appendices/A_fractal_address_bip_biz.tex": {
+      "bytes": 1491,
+      "sha256": "2572c1f108ecd2a623fcc9908aa3c4d5166846745837d4567a66d0b36e277547"
+    },
+    "appendices/B_curling_curls.tex": {
+      "bytes": 6023,
+      "sha256": "099d3475e6f7f82cd2eb942cd82cbf4c187a6872d803ce07c169a1e2200de6f4"
+    },
+    "appendices/C_stochastic_crowning.tex": {
+      "bytes": 4186,
+      "sha256": "19fff3769f4b9f97af4984cffa070d0177d4529c56b7592e5d443330cf23a740"
+    },
+    "appendices/D_cycle_shedding_demonstration.tex": {
+      "bytes": 1451,
+      "sha256": "eb25fed23c31d421b9efc59cc44cbc7a8f58764a812f92dfc12c0c3f24a47fa1"
+    },
+    "appendices/E_glossary.tex": {
+      "bytes": 8825,
+      "sha256": "9fa8739bd736f0e1f45866cd2b9d61fea1866c38e6c3f74af4c750eafe7ca953"
+    },
+    "appendices/F_wave.tex": {
+      "bytes": 1936,
+      "sha256": "0cbc2e18f2036ca05e188dff445377bba7ddc945ad54c6c40414129c5442cfe6"
+    },
+    "appendices/G_symbolic_cancellation_check.tex": {
+      "bytes": 1348,
+      "sha256": "236b0253fb0f717bdb85dd19200e758bac67d4c5a56ba8c5971ac0d2d8ef8ebc"
+    },
+    "appendices/H_combinatorics_rd_tests.tex": {
+      "bytes": 4487,
+      "sha256": "9ccf229e4506375a031e9542642f89e2990db23bf0e16981769a093ef8c06e80"
+    },
+    "appendices/I_path_complexity_prototype_quarantine.tex": {
+      "bytes": 1748,
+      "sha256": "ed8cbd12785bcbe747d0e38d51e71827eb9786f51a821a5434396d2ef5789eef"
+    },
+    "appendices/J_ao_field_fractal_properties.tex": {
+      "bytes": 1321,
+      "sha256": "793eff4bfb043a988e69dd89b1b103661a1fbf462aae0de8350ae5d54c932648"
+    },
+    "main-build-binding.tex": {
+      "bytes": 106,
+      "sha256": "d4fdbb51ba48a57061c8cfcdf3c93b8b72ac67892562b8c4d2fdd5935c01e77f"
+    },
+    "main.pdf": {
+      "bytes": 1800290,
+      "sha256": "4cbcd8c0dab30b23d4fdb6e342e11add7fcdcf9c39a4332643d5785b6e135ce4"
+    },
+    "main.tex": {
+      "bytes": 985,
+      "sha256": "439182eaa6832f2f937da6f478878f2db3e74bb67d68160469e10855f456ba8b"
+    },
+    "manual2.pdf": {
+      "bytes": 227178,
+      "sha256": "4fd6544390714c87f163286d4c07ed7a8b47c214f2cc595e7512a4622e03da24"
+    },
+    "manual2/appendices/A_simulation_fixtures_and_context.tex": {
+      "bytes": 1759,
+      "sha256": "566be2917830485cac014631772bbb6f9afb64901b5442ede16cf834ccf7f100"
+    },
+    "manual2/appendices/B_quarantined_external_comparison.tex": {
+      "bytes": 1999,
+      "sha256": "5d2157563c7f96e210101651dc2315bbd9c7f420daa0fc075b369e33c824f150"
+    },
+    "manual2/appendices/C_coordinate_phase_delta3_fixture.tex": {
+      "bytes": 1637,
+      "sha256": "482f586cefa6bfff2621a1efe6f72eae1b24f7259ffc81f45ab096913fee447b"
+    },
+    "manual2/data/m1/README.md": {
+      "bytes": 4510,
+      "sha256": "fcfda3c061a26d8ac7e011f10dddc9b282baa5e7bc080064316cdfbdeef11dc4"
+    },
+    "manual2/data/m1/field_migration.json": {
+      "bytes": 1894,
+      "sha256": "bd572ec782eb661038e7fac74b784e7c23403141b9999bb9d39284d6503863d9"
+    },
+    "manual2/data/m1/folding/event_ledger.json": {
+      "bytes": 11213,
+      "sha256": "8c470013c381d09bf53c631493b6a558c54b7c7264383c69143cc3cea6b1f4ae"
+    },
+    "manual2/data/m1/folding/folding_report.json": {
+      "bytes": 1767,
+      "sha256": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1"
+    },
+    "manual2/data/m1/folding/temporal_model.json": {
+      "bytes": 3783,
+      "sha256": "3c3af0eb7e36b7e3c4da2280329b5f5eb289267120322f9087d6d9adad0a3ee9"
+    },
+    "manual2/data/m1/folding/temporal_report.json": {
+      "bytes": 5835,
+      "sha256": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53"
+    },
+    "manual2/data/m1/folding/temporal_trace.json": {
+      "bytes": 249359,
+      "sha256": "9e0bdc5e091f567aa2047e522387d57d7c87b7374f762d69318fcfe3bb71465c"
+    },
+    "manual2/data/m1/folding/two_square_fold.json": {
+      "bytes": 1327,
+      "sha256": "2a163a187fd0b3f4a1bdc91e6fe4a473486744a47707bcb1571ad45a0c5d5505"
+    },
+    "manual2/data/m1/history/declaration_crosswalk.csv": {
+      "bytes": 29198,
+      "sha256": "a8c008ec4ec25451476a7b41ea881ecacf78a644b4fa5599e23cc5f28963e7a6"
+    },
+    "manual2/data/m1/history/observable_coverage.csv": {
+      "bytes": 71795,
+      "sha256": "4243aa316e25bba9553d763ba8829abcf51a6a791e2a4cc6d17439919de3fe85"
+    },
+    "manual2/data/m1/history/r24_occurrence_cards.csv": {
+      "bytes": 39583,
+      "sha256": "8b0f1e740c5c4630692cf3ad9de6627f3e23c12216b6c7d8ae28d742dbef2fb1"
+    },
+    "manual2/data/m1/history/r24_sadar_declarations.csv": {
+      "bytes": 33377,
+      "sha256": "d0d3788a2a192b9416c4889d393ad5dc7687d20747329a99dea168c4fa61bc19"
+    },
+    "manual2/data/m1/history/r24_transition_packets.csv": {
+      "bytes": 56208,
+      "sha256": "4bda5fbd2585dd0dc795db8c35b30f6f1ee32953c5018e2f6a18a1824cea6f80"
+    },
+    "manual2/data/m1/history/v94_observable_matrix.csv": {
+      "bytes": 102873,
+      "sha256": "a7d4afe041bf2cade6969763abaac330c2b9df38056fb1d61b0b094ee53eaf39"
+    },
+    "manual2/data/m1/history/v94_placements.csv": {
+      "bytes": 4449,
+      "sha256": "0d1421804754958ea7d3819c8e749b680f2f89f988f5cda98a7e5b62e990985c"
+    },
+    "manual2/data/m1/history/v94_value_maps.csv": {
+      "bytes": 709,
+      "sha256": "a1bdff48cbd661680a7b51b7a027696be093bfc136281a79eef49a0e19c6c1b7"
+    },
+    "manual2/data/m1/history/value_map_status.csv": {
+      "bytes": 958,
+      "sha256": "bc862e172cb306067c4061b39f3241d562a81113eb7d2913b96e5419833b16b6"
+    },
+    "manual2/data/m1/hyperfine/hyperfine_report.json": {
+      "bytes": 2377,
+      "sha256": "6bed7dbd36098a95346ca2071787767f6898e406b07ac0c25f0446943eab46f9"
+    },
+    "manual2/data/m1/hyperfine/observation_map.json": {
+      "bytes": 2313,
+      "sha256": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f"
+    },
+    "manual2/data/m1/hyperfine/sources/hellwig1970-page200.png": {
+      "bytes": 286941,
+      "sha256": "94d0dfbe049c66f1e259183abc3ef74dd227d40cc1b0920fc68c98c263f6a3cf"
+    },
+    "manual2/data/m1/hyperfine/target_exposure.json": {
+      "bytes": 1012,
+      "sha256": "812947cfae982932ab1b17c0a40f5dc9df0bdb8ad7e848b990c263a04a87e555"
+    },
+    "manual2/data/m1/hyperfine/target_inventory.json": {
+      "bytes": 7264,
+      "sha256": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42"
+    },
+    "manual2/data/m1/input_provenance.json": {
+      "bytes": 1847,
+      "sha256": "9352019cd46d846f8563464f3dc0fbd3a580a8edfa6cf9104cfe3b3adb9de7a5"
+    },
+    "manual2/data/m1/matter1_audit_report.json": {
+      "bytes": 1641,
+      "sha256": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2"
+    },
+    "manual2/data/m1/matter1_coord0_enclosure_summary.csv": {
+      "bytes": 554,
+      "sha256": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7"
+    },
+    "manual2/data/m1/matter1_elements_1_118_ledger.csv": {
+      "bytes": 36539,
+      "sha256": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0"
+    },
+    "manual2/data/m1/model_inputs.json": {
+      "bytes": 998,
+      "sha256": "2a04c01ba292456611b79926dc786da99dd9b4f9238bf4e7c88220c6c3a0fa43"
+    },
+    "manual2/data/m1/reference_inputs.csv": {
+      "bytes": 11189,
+      "sha256": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232"
+    },
+    "manual2/data/m1/schema.json": {
+      "bytes": 2936,
+      "sha256": "17d1ca9092ed16fc3b88ea415a4dfb18f8730b10c7c083916271df4bfe13abe4"
+    },
+    "manual2/data/matter1_audit_report.json": {
+      "bytes": 1641,
+      "sha256": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2"
+    },
+    "manual2/data/matter1_coord0_enclosure_summary.csv": {
+      "bytes": 554,
+      "sha256": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7"
+    },
+    "manual2/data/matter1_elements_1_118_ledger.csv": {
+      "bytes": 36539,
+      "sha256": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0"
+    },
+    "manual2/evidence/foundation-source.json": {
+      "bytes": 5221,
+      "sha256": "267ec6f0ae1f785a47e8901021ec3db19f8fbbcb2a8ae0c90f8127e5b8cfe8f1"
+    },
+    "manual2/evidence/fusion-acceptance-plan.json": {
+      "bytes": 50046,
+      "sha256": "9fc614047fa54f2941b041f49807a68e8f6e622f55dadb6b2ee5d3182d7dce88"
+    },
+    "manual2/evidence/fusion-request.json": {
+      "bytes": 12175,
+      "sha256": "c70c496649661b9bd20fd6260e7b42a011d7d079f42020406b047876c3446a6c"
+    },
+    "manual2/evidence/historical_sources.json": {
+      "bytes": 3064,
+      "sha256": "7f1e64f44884d9022bbda30205d2a345167f72653397dd919e866eded4be3e81"
+    },
+    "manual2/evidence/input_manifest.json": {
+      "bytes": 1504,
+      "sha256": "43488b154903e4f5a363e8a84a9f14d7a8cff731808b4fe9339684ca5e9a66ef"
+    },
+    "manual2/evidence/pr1_baseline_ledger_v1.csv": {
+      "bytes": 24663,
+      "sha256": "202ab421ab2359b6b9e0838e0d5f39b8a8144b0f5ae03704853655c98db51246"
+    },
+    "manual2/evidence/publication-build.json": {
+      "bytes": 7132,
+      "sha256": "37cd10b1632146901adbd5d7d14b0d6f55e29f3f399b61ebb7212dd338e170d1"
+    },
+    "manual2/evidence/renderer-lock.json": {
+      "bytes": 1652,
+      "sha256": "a1aaf0b138242446fa50faa2d6b74bf20e28843528a2736d1c3be1e0930b3ab0"
+    },
+    "manual2/figures/aod_matter1_wheel_accessible.pdf": {
+      "bytes": 49014,
+      "sha256": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d"
+    },
+    "manual2/figures/aod_matter1_wheel_accessible.svg": {
+      "bytes": 129693,
+      "sha256": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999"
+    },
+    "manual2/figures/matter1_figure_manifest.json": {
+      "bytes": 36261,
+      "sha256": "69da9e4765075fe084a409d7bf7beffe5c6e791f8e01280f486da47f072e466a"
+    },
+    "manual2/main.pdf": {
+      "bytes": 227199,
+      "sha256": "0723abd01b39aa68ed789763527a9b6b2a0c3ca94a3ffd6bccc7ca29d8c5cf54"
+    },
+    "manual2/main.tex": {
+      "bytes": 1707,
+      "sha256": "1ec379a28d479cf3b0e35048541128adac770b42e68d9d575f05b2c3c13955ed"
+    },
+    "manual2/preamble.tex": {
+      "bytes": 3563,
+      "sha256": "8deb3a45d7cdc119c9b92e1482516ca07d5def5d8a4de4a90a2b2ff3e97562be"
+    },
+    "manual2/refs.bib": {
+      "bytes": 3241,
+      "sha256": "8f4479a646a0847314c477e2659a4731cdf520db4cc818fd7b40459809fac078"
+    },
+    "manual2/scripts/check_matter1_companion.cjs": {
+      "bytes": 10584,
+      "sha256": "1e4d7b8a25c1cf4506658a0295175884c8947bc8a3b1d5bf7e7570ea4a4e18a5"
+    },
+    "manual2/scripts/check_matter1_figure.py": {
+      "bytes": 7938,
+      "sha256": "903e0ef561e1c0029832c9d8d6b3640f4d6522ada7c0d359e38e9bb9ee1675c8"
+    },
+    "manual2/scripts/generate_matter1_folding.py": {
+      "bytes": 1461,
+      "sha256": "b2a97d5151ddd20de8445e06464a8b35ee7a247cb208450965de770ee6cf2395"
+    },
+    "manual2/scripts/generate_matter1_hyperfine.py": {
+      "bytes": 987,
+      "sha256": "6742fdde95b5834894690f9dcdc025a6564f912de9cd09638e251b27129a37fa"
+    },
+    "manual2/scripts/generate_matter1_ledger.py": {
+      "bytes": 1256,
+      "sha256": "f266d042486a2e808c414e9e4b51595f5b5670bd6b545c448053394bb4468f4e"
+    },
+    "manual2/scripts/generate_matter1_temporal.py": {
+      "bytes": 886,
+      "sha256": "249f424525a6e8b9b74a99b5356fa5d43c1e7be8dc36b3c7e4911009606db707"
+    },
+    "manual2/scripts/generate_matter1_wheel.py": {
+      "bytes": 15598,
+      "sha256": "5ff8e5bf3805ca2f9201f8fa9add0a63adf9ecf017538abcb2b57c0a4a652b0f"
+    },
+    "manual2/scripts/matter1_folding.py": {
+      "bytes": 15120,
+      "sha256": "c9565228021a6e86bcc95ec18d14261a92ed8aca5762d7c9c0a0da5f2d9f1d7b"
+    },
+    "manual2/scripts/matter1_hyperfine.py": {
+      "bytes": 20555,
+      "sha256": "779d64f104232bed536069795c6521c7c833e03dd8f29777da26f4865587537c"
+    },
+    "manual2/scripts/matter1_model.py": {
+      "bytes": 24087,
+      "sha256": "133df5f2a88aaf9f4fb27505f5051199aa3de21467540b54865f1350bd86ff83"
+    },
+    "manual2/scripts/matter1_renderer.py": {
+      "bytes": 3986,
+      "sha256": "3c3a01137f35bb14d27b550850ef626a0a71c5d3a19e1b332324c0dc092a3639"
+    },
+    "manual2/scripts/matter1_temporal.py": {
+      "bytes": 39202,
+      "sha256": "0ba3f7e0e2b8bc44fb83385548702d21549f0ca76a422abc3c04a1a500716b5c"
+    },
+    "manual2/scripts/verify_matter1_folding.py": {
+      "bytes": 822,
+      "sha256": "98af8c5e30c3ebdc5c4934a76fc2e3875f99597681859cefb51ea08754091c38"
+    },
+    "manual2/scripts/verify_matter1_hyperfine.py": {
+      "bytes": 712,
+      "sha256": "54063b7e2851a3e95f209df3e07c45c32763e9d617e42a2b6fea8f82767d22c9"
+    },
+    "manual2/scripts/verify_matter1_ledger.py": {
+      "bytes": 834,
+      "sha256": "9373f14da287373236d06910e6bcd36cbc8d7718c7144ad9427a69c7ccb18710"
+    },
+    "manual2/scripts/verify_matter1_temporal.py": {
+      "bytes": 900,
+      "sha256": "4455a4b2546acfd18405e0413724717e556d42ef6c6171d37b21514263ecf962"
+    },
+    "manual2/sections/00_scope.tex": {
+      "bytes": 2910,
+      "sha256": "6854bcbd7941f7e29ac3a60c5aca4fe726800cc6299c7d73447004517250ed50"
+    },
+    "manual2/sections/01-scope-and-spine.tex": {
+      "bytes": 5089,
+      "sha256": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118"
+    },
+    "manual2/sections/02-coord0-enclosures.tex": {
+      "bytes": 5344,
+      "sha256": "54f4e86eca2a638acede3c94565dab36c2ebacd2cef8940a6bd5f23ca1cc9fa1"
+    },
+    "manual2/sections/03-fusion-contact-ledger.tex": {
+      "bytes": 7002,
+      "sha256": "1362e0a1fc45928db7216f979a78e07168d0f3f6e9b223eee78d36d697eb54a1"
+    },
+    "manual2/sections/04-audits-and-falsification.tex": {
+      "bytes": 3989,
+      "sha256": "a789ade5c6e9f2df284612d73637c706569097d33f6f94d500ce13451070a019"
+    },
+    "manual2/sections/05-fusion-handedness-relational-time.tex": {
+      "bytes": 11812,
+      "sha256": "d40e6d066e839210147b33d44e7a97e1b5a9123f097bfbfbcaf3fc0dc23b083b"
+    },
+    "manual2/sections/06-hyperfine-fusion-reclosure-comparison.tex": {
+      "bytes": 7297,
+      "sha256": "84acb789ac104078c56f6bbb1c530df183e2a5a64fb9cb850bc7535be9eda420"
+    },
+    "manual2/sections/09_prediction_test_fixture_registry.tex": {
+      "bytes": 3995,
+      "sha256": "d2b26a0efb10f969e1650d3311fb8a3b8d937f8225d3ba9278d5646f6f1c3a46"
+    },
+    "manual2/sections/generated_elements_longtable.tex": {
+      "bytes": 13466,
+      "sha256": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2"
+    },
+    "manual2/tests/test_matter1_application.py": {
+      "bytes": 2866,
+      "sha256": "41284246ebf6ea0c8f9ade14e4e52ed75976ae06e43c6aa2598c136739642f5a"
+    },
+    "manual2/tests/test_matter1_data.py": {
+      "bytes": 20034,
+      "sha256": "7da356dbee23144ac28c96142206a340f49aeb069373ee8f41778e92a3e0afd0"
+    },
+    "manual2/tests/test_matter1_exports.py": {
+      "bytes": 3537,
+      "sha256": "61d977d73a09258891346e3231f55126b48ae68566bc319b5055c7f7fdbb65c4"
+    },
+    "manual2/tests/test_matter1_figure.py": {
+      "bytes": 4261,
+      "sha256": "231472841a02848adcfe7cc12acf513d1f918d7f20ba0c7c3ec1b6323ad5ee09"
+    },
+    "manual2/tests/test_matter1_folding.py": {
+      "bytes": 12973,
+      "sha256": "68f8ffabb6146de7052b0373b02aa55d8ebc33896ba8a4a772fe4573a01a3c53"
+    },
+    "manual2/tests/test_matter1_hyperfine.py": {
+      "bytes": 12211,
+      "sha256": "b7480aac1e767926fff702221cc39e0bb0ccb94773f29727026a7be4437e5f18"
+    },
+    "manual2/tests/test_matter1_publication.py": {
+      "bytes": 7799,
+      "sha256": "ce27d209caf18c1c945191517ee7a115ba08513f85d0bd522b401fb368958819"
+    },
+    "manual2/tests/test_matter1_renderer.py": {
+      "bytes": 5432,
+      "sha256": "cd4e6b89533225d450f826c0181fc7acf2af8c59f58f2a278d240cf0f992ccab"
+    },
+    "manual2/tests/test_matter1_temporal.py": {
+      "bytes": 17001,
+      "sha256": "510ca96406d2226d3dcb0555acafc982c1c7cac571b217399ca2174c8f40e717"
+    },
+    "manual2/visuals/README.md": {
+      "bytes": 2272,
+      "sha256": "ea61112c281c4eebee78c40b31a94fc977b4f3f049836e11a544b65938cb5eaf"
+    },
+    "manual2/visuals/matter1-layout.json": {
+      "bytes": 59075,
+      "sha256": "7742eeacddf98a186b20c3a0b3f405917a16ce858ea89ea52e3e50dc06281ca7"
+    },
+    "manual2/visuals/matter1-reference.html": {
+      "bytes": 70596,
+      "sha256": "fe7c885d7773428819e51fe919a826909d456727a4194616577ba168af936a53"
+    },
+    "manual2/visuals/matter1-reference.template.html": {
+      "bytes": 11544,
+      "sha256": "193a362c20500cdee172deb219fcde947b31311869db9ace3cef3f32ffc8886e"
+    },
+    "package.json": {
+      "bytes": 220,
+      "sha256": "e32ff0636cfec4d8a9bb341dd6cdaec56922801b21696f6bc6c2be92c09221c7"
+    },
+    "preamble.tex": {
+      "bytes": 2691,
+      "sha256": "a2c8c0b3dbc6eddc6f78dba4791236ce3ab89c5ad264d5975126d33db6ecfca8"
+    },
+    "refs.bib": {
+      "bytes": 4622,
+      "sha256": "39b6167100ce5c31c544ec65fdb6901f6abe44628fb44ad12eb448c396d7d8e9"
+    },
+    "requirements-matter1.txt": {
+      "bytes": 3341,
+      "sha256": "912b2c1f1c70127f3ec307917fd0e22e3feaa8a13feebcc186e02df3df3a367d"
+    },
+    "scripts/build_matter1_documents.py": {
+      "bytes": 4927,
+      "sha256": "f52eb700e3c12ce09646ebcc3f3b41b85a5b28f511d992a3c110da22f1c0cf88"
+    },
+    "scripts/check_matter1_application.py": {
+      "bytes": 4427,
+      "sha256": "1aac691388b3f7c584799177df53a99eb3fb58c04b98495b51ff04912e7fbf0a"
+    },
+    "scripts/check_matter1_reproduction.py": {
+      "bytes": 6579,
+      "sha256": "f42514ef9970aaaccd642224b167fafb2a4234ac3aabffbd6aaddbcbea15b70a"
+    },
+    "scripts/publication_support.py": {
+      "bytes": 11107,
+      "sha256": "ca8eaf95fa637a7e2421a5216b601530482552d024fe80f42b9af71b60bd0efa"
+    },
+    "scripts/record_matter1_acceptance.py": {
+      "bytes": 21341,
+      "sha256": "e200879b66868f14aa29161fa9fdbeed62ae7a4edcd432b2ade62d492451bd5e"
+    },
+    "scripts/verify_matter1_publication.py": {
+      "bytes": 725,
+      "sha256": "042c63d09ea8ff8dac8fe4fb965f5bea19f483fd2ac805d5c9c352f47e86c652"
+    },
+    "sections/00_title.tex": {
+      "bytes": 817,
+      "sha256": "c86e23a01c95c43c2cb3603afc2d3c574d36f44360da626ebe86f734ad4ce4d4"
+    },
+    "sections/01_abstract.tex": {
+      "bytes": 916,
+      "sha256": "a42ebe256def1106badff156f495206d39fe32a984b97e9fe2ed07ba12c1803c"
+    },
+    "sections/03_afc_basis.tex": {
+      "bytes": 8603,
+      "sha256": "d5b648c0c74afe8c34a344d5069e78b5be5d9a98851ce1abcc6c0f9d1df8c6d3"
+    },
+    "sections/04_cut_running_fractal_tesseract.tex": {
+      "bytes": 10962,
+      "sha256": "887a26c3c4f713b514aeb28f36bbf6361e648671dccbe3bfbda88a430c6bdb9b"
+    },
+    "sections/05_curl_closure_duon_current.tex": {
+      "bytes": 16636,
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    "sections/06_field.tex": {
+      "bytes": 71480,
+      "sha256": "2f51bb5ab1bdd0053f4887f5f00ba8db6aaf70786d563091d32cecde4a2c6ccc"
+    },
+    "sections/06_wave_state_relational_time.tex": {
+      "bytes": 11587,
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    },
+    "sections/08_awareness_learning_mindfulness.tex": {
+      "bytes": 7530,
+      "sha256": "d75cb4543a68abb2a935053a36a3a53319ed9d097e7e3839ff11d9f074b70320"
+    }
+  },
+  "test_runs": {
+    "normal": {
+      "elapsed_seconds_as_reported": "35.395",
+      "method_count": 95,
+      "methods": {
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {
+          "outcome": "ok",
+          "result_line": 1,
+          "start_line": 1
+        },
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_current_conservation": {
+          "outcome": "ok",
+          "result_line": 2,
+          "start_line": 2
+        },
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_persisted_manifest_omission_and_changed_source_reject_read_only": {
+          "outcome": "ok",
+          "result_line": 3,
+          "start_line": 3
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements": {
+          "outcome": "ok",
+          "result_line": 4,
+          "start_line": 4
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_assigned_model_reclassification_cannot_silently_change_fixture": {
+          "outcome": "ok",
+          "result_line": 5,
+          "start_line": 5
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write": {
+          "outcome": "ok",
+          "result_line": 6,
+          "start_line": 6
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_explicit_generation_is_deterministic_and_separate": {
+          "outcome": "ok",
+          "result_line": 7,
+          "start_line": 7
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_false_input_hash_and_provenance_drift_fail": {
+          "outcome": "ok",
+          "result_line": 8,
+          "start_line": 8
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_formatted_declaration_is_syntax_not_a_certificate": {
+          "outcome": "ok",
+          "result_line": 9,
+          "start_line": 9
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_history_does_not_promote_declared_execution_or_observables": {
+          "outcome": "ok",
+          "result_line": 10,
+          "start_line": 10
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_independent_exact_relations_for_all126": {
+          "outcome": "ok",
+          "result_line": 11,
+          "start_line": 11
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_isotope_parameterization_472_conditional_cases": {
+          "outcome": "ok",
+          "result_line": 12,
+          "start_line": 12
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_json_boolean_does_not_count_as_integer": {
+          "outcome": "ok",
+          "result_line": 13,
+          "start_line": 13
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_missing_artifacts_are_reported_and_not_created": {
+          "outcome": "ok",
+          "result_line": 14,
+          "start_line": 14
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_missing_duplicate_reordered_and_extra_rows_fail": {
+          "outcome": "ok",
+          "result_line": 15,
+          "start_line": 15
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected": {
+          "outcome": "ok",
+          "result_line": 16,
+          "start_line": 16
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_noncanonical_types_missing_and_unknown_columns_fail": {
+          "outcome": "ok",
+          "result_line": 17,
+          "start_line": 17
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_nuclear_counts_and_local_tuple_cannot_be_collapsed": {
+          "outcome": "ok",
+          "result_line": 18,
+          "start_line": 18
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_occupancy_and_assigned_ttl_are_separate": {
+          "outcome": "ok",
+          "result_line": 19,
+          "start_line": 19
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_optimized_python_preserves_validation": {
+          "outcome": "ok",
+          "result_line": 20,
+          "start_line": 20
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_parity_is_separate_from_assigned_residual": {
+          "outcome": "ok",
+          "result_line": 21,
+          "start_line": 21
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_prior_14_primary_and_3_extended_probes_revisited": {
+          "outcome": "ok",
+          "result_line": 22,
+          "start_line": 22
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_reference_selection_change_rejected_even_after_manifest_refresh": {
+          "outcome": "ok",
+          "result_line": 23,
+          "start_line": 23
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked": {
+          "outcome": "ok",
+          "result_line": 24,
+          "start_line": 24
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_stale_mirror_audit_summary_and_table_fail": {
+          "outcome": "ok",
+          "result_line": 25,
+          "start_line": 25
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_unknown_flags_are_rejected_without_writes": {
+          "outcome": "ok",
+          "result_line": 26,
+          "start_line": 26
+        },
+        "manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree": {
+          "outcome": "ok",
+          "result_line": 27,
+          "start_line": 27
+        },
+        "manual2.tests.test_matter1_exports.ExportIntegrity.test_semantic_corruptions_rejected_even_with_updated_output_hash": {
+          "outcome": "ok",
+          "result_line": 28,
+          "start_line": 28
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_all126_geometry_with_real_text_metrics": {
+          "outcome": "ok",
+          "result_line": 29,
+          "start_line": 29
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_boundary_examples_and_local_roles": {
+          "outcome": "ok",
+          "result_line": 30,
+          "start_line": 30
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_geometry_rejects_overlap_including_unfilled_slots": {
+          "outcome": "ok",
+          "result_line": 31,
+          "start_line": 31
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_geometry_rejects_vertical_text_overflow": {
+          "outcome": "ok",
+          "result_line": 32,
+          "start_line": 32
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_malformed_persisted_rows_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 33,
+          "start_line": 33
+        },
+        "manual2.tests.test_matter1_figure.FigureContract.test_named_identities_and_unfilled_slots_are_separate": {
+          "outcome": "ok",
+          "result_line": 34,
+          "start_line": 34
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission": {
+          "outcome": "ok",
+          "result_line": 36,
+          "start_line": 35
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject": {
+          "outcome": "ok",
+          "result_line": 38,
+          "start_line": 37
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_count_types_and_undeclared_certificates_reject": {
+          "outcome": "ok",
+          "result_line": 39,
+          "start_line": 39
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject": {
+          "outcome": "ok",
+          "result_line": 41,
+          "start_line": 40
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_explicit_generation_reproduces_outputs": {
+          "outcome": "ok",
+          "result_line": 42,
+          "start_line": 42
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible": {
+          "outcome": "ok",
+          "result_line": 44,
+          "start_line": 43
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source": {
+          "outcome": "ok",
+          "result_line": 46,
+          "start_line": 45
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked": {
+          "outcome": "ok",
+          "result_line": 47,
+          "start_line": 47
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge": {
+          "outcome": "ok",
+          "result_line": 49,
+          "start_line": 48
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects": {
+          "outcome": "ok",
+          "result_line": 51,
+          "start_line": 50
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects": {
+          "outcome": "ok",
+          "result_line": 53,
+          "start_line": 52
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only": {
+          "outcome": "ok",
+          "result_line": 55,
+          "start_line": 54
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject": {
+          "outcome": "ok",
+          "result_line": 56,
+          "start_line": 56
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events": {
+          "outcome": "ok",
+          "result_line": 58,
+          "start_line": 57
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks": {
+          "outcome": "ok",
+          "result_line": 60,
+          "start_line": 59
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_unknown_cli_flag_rejects": {
+          "outcome": "ok",
+          "result_line": 61,
+          "start_line": 61
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only": {
+          "outcome": "ok",
+          "result_line": 63,
+          "start_line": 62
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects": {
+          "outcome": "ok",
+          "result_line": 65,
+          "start_line": 64
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject": {
+          "outcome": "ok",
+          "result_line": 67,
+          "start_line": 66
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity": {
+          "outcome": "ok",
+          "result_line": 68,
+          "start_line": 68
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations": {
+          "outcome": "ok",
+          "result_line": 69,
+          "start_line": 69
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription": {
+          "outcome": "ok",
+          "result_line": 70,
+          "start_line": 70
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected": {
+          "outcome": "ok",
+          "result_line": 71,
+          "start_line": 71
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized": {
+          "outcome": "ok",
+          "result_line": 72,
+          "start_line": 72
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected": {
+          "outcome": "ok",
+          "result_line": 73,
+          "start_line": 73
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root": {
+          "outcome": "ok",
+          "result_line": 74,
+          "start_line": 74
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_actual_broken_semantic_destination_rejected": {
+          "outcome": "ok",
+          "result_line": 75,
+          "start_line": 75
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_changed_main_source_rejected": {
+          "outcome": "ok",
+          "result_line": 76,
+          "start_line": 76
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_corrupted_pdf_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 77,
+          "start_line": 77
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure": {
+          "outcome": "ok",
+          "result_line": 78,
+          "start_line": 78
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_forged_publication_page_count_rejected": {
+          "outcome": "ok",
+          "result_line": 79,
+          "start_line": 79
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_aux_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 80,
+          "start_line": 80
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_receipt_artifact_entry_rejected": {
+          "outcome": "ok",
+          "result_line": 81,
+          "start_line": 81
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_publication_artifact_receipt_entry_rejected": {
+          "outcome": "ok",
+          "result_line": 82,
+          "start_line": 82
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_semantic_link_rejected_when_other_links_remain": {
+          "outcome": "ok",
+          "result_line": 83,
+          "start_line": 83
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_stale_main_receipt_rejected": {
+          "outcome": "ok",
+          "result_line": 84,
+          "start_line": 84
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_stale_publication_foundation_rejected": {
+          "outcome": "ok",
+          "result_line": 85,
+          "start_line": 85
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_wrong_published_pdf_target_rejected": {
+          "outcome": "ok",
+          "result_line": 86,
+          "start_line": 86
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_actual_font_and_requirements_corruption_are_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 87,
+          "start_line": 87
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_changed_binary_font_or_dependency_is_rejected_before_export": {
+          "outcome": "ok",
+          "result_line": 88,
+          "start_line": 88
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_changed_freetype_and_python_are_rejected": {
+          "outcome": "ok",
+          "result_line": 89,
+          "start_line": 89
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_current_environment_matches_release_profile": {
+          "outcome": "ok",
+          "result_line": 90,
+          "start_line": 90
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_forged_delivered_renderer_binding_is_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 91,
+          "start_line": 91
+        },
+        "manual2.tests.test_matter1_renderer.RendererBinding.test_user_matplotlibrc_does_not_change_release_text_metrics": {
+          "outcome": "ok",
+          "result_line": 92,
+          "start_line": 92
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support": {
+          "outcome": "ok",
+          "result_line": 93,
+          "start_line": 93
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair": {
+          "outcome": "ok",
+          "result_line": 94,
+          "start_line": 94
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed": {
+          "outcome": "ok",
+          "result_line": 95,
+          "start_line": 95
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion": {
+          "outcome": "ok",
+          "result_line": 96,
+          "start_line": 96
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates": {
+          "outcome": "ok",
+          "result_line": 97,
+          "start_line": 97
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory": {
+          "outcome": "ok",
+          "result_line": 98,
+          "start_line": 98
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps": {
+          "outcome": "ok",
+          "result_line": 99,
+          "start_line": 99
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance": {
+          "outcome": "ok",
+          "result_line": 100,
+          "start_line": 100
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat": {
+          "outcome": "ok",
+          "result_line": 101,
+          "start_line": 101
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected": {
+          "outcome": "ok",
+          "result_line": 102,
+          "start_line": 102
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison": {
+          "outcome": "ok",
+          "result_line": 103,
+          "start_line": 103
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window": {
+          "outcome": "ok",
+          "result_line": 104,
+          "start_line": 104
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts": {
+          "outcome": "ok",
+          "result_line": 105,
+          "start_line": 105
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map": {
+          "outcome": "ok",
+          "result_line": 106,
+          "start_line": 106
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality": {
+          "outcome": "ok",
+          "result_line": 107,
+          "start_line": 107
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction": {
+          "outcome": "ok",
+          "result_line": 108,
+          "start_line": 108
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types": {
+          "outcome": "ok",
+          "result_line": 109,
+          "start_line": 109
+        }
+      }
+    },
+    "optimized": {
+      "elapsed_seconds_as_reported": "27.948",
+      "method_count": 69,
+      "methods": {
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {
+          "outcome": "ok",
+          "result_line": 81,
+          "start_line": 81
+        },
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_current_conservation": {
+          "outcome": "ok",
+          "result_line": 82,
+          "start_line": 82
+        },
+        "manual2.tests.test_matter1_application.ApplicationBindingTests.test_persisted_manifest_omission_and_changed_source_reject_read_only": {
+          "outcome": "ok",
+          "result_line": 83,
+          "start_line": 83
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements": {
+          "outcome": "ok",
+          "result_line": 1,
+          "start_line": 1
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_assigned_model_reclassification_cannot_silently_change_fixture": {
+          "outcome": "ok",
+          "result_line": 2,
+          "start_line": 2
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write": {
+          "outcome": "ok",
+          "result_line": 3,
+          "start_line": 3
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_explicit_generation_is_deterministic_and_separate": {
+          "outcome": "ok",
+          "result_line": 4,
+          "start_line": 4
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_false_input_hash_and_provenance_drift_fail": {
+          "outcome": "ok",
+          "result_line": 5,
+          "start_line": 5
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_formatted_declaration_is_syntax_not_a_certificate": {
+          "outcome": "ok",
+          "result_line": 6,
+          "start_line": 6
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_history_does_not_promote_declared_execution_or_observables": {
+          "outcome": "ok",
+          "result_line": 7,
+          "start_line": 7
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_independent_exact_relations_for_all126": {
+          "outcome": "ok",
+          "result_line": 8,
+          "start_line": 8
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_isotope_parameterization_472_conditional_cases": {
+          "outcome": "ok",
+          "result_line": 9,
+          "start_line": 9
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_json_boolean_does_not_count_as_integer": {
+          "outcome": "ok",
+          "result_line": 10,
+          "start_line": 10
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_missing_artifacts_are_reported_and_not_created": {
+          "outcome": "ok",
+          "result_line": 11,
+          "start_line": 11
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_missing_duplicate_reordered_and_extra_rows_fail": {
+          "outcome": "ok",
+          "result_line": 12,
+          "start_line": 12
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected": {
+          "outcome": "ok",
+          "result_line": 13,
+          "start_line": 13
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_noncanonical_types_missing_and_unknown_columns_fail": {
+          "outcome": "ok",
+          "result_line": 14,
+          "start_line": 14
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_nuclear_counts_and_local_tuple_cannot_be_collapsed": {
+          "outcome": "ok",
+          "result_line": 15,
+          "start_line": 15
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_occupancy_and_assigned_ttl_are_separate": {
+          "outcome": "ok",
+          "result_line": 16,
+          "start_line": 16
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_optimized_python_preserves_validation": {
+          "outcome": "ok",
+          "result_line": 17,
+          "start_line": 17
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_parity_is_separate_from_assigned_residual": {
+          "outcome": "ok",
+          "result_line": 18,
+          "start_line": 18
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_prior_14_primary_and_3_extended_probes_revisited": {
+          "outcome": "ok",
+          "result_line": 19,
+          "start_line": 19
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_reference_selection_change_rejected_even_after_manifest_refresh": {
+          "outcome": "ok",
+          "result_line": 20,
+          "start_line": 20
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked": {
+          "outcome": "ok",
+          "result_line": 21,
+          "start_line": 21
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_stale_mirror_audit_summary_and_table_fail": {
+          "outcome": "ok",
+          "result_line": 22,
+          "start_line": 22
+        },
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_unknown_flags_are_rejected_without_writes": {
+          "outcome": "ok",
+          "result_line": 23,
+          "start_line": 23
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission": {
+          "outcome": "ok",
+          "result_line": 25,
+          "start_line": 24
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject": {
+          "outcome": "ok",
+          "result_line": 27,
+          "start_line": 26
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_count_types_and_undeclared_certificates_reject": {
+          "outcome": "ok",
+          "result_line": 28,
+          "start_line": 28
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject": {
+          "outcome": "ok",
+          "result_line": 30,
+          "start_line": 29
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_explicit_generation_reproduces_outputs": {
+          "outcome": "ok",
+          "result_line": 31,
+          "start_line": 31
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible": {
+          "outcome": "ok",
+          "result_line": 33,
+          "start_line": 32
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source": {
+          "outcome": "ok",
+          "result_line": 35,
+          "start_line": 34
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked": {
+          "outcome": "ok",
+          "result_line": 36,
+          "start_line": 36
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge": {
+          "outcome": "ok",
+          "result_line": 38,
+          "start_line": 37
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects": {
+          "outcome": "ok",
+          "result_line": 40,
+          "start_line": 39
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects": {
+          "outcome": "ok",
+          "result_line": 42,
+          "start_line": 41
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only": {
+          "outcome": "ok",
+          "result_line": 44,
+          "start_line": 43
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject": {
+          "outcome": "ok",
+          "result_line": 45,
+          "start_line": 45
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events": {
+          "outcome": "ok",
+          "result_line": 47,
+          "start_line": 46
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks": {
+          "outcome": "ok",
+          "result_line": 49,
+          "start_line": 48
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_unknown_cli_flag_rejects": {
+          "outcome": "ok",
+          "result_line": 50,
+          "start_line": 50
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only": {
+          "outcome": "ok",
+          "result_line": 52,
+          "start_line": 51
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects": {
+          "outcome": "ok",
+          "result_line": 54,
+          "start_line": 53
+        },
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject": {
+          "outcome": "ok",
+          "result_line": 56,
+          "start_line": 55
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity": {
+          "outcome": "ok",
+          "result_line": 74,
+          "start_line": 74
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations": {
+          "outcome": "ok",
+          "result_line": 75,
+          "start_line": 75
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription": {
+          "outcome": "ok",
+          "result_line": 76,
+          "start_line": 76
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected": {
+          "outcome": "ok",
+          "result_line": 77,
+          "start_line": 77
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized": {
+          "outcome": "ok",
+          "result_line": 78,
+          "start_line": 78
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected": {
+          "outcome": "ok",
+          "result_line": 79,
+          "start_line": 79
+        },
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root": {
+          "outcome": "ok",
+          "result_line": 80,
+          "start_line": 80
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support": {
+          "outcome": "ok",
+          "result_line": 57,
+          "start_line": 57
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair": {
+          "outcome": "ok",
+          "result_line": 58,
+          "start_line": 58
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed": {
+          "outcome": "ok",
+          "result_line": 59,
+          "start_line": 59
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion": {
+          "outcome": "ok",
+          "result_line": 60,
+          "start_line": 60
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates": {
+          "outcome": "ok",
+          "result_line": 61,
+          "start_line": 61
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory": {
+          "outcome": "ok",
+          "result_line": 62,
+          "start_line": 62
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps": {
+          "outcome": "ok",
+          "result_line": 63,
+          "start_line": 63
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance": {
+          "outcome": "ok",
+          "result_line": 64,
+          "start_line": 64
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat": {
+          "outcome": "ok",
+          "result_line": 65,
+          "start_line": 65
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected": {
+          "outcome": "ok",
+          "result_line": 66,
+          "start_line": 66
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison": {
+          "outcome": "ok",
+          "result_line": 67,
+          "start_line": 67
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window": {
+          "outcome": "ok",
+          "result_line": 68,
+          "start_line": 68
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts": {
+          "outcome": "ok",
+          "result_line": 69,
+          "start_line": 69
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map": {
+          "outcome": "ok",
+          "result_line": 70,
+          "start_line": 70
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality": {
+          "outcome": "ok",
+          "result_line": 71,
+          "start_line": 71
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction": {
+          "outcome": "ok",
+          "result_line": 72,
+          "start_line": 72
+        },
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types": {
+          "outcome": "ok",
+          "result_line": 73,
+          "start_line": 73
+        }
+      }
+    },
+    "publication_final": {
+      "elapsed_seconds_as_reported": "5.690",
+      "method_count": 12,
+      "methods": {
+        "manual2.tests.test_matter1_publication.PublicationTests.test_actual_broken_semantic_destination_rejected": {
+          "outcome": "ok",
+          "result_line": 1,
+          "start_line": 1
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_changed_main_source_rejected": {
+          "outcome": "ok",
+          "result_line": 2,
+          "start_line": 2
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_corrupted_pdf_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 3,
+          "start_line": 3
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure": {
+          "outcome": "ok",
+          "result_line": 4,
+          "start_line": 4
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_forged_publication_page_count_rejected": {
+          "outcome": "ok",
+          "result_line": 5,
+          "start_line": 5
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_aux_rejected_without_repair": {
+          "outcome": "ok",
+          "result_line": 6,
+          "start_line": 6
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_receipt_artifact_entry_rejected": {
+          "outcome": "ok",
+          "result_line": 7,
+          "start_line": 7
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_publication_artifact_receipt_entry_rejected": {
+          "outcome": "ok",
+          "result_line": 8,
+          "start_line": 8
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_missing_semantic_link_rejected_when_other_links_remain": {
+          "outcome": "ok",
+          "result_line": 9,
+          "start_line": 9
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_stale_main_receipt_rejected": {
+          "outcome": "ok",
+          "result_line": 10,
+          "start_line": 10
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_stale_publication_foundation_rejected": {
+          "outcome": "ok",
+          "result_line": 11,
+          "start_line": 11
+        },
+        "manual2.tests.test_matter1_publication.PublicationTests.test_wrong_published_pdf_target_rejected": {
+          "outcome": "ok",
+          "result_line": 12,
+          "start_line": 12
+        }
+      }
+    }
+  },
+  "unresolved_dependencies": [
+    "P2 admission and committed return witnesses bound to the physical isotope/state model, beyond a finite mathematical example",
+    "P3 comparator, phase, lag and RCD records for those same mapped atomic lineages",
+    "Physical observation map from oscillator recurrence and quantum phase to native certified reclosure and closure phase",
+    "One common frozen transition law and state-configuration map before any independent spectral scoring",
+    "New independent target and documented selection history for an independent prediction claim",
+    "Quantitative realization/covariance budget if the original evaluations are recombined or a new precision score is attempted"
+  ]
+}

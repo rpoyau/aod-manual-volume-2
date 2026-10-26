@@ -1,0 +1,87 @@
+{
+  "status": "PASS_REPRODUCTION",
+  "outputs": [
+    {
+      "path": "data/m1/folding/event_ledger.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/folding/folding_report.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/folding/temporal_report.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/folding/temporal_trace.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/history/declaration_crosswalk.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/history/observable_coverage.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/history/value_map_status.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/hyperfine/hyperfine_report.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/matter1_audit_report.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/matter1_coord0_enclosure_summary.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/m1/matter1_elements_1_118_ledger.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/matter1_audit_report.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/matter1_coord0_enclosure_summary.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "data/matter1_elements_1_118_ledger.csv",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "figures/aod_matter1_wheel_accessible.pdf",
+      "comparison": "PDF text, vector geometry, colors and size"
+    },
+    {
+      "path": "figures/aod_matter1_wheel_accessible.svg",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "figures/matter1_figure_manifest.json",
+      "comparison": "manifest excluding PDF binary hash"
+    },
+    {
+      "path": "sections/generated_elements_longtable.tex",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "visuals/matter1-layout.json",
+      "comparison": "byte equality"
+    },
+    {
+      "path": "visuals/matter1-reference.html",
+      "comparison": "byte equality"
+    }
+  ],
+  "source_unchanged": true,
+  "scope": "Data/table/chart/companion and declared application output reproduction; no native admission or empirical agreement claim."
+}

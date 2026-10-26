@@ -1,0 +1,117 @@
+\section{State-Dependent Evolution and the SI Prediction Experiment}
+\label{manual2:stateful-si}
+
+\subsection{A response that changes later events}
+\paragraph{Setup.}
+The second finite model retains the two-face geometry of \secref{manual2:folding-time}. Its state contains the oriented boundary position, structural-hinge sample, retained outer identity, committed return and contact records, pending response and inner scope maps. The declared update consumes that state at the next integer cut. It instantiates the form of \mainequation{eq:wave-update-trace}; the particular sequencer and capacity rule are application inputs.
+
+\paragraph{Derivation.}
+At a comparison cut, the engine calculates a burden from the committed histories and records a response for the following cut. A retention loss then removes the affected outer identity from subsequent traversal and contact eligibility. An unfinished traversal is not promoted to a return. Previously completed returns and the inner maps remain in the trace. Re-admission would require a separate construction; this model supplies none.
+
+The controlled pair changes only the declared capacity. Its common prefix is identical before the response, while later return and contact records differ. This establishes causal state dependence within the finite model. The frozen first version remains available as the original response-calculation fixture; its precomputed histories are unchanged.
+
+In the persisted pair, capacity changes from 100 to 2 at cut 40, and loss commits at cut 41. The affected returns at cuts 47, 54, 61 and 68 disappear; completed contacts decrease from eight to two. With the first completion retained as the lineage anchor, the finite-window reclosure-count ratio changes from \(6/5\) to \(2/5\). These are counts over the declared window, not a stationary frequency estimate.
+
+\paragraph{Specialization.}
+Integer cuts, six-edge boundary traversals, hinge support, completed returns and cadence remain distinct types. The finite comparison uses \mainequation{eq:cadence-ratio} with its explicit histories and windows. It does not identify an outer recurrence with either an atomic transition or one SI second.
+
+\paragraph{Falsification.}
+The verifier rejects a post-loss affected return, an unavailable contact, altered earlier history, missing inner map, forged status or stale source binding. A changed future response cannot modify an earlier committed prefix. These checks operate on persisted counterexamples and do not repair their inputs.
+
+\aodprovenance{\path{manual2/data/m1/stateful/}; the separate model and trace verifier preserve \path{manual2/data/m1/folding/}. Source ownership follows \mainequation{eq:complete-wave-state}, \mainequation{eq:complete-coupling-state} and \mainequation{eq:wave-update-trace}.}
+
+\subsection{The atomic observable is an additional construction}
+\paragraph{Setup.}
+The designated experiment uses Cs-133 as the frequency-scale reference and H-1 as the comparison target. Both configurations must belong to one declared atomic dynamics and observation law. The law must calculate a dimensionless ratio \(\widehat R_{\mathrm{AOD}}\), before the hydrogen evaluation value is read. The external state inventory of \secref{manual2:hyperfine-application} identifies the transitions; it does not supply that law.
+
+\paragraph{Derivation.}
+Once the physical observation map is established, ideal-reference reporting gives
+\begin{equation}
+\widehat\nu_{\mathrm H}=\widehat R_{\mathrm{AOD}}\,\Delta\nu_{\mathrm{Cs}},
+\qquad
+\Delta\nu_{\mathrm{Cs}}=9\,192\,631\,770\ \mathrm{Hz},
+\qquad
+\widehat T_{\mathrm H}=\widehat\nu_{\mathrm H}^{-1}.
+\label{eq:manual2-si-prediction}
+\end{equation}
+The Cs definition fixes the unit scale. It does not determine \(\widehat R_{\mathrm{AOD}}\). Likewise, a ratio of finite return counts becomes a physical frequency ratio only through the declared atomic observation map.
+
+\paragraph{Specialization.}
+The cited source premises and the present atomic contract do not supply an instantiated Cs/H configuration-to-observable law. The executable underdetermination experiment therefore keeps its finite histories and Cs anchor fixed while varying the unconstrained observation relation. Different resulting hydrogen reports demonstrate that these premises do not select a unique atomic prediction. The alternatives are diagnostic countermodels, not proposed measured frequencies or fitted atomic laws.
+
+Specifically, let \(r\) be the finite count ratio and assign the two lineages hypothetical labels \(Z=1,55\). The unselected observation family
+\begin{equation}
+g_\lambda(Z)=1+\lambda\frac{55-Z}{54},\qquad
+\lambda>-1,\qquad
+R_\lambda=r\frac{g_\lambda(1)}{g_\lambda(55)}=r(1+\lambda)
+\label{eq:manual2-observation-freedom}
+\end{equation}
+preserves the Cs normalization for every member while allowing every positive ratio. The witnesses \(\lambda=0,1\) give \(6/5,12/5\) for the baseline and \(2/5,4/5\) after intervention. This proves underdetermination by the implemented finite constraints, not a general impossibility of an atomic AOD construction.
+
+The minimum additional premise is a justified common atomic construction and observable law that fixes the relative Cs/H response without importing the tested hydrogen splitting, its reciprocal period or an equivalent gain. Selecting one countermodel by agreement with the known target would fit that target. The atomic prediction objective remains incomplete until this premise is supplied and tested.
+
+\paragraph{Calibration.}
+For the conventional benchmark, dimensionless spin operators obey
+\begin{equation}
+\frac{H}{h}=\frac{A_{\mathrm{hfs}}}{h}\,\boldsymbol I\mathbin{\cdot}\boldsymbol J
++\frac{\mu_B}{h}B(g_JJ_z+g_II_z),\qquad
+\nu(B)=\sqrt{\Delta^2+\left[(g_J-g_I)\mu_BB/h\right]^2}
+\label{eq:manual2-conventional-benchmark}
+\end{equation}
+in the \(J=1/2,m_F=0\) block, with \(A_{\mathrm{hfs}}/h=\Delta/(I+1/2)\). The imported zero-field splittings are \(\Delta_{\mathrm H}=1\,420\,405\,751.768\,\mathrm{Hz}\) and \(\Delta_{\mathrm{Cs}}=9\,192\,631\,770\,\mathrm{Hz}\). The declared approximation uses \(g_J=2,g_I=0\), omitting nuclear and bound-state corrections. At the stipulated field \(B=10^{-4}\,\mathrm T\), the computed shifts are approximately \(2758.292\,\mathrm{Hz}\) for H and \(426.200\,\mathrm{Hz}\) for Cs. These are conventional numerical benchmark outputs, with incomplete field and approximation uncertainty.
+
+The separately labelled conventional hyperfine calculation uses this spin Hamiltonian and imported transition constants to check numerical machinery. Reproducing an imported splitting verifies that calculation; it does not predict the splitting from AOD. A conditional ideal-reference result and an actual clock realization have different uncertainty inputs. The reference definition carries no uncertainty; an employed device, transfer or calibrated observation map does.
+
+\paragraph{Falsification.}
+The prediction stage binds model, histories, observation assumptions and calibration hashes before the comparison stage reads the target. Changing an evaluation value must leave the prediction artifact unchanged and alter only the corresponding residual. A controlled finite-dynamics intervention must affect the diagnostic mapped observable at a later cut. These software properties do not supply the missing atomic law. The known hydrogen target remains retrospective; frequency and reciprocal period are two reports of the same comparison.
+
+\aodprovenance{\path{manual2/data/m1/atomic/} stores separate calculation and comparison records and the construction obligations. The frozen inventory remains under \path{manual2/data/m1/hyperfine/}.}
+\aodliteraturenote{Defining scale: BIPM~\cite{bipm-second}. Historical target: Hellwig et al.~\cite{hellwig1970}. Hyperfine Hamiltonian: Steck~\cite{steck-cs}. Magnetic conversion: NIST~\cite{nist-mub-h}.}
+
+\subsection{Elapsed seconds and a joint uncertainty budget}
+\paragraph{Setup.}
+For a committed reference window \(\omega\), let \(C_r\) be the physical cycle accumulation established by an observation map, \(f_0\) the fixed nominal reference frequency, \(\bar y\) its effective fractional offset over that window, and \(d\) the signed correction from observed to intended endpoints. Native reclosure count and physical oscillator count are distinct inputs. All shared calibration parameters retain their covariance.
+
+\paragraph{Derivation.}
+The declared measurement equation and its first-order sensitivities are
+\begin{align}
+\widehat T(\omega)&=\frac{C_r}{f_0(1+\bar y)}+d,
+\label{eq:manual2-si-interval}\\
+J&=\left(\frac{1}{f_0(1+\bar y)},
+-\frac{C_r}{f_0(1+\bar y)^2},1\right),
+&u_c^2(T)&=J\Sigma J^{\mathsf T}.
+\label{eq:manual2-si-covariance}
+\end{align}
+The elapsed interval \(\widehat T(\omega)\) is distinct from the transition period \(\widehat T_{\mathrm H}\) in \eqnref{eq:manual2-si-prediction}. A faster reference gives a shorter inferred interval at fixed accumulated cycles. An ideal frequency divider transforms counts, nominal frequency and covariance together and preserves the reported interval and its uncertainty.
+
+\paragraph{Specialization.}
+A shared endpoint offset cancels only when the measurement equation takes its difference. A common frequency bias need not average down. A quadratic field shift at zero mean field can have nonzero expectation and uncertainty even where its first derivative vanishes. Unresolved discrete cycle slips require an ambiguity model. Unknown covariance, drift or transfer effects are not numerical zeros.
+
+\paragraph{Calibration.}
+Each budget component records its unit, source, validity window, correction sign, covariance group and inclusion in any aggregate. An already included realization contribution is not added again as an independent term. The reported measurand distinguishes local proper time from a coordinated time scale; only applicable external motion, potential and transfer corrections enter. A later calibration may revise a retrospective report, but it cannot be represented as available to an earlier online computation.
+
+The persisted positive examples exercise declared synthetic maps and uncertainty budgets. They do not invent a clock calibration certificate. A materially incomplete physical budget produces a scoped partial result; independent finite-model execution continues.
+
+One exact synthetic budget yields \(\widehat T=1\,\mathrm{s}\) and \(u_c^2=4904\,\mathrm{ps}^2\), hence \(u_c\simeq70.0286\,\mathrm{ps}\). A separate integration example maps five reference reclosures to one second by stipulation; the controlled intervention changes the compared count from six to two while preserving those five reference reclosures. Neither stipulation supplies a measured atomic observation gain.
+
+\paragraph{Falsification.}
+The integration checks reject covariance with incorrect units, ordering, asymmetry or a negative quadratic direction; unknown material terms, duplicate aggregate inclusion, stale scope and future calibration are tested separately. Nonlinear and discrete cases cannot acquire a complete precision claim by using only a linear derivative.
+
+\aodprovenance{\path{manual2/data/m1/metrology/}; the application contract is preserved in \path{manual2/evidence/v2-request/SI_ANCHOR_CONTRACT.md}.}
+\aodliteraturenote{Realization and proper time: CCTF~\cite{bipm-mise-second}. Measurement models and correlated uncertainty: JCGM~\cite{jcgm100,jcgm6}.}
+
+\subsection{Published frequency covariance}
+\paragraph{Setup.}
+The BIPM adjustment input retains 153 rows, including seven effectively excluded by enlarged uncertainties, and 1,168 correlation coefficients. The output contains 14 frequency estimates and their covariance. Raw bytes, source metadata and prior target exposure are preserved.
+
+\paragraph{Derivation.}
+The source README describes a ratio basis, while the numerical matrix is consistent with squared hertz. Under this documented interpretation, ratios to the exact Cs definition use \(\Sigma_{\nu/\nu_{\mathrm{Cs}}}=\Sigma_\nu/\nu_{\mathrm{Cs}}^2\); general ratios use their full Jacobian. Exact rational intervals propagate the nearest-rounding cells of covariance inputs and printed frequencies. All 105 calculated uncertainty intervals overlap the corresponding squared output-uncertainty rounding cells. This includes cases where a point estimate alone lies outside the last-digit interval of the output.
+
+\paragraph{Specialization.}
+The recommendation multiplies standard uncertainty by \(2.35\), hence covariance by \(2.35^2\). This is distinct from a coverage factor. The adjustment's added fractional term \(5.324065020\times10^{-17}\) is already represented in its outputs and is not appended again. Adjusted estimates and their contributing measurements are not independent observations of one another.
+
+\paragraph{Falsification.}
+Hash checks preserve the input; independent parser and numerical tests reject altered identities, correlation domains, covariance, units and output uncertainties. The numerical unit interpretation is not an official corrigendum, a reconstruction of the least-squares adjustment or a physical clock realization.
+
+\aodprovenance{\path{manual2/data/m1/bipm/source_manifest.json} and \path{bipm_report.json}; 153 source records and all 105 uncertainty comparisons remain inspectable.}
+\aodliteraturenote{Published input, output, covariance and analysis notes: BIPM~\cite{bipm-2025-adjustment}.}

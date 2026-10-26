@@ -1,0 +1,22 @@
+\section{Pending External Comparison}\label{manual2:app:quarantined-external}
+
+\subsection{Scope and numeric policy}\label{manual2:app:qext-scope}
+No native-versus-measured atomic score is executed in this release. The external inventory in \secref{manual2:hyperfine-application} records a historical hydrogen measurement and the caesium defining reference; reference arithmetic is separate from a model prediction. The diagnostic residuals in \secref{manual2:stateful-si} compare unselected observation-map countermodels with the exposed target; they do not establish an atomic model or agreement. An atomic comparison must bind an established candidate, its declared value map and a sourced target record before evaluating
+\begin{equation}
+\Qext(\nu_{Z,\AO};\mathcal T_Z).
+\label{eq:manual2-qext}
+\end{equation}
+A conditional support sum does not become a measured prediction merely by being frozen. Candidate selection and the mathematical/physical meaning of the value map must be explicit before joining targets.
+
+External mass, spectral or isotope data retain their sources and units. A displayed measured decimal requires
+\begin{equation}
+(x_{\mathrm{disp}},u_x,\mathrm{unit}(x),\mathrm{src}(x),\mathrm{round}(x),\mathrm{scope}(x)).
+\label{eq:manual2-decimal-precision}
+\end{equation}
+These records are distinct from the exact integer reference A and from \((Z,A-Z)\). AME and NIST references below identify possible comparison sources; no per-element selection of the present A inputs is attributed to them.
+
+\subsection{Pending comparison gates}\label{manual2:app:qext-audit}
+A future measured lane must identify the candidate and frozen inputs, applicable admission/execution evidence, value map, target version and row identity, units and precision, comparison formula, and resulting status. Missing inputs remain explicitly pending. No spectral, isotope-stability, charge, decay or reaction agreement is inferred from the reference figure.
+
+\aodprovenance{\mainsection{subsec:external-comparison-quarantine}; released AOD Manual v41.02, \S1.7--\S1.8 and App.~B.}
+\aodliteraturenote{Potential external comparison sources: Wang et al.~\cite{iupac-ame}; NIST ASD~\cite{nist-asd}.}

@@ -1,0 +1,11 @@
+value_map,status,reason
+lambda_E,deferred_not_attached,Manual II dataset mapping only
+lambda_H,deferred_not_attached,worked example only
+lambda_atomic_weight,deferred_not_attached,future / prior scored lane not released here
+lambda_isotope,deferred_not_attached,future / prior scored lane not released here
+lambda_molecule,deferred_not_attached,Appendix M schema/examples only
+lambda_formula,deferred_not_attached,Appendix M schema/examples only
+lambda_graph,deferred_not_attached,Appendix M schema/examples only
+lambda_pubchem,deferred_not_attached,"PubChem is target source, not value map"
+lambda_state,deferred_not_attached,Matter II future scope
+lambda_medium,deferred_not_attached,Matter II future scope

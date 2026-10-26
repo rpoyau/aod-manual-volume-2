@@ -1,0 +1,207 @@
+{
+  "acceptance_scope": {
+    "F-01": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "F-02": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "F-03": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "F-04": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "F-08": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-01": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-02": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-03": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-04": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-05": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P2-06": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P3-01": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P3-02": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P3-03": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P3-04": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P3-05": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P5-04": "finite_declared_model_assertions_only_not_native_or_empirical_admission",
+    "P5-06": "finite_declared_model_assertions_only_not_native_or_empirical_admission"
+  },
+  "assertion_scope": "H1/hinge/own-return, finite witness bindings, explicit cell embeddings, distinct recurrence, committed comparison, declared causal response; no complete motif admission.",
+  "certificates": "finite_predicate_witness_not_motif_admission",
+  "comparison_rows": [
+    {
+      "beat_counts": [
+        2,
+        2
+      ],
+      "bias": "1/2",
+      "directional_durations": [
+        5,
+        7
+      ],
+      "drift": null,
+      "lag": "1/2",
+      "ratio": "1",
+      "reverse_ratio": "1",
+      "window": [
+        20,
+        43
+      ]
+    },
+    {
+      "beat_counts": [
+        3,
+        2
+      ],
+      "bias": "1/2",
+      "directional_durations": [
+        5,
+        7
+      ],
+      "drift": "1",
+      "lag": "3/2",
+      "ratio": "3/2",
+      "reverse_ratio": "2/3",
+      "window": [
+        20,
+        47
+      ]
+    },
+    {
+      "beat_counts": [
+        4,
+        3
+      ],
+      "bias": "1/2",
+      "directional_durations": [
+        5,
+        7
+      ],
+      "drift": "0",
+      "lag": "3/2",
+      "ratio": "4/3",
+      "reverse_ratio": "3/4",
+      "window": [
+        20,
+        54
+      ]
+    }
+  ],
+  "declared_outer_support_sum": 7,
+  "finite_model_execution": "executed",
+  "geometry_sha256": "ce4b8f6ea9c1095393e6ae76074aa68fd2554c978234a1aba4412ad00bd82501",
+  "kernel": "not_used_deterministic_declared_edge_rule",
+  "model_sha256": "3c3af0eb7e36b7e3c4da2280329b5f5eb289267120322f9087d6d9adad0a3ee9",
+  "opposite_chirality_preserved_at_equal_support": true,
+  "outer_traversals_per_closure": 6,
+  "response_rows": [
+    {
+      "burden": "5/2",
+      "capacity": "10",
+      "committed_cut": 44,
+      "excess": "0",
+      "input_cut": 43,
+      "outer_retention": "retained",
+      "residual": "-15/2",
+      "sadar": "5/2",
+      "same_boundary_reversed_sadar": "-5/2"
+    },
+    {
+      "burden": "15/2",
+      "capacity": "10",
+      "committed_cut": 48,
+      "excess": "0",
+      "input_cut": 47,
+      "outer_retention": "retained",
+      "residual": "-5/2",
+      "sadar": "15/2",
+      "same_boundary_reversed_sadar": "-15/2"
+    },
+    {
+      "burden": "15/2",
+      "capacity": "3",
+      "committed_cut": 55,
+      "excess": "9/2",
+      "input_cut": 54,
+      "outer_retention": "lost_by_declared_capacity_rule",
+      "residual": "9/2",
+      "sadar": "15/2",
+      "same_boundary_reversed_sadar": "-15/2"
+    }
+  ],
+  "schema_version": 1,
+  "statuses": {
+    "atomic_mapping_status": "pending",
+    "empirical_status": "not_tested",
+    "native_admission_status": "pending",
+    "native_execution_status": "not_claimed",
+    "record_class": "declared_finite_folding_model"
+  },
+  "trace_sha256": "9e0bdc5e091f567aa2047e522387d57d7c87b7374f762d69318fcfe3bb71465c",
+  "unresolved_dependencies": [
+    "Complete AOD motif admission and inherited primitive support accessors for these declared cells.",
+    "A source-derived dynamics rule replacing the declared edge sequencer, dwell and capacity inputs.",
+    "A physical observation map from the fixed-isotope electronic/nuclear states to admitted complexes.",
+    "A bound metrological duration/frequency map, calibration and uncertainty/covariance model.",
+    "Independent prediction design after recording prior hydrogen-target exposure."
+  ],
+  "wave_summaries": {
+    "inner_minus": {
+      "beats_from_origin": 3,
+      "cadence": [
+        5,
+        5,
+        5
+      ],
+      "closures": 4,
+      "completion_cuts": [
+        4,
+        9,
+        14,
+        19
+      ]
+    },
+    "inner_plus": {
+      "beats_from_origin": 3,
+      "cadence": [
+        5,
+        5,
+        5
+      ],
+      "closures": 4,
+      "completion_cuts": [
+        4,
+        9,
+        14,
+        19
+      ]
+    },
+    "outer_minus": {
+      "beats_from_origin": 4,
+      "cadence": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "closures": 5,
+      "completion_cuts": [
+        27,
+        35,
+        43,
+        51,
+        59
+      ]
+    },
+    "outer_plus": {
+      "beats_from_origin": 4,
+      "cadence": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "closures": 5,
+      "completion_cuts": [
+        26,
+        33,
+        40,
+        47,
+        54
+      ]
+    }
+  }
+}

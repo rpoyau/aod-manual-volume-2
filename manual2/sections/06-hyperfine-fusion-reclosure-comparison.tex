@@ -1,0 +1,58 @@
+\section{Staged Hyperfine Application}\label{manual2:hyperfine-application}
+
+\subsection{Atomic identity and sourced recurrence}
+\paragraph{Setup.}
+The proposed application compares recurrent atomic and oscillator systems through one common fusion/reclosure model. Element placement alone does not identify a hyperfine state: hold \(Z\), isotope \(A\), charge, electronic state and nuclear spin fixed, and distinguish the coupled states. The present inventory has two neutral isotopes, four states and two transitions. It adds no placement to the 118-element reference and changes no reference-A input.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{External atomic inventory.} Frequencies are source records, not predictions of the finite folding model. Both clock transitions have \(m_F=0\) at each endpoint.}
+\label{tab:manual2-hyperfine-inputs}
+\begin{tabularx}{\textwidth}{@{}p{0.13\textwidth}p{0.24\textwidth}p{0.17\textwidth}X@{}}
+\toprule
+Nuclide & Electronic state; \(I,J\) & Transition & Frequency record\\
+\midrule
+\({}^{1}\mathrm H\), \(Z=1\) & \(1s\,{}^2S_{1/2}\); \(1/2,1/2\) & \(F=1\leftrightarrow0\) & \(1\,420\,405\,751.768\) Hz; reported one-sigma uncertainty \(0.002\) Hz; historical 1970 measurement\\
+\({}^{133}\mathrm{Cs}\), \(Z=55\) & \([\mathrm{Xe}]6s\,{}^2S_{1/2}\); \(7/2,1/2\) & \(F=4\leftrightarrow3\) & \(9\,192\,631\,770\) Hz; exact defining value; realization uncertainty is a separate quantity\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Derivation.}
+Hellwig et al.'s printed page 200 reports the hydrogen value with uncertainty \(2\times10^{-3}\) Hz. The exponent is bound to the retained page image, correcting the earlier plan's \(0.02\) Hz transcription. This is a dated measurement, not a current recommended value. Dividing the quoted decimal by the defining caesium value gives the external reference ratio
+\[
+r_{\mathrm{H/Cs}}^{\mathrm{ref}}=0.1545156803086000,
+\qquad
+u_r^{\mathrm{reported}}\simeq2.1757\times10^{-13}.
+\]
+The implementation retains exact rational arithmetic of the transcribed decimals; the measured hydrogen frequency is not physically exact. The uncertainty shown divides the paper's reported one-sigma uncertainty by the exact defining denominator. It is not a new uncertainty evaluation or an independent recombination of the two hydrogen evaluations.
+
+The inventory retains the common NBS-III caesium reference and the paper's wall, cavity-pulling, spin-exchange, magnetic-field and second-order Doppler correction context. Quantitative covariance and separate realization uncertainties remain unresolved where not supplied. A missing quantity is recorded as unknown, not zero. A new precision comparison must supply the applicable conditions and shared-reference uncertainty budget.
+
+\paragraph{Specialization.}
+Atomic interrogation prepares coherence and compares its later phase with an oscillator; population measurements provide feedback to that oscillator. The counted recurrence is the stabilized oscillator cycle. A detection count, Rabi oscillation, spontaneous waiting time and hyperfine frequency are different observables. Relating oscillator cycles and quantum phase to certified native reclosures requires a physical observation map.
+
+\aodprovenance{\path{manual2/data/m1/hyperfine/target_inventory.json} binds nuclide, state, transition, source and uncertainty records. \path{sources/hellwig1970-page200.png} preserves the transcription evidence. The report retains the ratio's measured-input scope.}
+\aodliteraturenote{Historical measurement and state labels: Hellwig et al.~\cite{hellwig1970}. Atomic data: NIST~\cite{nist-hydrogen-handbook,sansonetti2005}. Defining reference: BIPM~\cite{bipm-second}. Clock operation: NIST~\cite{nist-clock-operation}.}
+
+\subsection{A common model and its remaining observation map}
+\paragraph{Setup.}
+The application hypothesis is a reconfiguration between two states of the same isotope, bound to one frozen fusion/reclosure model. Proposed before/after configurations must preserve the isotope identity and the actual retained inner lineages. A transition need not increase element number, mass number or folding depth. A detected transfer can be identified as native shedding only after its source, destination, direction, window and measured observable are mapped.
+
+\paragraph{Derivation.}
+The atomic inventory (P4a), applicable construction (P2) and coupled recurrence (P3) are all prerequisites of the physical observation map (P4):
+\[
+(\mathrm{P4a},\mathrm{P2},\mathrm{P3})\longrightarrow\mathrm{P4}.
+\]
+The finite declared-model checks of \secref{manual2:folding-time} instantiate selected construction and comparator predicates. They do not supply isotope-specific native admission, a physical state/configuration map, or an independently derived update rule. Thus P4 remains pending. Chirality or a ternary role cannot be equated with \(m_F\) by visual resemblance, and a separate fitted law for each spectral line cannot count as a prediction of one common model.
+
+The next native AOD physical comparison requires admitted atomic configurations, their recurrent histories and coupling records, a map from measured phase/cycles to native phase/returns, a metrological duration or frequency map, and its calibration and uncertainty model. Until those premises are established, the native predicted frequency ratio and empirical score remain absent. Separately declared conditional models and conventional benchmarks can execute under their own identified premises, as in \secref{manual2:stateful-si}. The same distinction applies to a proposed occurrence of the mathematical constant \(\pi\): no physical result is inferred from its use in a drawing or angular convention.
+
+\paragraph{Specialization.}
+The hydrogen target was exposed during the discussion and supplied plans before this implementation. \path{target_exposure.json} records exposure by 26 October 2026; an earlier exact first-exposure time is unknown. The known pilot is retrospective. A subsequent model freeze does not establish independent selection or blindness. A calibrant cannot also be scored as a held-out target. Independent prediction requires a separately justified target and selection history. Frequency-only data do not test phase bias, lag or drift.
+
+\paragraph{Falsification.}
+Persisted hostile tests reject changed atomic foreign keys, the incorrect hydrogen uncertainty, omitted correction lists and covariance statuses, unsupported native or empirical promotion, a policy allowing target access during candidate selection, a calibrant labelled held out, detection/cycle substitution, and per-line fitted models advertised as independent predictions. These are actual schema and provenance guard tests. Their success is not empirical agreement. Every consumed status is checked; missing statuses fail rather than silently becoming zero or success.
+
+\aodprovenance{\path{observation_map.json} records the P4a/P2/P3 dependencies and pending physical map. \path{hyperfine_report.json} lists unresolved dependencies and null prediction/score fields. Native recurrence, comparator and duration definitions are inherited from \mainequation{eq:cadence-ratio}, \mainequation{eq:count-comparator-realization} and \mainequation{eq:rcd-duration-participation}.}
+\aodliteraturenote{External atomic observations remain downstream of the released AOD definitions~\cite{poyau-aod-v4102}; the historical target remains bound to Hellwig et al.~\cite{hellwig1970}.}
