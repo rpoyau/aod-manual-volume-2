@@ -1,0 +1,68 @@
+{
+  "status": "ILLUSTRATIVE_CELLULAR_COUNT_FIXTURE",
+  "admission_status": "not_asserted",
+  "native_execution_status": "not_asserted",
+  "empirical_status": "not_tested",
+  "vertices": {
+    "A": "0000",
+    "B": "1000",
+    "C": "1100",
+    "D": "0100",
+    "E": "0010",
+    "F": "1010"
+  },
+  "minus_face": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "A"
+  ],
+  "plus_face": [
+    "B",
+    "A",
+    "E",
+    "F",
+    "B"
+  ],
+  "shared_interface": [
+    "A",
+    "B"
+  ],
+  "outer_walk": [
+    "A",
+    "E",
+    "F",
+    "B",
+    "C",
+    "D",
+    "A"
+  ],
+  "outgoing_leg": [
+    "A",
+    "E",
+    "F",
+    "B"
+  ],
+  "returning_leg": [
+    "B",
+    "C",
+    "D",
+    "A"
+  ],
+  "vertex_roles": {
+    "A": 0,
+    "B": 0,
+    "C": -1,
+    "D": -1,
+    "E": 1,
+    "F": 1
+  },
+  "repetition_domain": {
+    "min": 1,
+    "max_checked": 64
+  },
+  "tick_definition": "One oriented Hamming-1 edge traversal in this illustrative walk; vertex samples and boundary support weights are separate types.",
+  "hinge_policy": "Shared interface AB is retained as cell incidence. Its edge cancels from the outer boundary; the outer walk meets its endpoints. No extra edge is inserted for a unit RD support weight.",
+  "limitation": "These cells and paths do not supply an AOD motif-admission, retained-return, fold or fusion certificate."
+}

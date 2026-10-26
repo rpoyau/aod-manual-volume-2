@@ -2,7 +2,7 @@
 
 A compact elemental reference for Z = 1–118, downstream of released AOD v41.02 and AFC v2.4. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
-This revision preserves the candidate’s element identities, positions, local counts and conditional support values. Its validation profile is **static relational reference**. Scope/Q4 admission, exact native kernels, reversed-edge SADAR pairing, retained-return witnesses and fusion execution remain pending; successful arithmetic and publication checks do not certify those lanes. Reference A values retain their candidate provenance and unresolved original selection policy.
+This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
 ## Read the candidate
 
@@ -46,6 +46,11 @@ From the repository root:
 python3 -B manual2/scripts/verify_matter1_ledger.py
 python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
+python3 -B scripts/check_matter1_application.py
+for lane in folding temporal hyperfine; do
+  python3 -B "manual2/scripts/verify_matter1_${lane}.py"
+  python3 -B -O "manual2/scripts/verify_matter1_${lane}.py"
+done
 node manual2/scripts/check_matter1_companion.cjs
 ```
 
@@ -58,6 +63,9 @@ Generate the data/chart and build the publication pair explicitly, then verify:
 ```sh
 python3 -B manual2/scripts/generate_matter1_ledger.py --output-root manual2
 MPLCONFIGDIR=/tmp/matter1-mpl python3 -B manual2/scripts/generate_matter1_wheel.py
+for lane in folding temporal hyperfine; do
+  python3 -B "manual2/scripts/generate_matter1_${lane}.py"
+done
 python3 -B scripts/build_matter1_documents.py
 python3 -B scripts/verify_matter1_publication.py
 ```
@@ -70,7 +78,7 @@ To reproduce data and chart outputs without replacing delivered files:
 python3 -B scripts/check_matter1_reproduction.py
 ```
 
-The reproduction check generates into a disposable directory, compares the exact 15-output inventory, data/table/layout/HTML/SVG bytes and PDF text/vector geometry and colors, and checks that source bytes remain unchanged. Character coordinates remain compared to 0.001 pt; PDF tolerance was not widened to hide renderer drift. `--generator-python PATH` supports a separate interpreter satisfying the same renderer profile.
+The reproduction check generates into a disposable directory, compares the exact 20-output inventory, data/table/layout/HTML/SVG/application JSON bytes and PDF text/vector geometry and colors, and checks that source bytes remain unchanged. Character coordinates remain compared to 0.001 pt; PDF tolerance was not widened to hide renderer drift. `--generator-python PATH` supports a separate interpreter satisfying the same renderer profile.
 
 ## Tests and CI scope
 
@@ -79,8 +87,23 @@ After the paired build:
 ```sh
 python3 -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v
 python3 -B -O -m unittest discover -s manual2/tests -p 'test_matter1_data.py' -v
+for lane in folding temporal hyperfine; do
+  python3 -B -O -m unittest discover -s manual2/tests -p "test_matter1_${lane}.py" -v
+done
 ```
 
-Tests mutate disposable copies: operand compensation, fixed hinge, unsupported certification/execution, identity/types, mirrors, history joins, inputs, actual exports, renderer binaries/fonts and publication bindings. Browser checks cover all 126 marks, 320/360 px layouts, pointer/keyboard, light/dark modes and invalid A inputs. They measure visible invalid-input text contrast in both themes against a 4.5:1 threshold, and boundary badge text against a scoped 7:1 target. These checks do not certify whole-page WCAG conformance. Tests do not claim native D.E.C. execution or empirical agreement.
+Tests mutate disposable copies: operand compensation, fixed hinge, unsupported certification/execution, identity/types, mirrors, history joins, inputs, actual exports, renderer binaries/fonts and publication bindings. Browser checks cover all 126 marks, 320/360 px layouts, pointer/keyboard, light/dark modes and invalid A inputs. They measure visible invalid-input text contrast in both themes against a 4.5:1 threshold, and boundary badge text against a scoped 7:1 target. These checks do not certify whole-page WCAG conformance. The additional suites exercise persisted coordinate-alias, event replay, wrong-map, hinge, causal-order, atomic-identity, target-exposure and status mutations without rewriting inputs. These establish the stated finite model and software guards; complete native motif admission and empirical agreement remain pending.
 
 `.github/workflows/matter1.yml` runs persisted checks before generation, a paired build, tests and reproduction, and uploads PDFs/logs. A local passing run is not a hosted CI result. The implementation handoff records the actual local commands and inspected pages separately.
+
+## Folding and hyperfine application
+
+Manual sections 6–7 follow one branch–hinge–return construction through folding, distinct retained returns, two-lineage comparison and a declared causal response. The injective two-square Q4 example has three traversals in each leg: `x = 3n`, `2x = 6n` for n repetitions of that pattern. Its traversal count is separate from hinge support, a closure phase, a recurrence interval and physical time. Inner-to-outer maps retain distinct scopes, identities and histories.
+
+`manual2/data/m1/folding/` stores the illustrative ledger and a declared finite recurrence model. The deterministic edge rule, optional dwell, phase bias, reflection-count map and capacity schedule are declared inputs. The resulting exact cadence, lag, directional duration, causal SADAR response and exposure records are checked against those inputs. No stochastic kernel or physical atomic period is inferred from geometry.
+
+`manual2/data/m1/hyperfine/` stores two isotopes, four hyperfine states, two transitions and five primary sources. The historical hydrogen uncertainty is **0.002 Hz**, visually bound to printed page 200 of Hellwig et al. The hydrogen target was previously exposed, so the known pilot is retrospective. The quoted H/Cs ratio is external reference arithmetic; predicted ratio and empirical score remain null. A physical observation map still requires isotope-specific P2 construction and P3 coupling/recurrence in addition to the P4a source inventory. A later model freeze does not establish independent prediction.
+
+The new generators accept `--root SOURCE_REPO --output-root OUTPUT_REPO`; they write only owned generated outputs. Verification always reads persisted inputs and outputs. `manual2/evidence/fusion-request.json` binds the execution request, unchanged skills, foundation, static inputs and chart. The 39-ID acceptance records distinguish actual finite assertions and guard results from unresolved native and physical dependencies.
+
+The committed `manual2/evidence/fusion-acceptance-results.json` records the 39 scoped results and hashes the supporting logs in `manual2/evidence/fusion-checks/`. After rerunning the commands into a checks directory, use `python3 -B scripts/record_matter1_acceptance.py --checks-dir CHECKS --output RESULT.json` to record a new receipt. This recorder validates complete successful logs and current source/test/model bindings; it does not execute tests or independently attest plain logs. CI records its own receipt from that run.

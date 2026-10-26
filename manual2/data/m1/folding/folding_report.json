@@ -1,0 +1,59 @@
+{
+  "assertion_scope": "Finite Q4 incidence and externally supplied traversal counting only",
+  "empirical_status": "not_tested",
+  "event_ledger_sha256": "8c470013c381d09bf53c631493b6a558c54b7c7264383c69143cc3cea6b1f4ae",
+  "events": {
+    "distinct_event_ids": 18,
+    "fixture_binding": "ce4b8f6ea9c1095393e6ae76074aa68fd2554c978234a1aba4412ad00bd82501",
+    "native_beat_count": null,
+    "native_closure_count": null,
+    "native_count_status": "not_asserted",
+    "outgoing_traversals": 9,
+    "repetitions": 3,
+    "returning_traversals": 9,
+    "total_traversals": 18
+  },
+  "fixture_sha256": "ce4b8f6ea9c1095393e6ae76074aa68fd2554c978234a1aba4412ad00bd82501",
+  "four_edge_counterexample": {
+    "addresses": [
+      "0000",
+      "1000",
+      "1100",
+      "0100",
+      "0000"
+    ],
+    "multiple_of_six": false,
+    "native_admission": "not_asserted",
+    "traversals": 4
+  },
+  "geometry": {
+    "coordinate_map": "injective",
+    "distinct_q4_vertices": 6,
+    "incidence_representation": "Q4 addresses",
+    "outer_edge_count": 6,
+    "per_leg_edges": 3,
+    "shared_edge_outer_coefficient": 0,
+    "shared_edge_retained_in_fixture": [
+      "A",
+      "B"
+    ],
+    "validated_fixture_statuses": {
+      "admission_status": "not_asserted",
+      "empirical_status": "not_tested",
+      "native_execution_status": "not_asserted",
+      "status": "ILLUSTRATIVE_CELLULAR_COUNT_FIXTURE"
+    }
+  },
+  "native_admission": "not_asserted",
+  "native_execution": "not_asserted",
+  "q4_directed_edges_checked": 64,
+  "repetition_cases_checked": 64,
+  "schema_version": 1,
+  "source_bindings": [
+    "eq:atomic-h1",
+    "eq:hinge-grammar",
+    "eq:afc-stokes-used",
+    "eq:fold-outer-closure"
+  ],
+  "verification_status": "verified_illustrative_contract"
+}

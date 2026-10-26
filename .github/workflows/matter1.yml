@@ -1,4 +1,4 @@
-name: Matter I static reference
+name: Matter I reference and folding application
 on:
   pull_request:
   push:
@@ -42,8 +42,13 @@ jobs:
       - name: Verify delivered data, exports and browser before any generation
         run: |
           python -B manual2/scripts/verify_matter1_ledger.py | tee /tmp/matter1-checks/ledger.json
-          python -B -O manual2/scripts/verify_matter1_ledger.py --check-data
+          python -B -O manual2/scripts/verify_matter1_ledger.py --check-data | tee /tmp/matter1-checks/ledger-optimized.json
           python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
+          python -B scripts/check_matter1_application.py | tee /tmp/matter1-checks/conservation.json
+          for lane in folding temporal hyperfine; do
+            python -B "manual2/scripts/verify_matter1_${lane}.py" | tee "/tmp/matter1-checks/${lane}.json"
+            python -B -O "manual2/scripts/verify_matter1_${lane}.py" > "/tmp/matter1-checks/${lane}-optimized.json"
+          done
           node manual2/scripts/check_matter1_companion.cjs --screenshots-dir /tmp/matter1-checks/browser | tee /tmp/matter1-checks/browser.json
       - name: Build paired publication and verify actual PDF references
         run: |
@@ -52,8 +57,9 @@ jobs:
       - name: Actual hostile mutations and disposable reproduction
         run: |
           python -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v 2>&1 | tee /tmp/matter1-checks/tests.txt
-          python -B -O -m unittest discover -s manual2/tests -p 'test_matter1_data.py' -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+          python -B -O -m unittest manual2.tests.test_matter1_data manual2.tests.test_matter1_folding manual2.tests.test_matter1_temporal manual2.tests.test_matter1_hyperfine manual2.tests.test_matter1_application -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
           python -B scripts/check_matter1_reproduction.py | tee /tmp/matter1-checks/reproduction.json
+          python -B scripts/record_matter1_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/acceptance.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -64,6 +70,8 @@ jobs:
             manual2/figures/
             manual2/visuals/
             manual2/evidence/
+            manual2/data/m1/folding/
+            manual2/data/m1/hyperfine/
             /tmp/matter1-checks/
             /tmp/matter1-paired-build/*-console.txt
             /tmp/matter1-paired-build/manual2/*-console.txt

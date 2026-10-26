@@ -1,0 +1,114 @@
+\section{Folded Construction and Relational Time}\label{manual2:folding-time}
+
+\subsection{Distinction, handed hinge and retained lineage}
+\paragraph{Setup.}
+The schematic sameness presentation \(\cdots xxx\cdots=x\) belongs to \mainsection{subsec:null-presentation}. Its occurrences are not previously distinguished events or ticks. The first distinction and its anchor precede the finite construction below. On an oriented construction, the shorthand \(x(x)x\) resolves as \(x^-(x^0)x^+\): branch, retained hinge and counterbranch. Reflection exchanges the sides and preserves the hinge. This Manual instantiates those relations; it does not replace Main's ontology with a runtime string-reduction rule.
+
+\paragraph{Derivation.}
+Handedness records branch order through the hinge. The support accessor inherited from \mainequation{eq:branch-hinge-rd} is
+\[
+RD_B(C)=\Pi_C^-+H_{\mu,C}+\Pi_C^+.
+\]
+Equal scalar support does not identify oppositely oriented constructions. A duration realization, a count of traversals and a count of retained returns require their respective maps. In particular, a structural hinge is mandatory even when optional hinge dwell is zero; it need not be a seventh Hamming-1 traversal.
+
+Folding relates distinct inner and outer scopes through explicit maps
+\[
+f_-:(B_-,i_-,\Gamma_-)\longrightarrow(B_o,i_o),\qquad
+f_+:(B_+,i_+,\Gamma_+)\longrightarrow(B_o,i_o).
+\]
+These maps preserve the source identity, scope, lineage, orientation, history and certificate. A proposed outer boundary requires its own retained start and return witness \(\Gamma_o\). Exposure follows the maps back to the inner records. Neither common endpoint coordinates nor a handedness flip supplies an outer certificate. Cross-scale scope equality is not required.
+
+\paragraph{Provenance.}
+The source obligations are \mainequation{eq:hinge-grammar}, \mainequation{eq:hinge-reflection-involution}, \mainequation{eq:hinge-chirality-tag}, \mainequation{eq:fold-outer-closure} and \mainequation{eq:expose-inner-lineage}.
+
+\subsection{An injective two-face example}\label{manual2:two-face-example}
+\paragraph{Setup.}
+Declare six distinct vertices of \(Q_4\), with each committed base traversal changing one coordinate:
+\[
+\begin{array}{c|cccccc}
+\text{vertex}&A&B&C&D&E&F\\\hline
+\text{address}&0000&1000&1100&0100&0010&1010
+\end{array}
+\]
+Take the oriented square faces \(C_-=(A,B,C,D,A)\) and \(C_+=(B,A,E,F,B)\). They share only the coordinate edge \(AB\), with opposite orientation. Assign interface roles to \(A,B\), negative-side roles to \(C,D\), and positive-side roles to \(E,F\). The role projection is separate from the coordinate path.
+
+\paragraph{Derivation.}
+Cancellation in the oriented boundary chain gives
+\[
+\partial(C_-+C_+)=(A,E,F,B,C,D,A).
+\]
+The shared interface remains present in the incidence and history records. Cancellation of its outer coefficient does not erase that record. The two legs \((A,E,F,B)\) and \((B,C,D,A)\) each contain three Hamming-1 traversals. For \(n\) declared repetitions, let \(x\) denote the number of committed traversals in one leg family. Then
+\begin{equation}
+x=3n,\qquad 2x=6n.
+\label{eq:manual2-three-plus-three}
+\end{equation}
+Here \(n\) counts repetitions of this specified pattern; one counted tick is one committed Hamming-1 traversal. The factor three follows from the enumerated edges, not from naming three roles. The persisted illustrative ledger contains three repetitions, nine traversals per leg and eighteen distinct event identities. It asserts no native closure or beat count.
+
+\paragraph{Specialization.}
+Main's two-nonempty-leg bound in \mainequation{eq:minimal-phase-quantum-bound} constrains an already admitted closure. It neither selects this six-edge construction nor fixes a universal duration. A four-edge square is also a closed Hamming-1 walk. Conversely, closure of a geometric walk alone does not admit a native motif. One accepted retained return contributes one closure phase; later distinct returns of that same lineage supply beats as specified by \mainequation{eq:beat-reclosure}. Replaying a record supplies neither a new traversal nor a new return.
+
+If an additional model identifies each branch support operand with \(3n\), its RD expression is \(6n+H_\mu\), with \(6n+1\) only in the single-hinge specialization. That support statement is distinct from the six-edge traversal count. The mathematical constant \(\pi\), physical seconds and an atomic frequency do not enter this finite counting model.
+
+\paragraph{Falsification.}
+The checker rejects the coordinate aliases \(E=D\), \(F=C\) before counting: they make the face boundaries coincide with opposite orientation rather than leave the claimed six-edge boundary. It also rejects a reversed interface, a non-Hamming-1 edge, a missing role, duplicate external event identities, reserialized/recounted events, wrong scope or lineage, and unsupported status promotion. Checks run against persisted inputs without changing their bytes. The generator is a separate command.
+
+\aodprovenance{\path{manual2/data/m1/folding/two_square_fold.json}, \path{event_ledger.json} and \path{folding_report.json}; \mainequation{eq:atomic-h1}, \mainequation{eq:afc-stokes-used} and \mainequation{eq:closure-phase-step-count}.}
+
+\subsection{Declared recurrence and mapped comparison}\label{manual2:declared-recurrence}
+\paragraph{Setup.}
+The separate finite model commits the next oriented edge at each update cut. A distinct start sample follows a completed return; optional hinge dwell contributes a zero-edge sample. These update cuts are the declared model's ordering domain, not seconds or a newly derived universal clock. Two inner square lineages, each with four retained returns, are embedded into each of two oppositely oriented outer lineages. The outer traces follow the six-edge boundary with their own starts and returns. Their inner maps remain explicit.
+
+The model declares zero optional dwell for the positive outer orientation and one sample for the negative orientation. It declares phase biases \(b_+=1/4\), \(b_-=-1/4\), four comparison contacts, and three reporting cuts. These are fixture inputs. No target frequency, desired physical period or stochastic kernel is read by the generator.
+
+\paragraph{Derivation.}
+The inner completion cuts are \(4,9,14,19\). The positive outer completion cuts are \(26,33,40,47,54\); the negative outer cuts are \(27,35,43,51,59\). Thus both outer traces have six Hamming-1 traversals and the same declared support sum \(6+1=7\), while their completion intervals are respectively seven and eight update cuts. Support and recurrence intervals retain different types even where their numbers coincide.
+
+Each return witness binds its own start, hinge, events, scope and lineage. Event and return identities are unique; the first retained return supplies the origin, and subsequent returns supply beats. Two identity-preserving maps bind committed return prefixes to the comparator scope. Repeated contacts are required. For the windows in \tabref{tab:manual2-temporal-model}, define
+\[
+\operatorname{biz}_{+|-}=\frac{\Delta\operatorname{bip}_+}{\Delta\operatorname{bip}_-},\qquad
+\psi=b_+-b_-=\frac12,\qquad
+\Lambda(v)=N_+(v)-N_-(v)+\psi.
+\]
+Here \(N_\pm(v)\) are cumulative reclosure counts from each lineage's origin; they equal the window beat increments for these windows starting before both outer origins. A later window does not reset unwrapped lag. The reference counts are positive. Exchanging the comparator direction gives reciprocal cadence and negated bias/lag. Equal cadence in the first window does not remove its nonzero bias or lag.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Executed declared-model comparisons.} Drift is the change from the preceding reported unwrapped lag; its first value is undefined.}
+\label{tab:manual2-temporal-model}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+Window & Beat counts \((+,-)\) & Cadence ratio & Unwrapped lag & Drift\\
+\midrule
+\((20,43]\) & \((2,2)\) & \(1\) & \(1/2\) & undefined\\
+\((20,47]\) & \((3,2)\) & \(3/2\) & \(3/2\) & \(1\)\\
+\((20,54]\) & \((4,3)\) & \(4/3\) & \(3/2\) & \(0\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Specialization.}
+The declared contact support is two traversals plus one structural hinge, giving three support units. An explicit additive contact-duration map adds reflection counts \((1,1)\) in one direction and \((2,2)\) in the other. Its directional duration counts are five and seven. These are contact durations under a declared map, not the outer support accessor or empirically measured periods. The model executes finite Hamming-1, hinge, own-return and fold-map predicates, while complete motif admission and native atomic execution remain pending.
+
+\aodprovenance{\path{temporal_model.json} declares the update and comparison inputs; \path{temporal_trace.json} stores events, witnesses, maps and contacts. Source anchors: \mainequation{eq:wave-update-trace}, \mainequation{eq:coupling-trace}, \mainequation{eq:rcd-additive-realization}, \mainequation{eq:cadence-ratio} and \mainequation{eq:count-comparator-realization}.}
+
+\subsection{Causal returned-current response and exposure}
+\paragraph{Setup.}
+For the same committed comparison histories, declare boundary weight \(C_3=1\), oriented current \(i=1\) and forward duration participation \(\rho^D_\omega=5\). Use the preceding signed lag in the inherited returned-current expression. The three compatible capacities are declared inputs \(10,10,3\), not predicted material properties. Responses commit strictly after the reporting cut that supplied their inputs.
+
+\paragraph{Derivation.}
+This specialization evaluates
+\[
+\mathfrak S=C_3\rho^D_\omega\Lambda i,\qquad
+P^{\mathfrak S}=C_3\rho^D_\omega|\Lambda|,\qquad
+X=\max(0,P^{\mathfrak S}-C^{\mathrm{close}}).
+\]
+It yields \(\mathfrak S=5/2,15/2,15/2\), residuals \(-15/2,-5/2,9/2\), and excesses \(0,0,9/2\). The first two windows have nonzero lag and no positive excess. A separately bound reversal pair preserves boundary, window, history and duration participation while reversing edge orientation and signed current; its returned-current values are antisymmetric. This pairing is distinct from exchanging the two directional duration maps.
+
+The responses commit at cuts \(44,48,55\). The last loses positive-outer retention under the declared capacity rule, records an excess route and exposes the preserved inner maps and certificates. This is a model bridge between a typed excess and loss of outer retention; it is not an identity valid for every boundary. Routed-material reclosure and any radiation identification remain pending.
+
+\paragraph{Falsification.}
+Persisted tests reject forged finite certificates, missing structural hinge, omitted/substituted inner maps, recycled inner returns, replayed or repackaged returns, one-contact comparisons, forced duration symmetry, same-step self-causation, mismatched reversed-edge witnesses and unsupported status changes. The finite model's exact reproduction is tested independently of native admission. A source-derived dynamics rule, complete motif/accessor admission and an atomic observation map are still required before these fixture cadences or capacities can become physical predictions.
+
+\aodprovenance{\path{temporal_report.json} separates declared execution, finite witness scope, native admission and empirical status. Source anchors: \mainequation{eq:sadar-operator-expanded}, \mainequation{eq:sadar-orientation-antisymmetry}, \mainequation{eq:causal-update}, \mainequation{eq:closure-residual} and \mainequation{eq:shedding-excess}.}
+
+\aodliteraturenote{The inherited distinction, fold and recurrence definitions are in the released AOD foundation~\cite{poyau-aod-v4102}. The finite fixture and update model in this section are Manual applications.}

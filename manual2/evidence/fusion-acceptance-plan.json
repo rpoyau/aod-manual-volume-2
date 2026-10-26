@@ -1,0 +1,925 @@
+{
+  "schema_version": 1,
+  "document_kind": "acceptance_plan_not_results",
+  "request_acceptance_sha256": "bd2e5b0796b2a5214d5cecd44027d6dfcff33209e596b05881d36ac05f32a646",
+  "request_archive_sha256": "6d19d3dd8a9d6e88ee6f642359ac29156fb4632dda6d562b5b4cad82e3bcb689",
+  "record_count": 39,
+  "outcome_policy": "not_run here means the complete integration run has not been recorded in this plan; final actual results belong to a separately generated execution receipt. A passing software assertion does not promote native admission/execution or empirical agreement.",
+  "records": [
+    {
+      "id": "P0-01",
+      "stage": "P0",
+      "subject": "Candidate binding",
+      "stimulus": "PR head moves",
+      "expected": "Compare and rebind before patching",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "test_ids": [],
+      "commands": [
+        "python3 -B scripts/check_matter1_application.py --root ."
+      ],
+      "assertion_scope": "Validate the recorded intake head/tree, request archive hash and preservation receipt. The bundle verifier established the intake binding; this receipt is historical and does not substitute for refreshing the remote immediately before push.",
+      "remaining_dependency": "Refresh remote PR head immediately before normal push; compare/rebind and revalidate any intervening commit.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/evidence/fusion-request.json"
+      ]
+    },
+    {
+      "id": "P0-02",
+      "stage": "P0",
+      "subject": "Conservation",
+      "stimulus": "Add levels and transitions",
+      "expected": "Preserve 118 placements and 126 static slots",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "test_ids": [
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked"
+      ],
+      "commands": [
+        "python3 -B scripts/check_matter1_application.py --root .",
+        "python3 -B manual2/scripts/verify_matter1_ledger.py --check-data",
+        "python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data",
+        "python3 -B -m unittest manual2.tests.test_matter1_data.Matter1DataTests.test_126_frozen_numeric_rows_and_118_placements manual2.tests.test_matter1_data.Matter1DataTests.test_source_member_hashes_and_generated_history_joins_are_checked -v"
+      ],
+      "assertion_scope": "Preserve 118 elemental placements, all 126 frozen numeric reference rows, history joins and declared statuses; the application checker also verifies protected released-source and compact-chart bytes.",
+      "remaining_dependency": "No scientific native/empirical conclusion follows from baseline conservation.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-01",
+      "stage": "P1",
+      "subject": "Cell incidence",
+      "stimulus": "Glue the specified faces; mutate E=D and F=C",
+      "expected": "Six distinct Q4 addresses; exactly the declared shared edge in coordinates; reject aliases",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only manual2.tests.test_matter1_folding.FoldingTests.test_coordinate_aliases_reject -v"
+      ],
+      "assertion_scope": "The six used Q4 addresses are injective and share exactly the declared edge; persist E=D/F=C and reject under normal and optimized Python.",
+      "remaining_dependency": "Geometric validity is not native structural admission.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-02",
+      "stage": "P1",
+      "subject": "Orientation",
+      "stimulus": "Reverse one face incorrectly",
+      "expected": "Reject non-cancelling interface",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_wrong_interface_orientation_rejects -v"
+      ],
+      "assertion_scope": "Persist reversal of one oriented face and reject failure of shared-interface cancellation.",
+      "remaining_dependency": "An oriented cellular example does not establish a physical fusion.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-03",
+      "stage": "P1",
+      "subject": "Atomic support",
+      "stimulus": "Insert a Hamming-distance-two edge",
+      "expected": "Reject the trace",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_non_hamming_edge_rejects manual2.tests.test_matter1_folding.FoldingTests.test_hamming_witnesses_are_checked -v"
+      ],
+      "assertion_scope": "Persist a distance-two edge and false changed-coordinate/endpoint witnesses; reject against stored Q4 addresses.",
+      "remaining_dependency": "Native dynamics and atomic realization remain separate.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-04",
+      "stage": "P1",
+      "subject": "Ternary scope",
+      "stimulus": "Remove side or interface",
+      "expected": "Reject fully realized triad claim",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_missing_side_or_interface_rejects -v"
+      ],
+      "assertion_scope": "Remove a side role or one interface endpoint from the persisted example; reject incomplete declared ternary geometry.",
+      "remaining_dependency": "Three geometric roles do not supply a physical time unit.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-05",
+      "stage": "P1",
+      "subject": "Counting",
+      "stimulus": "Repeat the specified pattern n times",
+      "expected": "Count exactly 3n plus 3n traversals",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_repetition_counts_come_from_external_events manual2.tests.test_matter1_folding.FoldingTests.test_valid_persisted_contract_read_only -v"
+      ],
+      "assertion_scope": "Read serialized event records for n=1..64 and count 3n outbound plus 3n return traversals; checked persisted default n=3 yields 18 events.",
+      "remaining_dependency": "6n is the traversal count of this declared trace, not a universal closed-walk theorem or native closure certificate.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-06",
+      "stage": "P1",
+      "subject": "Identity",
+      "stimulus": "Reuse event ID or recount serialization",
+      "expected": "Reject duplicate accounting",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_duplicate_identity_and_serialization_replay_reject manual2.tests.test_matter1_folding.FoldingTests.test_wrong_scope_lineage_and_fixture_bindings_reject manual2.tests.test_matter1_folding.FoldingTests.test_predecessor_ordinals_and_occurrences_reject -v"
+      ],
+      "assertion_scope": "Reject duplicate event/serialization IDs, a relabeled replay, changed scope/lineage and invalid predecessor/occurrence binding in persisted records.",
+      "remaining_dependency": "An event ledger identity test is not native admission.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-07",
+      "stage": "P1",
+      "subject": "Role and tick types",
+      "stimulus": "Infer three ticks from role names",
+      "expected": "Require trace-level derivation",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_role_names_do_not_determine_ticks -v"
+      ],
+      "assertion_scope": "Reject substituting three role names for event units and deleting an event while retaining the 6n claim.",
+      "remaining_dependency": "A physical tick/recurrence observation map remains required.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-08",
+      "stage": "P1",
+      "subject": "Support and tick types",
+      "stimulus": "Insert hinge weight as another H1 edge",
+      "expected": "Require explicit map",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_hinge_support_is_not_an_extra_edge -v"
+      ],
+      "assertion_scope": "Reject a unit hinge-support record counted as an H1 traversal or appended as another edge.",
+      "remaining_dependency": "Any support-to-time map must account explicitly for the structural hinge.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P1-09",
+      "stage": "P1",
+      "subject": "Generality",
+      "stimulus": "Use four-edge closed Q4 support walk",
+      "expected": "Graph closure alone does not force six; no automatic admission",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_geometry_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_folding.FoldingTests.test_four_edge_closed_walk_is_not_six_divisible -v"
+      ],
+      "assertion_scope": "Check all 64 directed Q4 edges and a valid four-edge closed walk; closure evenness does not force divisibility by six; no admission claim is added.",
+      "remaining_dependency": "Native closure admission requires more than graph closure.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P2-01",
+      "stage": "P2",
+      "subject": "Admission",
+      "stimulus": "Forge certificate or change its scope",
+      "expected": "Reject before native consumer",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_01_structural_certificates -v"
+      ],
+      "assertion_scope": "Reject a formatted certificate label, wrong scope and rehashed false retained-start/scope witnesses using structural validation before finite consumers.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P2-02",
+      "stage": "P2",
+      "subject": "Hinge",
+      "stimulus": "Drop structural hinge with optional dwell",
+      "expected": "Reject native construction",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_02_hinge_is_mandatory -v"
+      ],
+      "assertion_scope": "Reject removal of the structural hinge or a forged hinge witness; separately accept a six-traversal trace with optional dwell removed while retaining its hinge.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P2-03",
+      "stage": "P2",
+      "subject": "Outer fold",
+      "stimulus": "Fold distinct inner scopes with explicit maps; omit or substitute a map; reuse an inner return",
+      "expected": "Accept compatible cross-scale provenance only with maps and outer witness; forced scope equality is not required",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_03_explicit_cross_scale_maps -v"
+      ],
+      "assertion_scope": "Retain unequal inner and outer scopes through explicit incidence maps; reject a missing/substituted map, forced cross-scale equality, or an inner certificate substituted for the outer return.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P2-04",
+      "stage": "P2",
+      "subject": "Exposure",
+      "stimulus": "Expose outer fold after boundary cancellation",
+      "expected": "Recover each inner identity scope lineage orientation history and certificate through its retained mapping",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance -v"
+      ],
+      "assertion_scope": "The declared capacity response exposes exactly the stored inner maps when outer retention is lost; persisted mutations removing certificates, orientation or lineage fail.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P2-05",
+      "stage": "P2",
+      "subject": "Reclosure",
+      "stimulus": "Replay sample or repackage certificate",
+      "expected": "No additional beat",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_05_replay_cannot_add_beat -v"
+      ],
+      "assertion_scope": "A replayed complete return or re-certified duplicate event is rejected; count two distinct returns in the declared later window and four committed returns from the origin.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P2-06",
+      "stage": "P2",
+      "subject": "Dynamics",
+      "stimulus": "Read desired period or measured target",
+      "expected": "Reject predictive status",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected -v"
+      ],
+      "assertion_scope": "Persist desired-period and measured-hydrogen input fields in the finite update specification, or promote its predictive status; strict input/status validation rejects each before native-like consumers.",
+      "remaining_dependency": "The mathematical schedule is declared, not a physical period derivation. Atomic prediction requires independently selected physical dynamics and an observation map.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P3-01",
+      "stage": "P3",
+      "subject": "Cadence",
+      "stimulus": "Exchange positive-reference lineages",
+      "expected": "Reciprocal exact ratio under declared comparator",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_01_reciprocal_comparison -v"
+      ],
+      "assertion_scope": "For positive-reference finite beat windows, exchanging lineages gives an exact reciprocal cadence ratio and negated bias/unwrapped lag; reject a forged reverse ratio.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P3-02",
+      "stage": "P3",
+      "subject": "Bias",
+      "stimulus": "Equal cadence with unequal bias or lag",
+      "expected": "Keep temporal records distinct",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_02_bias_unwrapped_lag_and_later_window -v"
+      ],
+      "assertion_scope": "Keep equal cadence with distinct bias/lag; later window beat counts [2,2] and cumulative counts [3,2] preserve unwrapped lag 3/2; reject wrapping away a whole closure or wrong drift.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P3-03",
+      "stage": "P3",
+      "subject": "Coupling",
+      "stimulus": "One contact or uncoupled waves",
+      "expected": "No completed relational-time claim",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_03_repeated_bound_contacts -v"
+      ],
+      "assertion_scope": "Reject one-contact comparison, uncoupled identity substitution and contact-certificate replay; completed finite comparison requires repeated independent bound contacts.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P3-04",
+      "stage": "P3",
+      "subject": "Duration",
+      "stimulus": "Omit interface or force RCD symmetry",
+      "expected": "Reject consumed duration claim or mark incomplete",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_04_directional_duration_map -v"
+      ],
+      "assertion_scope": "Check declared directional durations 5 and 7 and contact support 3; reject missing duration map or forced symmetric reflected input/output.",
+      "remaining_dependency": "The finite duration map is explicitly declared; its values are not measured atomic durations or a derived SI conversion.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P3-05",
+      "stage": "P3",
+      "subject": "Causality",
+      "stimulus": "Use same-step response to create its own input",
+      "expected": "Reject causal cycle",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p3_05_next_step_causality -v"
+      ],
+      "assertion_scope": "Each response commits at input_cut+1; reject same-step self-input and a response ID substituted for its own input comparison.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "P4-01",
+      "stage": "P4",
+      "subject": "Atomic identity",
+      "stimulus": "Map two hyperfine levels of the same isotope after inventory",
+      "expected": "P4 requires P4a P2 and P3; distinct state IDs preserve element identity and native model bindings",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Inventory two states per isotope with separate IDs and fixed Z/A/charge; reject isotope/element aliases and removal of each required P4a/P2/P3 dependency.",
+      "remaining_dependency": "P4a is an external inventory. Native atomic P2 admission, P3 lineages and a physical observation map remain unestablished.",
+      "subtest_labels": [
+        "P4-01 isotope changed",
+        "P4-01 same state twice",
+        "P4-01 element alias",
+        "P4-01 invalid charge",
+        "P4-01 invalid quantum state",
+        "P4-01 missing P2",
+        "P4-01 missing P3",
+        "P4-01 missing inventory"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "P4-02",
+      "stage": "P4",
+      "subject": "Role and spin map",
+      "stimulus": "Identify sigma and m_F by resemblance",
+      "expected": "Require explicit physical observation map",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Persist a sigma_equals_mF identification and reject it; native spin/role mapping remains explicitly unestablished.",
+      "remaining_dependency": "A physical observation map cannot be inferred from the similar symbols or cardinality.",
+      "subtest_labels": [
+        "P4-02 sigma is mF"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "P4-03",
+      "stage": "P4",
+      "subject": "Observable",
+      "stimulus": "Count detections as oscillator cycles",
+      "expected": "Reject observable substitution",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Reject replacing stabilized oscillator-cycle recurrence or frequency with detected state-population counts.",
+      "remaining_dependency": "Native certified reclosures and quantum phase require an explicit recurrence/phase comparison map.",
+      "subtest_labels": [
+        "P4-03 detection is cycles",
+        "P4-03 wrong frequency observable",
+        "P4-03 wrong native recurrence map"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "P5-01",
+      "stage": "P5",
+      "subject": "Target isolation",
+      "stimulus": "Use already exposed hydrogen target; freeze after exposure; inject target into candidate selection",
+      "expected": "Record exposure and model decisions; retrospective by default; require separate independence evidence for held-out claims",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_06_target_input_rejected -v"
+      ],
+      "assertion_scope": "Record exposure by 2026-10-26, unknown earliest date and model decision history. Reject blind/held-out promotion, erasure of exposure, allowed native target access and invented independence. The finite generator specification also rejects injected measured-target or desired-period fields.",
+      "remaining_dependency": "The known hydrogen pilot is retrospective. Independent prediction requires a different eligible target and separately documented selection history.",
+      "subtest_labels": [
+        "P5-01 retroactive freeze",
+        "P5-01 erased exposure",
+        "P5-01 target selection access",
+        "P5-01 invented independence"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "P5-02",
+      "stage": "P5",
+      "subject": "Calibration",
+      "stimulus": "Score calibrant as held out",
+      "expected": "Reject independent score",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Reject marking the defining reference/calibrant as held out; no independent score is produced.",
+      "remaining_dependency": "A distinct independent comparison target and explicit calibration provenance are required.",
+      "subtest_labels": [
+        "P5-02 calibrant reused"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "P5-03",
+      "stage": "P5",
+      "subject": "Uncertainty",
+      "stimulus": "Mis-transcribe hydrogen uncertainty or omit corrections/shared-reference covariance",
+      "expected": "Use historical 0.002 Hz from visually verified page 200; retain source conditions and uncertainty dependencies",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_03_ratio_is_published_measurement_transcription manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Bind H frequency 1420405751.768 Hz and one-sigma 0.002 Hz to visually checked printed page 200. Reject OCR 0.02, omitted corrections, replaced reference and treating unknown covariance/realization uncertainty as zero. Compute only the retrospective ratio of quoted inputs.",
+      "remaining_dependency": "The two original evaluations share NBS-III. A new combination/precision score requires a quantitative realization/covariance budget; source measurement is not exact physics.",
+      "subtest_labels": [
+        "P5-03 OCR uncertainty",
+        "P5-03 omitted corrections",
+        "P5-03 ignored covariance",
+        "P5-03 unknown covariance zero",
+        "P5-03 realization zero",
+        "P5-03 reference replaced"
+      ],
+      "evidence_paths": [
+        "manual2/data/m1/hyperfine/sources/hellwig1970-page200.png",
+        "manual2/data/m1/hyperfine/target_inventory.json"
+      ]
+    },
+    {
+      "id": "P5-04",
+      "stage": "P5",
+      "subject": "Read-only verification",
+      "stimulus": "Corrupt persisted input",
+      "expected": "Fail without changing its bytes",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_success_verifier_read_only_normal_and_optimized manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_04_report_evidence_and_cli_corruption_rejected manual2.tests.test_matter1_hyperfine.HyperfineTests.test_explicit_generation_into_disposable_output_root manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only manual2.tests.test_matter1_folding.FoldingTests.test_generation_to_disposable_output_preserves_source manual2.tests.test_matter1_data.Matter1DataTests.test_check_default_and_compatibility_alias_never_write manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_04_positive_readonly_and_reproduction -v"
+      ],
+      "assertion_scope": "Snapshot persisted trees before real normal/-O verifier processes; invalid input/report/source evidence fails without repair/new files. Explicit generation writes only declared outputs in a separate root.",
+      "remaining_dependency": "Read-only integrity does not prove the modeled dynamics.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P5-05",
+      "stage": "P5",
+      "subject": "Publication",
+      "stimulus": "Add manuscript or figure",
+      "expected": "Verify paired semantic links and actual output inventory",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "binding_integrity_or_publication_only",
+      "test_ids": [
+        "manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure",
+        "manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree"
+      ],
+      "commands": [
+        "python3 -B scripts/build_matter1_documents.py",
+        "python3 -B scripts/verify_matter1_publication.py",
+        "python3 -B manual2/scripts/check_matter1_figure.py",
+        "node manual2/scripts/check_matter1_companion.cjs",
+        "python3 -B scripts/check_matter1_reproduction.py",
+        "python3 -B -m unittest manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure manual2.tests.test_matter1_exports.ExportIntegrity.test_actual_exports_and_data_agree -v"
+      ],
+      "assertion_scope": "Build Main first then Manual, verify foundation/source/PDF semantic links and publication receipts; inspect changed rendered pages, all static chart exports and browser behavior; regenerate only explicit outputs in a disposable root.",
+      "remaining_dependency": "Publication validity is distinct from native or empirical validity; inspect hosted CI for the final pushed head.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "P5-06",
+      "stage": "P5",
+      "subject": "Status promotion",
+      "stimulus": "Promote or omit fixture class native admission/execution or empirical status",
+      "expected": "Validate all consumed status fields and report scope; reject unsupported promotion without claiming a physical test",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission",
+        "manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only",
+        "manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected",
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P5_06_missing_consumed_status_rejected manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations manual2.tests.test_matter1_folding.FoldingTests.test_all_fixture_and_ledger_statuses_reject_promotion_or_omission manual2.tests.test_matter1_folding.FoldingTests.test_persisted_report_corruption_rejects_read_only manual2.tests.test_matter1_data.Matter1DataTests.test_mutations_of_reference_arithmetic_and_status_are_rejected manual2.tests.test_matter1_temporal.TemporalModelTests.test_p5_06_all_statuses_and_exact_types -v"
+      ],
+      "assertion_scope": "Reject missing/unsupported fixture, native admission/execution and empirical status fields consumed by each verifier and reject forged persisted report statuses.",
+      "remaining_dependency": "A guard passing does not establish native execution or physical agreement.",
+      "subtest_labels": [],
+      "evidence_paths": []
+    },
+    {
+      "id": "F-01",
+      "stage": "P2",
+      "subject": "Handedness",
+      "stimulus": "Equal RD with opposite chi_mu",
+      "expected": "Retain distinct orientations and coupling records; do not merge by scalar RD",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f01_opposite_handedness_equal_support -v"
+      ],
+      "assertion_scope": "Opposite oriented outer traces share support_sum 7 but retain distinct identities/chiralities; reject changing orientation labels without changing the witnessed trace.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "F-02",
+      "stage": "P3",
+      "subject": "Common history",
+      "stimulus": "Compute cadence lag SADAR and route across nested scopes",
+      "expected": "Consumers bind compatible mapped histories and committed prefixes; retain distinct inner outer and comparator lineages",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f02_common_history_and_boundary_pair -v"
+      ],
+      "assertion_scope": "Reject future/substituted committed prefixes, same-oriented boundary pairs, unrelated boundary identity and edges not actually reversed; check exact antisymmetric finite SADAR values from the same boundary.",
+      "remaining_dependency": "Finite mapped histories and a declared response law are executed; complete native returned-current dynamics and atomic mapping remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "F-03",
+      "stage": "P3",
+      "subject": "Lag and shedding",
+      "stimulus": "Nonzero lag with non-positive closure surplus",
+      "expected": "No positive sheddic excess solely from lag",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f03_lag_alone_does_not_shed -v"
+      ],
+      "assertion_scope": "The first two declared responses have nonzero lag and negative residual but zero excess/no route; reject converting lag alone to excess or replacing capacity domain with hertz.",
+      "remaining_dependency": "The response/capacity rule is declared. This guard does not derive atomic shedding or emitted radiation.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "F-04",
+      "stage": "P3",
+      "subject": "Outer retention",
+      "stimulus": "Lose outer retention while inner certificates persist",
+      "expected": "Expose surviving inner lineage and record the correct route/status",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_p2_04_f04_exposure_preserves_provenance -v"
+      ],
+      "assertion_scope": "A declared capacity failure removes outer retention while preserving exactly the inner lineage/orientation/certificate maps; mutations losing preserved provenance are rejected.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    },
+    {
+      "id": "F-05",
+      "stage": "P4",
+      "subject": "Atomic reclosure",
+      "stimulus": "Hyperfine transition at fixed isotope",
+      "expected": "Bind before/after configurations to the same frozen fusion/reclosure model",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity",
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_01_source_inventory_preserves_atomic_identity manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Preserve external before/after state pair at fixed isotope and require one common frozen model policy; reject invented or mismatched native configuration/model bindings.",
+      "remaining_dependency": "Actual atomic before/after configuration bindings remain null until the physical common-model map is established.",
+      "subtest_labels": [
+        "F-05 unbound before state",
+        "F-05 mismatched frozen model"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "F-06",
+      "stage": "P4",
+      "subject": "Model consistency",
+      "stimulus": "Fit a different transition law per spectral line",
+      "expected": "Reject independent predictive status",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Reject per-line fitting and replacement of the single common-model policy by separate line laws.",
+      "remaining_dependency": "No independent physical prediction has been run; a frozen law and eligible independent targets are still required.",
+      "subtest_labels": [
+        "F-06 per-line fit",
+        "F-06 per-line policy"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "F-07",
+      "stage": "P4",
+      "subject": "Transferred radiation",
+      "stimulus": "Label a detection as sheddic output",
+      "expected": "Require source/destination window and physical observation-map binding",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "guard_only_physical_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_hyperfine.HyperfineTests.test_P4_P5_F_hostile_persisted_mutations -v"
+      ],
+      "assertion_scope": "Reject identifying a detection as sheddic output or marking an unbound transfer as executed; require source/destination windows and physical-map identity before future consumption.",
+      "remaining_dependency": "Radiation/transfer observation map and atomic route model remain pending.",
+      "subtest_labels": [
+        "F-07 detection promoted shedding",
+        "F-07 fake transfer"
+      ],
+      "evidence_paths": []
+    },
+    {
+      "id": "F-08",
+      "stage": "P2",
+      "subject": "Fusion evidence",
+      "stimulus": "Promote an orientation flip alone to completed fusion",
+      "expected": "Require actual fold/outer-return evidence for the claim",
+      "request_status": "PLANNED",
+      "outcome": "not_run",
+      "scope_classification": "finite_declared_model_only_native_pending",
+      "test_ids": [
+        "manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion"
+      ],
+      "commands": [
+        "python3 -B -m unittest manual2.tests.test_matter1_temporal.TemporalModelTests.test_f08_orientation_is_not_fusion -v"
+      ],
+      "assertion_scope": "Remove fold evidence while keeping oriented/certified trace data; reject an orientation-only fusion claim.",
+      "remaining_dependency": "The source-bound finite construction is a declared model; complete native motif admission and any atomic physical realization remain pending.",
+      "subtest_labels": [],
+      "evidence_paths": [
+        "manual2/data/m1/folding/temporal_model.json",
+        "manual2/data/m1/folding/temporal_trace.json",
+        "manual2/data/m1/folding/temporal_report.json"
+      ]
+    }
+  ]
+}

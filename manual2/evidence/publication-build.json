@@ -3,9 +3,15 @@
   "foundation_source_digest": "7928559e929beeb3b957d1e365fd2dacef77d79512de2a7d05cf9fa6aa7bd0b4",
   "manual_inputs": {
     "manual2/appendices/A_simulation_fixtures_and_context.tex": "566be2917830485cac014631772bbb6f9afb64901b5442ede16cf834ccf7f100",
-    "manual2/appendices/B_quarantined_external_comparison.tex": "9243d93b599b03b3c8463bad016a57b55b568ed1bf5bbc71cf59fb50dfc05daa",
+    "manual2/appendices/B_quarantined_external_comparison.tex": "5d2157563c7f96e210101651dc2315bbd9c7f420daa0fc075b369e33c824f150",
     "manual2/appendices/C_coordinate_phase_delta3_fixture.tex": "482f586cefa6bfff2621a1efe6f72eae1b24f7259ffc81f45ab096913fee447b",
     "manual2/data/m1/field_migration.json": "bd572ec782eb661038e7fac74b784e7c23403141b9999bb9d39284d6503863d9",
+    "manual2/data/m1/folding/event_ledger.json": "8c470013c381d09bf53c631493b6a558c54b7c7264383c69143cc3cea6b1f4ae",
+    "manual2/data/m1/folding/folding_report.json": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1",
+    "manual2/data/m1/folding/temporal_model.json": "3c3af0eb7e36b7e3c4da2280329b5f5eb289267120322f9087d6d9adad0a3ee9",
+    "manual2/data/m1/folding/temporal_report.json": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53",
+    "manual2/data/m1/folding/temporal_trace.json": "9e0bdc5e091f567aa2047e522387d57d7c87b7374f762d69318fcfe3bb71465c",
+    "manual2/data/m1/folding/two_square_fold.json": "2a163a187fd0b3f4a1bdc91e6fe4a473486744a47707bcb1571ad45a0c5d5505",
     "manual2/data/m1/history/declaration_crosswalk.csv": "a8c008ec4ec25451476a7b41ea881ecacf78a644b4fa5599e23cc5f28963e7a6",
     "manual2/data/m1/history/observable_coverage.csv": "4243aa316e25bba9553d763ba8829abcf51a6a791e2a4cc6d17439919de3fe85",
     "manual2/data/m1/history/r24_occurrence_cards.csv": "8b0f1e740c5c4630692cf3ad9de6627f3e23c12216b6c7d8ae28d742dbef2fb1",
@@ -15,6 +21,10 @@
     "manual2/data/m1/history/v94_placements.csv": "0d1421804754958ea7d3819c8e749b680f2f89f988f5cda98a7e5b62e990985c",
     "manual2/data/m1/history/v94_value_maps.csv": "a1bdff48cbd661680a7b51b7a027696be093bfc136281a79eef49a0e19c6c1b7",
     "manual2/data/m1/history/value_map_status.csv": "bc862e172cb306067c4061b39f3241d562a81113eb7d2913b96e5419833b16b6",
+    "manual2/data/m1/hyperfine/hyperfine_report.json": "6bed7dbd36098a95346ca2071787767f6898e406b07ac0c25f0446943eab46f9",
+    "manual2/data/m1/hyperfine/observation_map.json": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f",
+    "manual2/data/m1/hyperfine/target_exposure.json": "812947cfae982932ab1b17c0a40f5dc9df0bdb8ad7e848b990c263a04a87e555",
+    "manual2/data/m1/hyperfine/target_inventory.json": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42",
     "manual2/data/m1/input_provenance.json": "9352019cd46d846f8563464f3dc0fbd3a580a8edfa6cf9104cfe3b3adb9de7a5",
     "manual2/data/m1/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
     "manual2/data/m1/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
@@ -29,21 +39,23 @@
     "manual2/figures/aod_matter1_wheel_accessible.pdf": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d",
     "manual2/figures/aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
     "manual2/figures/matter1_figure_manifest.json": "69da9e4765075fe084a409d7bf7beffe5c6e791f8e01280f486da47f072e466a",
-    "manual2/main.tex": "35aa2f0516c7a2524eed885ddb1c49af7c623ff625b47b6dc2f6859c9ba45913",
+    "manual2/main.tex": "1ec379a28d479cf3b0e35048541128adac770b42e68d9d575f05b2c3c13955ed",
     "manual2/preamble.tex": "8deb3a45d7cdc119c9b92e1482516ca07d5def5d8a4de4a90a2b2ff3e97562be",
-    "manual2/refs.bib": "d2119c0670ac542e53a62e708bd39982b3921029b5492dcc142b98fa247ff991",
-    "manual2/sections/00_scope.tex": "5b6f62e65b9f4e7ddf0dcbbeaf46839af7f1204e4864bc69a88c0687277da465",
+    "manual2/refs.bib": "8f4479a646a0847314c477e2659a4731cdf520db4cc818fd7b40459809fac078",
+    "manual2/sections/00_scope.tex": "6854bcbd7941f7e29ac3a60c5aca4fe726800cc6299c7d73447004517250ed50",
     "manual2/sections/01-scope-and-spine.tex": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118",
     "manual2/sections/02-coord0-enclosures.tex": "54f4e86eca2a638acede3c94565dab36c2ebacd2cef8940a6bd5f23ca1cc9fa1",
     "manual2/sections/03-fusion-contact-ledger.tex": "1362e0a1fc45928db7216f979a78e07168d0f3f6e9b223eee78d36d697eb54a1",
-    "manual2/sections/04-audits-and-falsification.tex": "0aee4f50d0ba854a6f529c35447cf95f31b0e3f66592da224d742027bbe9d4b6",
-    "manual2/sections/09_prediction_test_fixture_registry.tex": "63f791fb426c6969091bf96f535fcd9be7173d6674a249b0c5d589add6c5986a",
+    "manual2/sections/04-audits-and-falsification.tex": "a789ade5c6e9f2df284612d73637c706569097d33f6f94d500ce13451070a019",
+    "manual2/sections/05-fusion-handedness-relational-time.tex": "d40e6d066e839210147b33d44e7a97e1b5a9123f097bfbfbcaf3fc0dc23b083b",
+    "manual2/sections/06-hyperfine-fusion-reclosure-comparison.tex": "84acb789ac104078c56f6bbb1c530df183e2a5a64fb9cb850bc7535be9eda420",
+    "manual2/sections/09_prediction_test_fixture_registry.tex": "d2b26a0efb10f969e1650d3311fb8a3b8d937f8225d3ba9278d5646f6f1c3a46",
     "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2"
   },
   "published_artifacts": {
-    "main.pdf": "53f4a9fff6d916115a32358d30ae5d8516a0f11e43ddcfb4334e4191c6da6ab4",
-    "manual2/main.pdf": "98717ef9f51e4929d4be32332474a5087307694f31d09a20396b6d1ae8128511",
-    "manual2.pdf": "252434279cb4d2a2f41a0fc9a0a951779533cf0e8f0d2f0a932f6bd07626f2a2"
+    "main.pdf": "4cbcd8c0dab30b23d4fdb6e342e11add7fcdcf9c39a4332643d5785b6e135ce4",
+    "manual2/main.pdf": "0723abd01b39aa68ed789763527a9b6b2a0c3ca94a3ffd6bccc7ca29d8c5cf54",
+    "manual2.pdf": "4fd6544390714c87f163286d4c07ed7a8b47c214f2cc595e7512a4622e03da24"
   },
   "main_pages": 69,
   "commands": [
@@ -77,5 +89,5 @@
     "xelatex": "XeTeX 3.141592653-2.6-0.999998 (TeX Live 2026)",
     "latexmk": "Latexmk, John Collins, 9 March 2026. Version 4.88"
   },
-  "scope": "Source, publication and static-reference checks; no native execution or empirical scoring."
+  "scope": "Source, publication, static reference and declared folding/hyperfine application publication; no native admission or empirical scoring."
 }

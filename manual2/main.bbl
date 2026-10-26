@@ -1,4 +1,33 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bipm-second}
+{Bureau International des Poids et Mesures}.
+\newblock Si base unit: second.
+\newblock Accessed 26 October 2026.
+  \url{https://www.bipm.org/en/si-base-units/second}.
+
+\bibitem{hellwig1970}
+Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
+  David~W. Allan, and David~J. Glaze.
+\newblock Measurement of the unperturbed hydrogen hyperfine transition
+  frequency.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement},
+  IM-19(4):200--209, 1970.
+\newblock Printed p. 200: one-sigma uncertainty 0.002 Hz.
+  \url{https://tf.nist.gov/general/pdf/13.pdf}.
+
+\bibitem{nist-clock-operation}
+{National Institute of Standards and Technology}.
+\newblock Beams of atoms: The first atomic clocks.
+\newblock Accessed 26 October 2026.
+  \url{https://www.nist.gov/atomic-clocks/how-atomic-clocks-work/beams-atoms-first-atomic-clocks}.
+
+\bibitem{nist-hydrogen-handbook}
+{National Institute of Standards and Technology}.
+\newblock Handbook of basic atomic spectroscopic data: Atomic data for
+  hydrogen.
+\newblock Accessed 26 October 2026.
+  \url{https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable1_a.htm}.
 
 \bibitem{nist-asd}
 {National Institute of Standards and Technology}.
@@ -28,6 +57,13 @@ Reginald Poyau.
 \newblock Released v41.02; source commit
   \texttt{6ac87ad518652249fed67af491ea4aab9d7225ce}. DOI:
   \url{https://doi.org/10.5281/zenodo.23426642}.
+
+\bibitem{sansonetti2005}
+J.~E. Sansonetti and W.~C. Martin.
+\newblock Handbook of basic atomic spectroscopic data.
+\newblock {\em Journal of Physical and Chemical Reference Data}, 34(4), 2005.
+\newblock Caesium data, printed p. 1652.
+  \url{https://www.nist.gov/document/jpcrd690pdf}.
 
 \bibitem{iupac-ame}
 M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.

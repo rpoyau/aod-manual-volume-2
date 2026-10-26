@@ -52,7 +52,7 @@ def build(root, work):
              'manual_inputs':inputs,'published_artifacts':published,'main_pages':len(PdfReader(work/'main.pdf').pages),
              'commands':commands,'engine':'XeLaTeX via latexmk',
              'tool_versions':{tool:subprocess.run([tool,'--version'],capture_output=True,text=True).stdout.splitlines()[0] for tool in ('xelatex','latexmk')},
-             'scope':'Source, publication and static-reference checks; no native execution or empirical scoring.'}
+             'scope':'Source, publication, static reference and declared folding/hyperfine application publication; no native admission or empirical scoring.'}
     (manual/'evidence/publication-build.json').write_text(json.dumps(receipt,indent=2)+'\n')
     verification=verify_publication(work)
     # Publish only after the paired build and checks succeed.

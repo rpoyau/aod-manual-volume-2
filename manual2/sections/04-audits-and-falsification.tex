@@ -9,7 +9,7 @@ The static checker verifies stored inputs and generated artifacts without rewrit
 \begin{table}[H]
 \centering
 \small
-\caption{\textbf{Verification scope.} Native obligations remain pending in this release.}
+\caption{\textbf{Verification scope.} Element-wide native obligations remain pending.}
 \label{tab:matter1-audit-summary}
 \begin{tabularx}{\textwidth}{@{}p{0.17\textwidth}XX@{}}
 \toprule
@@ -31,13 +31,13 @@ A future native D.E.C. record has the inherited form
 (B,\ v,\ e,\ v_e,\ \sigma(e),\ \operatorname{adm}(e;B),\
 w(e;B),\ P(e;B),\ \operatorname{route}(e;B)).
 \]
-The present reference ledger does not instantiate it. Native execution would require bound \(Q_4\) Hamming-1 traversals, scope and window, admissibility and exact weights, normalized kernels on nonempty positive-weight support, and reversed-edge SADAR pairs:
+The present element reference ledger does not instantiate it. The separately declared finite model in \secref{manual2:folding-time} executes its own documented predicates and histories; it is not an element-wide D.E.C. ledger. Native execution would require bound \(Q_4\) Hamming-1 traversals, scope and window, admissibility and exact weights, normalized kernels on nonempty positive-weight support, and reversed-edge SADAR pairs:
 \[
 \sum_eP(e;B)=1,\qquad
 \operatorname{adm}(e;B)=0\Rightarrow P(e;B)=0,\qquad
 \mathfrak S_B(C_{\bar e})=-\mathfrak S_B(C_e).
 \]
-An empty admissible support does not define a normalized kernel. Retained-return and fusion witnesses must bind the same identities, scopes and lineages as their consumers. None of these obligations is discharged by this reference's assignment tables.
+An empty admissible support does not define a normalized kernel. Each retained-return witness must bind its own retained identity, scope and lineage. Fold and comparison consumers must additionally preserve explicit compatible maps between their distinct scopes and lineages. None of these obligations is discharged by this reference's assignment tables.
 
 \paragraph{Falsification.}
 Actual negative probes must reject changed values, duplicate or missing identities, mismatched mirrors, invalid status promotion and altered provenance without replacing the input bytes. In particular, a forged certificate-like string must not turn pending admission into a pass. Unknown command flags must fail, and the verification command must not regenerate corrupted input.

@@ -11,6 +11,11 @@ import tempfile
 
 
 EXPECTED_OUTPUTS = {
+    'data/m1/folding/event_ledger.json',
+    'data/m1/folding/folding_report.json',
+    'data/m1/folding/temporal_trace.json',
+    'data/m1/folding/temporal_report.json',
+    'data/m1/hyperfine/hyperfine_report.json',
     'data/m1/history/declaration_crosswalk.csv',
     'data/m1/history/observable_coverage.csv',
     'data/m1/history/value_map_status.csv',
@@ -85,6 +90,11 @@ def main():
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_ledger.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html')]
         ]
+        commands.extend([
+            [args.generator_python, '-B', str(root / 'manual2/scripts' / f'generate_matter1_{name}.py'),
+             '--root', str(root), '--output-root', str(out.parent)]
+            for name in ('folding', 'temporal', 'hyperfine')
+        ])
         for command in commands:
             result=subprocess.run(command,capture_output=True,text=True)
             need(result.returncode==0,'Explicit generator failed: '+result.stdout+result.stderr)
@@ -111,7 +121,7 @@ def main():
                 mode='byte equality'
             checked.append({'path':str(rel),'comparison':mode})
     need(snapshot(root)==before,'Reproduction changed source bytes')
-    print(json.dumps({'status':'PASS_REPRODUCTION','outputs':checked,'source_unchanged':True,'scope':'Data/table/chart/companion reproduction; no native execution claim.'},indent=2))
+    print(json.dumps({'status':'PASS_REPRODUCTION','outputs':checked,'source_unchanged':True,'scope':'Data/table/chart/companion and declared application output reproduction; no native admission or empirical agreement claim.'},indent=2))
 
 if __name__=='__main__':
     try: main()

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "profile": "historical-H1-Cs133-reference-v1",
+  "target_transition_id": "atom:Z001:A001:q0:ground:clock",
+  "reference_transition_id": "atom:Z055:A133:q0:ground:clock",
+  "exposure_status": "known_prior_exposure",
+  "known_by_date": "2026-10-26",
+  "first_exposure_date": null,
+  "evidence": [
+    "User discussion before this execution request",
+    "Reviewed plan SOURCE_NOTES.md explicitly records exposure before model selection"
+  ],
+  "classification": "retrospective",
+  "independence_evidence_status": "not_established",
+  "independence_evidence": null,
+  "model_selection_status": "physical_model_not_selected",
+  "decision_history": [
+    {
+      "date": "2026-10-26",
+      "decision": "Select the already exposed historical H-1/Cs-133 comparison as an external retrospective inventory pilot",
+      "target_visible": true
+    }
+  ],
+  "native_target_access_policy": "forbidden",
+  "calibrant_is_held_out": false,
+  "per_line_fitting": false,
+  "independent_score": null
+}

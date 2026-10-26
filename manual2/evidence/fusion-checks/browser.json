@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "desktop": {
+    "marks": 126,
+    "named_labels": 118,
+    "unfilled_slots": 8,
+    "overlaps": [],
+    "clipped_text": []
+  },
+  "responsive": [
+    {
+      "width": 360,
+      "marks": 126,
+      "visible_z_symbols": 118,
+      "visible_roles": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "marks": 126,
+      "visible_z_symbols": 118,
+      "visible_roles": true,
+      "horizontal_overflow": false
+    }
+  ],
+  "conditional_count_checks": "O16→17=861; C12/13/14=613/681/749; placement fixed",
+  "invalid_inputs_rejected": 4,
+  "error_contrast": [
+    {
+      "theme": "light",
+      "foreground": "rgb(183, 46, 54)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "boundaryForeground": "rgb(24, 39, 55)",
+      "boundaryBackground": "rgb(225, 231, 237)",
+      "error_ratio": 6.073713498924579,
+      "boundary_ratio": 12.176423736350875,
+      "invalid_input_preserves_last_valid_count": true,
+      "valid_input_clears_error": true
+    },
+    {
+      "theme": "dark",
+      "foreground": "rgb(255, 154, 162)",
+      "background": "rgb(18, 27, 35)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "boundaryForeground": "rgb(239, 244, 248)",
+      "boundaryBackground": "rgb(66, 83, 99)",
+      "error_ratio": 8.614757220652152,
+      "boundary_ratio": 7.159304539500677,
+      "invalid_input_preserves_last_valid_count": true,
+      "valid_input_clears_error": true
+    }
+  ],
+  "contrast_scope": "Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance",
+  "keyboard_and_pointer": true,
+  "light_and_dark": true,
+  "page_errors": [],
+  "inputs_unchanged": true
+}

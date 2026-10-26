@@ -1,0 +1,45 @@
+{
+  "P4a_status": "inventory_verified",
+  "atomic_native_admission_status": "pending",
+  "atomic_native_execution_status": "not_executed",
+  "classification": "external_retrospective_reference_arithmetic",
+  "empirical_score": null,
+  "empirical_status": "not_compared",
+  "input_sha256": {
+    "observation_map.json": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f",
+    "target_exposure.json": "812947cfae982932ab1b17c0a40f5dc9df0bdb8ad7e848b990c263a04a87e555",
+    "target_inventory.json": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42"
+  },
+  "isotope_count": 2,
+  "known_target_exposure_by": "2026-10-26",
+  "measured_ratio": {
+    "arithmetic_scope": "Exact rational arithmetic of quoted decimal inputs; the measured physical frequency is not exact.",
+    "decimal_display": "0.1545156803086000",
+    "denominator_transition_id": "atom:Z055:A133:q0:ground:clock",
+    "numerator_transition_id": "atom:Z001:A001:q0:ground:clock",
+    "reported_standard_uncertainty_display": "2.1757E-13",
+    "transcribed_input_fraction": "177550718971/1149078971250",
+    "uncertainty_scope": "Published hydrogen one-sigma uncertainty divided by the exact defining Cs value. No new evaluation or independent recombination of the two shared-reference evaluations."
+  },
+  "physical_map_status": "pending",
+  "predicted_frequency_ratio": null,
+  "primary_page_sha256": "94d0dfbe049c66f1e259183abc3ef74dd227d40cc1b0920fc68c98c263f6a3cf",
+  "profile": "historical-H1-Cs133-reference-v1",
+  "required_stages": [
+    "P4a",
+    "P2",
+    "P3"
+  ],
+  "schema_version": 1,
+  "source_count": 5,
+  "state_count": 4,
+  "transition_count": 2,
+  "unresolved_dependencies": [
+    "P2 admission and committed return witnesses bound to the physical isotope/state model, beyond a finite mathematical example",
+    "P3 comparator, phase, lag and RCD records for those same mapped atomic lineages",
+    "Physical observation map from oscillator recurrence and quantum phase to native certified reclosure and closure phase",
+    "One common frozen transition law and state-configuration map before any independent spectral scoring",
+    "New independent target and documented selection history for an independent prediction claim",
+    "Quantitative realization/covariance budget if the original evaluations are recombined or a new precision score is attempted"
+  ]
+}
