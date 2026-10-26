@@ -20,7 +20,9 @@ sys.dont_write_bytecode = True
 REPO = Path(__file__).resolve().parents[1]
 PLAN = Path('manual2/evidence/fusion-acceptance-plan.json')
 OPTIMIZED_MODULES = {'test_matter1_application', 'test_matter1_data', 'test_matter1_folding',
-                     'test_matter1_temporal', 'test_matter1_hyperfine'}
+                     'test_matter1_temporal', 'test_matter1_hyperfine', 'test_matter1_stateful',
+                     'test_matter1_metrology', 'test_matter1_atomic', 'test_matter1_bipm',
+                     'test_matter1_v2_application'}
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')

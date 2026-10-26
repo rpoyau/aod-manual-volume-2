@@ -6,6 +6,12 @@
 \newblock Accessed 26 October 2026.
   \url{https://www.bipm.org/en/si-base-units/second}.
 
+\bibitem{bipm-mise-second}
+{Consultative Committee for Time and Frequency}.
+\newblock Mise en pratique for the definition of the second in the si, 2019.
+\newblock BIPM, SI Brochure Appendix 2.
+  \url{https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248}.
+
 \bibitem{hellwig1970}
 Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
   David~W. Allan, and David~J. Glaze.
@@ -16,11 +22,39 @@ Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
 \newblock Printed p. 200: one-sigma uncertainty 0.002 Hz.
   \url{https://tf.nist.gov/general/pdf/13.pdf}.
 
+\bibitem{jcgm100}
+{Joint Committee for Guides in Metrology}.
+\newblock Evaluation of measurement data: Guide to the expression of
+  uncertainty in measurement, 2008.
+\newblock JCGM 100:2008.
+  \url{https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf}.
+
+\bibitem{jcgm6}
+{Joint Committee for Guides in Metrology}.
+\newblock Guide to the expression of uncertainty in measurement: Part 6,
+  developing and using measurement models, 2020.
+\newblock JCGM GUM-6:2020.
+  \url{https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf}.
+
+\bibitem{bipm-2025-adjustment}
+H.~S. Margolis, G.~Panfilo, F.~Collini, M.~Pizzocaro, A.~D. Ludlow, R.~Siadat,
+  T.~Ido, and S.~Bize.
+\newblock Data associated with the 2025 adjustment of standard frequencies,
+  2026.
+\newblock Raw input, output, covariance, README and analysis notes.
+  \url{https://www.bipm.org/en/doi/10.59161/StdFreq2026}.
+
 \bibitem{nist-clock-operation}
 {National Institute of Standards and Technology}.
 \newblock Beams of atoms: The first atomic clocks.
 \newblock Accessed 26 October 2026.
   \url{https://www.nist.gov/atomic-clocks/how-atomic-clocks-work/beams-atoms-first-atomic-clocks}.
+
+\bibitem{nist-mub-h}
+{National Institute of Standards and Technology}.
+\newblock Bohr magneton in hz/t: 2022 codata recommended value.
+\newblock Accessed 26 October 2026.
+  \url{https://physics.nist.gov/cuu/Constants/Table/allascii.txt}.
 
 \bibitem{nist-hydrogen-handbook}
 {National Institute of Standards and Technology}.
@@ -64,6 +98,12 @@ J.~E. Sansonetti and W.~C. Martin.
 \newblock {\em Journal of Physical and Chemical Reference Data}, 34(4), 2005.
 \newblock Caesium data, printed p. 1652.
   \url{https://www.nist.gov/document/jpcrd690pdf}.
+
+\bibitem{steck-cs}
+Daniel~A. Steck.
+\newblock Cesium d line data, 2025.
+\newblock Revision 2.3.4, section 3.
+  \url{https://steck.us/alkalidata/cesiumnumbers.pdf}.
 
 \bibitem{iupac-ame}
 M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.

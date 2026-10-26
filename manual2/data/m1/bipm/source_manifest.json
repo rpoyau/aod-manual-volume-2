@@ -1,0 +1,44 @@
+{
+  "adjustment_added_fractional_uncertainty": "5.324065020e-17",
+  "adjustment_reproduction_status": "not_reproduced",
+  "archive_sha256": "de144b7e49391fff9370fd9730edd16cd16150d8395a5bf78ac070ea5858b089",
+  "archive_url": "https://www.bipm.org/documents/d/guest/additional_material",
+  "dataset_url": "https://www.bipm.org/en/doi/10.59161/StdFreq2026",
+  "files": {
+    "ClockInputData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 30786,
+      "sha256": "d93b2c4ee6ea1db99dc477b07a0fc501b66053e7e93867868731200222434e96"
+    },
+    "ClockOutputCovData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 5540,
+      "sha256": "97dba2e5e678bb8a0b9ae72162a9cbeb20b4c42fa40bd4b81266692910bc5ddf"
+    },
+    "ClockOutputData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 52179,
+      "sha256": "d4f8dd6961e6044812563a1bdccd81b1e4e1031606c05184f1dffc14830fc94e"
+    },
+    "Notes_on_analysis_procedure_2025.pdf": {
+      "bytes": 253594,
+      "sha256": "10975ea05369056952a0df7484376f2fd21a3b5965298e3c5f64ae1ad19f8861"
+    },
+    "Readme_file_for_2025_update.pdf": {
+      "bytes": 202994,
+      "sha256": "11d5be89b5d4eed07c79037315160a50a4ae76795863bea83d736831f41241d4"
+    },
+    "bipm-rb87-2026-10-26.xml": {
+      "bytes": 991,
+      "sha256": "3e1ba563d9bed1afab54906c3ae8eb944eb0cdcf1a956aa4d7cdd58e7e41e463"
+    }
+  },
+  "numerically_supported_covariance_unit": "Hz^2",
+  "physical_prediction_status": "not_asserted",
+  "profile": "external_published_adjustment",
+  "random_effect_in_output": "already_included_do_not_add_twice",
+  "recommendation_standard_uncertainty_multiplier": "47/20",
+  "retrieved_date": "2026-10-26",
+  "schema_version": 1,
+  "source_described_covariance_basis": "nu1/nu15 through nu14/nu15",
+  "status": "source_inventory",
+  "target_exposure_status": "previously_exposed",
+  "unit_interpretation_status": "documented_numerical_inference_not_official_corrigendum"
+}

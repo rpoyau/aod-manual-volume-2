@@ -11,6 +11,19 @@ import tempfile
 
 
 EXPECTED_OUTPUTS = {
+    'data/m1/stateful/baseline_scenario.json',
+    'data/m1/stateful/early_loss_scenario.json',
+    'data/m1/stateful/baseline_trace.json',
+    'data/m1/stateful/early_loss_trace.json',
+    'data/m1/stateful/stateful_report.json',
+    'data/m1/metrology/metrology_inputs.json',
+    'data/m1/metrology/metrology_report.json',
+    'data/m1/bipm/bipm_report.json',
+    'data/m1/atomic/prediction.json',
+    'data/m1/atomic/comparison.json',
+    'data/m1/atomic/benchmark.json',
+    'data/m1/atomic/obligations.json',
+    'data/m1/atomic/atomic_report.json',
     'data/m1/folding/event_ledger.json',
     'data/m1/folding/folding_report.json',
     'data/m1/folding/temporal_trace.json',
@@ -93,7 +106,7 @@ def main():
         commands.extend([
             [args.generator_python, '-B', str(root / 'manual2/scripts' / f'generate_matter1_{name}.py'),
              '--root', str(root), '--output-root', str(out.parent)]
-            for name in ('folding', 'temporal', 'hyperfine')
+            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology', 'bipm', 'atomic')
         ])
         for command in commands:
             result=subprocess.run(command,capture_output=True,text=True)

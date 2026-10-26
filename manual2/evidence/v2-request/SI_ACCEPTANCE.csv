@@ -1,0 +1,19 @@
+id,requirement,status,expected_evidence
+SI-01,Bind two recurrent identities and exact committed window including reference counts,PLANNED,Missing identity or prefix/window mismatch rejects SI report
+SI-02,Validate physical cycle observation map and calibration scope,PLANNED,Bare native tick or RCD count cannot be relabelled seconds
+SI-03,Distinguish exact SI definition from realized reference uncertainty,PLANNED,Unknown device realization term cannot become zero by citing Cs definition
+SI-04,Preserve time and uncertainty under an ideal divider or reporting epoch shift,PLANNED,Transformed counts and covariance produce identical elapsed interval
+SI-05,Apply frequency and endpoint corrections with declared sign,PLANNED,Fast-clock fixed-cycle case and endpoint delay cases agree with independent calculation
+SI-06,Validate and propagate full calibration-observation covariance,PLANNED,Units ordering symmetry and PSD checked; omitted-covariance mutation changes expected result
+SI-07,Track component inclusion and prevent double counting,PLANNED,Aggregate reference contribution cannot also enter as an independent duplicate
+SI-08,Respect noise correlation averaging dead time and drift,PLANNED,Common frequency bias persists and unavailable interpolation remains explicit
+SI-09,Keep endpoint and transfer correlations including asymmetry,PLANNED,Common offset cancels only in appropriate difference while differential noise persists
+SI-10,Type local proper time versus coordinated-scale target,PLANNED,Applicable motion/potential/link model bound and inappropriate blanket correction rejected
+SI-11,Keep now causal and committed histories immutable,PLANNED,Future observations/calibration cannot masquerade as available online evidence
+SI-12,Validate nonlinear or discrete uncertainty propagation,PLANNED,Quadratic zero-gradient case retains uncertainty and unresolved slips cannot yield false precision
+SI-13,Bind BIPM covariance interpretation and full-ratio check,PLANNED,All 105 reported uncertainties reproduced within source rounding under documented units
+SI-14,Apply adjustment and uncertainty multipliers once at correct level,PLANNED,Covariance scales by squared multiplier and included random-effect term is not added twice
+SI-15,Represent material unknown budget terms explicitly,PLANNED,Missing covariance or calibration yields scoped incomplete result without stopping other model lanes
+SI-16,Report seconds standard uncertainty and any coverage basis,PLANNED,Output includes measurand unit validity traceability and differentiated uc/U/k
+SI-17,Keep calibration exposure and prediction roles distinct,PLANNED,Known H/Rb targets and fitted calibrants are not advertised as independent predictions
+SI-18,Integrate metrology with state-dependent v2 without promoting native admission,PLANNED,Physical-map and admission evidence statuses remain separately validated

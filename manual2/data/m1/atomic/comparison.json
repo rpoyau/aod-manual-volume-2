@@ -1,0 +1,61 @@
+{
+  "atomic_empirical_score": null,
+  "atomic_prediction_test_status": "not_executed_no_selected_atomic_map",
+  "classification": "retrospective_underdetermination_diagnostic",
+  "covariance_status": "unknown; no independence assumed",
+  "evaluation_sha256": "d71ac929fa77b7a69d9eabd117ea5c86aa8067585e8e1959ff181204c94028dc",
+  "frequency_period_tests_independent": false,
+  "observed_frequency_hz": "1420405751.768",
+  "prediction_measurement_covariance_hz2": null,
+  "prediction_sha256": "19996e532960fd3bbd9f808cd44e9d73bc92a7ba2a79e39861280689036c220b",
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "published_aggregate_standard_uncertainty_hz": "0.002",
+  "rows": [
+    {
+      "classification": "diagnostic_residual_for_unselected_map_not_empirical_test_of_AOD",
+      "frequency_hz": "11031158124",
+      "lambda": "0",
+      "observed_frequency_hz": "177550718971/125",
+      "relative_residual": "1201344046529/177550718971",
+      "residual_hz": "1201344046529/125",
+      "scenario": "baseline",
+      "standardized_residual": null,
+      "uncertainty_status": "incomplete; no justified atomic-map uncertainty or joint covariance"
+    },
+    {
+      "classification": "diagnostic_residual_for_unselected_map_not_empirical_test_of_AOD",
+      "frequency_hz": "22062316248",
+      "lambda": "1",
+      "observed_frequency_hz": "177550718971/125",
+      "relative_residual": "2580238812029/177550718971",
+      "residual_hz": "2580238812029/125",
+      "scenario": "baseline",
+      "standardized_residual": null,
+      "uncertainty_status": "incomplete; no justified atomic-map uncertainty or joint covariance"
+    },
+    {
+      "classification": "diagnostic_residual_for_unselected_map_not_empirical_test_of_AOD",
+      "frequency_hz": "3677052708",
+      "lambda": "0",
+      "observed_frequency_hz": "177550718971/125",
+      "relative_residual": "282080869529/177550718971",
+      "residual_hz": "282080869529/125",
+      "scenario": "early_loss",
+      "standardized_residual": null,
+      "uncertainty_status": "incomplete; no justified atomic-map uncertainty or joint covariance"
+    },
+    {
+      "classification": "diagnostic_residual_for_unselected_map_not_empirical_test_of_AOD",
+      "frequency_hz": "7354105416",
+      "lambda": "1",
+      "observed_frequency_hz": "177550718971/125",
+      "relative_residual": "741712458029/177550718971",
+      "residual_hz": "741712458029/125",
+      "scenario": "early_loss",
+      "standardized_residual": null,
+      "uncertainty_status": "incomplete; no justified atomic-map uncertainty or joint covariance"
+    }
+  ],
+  "schema_version": 1,
+  "selection_policy": "No countermodel selected, fitted or retuned using these residuals."
+}
