@@ -27,16 +27,19 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def verify(ledger: Path, figures: Path, visuals: Path) -> dict:
+def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | None = None, source_root: Path | None = None) -> dict:
     import pdfplumber
     from pdfminer.pdftypes import resolve1
 
+    source_root = source_root or Path(__file__).resolve().parents[1]
+    isotope_catalog = isotope_catalog or source_root / "data/m1/isotopes/catalog.json"
+    layer = source_root / "visuals/matter1-isotope-layer.js"
     pdf_path = figures / "aod_matter1_wheel_accessible.pdf"
     svg_path = figures / "aod_matter1_wheel_accessible.svg"
     manifest_path = figures / "matter1_figure_manifest.json"
     layout_path = visuals / "matter1-layout.json"
     html_path = visuals / "matter1-reference.html"
-    paths = [ledger, pdf_path, svg_path, manifest_path, layout_path, html_path]
+    paths = [ledger, pdf_path, svg_path, manifest_path, layout_path, html_path, isotope_catalog, layer]
     original_hashes = {str(p): sha(p) for p in paths}
     rows = read_rows(ledger)
     layout = json.loads(layout_path.read_text(encoding="utf-8"))
@@ -50,6 +53,21 @@ def verify(ledger: Path, figures: Path, visuals: Path) -> dict:
         need(manifest["files"].get(p.name) == sha(p), f"artifact hash mismatch: {p.name}")
     match = re.search(r'<script id="matter1-data" type="application/json">(.*?)</script>', html_path.read_text(encoding="utf-8"), re.S)
     need(match is not None and json.loads(match.group(1).replace("<\\/", "</")) == layout, "companion data differs from layout")
+
+    from matter1_isotopes import build_catalog, load_inputs
+    need(json.loads(isotope_catalog.read_text()) == build_catalog(load_inputs(source_root)), "isotope catalog differs from bound source construction")
+    need(manifest.get("schema") == "matter1-figure-manifest-v2", "figure manifest schema")
+    need(manifest.get("isotope_catalog_sha256") == sha(isotope_catalog), "isotope catalog binding mismatch")
+    need(manifest.get("isotope_layer_sha256") == sha(layer), "isotope layer binding mismatch")
+    html = html_path.read_text(encoding="utf-8")
+    match = re.search(r'<script id="matter1-isotope-data" type="application/json">(.*?)</script>', html, re.S)
+    need(match is not None and json.loads(match.group(1).replace("<\\/", "</")) == json.loads(isotope_catalog.read_text()), "companion isotope data differs from catalog")
+    need(layer.read_text() in html, "companion isotope executor differs from bound source")
+    template = source_root / "visuals/matter1-reference.template.html"
+    rendered = template.read_text().replace("__MATTER1_LAYOUT_JSON__", layout_path.read_text().replace("</", "<\\/"))
+    rendered = rendered.replace("__MATTER1_ISOTOPE_JSON__", json.dumps(json.loads(isotope_catalog.read_text()), ensure_ascii=False, sort_keys=True, indent=2).replace("</", "<\\/"))
+    rendered = rendered.replace("__MATTER1_ISOTOPE_JS__", layer.read_text())
+    need(rendered == html, "companion differs from bound template and source inputs")
 
     with pdfplumber.open(pdf_path) as pdf:
         need(len(pdf.pages) == 1, "static reference must be a single PDF page")
@@ -123,7 +141,7 @@ def verify(ledger: Path, figures: Path, visuals: Path) -> dict:
     return {"status": "PASS", "scope": "static figure/data/export only; not native execution or empirical agreement",
             "source_sha256": sha(ledger), "pdf": pdf_result, "svg_mark_labels": 126,
             "svg_minimum_font_pt": min(svg_sizes),
-            "companion_data_binding": "equal", "inputs_unchanged": True}
+            "companion_data_binding": "equal", "isotope_catalog_binding": "equal", "inputs_unchanged": True}
 
 
 def main() -> None:
@@ -132,8 +150,9 @@ def main() -> None:
     parser.add_argument("--ledger", type=Path, default=root / "data/m1/matter1_elements_1_118_ledger.csv")
     parser.add_argument("--figure-dir", type=Path, default=root / "figures")
     parser.add_argument("--visual-dir", type=Path, default=root / "visuals")
+    parser.add_argument("--isotope-catalog", type=Path, default=root / "data/m1/isotopes/catalog.json")
     args = parser.parse_args()
-    print(json.dumps(verify(args.ledger, args.figure_dir, args.visual_dir), ensure_ascii=False, indent=2))
+    print(json.dumps(verify(args.ledger, args.figure_dir, args.visual_dir, args.isotope_catalog), ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,39 @@
+293 Lv                                                                                                                            293 Lv
+116    177                                                      From ENSDF                                                        116    177
+
+
+
+                                                                Adopted Levels
+
+                                                                    History
+                                      Type          Author            Citation          Literature Cutoff Date
+                                 Full Evaluation   C. Morse     NDS 182, 167 (2022)          14-Sep-2021
+
+Q(β− )=−3860 SY; S(n)=5636 SY; S(p)=3321 SY; Q(α)=1.068×104 6             2021Wa16
+∆Q(β− )=933, ∆S(n)=920, ∆S(p)=869 (2021WA16).
+S(2n)=12819 SY 808, S(2p)=5510 SY 869 (2021WA16).
+Four publications have reported the production of 293 Lv through the 248 Cm(48 Ca,3n) reaction, two using DGFRS at JINR
+   (2001OG01,2002OG09), one using SHIP at GSI (2012HO12), and one using GARIS at RIKEN (2017KA66). In the DGFRS
+   experiments, 293 Lv was originally identified as 292 Lv, but the assignment was later revised. Evaporation residues from the
+   reaction were implanted into position-sensitive silicon detectors, and identified by the observation of subsequent time- and
+   position-correlated α-decay chains terminated by spontaneous fission. Comparison of the decay chains with the properties of the
+   known daughter nuclei allowed assignment of the evaporation residues to 293 Lv. A total of seven events were positively identified,
+   with another three events being considered tentative.
+Half-lives, branching ratios, and α-decay energies in this evaluation have been computed from the individual events listed in the
+   references above. Half-life uncertainties have been computed according to the method of 1984SC13. An additional 10 keV
+   systematic uncertainty is assumed for the α-decay energies, which is added in quadrature to the averaged statistical uncertainty.
+
+                                                                 293 Lv Levels
+
+
+
+ E(level)        T1/2                                                            Comments
+  0          95 ms +63−27     %α=100; %SF≤12.5
+                              E(level): Assumed ground state.
+                              T1/2 : From six events.
+
+
+
+
+                                                                     1
+

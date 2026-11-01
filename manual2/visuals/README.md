@@ -41,3 +41,7 @@ require Playwright and Chromium (`CHROMIUM_EXECUTABLE` may select an installed
 binary). `--screenshots-dir /absolute/output/path` records optional browser
 captures. Checkers leave source/data/figure/companion inputs unchanged and
 print results; they do not regenerate or repair them.
+
+## Sourced isotope layer
+
+The separate `../data/m1/isotopes/catalog.json` payload is hash-bound into HTML and the figure manifest. `matter1-isotope-layer.js` is bound independently; the checker reconstructs HTML from its template and both payloads. The source-qualified isotope/state selector is independent of arbitrary-A arithmetic. Original structural mode remains the default. Half-life mode colors finite total-life central values logarithmically, exposes uncertainty and chosen source in the inspector, and distinguishes observationally stable, unknown and limited records. It does not color a partial-channel limit as a measured total life. Tentative and unobserved records retain their statuses. Decay buttons select actual source-recorded daughters; spontaneous fission has no invented unique daughter.

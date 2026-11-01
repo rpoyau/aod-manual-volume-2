@@ -11,6 +11,12 @@ import tempfile
 
 
 EXPECTED_OUTPUTS = {
+    'data/m1/isotopes/catalog.json',
+    'data/m1/isotopes/verification.json',
+    'data/m1/survival/prediction.json',
+    'data/m1/survival/comparison.json',
+    'data/m1/survival/survival_report.json',
+    'data/m1/bipm/bipm_precision_report.json',
     'data/m1/stateful/baseline_scenario.json',
     'data/m1/stateful/early_loss_scenario.json',
     'data/m1/stateful/baseline_trace.json',
@@ -42,6 +48,10 @@ EXPECTED_OUTPUTS = {
     'figures/aod_matter1_wheel_accessible.svg',
     'figures/matter1_figure_manifest.json',
     'sections/generated_elements_longtable.tex',
+    'sections/generated_isotope_anchors.tex',
+    'sections/generated_isotope_benchmarks.tex',
+    'sections/generated_isotope_superheavy.tex',
+    'sections/generated_isotope_chains.tex',
     'visuals/matter1-layout.json',
     'visuals/matter1-reference.html',
 }
@@ -99,15 +109,20 @@ def main():
     args=parser.parse_args();root=args.root.resolve();before=snapshot(root)
     with tempfile.TemporaryDirectory(prefix='matter1-reproduction-') as directory:
         out=Path(directory)/'manual2'
+        catalog=out/'data/m1/isotopes/catalog.json'
         commands=[
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_ledger.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
-          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html')]
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_isotopes.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/check_matter1_figure.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--isotope-catalog',str(catalog)]
         ]
         commands.extend([
             [args.generator_python, '-B', str(root / 'manual2/scripts' / f'generate_matter1_{name}.py'),
              '--root', str(root), '--output-root', str(out.parent)]
-            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology', 'bipm', 'atomic')
+            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology', 'bipm', 'bipm_precision', 'atomic')
         ])
+        commands.append([args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_survival.py'),
+                         '--root',str(root),'--output-root',str(out.parent),'--isotope-catalog',str(catalog)])
         for command in commands:
             result=subprocess.run(command,capture_output=True,text=True)
             need(result.returncode==0,'Explicit generator failed: '+result.stdout+result.stderr)

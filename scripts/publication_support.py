@@ -36,6 +36,8 @@ def manual_files(root):
         if not p.is_file():
             continue
         rel = p.relative_to(root).as_posix()
+        if rel.startswith('manual2/evidence/pre-m3-main/'):
+            continue  # Historical receipts are not active Manual manuscript inputs.
         if p.suffix in ('.tex', '.bib') and p.name != 'main-root.tex':
             paths.append(p)
         elif rel.startswith('manual2/figures/') and p.suffix in ('.pdf', '.svg', '.json'):
@@ -53,6 +55,8 @@ def verify_foundation(root):
     actual = foundation_files(root)
     require(actual == binding['files'], 'Pinned Main source/input mismatch')
     require(manifest_digest(actual) == binding['source_digest'], 'Foundation manifest digest mismatch')
+    from m3_preservation import binding as verify_successor
+    verify_successor(root)
     return binding
 
 
@@ -194,7 +198,7 @@ def verify_publication(root, inspect_fonts=True):
     verify_main_binding(root)
     foundation = verify_foundation(root)
     actual_text = re.sub(r'\s+', '', pdf_text(root/'main.pdf'))
-    require(hashlib.sha256(actual_text.encode()).hexdigest() == foundation['released_text_sha256'], 'Rebuilt Main text differs from the released authority')
+    require(hashlib.sha256(actual_text.encode()).hexdigest() == foundation['active_text_sha256'], 'Rebuilt Main text differs from the bound authority')
     receipt = json.loads((root / 'manual2/evidence/publication-build.json').read_text())
     require(receipt['profile'] == 'static_reference_publication', 'Wrong publication profile')
     require(receipt['foundation_source_digest'] == foundation['source_digest'], 'Stale publication foundation binding')
@@ -204,6 +208,7 @@ def verify_publication(root, inspect_fonts=True):
         require((root / name).is_file() and digest(root/name)==expected, 'Published artifact mismatch: '+name)
     from pypdf import PdfReader
     main_pages = len(PdfReader(root/'main.pdf').pages)
+    require(main_pages == foundation['active_main_pages'], 'Main page count differs from the source-bound authority')
     require(receipt['main_pages'] == main_pages, 'Publication Main page count mismatch')
     expected_destinations = semantic_main_destinations(root)
     nested = inspect_pdf_links(root/'manual2/main.pdf','../main.pdf',root/'main.pdf',expected_destinations)
@@ -213,7 +218,7 @@ def verify_publication(root, inspect_fonts=True):
     result = {'status':'PASS_PUBLICATION','foundation_source_digest':receipt['foundation_source_digest'],
               'main_pages':main_pages,'manual_pages':top['pages'],'semantic_main_destination_count':len(expected_destinations),
               'root_main_links':top['main_link_count'],'nested_main_links':nested['main_link_count'],
-              'manual_text_equal':True,'main_text_matches_release':True,'main_links':top['links']}
+              'manual_text_equal':True,'main_text_matches_release':False,'main_text_matches_bound_authority':True,'main_links':top['links']}
     if inspect_fonts:
         result['chart'] = inspect_chart_fonts(root)
     return result

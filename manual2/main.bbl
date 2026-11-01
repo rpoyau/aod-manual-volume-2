@@ -36,6 +36,12 @@ Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
 \newblock JCGM GUM-6:2020.
   \url{https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf}.
 
+\bibitem{isotopes-nubase2020}
+F.~G. Kondev, M.~Wang, W.~J. Huang, S.~Naimi, and G.~Audi.
+\newblock The nubase2020 evaluation of nuclear physics properties.
+\newblock {\em Chinese Physics C}, 45:030001, 2021.
+\newblock \url{https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt}.
+
 \bibitem{bipm-2025-adjustment}
 H.~S. Margolis, G.~Panfilo, F.~Collini, M.~Pizzocaro, A.~D. Ludlow, R.~Siadat,
   T.~Ido, and S.~Bize.
@@ -69,6 +75,13 @@ H.~S. Margolis, G.~Panfilo, F.~Collini, M.~Pizzocaro, A.~D. Ludlow, R.~Siadat,
   energies for the neutral atoms, 2025.
 \newblock NIST Physical Measurement Laboratory,
   \url{https://physics.nist.gov/PhysRefData/ASD/}.
+
+\bibitem{isotopes-ensdf}
+{National Nuclear Data Center}.
+\newblock Evaluated nuclear structure data file: Adopted levels and
+  experimental updates, 2026.
+\newblock Source snapshot and exact record locators in the Matter I isotope
+  catalog; retrieved 1 November 2026. \url{https://www.nndc.bnl.gov/ensdf/}.
 
 \bibitem{poyau-af}
 Reginald Poyau.
@@ -109,5 +122,12 @@ Daniel~A. Steck.
 M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.
 \newblock The {AME} 2020 atomic mass evaluation ({II}).
 \newblock {\em Chinese Physics C}, 45:030003, 2021.
+
+\bibitem{isotopes-ame2020}
+M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.
+\newblock The ame 2020 atomic mass evaluation (ii). tables, graphs and
+  references.
+\newblock {\em Chinese Physics C}, 45:030003, 2021.
+\newblock \url{https://www-nds.iaea.org/amdc/ame2020/mass_1.mas20.txt}.
 
 \end{thebibliography}

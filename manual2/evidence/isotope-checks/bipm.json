@@ -1,0 +1,2185 @@
+{
+  "additional_random_effect_applied": false,
+  "adjustment_added_fractional_uncertainty": "5.324065020e-17",
+  "atomic_prediction": "not_asserted",
+  "checked_ratios": 105,
+  "classification": "published_adjustment_data_not_atomic_prediction",
+  "correlation_coefficients": 1168,
+  "covariance_interpretation": "Hz^2",
+  "covariance_shape": [
+    14,
+    14
+  ],
+  "covariance_source_description": "nu1/nu15 through nu14/nu15",
+  "effective_measurements": 146,
+  "effectively_excluded_ids": [
+    "q117",
+    "q127",
+    "q142",
+    "q147",
+    "q151",
+    "q153",
+    "q51"
+  ],
+  "exact_rational_psd": true,
+  "input_full_covariance_psd": "not_tested",
+  "interpretation_status": "documented_numerical_inference_not_official_corrigendum",
+  "least_squares_adjustment": "not_reproduced",
+  "manifest_sha256": "cf00c503ea0d13029a2293820188bf3e729e49da4d544174a797bd4b6e2b799b",
+  "measurement_rows": 153,
+  "observations": [
+    {
+      "effectively_excluded": false,
+      "id": "q1",
+      "observable": "nu1",
+      "source_annotation": "[vonZanthier2000,Uncertx3]",
+      "standard_uncertainty": "690.0",
+      "unit": "Hz",
+      "value": "1267402452899920.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q2",
+      "observable": "nu1",
+      "source_annotation": "[Wang2007a]",
+      "standard_uncertainty": "256.0",
+      "unit": "Hz",
+      "value": "1267402452901265.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q3",
+      "observable": "nu1",
+      "source_annotation": "[Ohtsubo2017]",
+      "standard_uncertainty": "7.5",
+      "unit": "Hz",
+      "value": "1267402452901049.8"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q4",
+      "observable": "nu2",
+      "source_annotation": "[Parthey2011]",
+      "standard_uncertainty": "5.0",
+      "unit": "Hz",
+      "value": "1233030706593517.5"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q5",
+      "observable": "nu2",
+      "source_annotation": "[Matveev2013]",
+      "standard_uncertainty": "5.5",
+      "unit": "Hz",
+      "value": "1233030706593509"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q6",
+      "observable": "nu3",
+      "source_annotation": "[McFerran2012,corrected2015]",
+      "standard_uncertainty": "6.4",
+      "unit": "Hz",
+      "value": "1128575290808155.1"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q7",
+      "observable": "nu3",
+      "source_annotation": "[Tyumenev2016]",
+      "standard_uncertainty": "0.41",
+      "unit": "Hz",
+      "value": "1128575290808154.62"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q8",
+      "observable": "nu4",
+      "source_annotation": "[Rosenband2007]",
+      "standard_uncertainty": "6.0",
+      "unit": "Hz",
+      "value": "1121015393207851.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q9",
+      "observable": "nu5",
+      "source_annotation": "[Stalnaker2007]",
+      "standard_uncertainty": "0.69",
+      "unit": "Hz",
+      "value": "1064721609899145.30"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q10",
+      "observable": "nu6",
+      "source_annotation": "[12thCCL]",
+      "standard_uncertainty": "2.14",
+      "unit": "Hz",
+      "value": "688358979309308.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q11",
+      "observable": "nu6",
+      "source_annotation": "[Tamm2009BBRcorrected]",
+      "standard_uncertainty": "0.73",
+      "unit": "Hz",
+      "value": "688358979309306.97"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q12",
+      "observable": "nu6",
+      "source_annotation": "[Webster2010]",
+      "standard_uncertainty": "9.0",
+      "unit": "Hz",
+      "value": "688358979309310.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q13",
+      "observable": "nu6",
+      "source_annotation": "[Tamm2014]",
+      "standard_uncertainty": "0.36",
+      "unit": "Hz",
+      "value": "688358979309307.82"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q14",
+      "observable": "nu6",
+      "source_annotation": "[Godun2014]",
+      "standard_uncertainty": "0.42",
+      "unit": "Hz",
+      "value": "688358979309308.42"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q15",
+      "observable": "nu7",
+      "source_annotation": "[Hosaka2009]",
+      "standard_uncertainty": "12.0",
+      "unit": "Hz",
+      "value": "642121496772657.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q16",
+      "observable": "nu7",
+      "source_annotation": "[Huntemann2012]",
+      "standard_uncertainty": "0.52",
+      "unit": "Hz",
+      "value": "642121496772645.15"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q17",
+      "observable": "nu7",
+      "source_annotation": "[King2012]",
+      "standard_uncertainty": "0.67",
+      "unit": "Hz",
+      "value": "642121496772646.22"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q18",
+      "observable": "nu7",
+      "source_annotation": "[Godun2014]",
+      "standard_uncertainty": "0.37",
+      "unit": "Hz",
+      "value": "642121496772644.91"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q19",
+      "observable": "nu7",
+      "source_annotation": "[Huntemann2014]",
+      "standard_uncertainty": "0.25",
+      "unit": "Hz",
+      "value": "642121496772645.36"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q20",
+      "observable": "nu8",
+      "source_annotation": "[Kohno2009]",
+      "standard_uncertainty": "28.0",
+      "unit": "Hz",
+      "value": "518295836590864.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q21",
+      "observable": "nu8",
+      "source_annotation": "[Yasuda2012]",
+      "standard_uncertainty": "2.0",
+      "unit": "Hz",
+      "value": "518295836590863.1"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q22",
+      "observable": "nu8",
+      "source_annotation": "[Lemke2009]",
+      "standard_uncertainty": "0.7",
+      "unit": "Hz",
+      "value": "518295836590865.2"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q23",
+      "observable": "nu8",
+      "source_annotation": "[Park2013]",
+      "standard_uncertainty": "8.1",
+      "unit": "Hz",
+      "value": "518295836590863.5"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q24",
+      "observable": "nu8",
+      "source_annotation": "[Pizzocaro2017]",
+      "standard_uncertainty": "0.31",
+      "unit": "Hz",
+      "value": "518295836590863.59"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q25",
+      "observable": "nu8",
+      "source_annotation": "[Kim2017]",
+      "standard_uncertainty": "0.57",
+      "unit": "Hz",
+      "value": "518295836590863.38"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q26",
+      "observable": "nu9",
+      "source_annotation": "[Degenhardt2005]",
+      "standard_uncertainty": "5.3",
+      "unit": "Hz",
+      "value": "455986240494144.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q27",
+      "observable": "nu9",
+      "source_annotation": "[Wilpers2006,Wilpers2007]",
+      "standard_uncertainty": "3.4",
+      "unit": "Hz",
+      "value": "455986240494135.8"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q28",
+      "observable": "nu10",
+      "source_annotation": "[Margolis2004]",
+      "standard_uncertainty": "1.5",
+      "unit": "Hz",
+      "value": "444779044095484.6"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q29",
+      "observable": "nu10",
+      "source_annotation": "[Dube2005]",
+      "standard_uncertainty": "15.0",
+      "unit": "Hz",
+      "value": "444779044095484.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q30",
+      "observable": "nu10",
+      "source_annotation": "[Madej2012]",
+      "standard_uncertainty": "0.9",
+      "unit": "Hz",
+      "value": "444779044095485.5"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q31",
+      "observable": "nu10",
+      "source_annotation": "[Barwood2014,Uncertx3]",
+      "standard_uncertainty": "0.72",
+      "unit": "Hz",
+      "value": "444779044095486.71"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q32",
+      "observable": "nu10",
+      "source_annotation": "[Dube2017]",
+      "standard_uncertainty": "0.75",
+      "unit": "Hz",
+      "value": "444779044095485.27"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q33",
+      "observable": "nu11",
+      "source_annotation": "[Baillard2007]",
+      "standard_uncertainty": "32.0",
+      "unit": "Hz",
+      "value": "429228066418009.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q34",
+      "observable": "nu11",
+      "source_annotation": "[Morzynski2015SrI]",
+      "standard_uncertainty": "2.1",
+      "unit": "Hz",
+      "value": "429228066418008.3"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q35",
+      "observable": "nu11",
+      "source_annotation": "[Morzynski2015SrII]",
+      "standard_uncertainty": "2.9",
+      "unit": "Hz",
+      "value": "429228066418007.3"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q36",
+      "observable": "nu12",
+      "source_annotation": "[Boyd2007]",
+      "standard_uncertainty": "1.1",
+      "unit": "Hz",
+      "value": "429228004229874.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q37",
+      "observable": "nu12",
+      "source_annotation": "[Campbell2008]",
+      "standard_uncertainty": "0.37",
+      "unit": "Hz",
+      "value": "429228004229873.65"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q38",
+      "observable": "nu12",
+      "source_annotation": "[Baillard2008]",
+      "standard_uncertainty": "1.1",
+      "unit": "Hz",
+      "value": "429228004229873.6"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q39",
+      "observable": "nu12",
+      "source_annotation": "[Hong2009]",
+      "standard_uncertainty": "2.4",
+      "unit": "Hz",
+      "value": "429228004229874.1"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q40",
+      "observable": "nu12",
+      "source_annotation": "[Falke2011]",
+      "standard_uncertainty": "0.5",
+      "unit": "Hz",
+      "value": "429228004229872.9"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q41",
+      "observable": "nu12",
+      "source_annotation": "[Yamaguchi2012]",
+      "standard_uncertainty": "1.4",
+      "unit": "Hz",
+      "value": "429228004229873.9"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q42",
+      "observable": "nu12",
+      "source_annotation": "[Akamatsu2014b]",
+      "standard_uncertainty": "1.6",
+      "unit": "Hz",
+      "value": "429228004229872.0"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q43",
+      "observable": "nu12",
+      "source_annotation": "[Tanabe2015]",
+      "standard_uncertainty": "0.49",
+      "unit": "Hz",
+      "value": "429228004229873.56"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q44",
+      "observable": "nu12",
+      "source_annotation": "[Lin2015]",
+      "standard_uncertainty": "1.4",
+      "unit": "Hz",
+      "value": "429228004229873.7"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q45",
+      "observable": "nu12",
+      "source_annotation": "[Falke2014]",
+      "standard_uncertainty": "0.17",
+      "unit": "Hz",
+      "value": "429228004229873.13"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q46",
+      "observable": "nu12",
+      "source_annotation": "[LeTargat2013]",
+      "standard_uncertainty": "0.13",
+      "unit": "Hz",
+      "value": "429228004229873.10"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q47",
+      "observable": "nu12",
+      "source_annotation": "[Lodewyck2016]\t",
+      "standard_uncertainty": "0.12",
+      "unit": "Hz",
+      "value": "429228004229872.92"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q48",
+      "observable": "nu12",
+      "source_annotation": "[Grebing2016(Oct14)]",
+      "standard_uncertainty": "0.16",
+      "unit": "Hz",
+      "value": "429228004229872.97"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q49",
+      "observable": "nu12",
+      "source_annotation": "[Grebing2016(Jun15)]",
+      "standard_uncertainty": "0.11",
+      "unit": "Hz",
+      "value": "429228004229873.04"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q50",
+      "observable": "nu12",
+      "source_annotation": "[Hachisu2017]",
+      "standard_uncertainty": "0.40",
+      "unit": "Hz",
+      "value": "429228004229872.97"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q51",
+      "observable": "nu12",
+      "source_annotation": "[Hachisu2017b,Uncertx10000Exclude]",
+      "standard_uncertainty": "1800.0",
+      "unit": "Hz",
+      "value": "429228004229872.99"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q52",
+      "observable": "nu13",
+      "source_annotation": "[Chwalla2009,Uncertx6]",
+      "standard_uncertainty": "6.0",
+      "unit": "Hz",
+      "value": "411042129776393.2"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q53",
+      "observable": "nu13",
+      "source_annotation": "[Matsubara2012]",
+      "standard_uncertainty": "1.2",
+      "unit": "Hz",
+      "value": "411042129776398.4"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q54",
+      "observable": "nu13",
+      "source_annotation": "[Huang2015,2012value]",
+      "standard_uncertainty": "1.2",
+      "unit": "Hz",
+      "value": "411042129776400.5"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q55",
+      "observable": "nu13",
+      "source_annotation": "[Huang2015,2014/15value]",
+      "standard_uncertainty": "1.1",
+      "unit": "Hz",
+      "value": "411042129776401.7"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q56",
+      "observable": "nu14",
+      "source_annotation": "[SYRTETAIData,MJD55954-57867(Jan12-Apr17)]",
+      "standard_uncertainty": "3.0e-6",
+      "unit": "Hz",
+      "value": "6834682610.9043129"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q57",
+      "observable": "nu14",
+      "source_annotation": "[Ovchinnikov2015]",
+      "standard_uncertainty": "3.1e-6",
+      "unit": "Hz",
+      "value": "6834682610.9043070"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q58",
+      "observable": "nu14",
+      "source_annotation": "[Guena2017]",
+      "standard_uncertainty": "2.1e-6",
+      "unit": "Hz",
+      "value": "6834682610.9043125"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q59",
+      "observable": "nu3_over_nu12",
+      "source_annotation": "[Yamanake2015]",
+      "standard_uncertainty": "2.2e-16",
+      "unit": "1",
+      "value": "2.62931420989890960"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q60",
+      "observable": "nu3_over_nu12",
+      "source_annotation": "[Tyumenev2016]",
+      "standard_uncertainty": "4.6e-16",
+      "unit": "1",
+      "value": "2.62931420989890915"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q61",
+      "observable": "nu3_over_nu14",
+      "source_annotation": "[Tyumenev2016]",
+      "standard_uncertainty": "6.2e-11",
+      "unit": "1",
+      "value": "165124.754879997258"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q62",
+      "observable": "nu4_over_nu5",
+      "source_annotation": "[Rosenband2008]",
+      "standard_uncertainty": "5.5e-17",
+      "unit": "1",
+      "value": "1.052871833148990438"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q63",
+      "observable": "nu6_over_nu7",
+      "source_annotation": "[Godun2014]",
+      "standard_uncertainty": "3.6e-16",
+      "unit": "1",
+      "value": "1.07200737363420630"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q64",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Akamatsu2014aErrata]",
+      "standard_uncertainty": "1.7e-15",
+      "unit": "1",
+      "value": "1.2075070393433412"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q65",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Takamoto2015]",
+      "standard_uncertainty": "2.9e-16",
+      "unit": "1",
+      "value": "1.20750703934333776"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q66",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Nemitz2016]",
+      "standard_uncertainty": "5.5e-17",
+      "unit": "1",
+      "value": "1.207507039343337749"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q67",
+      "observable": "nu11_over_nu12",
+      "source_annotation": "[Takano2017]",
+      "standard_uncertainty": "2.3e-17",
+      "unit": "1",
+      "value": "1.000000144883682777"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q68",
+      "observable": "nu12_over_nu13",
+      "source_annotation": "[Matsubara2012]",
+      "standard_uncertainty": "2.5e-15",
+      "unit": "1",
+      "value": "1.0442433345296416"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q69",
+      "observable": "nu12_over_nu14",
+      "source_annotation": "[Lodewyck2016]",
+      "standard_uncertainty": "2.1e-11",
+      "unit": "1",
+      "value": "62801.453800512435"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q70",
+      "observable": "nu8",
+      "source_annotation": "[Luo2020]",
+      "standard_uncertainty": "0.378",
+      "unit": "Hz",
+      "value": "518295836590863.30"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q71",
+      "observable": "nu7",
+      "source_annotation": "[Baynham2018]",
+      "standard_uncertainty": "0.257",
+      "unit": "Hz",
+      "value": "642121496772645.14"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q72",
+      "observable": "nu12",
+      "source_annotation": "[Hobson2020]",
+      "standard_uncertainty": "0.429",
+      "unit": "Hz",
+      "value": "429228004229873.1"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q73",
+      "observable": "nu12",
+      "source_annotation": "[Schwarz2020-1.65E-16unc]",
+      "standard_uncertainty": "0.0708",
+      "unit": "Hz",
+      "value": "429228004229873.00"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q74",
+      "observable": "nu1",
+      "source_annotation": "[Ohtsubo2020]",
+      "standard_uncertainty": "1.1",
+      "unit": "Hz",
+      "value": "1267402452901040.1"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q75",
+      "observable": "nu8",
+      "source_annotation": "[McGrew2019]",
+      "standard_uncertainty": "0.11",
+      "unit": "Hz",
+      "value": "518295836590863.71"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q76",
+      "observable": "nu8",
+      "source_annotation": "[Pizzocaro2020]",
+      "standard_uncertainty": "0.13",
+      "unit": "Hz",
+      "value": "518295836590863.61"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q77",
+      "observable": "nu11_over_nu12",
+      "source_annotation": "[Origlia2018]",
+      "standard_uncertainty": "2.80e-17",
+      "unit": "1",
+      "value": "1.000000144883682831"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q78",
+      "observable": "nu1_over_nu12",
+      "source_annotation": "[Ohtsubo2020]",
+      "standard_uncertainty": "2.3e-15",
+      "unit": "1",
+      "value": "2.9527487498748633"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q79",
+      "observable": "nu3_over_nu8",
+      "source_annotation": "[Ohmae2020]",
+      "standard_uncertainty": "1.92E-16",
+      "unit": "1",
+      "value": "2.17747319413456507"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q80",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Fujieda2018]",
+      "standard_uncertainty": "7.00E-16",
+      "unit": "1",
+      "value": "1.20750703934333790"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q81",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Grotti2018]",
+      "standard_uncertainty": "3.40E-16",
+      "unit": "1",
+      "value": "1.20750703934333841"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q82",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Pizzocaro2020b]",
+      "standard_uncertainty": "3.38E-16",
+      "unit": "1",
+      "value": "1.20750703934333805"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q83",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Pizzocaro2020b]",
+      "standard_uncertainty": "3.02E-16",
+      "unit": "1",
+      "value": "1.20750703934333738"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q84",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "4.94E-16",
+      "unit": "1",
+      "value": "1.495991618544900976"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q85",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "4.04E-16",
+      "unit": "1",
+      "value": "1.495991618544901113"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q86",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "5.24E-16",
+      "unit": "1",
+      "value": "1.495991618544900644"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q87",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "2.99E-16",
+      "unit": "1",
+      "value": "1.495991618544900858"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q88",
+      "observable": "nu13",
+      "source_annotation": "[Huang2020]",
+      "standard_uncertainty": "0.23",
+      "unit": "Hz",
+      "value": "411042129776400.41"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q89",
+      "observable": "nu8",
+      "source_annotation": "[Kobayashi2020]",
+      "standard_uncertainty": "0.259",
+      "unit": "Hz",
+      "value": "518295836590863.54"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q90",
+      "observable": "nu12",
+      "source_annotation": "[Nemitz2021]",
+      "standard_uncertainty": "0.19",
+      "unit": "Hz",
+      "value": "429228004229873.08"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q91",
+      "observable": "nu12",
+      "source_annotation": "[Grotti2018]",
+      "standard_uncertainty": "0.4",
+      "unit": "Hz",
+      "value": "429228004229873.13"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q92",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Dorscher2020]",
+      "standard_uncertainty": "3.74E-17",
+      "unit": "1",
+      "value": "1.495991618544900537"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q93",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Hisai2020]",
+      "standard_uncertainty": "4.95E-16",
+      "unit": "1",
+      "value": "1.20750703934333858"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q94",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Kobayashi2020]",
+      "standard_uncertainty": "7.49E-16",
+      "unit": "1",
+      "value": "1.20750703934333782"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q95",
+      "observable": "nu8_over_nu14",
+      "source_annotation": "[Kobayashi2020]",
+      "standard_uncertainty": "4.17E-11",
+      "unit": "1",
+      "value": "75833.197545114174"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q96",
+      "observable": "nu12",
+      "source_annotation": "[Leopardi2020]",
+      "standard_uncertainty": "1.50E-01",
+      "unit": "Hz",
+      "value": "429228004229873.19"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q97",
+      "observable": "nu4",
+      "source_annotation": "[Leopardi2020]",
+      "standard_uncertainty": "3.60E-01",
+      "unit": "Hz",
+      "value": "1121015393207859.50"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q98",
+      "observable": "nu7",
+      "source_annotation": "[Lange2021-1.60E-16unc]",
+      "standard_uncertainty": "1.03E-01",
+      "unit": "Hz",
+      "value": "642121496772645.10"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q99",
+      "observable": "nu6_over_nu7",
+      "source_annotation": "[Lange2021inverted]",
+      "standard_uncertainty": "3.700000e-17",
+      "unit": "1",
+      "value": "1.072007373634205469"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q100",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "3.44E-16",
+      "unit": "1",
+      "value": "1.495991618544900840"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q101",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Riedel2020]",
+      "standard_uncertainty": "4.04E-16",
+      "unit": "1",
+      "value": "1.495991618544900459"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q102",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Beloy2021]",
+      "standard_uncertainty": "8.20E-18",
+      "unit": "1",
+      "value": "1.2075070393433378482"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q103",
+      "observable": "nu4_over_nu12",
+      "source_annotation": "[Beloy2021]",
+      "standard_uncertainty": "2.10E-17",
+      "unit": "1",
+      "value": "2.611701431781463025"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q104",
+      "observable": "nu4_over_nu8",
+      "source_annotation": "[Beloy2021]",
+      "standard_uncertainty": "1.30E-17",
+      "unit": "1",
+      "value": "2.162887127516663703"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q105",
+      "observable": "nu13",
+      "source_annotation": "[Huang2020]",
+      "standard_uncertainty": "0.5",
+      "unit": "Hz",
+      "value": "411042129776400.6"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q106",
+      "observable": "nu8_over_nu14",
+      "source_annotation": "[McGrew2019]",
+      "standard_uncertainty": "3.30E-11",
+      "unit": "1",
+      "value": "75833.197545114192"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q107",
+      "observable": "nu7_over_nu10",
+      "source_annotation": "[Steinel2023inverted]",
+      "standard_uncertainty": "3.3e-17",
+      "unit": "1",
+      "value": "1.443686489498354818"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q108",
+      "observable": "nu6_over_nu7",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.9e-17",
+      "unit": "1",
+      "value": "1.072007373634205468"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q109",
+      "observable": "nu7",
+      "source_annotation": "[Tofful2024]",
+      "standard_uncertainty": "0.70",
+      "unit": "Hz",
+      "value": "642121496772645.39"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q110",
+      "observable": "nu7",
+      "source_annotation": "[Tofful2024]",
+      "standard_uncertainty": "0.62",
+      "unit": "Hz",
+      "value": "642121496772645.45"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q111",
+      "observable": "nu7",
+      "source_annotation": "[Tofful2024]",
+      "standard_uncertainty": "0.42",
+      "unit": "Hz",
+      "value": "642121496772645.10"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q112",
+      "observable": "nu7",
+      "source_annotation": "[Tofful2024]",
+      "standard_uncertainty": "0.24",
+      "unit": "Hz",
+      "value": "642121496772645.17"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q113",
+      "observable": "nu7",
+      "source_annotation": "[Tofful2024]",
+      "standard_uncertainty": "0.29",
+      "unit": "Hz",
+      "value": "642121496772645.33"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q114",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "3.6e-17",
+      "unit": "1",
+      "value": "1.495991618544900525"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q115",
+      "observable": "nu7_over_nu8",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "4.5e-16",
+      "unit": "1",
+      "value": "1.23890923183225918"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q116",
+      "observable": "nu7_over_nu10",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "5.1e-16",
+      "unit": "1",
+      "value": "1.44368648949835468"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q117",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "5.6e-12",
+      "unit": "1",
+      "value": "1.49599161854490059"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q118",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "4.8e-16",
+      "unit": "1",
+      "value": "1.49599161854490066"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q119",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.5e-16",
+      "unit": "1",
+      "value": "1.49599161854490051"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q120",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "3.3e-16",
+      "unit": "1",
+      "value": "1.20750703934333774"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q121",
+      "observable": "nu10_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.4e-16",
+      "unit": "1",
+      "value": "1.03623025457883195"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q122",
+      "observable": "nu8",
+      "source_annotation": "[Goti2023]",
+      "standard_uncertainty": "0.14",
+      "unit": "Hz",
+      "value": "518295836590863.44"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q123",
+      "observable": "nu8",
+      "source_annotation": "[Clivati2022]",
+      "standard_uncertainty": "0.17",
+      "unit": "Hz",
+      "value": "518295836590863.61"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q124",
+      "observable": "nu8_over_nu14",
+      "source_annotation": "[Clivati2022]",
+      "standard_uncertainty": "2.4E-11",
+      "unit": "1",
+      "value": "75833.197545114168"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q125",
+      "observable": "nu1_over_nu8",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "5.8E-17",
+      "unit": "1",
+      "value": "2.445326324126950199"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q126",
+      "observable": "nu7_over_nu8",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.6E-17",
+      "unit": "1",
+      "value": "1.238909231832259569"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q127",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "2.6E-13",
+      "unit": "1",
+      "value": "1.207507039343337793"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q128",
+      "observable": "nu12",
+      "source_annotation": "[Lin2021]",
+      "standard_uncertainty": "0.13",
+      "unit": "Hz",
+      "value": "429228004229873.07"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q129",
+      "observable": "nu12",
+      "source_annotation": "[Lu2023]",
+      "standard_uncertainty": "0.18",
+      "unit": "Hz",
+      "value": "429228004229872.91"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q130",
+      "observable": "nu13",
+      "source_annotation": "[Zhang2023]",
+      "standard_uncertainty": "0.13",
+      "unit": "Hz",
+      "value": "411042129776400.26"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q131",
+      "observable": "nu8",
+      "source_annotation": "[Kobayashi2022]",
+      "standard_uncertainty": "0.28",
+      "unit": "Hz",
+      "value": "518295836590863.69"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q132",
+      "observable": "nu8",
+      "source_annotation": "[Kobayashi2025]",
+      "standard_uncertainty": "0.10",
+      "unit": "Hz",
+      "value": "518295836590863.62"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q133",
+      "observable": "nu8",
+      "source_annotation": "[Kim2021]",
+      "standard_uncertainty": "0.14",
+      "unit": "Hz",
+      "value": "518295836590863.73"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q134",
+      "observable": "nu10",
+      "source_annotation": "[Marceau2025]",
+      "standard_uncertainty": "0.045",
+      "unit": "Hz",
+      "value": "444779044095485.404"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q135",
+      "observable": "nu1_over_nu7",
+      "source_annotation": "[Hausser2025]",
+      "standard_uncertainty": "9e-18",
+      "unit": "1",
+      "value": "1.973773591557215789"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q136",
+      "observable": "nu1",
+      "source_annotation": "[Hausser2025]",
+      "standard_uncertainty": "0.30",
+      "unit": "Hz",
+      "value": "1267402452901039.05"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q137",
+      "observable": "nu13",
+      "source_annotation": "[Cao2022]",
+      "standard_uncertainty": "0.22",
+      "unit": "Hz",
+      "value": "411042129776400.15"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q138",
+      "observable": "nu10",
+      "source_annotation": "[Jian2022]",
+      "standard_uncertainty": "0.19",
+      "unit": "Hz",
+      "value": "444779044095485.49"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q139",
+      "observable": "nu8_over_nu11",
+      "source_annotation": "[Morzynski2024]",
+      "standard_uncertainty": "7.6e-15",
+      "unit": "1",
+      "value": "1.2075068643952876"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q140",
+      "observable": "nu7_over_nu10",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "1.7e-16",
+      "unit": "1",
+      "value": "1.44368648949835489"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q141",
+      "observable": "nu8_over_nu10",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "3.1e-16",
+      "unit": "1",
+      "value": "1.16528834591315803"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q142",
+      "observable": "nu10_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "2.6e-12",
+      "unit": "1",
+      "value": "1.03623025457883229"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q143",
+      "observable": "nu10_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.1e-16",
+      "unit": "1",
+      "value": "1.03623025457883233"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q144",
+      "observable": "nu7_over_nu8",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.0e-16",
+      "unit": "1",
+      "value": "1.23890923183225960"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q145",
+      "observable": "nu10",
+      "source_annotation": "[Marceau2025]",
+      "standard_uncertainty": "0.089",
+      "unit": "Hz",
+      "value": "444779044095485.406"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q146",
+      "observable": "nu1_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "7.2E-17",
+      "unit": "1",
+      "value": "2.952748749874861332"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q147",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "8E-14",
+      "unit": "1",
+      "value": "1.495991618544900659"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q148",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "3.2E-17",
+      "unit": "1",
+      "value": "1.495991618544900897"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q149",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "3.6E-17",
+      "unit": "1",
+      "value": "1.207507039343337981"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q150",
+      "observable": "nu7_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "1.5E-16",
+      "unit": "1",
+      "value": "1.49599161854490094"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q151",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "2.1E-12",
+      "unit": "1",
+      "value": "1.20750703934333782"
+    },
+    {
+      "effectively_excluded": false,
+      "id": "q152",
+      "observable": "nu8_over_nu12",
+      "source_annotation": "[Lindvall2025]",
+      "standard_uncertainty": "2.4E-16",
+      "unit": "1",
+      "value": "1.20750703934333803"
+    },
+    {
+      "effectively_excluded": true,
+      "id": "q153",
+      "observable": "nu1_over_nu12",
+      "source_annotation": "[Lindvall2025,Uncertx10000Exclude]",
+      "standard_uncertainty": "1.5E-13",
+      "unit": "1",
+      "value": "2.952748749874860909"
+    }
+  ],
+  "random_effect_already_in_outputs": true,
+  "ratio_checks": [
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/15",
+      "relative_discrepancy": "0.0002364633886030006078284894494811122165340466821",
+      "reported_sigma": "1.057e-11",
+      "sigma_from_printed_covariance": "1.0572499418017533716424747133481015356128764873430E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/15",
+      "relative_discrepancy": "0.00000926678574750775439430656399817835263772900278",
+      "reported_sigma": "4.025e-10",
+      "sigma_from_printed_covariance": "4.0249627011873662812885629160799073321306331407638E-10"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/15",
+      "relative_discrepancy": "0.0001643778490868553592448541418973392221692603318",
+      "reported_sigma": "1.313e-11",
+      "sigma_from_printed_covariance": "1.3132158281158510410866884934883112063987082388156E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/15",
+      "relative_discrepancy": "0.00003688568226960806442725491474757740710300294813",
+      "reported_sigma": "9.767e-12",
+      "sigma_from_printed_covariance": "9.7666397375412727380347390012476604114648249702056E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/15",
+      "relative_discrepancy": "0.00018701766892172784987801404347299460472103063559",
+      "reported_sigma": "1.256e-11",
+      "sigma_from_printed_covariance": "1.2557651058078343098205532143613979187764703855217E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/15",
+      "relative_discrepancy": "0.0000423962633123350546678010908548965684277933666",
+      "reported_sigma": "6.195e-12",
+      "sigma_from_printed_covariance": "6.1952626448512199156636670277578460842414101799063E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/15",
+      "relative_discrepancy": "0.00007668178102697414392548323605288584130402913134",
+      "reported_sigma": "4.910e-12",
+      "sigma_from_printed_covariance": "4.9096234924551575569533258773109803305191972169651E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/15",
+      "relative_discrepancy": "0.0000501797221260105552504508266360835450506253652",
+      "reported_sigma": "4.105e-12",
+      "sigma_from_printed_covariance": "4.1052059877593272733293031006433411229524328171242E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/15",
+      "relative_discrepancy": "0.0000541043279979350084183803889070276714081877190",
+      "reported_sigma": "3.113e-10",
+      "sigma_from_printed_covariance": "3.1131684267730575716812064181506675771410936883694E-10"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "10/15",
+      "relative_discrepancy": "0.0000930346378264682281380831286394506563673349315",
+      "reported_sigma": "3.577e-12",
+      "sigma_from_printed_covariance": "3.5773327848995052768520499233511433149978259570498E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "11/15",
+      "relative_discrepancy": "0.0001100211698333548851162353618967665705831746269",
+      "reported_sigma": "3.860e-12",
+      "sigma_from_printed_covariance": "3.8604246817155567498565486684969215189624510540599E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "12/15",
+      "relative_discrepancy": "0.0000502800980366705660743622875184092451211028815",
+      "reported_sigma": "3.332e-12",
+      "sigma_from_printed_covariance": "3.3321675332866581863261597751420113396047435148013E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "13/15",
+      "relative_discrepancy": "0.0000113348320625422586089436579534914310443706017",
+      "reported_sigma": "1.050e-11",
+      "sigma_from_printed_covariance": "1.0500119015736656693715393908408511660025965891318E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "14/15",
+      "relative_discrepancy": "0.00009549456787196806591505105869308178768189236269",
+      "reported_sigma": "1.080e-16",
+      "sigma_from_printed_covariance": "1.0798968658666982744888117448566114716693035562483E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/2",
+      "relative_discrepancy": "0.0001268292845270996577491202449249818589027941316",
+      "reported_sigma": "3.085e-15",
+      "sigma_from_printed_covariance": "3.0853912683427661024441560359555935690347151198960E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/3",
+      "relative_discrepancy": "0.00004078419561832145378175626465570549765737612077",
+      "reported_sigma": "9.841e-17",
+      "sigma_from_printed_covariance": "9.8405986427309200985733337365995232021975537615955E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/4",
+      "relative_discrepancy": "0.00001576750270630439154453477090197291430167851386",
+      "reported_sigma": "5.752e-17",
+      "sigma_from_printed_covariance": "5.7519093053244333371398358359977718517969367451883E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/5",
+      "relative_discrepancy": "0.0000780854633428940979313819572358177292752951447",
+      "reported_sigma": "1.067e-16",
+      "sigma_from_printed_covariance": "1.0670833171893868680024927845483706175171367399194E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/6",
+      "relative_discrepancy": "0.00013483431518428359002369115950040122652721632052",
+      "reported_sigma": "1.043e-16",
+      "sigma_from_printed_covariance": "1.0428593678092627922156052901206410815207321133777E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/7",
+      "relative_discrepancy": "0.0000324585772090966117811746747158839340701724368",
+      "reported_sigma": "6.895e-17",
+      "sigma_from_printed_covariance": "6.8952238018898567211382311993821660197254138389517E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/8",
+      "relative_discrepancy": "0.0000416545366647531187255880627952317015729445017",
+      "reported_sigma": "9.190e-17",
+      "sigma_from_printed_covariance": "9.1903828051919490811610881542970881793374553599704E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/9",
+      "relative_discrepancy": "0.00025202675129569119734790213112314915384313410980",
+      "reported_sigma": "1.745e-14",
+      "sigma_from_printed_covariance": "1.7445602133189890188606279107811901047265437309784E-14"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/10",
+      "relative_discrepancy": "0.0000937071501486868400704201430616869538975322445",
+      "reported_sigma": "1.638e-16",
+      "sigma_from_printed_covariance": "1.6381534923119435490440353481943350432304841578165E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/11",
+      "relative_discrepancy": "0.0001576712719379118293503066876973731104446318760",
+      "reported_sigma": "1.616e-16",
+      "sigma_from_printed_covariance": "1.6162547967754516655162300956073189549464785251116E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/12",
+      "relative_discrepancy": "0.0003232334726892596779430223657754682662393935687",
+      "reported_sigma": "1.045e-16",
+      "sigma_from_printed_covariance": "1.0453377789789602763634504583722353643382201662793E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/13",
+      "relative_discrepancy": "0.0000549522847411625516992395769080683054065246366",
+      "reported_sigma": "7.053e-16",
+      "sigma_from_printed_covariance": "7.0533875784642794194771347367359326057580322182619E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "1/14",
+      "relative_discrepancy": "0.00007737262045410771119312136048227258583418997844",
+      "reported_sigma": "2.602e-11",
+      "sigma_from_printed_covariance": "2.6017986764415784117354754982200251267316594376761E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/3",
+      "relative_discrepancy": "0.00013652241488876607903622369322961199152665482770",
+      "reported_sigma": "3.281e-15",
+      "sigma_from_printed_covariance": "3.2805520699567499584946821500625136430558010455103E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/4",
+      "relative_discrepancy": "0.00007435234196340064320838784800091395917187737686",
+      "reported_sigma": "3.302e-15",
+      "sigma_from_printed_covariance": "3.3017544885668368510761259033259009821068144609016E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/5",
+      "relative_discrepancy": "0.0001019180708900550981644088834291416543948128101",
+      "reported_sigma": "3.477e-15",
+      "sigma_from_printed_covariance": "3.4773543691324847215763176496876831255323307641407E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/6",
+      "relative_discrepancy": "0.0000269701331385746637804704169607401406723047139",
+      "reported_sigma": "5.377e-15",
+      "sigma_from_printed_covariance": "5.3771450184058861159671475894319978997363949824468E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/7",
+      "relative_discrepancy": "0.00004686763771078415666252559484985335573828454251",
+      "reported_sigma": "5.764e-15",
+      "sigma_from_printed_covariance": "5.7637298549362350401209972024712854452575245278970E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/8",
+      "relative_discrepancy": "0.00001662260966149163395809649767405066621652095106",
+      "reported_sigma": "7.141e-15",
+      "sigma_from_printed_covariance": "7.1408812979444072882419052329101096041925478238885E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/9",
+      "relative_discrepancy": "0.0000671612938915913102787693624019547927848516270",
+      "reported_sigma": "1.881e-14",
+      "sigma_from_printed_covariance": "1.8811263303938100832546343651706780769652283059103E-14"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/10",
+      "relative_discrepancy": "0.0000314840990304343773306205503858268916381381498",
+      "reported_sigma": "8.321e-15",
+      "sigma_from_printed_covariance": "8.3212619791880322444537680935997604655653209475445E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/11",
+      "relative_discrepancy": "0.0000460693261752273798127095721961402389796545325",
+      "reported_sigma": "8.623e-15",
+      "sigma_from_printed_covariance": "8.6233972557996089856961249946410473172807215610338E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/12",
+      "relative_discrepancy": "0.00005049320521832468446303730605106209818500637342",
+      "reported_sigma": "8.623e-15",
+      "sigma_from_printed_covariance": "8.6225645970914023862458752293099216915273506900420E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/13",
+      "relative_discrepancy": "0.0000034593826214826589237993280523774417846311358",
+      "reported_sigma": "9.029e-15",
+      "sigma_from_printed_covariance": "9.0290312347656893669274229841329849159218734345252E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "2/14",
+      "relative_discrepancy": "0.00001786096721062894923179982774746771258934246325",
+      "reported_sigma": "5.420e-10",
+      "sigma_from_printed_covariance": "5.4199031935577183910951636449336087249977657638492E-10"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/4",
+      "relative_discrepancy": "0.0000352160189179267969252087366026397952376742139",
+      "reported_sigma": "8.981e-17",
+      "sigma_from_printed_covariance": "8.9813162750659019005631852996634283080010295521149E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/5",
+      "relative_discrepancy": "0.0003214921562025934704681698701728137513528898234",
+      "reported_sigma": "1.227e-16",
+      "sigma_from_printed_covariance": "1.2273944708756605821882644444307020424729099958133E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/6",
+      "relative_discrepancy": "0.0002500765629388937300704124959033744897648361885",
+      "reported_sigma": "1.560e-16",
+      "sigma_from_printed_covariance": "1.5603901194381846742189098434936092642040331444541E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/7",
+      "relative_discrepancy": "0.0000741670765904301883228707148435690121057982534",
+      "reported_sigma": "1.478e-16",
+      "sigma_from_printed_covariance": "1.4781096189392006558183412029165387949998923698185E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/8",
+      "relative_discrepancy": "0.0002413554649019262432375785819028756683933487616",
+      "reported_sigma": "1.793e-16",
+      "sigma_from_printed_covariance": "1.7934327503485691537541249783973518560734292743295E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/9",
+      "relative_discrepancy": "0.00027260002386053764390365998842954759197350870882",
+      "reported_sigma": "1.554e-14",
+      "sigma_from_printed_covariance": "1.5535763795629207245013737123779804830420731674665E-14"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/10",
+      "relative_discrepancy": "0.00007006582831290076171962395732078055489488101899",
+      "reported_sigma": "2.417e-16",
+      "sigma_from_printed_covariance": "2.4168306508929677188589236688951556733988190725771E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/11",
+      "relative_discrepancy": "0.00004580141764150155911187702308529736291216418028",
+      "reported_sigma": "2.404e-16",
+      "sigma_from_printed_covariance": "2.4038898933919898302518950476365029451395591573106E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/12",
+      "relative_discrepancy": "0.00016413465705902346296935216845021869170107398233",
+      "reported_sigma": "2.139e-16",
+      "sigma_from_printed_covariance": "2.1386489159685507488127085557116849822184514027518E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/13",
+      "relative_discrepancy": "0.0000320657126554351362311942328721631011519410678",
+      "reported_sigma": "6.606e-16",
+      "sigma_from_printed_covariance": "6.6062118260978018045099432691023535094462097226937E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "3/14",
+      "relative_discrepancy": "0.00005951599337110084535205283098316941848488979081",
+      "reported_sigma": "2.611e-11",
+      "sigma_from_printed_covariance": "2.6108446037413080556927857900583029446483359527562E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/5",
+      "relative_discrepancy": "0.00005163222485955107452485132766290656151199571797",
+      "reported_sigma": "7.801e-17",
+      "sigma_from_printed_covariance": "7.8005972170138706420676316347929016659136449214041E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/6",
+      "relative_discrepancy": "0.0003937247757234822602337367358430133219152812130",
+      "reported_sigma": "1.030e-16",
+      "sigma_from_printed_covariance": "1.0304055365189951867280407488379183037215727396494E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/7",
+      "relative_discrepancy": "0.0000256695061403423648871565945510269280344142255",
+      "reported_sigma": "7.842e-17",
+      "sigma_from_printed_covariance": "7.8422013002671525648254450820144691531696458763561E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/8",
+      "relative_discrepancy": "0.0000445159496437960990249541610872191891215867801",
+      "reported_sigma": "8.605e-17",
+      "sigma_from_printed_covariance": "8.6053830597466848654321097305561555211223912542424E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/9",
+      "relative_discrepancy": "0.0000460830292397901068339214234870549515516397984",
+      "reported_sigma": "1.543e-14",
+      "sigma_from_printed_covariance": "1.5430711061141169961348447407564405257902441802090E-14"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/10",
+      "relative_discrepancy": "0.0001185619104272687859381580649319248498368564010",
+      "reported_sigma": "1.599e-16",
+      "sigma_from_printed_covariance": "1.5991895804947732027887151147458261478348891333852E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/11",
+      "relative_discrepancy": "0.0000281416891086814583840007612946197092127254822",
+      "reported_sigma": "1.507e-16",
+      "sigma_from_printed_covariance": "1.5070424095254867829577846891472709919017835773017E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/12",
+      "relative_discrepancy": "0.0003547354990758472344020927591849019521319269455",
+      "reported_sigma": "1.040e-16",
+      "sigma_from_printed_covariance": "1.0403689249190388811237781764695522980302172040233E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/13",
+      "relative_discrepancy": "0.00007765475427402088434724048352061978050403029250",
+      "reported_sigma": "6.269e-16",
+      "sigma_from_printed_covariance": "6.2685131823454561630760271494088092345960202340963E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "4/14",
+      "relative_discrepancy": "0.0002096887079716216777286785299297281552196185226",
+      "reported_sigma": "2.327e-11",
+      "sigma_from_printed_covariance": "2.3274879456234499636440746349391464774171960523020E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/6",
+      "relative_discrepancy": "0.0001960985957448596690138248999114631743304989561",
+      "reported_sigma": "1.503e-16",
+      "sigma_from_printed_covariance": "1.5032947361894045240825277788245669291510187399310E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/7",
+      "relative_discrepancy": "0.0001942277035976131711593322326746095942245070091",
+      "reported_sigma": "1.432e-16",
+      "sigma_from_printed_covariance": "1.4322781340715517820611001637571900409389294940370E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/8",
+      "relative_discrepancy": "0.0000695091046780101649105495921991566483148157075",
+      "reported_sigma": "1.723e-16",
+      "sigma_from_printed_covariance": "1.7231197641873602115141408769473591469050464274641E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/9",
+      "relative_discrepancy": "0.00021665576928897529616217831989474078252512567763",
+      "reported_sigma": "1.466e-14",
+      "sigma_from_printed_covariance": "1.4656823826422223622158262465830343100128181657566E-14"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/10",
+      "relative_discrepancy": "0.0001915737753205978042383010122899512231935415780",
+      "reported_sigma": "2.327e-16",
+      "sigma_from_printed_covariance": "2.3274457921751710310904625264555987164963713712520E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/11",
+      "relative_discrepancy": "0.0001020766483599160922604072772699333615525653343",
+      "reported_sigma": "2.324e-16",
+      "sigma_from_printed_covariance": "2.3242372261307884449984131865123753251322481618370E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/12",
+      "relative_discrepancy": "0.00010348084909068839265520755470080187426167270860",
+      "reported_sigma": "2.081e-16",
+      "sigma_from_printed_covariance": "2.0807846563530422774548845130786676312996614590934E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/13",
+      "relative_discrepancy": "0.00006570846372907289897313731888500307095300379704",
+      "reported_sigma": "6.253e-16",
+      "sigma_from_printed_covariance": "6.2525891249763021071627209723450120757973308672571E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "5/14",
+      "relative_discrepancy": "0.0002012869238218478278226339758282609718300877567",
+      "reported_sigma": "2.490e-11",
+      "sigma_from_printed_covariance": "2.4905012044403164010912783585998123698198569185142E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/7",
+      "relative_discrepancy": "0.0000867388989655787788848671568192132273949240389",
+      "reported_sigma": "4.794e-17",
+      "sigma_from_printed_covariance": "4.7944158262816409846659740531497913082121312658425E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/8",
+      "relative_discrepancy": "0.0000096494407645213330002099426797580771424347325",
+      "reported_sigma": "7.163e-17",
+      "sigma_from_printed_covariance": "7.1630691189441962663082805038194151071065712599891E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/9",
+      "relative_discrepancy": "0.0000287830977947730263152071388137401865172168104",
+      "reported_sigma": "9.475e-15",
+      "sigma_from_printed_covariance": "9.4752727198516054744243365876402601882672506292786E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/10",
+      "relative_discrepancy": "0.0000492181281882163662605574438853366510942759833",
+      "reported_sigma": "9.982e-17",
+      "sigma_from_printed_covariance": "9.9824912953555747757680128844048634304512230628657E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/11",
+      "relative_discrepancy": "0.0002345291621045752565151698279472364843919069323",
+      "reported_sigma": "1.055e-16",
+      "sigma_from_printed_covariance": "1.0552474282660203268956235041684843344910334618136E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/12",
+      "relative_discrepancy": "0.00005311674226391297519956331145402133057392465797",
+      "reported_sigma": "8.157e-17",
+      "sigma_from_printed_covariance": "8.1565667267333532618612971620684695480065084965649E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/13",
+      "relative_discrepancy": "0.00005606824502517932276757748886894856356838451212",
+      "reported_sigma": "3.869e-16",
+      "sigma_from_printed_covariance": "3.8687830719599975812002122426955660380075539203226E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "6/14",
+      "relative_discrepancy": "0.00029221675282174454158227758359121952830587785027",
+      "reported_sigma": "1.458e-11",
+      "sigma_from_printed_covariance": "1.4575739479743858964583730392831240019277300300943E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/8",
+      "relative_discrepancy": "9.227808752608205731369629620993219278097956E-7",
+      "reported_sigma": "3.765e-17",
+      "sigma_from_printed_covariance": "3.7650034742699953569894578606655523039470582038805E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/9",
+      "relative_discrepancy": "0.00004532933570461804225252123690954824087852366067",
+      "reported_sigma": "8.839e-15",
+      "sigma_from_printed_covariance": "8.8385993340017068811245299647869565030988747293633E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/10",
+      "relative_discrepancy": "0.0000395853954602301165589363742675788183853829876",
+      "reported_sigma": "6.741e-17",
+      "sigma_from_printed_covariance": "6.7412668451507974112157237900989377488147358667191E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/11",
+      "relative_discrepancy": "0.00001126843494880842847117704210080966978435894568",
+      "reported_sigma": "7.242e-17",
+      "sigma_from_printed_covariance": "7.2419183939941007293610117358611059363714216725154E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/12",
+      "relative_discrepancy": "0.0000028902655629049379857845965385758779711057502",
+      "reported_sigma": "3.666e-17",
+      "sigma_from_printed_covariance": "3.6660105957135536095026558863309104191686420736802E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/13",
+      "relative_discrepancy": "0.0000759874658239478682582940297124580279488909241",
+      "reported_sigma": "3.541e-16",
+      "sigma_from_printed_covariance": "3.5412690716164825994015026191592118138769670227624E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "7/14",
+      "relative_discrepancy": "0.0003241726373151895385599636218845455328373395853",
+      "reported_sigma": "1.294e-11",
+      "sigma_from_printed_covariance": "1.2944194793926858552628965929267186019194915174234E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/9",
+      "relative_discrepancy": "0.0000295758115412686163207027749565550243133842224",
+      "reported_sigma": "7.134e-15",
+      "sigma_from_printed_covariance": "7.1342109938395354103088318935965400635434516830425E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/10",
+      "relative_discrepancy": "0.00002152464526237813878723515880592323549698964116",
+      "reported_sigma": "6.312e-17",
+      "sigma_from_printed_covariance": "6.3118641364391038691879749716776170125375430013850E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/11",
+      "relative_discrepancy": "0.00005230743797039828799462585592138054744653234308",
+      "reported_sigma": "5.907e-17",
+      "sigma_from_printed_covariance": "5.9066910199639088573128157450690724051062333334494E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/12",
+      "relative_discrepancy": "0.00016186082535014590091483867472803762211530850734",
+      "reported_sigma": "3.079e-17",
+      "sigma_from_printed_covariance": "3.0785016305187469007710832117205123721615069651059E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/13",
+      "relative_discrepancy": "0.0000203399362660087134677957007299930884195847823",
+      "reported_sigma": "2.861e-16",
+      "sigma_from_printed_covariance": "2.8610581925576570509292313634997885102259684320621E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "8/14",
+      "relative_discrepancy": "0.00044747213731891900145870945281365298079043636092",
+      "reported_sigma": "1.044e-11",
+      "sigma_from_printed_covariance": "1.0435328390886390485624771073312625462880547844392E-11"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/10",
+      "relative_discrepancy": "0.00004663436753933287028741668877959139640373517021",
+      "reported_sigma": "6.435e-15",
+      "sigma_from_printed_covariance": "6.4346999078448843929797004736077033293641419641797E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/11",
+      "relative_discrepancy": "0.00000815596737025239892287867435444721718136814939",
+      "reported_sigma": "6.668e-15",
+      "sigma_from_printed_covariance": "6.6679456160095751570039822449994045459558346371799E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/12",
+      "relative_discrepancy": "0.00003012921655768577622071860769750356596505908317",
+      "reported_sigma": "6.668e-15",
+      "sigma_from_printed_covariance": "6.6677990983839933512441602483238730462221449860334E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/13",
+      "relative_discrepancy": "0.0000325064957447525803006028179708161842945860634",
+      "reported_sigma": "6.967e-15",
+      "sigma_from_printed_covariance": "6.9672264727558536912269542998328026763559803811040E-15"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "9/14",
+      "relative_discrepancy": "0.0000776590862519479579221917865299139956111823542",
+      "reported_sigma": "4.188e-10",
+      "sigma_from_printed_covariance": "4.1883252362532231580477781392019872798136196316992E-10"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "10/11",
+      "relative_discrepancy": "0.00006492678093593923987029344318675974847603442108",
+      "reported_sigma": "6.839e-17",
+      "sigma_from_printed_covariance": "6.8385559657451791115385270631420457500801724005942E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "10/12",
+      "relative_discrepancy": "0.0000628463535512248424578287319301159056789170965",
+      "reported_sigma": "5.296e-17",
+      "sigma_from_printed_covariance": "5.2963328342884072867656566609643018938364755449432E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "10/13",
+      "relative_discrepancy": "0.0000808573434816747148978697264322394716405722187",
+      "reported_sigma": "2.492e-16",
+      "sigma_from_printed_covariance": "2.4922014964999563333895254913582691407633283059689E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "10/14",
+      "relative_discrepancy": "0.00001730556535317980795171808201116891415653786498",
+      "reported_sigma": "9.384e-12",
+      "sigma_from_printed_covariance": "9.3838376045747257606821810775184071909095550486750E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "11/12",
+      "relative_discrepancy": "0.00004366991807691754812006680838196004625116350405",
+      "reported_sigma": "4.175e-17",
+      "sigma_from_printed_covariance": "4.1748176780920288692365987210750053168069013923706E-17"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "11/13",
+      "relative_discrepancy": "0.0002014697448801539865695940601518283006422639341",
+      "reported_sigma": "2.411e-16",
+      "sigma_from_printed_covariance": "2.4114857435549060512616192912790260580328484983451E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "11/14",
+      "relative_discrepancy": "0.00000136159009559145846800702658380361989710178930",
+      "reported_sigma": "9.001e-12",
+      "sigma_from_printed_covariance": "9.0009877443275495812823294687537191836173061867945E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "12/13",
+      "relative_discrepancy": "0.00011069134276443813888751970175322686408899076610",
+      "reported_sigma": "2.372e-16",
+      "sigma_from_printed_covariance": "2.3717374401349627527345588032674413458783809139028E-16"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "12/14",
+      "relative_discrepancy": "0.0000570645854642454216266331476888610656589872730",
+      "reported_sigma": "8.610e-12",
+      "sigma_from_printed_covariance": "8.6104913260808471530802053114016010937753238804203E-12"
+    },
+    {
+      "input_output_rounding_overlap": true,
+      "ratio": "13/14",
+      "relative_discrepancy": "0.0001245304753786829933395126587480779059892294469",
+      "reported_sigma": "1.602e-11",
+      "sigma_from_printed_covariance": "1.6021994978215566501553298992793144208053947455740E-11"
+    }
+  ],
+  "rb_reference": {
+    "coverage_factor": "1",
+    "frequency_hz": "6834682610.9043129",
+    "standard_uncertainty_hz_rounded": "2.3e-06",
+    "valid_from": "2026-03-27"
+  },
+  "recommendation_covariance_multiplier": "2209/400",
+  "recommendation_sigma_multiplier": "47/20",
+  "rounding_model": "independent closed nearest-rounding cells for printed covariance and frequencies; exact Cs definition; overlap with squared output-sigma cells",
+  "schema_version": 1,
+  "source_files": {
+    "ClockInputData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 30786,
+      "sha256": "d93b2c4ee6ea1db99dc477b07a0fc501b66053e7e93867868731200222434e96"
+    },
+    "ClockOutputCovData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 5540,
+      "sha256": "97dba2e5e678bb8a0b9ae72162a9cbeb20b4c42fa40bd4b81266692910bc5ddf"
+    },
+    "ClockOutputData2025_mod_basis_n=153_TAI_05092025_ExpandUncV1_AdHocCorrV2_2.dat": {
+      "bytes": 52179,
+      "sha256": "d4f8dd6961e6044812563a1bdccd81b1e4e1031606c05184f1dffc14830fc94e"
+    },
+    "Notes_on_analysis_procedure_2025.pdf": {
+      "bytes": 253594,
+      "sha256": "10975ea05369056952a0df7484376f2fd21a3b5965298e3c5f64ae1ad19f8861"
+    },
+    "Readme_file_for_2025_update.pdf": {
+      "bytes": 202994,
+      "sha256": "11d5be89b5d4eed07c79037315160a50a4ae76795863bea83d736831f41241d4"
+    },
+    "bipm-rb87-2026-10-26.xml": {
+      "bytes": 991,
+      "sha256": "3e1ba563d9bed1afab54906c3ae8eb944eb0cdcf1a956aa4d7cdd58e7e41e463"
+    }
+  },
+  "target_exposure": "previously_exposed",
+  "verification_status": "verified_external_data_consistency"
+}

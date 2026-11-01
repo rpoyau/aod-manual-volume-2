@@ -6,6 +6,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts'))
@@ -20,6 +21,7 @@ class PublicationTests(unittest.TestCase):
         for name in paths:
             destination=target/name;destination.parent.mkdir(parents=True,exist_ok=True)
             shutil.copy2(ROOT/name,destination)
+        copy_foundation_receipts(ROOT, target)
         return target
 
     def expect_rejected_unchanged(self, root, pattern):
@@ -60,8 +62,9 @@ class PublicationTests(unittest.TestCase):
     def test_current_publication_and_final_figure(self):
         result=verify_publication(ROOT)
         self.assertTrue(result['manual_text_equal'])
-        self.assertTrue(result['main_text_matches_release'])
-        self.assertEqual(result['main_pages'],69)
+        self.assertFalse(result['main_text_matches_release'])
+        self.assertTrue(result['main_text_matches_bound_authority'])
+        self.assertEqual(result['main_pages'],73)
         self.assertGreater(result['root_main_links'],0)
         self.assertEqual(result['root_main_links'],result['nested_main_links'])
         self.assertGreaterEqual(result['chart']['minimum_font_pt'],8.99)

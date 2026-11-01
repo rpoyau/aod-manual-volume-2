@@ -14,6 +14,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 from unittest.mock import patch
 
 REPO = Path(__file__).resolve().parents[2]
@@ -33,6 +34,7 @@ class AtomicTests(unittest.TestCase):
         shutil.copytree(REPO/'sections', root/'sections')
         for folder in ('folding', 'atomic'):
             shutil.copytree(REPO/'manual2/data/m1'/folder, root/'manual2/data/m1'/folder)
+        copy_foundation_receipts(REPO, root)
         return root
 
     def cli(self, root, command='verify', optimized=False, extra=()):

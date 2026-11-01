@@ -20,8 +20,27 @@ class ExportIntegrity(unittest.TestCase):
         self.assertEqual(result["pdf"]["marks_checked"], 126)
         self.assertTrue(result["inputs_unchanged"])
 
+    def test_explicit_source_root_rejects_other_checkout_template_and_resealed_catalog(self):
+        # verify was imported from ROOT above: source selection must follow the explicit root.
+        for mutation in ('template', 'catalog'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp)
+                for folder in ('figures','visuals','data/m1/isotopes'):
+                    shutil.copytree(ROOT/folder,root/folder)
+                ledger=root/'ledger.csv';shutil.copyfile(ROOT/'data/m1/matter1_elements_1_118_ledger.csv',ledger)
+                if mutation=='template':
+                    (root/'visuals/matter1-reference.template.html').write_text('CORRUPTED TEMPLATE')
+                else:
+                    path=root/'data/m1/isotopes/catalog.json'
+                    catalog=json.loads(path.read_bytes());catalog['isotopes'][0]['native_admission']='admitted';path.write_text(json.dumps(catalog))
+                    path=root/'figures/matter1_figure_manifest.json';manifest=json.loads(path.read_bytes());manifest['isotope_catalog_sha256']=hashlib.sha256((root/'data/m1/isotopes/catalog.json').read_bytes()).hexdigest();path.write_text(json.dumps(manifest))
+                before={p:p.read_bytes() for p in root.rglob('*') if p.is_file()}
+                with self.assertRaises(ValueError):
+                    verify(ledger,root/'figures',root/'visuals',source_root=root)
+                self.assertEqual(before,{p:p.read_bytes() for p in before})
+
     def test_semantic_corruptions_rejected_even_with_updated_output_hash(self):
-        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot"):
+        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor"):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 figures, visuals = root / "figures", root / "visuals"
@@ -49,6 +68,16 @@ class ExportIntegrity(unittest.TestCase):
                     text = target.read_text()
                     self.assertIn('"symbol": "Fm"', text)
                     target.write_text(text.replace('"symbol": "Fm"', '"symbol": "ZZ"'))
+                elif mutation == "isotope_value":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn('"value_seconds": "0.00058"', text)
+                    target.write_text(text.replace('"value_seconds": "0.00058"', '"value_seconds": "58"'))
+                elif mutation == "isotope_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("h.kind==='observationally_stable'", text)
+                    target.write_text(text.replace("h.kind==='observationally_stable'", "true"))
                 else:
                     target = visuals / "matter1-layout.json"
                     data = json.loads(target.read_text())

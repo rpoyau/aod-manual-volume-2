@@ -1,6 +1,6 @@
 # Alpha↔Omega Dynamics — Manual Volume II: Matter I
 
-A compact elemental reference for Z = 1–118, downstream of released AOD v41.02 and AFC v2.4. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
+A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 candidate `b78b48d` (PR43, canonical marker v41.02) and AFC v2.4. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
@@ -11,7 +11,7 @@ This revision preserves the candidate’s element identities, positions, local c
 - [`compact chart`](manual2/figures/aod_matter1_wheel_accessible.pdf) and [SVG](manual2/figures/aod_matter1_wheel_accessible.svg) are 180 mm wide, with 9.3 pt essential text.
 - [`interactive companion`](manual2/visuals/matter1-reference.html) opens directly in a browser. It uses the same data/layout and supports keyboard selection and narrow screens.
 
-At fixed Z, changing the companion’s integer A preserves placement and changes the support sum by 68ΔA. This is conditional count exploration, not a catalogue of observed isotopes, abundances, stability or decay events.
+At fixed Z, changing the companion’s integer A preserves placement and changes the support sum by 68ΔA. This is conditional count exploration. The separate sourced isotope selector and optional half-life color layer use the versioned catalog; changing the arithmetic input does not change that selection.
 
 ## Data and authority
 
@@ -19,7 +19,7 @@ At fixed Z, changing the companion’s integer A preserves placement and changes
 
 `manual2/evidence/pr1_baseline_ledger_v1.csv`, `input_manifest.json` and `historical_sources.json` bind the reviewed PR and small historical excerpts. The 118×6 v94 placement comparison is separate from observable coverage and the r24 declaration joins. Predecessor deferred/unscored/not-executed statuses are retained. Whole historical ZIPs are comparison evidence, not runtime dependencies.
 
-`manual2/evidence/foundation-source.json` pins the unchanged Main mathematical sources and released text. The paired build produces an exact source/PDF/AUX/FLS receipt, then resolves semantic Manual citations against that same Main build. A fresh checkout must run this paired build before publication verification; ignored AUX/FLS/binding files are recreated, never accepted merely because their timestamps look current.
+`manual2/evidence/foundation-source.json` pins the exact reviewed M3 Main mathematical sources and text; the prior release sources and executors are archived under `pre-m3-main/`. The paired build produces an exact source/PDF/AUX/FLS receipt, then resolves semantic Manual citations against that same Main build. A fresh checkout must run this paired build before publication verification; ignored AUX/FLS/binding files are recreated, never accepted merely because their timestamps look current.
 
 ## Environment
 
@@ -48,7 +48,7 @@ python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
 python3 -B scripts/check_matter1_application.py
 python3 -B scripts/check_matter1_v2_application.py
-for lane in folding temporal hyperfine stateful metrology bipm atomic; do
+for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival; do
   python3 -B "manual2/scripts/verify_matter1_${lane}.py"
   python3 -B -O "manual2/scripts/verify_matter1_${lane}.py"
 done
@@ -63,10 +63,13 @@ Generate the data/chart and build the publication pair explicitly, then verify:
 
 ```sh
 python3 -B manual2/scripts/generate_matter1_ledger.py --output-root manual2
+python3 -B manual2/scripts/generate_matter1_isotopes.py
 MPLCONFIGDIR=/tmp/matter1-mpl python3 -B manual2/scripts/generate_matter1_wheel.py
 for lane in folding temporal hyperfine stateful metrology bipm atomic; do
   python3 -B "manual2/scripts/generate_matter1_${lane}.py"
 done
+python3 -B manual2/scripts/generate_matter1_bipm_precision.py
+python3 -B manual2/scripts/generate_matter1_survival.py
 python3 -B scripts/build_matter1_documents.py
 python3 -B scripts/verify_matter1_publication.py
 ```
@@ -129,3 +132,15 @@ python3 -B manual2/scripts/compare_matter1_atomic.py --prediction /tmp/matter1-p
 `manual2/evidence/v2-request.json` pins the available 63,942-byte R02 archive and six contract documents. The later approximately 136 KB / 42-entry archive mentioned in the handoff was not attached among the available files; its integrity is not claimed. The explicit amendments in the execution message govern the added target separation, intervention and rounding checks.
 
 The additional 18 SI and five prediction criteria are recorded with actual assertion scope by `scripts/record_matter1_v2_acceptance.py`. It consumes the complete normal/optimized test logs and lane receipts, reruns read-only lane verification, and records the atomic objective as incomplete. The original 39 criteria remain separately recorded. CI exercises both receipts, all tests, persisted hostile mutations, paired publication, browser/export checks and disposable reproduction. Passing software tests does not promote atomic admission or physical prediction status.
+
+## Isotopes, M3 and the survival experiment
+
+The catalog contains 27 isotope/state records and 29 source records at a declared 1 November 2026 snapshot. Og/Lv/Fl family coverage includes tentative assignments, isomer candidates and unobserved targets with distinct statuses. ENSDF adopted values remain the default; newer experimental results are selectable source records, never silently averaged. NUBASE2020 cross-checks are separate. H-1/Cs-133 anchor records, Fe-56/Pb-208 benchmarks and Ni-62 binding-energy control have their own scopes. Pb-208's alpha partial-life lower limit is distinct from observational stability. Fl-298 is unobserved and has no scored empirical half-life.
+
+The compact view retains all chart coordinates and original structural colors by default. The optional half-life view uses a logarithmic scale for finite selected total half-lives, with separate unknown/stable/limit labels. Isotope/state and source selectors show uncertainty and routes. The two actual alpha chains are Og-294 → Lv-290 → Fl-286 and Lv-293 → Fl-289. The three targets Fl-289, Og-294 and Fl-298 are a comparison progression, not a decay chain.
+
+The new survival model enumerates an exact stochastic ensemble of retained histories. Committed paired currents change subsequent loss weights. Its common baseline median is in `(6,7]` coupled reference returns; changing the common loss gain gives `(4,5]`, changing capacity gives `(2,3]`, and disabling feedback at return 2 leaves the median censored beyond 8. These are executed declared-model results. Applying the same constructed state and shared reference map to different isotopes predicts equal half-lives; the separately frozen retrospective comparison rejects that specialization. No isotope-specific capacity or hazard was fitted, and no physical isotope half-life is claimed. Native isotope construction, loss-observation identification and reference/SI gain remain explicit dependencies.
+
+M3's exact finite-law mapping module is vendored byte-for-byte with its source binding. CI additionally checks out the exact upstream commit and replays its actual Matter I consumer integration in normal and optimized Python; this lane cannot silently skip. The older v1/v2 data and all 118 placements/126 slots remain byte-preserved. The separate BIPM precision successor preserves 105 point results while recording unresolved printed-zero precision and rejecting the targeted sigma mutation.
+
+See `manual2/data/m1/isotopes/README.md`, `manual2/data/m1/survival/`, and `manual2/evidence/m3-migration.md` for exact premises, source locators and unresolved dependencies. The complete element ledger remains in the Manual appendix. Generation is explicit; verification never repairs persisted files.

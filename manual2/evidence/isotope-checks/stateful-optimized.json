@@ -1,0 +1,114 @@
+{
+  "baseline": {
+    "completed_return_cuts": {
+      "outer_minus": [
+        27,
+        35,
+        43,
+        51,
+        59,
+        67
+      ],
+      "outer_plus": [
+        26,
+        33,
+        40,
+        47,
+        54,
+        61,
+        68
+      ]
+    },
+    "contact_count": 8,
+    "count_ratio_scope": "finite_window_reclosure_count_comparison_not_stationary_frequency",
+    "final_retention": {
+      "outer_minus": true,
+      "outer_plus": true
+    },
+    "loss_cuts": {
+      "outer_minus": null,
+      "outer_plus": null
+    },
+    "model_count_ratio": "6/5",
+    "observed_reclosure_counts": {
+      "outer_minus": 5,
+      "outer_plus": 6
+    },
+    "physical_frequency_ratio": null,
+    "physical_map_status": "not_established",
+    "ratio_status": "defined",
+    "window": [
+      20,
+      68
+    ]
+  },
+  "baseline_scenario_sha256": "e131039920482f43b2590d4e22d9868254d94c22c98c60827ae0fa5cad31e15a",
+  "baseline_trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62",
+  "controlled_input": {
+    "after": "2",
+    "at_cut": 40,
+    "before": "100",
+    "field": "parameters.capacity_schedule"
+  },
+  "early_loss": {
+    "completed_return_cuts": {
+      "outer_minus": [
+        27,
+        35,
+        43,
+        51,
+        59,
+        67
+      ],
+      "outer_plus": [
+        26,
+        33,
+        40
+      ]
+    },
+    "contact_count": 2,
+    "count_ratio_scope": "finite_window_reclosure_count_comparison_not_stationary_frequency",
+    "final_retention": {
+      "outer_minus": true,
+      "outer_plus": false
+    },
+    "loss_cuts": {
+      "outer_minus": null,
+      "outer_plus": 41
+    },
+    "model_count_ratio": "2/5",
+    "observed_reclosure_counts": {
+      "outer_minus": 5,
+      "outer_plus": 2
+    },
+    "physical_frequency_ratio": null,
+    "physical_map_status": "not_established",
+    "ratio_status": "defined",
+    "window": [
+      20,
+      68
+    ]
+  },
+  "early_loss_scenario_sha256": "29443b11f9e88413fd22a5e2393f9a7d3f009f91d8e4ed011a53e663792fa843",
+  "early_loss_trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f",
+  "identical_committed_prefix_through_cut": 39,
+  "model_id": "m1:sequential-fold-recurrence:v2",
+  "no_re_admission": true,
+  "prefix_equality_verified": true,
+  "preserved_inner_maps": true,
+  "schema_version": 2,
+  "statuses": {
+    "empirical_status": "not_tested",
+    "execution_status": "executed",
+    "native_admission_status": "pending",
+    "native_atomic_mapping_status": "not_established",
+    "record_class": "sequential_declared_finite_model"
+  },
+  "suppressed_post_loss_returns": [
+    47,
+    54,
+    61,
+    68
+  ],
+  "uncertainty_scope": "Exact declared-model arithmetic; no physical uncertainty or atomic frequency inferred."
+}

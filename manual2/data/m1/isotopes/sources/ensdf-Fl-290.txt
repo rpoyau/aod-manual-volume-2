@@ -1,0 +1,51 @@
+290 Fl                                                                                                                              290 Fl
+114 176                                                          From ENSDF                                                         114 176
+
+
+
+                                                           Adopted Levels:tentative
+
+                                                                    History
+                                     Type            Author             Citation          Literature Cutoff Date
+                                Full Evaluation   Balraj Singh     NDS 156, 70 (2019)          31-Jan-2019
+
+Q(β− )=240 CA; S(n)=7320 CA; S(p)=4460 CA; Q(α)=8500 CA               1997Mo25
+S(2n)=13350, S(2p)=7660 (theory,1997Mo25).
+2004Og10: reinterpretation of one long-lived decay chain observed by 1999Og10 in 244 Pu(48 Ca,xn),E=236 MeV (E*=35 MeV) at
+    Dubna, and tentatively assigned to the decay of 289 Fl formed via 3n-channel, as possibly originating from the decay of 290 Fl via
+    the 2n-channel. The decay chain would be: 290 Fl → 286 Cn → 282 Ds → 278 Hs (decays by SF). The cross-section for this event
+    was ≈0.2 pb. This event was not observed in later experiments done at energies of E*=41-53 MeV (2000Og05,2000Og07), as the
+    α particle energy of the first decay was ≈0.1 MeV less than that attributed to 289 Fl in the later work. A 3-min α-SF event
+    observed in 1999Og07 at E*=32.6 MeV for 290 Fl and assigned to 287 Fl was not seen by 2004Og10.
+2016Ho09: further discussion of the event assigned to 289 Fl in 1999Og10, that the observed decay chain did not fit from energy
+    point of view to any of the decay chains with N-Z ≤61, however it fitted well with the systematics if 290 Fl, instead of 289 Fl, was
+    produced via 2n-channel in the reaction studied by 1999Og10. 2016Ho09 further surmise that decay chain 290 Fl → 286 Cn →
+    282 Ds → 278 Hs (decays by SF), as proposed earlier in 2004Og10, would be less likely as the SF half-life of 11.5 min +550−52 for
+
+    the decay of 278 Hs would be too long to be realistic. Thus the authors propose rare decay of 290 Fl by ε mode to 290 Nh, followed
+    by 290 Nh → 286 Rg → 282 Mt → 278 Bh (decays by SF). For details see sections 4.7 and 5.1.2 in the text and Fig. 2 decay
+    scheme.
+2017Ka66: tentative assignment of 290 Fl from decay of 294 Lv produced in 248 Cm(48 Ca,2n),E=261.6 MeV (E* =41.3 MeV reaction
+    using RIKEN Linear Accelerator (RILAC) and gas-filled recoil ion separator (GARIS). One EVR-α-α-SF correlated event (chain
+    #4) was interpreted in three ways, one being 294 Lv → 290 Fl → 286 Cn decay chain, while the other two involved (48 Ca,3n)
+    channel producing 293 Lv → 289 Fl → 285 Cn, and 293 Lv → 289 Fl → 285 Cn → 281 Ds chains. See details of three interpretations
+    of chain #4 in 294 Lv Adopted Levels dataset.
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 64 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                                  290 Fl Levels
+
+
+
+ E(level)    Jπ       T1/2                                                         Comments
+ 0?         0+    19 s +91−9     %ε+%β+ ≈100; %SF≤50 (2016Ho09); %α≤50
+                                 E(level): the reported activity is assumed to belong to the g.s. of 290 Fl.
+                                 T1/2 : from 2016Ho09 review, also listed as 21 s +101−10. Theoretical T1/2 (α)=33 h, T1/2 (β)>100 s
+                                   (1997Mo25).
+                                 Eα=9.710 MeV 45 (2016Ho09 review) from 290 Fl decay, 9.72 MeV 3 (2017Ka66).
+
+
+
+
+                                                                     1
+

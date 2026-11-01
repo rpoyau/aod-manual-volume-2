@@ -1,0 +1,23 @@
+{
+  "available_archive": {
+    "bytes": 63942,
+    "manifest_entries": 26,
+    "sha256": "6bd43011a84a0b2c976ec8f43d50d48911e3365ddad5632212f5bf21a9d7a585"
+  },
+  "base_head": "81326ecb6d42107d00e9f2b626ed720f8b5b58ba",
+  "base_tree": "1c4fa29a786f4ee84aa866787c7c8b928deb9e9b",
+  "binding_scope": "Available R02 contract plus explicit owner execution/amendments and byte-identical REVIEW-3; no claim to have read the unavailable 42-entry archive.",
+  "current_adapters_verified": true,
+  "mentioned_latest_archive": {
+    "approximate_bytes": 136000,
+    "availability": "not_attached_in_available_files",
+    "integrity": "not_verified"
+  },
+  "original_receipt_bytes_preserved": true,
+  "preservation_scope": "Original receipt bytes retained; reviewed successor Main and source-only adapters are separately checked",
+  "request_files": 6,
+  "request_sha256": "06875ab87820e8118c0edbee8323dee68f1ad428a57e58297c111b441320aac4",
+  "source_unchanged": false,
+  "status": "PASS_V2_CONSERVATION",
+  "v1_files": 20
+}

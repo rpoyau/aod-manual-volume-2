@@ -43,6 +43,51 @@ async function checkErrorContrast(page,theme){
  await page.locator('#isotopes summary').click();
  return{theme,...styles,error_ratio:errorRatio,boundary_ratio:boundaryRatio,invalid_input_preserves_last_valid_count:true,valid_input_clears_error:true};
 }
+
+async function checkIsotopes(page,width,theme){
+ await page.setViewportSize({width,height:1500});await page.emulateMedia({colorScheme:theme});
+ const chart=width<640?'#strips':'#chart';
+ await page.locator('#reference-view').selectOption('half-life');
+ assert(await page.locator('#half-life-key').isVisible());
+ await page.locator(chart+' [data-element="118"]').click();
+ assert.equal(await page.locator('#nuclide-picker').inputValue(),'Og-294:ground');
+ assert.match(await page.locator('#nuclide-detail').textContent(),/580 μs/);
+ assert.match(await page.locator('#nuclide-detail').textContent(),/440 μs/);
+ await page.locator('#decay-detail button[data-nuclide="Lv-290:ground"]').first().click();
+ assert.equal(await page.locator('#matter1').getAttribute('data-z'),'116');
+ assert.equal(await page.locator('#nuclide-picker').inputValue(),'Lv-290:ground');
+ await page.locator('#evaluation-picker').selectOption('gates2024');
+ assert.match(await page.locator('#nuclide-detail').textContent(),/8.2 ms/);
+ assert.equal(await page.locator('#matter1').getAttribute('data-isotope-source'),'gates2024');
+ await page.locator('#decay-detail button[data-nuclide="Fl-286:ground"]').first().click();
+ assert.equal(await page.locator('#nuclide-picker').inputValue(),'Fl-286:ground');
+ await page.locator('#evaluation-picker').selectOption('gates2024');
+ assert.match(await page.locator('#nuclide-detail').textContent(),/106 ms/);
+ assert.match(await page.locator('#nuclide-detail').textContent(),/191 ms/);
+ assert.match(await page.locator('#nuclide-detail').textContent(),/branching.*uncertainty/i);
+ await page.locator('#nuclide-picker').selectOption('Fl-284:ground');await page.locator('#evaluation-picker').selectOption('xundl2025');
+ assert.match(await page.locator('#decay-detail').textContent(),/Selected experimental update routes/);
+ assert(await page.locator('#decay-detail button[data-nuclide="Cn-280:ground"]').count()>0);
+ await page.locator('#nuclide-picker').selectOption('Fl-289:m_candidate');
+ if(width>=640){const g=await checkDesktop(page);assert.deepEqual(g.clipped,[]);assert.deepEqual(g.overlaps,[]);}
+ else assert(await page.locator(chart+' [data-element="114"]').evaluate(e=>e.scrollWidth<=e.clientWidth));
+ await page.locator('#nuclide-picker').selectOption('Fl-298:ground');
+ assert.match(await page.locator('#nuclide-detail').textContent(),/Half-life not established/);
+ assert.match(await page.locator('#nuclide-detail').textContent(),/unobserved model target/);
+ assert.equal(await page.locator(chart+' [data-element="114"]').getAttribute('data-half-life-kind'),'unknown');
+ await page.locator(chart+' [data-element="82"]').click();
+ await page.locator('#nuclide-picker').selectOption('Pb-208:ground');
+ assert.match(await page.locator('#nuclide-detail').textContent(),/Observationally stable/);
+ assert.match(await page.locator('#nuclide-detail').textContent(),/channel partial half life/);
+ const colors=await page.locator(chart+' [data-element]').evaluateAll(es=>es.map(e=>({z:+e.dataset.element,fg:getComputedStyle(e.querySelector('text')||e)[e.querySelector('text')?'fill':'color'],bg:getComputedStyle(e.querySelector('.badge')||e)[e.querySelector('.badge')?'fill':'backgroundColor']})));
+ const ratios=colors.map(c=>contrastRatio(c.fg,c.bg));assert(Math.min(...ratios)>=7,'half-life label contrast target 7:1');
+ const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+1);assert(!overflow);
+ await capture(page,'isotopes-'+theme+'-'+width);
+ await page.locator('#reference-view').selectOption('structural');assert(await page.locator('#half-life-key').isHidden());
+ assert.equal(await page.locator(chart+' [data-element="114"]'+(width<640?'':' text')).textContent(),'114 Fl');
+ return{width,theme,catalog_records:27,source_switch:true,chain_navigation:true,unknown_and_stable_distinct:true,minimum_badge_contrast:Math.min(...ratios),horizontal_overflow:false};
+}
+
 (async()=>{
  const executablePath=process.env.CHROMIUM_EXECUTABLE||(fs.existsSync('/opt/google/chrome/chrome')?'/opt/google/chrome/chrome':undefined);
  const browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
@@ -68,7 +113,8 @@ async function checkErrorContrast(page,theme){
  await page.locator('#strips button[data-element="118"]').click();assert.equal(await page.locator('#matter1').getAttribute('data-z'),'118');await page.locator('#strips button[data-element="1"]').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#matter1').getAttribute('data-z'),'1');
  responsive.push({width,marks:126,visible_z_symbols:118,visible_roles:true,horizontal_overflow:false});await capture(page,'narrow-'+width);
  }
+ const isotopeChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])isotopeChecks.push(await checkIsotopes(page,width,theme));
  assert.deepEqual(errors,[]);assert.deepEqual([hash(html),hash(layoutPath)],before);
- console.log(JSON.stringify({status:'PASS',desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
+ console.log(JSON.stringify({status:'PASS',isotope_checks:isotopeChecks,desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error.stack);process.exitCode=1;});

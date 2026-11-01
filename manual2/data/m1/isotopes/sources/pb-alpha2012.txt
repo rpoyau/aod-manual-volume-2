@@ -1,0 +1,526 @@
+                                          EPJ manuscript No.
+                                          (will be inserted by the editor)
+
+
+
+
+                                          New experimental limits on the α decays of lead isotopes
+
+                                          J. W. Beeman1 , F. Bellini2,3 , L. Cardani2,3 , N. Casali4,5 , S. Di Domizio6 , E. Fiorini7,8 , L. Gironi7,8 , S.S. Nagorny5,9 ,
+                                          S. Nisi5 , F. Orio3 , L. Pattavina8a , G. Pessina8 , G. Piperno2,3 , S. Pirro8 , E. Previtali7,8 , C. Rusconi8 , C. Tomei3 ,
+                                          M. Vignati3
+                                          1
+                                            Lawrence Berkeley National Laboratory, Berkeley, California 94720, USA
+                                          2
+                                            Dipartimento di Fisica, Sapienza Università di Roma, I 00185 Roma, Italy
+                                          3
+                                            INFN, Sezione di Roma, I 00185 Roma, Italy
+
+
+
+
+arXiv:1212.2422v2 [nucl-ex] 12 Dec 2012
+                                          4
+                                            Dipartimento di Fisica, Università degli studi dell’Aquila, I 67100 L’Aquila, Italy
+                                          5
+                                            INFN, Laboratori Nazionali del Gran Sasso, I 67010 L’Aquila, Italy
+                                          6
+                                            INFN, Sezione di Genova, I 16146 Genova, Italy
+                                          7
+                                            Dipartimento di Fisica, Università di Milano-Bicocca, I 20126 Milano, Italy
+                                          8
+                                            INFN, Sezione di Milano Bicocca, I 20126 Milano, Italy
+                                          9
+                                            Institute for Nuclear Research, MSP, 03680 Kyiv, Ukraine
+
+                                                    the date of receipt and acceptance should be inserted later
+
+                                                    Abstract. For the first time a PbWO4 crystal was grown using ancient Roman lead and it was run as a
+                                                    cryogenic detector. Thanks to the simultaneous and independent read-out of heat and scintillation light,
+                                                    the detector was able to discriminate β/γ interactions with respect to α particles down to low energies.
+                                                    New more stringent limits on the α decays of the lead isotopes are presented. In particular a limit of
+                                                    T1/2 > 1.4·1020 y at a 90% C.L. was evaluated for the α decay of 204 Pb to 200 Hg.
+
+                                                    PACS. 23.60.+e α decay – 29.40.Mc Scintillation detectors – 07.20.Mc Cryogenics; low-temperature de-
+                                                    tectors
+
+
+                                          1 Introduction                                                    found between 8 µm and 9 µm in the emulsions [10], cor-
+                                                                                                            responding to an α particle of ≈ 2.6 MeV. This result was
+                                          After the first observation of 209 Bi [1] α decay, and the        excluded by the mass data on 204 Pb and 200 Hg [11], and
+                                          recent measurements of the half-life value including the          the same measurement was then translated to the present
+                                          transition to ground and to the first excited state [2], lead     quoted limit: T1/2 > 1.4·1017 y.
+                                          is considered to be the heaviest stable element. However
+                                          α decay in lead is energetically allowed for all the four            The need of increasing the experimental sensitivity to
+                                          naturally occurring isotopes. The Q-values of the decays          rare α decays lead to the employment of different and new
+                                          (Qα ) and natural abundances (δ) are listed in Tab. 1,            experimental techniques such as ionizing chambers [12],
+                                          as well as calculations of half-lives based on the cluster        crystal scintillators [13] and liquid scintillators [14].
+                                          models [3, 4], phenomenological fission theory of alpha de-
+                                          cay [5], semiclassical WKB approximation [6], and micro-
+                                          scopic approach [7]. Given the values in Tab. 1 there is              Recently, measurements of α decays of 209 Bi [1, 2] and
+                                                                                                            180
+                                          no feasible perspective to observe the α decay of 206 Pb,            W [15], with half-lives of 1.9·1019 y and 1.8·1018 y re-
+                                          207
+                                              Pb and 208 Pb, but the measurements described in the          spectively, demonstrated the high sensitivity for the dis-
+                                          present work might test the reliability of the various nu-        covery of rare nuclear processes that can be achieved with
+                                          clear models. The same perspective holds also for 204 Pb ,        scintillating bolometers. The main advantage of this tech-
+                                          but in addition, this isotope plays also an important role        nology is the wide choice of detector materials that allows
+                                          in lead geochronology, as a standard reference [8].               to investigate isotopes that are not easily measurable with
+                                                                                                            conventional detectors. Moreover, the simultaneous read-
+                                              In 1958 there was a claim [9] of a possible α decay           out of light and heat signals results in a powerful tool for
+                                          of 204 Pb. The nuclear emulsion technique with enriched           background identification, thanks to the different amount
+                                          (27.0%) 204 Pb was used for this experiment. A peak was           of light emitted by α and β/γ particles of the same en-
+                                                                                                            ergy. This is fundamental in case the expected energy of
+                                              a
+                                             Corresponding Author                                           an α decay lies in the environmental β/γ energy region
+                                          e-mail address: luca.pattavina@mib.infn.it                        (dominated by the 2615 keV γ line of 208 Tl).
+2                        J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes
+
+
+Table 1. α transitions in Pb isotopes to the ground state of       Table 2. Lead isotopic abundaces for the PbWO4 crystal,
+daughter nuclei. Qα values are taken from [16], natural isotopic   evaluated with ICP-MS measurements. The values are in good
+abundances (δ) from [17]. The theoretical expected half-lives      agreement with the natural abundances quoted in Tab. 1.
+are evaluated using theoretical models given in [3, 4, 5, 6, 7].
+                                                                       204              206            207            208
+    Isotope      δ           Qα               Ttheor                         Pb               Pb             Pb             Pb
+                                               1/2
+                [%]         [keV]              [y]                  1.34±0.02 %      25.10±0.25 %   21.1±0.30 %    52.4±0.50 %
+    204                                       35         37
+        Pb     1.4 (1)   1969.5 (12)    2.3·10 ÷ 1.2·10
+    206
+        Pb    24.1 (1)   1135.5 (11)    1.8·1065 ÷ 6.7·1068
+    207
+        Pb    22.1 (1)    392.3 (13)   3.6·10152 ÷ 3.4·10189                                          Thermistor
+    208
+        Pb    52.4 (1)    516.9 (13)   1.2·10124 ÷ 7.4·10132                  PTFE
+
+
+
+2 PbWO4 crystal from ancient Roman lead
+When coming to low background measurements, the main
+problem of lead is the high activity in 210 Pb. The radioac-                                                      Ge-LD
+tivity of “commercial” lead can be of the order of few tens             Reflecting
+of Bq/kg, for ore-selected samples [18], while on other sam-               foil
+ples it can reach an activity of thousands of Bq/kg [19].                                           PbWO4
+
+    Besides the excellent performances that characterize
+thermal detectors, a limiting factor arises from the rela-
+tively slow time response of these devices. Depending on
+the technology of the temperature sensors, as well as on
+the dimension of the absorber, the time development of
+the thermal pulse can range between few µs up to few
+seconds. This last point has to be taken into account in
+the case of crystal compounds based on lead.
+210
+    Pb is a decay product of the 238 U decay chain, which
+is present in all rocks and ores. During the melting of the
+ore, 210 Pb concentrates in the lead-metal, while all the
+other long-lived radioactive nuclides of the 238 U chain (
+234
+    U, 230 Th and 226 Ra) are extracted from the slag since        Fig. 1. Set-up of the detector. Two Cu columns, one fixing
+they are chemically different from Pb. Since the 210 Pb            the S-shaped PTFE and one fixing the LD Cu frame are not
+half-life is 22.3 y, its activity should be extremely small in     visible due to the chosen cross section.
+ancient samples. For this reason ancient Roman lead [20]
+was used to grow our crystal. This lead, in form of ingots,
+was recovered from the wreck of a Roman ship sunk near
+                                                                   3 Experimental Set-up
+the coast of Sardinia in the Mediterranean Sea. The 210 Pb
+content of this Roman lead was measured to be less than            The scheme of the set-up is shown in Fig. 1. The PbWO4
+4 mBq/kg. We decided to grow a standard lead containing            crystal is held by means of four S-shaped PTFE supports
+scintillator like a PbWO4 crystal [21]. A small sample of          fixed to four cylindrical Cu columns. It is surrounded
+this lead was sent to the Preciosa company in Hungary, to          (with no direct contact) by a plastic reflecting foil (3M
+grow an undoped PbWO4 crystal. The request to have a               VM2002). The Light Detector (LD) [27] is constituted
+clean and undoped crystal arises from two different con-           by a 36 mm diameter, 1 mm thick pure Ge crystal ab-
+siderations:                                                       sorber working as a bolometer: it is heated up by the
+                                                                   absorbed photons and the temperature variation is pro-
+ – in a bolometer, the thermal signal strongly depends             portional to the scintillation signal. The Ge wafer is held
+   upon the crystal purity;                                        by two custom-shaped PTFE holders embedded in a cylin-
+ – the scintillation yield of doped crystals normally de-          dric Cu frame. The frame is held above the PbWO4 crystal
+   creases at very low temperatures, while for pure crys-          using two Cu columns.
+   tals it increases [22] .                                            The temperature sensor of the PbWO4 crystal is a
+    The PbWO4 crystal used in this work has dimensions             3×3×1 mm3 Neutron Transmutation Doped (NTD) ger-
+of 3.0×3.0×6.1 cm3 and a total mass of 454.1 g. A tiny             manium thermistor, the same used in the Cuoricino ex-
+splint (∼ 50 mg) was removed from the crystal and ana-             periment [28]. It is thermally coupled to the crystal via
+lyzed through ICP Mass Spectroscopy in order to evaluate           9 glue spots of ≈ 0.6 mm diameter and ≈ 50 µm height.
+the isotopic abundances of the four lead isotopes. The re-         The temperature sensor of the LD has a smaller volume
+sults are shown in Tab. 2.                                         (one third of the PbWO4 ’s one) in order to decrease its
+                       J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes                         3
+
+
+heat capacity, increasing therefore its thermal signal. The
+PbWO4 detector was run in an Oxford 200 3 He/4 He dilu-
+tion cryostat deep underground in the Laboratori Nazion-
+ali del Gran Sasso. The details of the electronics and of
+the cryogenic facility can be found elsewhere [29,30].
+    The heat and light pulses, produced by interacting par-
+ticles in the absorber (transduced in a voltage pulse by the
+NTD thermistors) are amplified and fed into an 18-bit NI-
+6284 PXI ADC unit.
+    The trigger is software generated on each bolometer
+and when it fires waveforms 1 s long, sampled at 1 kHz, are
+saved on disk. Moreover, when the trigger of the PbWO4
+crystal fires, the corresponding waveform from the LD is
+recorded, irrespective of its trigger.
+    The amplitude and the shape of the voltage pulse is
+then determined by the off-line analysis.
+    The heat axis is energy-calibrated attributing to each
+identified peak (due to an external γ source and to internal
+α contaminations) the nominal energy of the line. Two          Fig. 2. Light vs Heat scatter plot corresponding to 586 h of
+independent functions were used for calibrating the α and      measurement. The horizontal axis reported on the bottom of
+β/γ bands.                                                     the plot corresponds to an α energy calibration, the one on the
+    The dependency of amplitude from energy is parame-         top a β/γ calibration.
+terized with a second order polynomial of the heat pulse
+amplitude.
+    The energy calibration of the LD is obtained by means      interest (see Tab. 1) in order to allow a thorough energy
+of a weak 55 Fe source placed close to the Ge wafer that il-   calibration.
+luminates homogeneously the face opposed to the PbWO4
+crystal.                                                           One of the constituent of the crystal is tungsten, the
+                                                               natural α decay of 180 W at 2516 keV [15] is taken into
+                                                               account for the energy calibration. On the other side, the
+                                                               LD is calibrated using the 55 Fe X-ray doublet: 5.9 keV and
+4 Data Analysis                                                6.2 keV.
+
+Our detector was operated for a total live time of 586 hours       The final spectrum is composed of events which sur-
+for a background measurement. In Fig. 2 we present the         vived two different types of data selection global and event-
+obtained Light vs Heat scatter plot, with the two different    based requirements. Global requirements are applied fol-
+energy calibrations.                                           lowing criteria decided a priori on the detector perfor-
+    To maximize the signal-to-noise ratio, the pulse ampli-    mances (e.g. excessive noise level). They identify bad time
+tude is estimated by means of the Optimum Filter tech-         intervals that need to be discarded. Event-based require-
+nique (OF) [31, 32]. The filter transfer function is built     ments include: pile-up rejection and pulse-shape selection.
+from the ideal signal shape s(t) and the noise power spec-     The presence of a pile-up prevents the OF algorithm from
+trum N (ω). The s(t) is estimated by averaging a large         providing a correct evaluation of the pulse amplitude. The
+number of triggered pulses (so that stochastic noise su-       pulse-shape analysis is used to reject non-physical events
+perimposed to each pulse averages to zero) while N (ω)         (e.g. electronic spikes). The pulse-shape parameters used
+is computed averaging the power spectra of randomly ac-        for selecting the events are the rise time and decay time
+quired waveforms where no pulse was found. The ampli-          of the OF-filtered waveform and the mean quadratic de-
+tude of a signal is estimated as the maximum of the filtered   viation of raw signals from the average detector response.
+pulse. The amplitude of the scintillation light signals, in-
+stead, is evaluated from the filtered waveforms at a fixed
+time delay with respect to the PbWO4 bolometer, as de-
+                                                               4.1 Efficiency of event-based cuts
+scribed in detail in [33].
+
+    After the application of the OF, signal amplitudes are     Even if the crystal has been grown using ancient lead,
+corrected for temperature and gain instabilities of the set-   the main background source is still 210 Pb due to an in-
+up. The PbWO4 bolometer is calibrated with the most            ternal crystal recontamination, as it will be explained in
+intense α peaks from the internal 238 U and 232 Th contam-     the Sect. 4.4. Because of the intense 210 Po contamination,
+inations, and with an external 232 Th and 40 K γ source, see   there is a significant loss of efficiency due to pile-up event
+Fig. 2. Since we are investigating low energy α decays, the    rejection (pile−up ). The efficiency is estimated as in [34]:
+internal α contaminations do extend over a large energy
+range, but they are not low enough to reach our region of                   pile−up = 1 − Ppile−up = e−r·T               (1)
+4                         J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes
+
+
+Table 3. Efficiencies for α events that passed events-based              4.3 Light Yields for α and β/γ particles
+cuts: pile-up, pulse-shape and total.
+                                                                         As described in Sect. 1, particle discrimination is the key
+    Nuclide     Q-value      pile−up          P S            T OT
+                                                                         point for all the experiments searching for rare decays in
+    180
+        W      2516 keV   0.94±0.01       0.88±0.02          0.83±0.02   overwhelming background.
+    232
+        Th     4082 keV   0.94±0.01       0.87±0.01          0.81±0.02
+    230
+        Th     4770 keV   0.94±0.01       0.85±0.01          0.80±0.02       In Fig. 2 we can distinguish the β/γ and α regions
+    222
+        Rn     5590 keV   0.94±0.01       0.87±0.01          0.80±0.02   which give rise to very clear separate distributions. In the
+    218
+        Po     6115 keV   0.94±0.01       0.86±0.01          0.80±0.02   upper band, ascribed to β/γ events, the 2615 keV 208 Tl
+    210
+        Po     5407 keV   0.94±0.01       0.85±0.01          0.79±0.02   γ-line is clearly visible. The lower band, populated by α
+                                                                         decays, shows the continuum of events, all the way down
+                                                                         to few keV, induced by the degraded α of 210 Po, as well
+                                                                         as 238 U and 232 Th contaminations.
+Table 4. Technical details for the PbWO4 crystal and for the
+LD. Signal represents the absolute voltage drop across the ther-
+mistor for a unitary energy deposition, τR and τD are the rise               The Light Yield (LY ), defined as the ratio between
+and decay time, respectively.                                            the measured light (in keV) and the nominal energy of an
+                                                                         event (in MeV), was measured for the various γ-lines and
+          Crystal     Signal      FWHMbase             τR      τD        it was found to have a constant value:
+                    [µV/MeV]        [keV]             [ms]    [ms]
+                                                                                       LYβ/γ = 1.78 ± 0.01 keV/MeV                (2)
+          PbWO4        153              1.51          13       35
+          LD          1553              0.28           3       20        On the contrary, the LYα for α decays has a value which is
+                                                                         correlated to the nominal energy of the interacting parti-
+                                                                         cle. Fitting the α band with a second order polynomial, we
+                                                                         can estimate the LYα for the various lines and we obtain
+where Ppile−up is the pile-up probability, r is the rate of              the following relation:
+the 210 Po events that passed the global cuts (r = 66 mHz),
+T the time window containing an event during which the                   LYα (Eα ) = (0.28±0.01)+(2.93±0.14)·10−5 ·Eα keV/MeV
+occurrence of another one would be considered pile-up.                                                                             (3)
+The acquired waveform are 1 s long, so T is set at 1 s.                  The observed behaviour reflects the fact that an α parti-
+The pulse shape cut efficiency (P S ) is estimated at dif-              cle produces less scintillation light compared to an electron
+ferent energies for various α lines, by a simultaneous fit               because of its larger dE/dx, which can induce saturation
+on both spectra of accepted and rejected events [28]. In                 effects in the scintillator (the "Birks law" [22]). For the α
+Tab. 3 we report the values for the efficiencies of event-               band, the energy dependence of the LY is a consequence of
+based cuts.                                                              the energy dependence of the stopping power. Electrons,
+                                                                         due to their low stopping power, do not suffer of saturation
+                                                                         effects and their LY is, consequently, energy independent.
+
+4.2 Detector performances                                                    The scintillation Quenching Factor (QF ) is defined as
+                                                                         the ratio of the scintillation yield of an interacting parti-
+                                                                         cle (α, neutron, nucleus) with respect to the LY of a β/γ
+The detector performances are reported in Tab. 4. The                    event at the same energy. Since the LY of α events varies
+baseline resolution, FWHMbase , is governed by the noise                 with the energy of the interacting particle then the QF
+fluctuations at the filtered output, and does not depend                 for these type of events does not have a constant value.
+on the absolute pulse amplitude. The rise (τR ) and decay                Using the eqs. 2 and 3 we obtain a value of 0.20±0.01 for
+times (τD ) of the pulses are computed as the time differ-               the QFα (180 W). This value is in agreement with [23].
+ence between the 10% and the 90% of the leading edge,
+and the time difference between the 90% and 30% of the           In our measurement, we observe that two different
+trailing edge, respectively.                                 functions are needed for the calibration of the two bands ??,
+                                                             as it is shown in Fig. 2. In fact, if we apply the α calibra-
+    The FWHM energy resolution of the crystal ranges tion to the β/γ band,           208
+                                                                                          we obtain a large mis-calibration,
+from 15.2±0.5 keV at 583 keV to 15.7±0.3 keV at 2615 keV     about   80%    for  the     Tl  γ line at 2615 keV. The expla-
+for the γ de-excitation of 208 Tl. While for the α region it nation   for this  behavior   relies in the mechanism of energy
+                                     180
+goes from 13.8±5.4 keV at 2516 keV ( W) to 52.9±1.9 keV      conversion    [25]. In fact, the  energy  deposited in the abosr-
+             218
+at 6115 keV ( Po), both lines refer to α + recoil energies   ber  can  be  converted   into:
+of the nucleus.                                               – scintillation light, due to the excitation of luminescence
+                                                                 centres;
+    The computed FHWM for the 55 Fe on the light detec-       – thermal phonons;
+tor is 379±8 eV.                                              – "blind" channels, not detectable.
+                                             J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes                                                                           5
+
+
+                                                                                                                                        Table 5. Evaluated internal radioactive contaminations for
+
+
+counts / 5 keV
+                                                                                                                                        the PbWO4 crystal. Limits are at 90% C.L.
+                                                                                                                 Entries      168513
+
+                                                                                                                 Mean           5428
+
+                                                                                                                 RMS           104.1
+
+
+
+
+                                                                              210
+                                                                                                                 Integral   1.685e+05
+
+
+
+
+                                                                                   Po
+                 104
+                                                                                                                                                       Chain      Nuclide      Activity
+                 103                                                                                                                                                          [µBq/kg]
+                                                                                                                                                       232        232
+                                                          234
+                                                                                           222
+                                                                                             Rn        218
+                                                                                                            Po
+                                                                                                                                                             Th         Th      51±8
+                                                                U / 226Ra
+                 102                                                                                                                                   238         238
+                                                                                                 224
+                                                                                                                                                             U        U          < 10
+                                                                                                       Ra                                                          234
+                                                                 230
+                                                                    Th
+                                                                                                                                                                      U          <7
+                                                  232                                                                                                             230
+                              180
+                                W                   Th                                                                                                                Th       178±15
+                 10    147
+                         Sm                                                                                                                                       226
+                                                                                                                                                                      Ra       1403±43
+                                                                                                                                                                  210
+                                                                                                                                                                      Po     (186±1)·103
+                  1
+                                                                                                                                                       147        147
+                             2500   3000   3500    4000    4500             5000        5500 6000                                                            Sm         Sm      7±5
+                                                                                        Energy [keV_]
+
+Fig. 3. Energy spectrum of the α region, acquired over 586 h
+of measurement.
+
+
+
+Unfortunately, we are not able to measure the energy par-
+tition in the different channels, since we miss information
+on the light collection efficiency of the LD, and obviously
+we are not sensitive to the "blind" channel.
+
+
+
+
+4.4 Internal contaminations
+
+                                                                                                                                        Fig. 4. Low energy scatter plot. The green and blue lines
+Even if the starting materials for the crystal growth had a                                                                             represent the 3 σ acceptance region, respectively, for β/γ and
+very high radiopurity level (Sect. 2) during the crystalliza-                                                                           α events.
+tion process is possible to unintentionally introduce some
+radioactive contaminants. These have been evaluated by
+analyzing the α region of the spectrum, due to the more                                                                                 4.5 Half-lives of lead isotopes
+favorable signal-to-noise ratio.
+                                                                                                                                        We report in Tab. 1 all the lead isotopes that we have
+                                                                                                                                        investigated with our PbWO4 crystal. The α/β discrimi-
+    As already pointed out, the background in this region                                                                               nation allows us to easily disentagle the α and β/γ particle
+is essentially due to α particles, which produce peaks and                                                                              interactions. Unfortunately, the more we go at low energy
+a continuum of events generated by degraded α’s from the                                                                                the less efficient is the discrimination power due to the
+surfaces of the crystal and the surrounding materials [36].                                                                             poor energy resolution of the LD. For energy releases in
+This is mainly due to an intense 210 Po contamination of                                                                                the PbWO4 crystal smaller than 1 MeV, β/γ events leak
+the crystal as shown in Fig. 3.                                                                                                         in the α region, because the two bands start to merge.
+                                                                                                                                        Thus β/γ events induce a negligible background for the
+    By means of Monte Carlo simulations, we estimate the                                                                                investigation of 204 Pb and 206 Pb decays, but not for 207 Pb
+background induced by a uniform 210 Po contamination                                                                                    and 208 Pb, which are at lower energy. This background is
+throughout the crystal. We obtain a flat background from                                                                                therefore evaluated by defining the 3 σ acceptance region
+zero energy up to the 210 Po Q-value, the counting rate in                                                                              for α and β/γ events, as shown in Fig. 4.
+this region is 0.02 counts/keV.
+    We observe that the PbWO4 crystal is contaminated
+in 230 Th and 210 Po, from the 238 U decay chain, 232 Th                                                                                4.5.1 204 Pb
+(the whole 232 Th decay chain) and 147 Sm, see Tab. 5. For
+the 232 Th decay chain we report just the activity of the                                                                               It is theorized that 204 Pb can α decay on 200 Hg, the Q-
+progenitor of the chain, because the chain is at secular                                                                                value of the transition is 1969.5 keV. The alpha energy
+equilibrium: in fact the crystal was grown more than 14                                                                                 spectrum in this energy region, shown in Fig. 5 clearly
+years before the measurement, thus all the nuclides of the                                                                              shows no peak, but we have a flat background, as al-
+chain have the same activity. On the contrary for the 238 U                                                                             ready mentioned in Sect. 4.4. We study an interval of 2.8 σ
+chain we evaluate the activity of all isotopes since the                                                                                (that corresponds to a confidence interval of 99.5%) cen-
+equilibrium is broken.                                                                                                                  tered around the Q-value of the transition, being σ the
+6                                                          J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes
+
+
+
+
+    counts / 5 keV
+                     7          Entries    140572
+                                Mean        1922
+                     6          RMS         519.3
+                                Integral      60
+
+                     5
+
+                     4
+
+                     3
+
+                     2
+
+                     1
+
+                     0
+                         1000          1200         1400    1600    1800   2000   2200       2400
+                                                                                         Energy [keV _]
+                                                                                                                Fig. 6. Low energy scatter plot analyzed for investigating
+Fig. 5. Energy spectrum of just α events, the dashed line                                                       207
+                                                                                                                    Pb α decay. The blue and green lines represent the 90%
+represents the expected 210 Po flat background. The ROI for                                                     acceptance region, respectively, for α and β/γ events. The red
+204
+    Pb and 206 Pb decays are highlighted.                                                                       dashed line is the energy cut applied for selecting the region
+                                                                                                                with the highest statistical significance, while the shadowed
+                                                                                                                region is our ROI.
+energy resolution of the 180 W peak (5.9 keV). The com-
+puted 210 Po background around the 2.8 σ region of inter-
+est (ROI) of 16.4 keV, is 0.3 counts, while the observed                                                        we should define an energy cut that maximizes the signal-
+number of counts is 0. Applying the Feldman-Cousins                                                             to-noise ratio at such low energy. In Fig. 6 is shown the
+method [37] we are able to set a 90% C.L. limit on the                                                          scatter plot around the Q-value: 392.3 keV, and the ap-
+half-life of 204 Pb, using the following formula:                                                               plied cut on the detected light that maximizes the statisti-
+                                                                                 −1                           cal significance in that region. The estimated cut efficiency
+                                                                   Ncounts                                      is 53%.
+                         T1/2 = Nnuclei ·                                                · ln(2)          (4)
+                                                                 Tmeas · T OT                                  In the analyzed 2.8 σ interval (16.4 keV) around the Q-
+                                                                                                                value the number of observed events is 0 and the estimated
+where: Nnuclei is the number of nuclei of the analyzed                                                          background is 1 counts, therefore we can set a lower-limit
+isotope, Ncounts is the number of events estimated using                                                        on the 207 Pb half-life:
+the Feldman-Cousin approach, Tmeas is the measurement
+                                                                                                                         α 207
+time in year and T OT is the total efficiency of event-based                                                           T1/2 ( P b) > 1.9 · 1021 y at 90% C.L.
+cuts, which is assumed to have the same value of the 180 W
+one. The computed lower-limit is:
+                            α 204
+                           T1/2 ( P b) > 1.4 · 1020 y at 90% C.L.
+                                                                                                                4.5.4 208 Pb
+
+                                                               The last natural occuring lead isotope to be analyzed is
+                                                               208
+4.5.2 206 Pb                                                       Pb. It can α decay to 204 Hg with an energy transition
+                                                               of 516.9 keV. Also for this nuclide we apply the same pro-
+206
+    Pb is energetically allowed to decay through the α chan- cedure previously explained. The studied α band is shown
+nel on 202 Hg. The energy released in the decay is 1135.5 keV. in Fig. 7, the cut applied on the detected light has an
+Looking at Fig. 5, we can estimate the 206 Pb half-life ap- efficiency of 64%.
+plying the same procedure explained in the previous sec-           The interval centered around the Q-value of the tran-
+tion. The events distribution in the energy spectrum is sition is wide 2.8 σ (16.4 keV). No events are observed in
+still flat in the 1 MeV region, so no excess is observed at the ROI, and the estimated background is 0 count. The
+1135.5 keV. The evaluated background is 0.2 counts, and lower-limit on 207 Pb half-life is:
+the observed number of events in the 2.8 σ energy interval
+                                                                          α 208
+(16.4 keV) around the Q-value is 0 counts. The lower-limit              T1/2 ( P b) > 2.6 · 1021 y at 90% C.L.        (5)
+         206
+on the       Pb half-life is:
+                            α 206
+                           T1/2 ( P b) > 2.5 · 1021 y at 90% C.L.                                               5 Conclusion
+                                                            We successfully tested a 454.1 g PbWO4 crystal as a bolome-
+4.5.3 207 Pb                                                ter. The crystal was grown using low background ancient
+                                                            Roman lead, and its performances and internal contami-
+As already explained, for low energy α decays, where events nations were presented.
+from the β band can give a contribution to the α region,
+                         J.W. Beeman et al.: New experimental limits on the α decays of lead isotopes                             7
+
+
+                                                                    15. C. Cozzini et al., Phys. Rev. C 70, 064606 (2004).
+                                                                    16. G. Audi, A.H. Wapstra, C. Thibault, Nucl. Phys. A 729,
+                                                                        337 (2003).
+                                                                    17. M. Berglund et al., Pure Appl. Chem., 83, 397 (2011).
+                                                                    18. M. Laubenstein et al., Appl. Rad. and Isotopes 61, 167
+                                                                        (2004).
+                                                                    19. K. Bunzl, W. Kracke, Nucl. Instr. and Meth. A 238, 191
+                                                                        (1985).
+                                                                    20. A. Alessandrello et al., Nucl. Instr. and Meth. B 142, 163
+                                                                        (1998).
+                                                                    21. A.A. Annenkov, M.V. Korzhik, P. Lecoq, Nucl. Instr. and
+                                                                        Meth. A 490, 30(2002).
+                                                                    22. J.B. Birks, Proc. Phys. Soc. A 64, 874 (1951).
+                                                                    23. V.I. Tretyak, Astropart. Phys. 33, 40 (2010).
+Fig. 7. Low energy scatter plot for investigating 208 Pb α decay.   24. C. Arnaboldi et al., Astropart. Phys. 34, 143 (2010).
+The blue and green lines represent the 90% acceptance region,       25. P. Lecoq et al., Inorganic Scintillators for Detector Sys-
+respectively, for α and β/γ events. The red dashed line is the          tems: Physical Principles and Crystal Engineering, 1st edn.
+energy cut applied for selecting the region with the highest            (Springer, Berlin, 2006).
+statistical significance, while the shadowed region is our ROI.     26. N. Coron et al., Phys. Lett. B 659, 113 (2008).
+                                                                    27. S. Pirro, C. Arnaboldi, J.W. Beeman, G. Pessina, Nucl.
+                                                                        Instr. Meth. A 559, 361 (2006).
+   The separation achieved on the scintillation light is a          28. E. Andreotti et al., Astropart. Phys. 34, 822 (2011).
+powerful tool that allows us to reject β/γ events for the           29. S. Pirro et al., Nucl. Instr. Meth. A 444, 331 (2000).
+investigation of low energy rare α decays. The LY of α              30. C. Arnaboldi, G. Pessina, S. Pirro, Nucl. Instr. Meth. A
+and β/γ has been calculated.                                            559, 826 (2006).
+                                                                    31. E. Gatti, P.F. Manfredi, Rivista del Nuovo Cimento 9, 1
+    New more stringent upper limits on the half-lives of                (1986).
+four natural lead isotopes has been estimated with a sen-           32. V. Radeka, N. Karlovac, Nucl. Instr. Meth. A 52, 86
+sitivity of the level of 1020 -1021 y.                                  (1967).
+                                                                    33. G. Piperno, S. Pirro, V. Vignati, J. Inst. 6, P10005 (2011).
+                                                                    34. F. Alessandria et al., Astropart. Phys. 35, 839-849 (2012).
+                                                                    35. V.I. Tretyak, Astropart. Phys. 33 40-53 (2010).
+Acknowledgements                                                    36. M. Clemenza, C. Maiano, L. Pattavina, E. Previtali, Eur.
+                                                                        Phys. J. C 71, 1805 (2011).
+This work was made in the frame of the LUCIFER ex-                  37. G. Feldman, R. Cousins, Phys. Rev. D 57, 3873 (1998).
+periment, funded by the European Research Council un-
+der the European Union’s Seventh Framework Programme
+(FP7/2007-2013)/ERC grant agreement no. 247115. Thanks
+are due to E. Tatananni, A. Rotilio, A. Corsi, B. Romualdi
+and F. De Amicis for continuous and constructive help in
+the overall set-up construction.
+
+
+References
+ 1. P. de Marcillac et al., Nature 422, 876 (2003).
+ 2. J. Beeman et al., Phys. Rev. Lett. 108, 062501 (2012).
+ 3. B. Buck et al., J. Phys. G 17, 1223 (1991).
+ 4. B. Buck et al., J. Phys G 18, 143 (1992).
+ 5. D.N. Poenaru, M. Ivascu, J. Physique 44, 791 (1984).
+ 6. B.A. Brown, Phys. Rev. C 46, 811 (1992).
+ 7. B. Al-Bataina, J. Jaenecke, Phys. Rev. C 37, 1667 (1988).
+ 8. A.P. Dickin, Radiogenic Isotope Geology, 2nd ed. (Cam-
+    bridge University Press, Cambridge, 2005).
+ 9. W. Riezler, G. Kauwn, Zeitschrift fur Naturforschung A
+    13, 904 (1958).
+10. H. Faraggi, Ann. Phys. 6, 325 (1951).
+11. http://ie.lbl.gov/toimass.html.
+12. R.D. Macfarlane, T.P. Kohman, Phys. Rev 121, 1758
+    (1961).
+13. F.A. Danevich at al., Nucl. Instr. Meth. A 556 259 (2006).
+14. K. Kossert et al., App. Rad. and Isotopes 67, 1702 (2009).
+

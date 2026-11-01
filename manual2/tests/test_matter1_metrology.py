@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
@@ -243,6 +244,7 @@ class MetrologyTests(unittest.TestCase):
                *(Path(path) for path in temporal.SOURCE_LABELS)]
         for relative in paths:
             target=root/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/relative,target)
+        copy_foundation_receipts(ROOT, root)
         return root
 
     def test_persisted_hostile_mutations_read_only_both_modes(self):

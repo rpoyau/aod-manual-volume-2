@@ -14,6 +14,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
@@ -56,6 +57,7 @@ class TemporalModelTests(unittest.TestCase):
             target = root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / relative, target)
+        copy_foundation_receipts(ROOT, root)
         return root
 
     def rejected(self, name, change, filename='temporal_trace.json', diagnostic=None):

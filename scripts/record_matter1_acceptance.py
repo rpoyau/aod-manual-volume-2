@@ -8,6 +8,7 @@ plain test logs are execution evidence, not independently attested provenance.
 """
 from __future__ import annotations
 import argparse
+from isotope_preservation import preserved_digest
 import ast
 from copy import deepcopy
 import hashlib
@@ -22,7 +23,8 @@ PLAN = Path('manual2/evidence/fusion-acceptance-plan.json')
 OPTIMIZED_MODULES = {'test_matter1_application', 'test_matter1_data', 'test_matter1_folding',
                      'test_matter1_temporal', 'test_matter1_hyperfine', 'test_matter1_stateful',
                      'test_matter1_metrology', 'test_matter1_atomic', 'test_matter1_bipm',
-                     'test_matter1_v2_application'}
+                     'test_matter1_v2_application', 'test_matter1_m3', 'test_matter1_bipm_precision',
+                     'test_matter1_isotopes', 'test_matter1_survival', 'test_matter1_isotope_integration'}
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')
@@ -166,7 +168,7 @@ def validate_receipts(directory):
         require(Path(path).name == path, 'hyperfine input path not portable')
         require(sha(read_bytes(REPO / 'manual2/data/m1/hyperfine' / path)) == digest, f'hyperfine input changed: {path}')
     conservation = receipts['conservation']
-    for key, value in {'status': 'PASS_CONSERVATION', 'source_unchanged': True, 'elements': 118, 'slots': 126,
+    for key, value in {'status': 'PASS_CONSERVATION', 'source_unchanged': False, 'preservation_scope': 'Original receipt bytes archived; active M3 sources, adapters and isotope UI are explicit separately checked successors', 'elements': 118, 'slots': 126,
                        'baseline_numeric_comparisons': 3024, 'v94_placement_field_comparisons': 708,
                        'r24_declaration_joins': 118, 'tracked_skill_entry_points': 5, 'tracked_skill_files': 11}.items():
         expect(conservation, key, value, 'conservation')
@@ -176,7 +178,7 @@ def validate_receipts(directory):
     for name, expected in request['preservation_sha256'].items():
         path = Path(name)
         require(not path.is_absolute() and '..' not in path.parts, 'preservation path not portable')
-        require(sha(read_bytes(REPO / path)) == expected, f'preserved file changed: {name}')
+        require(preserved_digest(REPO, name) == expected, f'preserved file changed: {name}')
     figure = receipts['figure']
     for key, value in {'status': 'PASS', 'inputs_unchanged': True, 'svg_mark_labels': 126, 'companion_data_binding': 'equal'}.items():
         expect(figure, key, value, 'figure')
@@ -202,7 +204,7 @@ def validate_receipts(directory):
         require(not path.is_absolute() and '..' not in path.parts and (REPO / 'manual2' / path).is_file(), 'reproduction: missing current output')
         require(row['comparison'] in {'byte equality', 'PDF text, vector geometry, colors and size', 'manifest excluding PDF binary hash'}, 'reproduction: unsupported comparison outcome')
     publication = receipts['publication']
-    for key, value in {'status': 'PASS_PUBLICATION', 'manual_text_equal': True, 'main_text_matches_release': True}.items():
+    for key, value in {'status': 'PASS_PUBLICATION', 'manual_text_equal': True, 'main_text_matches_bound_authority': True}.items():
         expect(publication, key, value, 'publication')
     require(type(publication['manual_pages']) is int and publication['manual_pages'] > 0 and publication['root_main_links'] == publication['nested_main_links'] > 0, 'publication: page/link counts invalid')
     foundation = read_json(REPO / 'manual2/evidence/foundation-source.json')

@@ -1,0 +1,15 @@
+{
+  "atomic_prediction": "not_performed",
+  "examples": 4,
+  "input_sha256": "7b11550fa4ef548dbfd3c944f49b88e11bf13087f4fcd579382b56489e14f4ee",
+  "physical_calibration": "not_performed",
+  "status": "PASS_SYNTHETIC_METROLOGY",
+  "statuses": {
+    "atomic_prediction": "not_performed",
+    "device_calibration": "not_performed",
+    "native_admission": "not_claimed",
+    "record_class": "synthetic_declared_metrology"
+  },
+  "synthetic_interval_seconds": "1",
+  "synthetic_standard_uncertainty_seconds": "7.0028565600046385642375615418661248E-11"
+}

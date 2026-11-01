@@ -246,7 +246,13 @@ def draw_figure(layout: dict):
     return fig, measured, checks
 
 
-def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path) -> dict:
+def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path, isotope_catalog: Path | None = None) -> dict:
+    isotope_catalog = isotope_catalog or Path(__file__).resolve().parents[1] / "data/m1/isotopes/catalog.json"
+    catalog = json.loads(isotope_catalog.read_text())
+    from matter1_isotopes import build_catalog, load_inputs
+    if catalog != build_catalog(load_inputs(Path(__file__).resolve().parents[1])):
+        raise ValueError("isotope catalog differs from bound source construction")
+    layer = Path(__file__).resolve().parents[1] / "visuals/matter1-isotope-layer.js"
     renderer_binding = verify_renderer()
     rows = read_rows(ledger)
     layout = build_layout(rows)
@@ -269,8 +275,12 @@ def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path) -
     if html.count("__MATTER1_LAYOUT_JSON__") != 1:
         raise ValueError("companion template must contain exactly one data binding")
     html = html.replace("__MATTER1_LAYOUT_JSON__", serialized.replace("</", "<\\/"))
+    for token, value in {"__MATTER1_ISOTOPE_JSON__": json.dumps(catalog, ensure_ascii=False, sort_keys=True, indent=2).replace("</", "<\\/"), "__MATTER1_ISOTOPE_JS__": layer.read_text()}.items():
+        if html.count(token) != 1:
+            raise ValueError("companion requires exactly one isotope binding: " + token)
+        html = html.replace(token, value)
     (visual_dir / "matter1-reference.html").write_text(html, encoding="utf-8")
-    manifest = {"schema": "matter1-figure-manifest-v1", "source_sha256": digest(ledger),
+    manifest = {"schema": "matter1-figure-manifest-v2", "isotope_catalog_sha256": digest(isotope_catalog), "isotope_layer_sha256": digest(layer), "source_sha256": digest(ledger),
                 "renderer_binding": renderer_binding,
                 "profile": "static relational reference", "width_mm": WIDTH_MM, "height_mm": HEIGHT_MM,
                 "geometry_checks": checks, "measured_text": measured,
@@ -288,9 +298,10 @@ def main() -> None:
     parser.add_argument("--figure-dir", type=Path, default=root / "figures")
     parser.add_argument("--visual-dir", type=Path, default=root / "visuals")
     parser.add_argument("--template", type=Path, default=root / "visuals/matter1-reference.template.html")
+    parser.add_argument("--isotope-catalog", type=Path, default=root / "data/m1/isotopes/catalog.json")
     args = parser.parse_args()
     try:
-        report = generate(args.ledger, args.figure_dir, args.visual_dir, args.template)
+        report = generate(args.ledger, args.figure_dir, args.visual_dir, args.template, args.isotope_catalog)
     except (ValueError, OSError, KeyError) as exc:
         parser.exit(1, f"FAIL_GENERATION: {exc}\n")
     print(f"Generated 118 element references + 8 unfilled slots; {report['width_mm']} × {report['height_mm']:.3f} mm; geometry PASS")

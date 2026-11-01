@@ -1,0 +1,29 @@
+                                         288 Lv
+
+
+   288 Lv was first reported in 2025 by Oganessian et al. in “Investigation of reactions
+
+with 50 Ti and 54 Cr for the synthesis of new elements” (2025Og03). A 289.9 MeV
+54 Cr beam from the DC280 cyclotron at the SHE Factory at the Flerov Laboratory
+
+for Nuclear Reactions (FLNR) of the Joint Institute for Nuclear Research (JINR) in
+Dubna, Russia impinged on rotating 0.70 mg/cm2 238 U targets. Evaporation residues
+from the reaction 238 U(54 Cr,4n) were separated with the gas filled separator DGFRS-
+2 and identified by their correlated α-particle emission and subsequent fission in two
+double-sided strip detectors. “The energies of α particles or SF fragments and decay
+times of nuclei in the decay chains of 288 Lv observed in the 238 U+54 Cr experiment are
+shown in Fig. 1... Thus, in this experiment, a new isotope 288 Lv was registered for the
+first time,...”
+
+2025Og03      Yu. Ts. Oganessian, V. K. Utyonkov, F. Sh. Abdullin, S. N. Dmitriev et
+              al., Phys. Rev. C 112, 014603 (2025).
+
+
+Please cite this abstract as: “FRIB Nuclear Data Group, Discovery of Nuclides Project,
+Isotope Database, doi:10.11578/frib/2279152”
+
+
+
+
+                                           1
+

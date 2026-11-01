@@ -1,5 +1,7 @@
 {
-  "schema": "matter1-figure-manifest-v1",
+  "schema": "matter1-figure-manifest-v2",
+  "isotope_catalog_sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+  "isotope_layer_sha256": "e528f7216e891811b5d0bc8ab4ca66098bf0d45c1a5a55d849b772f8d4579c01",
   "source_sha256": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
   "renderer_binding": {
     "profile": "matter1-linux-x86_64-cpython-3.12.14-pypi-v1",
@@ -1796,6 +1798,6 @@
     "aod_matter1_wheel_accessible.pdf": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d",
     "aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
     "matter1-layout.json": "7742eeacddf98a186b20c3a0b3f405917a16ce858ea89ea52e3e50dc06281ca7",
-    "matter1-reference.html": "fe7c885d7773428819e51fe919a826909d456727a4194616577ba168af936a53"
+    "matter1-reference.html": "03c0224c5d9fbc455938ed0093a5fc34c9fece16d5b5880342ecc2ae7c99f410"
   }
 }

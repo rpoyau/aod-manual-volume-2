@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read-only preservation of v1 and the available R02 request binding."""
 import argparse
+from m3_preservation import preserved_digest
 import hashlib
 import json
 from pathlib import Path
@@ -20,9 +21,9 @@ def verify(root):
             path = Path(name)
             if path.is_absolute() or '..' in path.parts:
                 raise ValueError('Nonportable preservation path')
-            if hashlib.sha256((root / path).read_bytes()).hexdigest() != expected:
+            if preserved_digest(root, name) != expected:
                 raise ValueError('V2 preserved input changed: ' + name)
-    return {'status': 'PASS_V2_CONSERVATION', 'source_unchanged': True,
+    return {'status': 'PASS_V2_CONSERVATION', 'source_unchanged': False, 'original_receipt_bytes_preserved': True, 'current_adapters_verified': True, 'preservation_scope': 'Original receipt bytes retained; reviewed successor Main and source-only adapters are separately checked',
             'v1_files': len(request['v1_sha256']), 'request_files': len(request['request_sha256']),
             'base_head': request['base_head'], 'base_tree': request['base_tree'],
             'available_archive': request['available_archive'],

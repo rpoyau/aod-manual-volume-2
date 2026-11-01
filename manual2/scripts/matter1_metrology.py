@@ -5,6 +5,7 @@ interval examples are synthetic. They demonstrate a declared measurement map,
 not a calibration of a physical Cs device or native atomic motif admission.
 """
 from __future__ import annotations
+from matter1_foundation import legacy_source_bytes
 
 from copy import deepcopy
 from decimal import Decimal, localcontext
@@ -186,7 +187,7 @@ def frequency_from_ratio(ratio, ratio_variance=None, reference_hz=CS_HZ,
 
 
 def source_binding(root):
-    text = (root / SOURCE_PATH).read_text()
+    text = legacy_source_bytes(root, SOURCE_PATH).decode()
     require(all('\\label{' + x + '}' in text for x in SOURCE_LABELS), 'Main relational labels missing')
     return {'path': SOURCE_PATH, 'sha256': hashlib.sha256(text.encode()).hexdigest(),
             'labels': SOURCE_LABELS, 'external_sources': EXTERNAL_SOURCES}

@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
@@ -44,6 +45,7 @@ class StatefulTests(unittest.TestCase):
             target = root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / relative, target)
+        copy_foundation_receipts(ROOT, root)
         return root
 
     def rejected(self, name, action, filename='early_loss_trace.json'):

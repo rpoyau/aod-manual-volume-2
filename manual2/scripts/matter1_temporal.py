@@ -7,6 +7,7 @@ model dynamics; no atomic target, physical period, or fitted frequency is read.
 """
 from __future__ import annotations
 
+from matter1_foundation import legacy_source_bytes
 from copy import deepcopy
 from fractions import Fraction
 import hashlib
@@ -86,7 +87,7 @@ def source_bindings(root):
     bindings = []
     for name, labels in SOURCE_LABELS.items():
         try:
-            data = (Path(root) / name).read_bytes()
+            data = legacy_source_bytes(root, name)
         except OSError as exc:
             raise ValidationError(f'Missing authority source: {name}') from exc
         for label in labels:

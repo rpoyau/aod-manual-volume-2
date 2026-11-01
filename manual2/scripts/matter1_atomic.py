@@ -7,6 +7,7 @@ spin-Hamiltonian calculations are a separate externally calibrated lane.
 """
 from __future__ import annotations
 
+from matter1_foundation import legacy_source_bytes, legacy_engine_digest
 from copy import deepcopy
 from decimal import Decimal, localcontext
 from fractions import Fraction as Q
@@ -79,7 +80,7 @@ def sources(root):
     records = []
     for name, labels in SOURCE_PATHS.items():
         try:
-            blob = (Path(root) / name).read_bytes()
+            blob = legacy_source_bytes(root, name)
         except OSError as exc:
             raise ValidationError(f'Missing source binding: {name}') from exc
         require(all(('\\label{' + label + '}').encode() in blob for label in labels), 'Source premise label absent')
@@ -272,11 +273,11 @@ def predict(root):
     require(rows[0]['mapped_ratio'] != rows[2]['mapped_ratio'], 'Dynamic intervention has no mapped consequence')
     calibration = {'reference_hz': str(CS_HZ), 'reference_kind': 'exact_si_definition',
                    'realized_device_calibration': 'not_performed', 'fitted_parameters': []}
-    # Bind the actual executable modules as well as the fixed model contract.
-    # __file__ identifies the running engine even when --root is a disposable
-    # data fixture; this does not read any evaluation or benchmark input.
+    # This frozen v2 receipt retains its historical executor identities. The
+    # separately pinned adapter manifest verifies actual current executors.
+    # No evaluation or benchmark input is read by either source-resolution path.
     engine = [{ 'path': 'manual2/scripts/'+name,
-                'sha256': hashlib.sha256((Path(__file__).parent/name).read_bytes()).hexdigest()}
+                'sha256': legacy_engine_digest(Path(__file__).resolve().parents[2], 'manual2/scripts/'+name)}
               for name in ('matter1_atomic.py', 'matter1_stateful.py', 'matter1_temporal.py',
                            'matter1_folding.py', 'matter1_metrology.py')]
     return {'schema_version': 1, 'profile': PROFILE,

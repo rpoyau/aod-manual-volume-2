@@ -1,0 +1,28 @@
+                                        289 Lv
+
+
+   289 Lv was first reported in 2025 by Oganessian et al. in “Investigation of reactions
+
+with 50 Ti and 54 Cr for the synthesis of new elements” (). A 267.7 MeV 50 Ti beam from
+the DC280 cyclotron at the SHE Factory at the Flerov Laboratory for Nuclear Reac-
+tions (FLNR) of the Joint Institute for Nuclear Research (JINR) in Dubna, Russia im-
+pinged on rotating 0.73 mg/cm2 242 Pu targets. Evaporation residues from the reaction
+242 Pu(50 Ti,3n) were separated with the gas filled separator DGFRS-2 and identified by
+
+their correlated α-particle emissions and subsequent fission in two double-sided strip
+detectors. “In addition to the two 288 Lv chains, we obtained three decay chains of the
+new isotope 289 Lv (Fig. 4). The mother nucleus 289 Lv is reliably identified by the
+method of genetic correlations with α decay and spontaneous fission of known nuclei
+from 285 Fl to 265 Rf.”
+
+
+
+
+Please cite this abstract as: “FRIB Nuclear Data Group, Discovery of Nuclides Project,
+Isotope Database, doi:10.11578/frib/2279152”
+
+
+
+
+                                          1
+

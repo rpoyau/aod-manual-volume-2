@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 ROOT = Path(__file__).resolve().parents[2]
 CHECK = ROOT / 'scripts/check_matter1_application.py'
@@ -30,6 +31,7 @@ class ApplicationBindingTests(unittest.TestCase):
                     dest.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(ROOT / name, dest)
                 shutil.copytree(ROOT / 'manual2/scripts', root / 'manual2/scripts')
+                copy_foundation_receipts(ROOT, root)
                 receipt = json.loads(json.dumps(original))
                 name = 'sections/03_afc_basis.tex'
                 (root / name).write_bytes((root / name).read_bytes() + b'\n% hostile source edit\n')
