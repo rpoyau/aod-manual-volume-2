@@ -15,6 +15,12 @@ At fixed Z, changing the companion’s integer A preserves placement and changes
 
 ## Data and authority
 
+AI-assisted work follows [`AGENTS.md`](AGENTS.md) and the pinned four portable
+skills from [`rpoyau/aod-skills`](https://github.com/rpoyau/aod-skills). The
+scientific dependency is separately pinned to [`rpoyau/aod`](https://github.com/rpoyau/aod).
+See [dependency setup and scope](docs/ai-dependencies.md). The five original
+`.agents/skills/` snapshots remain unchanged as historical review inputs.
+
 `manual2/data/m1/` is canonical. Its version-2 schema separates reference inputs, structural fields, assigned classifications and pending admission/execution. `support_sum` replaces the legacy `rd_fuse` name; `support_declaration` has no certificate semantics. The three existing `manual2/data/` compatibility files must match their canonical counterparts byte for byte.
 
 `manual2/evidence/pr1_baseline_ledger_v1.csv`, `input_manifest.json` and `historical_sources.json` bind the reviewed PR and small historical excerpts. The 118×6 v94 placement comparison is separate from observable coverage and the r24 declaration joins. Predecessor deferred/unscored/not-executed statuses are retained. Whole historical ZIPs are comparison evidence, not runtime dependencies.
