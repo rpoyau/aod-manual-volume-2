@@ -201,6 +201,6 @@ test_truncated_or_incomplete_success_log_is_rejected (manual2.tests.test_matter1
 test_v1_and_available_request_preserved (manual2.tests.test_matter1_v2_application.V2ApplicationTests.test_v1_and_available_request_preserved) ... ok
 
 ----------------------------------------------------------------------
-Ran 187 tests in 121.610s
+Ran 187 tests in 120.180s
 
 OK

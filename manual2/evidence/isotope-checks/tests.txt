@@ -228,6 +228,6 @@ test_truncated_or_incomplete_success_log_is_rejected (test_matter1_v2_applicatio
 test_v1_and_available_request_preserved (test_matter1_v2_application.V2ApplicationTests.test_v1_and_available_request_preserved) ... ok
 
 ----------------------------------------------------------------------
-Ran 214 tests in 130.610s
+Ran 214 tests in 128.884s
 
 OK

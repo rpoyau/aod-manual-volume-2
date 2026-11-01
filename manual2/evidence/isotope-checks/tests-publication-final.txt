@@ -12,6 +12,6 @@ test_stale_publication_foundation_rejected (manual2.tests.test_matter1_publicati
 test_wrong_published_pdf_target_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_wrong_published_pdf_target_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 6.938s
+Ran 12 tests in 7.018s
 
 OK

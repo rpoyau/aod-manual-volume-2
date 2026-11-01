@@ -40,7 +40,7 @@ function paint(){
   if(!element.dataset.structuralLabel)element.dataset.structuralLabel=element.getAttribute('aria-label');
   element.setAttribute('aria-label',element.dataset.structuralLabel+(view.value==='half-life'?'; '+description:''));
   const text=element.namespaceURI==='http://www.w3.org/2000/svg'?element.querySelector('text'):element;
-  if(text){if(!element.dataset.structuralText)element.dataset.structuralText=text.textContent;text.textContent=view.value==='half-life'&&r?`${r.symbol}${r.A}${r.state==='ground'?'':'m?'}`:element.dataset.structuralText;}
+  if(text){if(!element.dataset.structuralText)element.dataset.structuralText=text.textContent;text.textContent=view.value==='half-life'&&r?`${r.symbol}${r.A}${r.state==='ground'?'':'*'}`:element.dataset.structuralText;}
   const tip=view.value==='half-life'?description:element.dataset.structuralLabel;
   if(element.namespaceURI==='http://www.w3.org/2000/svg'){let title=element.querySelector('title');if(!title){title=document.createElementNS('http://www.w3.org/2000/svg','title');element.append(title);}title.textContent=tip;}else element.title=tip;
  }

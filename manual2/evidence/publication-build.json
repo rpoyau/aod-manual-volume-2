@@ -65,7 +65,7 @@
     "manual2/evidence/renderer-lock.json": "a1aaf0b138242446fa50faa2d6b74bf20e28843528a2736d1c3be1e0930b3ab0",
     "manual2/figures/aod_matter1_wheel_accessible.pdf": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d",
     "manual2/figures/aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
-    "manual2/figures/matter1_figure_manifest.json": "c07abb657d8602e097dec1367b96ce8d6c6d76ca82744f694d30cc632af4526c",
+    "manual2/figures/matter1_figure_manifest.json": "9e264edc453d9b38477649063f5d4333deda9a75e62d04f32bb77041a4edba4b",
     "manual2/main.tex": "726394998bdc756b16c5b6643d75d9504527012b4e51a8469887866b9af3016e",
     "manual2/preamble.tex": "ec9bbd15cf8da977ad39521963fbe16cc7a25dd919e1786fb53b82419ffef539",
     "manual2/refs.bib": "baf4ef87c2df3b0a90239b20cfc7766a441a30832e0a1df1bf803b70e406d8ef",
@@ -86,9 +86,9 @@
     "manual2/sections/generated_isotope_superheavy.tex": "ef5c811d1d4437cb2e6c1bb7e9b0f1a2f4c59ad2415f01fa75a4f3d02bf271e9"
   },
   "published_artifacts": {
-    "main.pdf": "fb18ef330672bcb5a7c966432934f54f0572bb861f7e1f756e8aab9feeb9ea78",
-    "manual2/main.pdf": "cbdc724dccf4c55aef5b183e40d4d3cba52582505989e7a896ab03273dfadd9a",
-    "manual2.pdf": "b8dff7ff6d8568ffe0b558cf733fdc823e72aae89ddf080d234f6d6aab419a1e"
+    "main.pdf": "5c67f8db3705f5c252509f1529e7d3f125aec7ee5cdaf50042fe78479951fd9c",
+    "manual2/main.pdf": "a906dd9359b9884a515dfa673f876993de616a7d4170d9633430028ea2f34738",
+    "manual2.pdf": "9354a7b633d1f7e4a24e35722e74b8e8d60852a14c02c5f4eccaede488c1b283"
   },
   "main_pages": 73,
   "commands": [

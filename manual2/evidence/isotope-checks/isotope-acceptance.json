@@ -1,6 +1,6 @@
 {
   "evidence_sha256": {
-    "acceptance.json": "fd5507baee21326982d241d094ab28b671e3021aaa7790ccab615333500ade1d",
+    "acceptance.json": "64192d8b3fc87240c344809431c908ca47927a46c463730d49fa14d7fd2d6d75",
     "atomic-optimized.json": "eba8eab977daa02f2f5cb946dd1c61e3de23f860c2c548d3dfc4c6204636e371",
     "atomic.json": "eba8eab977daa02f2f5cb946dd1c61e3de23f860c2c548d3dfc4c6204636e371",
     "bipm-optimized.json": "6d731e128934b6165e21a0a492f11a535e33460ef53a24a0c1789ce06c502c96",
@@ -8,7 +8,7 @@
     "bipm_precision-optimized.json": "9e60d5d6b6baa3d350fe6db9eb6cde244fb071dd053afb7ae2bc9c99c0269252",
     "bipm_precision.json": "9e60d5d6b6baa3d350fe6db9eb6cde244fb071dd053afb7ae2bc9c99c0269252",
     "browser.json": "e6de1f6995f0792ab668a901afe76ff3d18f95bfa776ae5d95eb21d282643157",
-    "build.json": "dd968acd21e7fd3131833d7cd358fffcd11ef492aaf2f4ebf820fca1f8f448a6",
+    "build.json": "eabcc01099cd0a415e1ace66b688e06153bdca46727616ba23dde50d2b850679",
     "conservation.json": "32e2b2193505adbaae621793fa0d7eea815cc40dae8b0d8e3c44de15be1e540b",
     "figure.json": "f3ab469b17709bce8acae883de003a5a1b6051b87ed0b29c6867edb69e5aed27",
     "folding-optimized.json": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1",
@@ -33,10 +33,10 @@
     "survival.json": "39117807e0a62dc6e064476710dae91a434a6637f09797bc0f40fc116aef5b01",
     "temporal-optimized.json": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53",
     "temporal.json": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53",
-    "tests-optimized.txt": "03e6ac057ea003004d15b578d0b8eb3961e883bda7db876f206ca59f9ebec384",
-    "tests-publication-final.txt": "3c52dc7785bfb2a6e5fd5789ca55757e655e6a5d34669538484b0002284ec609",
-    "tests.txt": "89f90e144c328ae83502f1e5fe62307a09a4e94ec62de481978a62185248d364",
-    "v2-acceptance.json": "51129abfc5fa53da3e557e255de18a938cac5aab3ecfb132850517ef7cc996a0",
+    "tests-optimized.txt": "1db19f76f01f2a602a256d04594d7b5a753b85795a624ae991efa62e351244bd",
+    "tests-publication-final.txt": "bf9b2a1f7ef196b08bf985d029520535f59d38240a8bef7d7dea2e99363316b6",
+    "tests.txt": "3b7ee4d9fe8b0d90f91f2f3c84fdbd1e288af52efcf4894b3b97479ca708b54d",
+    "v2-acceptance.json": "61d051f4f23820388b7a381a887584d35cf13549145c199043a26f528ba9d203",
     "v2-conservation.json": "983ba300b362e182062b71c967db1da25e72fe50106f54dfe11d2034e818d3e1"
   },
   "interpretation": "Software, finite model and source checks do not establish nuclear admission, an isotope-to-loss law or an SI prediction. Plain logs are execution evidence, not independent attestation.",
@@ -3038,8 +3038,8 @@
       "sha256": "0743af2ddf24617a581590344ea29d2ff4f9a62edf55a2cafe4eac374c7a2e4a"
     },
     "main.pdf": {
-      "bytes": 1820414,
-      "sha256": "fb18ef330672bcb5a7c966432934f54f0572bb861f7e1f756e8aab9feeb9ea78"
+      "bytes": 1820416,
+      "sha256": "5c67f8db3705f5c252509f1529e7d3f125aec7ee5cdaf50042fe78479951fd9c"
     },
     "main.tex": {
       "bytes": 1032,
@@ -3047,7 +3047,7 @@
     },
     "manual2.pdf": {
       "bytes": 278008,
-      "sha256": "b8dff7ff6d8568ffe0b558cf733fdc823e72aae89ddf080d234f6d6aab419a1e"
+      "sha256": "9354a7b633d1f7e4a24e35722e74b8e8d60852a14c02c5f4eccaede488c1b283"
     },
     "manual2/appendices/A_simulation_fixtures_and_context.tex": {
       "bytes": 1759,
@@ -3647,7 +3647,7 @@
     },
     "manual2/evidence/publication-build.json": {
       "bytes": 11072,
-      "sha256": "3ce7cfd9830c959478c79f92b9aa4c7ca817a62219b2f1b4318ebcd2f926036d"
+      "sha256": "cba364bc5be7500ef53340817e3c7046e7b2fef442b1a74a681a966749dd608e"
     },
     "manual2/evidence/renderer-lock.json": {
       "bytes": 1652,
@@ -3667,11 +3667,11 @@
     },
     "manual2/figures/matter1_figure_manifest.json": {
       "bytes": 36451,
-      "sha256": "c07abb657d8602e097dec1367b96ce8d6c6d76ca82744f694d30cc632af4526c"
+      "sha256": "9e264edc453d9b38477649063f5d4333deda9a75e62d04f32bb77041a4edba4b"
     },
     "manual2/main.pdf": {
-      "bytes": 278019,
-      "sha256": "cbdc724dccf4c55aef5b183e40d4d3cba52582505989e7a896ab03273dfadd9a"
+      "bytes": 278020,
+      "sha256": "a906dd9359b9884a515dfa673f876993de616a7d4170d9633430028ea2f34738"
     },
     "manual2/main.tex": {
       "bytes": 1863,
@@ -4002,20 +4002,20 @@
       "sha256": "b85eab8ca9153fc71758c38f2cd601f296ec640ec9f72d581d6d301ee06d532e"
     },
     "manual2/visuals/matter1-isotope-layer.js": {
-      "bytes": 11341,
-      "sha256": "e528f7216e891811b5d0bc8ab4ca66098bf0d45c1a5a55d849b772f8d4579c01"
+      "bytes": 11340,
+      "sha256": "893484e571e5f727f8e14db4193ad9536a589cd652bcea5d799c4c5b78dd233b"
     },
     "manual2/visuals/matter1-layout.json": {
       "bytes": 59075,
       "sha256": "7742eeacddf98a186b20c3a0b3f405917a16ce858ea89ea52e3e50dc06281ca7"
     },
     "manual2/visuals/matter1-reference.html": {
-      "bytes": 179424,
-      "sha256": "03c0224c5d9fbc455938ed0093a5fc34c9fece16d5b5880342ecc2ae7c99f410"
+      "bytes": 179501,
+      "sha256": "61368d40576db74c6cc45b209a75330a08a00fbba5c5539c51a067faf7e1835c"
     },
     "manual2/visuals/matter1-reference.template.html": {
-      "bytes": 14865,
-      "sha256": "d4c7a00e28d68389544ea458651fad382375cca4ada76f21ffd1881b389750aa"
+      "bytes": 14943,
+      "sha256": "c9c25b54380a65c1801ff67ff390d62b24dacffc221d0d02f8914ac9b72cc82e"
     },
     "package.json": {
       "bytes": 220,
@@ -4120,7 +4120,7 @@
   },
   "test_runs": {
     "normal": {
-      "elapsed_seconds_as_reported": "130.610",
+      "elapsed_seconds_as_reported": "128.884",
       "method_count": 214,
       "methods": {
         "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {
@@ -5196,7 +5196,7 @@
       }
     },
     "optimized": {
-      "elapsed_seconds_as_reported": "121.610",
+      "elapsed_seconds_as_reported": "120.180",
       "method_count": 187,
       "methods": {
         "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {

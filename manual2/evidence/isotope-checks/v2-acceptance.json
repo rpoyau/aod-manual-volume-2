@@ -11,8 +11,8 @@
     "metrology.json": "e32ccac8fca9bd5880347de76fdca79fa679a6e9267bddda030485f7870b06f0",
     "stateful-optimized.json": "e2041003198064fe9a2610fff7319b48795764f288907d101ff6887360b093f4",
     "stateful.json": "e2041003198064fe9a2610fff7319b48795764f288907d101ff6887360b093f4",
-    "tests-optimized.txt": "03e6ac057ea003004d15b578d0b8eb3961e883bda7db876f206ca59f9ebec384",
-    "tests.txt": "89f90e144c328ae83502f1e5fe62307a09a4e94ec62de481978a62185248d364",
+    "tests-optimized.txt": "1db19f76f01f2a602a256d04594d7b5a753b85795a624ae991efa62e351244bd",
+    "tests.txt": "3b7ee4d9fe8b0d90f91f2f3c84fdbd1e288af52efcf4894b3b97479ca708b54d",
     "v2-conservation.json": "983ba300b362e182062b71c967db1da25e72fe50106f54dfe11d2034e818d3e1"
   },
   "interpretation": "Executed synthetic metrology, external consistency checks and finite countermodels do not constitute an AOD atomic frequency prediction.",
@@ -2800,8 +2800,8 @@
       "sha256": "0743af2ddf24617a581590344ea29d2ff4f9a62edf55a2cafe4eac374c7a2e4a"
     },
     "main.pdf": {
-      "bytes": 1820414,
-      "sha256": "fb18ef330672bcb5a7c966432934f54f0572bb861f7e1f756e8aab9feeb9ea78"
+      "bytes": 1820416,
+      "sha256": "5c67f8db3705f5c252509f1529e7d3f125aec7ee5cdaf50042fe78479951fd9c"
     },
     "main.tex": {
       "bytes": 1032,
@@ -2809,7 +2809,7 @@
     },
     "manual2.pdf": {
       "bytes": 278008,
-      "sha256": "b8dff7ff6d8568ffe0b558cf733fdc823e72aae89ddf080d234f6d6aab419a1e"
+      "sha256": "9354a7b633d1f7e4a24e35722e74b8e8d60852a14c02c5f4eccaede488c1b283"
     },
     "manual2/appendices/A_simulation_fixtures_and_context.tex": {
       "bytes": 1759,
@@ -3409,7 +3409,7 @@
     },
     "manual2/evidence/publication-build.json": {
       "bytes": 11072,
-      "sha256": "3ce7cfd9830c959478c79f92b9aa4c7ca817a62219b2f1b4318ebcd2f926036d"
+      "sha256": "cba364bc5be7500ef53340817e3c7046e7b2fef442b1a74a681a966749dd608e"
     },
     "manual2/evidence/renderer-lock.json": {
       "bytes": 1652,
@@ -3429,11 +3429,11 @@
     },
     "manual2/figures/matter1_figure_manifest.json": {
       "bytes": 36451,
-      "sha256": "c07abb657d8602e097dec1367b96ce8d6c6d76ca82744f694d30cc632af4526c"
+      "sha256": "9e264edc453d9b38477649063f5d4333deda9a75e62d04f32bb77041a4edba4b"
     },
     "manual2/main.pdf": {
-      "bytes": 278019,
-      "sha256": "cbdc724dccf4c55aef5b183e40d4d3cba52582505989e7a896ab03273dfadd9a"
+      "bytes": 278020,
+      "sha256": "a906dd9359b9884a515dfa673f876993de616a7d4170d9633430028ea2f34738"
     },
     "manual2/main.tex": {
       "bytes": 1863,
@@ -3764,20 +3764,20 @@
       "sha256": "b85eab8ca9153fc71758c38f2cd601f296ec640ec9f72d581d6d301ee06d532e"
     },
     "manual2/visuals/matter1-isotope-layer.js": {
-      "bytes": 11341,
-      "sha256": "e528f7216e891811b5d0bc8ab4ca66098bf0d45c1a5a55d849b772f8d4579c01"
+      "bytes": 11340,
+      "sha256": "893484e571e5f727f8e14db4193ad9536a589cd652bcea5d799c4c5b78dd233b"
     },
     "manual2/visuals/matter1-layout.json": {
       "bytes": 59075,
       "sha256": "7742eeacddf98a186b20c3a0b3f405917a16ce858ea89ea52e3e50dc06281ca7"
     },
     "manual2/visuals/matter1-reference.html": {
-      "bytes": 179424,
-      "sha256": "03c0224c5d9fbc455938ed0093a5fc34c9fece16d5b5880342ecc2ae7c99f410"
+      "bytes": 179501,
+      "sha256": "61368d40576db74c6cc45b209a75330a08a00fbba5c5539c51a067faf7e1835c"
     },
     "manual2/visuals/matter1-reference.template.html": {
-      "bytes": 14865,
-      "sha256": "d4c7a00e28d68389544ea458651fad382375cca4ada76f21ffd1881b389750aa"
+      "bytes": 14943,
+      "sha256": "c9c25b54380a65c1801ff67ff390d62b24dacffc221d0d02f8914ac9b72cc82e"
     },
     "package.json": {
       "bytes": 220,
@@ -3882,7 +3882,7 @@
   },
   "test_runs": {
     "normal": {
-      "elapsed_seconds_as_reported": "130.610",
+      "elapsed_seconds_as_reported": "128.884",
       "method_count": 214,
       "methods": {
         "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {
@@ -4958,7 +4958,7 @@
       }
     },
     "optimized": {
-      "elapsed_seconds_as_reported": "121.610",
+      "elapsed_seconds_as_reported": "120.180",
       "method_count": 187,
       "methods": {
         "manual2.tests.test_matter1_application.ApplicationBindingTests.test_acceptance_inventory_retains_39_unique_request_ids": {

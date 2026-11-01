@@ -1,6 +1,6 @@
 {
   "status": "PASS_PAIRED_BUILD",
-  "build_directory": "/tmp/isotope-publication-final-inspected",
+  "build_directory": "/tmp/isotope-publication-ci-label",
   "publication": {
     "status": "PASS_PUBLICATION",
     "foundation_source_digest": "b70a59d3611786b162726fe9458f700b36a90c066592f7b2feb1da17059b9b59",
