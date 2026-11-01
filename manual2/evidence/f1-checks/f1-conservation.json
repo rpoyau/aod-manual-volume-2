@@ -1,0 +1,208 @@
+{
+  "matter": {
+    "executable_head": "3ffb3c9984eef95ca4b105ac323d249f30412816",
+    "foundation_and_all_other_tracked_science": "byte_preserved",
+    "foundation_head": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+    "inventory": {
+      "allowed_changed_files": [
+        ".agents/dependencies.json",
+        ".github/workflows/matter1.yml",
+        "README.md",
+        "docs/ai-dependencies.md",
+        "main.pdf",
+        "manual2.pdf",
+        "manual2/data/m1/survival/comparison.json",
+        "manual2/data/m1/survival/model_contract.json",
+        "manual2/data/m1/survival/prediction.json",
+        "manual2/data/m1/survival/survival_report.json",
+        "manual2/evidence/publication-build.json",
+        "manual2/main.pdf",
+        "manual2/scripts/matter1_m3.py",
+        "manual2/tests/test_matter1_m3.py",
+        "manual2/vendor/aod_m3/README.md",
+        "manual2/vendor/aod_m3/aod_mapping_error.py",
+        "manual2/vendor/aod_m3/binding.json",
+        "scripts/check_matter1_m3_consumer.py",
+        "scripts/record_matter1_acceptance.py",
+        "scripts/record_matter1_isotope_acceptance.py"
+      ],
+      "base": "6bb55ca9dff91bbef015ae56c3c4e627c54f2193",
+      "baseline_tracked_files": 400,
+      "current_head": "6bb55ca9dff91bbef015ae56c3c4e627c54f2193",
+      "new_tracked_deliverables": [],
+      "unchanged_tracked_files": 380,
+      "untracked_files": "not treated as tracked scientific inputs"
+    },
+    "reports": [
+      {
+        "after_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+        "changed_leaves": [
+          "/source_bindings/6/sha256"
+        ],
+        "path": "manual2/data/m1/survival/model_contract.json"
+      },
+      {
+        "after_sha256": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "5f4c271e97660fdcff8694c81cf5c1b95e8a139d1da90053a874c8724e50b03b",
+        "changed_leaves": [
+          "/contract_sha256",
+          "/isotope_candidates/0/finite_run_sha256",
+          "/isotope_candidates/1/finite_run_sha256",
+          "/isotope_candidates/2/finite_run_sha256",
+          "/isotope_candidates/3/finite_run_sha256",
+          "/isotope_candidates/4/finite_run_sha256",
+          "/isotope_candidates/5/finite_run_sha256",
+          "/isotope_candidates/6/finite_run_sha256",
+          "/isotope_candidates/7/finite_run_sha256",
+          "/isotope_candidates/8/finite_run_sha256",
+          "/isotope_candidates/9/finite_run_sha256",
+          "/isotope_candidates/10/finite_run_sha256",
+          "/runs/baseline/contract_sha256",
+          "/runs/capacity_0/contract_sha256",
+          "/runs/feedback_off/contract_sha256",
+          "/runs/loss_gain_2/contract_sha256"
+        ],
+        "path": "manual2/data/m1/survival/prediction.json"
+      },
+      {
+        "after_sha256": "ec1ccb7e6d73e2ea254180ff1e37ca6825d547e629f7d313b65b328ea8f4dcbf",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "ecd39fe0944681e785b429d95a0bc3ea7dcc9aa8fe837701d4cb6ef05ae2f649",
+        "changed_leaves": [
+          "/prediction_sha256"
+        ],
+        "path": "manual2/data/m1/survival/comparison.json"
+      },
+      {
+        "after_sha256": "26c7005f2bc5269339ef4abd1096c8602add40dba20075d005d7a45afd434d7f",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "39117807e0a62dc6e064476710dae91a434a6637f09797bc0f40fc116aef5b01",
+        "changed_leaves": [
+          "/comparison_sha256",
+          "/prediction_sha256"
+        ],
+        "path": "manual2/data/m1/survival/survival_report.json"
+      },
+      {
+        "after_sha256": "68feb86e99330ee705f9a75161d8495d356d082740f88bf29a70217e4d331bb0",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "d0ab973827dc45f4ff6f4f0c13b96357f3843bc4df6bb32fa783642949a42cd6",
+        "changed_leaves": [
+          "/files/aod_mapping_error.py/sha256",
+          "/upstream_head",
+          "/upstream_tree"
+        ],
+        "path": "manual2/vendor/aod_m3/binding.json"
+      },
+      {
+        "after_sha256": "7b2509b5d11a7c3fd22266405b7b52f41708538352a8c8eb37a22b0a43290a9a",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "cba364bc5be7500ef53340817e3c7046e7b2fef442b1a74a681a966749dd608e",
+        "changed_leaves": [
+          "/manual_inputs/manual2~1data~1m1~1survival~1comparison.json",
+          "/manual_inputs/manual2~1data~1m1~1survival~1model_contract.json",
+          "/manual_inputs/manual2~1data~1m1~1survival~1prediction.json",
+          "/manual_inputs/manual2~1data~1m1~1survival~1survival_report.json",
+          "/published_artifacts/main.pdf",
+          "/published_artifacts/manual2.pdf",
+          "/published_artifacts/manual2~1main.pdf"
+        ],
+        "path": "manual2/evidence/publication-build.json"
+      },
+      {
+        "after_sha256": "51671278eca56d59c576820c212c12e9d8a6019cde615deac82e4eb12ea27995",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "7e9502070073b3ff56a8b9bc54ed6cd7c7501ba2afa867ff908eb23930a016b1",
+        "changed_leaves": [
+          "/scientific_dependency/scope"
+        ],
+        "path": ".agents/dependencies.json"
+      }
+    ],
+    "survival_values_types_statuses_full_histories_and_comparisons": "unchanged"
+  },
+  "scope": "Pinned-source byte conservation and exact JSON leaf comparison; separate runtime and publication checks establish execution.",
+  "status": "PASS_F1_CONSERVATION",
+  "upstream": {
+    "inventory": {
+      "allowed_changed_files": [
+        "manual/data/m3/mapping_error.json",
+        "manual/data/m3/temporal.json",
+        "manual/scripts/aod_mapping_error.py",
+        "tests/test_m3_mapping_error.py"
+      ],
+      "base": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+      "baseline_tracked_files": 244,
+      "current_head": "3ffb3c9984eef95ca4b105ac323d249f30412816",
+      "new_tracked_deliverables": [],
+      "unchanged_tracked_files": 240,
+      "untracked_files": "not treated as tracked scientific inputs"
+    },
+    "production_change": "exactly_reviewed_one_line_guard",
+    "reports": [
+      {
+        "after_sha256": "a915a6a46c30a40225c75ffbb6974e974c7afaf185d0ada51c85c2639a2308a4",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "bd49c8a989ba57d013eb58e0e141ea9563edb6d060ab92a5077ca3a1268b561a",
+        "changed_leaves": [
+          "/composition/stages/0/outputs/y/origin/execution_sha256",
+          "/composition/stages/0/outputs/y/origin/map/code_sha256",
+          "/composition/stages/0/outputs/y/origin/map/spec_sha256",
+          "/composition/stages/0/outputs/y/sha256",
+          "/composition/stages/0/spec_sha256",
+          "/composition/stages/1/input_sha256",
+          "/composition/stages/1/outputs/y/origin/execution_sha256",
+          "/composition/stages/1/outputs/y/origin/inputs/x/origin/execution_sha256",
+          "/composition/stages/1/outputs/y/origin/inputs/x/origin/map/code_sha256",
+          "/composition/stages/1/outputs/y/origin/inputs/x/origin/map/spec_sha256",
+          "/composition/stages/1/outputs/y/origin/inputs/x/sha256",
+          "/composition/stages/1/outputs/y/origin/map/code_sha256",
+          "/composition/stages/1/outputs/y/origin/map/spec_sha256",
+          "/composition/stages/1/outputs/y/sha256",
+          "/composition/stages/1/spec_sha256",
+          "/exact_lossy_projection/witnesses/0/outputs/y/origin/execution_sha256",
+          "/exact_lossy_projection/witnesses/0/outputs/y/origin/map/code_sha256",
+          "/exact_lossy_projection/witnesses/0/outputs/y/origin/map/spec_sha256",
+          "/exact_lossy_projection/witnesses/0/outputs/y/sha256",
+          "/exact_lossy_projection/witnesses/0/spec_sha256",
+          "/exact_lossy_projection/witnesses/1/outputs/y/origin/execution_sha256",
+          "/exact_lossy_projection/witnesses/1/outputs/y/origin/map/code_sha256",
+          "/exact_lossy_projection/witnesses/1/outputs/y/origin/map/spec_sha256",
+          "/exact_lossy_projection/witnesses/1/outputs/y/sha256",
+          "/exact_lossy_projection/witnesses/1/spec_sha256",
+          "/maps/0/code_sha256",
+          "/maps/0/spec_sha256",
+          "/maps/1/code_sha256",
+          "/maps/1/spec_sha256",
+          "/maps/2/code_sha256",
+          "/maps/2/spec_sha256"
+        ],
+        "path": "manual/data/m3/mapping_error.json"
+      },
+      {
+        "after_sha256": "9250bb28b4f33f86db68abbf1bd9279907b412c6b12b7de02bc847596f34f689",
+        "all_other_values_types_and_structure_unchanged": true,
+        "before_sha256": "915fee2d37f370f6832198daea8b2aac11ce00b97b8baa27855cb94660b4cd0d",
+        "changed_leaves": [
+          "/comparison/prediction_sha256",
+          "/evaluation_only_mutation/prediction_sha256",
+          "/prediction/mapped/outputs/average_rate_hz/origin/execution_sha256",
+          "/prediction/mapped/outputs/average_rate_hz/origin/map/code_sha256",
+          "/prediction/mapped/outputs/average_rate_hz/origin/map/spec_sha256",
+          "/prediction/mapped/outputs/average_rate_hz/sha256",
+          "/prediction/mapped/outputs/elapsed_seconds/origin/execution_sha256",
+          "/prediction/mapped/outputs/elapsed_seconds/origin/map/code_sha256",
+          "/prediction/mapped/outputs/elapsed_seconds/origin/map/spec_sha256",
+          "/prediction/mapped/outputs/elapsed_seconds/sha256",
+          "/prediction/mapped/spec_sha256",
+          "/prediction/mapping_contract/code_sha256",
+          "/prediction/mapping_contract/spec_sha256"
+        ],
+        "path": "manual/data/m3/temporal.json"
+      }
+    ]
+  }
+}

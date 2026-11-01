@@ -7,7 +7,7 @@
     "first_later_difference_count": 3,
     "intervention_at_reference_count": 2
   },
-  "comparison_sha256": "ecd39fe0944681e785b429d95a0bc3ea7dcc9aa8fe837701d4cb6ef05ae2f649",
+  "comparison_sha256": "ec1ccb7e6d73e2ea254180ff1e37ca6825d547e629f7d313b65b328ea8f4dcbf",
   "exact_assertions": [
     "H1 traversal and injective Q4 coordinates",
     "normalized admissible kernels including zero-weight admitted exit",
@@ -61,7 +61,7 @@
     }
   },
   "physical_prediction_executed": false,
-  "prediction_sha256": "5f4c271e97660fdcff8694c81cf5c1b95e8a139d1da90053a874c8724e50b03b",
+  "prediction_sha256": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
   "profile": "m1:finite-history-retention-survival:v3",
   "schema_version": 3,
   "source_envelope_disagreements": 3,

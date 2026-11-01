@@ -33,7 +33,7 @@
     ],
     "scope": "falsifiable_declared_specialization_not_native_atomic_prediction"
   },
-  "contract_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+  "contract_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
   "dependencies": [
     {
       "id": "SURV-ATOM-01",
@@ -71,7 +71,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 1,
         "N": 0,
@@ -95,7 +95,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 133,
         "N": 78,
@@ -119,7 +119,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 56,
         "N": 30,
@@ -143,7 +143,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 62,
         "N": 34,
@@ -167,7 +167,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 208,
         "N": 126,
@@ -191,7 +191,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 294,
         "N": 176,
@@ -215,7 +215,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 290,
         "N": 174,
@@ -239,7 +239,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 286,
         "N": 172,
@@ -263,7 +263,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 293,
         "N": 177,
@@ -287,7 +287,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 289,
         "N": 175,
@@ -311,7 +311,7 @@
         "kind": "first_discrete_crossing"
       },
       "construction": "same_identity_insensitive_surrogate",
-      "finite_run_sha256": "ee5511e4a917b9cc2a2dc42af0dc6075ce2482ec83b9cc934bc40450d2241ec7",
+      "finite_run_sha256": "d7f0e7bad915e2a568cac3b6ece4b55d2f7c8d8ced137c1c24e7de31ae8e873a",
       "grouping": {
         "A": 298,
         "N": 184,
@@ -6498,7 +6498,7 @@
           "reference_count": 8
         }
       ],
-      "contract_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+      "contract_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
       "finite_law": {
         "adequacy": "full finite-support propagation",
         "arithmetic": "exact rational",
@@ -55085,7 +55085,7 @@
           "reference_count": 8
         }
       ],
-      "contract_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+      "contract_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
       "finite_law": {
         "adequacy": "full finite-support propagation",
         "arithmetic": "exact rational",
@@ -97601,7 +97601,7 @@
     },
     "feedback_off": {
       "absorbed_histories": [],
-      "contract_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+      "contract_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
       "finite_law": {
         "adequacy": "full finite-support propagation",
         "arithmetic": "exact rational",
@@ -135136,7 +135136,7 @@
           "reference_count": 8
         }
       ],
-      "contract_sha256": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
+      "contract_sha256": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
       "finite_law": {
         "adequacy": "full finite-support propagation",
         "arithmetic": "exact rational",

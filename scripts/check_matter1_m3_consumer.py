@@ -17,7 +17,7 @@ sys.path.insert(0, str(ROOT / 'manual2/scripts'))
 from matter1_m3 import verify_vendor
 from publication_support import verify_foundation
 
-HEAD = 'b78b48dd7aa1608dbb7141e9814e33c3cfcf900b'
+HEAD = '3ffb3c9984eef95ca4b105ac323d249f30412816'
 
 
 def verify(root, upstream):
@@ -29,6 +29,8 @@ def verify(root, upstream):
     if git('diff', '--name-only', 'HEAD'):
         raise ValueError('M3 integration upstream has modified tracked files')
     binding = verify_vendor(root)
+    if binding['upstream_head'] != HEAD or git('rev-parse', 'HEAD^{tree}') != binding['upstream_tree']:
+        raise ValueError('M3 consumer and executable binding disagree')
     for name, row in binding['files'].items():
         if (upstream / row['upstream_path']).read_bytes() != (root / 'manual2/vendor/aod_m3' / name).read_bytes():
             raise ValueError('M3 vendored file differs from actual upstream: ' + name)
@@ -50,6 +52,7 @@ def verify(root, upstream):
     if result['atomic_point_prediction']['frequency_hz'] is not None:
         raise ValueError('Integration cannot promote the unresolved atomic point prediction')
     return {'status': 'PASS_REQUIRED_M3_CONSUMER', 'upstream_head': HEAD,
+            'foundation_upstream_head': foundation['upstream_head'],
             'foundation_source_digest': foundation['source_digest'],
             'scope': 'Exact dependency and stateful feedback replay; no isotope admission, physical calibration or empirical agreement',
             'executed': result}

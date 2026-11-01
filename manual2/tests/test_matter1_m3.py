@@ -99,7 +99,7 @@ class M3MigrationTests(unittest.TestCase):
                 legacy_engine_digest(root, 'manual2/scripts/matter1_atomic.py')
 
     def test_vendor_edited_source_and_resealed_binding_rejected(self):
-        self.assertEqual(verify_vendor(ROOT)['upstream_head'], 'b78b48dd7aa1608dbb7141e9814e33c3cfcf900b')
+        self.assertEqual(verify_vendor(ROOT)['upstream_head'], '3ffb3c9984eef95ca4b105ac323d249f30412816')
         for reseal in (False, True):
             with self.subTest(reseal=reseal), tempfile.TemporaryDirectory() as tmp:
                 root = Path(tmp)

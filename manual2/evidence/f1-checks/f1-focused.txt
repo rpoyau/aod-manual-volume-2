@@ -1,0 +1,12 @@
+test_changed_exact_value_cannot_match_claim (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_changed_exact_value_cannot_match_claim) ... ok
+test_equivalent_rational_representations_must_still_match (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_equivalent_rational_representations_must_still_match) ... ok
+test_malformed_rational_evidence_is_rejected (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_malformed_rational_evidence_is_rejected) ... ok
+test_matching_exact_integer_and_rational_controls_execute (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_matching_exact_integer_and_rational_controls_execute) ... ok
+test_matching_standard_uncertainty_still_requires_its_variance (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_matching_standard_uncertainty_still_requires_its_variance) ... ok
+test_negative_evidence_is_rejected_as_nonnegative_error (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_negative_evidence_is_rejected_as_nonnegative_error) ... ok
+test_rehashed_boolean_and_float_evidence_is_rejected (manual2.tests.test_matter1_m3_evidence.M3EvidenceExecutionTests.test_rehashed_boolean_and_float_evidence_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.062s
+
+OK

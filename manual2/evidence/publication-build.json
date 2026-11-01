@@ -55,10 +55,10 @@
     "manual2/data/m1/stateful/early_loss_scenario.json": "29443b11f9e88413fd22a5e2393f9a7d3f009f91d8e4ed011a53e663792fa843",
     "manual2/data/m1/stateful/early_loss_trace.json": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f",
     "manual2/data/m1/stateful/stateful_report.json": "e2041003198064fe9a2610fff7319b48795764f288907d101ff6887360b093f4",
-    "manual2/data/m1/survival/comparison.json": "ecd39fe0944681e785b429d95a0bc3ea7dcc9aa8fe837701d4cb6ef05ae2f649",
-    "manual2/data/m1/survival/model_contract.json": "8404e4844ebd053bc862075cb67c6b2634ae9d0f01eaeaca224d2b3d6428268a",
-    "manual2/data/m1/survival/prediction.json": "5f4c271e97660fdcff8694c81cf5c1b95e8a139d1da90053a874c8724e50b03b",
-    "manual2/data/m1/survival/survival_report.json": "39117807e0a62dc6e064476710dae91a434a6637f09797bc0f40fc116aef5b01",
+    "manual2/data/m1/survival/comparison.json": "ec1ccb7e6d73e2ea254180ff1e37ca6825d547e629f7d313b65b328ea8f4dcbf",
+    "manual2/data/m1/survival/model_contract.json": "da68ecb5fddad11ad7cb06e3b40e9aa648a7f63e9546dcfa8936ebf849c9aae2",
+    "manual2/data/m1/survival/prediction.json": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
+    "manual2/data/m1/survival/survival_report.json": "26c7005f2bc5269339ef4abd1096c8602add40dba20075d005d7a45afd434d7f",
     "manual2/data/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
     "manual2/data/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
     "manual2/data/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
@@ -86,9 +86,9 @@
     "manual2/sections/generated_isotope_superheavy.tex": "ef5c811d1d4437cb2e6c1bb7e9b0f1a2f4c59ad2415f01fa75a4f3d02bf271e9"
   },
   "published_artifacts": {
-    "main.pdf": "5c67f8db3705f5c252509f1529e7d3f125aec7ee5cdaf50042fe78479951fd9c",
-    "manual2/main.pdf": "a906dd9359b9884a515dfa673f876993de616a7d4170d9633430028ea2f34738",
-    "manual2.pdf": "9354a7b633d1f7e4a24e35722e74b8e8d60852a14c02c5f4eccaede488c1b283"
+    "main.pdf": "eabd25216ee27ba3604c18813ae9659649815001cec711eb57accd8aa2f2d849",
+    "manual2/main.pdf": "64f50e0e48e54133bfa0c9bd96d8903e08801f5bc948c78095f532447c57a954",
+    "manual2.pdf": "4658a2d34facc47e3e3a312aed202718c5edbc839109ee4e750b2f5fe9f0acca"
   },
   "main_pages": 73,
   "commands": [

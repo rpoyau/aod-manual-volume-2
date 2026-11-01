@@ -14,14 +14,14 @@
       "upstream_path": "contracts/scientific/MAP_CONTRACT.json"
     },
     "aod_mapping_error.py": {
-      "sha256": "d548965f11b529c2a52f4d323fff75c7c64585f8559e88924ee1e2b5333fcffa",
+      "sha256": "b1d414e32819d3a601834883e112634bdffd7df82d742de9ede5580c96e620fc",
       "upstream_path": "manual/scripts/aod_mapping_error.py"
     }
   },
   "schema_version": 1,
   "scope": "Exact upstream mapping module and contracts, not a physical calibration or native admission",
-  "upstream_head": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+  "upstream_head": "3ffb3c9984eef95ca4b105ac323d249f30412816",
   "upstream_repository": "https://github.com/rpoyau/aod",
   "upstream_status": "open_PR_43_candidate_at_binding",
-  "upstream_tree": "e284648caba071c00d28b70850c8e557f8dc8d19"
+  "upstream_tree": "4e260a7c8e22ab5b78a73a0a12e784f1be46c984"
 }

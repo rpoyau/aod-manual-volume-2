@@ -12,6 +12,7 @@ GROUPS={
  'test_matter1_isotopes':('ISO','source_catalog_quantities_status_and_provenance'),
  'test_matter1_survival':('SURV','declared_history_ensemble_and_retrospective_conditional_test'),
  'test_matter1_m3':('M3','exact_source_binding_typed_maps_and_uncertainty_guards'),
+ 'test_matter1_m3_evidence':('F1','persisted_exact_evidence_typing_and_claim_binding_not_physical_uncertainty'),
  'test_matter1_bipm_precision':('PREC','conditional_printed_zero_policy_not_source_precision'),
  'test_matter1_isotope_integration':('INT','frozen_data_and_explicit_successor_conservation'),
 }
@@ -36,7 +37,7 @@ def record(checks,output):
  evidence.require(all(r['source_switch'] and r['chain_navigation'] and r['unknown_and_stable_distinct'] and not r['horizontal_overflow'] and r['minimum_badge_contrast']>=7 for r in browser['isotope_checks']),'isotope browser assertion failed')
  m3=evidence.read_json(checks/'m3-consumer.json')
  evidence.check_equal(m3,evidence.read_json(checks/'m3-consumer-optimized.json'),'M3 mode mismatch')
- evidence.require(m3['status']=='PASS_REQUIRED_M3_CONSUMER' and m3['upstream_head']=='b78b48dd7aa1608dbb7141e9814e33c3cfcf900b','required exact M3 execution missing')
+ evidence.require(m3['status']=='PASS_REQUIRED_M3_CONSUMER' and m3['upstream_head']=='3ffb3c9984eef95ca4b105ac323d249f30412816','required exact M3 execution missing')
  publication=evidence.read_json(checks/'publication.json');reproduction=evidence.read_json(checks/'reproduction.json')
  evidence.require(publication['status']=='PASS_PUBLICATION','publication failed')
  evidence.require(reproduction['status']=='PASS_REPRODUCTION' and len(reproduction['outputs'])==43,'reproduction inventory incomplete')

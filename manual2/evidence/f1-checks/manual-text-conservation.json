@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pages": 33,
+  "previous_publication": "/home/reginaldpoyau/projects/aod-manual-volume-2/output/implementations/isotopes-m3-20261101/manual2.pdf",
+  "text_sha256": "67b6042c0bf01658ec3dadc13e493a8f75cf29b4a18c72a381a9c8b22ad420cd",
+  "inspection_candidates": [
+    7
+  ]
+}

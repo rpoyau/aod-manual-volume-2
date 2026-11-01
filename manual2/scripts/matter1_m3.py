@@ -6,7 +6,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[2]
 VENDOR = Path('manual2/vendor/aod_m3')
-BINDING_SHA256 = 'd0ab973827dc45f4ff6f4f0c13b96357f3843bc4df6bb32fa783642949a42cd6'
+BINDING_SHA256 = '68feb86e99330ee705f9a75161d8495d356d082740f88bf29a70217e4d331bb0'
 
 
 def verify_vendor(root=ROOT):

@@ -295,7 +295,7 @@
   "interpretation": "The equal-state/shared-clock specialization fails the reported half-life envelopes. The isotope-dependent construction or observation premises must change; the data do not select a replacement law.",
   "native_atomic_agreement": "not_tested_atomic_map_unestablished",
   "physical_uncertainty_status": "incomplete_no_combined_significance_or_sigma_score",
-  "prediction_sha256": "5f4c271e97660fdcff8694c81cf5c1b95e8a139d1da90053a874c8724e50b03b",
+  "prediction_sha256": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
   "profile": "m1:finite-history-retention-survival:v3",
   "schema_version": 3,
   "unscored": [

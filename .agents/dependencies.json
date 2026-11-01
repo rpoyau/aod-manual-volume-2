@@ -45,7 +45,7 @@
     "rebind_record": "manual2/evidence/m3-source-rebind.json",
     "vendor_binding": "manual2/vendor/aod_m3/binding.json",
     "required_consumer_check": "scripts/check_matter1_m3_consumer.py",
-    "scope": "Consume the exact commit and authority status in the foundation binding; no floating upstream main."
+    "scope": "Main source and M3 executable have separate exact commit and authority bindings. Consume both foundation and vendor bindings; verify Main bytes against the executable checkout. No floating upstream main."
   },
   "historical_skills": {
     "directory": ".agents/skills",
