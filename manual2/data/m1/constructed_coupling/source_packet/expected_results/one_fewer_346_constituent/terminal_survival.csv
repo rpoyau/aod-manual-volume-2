@@ -1,0 +1,6 @@
+field,cut,complete_returns_total,new_returns_since_parent_formation,partial_return_atomic_traversals,next_action_cut,next_action_kind_index,parent_decay_status,survival_probability,seconds
+P,4000000000,6,4,4607,4000018516,4607,not evaluated: retention and daughter rules absent,,
+R,4000000000,1911,1909,9,4000012148,9,not evaluated: retention and daughter rules absent,,
+B0,4000000000,921,919,76,4000011997,77,not evaluated: retention and daughter rules absent,,
+B1,4000000000,921,919,76,4000011997,77,not evaluated: retention and daughter rules absent,,
+B2,4000000000,927,925,32,4000012633,32,not evaluated: retention and daughter rules absent,,

@@ -1,0 +1,138 @@
+{
+  "Fl-298": "unscored; outside this paired investigation",
+  "application_source_sha256": {
+    "generate_matter1_constructed_coupling.py": "75e0603dbbbe631077ca6382958f45fec378e6f5dcc7c80683fc958e739a1813",
+    "matter1_constructed_coupling.py": "e61be2e212e20edf07962fd791ac1af20583f9b00ac78dc1e774c98c1e4bb1f9",
+    "verify_matter1_constructed_coupling.py": "545ca414746fb99a96942be84ab30ce272fd6de6042820e1bdabc0015b3afe06"
+  },
+  "common_law": {
+    "capacity": null,
+    "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+    "id": "matter1-constructed-coupling-v1",
+    "loss": null,
+    "normalization": "native RCD times absolute committed emission lag; no R03 unit imported",
+    "reference": "R02 reference 3:3:6 field; not an identified atomic clock",
+    "retention": null,
+    "update": "R02 immutable next-deadline inverse-pressure sequencer"
+  },
+  "paired_profile": "matter1:paired-aggregate-configurations:v1",
+  "preparations": [
+    {
+      "A": 286,
+      "N": 172,
+      "Z": 114,
+      "comparison_status": "retrospective; no measured lifetime is read",
+      "id": "Fl-286:ground",
+      "internal_nuclear_couplings": null,
+      "operative_couplings": "same R02 five-aggregate-field directed channel law",
+      "physical_preparation": null,
+      "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+      "state": "externally selected ground-state label; physical state identification unproved",
+      "symbol": "Fl"
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "comparison_status": "retrospective; no measured lifetime is read",
+      "id": "Fl-289:ground",
+      "internal_nuclear_couplings": null,
+      "operative_couplings": "same R02 five-aggregate-field directed channel law",
+      "physical_preparation": null,
+      "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+      "state": "externally selected ground-state label; physical state identification unproved",
+      "symbol": "Fl"
+    },
+    {
+      "A": 294,
+      "N": 176,
+      "Z": 118,
+      "comparison_status": "retrospective; no measured lifetime is read",
+      "id": "Og-294:ground",
+      "internal_nuclear_couplings": null,
+      "operative_couplings": "same R02 five-aggregate-field directed channel law",
+      "physical_preparation": null,
+      "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+      "state": "externally selected ground-state label; physical state identification unproved",
+      "symbol": "Og"
+    }
+  ],
+  "profile": "matter1:constructed-coupling-r02:v1",
+  "r02_contract": {
+    "N": 176,
+    "Z": 118,
+    "assignment_status": "externally assigned constituent inventory; physical nuclear identification unproved",
+    "background": {
+      "B2_history": "present in every run and receives P from formation; the intervention adds B2-to-P influence",
+      "always_bidirectional": [
+        "B0",
+        "B1"
+      ],
+      "motif": "3:4:6"
+    },
+    "cases": [
+      "baseline",
+      "add_346_to_parent",
+      "same_addition_feedback_disabled",
+      "one_fewer_346_constituent"
+    ],
+    "contact_update": "emit after a genuine outer reclosure; reflection=(max(0,receiver_phase-sender_phase),max(0,sender_phase-receiver_phase)); arrival=start+source_RD+forward_reflection; immutable emission prefixes",
+    "current_model": "each directed channel has an admitted Monon pivot and Dion-pivot-Dion witness on each returned contact; repeated returns admit a Duon current; seating changes state only, with no added slowdown",
+    "decay_channel_or_daughter_map": null,
+    "electron_shell": "outside this nucleus-only construction",
+    "engine_start_cut": 250000,
+    "freeze_policy": "choices and horizon written before first execution; implementation fixes recorded separately",
+    "horizon_cut": 4000000000,
+    "inner_history": "two admitted seeded returns per distinct constituent; preserved during outer execution; no resolved internal nuclear dynamics",
+    "intervention_cut": 1000000000,
+    "load_diagnostic": "sum over arrivals to parent in the declared window of operative last-two-contact rho times abs(lag at emission); terms remain nonnegative and individually bound",
+    "nuclear_constituents": {
+      "neutron_facing": "3:4:6",
+      "proton_facing": "3:3:6"
+    },
+    "outer_scope_map": "ordered constituent word/shell occurrences map their last-axis H1 step into a shared Q4 register; reverse the complete branch after one hinge; bind every inner certificate in the fold proposal",
+    "outer_update": "reuse the earlier declared inverse-pressure sequencer: next action interval = own structural RD + sum incoming last-two-contact RCD durations; next start marker is one cut after completion",
+    "parent_capacity": null,
+    "parent_loss_rule": null,
+    "physical_seconds": null,
+    "prediction_policy": "deterministic finite construction; no lifetime, target, calibration gain or SI constant read by dynamics; no half-life or physical decay prediction",
+    "reference": {
+      "constituents": [
+        [
+          3,
+          3
+        ]
+      ],
+      "interpretation": "declared recurrent comparison field; not a Cs atomic clock",
+      "name": "R"
+    },
+    "response_participation": "one per active incoming edge; no clipping",
+    "schema": "matter1-constructed-coupling-v1",
+    "selected_label": "Og-294 nucleus candidate",
+    "window_endpoints": [
+      1000000000,
+      2000000000,
+      3000000000,
+      4000000000
+    ]
+  },
+  "schema_version": 1,
+  "source_bindings": {
+    "archive_verification_scope": "selected member bytes and original manifest bindings; full archive is not present",
+    "bound_inputs": 9,
+    "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+    "member_binding_sha256": "72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b",
+    "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+    "original_archive": {
+      "archive_crc_passed": true,
+      "bytes": 56690064,
+      "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+      "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+      "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+      "manifest_entries_verified": 85,
+      "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+    },
+    "selected_original_members": 39
+  },
+  "target_policy": "No lifetime, hazard, per-isotope multiplier, fitted capacity or evaluation catalogue is read by execution."
+}

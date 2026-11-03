@@ -1,0 +1,14 @@
+{
+  "frozen_contract_sha256": "30eba08dfd83d8507d40996cc3801dff7813def1f8d382a2717c0b3588b95b85",
+  "implementation_fixes_before_final_execution": [
+    "Channel-local packet IDs preserve matched control provenance.",
+    "Exact integer inputs are validated before inventory arithmetic.",
+    "Trace digest memoization calls the original accessor on immutable trace objects; replacement invalidates the cache.",
+    "Emission validation indexes actual certified return identities instead of repeatedly scanning all returns.",
+    "Implementation bytes are fingerprinted on import; the final four runs use the same frozen source."
+  ],
+  "pre_execution_amendment": "B2 has a common admitted one-way receiving history in every case; intervention enables only B2-to-P feedback. No results were computed before this clarification.",
+  "prior_contract_sha256": "961ba7fd8daef701481ff184de8a160667663aa6f255bdcd9f3386dfa8f3ffa0",
+  "seating_scope": "Compatible seating is assumed only for the native same-current Duon/Duad state check. No seating slowdown or nuclear retention capacity is inferred.",
+  "superseded_diagnostic": "An uncached full baseline evolution was interrupted during slow validation. It produced no delivered prediction. All final runs and their optimized replays use the verified implementation."
+}

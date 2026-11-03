@@ -1,0 +1,146 @@
+{
+  "actual_click_count": 11458,
+  "actual_tick_count": 11458,
+  "admitted_distinct_parent_constituents": 286,
+  "admitted_outer_waves": 5,
+  "admitted_returned_currents": [
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "e779099ccd9dea8d1e31a787fa41d2271094e5442f86aeb2187e6d3b574c8a18",
+      "duon_identity": "e779099ccd9dea8d1e31a787fa41d2271094e5442f86aeb2187e6d3b574c8a18",
+      "receiver": "P",
+      "return_count": 1942,
+      "sender": "R",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "96f0543ebfa34e7dc3bdf1fb62b4e8af96ba7d1744bcd0f42cbb214813e1b6ef",
+      "duon_identity": "96f0543ebfa34e7dc3bdf1fb62b4e8af96ba7d1744bcd0f42cbb214813e1b6ef",
+      "receiver": "P",
+      "return_count": 939,
+      "sender": "B0",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "8e8f9acaa55bc2cf9e2215adc793b462b492b408ac749528f08dd3cb81eaf705",
+      "duon_identity": "8e8f9acaa55bc2cf9e2215adc793b462b492b408ac749528f08dd3cb81eaf705",
+      "receiver": "P",
+      "return_count": 939,
+      "sender": "B1",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "27932b7030dd4c5e77fe023ecfab638f84a6efc0c53790bf6eb95c2d12e1361f",
+      "duon_identity": "27932b7030dd4c5e77fe023ecfab638f84a6efc0c53790bf6eb95c2d12e1361f",
+      "receiver": "R",
+      "return_count": 6,
+      "sender": "P",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "e968c31a5cc7d6baac2f27159582ac9490b250df4ef20c20630407c1ebf343ec",
+      "duon_identity": "e968c31a5cc7d6baac2f27159582ac9490b250df4ef20c20630407c1ebf343ec",
+      "receiver": "R",
+      "return_count": 939,
+      "sender": "B0",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "ccbf8f7fb93ac530fad8e474b81ecc91c64214e7c61f79c637b3260128305d53",
+      "duon_identity": "ccbf8f7fb93ac530fad8e474b81ecc91c64214e7c61f79c637b3260128305d53",
+      "receiver": "R",
+      "return_count": 939,
+      "sender": "B1",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "d904ad58795a5fc6756573b7ec000be796788409160cb62fa9e4e46cac855708",
+      "duon_identity": "d904ad58795a5fc6756573b7ec000be796788409160cb62fa9e4e46cac855708",
+      "receiver": "B0",
+      "return_count": 6,
+      "sender": "P",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "3c4e2aa93049847a6f54ca89ec784496383f520b6751e2aa93a418f80b0852a5",
+      "duon_identity": "3c4e2aa93049847a6f54ca89ec784496383f520b6751e2aa93a418f80b0852a5",
+      "receiver": "B0",
+      "return_count": 1942,
+      "sender": "R",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "5b628269e5f0f8373e96e88f1833aa1f84d3d25fbad08ca2fa0b740c89460348",
+      "duon_identity": "5b628269e5f0f8373e96e88f1833aa1f84d3d25fbad08ca2fa0b740c89460348",
+      "receiver": "B0",
+      "return_count": 939,
+      "sender": "B1",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "5af632a04837bdf424af03ae045b5a1c23d0cea50609171e0180ae30bbf49d5c",
+      "duon_identity": "5af632a04837bdf424af03ae045b5a1c23d0cea50609171e0180ae30bbf49d5c",
+      "receiver": "B1",
+      "return_count": 6,
+      "sender": "P",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "c8a291ba32d56c24401eaf1d85610758b1b4b323a5a12d3dab2d0855c30336b8",
+      "duon_identity": "c8a291ba32d56c24401eaf1d85610758b1b4b323a5a12d3dab2d0855c30336b8",
+      "receiver": "B1",
+      "return_count": 1942,
+      "sender": "R",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "af99f0356d8deed697e8b336ac34a608e4750b1a06d65aa67abbf7828818bd09",
+      "duon_identity": "af99f0356d8deed697e8b336ac34a608e4750b1a06d65aa67abbf7828818bd09",
+      "receiver": "B1",
+      "return_count": 939,
+      "sender": "B0",
+      "state": "seated"
+    },
+    {
+      "added_propagation_slowdown": null,
+      "duad_identity": "4da1ae36f2bb7c934871479116b0195fb76486c4c3bda07f8faec859465dda4f",
+      "duon_identity": "4da1ae36f2bb7c934871479116b0195fb76486c4c3bda07f8faec859465dda4f",
+      "receiver": "B2",
+      "return_count": 6,
+      "sender": "P",
+      "state": "seated"
+    }
+  ],
+  "atomic_edges": 630751,
+  "counter_conservation": true,
+  "native_P_R_comparisons": [
+    {
+      "lag": "-1936",
+      "operative_RCD": 61,
+      "ratio": "1/485",
+      "receiver": "P",
+      "sender": "R"
+    },
+    {
+      "lag": "1936",
+      "operative_RCD": 33425,
+      "ratio": "485",
+      "receiver": "R",
+      "sender": "P"
+    }
+  ],
+  "pending_current_count": 0,
+  "physical_decay_prediction": false,
+  "physical_nuclear_admission": false
+}

@@ -1,0 +1,27 @@
+{
+  "alternatives": [
+    {
+      "C": "112328561",
+      "residual": "112328561",
+      "surplus": "112328561"
+    },
+    {
+      "C": "224657122",
+      "residual": "0",
+      "surplus": "0"
+    },
+    {
+      "C": "224657123",
+      "residual": "-1",
+      "surplus": "0"
+    }
+  ],
+  "computed_nonnegative_load": 224657122,
+  "consequence": "The same counted trajectory does not identify a residual without capacity. Positive surplus alone also does not establish parent loss or a daughter.",
+  "source": "sections/06_field.tex: eq:closure-residual; eq:shedding-excess",
+  "status": "unselected algebraic alternatives, not inferred nuclear capacities",
+  "window": [
+    63037,
+    4000000000
+  ]
+}

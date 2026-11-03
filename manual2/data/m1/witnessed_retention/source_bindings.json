@@ -1,0 +1,15 @@
+{
+  "aod_commit": "3ffb3c9984eef95ca4b105ac323d249f30412816",
+  "matter1_commit": "192cad032cdf579344ab21aa25a0bf7454981e89",
+  "sha256": {
+    "contract.json": "dc47f33b0d5ff88f8a537de060070d4c119568fa66eea4d437c7b403017d3a57",
+    "inputs/matter1_survival.py": "60dde14dbe906987ba1a3962db16d0b4aae671b50e555dbbd4820cba2039bc67",
+    "inputs/owner_plan.md": "d3ed657888a6a3c63b13dd34b92a38557189aaccda81775144598267c053859c",
+    "upstream/LICENSE": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+    "upstream/appendices/H_combinatorics_rd_tests.tex": "8ba9c388162d31e5a5b3a86b8818a958b909b537bfa13fb807123d564d61adf7",
+    "upstream/manual/scripts/aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+    "upstream/sections/05_curl_closure_duon_current.tex": "6e58c2213d8a11e288915d47d90965787aba148caa3d8f3bc065739216cf00e4",
+    "upstream/sections/06_field.tex": "79e16685826aee15273fbcddc0a59d5f14f75dbf3671e43ae261fcd6fc9acf70",
+    "upstream/sections/06_wave_state_relational_time.tex": "bbd265de629de74ae43be75ff5146406b5dda80c380bf02507725a98d233404d"
+  }
+}

@@ -150,3 +150,22 @@ The new survival model enumerates an exact stochastic ensemble of retained histo
 M3's exact finite-law mapping module is vendored byte-for-byte with its source binding. CI additionally checks out the exact upstream commit and replays its actual Matter I consumer integration in normal and optimized Python; this lane cannot silently skip. The older v1/v2 data and all 118 placements/126 slots remain byte-preserved. The separate BIPM precision successor preserves 105 point results while recording unresolved printed-zero precision and rejecting the targeted sigma mutation.
 
 See `manual2/data/m1/isotopes/README.md`, `manual2/data/m1/survival/`, and `manual2/evidence/m3-migration.md` for exact premises, source locators and unresolved dependencies. The complete element ledger remains in the Manual appendix. Generation is explicit; verification never repairs persisted files.
+
+## Witnessed coupling and retention
+
+Two separately bound examples extend the isotope-survival section. `constructed_coupling/` preserves the R02 engine and its four original experiments, with complete constituent formation, scope maps, directed contacts and return histories. Five aggregate fields evolve while their inner formation histories remain retained. The same update law gives four parent returns over 1,940 reference bips for the declared Fl-286 construction, 1,920 for Fl-289, and 1,902 for the Og-294 control. Each window starts after its own parent formation and ends at the same execution cut. The isotope labels do not enter the update law.
+
+`witnessed_retention/` retains the distinct R03 square-return model. The raw unit and closure capacity are both 5. Opposite signed responses cancel while their burden remains: the exact third-return survivals are 5/6 for net memory and 2/3 for burden. The feedback, window and pending-background controls retain complete committed histories and exposed inner lineage. The earlier common-surrogate survival model, its nine-point curves and retrospective rejection are unchanged.
+
+Both lanes use explicit generators and read-only complete replay:
+
+```sh
+python3 -B manual2/scripts/verify_matter1_constructed_coupling.py
+python3 -B -O manual2/scripts/verify_matter1_constructed_coupling.py
+python3 -B manual2/scripts/verify_matter1_witnessed_retention.py
+python3 -B -O manual2/scripts/verify_matter1_witnessed_retention.py
+```
+
+Their `generate_matter1_*.py` commands accept `--root SOURCE_REPO --output-root OUTPUT_REPO`. The complete reproduction check regenerates both lanes in a disposable directory; CI and the scoped isotope acceptance recorder include their tests. Full constructed-coupling replay takes several minutes.
+
+The two examples have separate state, reference and capacity choices. No combined retention model or physical isotope half-life is asserted. The constructed report records the missing adapter, preparation, nuclear loss, observation and uncertainty premises individually; Fl-298 remains unscored. The existing exact M3 executable pin remains active until the separately requested observation-interface candidate is supplied and replayed.

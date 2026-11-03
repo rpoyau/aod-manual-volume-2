@@ -135,7 +135,7 @@ is \(211/576\) and its variance is \((211/576)(365/576)\). This ensemble spread 
 distinct from uncertainty about the nuclear model or the experimental calibration.
 
 \paragraph{Calibration.}
-No isotope-specific hazard or capacity is fitted. Every named isotope currently labels
+No isotope-specific hazard or capacity is fitted. Within this model, every isotope label selects
 the same surrogate configuration; \eqnref{eq:manual2-isotope-grouping} does not change
 its law. A physical elapsed-time report would require an observation map taking reference
 returns to observed oscillator cycles. For example, the hypothetical constant gain
@@ -155,7 +155,8 @@ target or a self-consistent replacement hash cannot rewrite the frozen predictio
 \aodprovenance{\path{manual2/data/m1/survival/} records the common model contract, four
 exact runs, prediction, comparison and unresolved construction obligations. The earlier
 finite folding and stateful fixtures remain separate. The observation-gain dependency
-instantiates \mainsection{prop:m3-atomic-gain}.}
+instantiates \mainsection{prop:m3-atomic-gain}. The model identity is
+\path{m1:finite-history-retention-survival:v3}.}
 \aodliteraturenote{SI reference definition: BIPM~\cite{bipm-second}.}
 
 \subsection{A measured test of the restricted specialization}
@@ -208,3 +209,227 @@ bound comparisons, and no unobserved lifetime can be counted as agreement.
 \aodprovenance{The separate \path{prediction.json} and \path{comparison.json} bind their
 complete inputs and exact outputs. Tests SURV-01--19 state their finite assertion scope;
 passing them does not certify nuclear admission.}
+
+\subsection{Constructed-field cadence}
+\label{manual2:constructed-coupling}
+\paragraph{Setup.}
+The R02 constructed-coupling law assigns 118 distinct \(3{:}3{:}6\) and
+176 distinct \(3{:}4{:}6\) constituent formation waves to an Og-294 candidate.
+Their scope maps bind the inner certificates to an outer construction with
+15,508 outward occurrences and structural \(RD=31{,}017\). The 294 inner
+formation histories remain fixed while five aggregate fields evolve: parent,
+reference and three coupled backgrounds. This is a declared aggregate reduction;
+the constituent assignment does not establish a nuclear configuration.
+The third background is present in every case; the feedback intervention changes
+its influence on the parent.
+
+\paragraph{Derivation.}
+Each new outer reclosure emits a contact with its committed prefix. The common
+sequencer sets the next action interval to the field's structural RD plus its
+incoming last-two-contact RCD durations; after completion, the next start follows
+one cut later. Forward and reverse reflection histories
+retain their direction, lag and contact operands. The resulting counts are
+\begin{table}[H]
+\centering\small
+\caption{Constructed coupling to cut \(4\times10^9\), counted after each
+case's parent formation.}
+\label{tab:manual2-constructed-cadence}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+Case & New parent reclosures & Reference bips & Ratio\\
+\midrule
+Baseline & 4 & 1902 & \(2/951\)\\
+Added \(3{:}4{:}6\) feedback & 4 & 1902 & \(2/951\)\\
+Same contact, feedback disabled & 4 & 1902 & \(2/951\)\\
+One fewer \(3{:}4{:}6\) constituent & 4 & 1909 & \(4/1909\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+Added feedback changes later return timings despite the equal final ratio.
+The baseline ratios in successive disjoint windows are
+\(1/513,1/489,1/461,1/439\). Its horizon record has 127,571 parent H1
+traversals, including 3,507 in an unfinished return, four structural hinges and
+zero extra dwells. The channels record 11,212 ticks and 11,212 clicks.
+A label change alone leaves the trajectory unchanged.
+
+\paragraph{Specialization.}
+The baseline nonnegative load over the full window is \(224{,}657{,}122\).
+The same committed operands give signed diagnostic \(-224{,}657{,}122\).
+The sum specializes \mainequation{eq:temporal-sadar-burden}; capacity remains
+unassigned.
+For that fixed load, the unselected capacities \(112{,}328{,}561\),
+\(224{,}657{,}122\) and \(224{,}657{,}123\) give respective excesses
+\(112{,}328{,}561,0,0\) under \mainequation{eq:closure-residual} and
+\mainequation{eq:shedding-excess}. Neither the load nor ordinary emitted current
+selects a parent-loss event or a survival distribution.
+
+\aodprovenance{The law \path{matter1:constructed-coupling-r02:v1} and
+\path{manual2/data/m1/constructed_coupling/} retain the formation, scope maps,
+directed contacts and window records. Recurrence uses
+\mainequation{eq:wave-update-trace}, \mainequation{eq:coupling-trace} and
+\mainequation{eq:cadence-ratio}.}
+
+\subsection{Witnessed response, burden and retention}
+\label{manual2:witnessed-retention}
+\paragraph{Setup.}
+The separate R03 law prepares four candidate square returns, two reference
+returns, three background \(3{:}4{:}6\) returns and two outer-parent formation
+returns. The parent folds the evolving candidate wave; reference and background
+remain external. Each round completes the reference and background comparisons,
+decides from prior committed responses, then executes a candidate return or an
+open exit. An accepted return commits the response for a later decision.
+The raw normalization unit is \(u=5\), the reference cross-return's structural
+RD. Raw closure capacity is \(C^{\mathrm{close}}=5\), hence diagnostic capacity
+one. These choices belong to R03.
+
+\paragraph{Derivation.}
+With \(C_{3,e}=1\), active committed contributions \(e\in A_h\) supply
+\begin{equation}
+R_h=\sum_{e\in A_h}\rho^D_{\omega,e}\Lambda_e i_e,
+\qquad
+B_h=\sum_{e\in A_h}\rho^D_{\omega,e}|\Lambda_e|.
+\label{eq:manual2-witnessed-response-burden}
+\end{equation}
+The lag comes from certified return counts; orientation comes from the candidate
+return witness. Signed cancellation leaves the burden contributions present.
+The common conditional weight formula is
+\begin{equation}
+X(L)=\frac{\max(0,L-5)}5,\qquad
+(w_+,w_-,w_{\mathrm{exit}})=(1,1,X(L)),\qquad
+P_{\mathrm{exit}}=\frac{X(L)}{2+X(L)}.
+\label{eq:manual2-witnessed-retention-kernel}
+\end{equation}
+The net-memory control uses \(L=|R_h|\); the burden model uses \(L=B_h\).
+The reference contributes raw pressure 5 and lag 1. The constructed background
+has \(RD=68+1+68=137\) and baseline lag zero.
+
+\begin{table}[H]
+\centering\small
+\caption{Two-return prefixes, each with probability \(1/4\). Exit probabilities
+apply at the subsequent decision.}
+\label{tab:manual2-witnessed-response}
+\begin{tabular}{@{}lrrrrcc@{}}
+\toprule
+Prefix & \(R_h\) & \(B_h\) & \(R_h/u\) & \(B_h/u\) & Net exit & Burden exit\\
+\midrule
+\(++\) & 10 & 10 & 2 & 2 & \(1/3\) & \(1/3\)\\
+\(+-\) & 0 & 10 & 0 & 2 & 0 & \(1/3\)\\
+\(-+\) & 0 & 10 & 0 & 2 & 0 & \(1/3\)\\
+\(--\) & \(-10\) & 10 & \(-2\) & 2 & \(1/3\) & \(1/3\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Specialization.}
+Exact path probabilities give the retained masses in
+\tabref{tab:manual2-witnessed-survival}. Gating feedback preserves its response
+history while disabling its use. Restricting active membership to the latest
+response group records the earlier group's exclusion; the duration-participation
+window remains fixed. Neither operation erases a contribution. A relief of a
+fixed retained group would require its own recorded rebalancing operation.
+\begin{table}[H]
+\centering\small
+\caption{R03 survival after three new reference returns.}
+\label{tab:manual2-witnessed-survival}
+\begin{tabular}{@{}lc@{}}
+\toprule
+Case & \(S(3)\)\\
+\midrule
+Net memory & \(5/6\)\\
+Nonnegative burden & \(2/3\)\\
+Burden input gated after response 2 & 1\\
+Only latest response group participates & 1\\
+Second new \(3{:}4{:}6\) return held pending & \(5/76\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+Holding the background return pending after its first H1 edge changes its lag
+to one. The second
+response carries raw burden \(5+137=142\); total burden 147 gives next-exit
+probability \(71/76\). This is a finite intervention under the same capacity
+rule. Its median loss count crosses in \((2,3]\); the other four cases have
+no median crossing by the horizon.
+
+An absorbed third-round history retains two new parent reclosures over three
+reference bips, two new candidate reclosures, eight candidate H1 traversals and
+ten outer H1 traversals. The last two outer edges form an open exit, not another
+return. The absorbed burden case has two candidate hinges, three outer hinges
+including the exit turn, zero optional dwells, six channel ticks and six clicks;
+the reference completes twelve H1 traversals. The loss witness exposes the
+complete evolving inner lineage. Surviving
+histories are censored at three reference returns. Individual loss count,
+ensemble median, current emission and physical half-life remain distinct.
+
+\paragraph{Falsification.}
+The first four cases share the committed prefix before the third decision.
+Reversing all current orientations reverses signed response and preserves
+burden. A separate reflection control gives forward duration 5 and reverse
+duration 7. Passive observation leaves the evolution unchanged; a future response
+cannot alter an earlier decision. These controls distinguish retained history,
+active participation and directional reflection.
+
+\aodprovenance{The law \path{m1:witnessed-retention:r03:integration-v1} and
+\path{manual2/data/m1/witnessed_retention/} bind the complete histories and
+terminal counts. The burden, residual and excess specialize
+\mainequation{eq:temporal-sadar-burden}, \mainequation{eq:closure-residual} and
+\mainequation{eq:shedding-excess}; their use at a later decision follows
+\mainequation{eq:causal-update}.}
+
+\subsection{Two configurations under one common law}
+\label{manual2:paired-configurations}
+\paragraph{Setup.}
+The paired construction selects Fl-286 and Fl-289 ground-state labels externally,
+with Og-294 as a larger control. Preparation fixes distinct two-return constituent
+seeds, their ordering, outer fold and common reference/background seeds. Each
+candidate retains its constituent witnesses, assembly maps and directed aggregate
+couplings. Physical preparation and internal nuclear couplings are unspecified.
+
+\paragraph{Derivation.}
+The declared \(3{:}3{:}6\) proton-facing and \(3{:}4{:}6\) neutron-facing
+inventories give
+\begin{table}[H]
+\centering\small
+\caption{Support of the three explicitly constructed aggregate candidates.}
+\label{tab:manual2-paired-constructions}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Candidate & \(3{:}3{:}6\) waves & \(3{:}4{:}6\) waves & Outward occurrences & RD\\
+\midrule
+Fl-286 & 114 & 172 & 15116 & 30233\\
+Fl-289 & 114 & 175 & 15320 & 30641\\
+Og-294 & 118 & 176 & 15508 & 31017\\
+\bottomrule
+\end{tabular}
+\end{table}
+The common R02 update and contact laws act on the five aggregate fields;
+the constituent formation histories remain fixed. No isotope-specific capacity,
+hazard or lifetime multiplier enters this construction.
+Counting after formation cuts \(61469\), \(62285\) and \(63037\), respectively,
+to the common cut \(4\times10^9\) gives parent/reference counts
+\(4/1940=1/485\) for Fl-286, \(4/1920=1/480\) for Fl-289 and
+\(4/1902=2/951\) for Og-294. Each parent completes four reclosures;
+their return cuts and reference exposures differ.
+
+\paragraph{Specialization.}
+A combined R02--R03 model requires an explicit map of states, retained scopes,
+event order, active contribution groups, normalization, capacity, reference
+exposure and the loss/exposure operation. R02's reference has structural RD 61;
+R03's square cross-return has RD 5. The latter's raw capacity 5 is a choice of
+that protocol. It does not supply a nuclear aggregate capacity. A positive
+burden or surplus alone supplies no loss predicate.
+
+The isotope/state identification, physical update and retention law,
+experimental loss and elapsed-time map, and dependence-aware uncertainty remain
+unspecified. Fl-298 remains unscored. The previously exposed Fl measurements
+can support a retrospective comparison once those premises are supplied.
+
+\paragraph{Falsification.}
+Relabelling the Fl-286 construction as Og-294 leaves its identity, actions,
+packets and return history unchanged through cut \(1{,}100{,}000\).
+Adding three neutron-facing constituents between the paired preparations
+changes the parent identity and scope map under the same law. A label change and
+a configuration change therefore have distinct witnessed effects.
+
+\aodprovenance{\path{matter1:paired-aggregate-configurations:v1} binds the common
+law and separate preparations under \path{manual2/data/m1/constructed_coupling/}.
+The R02 and R03 examples retain their separate law identities.}

@@ -24,7 +24,8 @@ OPTIMIZED_MODULES = {'test_matter1_application', 'test_matter1_data', 'test_matt
                      'test_matter1_temporal', 'test_matter1_hyperfine', 'test_matter1_stateful',
                      'test_matter1_metrology', 'test_matter1_atomic', 'test_matter1_bipm',
                      'test_matter1_v2_application', 'test_matter1_m3', 'test_matter1_m3_evidence', 'test_matter1_bipm_precision',
-                     'test_matter1_isotopes', 'test_matter1_survival', 'test_matter1_isotope_integration'}
+                     'test_matter1_isotopes', 'test_matter1_survival', 'test_matter1_isotope_integration',
+                     'test_matter1_constructed_coupling', 'test_matter1_witnessed_retention'}
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')

@@ -1,0 +1,21 @@
+{
+  "changed_inventory_changes_trajectory": true,
+  "committed_prefix_preserved": true,
+  "disabled_feedback_restores_base": true,
+  "full_runs_verified": [
+    "baseline",
+    "add_346_to_parent",
+    "same_addition_feedback_disabled",
+    "one_fewer_346_constituent"
+  ],
+  "full_upstream_repository_suite": "not run; detached application only",
+  "hosted_ci": "not changed; no remote write",
+  "manuscript_build": "not applicable; no manuscript changed",
+  "normal_test_log": "../checks_test_normal.log",
+  "normal_tests": 18,
+  "optimized_test_log": "../checks_test_optimized.log",
+  "optimized_tests": 18,
+  "physical_decay_prediction": false,
+  "source_files_verified": 9,
+  "window_counter_conservation": true
+}

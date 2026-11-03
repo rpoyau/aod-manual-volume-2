@@ -54,7 +54,31 @@ EXPECTED_OUTPUTS = {
     'sections/generated_isotope_chains.tex',
     'visuals/matter1-layout.json',
     'visuals/matter1-reference.html',
+    'data/m1/constructed_coupling/constructed_report.json',
+    'data/m1/witnessed_retention/prediction.json',
+    'data/m1/witnessed_retention/survival.csv',
+    'data/m1/witnessed_retention/two_history_comparison.csv',
+    'data/m1/witnessed_retention/terminal_counts.csv',
+    'data/m1/witnessed_retention/finite_kernels.json',
+    'data/m1/witnessed_retention/sha256.json',
 }
+EXPECTED_OUTPUTS.update(
+    f'data/m1/constructed_coupling/{case}/{name}'
+    for case in (
+        'r02/baseline', 'r02/add_346_to_parent',
+        'r02/same_addition_feedback_disabled', 'r02/one_fewer_346_constituent',
+        'configurations/Fl-286', 'configurations/Fl-289',
+    )
+    for name in (
+        'checks.json', 'constructed_state.json', 'closures.csv',
+        'windowed_relations.csv', 'directional_rd_rcd.csv',
+        'atomic_and_hinge_events.jsonl.gz', 'tick_events.jsonl.gz',
+        'click_and_rcd_events.jsonl.gz', 'pressure_events.jsonl.gz',
+        'nonnegative_load_terms.jsonl.gz', 'outer_return_witnesses.jsonl.gz',
+        'terminal_survival.csv', 'prediction.json', 'input_context.json',
+        'application_binding.json',
+    )
+)
 
 
 def need(condition, message):
@@ -119,7 +143,9 @@ def main():
         commands.extend([
             [args.generator_python, '-B', str(root / 'manual2/scripts' / f'generate_matter1_{name}.py'),
              '--root', str(root), '--output-root', str(out.parent)]
-            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology', 'bipm', 'bipm_precision', 'atomic')
+            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology',
+                         'bipm', 'bipm_precision', 'atomic', 'constructed_coupling',
+                         'witnessed_retention')
         ])
         commands.append([args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_survival.py'),
                          '--root',str(root),'--output-root',str(out.parent),'--isotope-catalog',str(catalog)])
