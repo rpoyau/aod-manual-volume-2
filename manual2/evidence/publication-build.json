@@ -127,6 +127,7 @@
     "manual2/data/m1/isotopes/curation.json": "b25ca90dad87219f5582ad01ec1e55f48467db54621f241675b79392a6cd41e4",
     "manual2/data/m1/isotopes/target-declaration.json": "f08e6e557708aa9602a8f0227909274651e05d10c13725a522380509ac3327d3",
     "manual2/data/m1/isotopes/verification.json": "c9c7cc491df3a58a4faa1f08ceb88438dbe7f46edb43e983da15b7f8bac086c5",
+    "manual2/data/m1/m3_observation/observation_report.json": "193f82cc6572a8b7366a9c05aa024f04b9c32dbe7bc615b5cbf7b7a52f2aab8b",
     "manual2/data/m1/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
     "manual2/data/m1/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
     "manual2/data/m1/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
@@ -134,6 +135,8 @@
     "manual2/data/m1/metrology/metrology_report.json": "7dce3537cabf2da85cd5bce9225ae60744e343550066fd8cf6bed3045b9ed723",
     "manual2/data/m1/model_inputs.json": "2a04c01ba292456611b79926dc786da99dd9b4f9238bf4e7c88220c6c3a0fa43",
     "manual2/data/m1/reference_inputs.csv": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232",
+    "manual2/data/m1/retention_adapter/assessment.json": "bb642591827f3204b2fcdcc5d0f83d68cce5a409d335b84a16ffc7397400c611",
+    "manual2/data/m1/retention_adapter/sha256.json": "7d9da5f8e9ebe4cb507e915f087dd0f67f5ea2af58a0b686e2f17c26a2b2e86e",
     "manual2/data/m1/schema.json": "17d1ca9092ed16fc3b88ea415a4dfb18f8730b10c7c083916271df4bfe13abe4",
     "manual2/data/m1/stateful/baseline_scenario.json": "e131039920482f43b2590d4e22d9868254d94c22c98c60827ae0fa5cad31e15a",
     "manual2/data/m1/stateful/baseline_trace.json": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62",
@@ -176,7 +179,7 @@
     "manual2/sections/05-fusion-handedness-relational-time.tex": "b44400b6b9b3e70463cc0f218496a3d1b0e3d1a267fee87c368846e76e644c03",
     "manual2/sections/06-hyperfine-fusion-reclosure-comparison.tex": "5c6b3becb1df80aca8dd636a575f3ba0b112e1cfa1f188bb5a62474afd9406c1",
     "manual2/sections/07-stateful-si-prediction.tex": "e90844ac4815f206016852b3900c7b4fcea640d130186d53881f5ced333633ef",
-    "manual2/sections/08-isotope-survival.tex": "eb28acee473021bfb6dd1e746b75eb9f0c9fea075519d922ce34745cfb9b6dd5",
+    "manual2/sections/08-isotope-survival.tex": "ad5f67e91fb88630fe82bb2a7e35f20e67a9fd839f2955c4ea870984abbe43ea",
     "manual2/sections/09_prediction_test_fixture_registry.tex": "f137bd7cb5e5f90ff44f00a82089f8170c265d56994649977d45ee9511a4fb12",
     "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2",
     "manual2/sections/generated_isotope_anchors.tex": "9f0deffbd9df4642abb89b4d93da2f8f4dd4ed16b03cc0ff492bae6eb4da35b5",
@@ -185,9 +188,9 @@
     "manual2/sections/generated_isotope_superheavy.tex": "ef5c811d1d4437cb2e6c1bb7e9b0f1a2f4c59ad2415f01fa75a4f3d02bf271e9"
   },
   "published_artifacts": {
-    "main.pdf": "305ca7267c7d91464905caf1781be639ba216d01b865e209f5c1570cf1458009",
-    "manual2/main.pdf": "9560afaa637f6cbf2b2602e1f291b93a67f1d89a18d6c7906d2322d1a6538dfb",
-    "manual2.pdf": "e99714470ab5e774d7763f3cfcc255acfe87a1a076549b6523dcb3ccc591c15e"
+    "main.pdf": "26895eeb1db6fc172742a54649c9a22bfc8ce549e39e252053f740c3c755d453",
+    "manual2/main.pdf": "a5f8ceea9e88a40bada17cf653ba327d12901d95be463d0797c949f20bf7d886",
+    "manual2.pdf": "1df27802c7d1a0e1f182cbad3a8d722e44da1bb5b48f7ed5bb43a7eee17f96dd"
   },
   "main_pages": 73,
   "commands": [

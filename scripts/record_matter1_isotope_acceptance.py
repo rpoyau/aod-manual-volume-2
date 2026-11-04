@@ -17,6 +17,8 @@ GROUPS={
  'test_matter1_isotope_integration':('INT','frozen_data_and_explicit_successor_conservation'),
  'test_matter1_constructed_coupling':('CC','constructed_aggregate_cadence_and_paired_configuration_not_physical_isotope_admission'),
  'test_matter1_witnessed_retention':('WR','committed_response_burden_and_later_retention_under_a_declared_finite_law'),
+ 'test_matter1_retention_adapter':('RA','replayed_aggregate_construction_and_explicit_missing_retention_premises'),
+ 'test_matter1_m3_observation':('OBS','typed_M3_observation_context_and_original_input_replay_not_physical_calibration'),
 }
 
 def record(checks,output):
@@ -28,9 +30,9 @@ def record(checks,output):
    evidence.require(all(test in logs[m]['methods'] for m in logs),'missing assertion '+test)
    rows.append({'id':f'{prefix}-{i:02}', 'test_id':test,'assertion_scope':scope,'outcome':'executed_scope_pass','modes':['normal','optimized']})
  sys.path.insert(0,str(root/'manual2/scripts'))
- import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention
+ import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention,matter1_retention_adapter,matter1_m3_observation
  reports={}
- for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention)]:
+ for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention),('retention_adapter',matter1_retention_adapter),('m3_observation',matter1_m3_observation)]:
   reports[name]=module.verify(root)
   for suffix in ('','-optimized'):
    evidence.check_equal(reports[name],evidence.read_json(checks/(name+suffix+'.json')),name+suffix+' receipt stale')
@@ -39,7 +41,8 @@ def record(checks,output):
  evidence.require(all(r['source_switch'] and r['chain_navigation'] and r['unknown_and_stable_distinct'] and not r['horizontal_overflow'] and r['minimum_badge_contrast']>=7 for r in browser['isotope_checks']),'isotope browser assertion failed')
  m3=evidence.read_json(checks/'m3-consumer.json')
  evidence.check_equal(m3,evidence.read_json(checks/'m3-consumer-optimized.json'),'M3 mode mismatch')
- evidence.require(m3['status']=='PASS_REQUIRED_M3_CONSUMER' and m3['upstream_head']=='3ffb3c9984eef95ca4b105ac323d249f30412816','required exact M3 execution missing')
+ binding=evidence.read_json(root/'manual2/vendor/aod_m3/binding.json')
+ evidence.require(m3['status']=='PASS_REQUIRED_M3_CONSUMER' and m3['upstream_head']==binding['upstream_head'],'required exact M3 execution missing')
  publication=evidence.read_json(checks/'publication.json');reproduction=evidence.read_json(checks/'reproduction.json')
  evidence.require(publication['status']=='PASS_PUBLICATION','publication failed')
  from check_matter1_reproduction import EXPECTED_OUTPUTS

@@ -15,9 +15,15 @@ execution and remaining dependencies are recorded in
 [`m3-migration.md`](../manual2/evidence/m3-migration.md) and
 [`isotope-results.md`](../manual2/evidence/isotope-results.md).
 The AOD bindings identify reviewed PR43 candidates, not a version-43 release.
-The executable binding includes the F1 evidence-value validation repair; Main's
-mathematical source bytes retain their earlier binding. Consumer replay checks
-both imported Main bytes and the executable against the repaired checkout.
+The executable binding includes the typed M3 temporal observation context and
+the F1 evidence-value validation repair; Main's mathematical source bytes retain
+their earlier binding. Current exports reside in `manual2/vendor/aod_m3/current/`.
+The original common-surrogate survival model keeps its separately verified
+`legacy-binding.json` and original mapping executor. These historical bytes are
+not the current temporal interface. The dated
+[`observation rebind`](../manual2/evidence/m3-observation-rebind-2026-11-04.json)
+records the two roles. Consumer replay checks imported Main, exact current exports,
+the unchanged legacy executor, and actual R03 observations against the pinned checkout.
 A newer upstream head is an update to review, not permission
 to replace these pins silently.
 
@@ -64,7 +70,11 @@ python3 -B -O scripts/check_matter1_m3_consumer.py --upstream-root "$AOD_SOURCE_
 ```
 
 This read-only check rejects the wrong upstream head or modified tracked files,
-compares imported Main and vendor bytes, and replays the actual consumer. A pass
+compares imported Main and vendor bytes, and replays the actual consumer. The R03
+adapter supplies admitted waves, complete directed contacts, preparation,
+committed prefixes, pending returns and the prior comparison to `ObservationContext`.
+Whole artifacts replay from separately supplied original R03 inputs. Gains remain
+stipulated at one cycle per return; no physical clock or isotope map is supplied. A pass
 does not establish native atomic/isotope admission or physical prediction.
 The separate skills checkout is not required to reproduce the scientific build;
 its project-history area and AOD-specific authoring profile are not imported.

@@ -14,10 +14,11 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'manual2/scripts'))
-from matter1_m3 import verify_vendor
+from matter1_m3 import verify_vendor, verify_legacy_vendor
+import matter1_m3_observation as observation
 from publication_support import verify_foundation
 
-HEAD = '3ffb3c9984eef95ca4b105ac323d249f30412816'
+HEAD = '139d6cf6cdd815afd88b17864867b91f202cac5e'
 
 
 def verify(root, upstream):
@@ -29,6 +30,7 @@ def verify(root, upstream):
     if git('diff', '--name-only', 'HEAD'):
         raise ValueError('M3 integration upstream has modified tracked files')
     binding = verify_vendor(root)
+    historical = verify_legacy_vendor(root)
     if binding['upstream_head'] != HEAD or git('rev-parse', 'HEAD^{tree}') != binding['upstream_tree']:
         raise ValueError('M3 consumer and executable binding disagree')
     for name, row in binding['files'].items():
@@ -44,6 +46,11 @@ def verify(root, upstream):
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     result = module.consumer_integration(root)
+    current = observation.report(root)
+    actual = observation.report(root, temporal_api=module)
+    if observation.canonical(current) != observation.canonical(actual):
+        raise ValueError('Vendored typed temporal execution differs from actual upstream')
+    persisted = observation.verify(root)
     if result['common_prefix_through_cut'] != 39 or not result['feedback_disabled_original_validator_rejected']:
         raise ValueError('M3 feedback/history integration failed')
     cases = result['cases']
@@ -52,9 +59,17 @@ def verify(root, upstream):
     if result['atomic_point_prediction']['frequency_hz'] is not None:
         raise ValueError('Integration cannot promote the unresolved atomic point prediction')
     return {'status': 'PASS_REQUIRED_M3_CONSUMER', 'upstream_head': HEAD,
+            'upstream_tree': binding['upstream_tree'],
+            'api_contract_sha256': binding['files']['current/TEMPORAL_OBSERVATION.json']['sha256'],
+            'historical_survival_executor_head': historical['upstream_head'],
             'foundation_upstream_head': foundation['upstream_head'],
             'foundation_source_digest': foundation['source_digest'],
-            'scope': 'Exact dependency and stateful feedback replay; no isotope admission, physical calibration or empirical agreement',
+            'scope': 'Exact dependency, actual typed R03 observation-context replay and stateful feedback; no isotope admission, physical calibration or empirical agreement',
+            'typed_observation': {**persisted, 'actual_upstream_equals_vendored': True,
+                'cases': {name: {'original_input_sha256': item['original_input_sha256'],
+                    'counts': item['prediction']['complete_temporal_record']['counts'],
+                    'context_sha256': item['prediction']['complete_temporal_record']['observation_context']['input_sha256']}
+                    for name, item in actual['cases'].items()}},
             'executed': result}
 
 

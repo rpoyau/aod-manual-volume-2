@@ -99,18 +99,18 @@ class M3MigrationTests(unittest.TestCase):
                 legacy_engine_digest(root, 'manual2/scripts/matter1_atomic.py')
 
     def test_vendor_edited_source_and_resealed_binding_rejected(self):
-        self.assertEqual(verify_vendor(ROOT)['upstream_head'], '3ffb3c9984eef95ca4b105ac323d249f30412816')
+        self.assertEqual(verify_vendor(ROOT)['upstream_head'], '139d6cf6cdd815afd88b17864867b91f202cac5e')
         for reseal in (False, True):
             with self.subTest(reseal=reseal), tempfile.TemporaryDirectory() as tmp:
                 root = Path(tmp)
                 dest = root / 'manual2/vendor/aod_m3'
                 shutil.copytree(ROOT / 'manual2/vendor/aod_m3', dest)
-                code = dest / 'aod_mapping_error.py'
+                code = dest / 'current/aod_mapping_error.py'
                 code.write_bytes(code.read_bytes() + b'\n# hostile modification\n')
                 if reseal:
                     p = dest / 'binding.json'
                     record = json.loads(p.read_bytes())
-                    record['files']['aod_mapping_error.py']['sha256'] = hashlib.sha256(code.read_bytes()).hexdigest()
+                    record['files']['current/aod_mapping_error.py']['sha256'] = hashlib.sha256(code.read_bytes()).hexdigest()
                     p.write_text(json.dumps(record))
                 before = snapshot(root)
                 with self.assertRaisesRegex(ValueError, 'M3 vendor'):

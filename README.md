@@ -1,6 +1,6 @@
 # Alpha↔Omega Dynamics — Manual Volume II: Matter I
 
-A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 Main candidate `b78b48d` (PR43, canonical marker v41.02) and AFC v2.4. The consumed M3 executable has its own [exact vendor binding](manual2/vendor/aod_m3/binding.json), including the F1 evidence-value validation repair. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
+A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 Main candidate `b78b48d` (PR43, canonical marker v41.02) and AFC v2.4. The consumed M3 executable and observation interface have their own [exact vendor binding](manual2/vendor/aod_m3/binding.json). The historical survival model retains its original executable binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
@@ -54,7 +54,7 @@ python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
 python3 -B scripts/check_matter1_application.py
 python3 -B scripts/check_matter1_v2_application.py
-for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival; do
+for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival constructed_coupling witnessed_retention retention_adapter m3_observation; do
   python3 -B "manual2/scripts/verify_matter1_${lane}.py"
   python3 -B -O "manual2/scripts/verify_matter1_${lane}.py"
 done
@@ -88,7 +88,7 @@ To reproduce data and chart outputs without replacing delivered files:
 python3 -B scripts/check_matter1_reproduction.py
 ```
 
-The reproduction check generates into a disposable directory, compares the exact 33-output inventory, data/table/layout/HTML/SVG/application JSON bytes and PDF text/vector geometry and colors, and checks that source bytes remain unchanged. Character coordinates remain compared to 0.001 pt; PDF tolerance was not widened to hide renderer drift. `--generator-python PATH` supports a separate interpreter satisfying the same renderer profile.
+The reproduction check generates into a disposable directory, compares the complete declared output inventory, data/table/layout/HTML/SVG/application JSON bytes and PDF text/vector geometry and colors, and checks that source bytes remain unchanged. Character coordinates remain compared to 0.001 pt. `--generator-python PATH` supports a separate interpreter satisfying the same renderer profile.
 
 ## Tests and CI scope
 
@@ -157,15 +157,19 @@ Two separately bound examples extend the isotope-survival section. `constructed_
 
 `witnessed_retention/` retains the distinct R03 square-return model. The raw unit and closure capacity are both 5. Opposite signed responses cancel while their burden remains: the exact third-return survivals are 5/6 for net memory and 2/3 for burden. The feedback, window and pending-background controls retain complete committed histories and exposed inner lineage. The earlier common-surrogate survival model, its nine-point curves and retrospective rejection are unchanged.
 
-Both lanes use explicit generators and read-only complete replay:
+The examples and their adapters use explicit generators and read-only complete replay:
 
 ```sh
 python3 -B manual2/scripts/verify_matter1_constructed_coupling.py
 python3 -B -O manual2/scripts/verify_matter1_constructed_coupling.py
 python3 -B manual2/scripts/verify_matter1_witnessed_retention.py
 python3 -B -O manual2/scripts/verify_matter1_witnessed_retention.py
+python3 -B manual2/scripts/verify_matter1_retention_adapter.py
+python3 -B -O manual2/scripts/verify_matter1_retention_adapter.py
+python3 -B manual2/scripts/verify_matter1_m3_observation.py
+python3 -B -O manual2/scripts/verify_matter1_m3_observation.py
 ```
 
-Their `generate_matter1_*.py` commands accept `--root SOURCE_REPO --output-root OUTPUT_REPO`. The complete reproduction check regenerates both lanes in a disposable directory; CI and the scoped isotope acceptance recorder include their tests. Full constructed-coupling replay takes several minutes.
+Their `generate_matter1_*.py` commands accept `--root SOURCE_REPO --output-root OUTPUT_REPO`. The complete reproduction check regenerates these lanes in a disposable directory; CI and the scoped isotope acceptance recorder include their tests. Full constructed-coupling replay takes several minutes.
 
-The two examples have separate state, reference and capacity choices. No combined retention model or physical isotope half-life is asserted. The constructed report records the missing adapter, preparation, nuclear loss, observation and uncertainty premises individually; Fl-298 remains unscored. The existing exact M3 executable pin remains active until the separately requested observation-interface candidate is supplied and replayed.
+The two examples have separate state, reference and capacity choices. `retention_adapter/assessment.json` binds the actual Fl-286, Fl-289 and Og-294 constructions and records the missing normalization, capacity and loss mappings. It does not select a combined retention law. `m3_observation/observation_report.json` consumes the exact M3 observation interface with independently reconstructed R03 histories, preparation, directed contacts and pending returns. Its replay binds the complete observation context; it supplies no physical clock calibration. Physical isotope half-life remains unresolved and Fl-298 remains unscored.

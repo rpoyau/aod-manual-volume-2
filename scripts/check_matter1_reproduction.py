@@ -61,6 +61,9 @@ EXPECTED_OUTPUTS = {
     'data/m1/witnessed_retention/terminal_counts.csv',
     'data/m1/witnessed_retention/finite_kernels.json',
     'data/m1/witnessed_retention/sha256.json',
+    'data/m1/retention_adapter/assessment.json',
+    'data/m1/retention_adapter/sha256.json',
+    'data/m1/m3_observation/observation_report.json',
 }
 EXPECTED_OUTPUTS.update(
     f'data/m1/constructed_coupling/{case}/{name}'
@@ -93,7 +96,9 @@ def snapshot(root):
     for folder in ('manual2', 'scripts', '.github/workflows'):
         paths.update(p for p in (root/folder).rglob('*') if p.is_file()
                      and '__pycache__' not in p.parts
-                     and p.suffix not in {'.aux','.log','.out','.toc','.fls','.xdv','.blg','.pyc'})
+                     and p.suffix not in {'.aux','.out','.toc','.fls','.xdv','.blg','.pyc'}
+                     # Historical data logs are bound source inputs, not build logs.
+                     and (p.suffix != '.log' or p.is_relative_to(root/'manual2/data')))
     for name in ('README.md','requirements-matter1.txt','package.json'):
         if (root/name).is_file(): paths.add(root/name)
     foundation = root/'manual2/evidence/foundation-source.json'
@@ -145,7 +150,7 @@ def main():
              '--root', str(root), '--output-root', str(out.parent)]
             for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology',
                          'bipm', 'bipm_precision', 'atomic', 'constructed_coupling',
-                         'witnessed_retention')
+                         'witnessed_retention', 'retention_adapter', 'm3_observation')
         ])
         commands.append([args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_survival.py'),
                          '--root',str(root),'--output-root',str(out.parent),'--isotope-catalog',str(catalog)])

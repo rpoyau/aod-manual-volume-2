@@ -9,6 +9,7 @@ import unittest
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'scripts'))
 import isotope_preservation as preservation
+import check_matter1_reproduction as reproduction
 
 class IsotopeIntegrationTests(unittest.TestCase):
     def test_frozen_data_skills_and_geometry_are_preserved(self):
@@ -47,5 +48,18 @@ class IsotopeIntegrationTests(unittest.TestCase):
         self.assertEqual(fl['empirical_status'],'unobserved_model_target')
         self.assertIsNone(fl['half_life']['value_seconds'])
         self.assertEqual(fl['support_coordinates']['r_n'],70)
+
+    def test_reproduction_snapshot_detects_bound_historical_log_mutation(self):
+        name='manual2/data/m1/constructed_coupling/source_packet/historical_checks/checks_test_normal.log'
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);target=root/name
+            target.parent.mkdir(parents=True);shutil.copy2(ROOT/name,target)
+            build_log=root/'manual2/main.log';build_log.write_text('temporary build output\n')
+            before=reproduction.snapshot(root)
+            self.assertIn(name,before)
+            build_log.write_text('changed build output\n')
+            self.assertEqual(reproduction.snapshot(root),before)
+            target.write_bytes(target.read_bytes()+b'\nchanged historical evidence\n')
+            self.assertNotEqual(reproduction.snapshot(root),before)
 
 if __name__=='__main__':unittest.main()
