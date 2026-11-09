@@ -6,7 +6,7 @@
       "upstream_path": "contracts/scientific/ERROR_BUDGET.json"
     },
     "current/M3_MATHEMATICAL_BINDINGS.json": {
-      "sha256": "7048264c2faed6ca6ea3af449bf2f07ccb447648a78bec132c99b059b52055ab",
+      "sha256": "daa89f9692062303c9ce02e137e956806ab7c4723acc6486cb54c1384a8a62cf",
       "upstream_path": "contracts/scientific/M3_MATHEMATICAL_BINDINGS.json"
     },
     "current/MAP_CONTRACT.json": {
@@ -35,10 +35,15 @@
     "scope": "Frozen pre-feedback mapping executor for original common-surrogate survival; not current temporal interface",
     "sha256": "68feb86e99330ee705f9a75161d8495d356d082740f88bf29a70217e4d331bb0"
   },
+  "previous_binding": {
+    "path": "manual2/evidence/pre-m3-main/rebind-2026-11-08/manual2/vendor/aod_m3/binding.json",
+    "scope": "Prior declared R03 observation vendor; retained as historical dependency evidence.",
+    "sha256": "7e5eb5c6882d1e880fdbe51a74322457a0cbc376b8c8f8290d094db41ef07f7f"
+  },
   "schema_version": 2,
   "scope": "Exact native temporal observation and mapping exports; conditional declared R03 observation, not physical calibration or isotope admission",
-  "upstream_head": "139d6cf6cdd815afd88b17864867b91f202cac5e",
+  "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
   "upstream_repository": "https://github.com/rpoyau/aod",
-  "upstream_status": "unpublished_local_CI_test_repair_candidate",
-  "upstream_tree": "a3ba011f6e3c9eeddb5c1b620a24096196bd0249"
+  "upstream_status": "reviewed_local_PR_43_candidate_at_binding",
+  "upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
 }

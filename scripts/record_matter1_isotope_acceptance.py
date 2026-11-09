@@ -19,6 +19,7 @@ GROUPS={
  'test_matter1_witnessed_retention':('WR','committed_response_burden_and_later_retention_under_a_declared_finite_law'),
  'test_matter1_retention_adapter':('RA','replayed_aggregate_construction_and_explicit_missing_retention_premises'),
  'test_matter1_m3_observation':('OBS','typed_M3_observation_context_and_original_input_replay_not_physical_calibration'),
+ 'test_matter1_m3_metrology':('MET','source_bound_comparison_reductions_and_missing_input_dispositions_not_atomic_prediction'),
 }
 
 def record(checks,output):
@@ -30,9 +31,9 @@ def record(checks,output):
    evidence.require(all(test in logs[m]['methods'] for m in logs),'missing assertion '+test)
    rows.append({'id':f'{prefix}-{i:02}', 'test_id':test,'assertion_scope':scope,'outcome':'executed_scope_pass','modes':['normal','optimized']})
  sys.path.insert(0,str(root/'manual2/scripts'))
- import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention,matter1_retention_adapter,matter1_m3_observation
+ import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention,matter1_retention_adapter,matter1_m3_observation,matter1_m3_metrology
  reports={}
- for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention),('retention_adapter',matter1_retention_adapter),('m3_observation',matter1_m3_observation)]:
+ for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention),('retention_adapter',matter1_retention_adapter),('m3_observation',matter1_m3_observation),('m3_metrology',matter1_m3_metrology)]:
   reports[name]=module.verify(root)
   for suffix in ('','-optimized'):
    evidence.check_equal(reports[name],evidence.read_json(checks/(name+suffix+'.json')),name+suffix+' receipt stale')
@@ -43,6 +44,8 @@ def record(checks,output):
  evidence.check_equal(m3,evidence.read_json(checks/'m3-consumer-optimized.json'),'M3 mode mismatch')
  binding=evidence.read_json(root/'manual2/vendor/aod_m3/binding.json')
  evidence.require(m3['status']=='PASS_REQUIRED_M3_CONSUMER' and m3['upstream_head']==binding['upstream_head'],'required exact M3 execution missing')
+ evidence.require(m3['metrology']['actual_upstream_equals_vendored'] is True,'actual upstream metrology replay missing')
+ evidence.check_equal(m3['metrology']['persisted_verification'],reports['m3_metrology'],'metrology consumer receipt stale')
  publication=evidence.read_json(checks/'publication.json');reproduction=evidence.read_json(checks/'reproduction.json')
  evidence.require(publication['status']=='PASS_PUBLICATION','publication failed')
  from check_matter1_reproduction import EXPECTED_OUTPUTS

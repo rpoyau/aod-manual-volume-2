@@ -107,6 +107,56 @@ The integration checks reject covariance with incorrect units, ordering, asymmet
 \aodprovenance{\path{manual2/data/m1/metrology/}; the application contract is preserved in \path{manual2/evidence/v2-request/SI_ANCHOR_CONTRACT.md}.}
 \aodliteraturenote{Realization and proper time: CCTF~\cite{bipm-mise-second}. Measurement models and correlated uncertainty: JCGM~\cite{jcgm100,jcgm6}.}
 
+\subsection{Source-bound metrological comparisons}
+\label{manual2:m3-metrology}
+\paragraph{Setup.}
+The M3 application binds the R03 observations of
+\secref{manual2:witnessed-retention} and the four diagnostic outputs of
+\eqnref{eq:manual2-observation-freedom}. Each calculation retains its original
+inputs before the historical hydrogen target is read. The target's measurement
+interval has no established correspondence to the simulated cut window.
+
+\paragraph{Derivation.}
+The inherited hydrogen reduction evaluates Hellwig et al.'s Tables IV and VI
+with their stated correction ownership. Their corrected values are
+\(1\,420\,405\,751.7691\,\mathrm{Hz}\) and
+\(1\,420\,405\,751.7667\,\mathrm{Hz}\). Their exact printed-input mean,
+\(1\,420\,405\,751.7679\,\mathrm{Hz}\), remains distinct from the published
+rounded mean and its reported \(0.002\,\mathrm{Hz}\) uncertainty. A correction
+already included in an input is not added again.
+
+The comparison subtracts the authenticated target from each diagnostic output.
+It retains the reference dependencies, correction ownership and unresolved
+applicability and uncertainty. It selects neither gain witness and infers no
+apparatus correction from a residual.
+
+\paragraph{Specialization.}
+The H-2 and H-3 application records identify the missing preparation,
+configuration-to-observable law, sourced target and apparatus inputs. They
+supply no isotope-specific frequency. The selected Lv-290 intervals in
+\secref{manual2:lv-event-records} instead concern detector events.
+
+\paragraph{Calibration.}
+The Cs defining frequency supplies the scale. The NIST-F2 August 2013
+uncertainties and typical Table~1 budget retain separate campaign identities;
+their printed fractional values are converted to hertz using that scale.
+Shared reference contributions retain their dependence. Complete physical
+uncertainty and the map from reflection duration to the measurement interval
+remain unspecified.
+
+\paragraph{Falsification.}
+Changing an evaluation target must preserve the frozen prediction. Substituted
+histories, duplicate corrections and unsupported promotion of unknown terms
+invalidate the corresponding record. Exact endpoint subtraction alone does
+not establish a matched physical observation.
+
+\aodprovenance{\path{manual2/data/m1/m3_metrology/} separates predictions,
+comparisons and the application report. Typed mappings use
+\mainsection{sec:m3-maps}; exact propagation requires the joint law of
+\mainequation{eq:m3-finite-law}.}
+\aodliteraturenote{Hydrogen source reduction: Hellwig et al.~\cite{hellwig1970}.
+Fountain realization: Heavner et al.~\cite{heavner-nist-f2-2014}.}
+
 \subsection{Published frequency covariance}
 \paragraph{Setup.}
 The BIPM adjustment input retains 153 rows, including seven effectively excluded by enlarged uncertainties, and 1,168 correlation coefficients. The output contains 14 frequency estimates and their covariance. Raw bytes, source metadata and prior target exposure are preserved.

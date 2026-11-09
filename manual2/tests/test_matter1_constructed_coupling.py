@@ -4,6 +4,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+import shutil
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -13,7 +14,42 @@ sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'manual2/scripts'))
 import matter1_constructed_coupling as app
+import matter1_constructed_source as source_adapter
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 c = app.engine_module(ROOT)
+
+
+class SourceAdapterTests(unittest.TestCase):
+    def fixture(self, target):
+        copy_foundation_receipts(ROOT, target)
+        path = target/source_adapter.APPLICATION
+        path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT/source_adapter.APPLICATION, path)
+
+    def test_current_executor_and_historical_recipe_are_separately_bound(self):
+        record = source_adapter.verify_adapter(ROOT)
+        contract = app.read_json(ROOT/app.DATA/'model_contract.json')
+        self.assertEqual(app.default_contract(ROOT), contract)
+        self.assertEqual(record['before_sha256'], contract['application_source_sha256']['matter1_constructed_coupling.py'])
+        self.assertNotEqual(record['before_sha256'], record['after_sha256'])
+        for case, context in app.contexts(contract).items():
+            app.verify_case(ROOT, context, ROOT/app.DATA/case, replay=False)
+
+    def test_changed_current_archive_and_self_resealed_receipt_rejected(self):
+        for mutation in ('current', 'archive', 'receipt'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp)
+                self.fixture(root)
+                record = source_adapter.verify_adapter(root)
+                path = root/(record['archive'] if mutation == 'archive' else source_adapter.APPLICATION)
+                path.write_bytes(path.read_bytes()+b'\n# altered\n')
+                if mutation == 'receipt':
+                    record['after_sha256'] = app.sha(path)
+                    (root/source_adapter.RECEIPT).write_bytes(app.canonical(record))
+                before = {str(p.relative_to(root)): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+                with self.assertRaisesRegex(ValueError, 'Constructed adapter:'):
+                    source_adapter.historical_recipe_digest(root)
+                self.assertEqual(before, {str(p.relative_to(root)): p.read_bytes() for p in root.rglob('*') if p.is_file()})
 
 
 class ConstructionTests(unittest.TestCase):

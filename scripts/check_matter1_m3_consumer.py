@@ -6,6 +6,7 @@ the upstream temporal adapter against this consumer and tests the feedback
 intervention. The imported mathematical dependency is not an admission receipt.
 """
 import argparse
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -16,9 +17,41 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'manual2/scripts'))
 from matter1_m3 import verify_vendor, verify_legacy_vendor
 import matter1_m3_observation as observation
+import matter1_m3_metrology as metrology
 from publication_support import verify_foundation
 
-HEAD = '139d6cf6cdd815afd88b17864867b91f202cac5e'
+HEAD = '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9'
+
+
+def upstream_apis(upstream):
+    """Load the checked producer without reusing a consumer dependency alias."""
+    folder = Path(upstream) / 'manual/scripts'
+    tag = hashlib.sha256(str(folder.resolve()).encode()).hexdigest()[:16]
+    names = ('aod_native_closure_wave', 'aod_mapping_error',
+             'aod_m3_temporal', 'aod_m3_metrology')
+    previous = {name: sys.modules.get(name) for name in names}
+    loaded = {}
+    try:
+        for name in names:
+            spec = importlib.util.spec_from_file_location('_matter1_upstream_' + tag + '_' + name,
+                                                         folder / (name + '.py'))
+            module = importlib.util.module_from_spec(spec)
+            sys.modules[spec.name] = module
+            spec.loader.exec_module(module)
+            loaded[name] = module
+            sys.modules[name] = module
+    finally:
+        for name, old in previous.items():
+            if old is None:
+                sys.modules.pop(name, None)
+            else:
+                sys.modules[name] = old
+    temporal, companion = loaded['aod_m3_temporal'], loaded['aod_m3_metrology']
+    if (temporal.n is not loaded['aod_native_closure_wave']
+            or temporal.m is not loaded['aod_mapping_error']
+            or companion.t is not temporal or companion.m is not temporal.m):
+        raise ValueError('Actual upstream dependency identity substituted')
+    return temporal, companion
 
 
 def verify(root, upstream):
@@ -30,27 +63,35 @@ def verify(root, upstream):
     if git('diff', '--name-only', 'HEAD'):
         raise ValueError('M3 integration upstream has modified tracked files')
     binding = verify_vendor(root)
+    metrology_binding = metrology.verify_vendor(root)
     historical = verify_legacy_vendor(root)
     if binding['upstream_head'] != HEAD or git('rev-parse', 'HEAD^{tree}') != binding['upstream_tree']:
         raise ValueError('M3 consumer and executable binding disagree')
     for name, row in binding['files'].items():
         if (upstream / row['upstream_path']).read_bytes() != (root / 'manual2/vendor/aod_m3' / name).read_bytes():
             raise ValueError('M3 vendored file differs from actual upstream: ' + name)
+    if (metrology_binding['upstream_head'] != HEAD
+            or metrology_binding['upstream_tree'] != binding['upstream_tree']):
+        raise ValueError('M3 metrology and executable binding disagree')
+    for name, row in metrology_binding['files'].items():
+        if (upstream / row['upstream_path']).read_bytes() != (root / 'manual2/vendor/aod_m3_metrology' / name).read_bytes():
+            raise ValueError('M3 metrology vendor differs from actual upstream: ' + name)
     foundation = verify_foundation(root)
     for name in foundation['files']:
         if (upstream / name).read_bytes() != (root / name).read_bytes():
             raise ValueError('Main import differs from actual upstream: ' + name)
-    sys.path.insert(0, str(upstream / 'manual/scripts'))
-    spec = importlib.util.spec_from_file_location('matter1_checked_m3_temporal', upstream / 'manual/scripts/aod_m3_temporal.py')
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[spec.name] = module
-    spec.loader.exec_module(module)
+    module, companion = upstream_apis(upstream)
     result = module.consumer_integration(root)
     current = observation.report(root)
     actual = observation.report(root, temporal_api=module)
     if observation.canonical(current) != observation.canonical(actual):
         raise ValueError('Vendored typed temporal execution differs from actual upstream')
     persisted = observation.verify(root)
+    current_metrology = metrology.report(root)
+    actual_metrology = metrology.report(root, temporal_api=module, metrology_api=companion)
+    if observation.canonical(current_metrology) != observation.canonical(actual_metrology):
+        raise ValueError('Vendored metrology report differs from actual upstream')
+    persisted_metrology = metrology.verify(root)
     if result['common_prefix_through_cut'] != 39 or not result['feedback_disabled_original_validator_rejected']:
         raise ValueError('M3 feedback/history integration failed')
     cases = result['cases']
@@ -64,7 +105,9 @@ def verify(root, upstream):
             'historical_survival_executor_head': historical['upstream_head'],
             'foundation_upstream_head': foundation['upstream_head'],
             'foundation_source_digest': foundation['source_digest'],
-            'scope': 'Exact dependency, actual typed R03 observation-context replay and stateful feedback; no isotope admission, physical calibration or empirical agreement',
+            'scope': 'Exact dependencies, R03 replay, stateful feedback and complete metrology application replay; no isotope admission, physical calibration or empirical agreement',
+            'metrology': {'actual_upstream_equals_vendored': True,
+                'persisted_verification': persisted_metrology},
             'typed_observation': {**persisted, 'actual_upstream_equals_vendored': True,
                 'cases': {name: {'original_input_sha256': item['original_input_sha256'],
                     'counts': item['prediction']['complete_temporal_record']['counts'],

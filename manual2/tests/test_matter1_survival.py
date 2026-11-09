@@ -13,6 +13,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from manual2.tests.foundation_fixture import copy_foundation_receipts
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT/'manual2/scripts'
@@ -35,6 +36,7 @@ class SurvivalTests(unittest.TestCase):
         root = Path(folder)/'repo'
         shutil.copytree(ROOT/'sections', root/'sections')
         shutil.copytree(ROOT/'manual2/vendor', root/'manual2/vendor')
+        copy_foundation_receipts(ROOT, root)
         (root/'manual2/sections').mkdir(parents=True,exist_ok=True)
         for path in (ROOT/'manual2/sections').glob('generated_isotope_*.tex'):
             shutil.copyfile(path,root/'manual2/sections'/path.name)
@@ -301,6 +303,23 @@ class SurvivalTests(unittest.TestCase):
             for optimized in (False,True):
                 result=self.cli(ROOT,'compare',optimized,('--isotope-catalog',path))
                 self.assertNotEqual(result.returncode,0)
+
+    def test_SURV_20_historical_main_binding_requires_both_source_versions(self):
+        from matter1_foundation import PRIOR_ARCHIVE
+        retained = s.read_json(ROOT/s.DATA/'model_contract.json')['source_bindings']
+        self.assertEqual(s.source_bindings(ROOT), retained)
+        name = 'sections/07_cell_measures_mappings.tex'
+        expected = next(row['sha256'] for row in retained if row['path'] == name)
+        self.assertNotEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(), expected)
+        for prefix in (Path(), PRIOR_ARCHIVE):
+            with self.subTest(prefix=str(prefix)), tempfile.TemporaryDirectory() as temp:
+                root = self.fixture(temp)
+                path = root/prefix/name
+                path.write_bytes(path.read_bytes()+b'\n% changed source\n')
+                before = snapshot(root)
+                with self.assertRaisesRegex(ValueError, 'source changed'):
+                    s.source_bindings(root)
+                self.assertEqual(snapshot(root), before)
 
 
 if __name__ == '__main__':

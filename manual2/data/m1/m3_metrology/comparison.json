@@ -1,0 +1,1820 @@
+{
+  "atomic_empirical_score": null,
+  "evaluation_sha256": "6c427b58dbb16fe90f0f142a9efb364d9557a61ac3fab1afcc236a9d306aa219",
+  "evaluation_target": {
+    "classification": "retrospective_measurement",
+    "covariance_status": "unknown; no independence assumed",
+    "exposure_status": "known_before_model_selection",
+    "frequency_hz": "1420405751.768",
+    "isotope": "H-1",
+    "locator": "printed page 200; rendered evidence bound in v1 inventory",
+    "observable": "unperturbed_ground_state_hyperfine_frequency",
+    "prediction_measurement_covariance_hz2": null,
+    "profile": "matter1-atomic-map-obstruction-v2",
+    "schema_version": 1,
+    "source": "https://tf.nist.gov/general/pdf/13.pdf",
+    "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+    "standard_uncertainty_hz": "0.002"
+  },
+  "independent_physical_validation": false,
+  "model_selection": "none; no gain selected or retuned",
+  "physical_atomic_prediction": null,
+  "prediction_sha256": "2a86e55b63d69ac29fa576bd4e102c01446c1784c9a1a7889d027e55ced3b769",
+  "profile": "matter1:m3-metrology:applications:v1",
+  "rows": [
+    {
+      "assessment": {
+        "anchor_equality": null,
+        "assessment_sha256": "824988c958002c32e74755264274c1811f4660b2b102b83a5ca6305ea0d84c96",
+        "bounded_influences": [],
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "correction_ownership": {
+          "atomic-observation-law": "unknown",
+          "historical-window-match": "unknown",
+          "joint-uncertainty": "unknown",
+          "published-target-reduction": "not_applied"
+        },
+        "corrections_applied_by_assessment": false,
+        "finite_distribution_inferred": false,
+        "independent_physical_validation": false,
+        "interpretation": "reference_dependent_comparison",
+        "reflection_to_observation_map_status": "unknown",
+        "residual": "1201344046529/125",
+        "shared_source_payload_sha256": [
+          "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+        ],
+        "status": "consistent_declared_comparison_metadata",
+        "unit": "Hz",
+        "unresolved_influences": [
+          "atomic-observation-law",
+          "historical-window-match",
+          "joint-uncertainty",
+          "published-target-reduction"
+        ]
+      },
+      "classification": "retrospective_unselected_countermodel_diagnostic",
+      "historical_window_match": "unestablished",
+      "lambda": "0",
+      "record": {
+        "comparison": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:historical-H-target",
+          "value": "177550718971/125"
+        },
+        "coordinate": "declared_model_commit_index",
+        "epoch": "declared_simulation_origin",
+        "id": "matter1:assessment:baseline:lambda=0",
+        "influences": [
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "evaluation_method": "unknown",
+            "id": "atomic-observation-law",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=0"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "evaluation_method": "unknown",
+            "id": "historical-window-match",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=0",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "evaluation_method": "unknown",
+            "id": "joint-uncertainty",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=0",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Historical measurement conditions are not the simulation preparation."
+            },
+            "correction": {
+              "kind": "not_applied",
+              "reason": "Use the already corrected published endpoint without adding its corrections again."
+            },
+            "evaluation_method": "unknown",
+            "id": "published-target-reduction",
+            "materiality": {
+              "kind": "retained",
+              "reason": "Retain the published uncertainty separately from the missing joint budget."
+            },
+            "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+            "residual_uncertainty": {
+              "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+              "kind": "source_reported_uncertainty",
+              "unit": "Hz",
+              "value": "1/500"
+            },
+            "source_ids": [
+              "matter1:historical-H-target"
+            ],
+            "stage": "input"
+          }
+        ],
+        "kind": "oscillator_phase_advance",
+        "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+        "prediction": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:diagnostic:baseline:lambda=0",
+          "value": "11031158124"
+        },
+        "reference_role": "reference_dependent_evaluation",
+        "reflection_duration": {
+          "kind": "unknown",
+          "reason": "No reflection-duration-to-observation map is supplied."
+        },
+        "source_id": "matter1:assessment-declaration:baseline:lambda=0",
+        "sources": [
+          {
+            "id": "matter1:diagnostic:baseline:lambda=0",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "11031158124"
+                }
+              },
+              "countermodel": {
+                "Cs_gain": "1",
+                "H_gain": "1",
+                "atomic_map_status": "unjustified; witness_of_missing_constraint",
+                "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+                "conditional_unit_conversion": {
+                  "classification": "conditional_unit_conversion_not_ratio_derivation",
+                  "covariance": {
+                    "matrix": [
+                      [
+                        null,
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "matrix_units": [
+                      [
+                        "1*1",
+                        "1*Hz"
+                      ],
+                      [
+                        "Hz*1",
+                        "Hz*Hz"
+                      ]
+                    ],
+                    "rounding_policy": "exact_rational_no_tolerance",
+                    "status": "partial",
+                    "units": [
+                      "1",
+                      "Hz"
+                    ],
+                    "variables": [
+                      "ratio",
+                      "reference_frequency"
+                    ]
+                  },
+                  "first_order_frequency_variance_hz2": null,
+                  "frequency_hz": "11031158124",
+                  "frequency_variance_hz2": null,
+                  "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+                  "native_admission": "not_asserted",
+                  "period_propagation": "not_established",
+                  "quantity_kind": "transition_period",
+                  "ratio": "6/5",
+                  "reference_hz": "9192631770",
+                  "reference_kind": "exact_si_definition",
+                  "standard_uncertainty_hz_display": null,
+                  "standard_uncertainty_seconds_display": null,
+                  "transition_period_seconds": "1/11031158124",
+                  "transition_period_variance_s2": null,
+                  "uncertainty_status": "partial",
+                  "unresolved_uncertainty": [
+                    "unknown_input_covariance_or_variance"
+                  ]
+                },
+                "counts": {
+                  "outer_minus": 5,
+                  "outer_plus": 6
+                },
+                "finite_cadence_ratio": "6/5",
+                "lambda": "0",
+                "mapped_ratio": "6/5",
+                "physical_standard_uncertainty_hz": null,
+                "scenario": "baseline",
+                "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+              },
+              "prediction_sha256": "2a86e55b63d69ac29fa576bd4e102c01446c1784c9a1a7889d027e55ced3b769"
+            },
+            "role": "model",
+            "sha256": "7407a27de4445d3cca41c9655ac885652e9785777a5f18561318bb3856dcf831"
+          },
+          {
+            "id": "matter1:historical-H-target",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "177550718971/125"
+                }
+              },
+              "target": {
+                "classification": "retrospective_measurement",
+                "covariance_status": "unknown; no independence assumed",
+                "exposure_status": "known_before_model_selection",
+                "frequency_hz": "1420405751.768",
+                "isotope": "H-1",
+                "locator": "printed page 200; rendered evidence bound in v1 inventory",
+                "observable": "unperturbed_ground_state_hyperfine_frequency",
+                "prediction_measurement_covariance_hz2": null,
+                "profile": "matter1-atomic-map-obstruction-v2",
+                "schema_version": 1,
+                "source": "https://tf.nist.gov/general/pdf/13.pdf",
+                "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+                "standard_uncertainty_hz": "0.002"
+              }
+            },
+            "role": "evaluation",
+            "sha256": "f0e9560b7f8eddc5f0b1d83ce57f4578a92582db8bbfcf1cacfcf33f60c9ddca"
+          },
+          {
+            "id": "SI:Cs133-definition",
+            "payload": {
+              "defining_frequency_hz": 9192631770
+            },
+            "role": "definition",
+            "sha256": "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+          },
+          {
+            "id": "matter1:assessment-declaration:baseline:lambda=0",
+            "payload": {
+              "comparison_assessment": {
+                "comparison": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:historical-H-target",
+                  "value": "177550718971/125"
+                },
+                "coordinate": "declared_model_commit_index",
+                "epoch": "declared_simulation_origin",
+                "id": "matter1:assessment:baseline:lambda=0",
+                "influences": [
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "atomic-observation-law",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=0"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "historical-window-match",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=0",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "joint-uncertainty",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=0",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Historical measurement conditions are not the simulation preparation."
+                    },
+                    "correction": {
+                      "kind": "not_applied",
+                      "reason": "Use the already corrected published endpoint without adding its corrections again."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "published-target-reduction",
+                    "materiality": {
+                      "kind": "retained",
+                      "reason": "Retain the published uncertainty separately from the missing joint budget."
+                    },
+                    "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+                    "residual_uncertainty": {
+                      "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+                      "kind": "source_reported_uncertainty",
+                      "unit": "Hz",
+                      "value": "1/500"
+                    },
+                    "source_ids": [
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "input"
+                  }
+                ],
+                "kind": "oscillator_phase_advance",
+                "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+                "prediction": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:diagnostic:baseline:lambda=0",
+                  "value": "11031158124"
+                },
+                "reference_role": "reference_dependent_evaluation",
+                "reflection_duration": {
+                  "kind": "unknown",
+                  "reason": "No reflection-duration-to-observation map is supplied."
+                },
+                "unit": "Hz",
+                "window": [
+                  20,
+                  68
+                ]
+              }
+            },
+            "role": "model",
+            "sha256": "4f6e2ce0a8c0cdef5b53bc055f49566abe7379e492e85fb0cdde6b748b62c0a0"
+          }
+        ],
+        "unit": "Hz",
+        "window": [
+          20,
+          68
+        ]
+      },
+      "record_window_role": "simulation_window_only; historical measurement has no matched native-cut window",
+      "scenario": "baseline"
+    },
+    {
+      "assessment": {
+        "anchor_equality": null,
+        "assessment_sha256": "4291f114894af9b3823f467eb8fa46cc8e45f1987bd9df8b46ce9238c32528de",
+        "bounded_influences": [],
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "correction_ownership": {
+          "atomic-observation-law": "unknown",
+          "historical-window-match": "unknown",
+          "joint-uncertainty": "unknown",
+          "published-target-reduction": "not_applied"
+        },
+        "corrections_applied_by_assessment": false,
+        "finite_distribution_inferred": false,
+        "independent_physical_validation": false,
+        "interpretation": "reference_dependent_comparison",
+        "reflection_to_observation_map_status": "unknown",
+        "residual": "2580238812029/125",
+        "shared_source_payload_sha256": [
+          "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+        ],
+        "status": "consistent_declared_comparison_metadata",
+        "unit": "Hz",
+        "unresolved_influences": [
+          "atomic-observation-law",
+          "historical-window-match",
+          "joint-uncertainty",
+          "published-target-reduction"
+        ]
+      },
+      "classification": "retrospective_unselected_countermodel_diagnostic",
+      "historical_window_match": "unestablished",
+      "lambda": "1",
+      "record": {
+        "comparison": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:historical-H-target",
+          "value": "177550718971/125"
+        },
+        "coordinate": "declared_model_commit_index",
+        "epoch": "declared_simulation_origin",
+        "id": "matter1:assessment:baseline:lambda=1",
+        "influences": [
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "evaluation_method": "unknown",
+            "id": "atomic-observation-law",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=1"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "evaluation_method": "unknown",
+            "id": "historical-window-match",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=1",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "evaluation_method": "unknown",
+            "id": "joint-uncertainty",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "source_ids": [
+              "matter1:diagnostic:baseline:lambda=1",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Historical measurement conditions are not the simulation preparation."
+            },
+            "correction": {
+              "kind": "not_applied",
+              "reason": "Use the already corrected published endpoint without adding its corrections again."
+            },
+            "evaluation_method": "unknown",
+            "id": "published-target-reduction",
+            "materiality": {
+              "kind": "retained",
+              "reason": "Retain the published uncertainty separately from the missing joint budget."
+            },
+            "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+            "residual_uncertainty": {
+              "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+              "kind": "source_reported_uncertainty",
+              "unit": "Hz",
+              "value": "1/500"
+            },
+            "source_ids": [
+              "matter1:historical-H-target"
+            ],
+            "stage": "input"
+          }
+        ],
+        "kind": "oscillator_phase_advance",
+        "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+        "prediction": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:diagnostic:baseline:lambda=1",
+          "value": "22062316248"
+        },
+        "reference_role": "reference_dependent_evaluation",
+        "reflection_duration": {
+          "kind": "unknown",
+          "reason": "No reflection-duration-to-observation map is supplied."
+        },
+        "source_id": "matter1:assessment-declaration:baseline:lambda=1",
+        "sources": [
+          {
+            "id": "matter1:diagnostic:baseline:lambda=1",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "22062316248"
+                }
+              },
+              "countermodel": {
+                "Cs_gain": "1",
+                "H_gain": "2",
+                "atomic_map_status": "unjustified; witness_of_missing_constraint",
+                "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+                "conditional_unit_conversion": {
+                  "classification": "conditional_unit_conversion_not_ratio_derivation",
+                  "covariance": {
+                    "matrix": [
+                      [
+                        null,
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "matrix_units": [
+                      [
+                        "1*1",
+                        "1*Hz"
+                      ],
+                      [
+                        "Hz*1",
+                        "Hz*Hz"
+                      ]
+                    ],
+                    "rounding_policy": "exact_rational_no_tolerance",
+                    "status": "partial",
+                    "units": [
+                      "1",
+                      "Hz"
+                    ],
+                    "variables": [
+                      "ratio",
+                      "reference_frequency"
+                    ]
+                  },
+                  "first_order_frequency_variance_hz2": null,
+                  "frequency_hz": "22062316248",
+                  "frequency_variance_hz2": null,
+                  "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+                  "native_admission": "not_asserted",
+                  "period_propagation": "not_established",
+                  "quantity_kind": "transition_period",
+                  "ratio": "12/5",
+                  "reference_hz": "9192631770",
+                  "reference_kind": "exact_si_definition",
+                  "standard_uncertainty_hz_display": null,
+                  "standard_uncertainty_seconds_display": null,
+                  "transition_period_seconds": "1/22062316248",
+                  "transition_period_variance_s2": null,
+                  "uncertainty_status": "partial",
+                  "unresolved_uncertainty": [
+                    "unknown_input_covariance_or_variance"
+                  ]
+                },
+                "counts": {
+                  "outer_minus": 5,
+                  "outer_plus": 6
+                },
+                "finite_cadence_ratio": "6/5",
+                "lambda": "1",
+                "mapped_ratio": "12/5",
+                "physical_standard_uncertainty_hz": null,
+                "scenario": "baseline",
+                "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+              },
+              "prediction_sha256": "2a86e55b63d69ac29fa576bd4e102c01446c1784c9a1a7889d027e55ced3b769"
+            },
+            "role": "model",
+            "sha256": "6d4d2546f31ad2a8f6c5af654d6c9cc81a24d3ad2aad9388c7c59f95996b9758"
+          },
+          {
+            "id": "matter1:historical-H-target",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "177550718971/125"
+                }
+              },
+              "target": {
+                "classification": "retrospective_measurement",
+                "covariance_status": "unknown; no independence assumed",
+                "exposure_status": "known_before_model_selection",
+                "frequency_hz": "1420405751.768",
+                "isotope": "H-1",
+                "locator": "printed page 200; rendered evidence bound in v1 inventory",
+                "observable": "unperturbed_ground_state_hyperfine_frequency",
+                "prediction_measurement_covariance_hz2": null,
+                "profile": "matter1-atomic-map-obstruction-v2",
+                "schema_version": 1,
+                "source": "https://tf.nist.gov/general/pdf/13.pdf",
+                "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+                "standard_uncertainty_hz": "0.002"
+              }
+            },
+            "role": "evaluation",
+            "sha256": "f0e9560b7f8eddc5f0b1d83ce57f4578a92582db8bbfcf1cacfcf33f60c9ddca"
+          },
+          {
+            "id": "SI:Cs133-definition",
+            "payload": {
+              "defining_frequency_hz": 9192631770
+            },
+            "role": "definition",
+            "sha256": "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+          },
+          {
+            "id": "matter1:assessment-declaration:baseline:lambda=1",
+            "payload": {
+              "comparison_assessment": {
+                "comparison": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:historical-H-target",
+                  "value": "177550718971/125"
+                },
+                "coordinate": "declared_model_commit_index",
+                "epoch": "declared_simulation_origin",
+                "id": "matter1:assessment:baseline:lambda=1",
+                "influences": [
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "atomic-observation-law",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=1"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "historical-window-match",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=1",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "joint-uncertainty",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:baseline:lambda=1",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Historical measurement conditions are not the simulation preparation."
+                    },
+                    "correction": {
+                      "kind": "not_applied",
+                      "reason": "Use the already corrected published endpoint without adding its corrections again."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "published-target-reduction",
+                    "materiality": {
+                      "kind": "retained",
+                      "reason": "Retain the published uncertainty separately from the missing joint budget."
+                    },
+                    "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+                    "residual_uncertainty": {
+                      "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+                      "kind": "source_reported_uncertainty",
+                      "unit": "Hz",
+                      "value": "1/500"
+                    },
+                    "source_ids": [
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "input"
+                  }
+                ],
+                "kind": "oscillator_phase_advance",
+                "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+                "prediction": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:diagnostic:baseline:lambda=1",
+                  "value": "22062316248"
+                },
+                "reference_role": "reference_dependent_evaluation",
+                "reflection_duration": {
+                  "kind": "unknown",
+                  "reason": "No reflection-duration-to-observation map is supplied."
+                },
+                "unit": "Hz",
+                "window": [
+                  20,
+                  68
+                ]
+              }
+            },
+            "role": "model",
+            "sha256": "ed1d5307579c8c4cafbfbd5a7453939c1674b4b0a5c6e66f69479b35f8642a18"
+          }
+        ],
+        "unit": "Hz",
+        "window": [
+          20,
+          68
+        ]
+      },
+      "record_window_role": "simulation_window_only; historical measurement has no matched native-cut window",
+      "scenario": "baseline"
+    },
+    {
+      "assessment": {
+        "anchor_equality": null,
+        "assessment_sha256": "004e03cb08260667668c2f0dc5b22bbf4115a48eb73b2915cd271867d381559c",
+        "bounded_influences": [],
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "correction_ownership": {
+          "atomic-observation-law": "unknown",
+          "historical-window-match": "unknown",
+          "joint-uncertainty": "unknown",
+          "published-target-reduction": "not_applied"
+        },
+        "corrections_applied_by_assessment": false,
+        "finite_distribution_inferred": false,
+        "independent_physical_validation": false,
+        "interpretation": "reference_dependent_comparison",
+        "reflection_to_observation_map_status": "unknown",
+        "residual": "282080869529/125",
+        "shared_source_payload_sha256": [
+          "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+        ],
+        "status": "consistent_declared_comparison_metadata",
+        "unit": "Hz",
+        "unresolved_influences": [
+          "atomic-observation-law",
+          "historical-window-match",
+          "joint-uncertainty",
+          "published-target-reduction"
+        ]
+      },
+      "classification": "retrospective_unselected_countermodel_diagnostic",
+      "historical_window_match": "unestablished",
+      "lambda": "0",
+      "record": {
+        "comparison": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:historical-H-target",
+          "value": "177550718971/125"
+        },
+        "coordinate": "declared_model_commit_index",
+        "epoch": "declared_simulation_origin",
+        "id": "matter1:assessment:early_loss:lambda=0",
+        "influences": [
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "evaluation_method": "unknown",
+            "id": "atomic-observation-law",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=0"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "evaluation_method": "unknown",
+            "id": "historical-window-match",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=0",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "evaluation_method": "unknown",
+            "id": "joint-uncertainty",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=0",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Historical measurement conditions are not the simulation preparation."
+            },
+            "correction": {
+              "kind": "not_applied",
+              "reason": "Use the already corrected published endpoint without adding its corrections again."
+            },
+            "evaluation_method": "unknown",
+            "id": "published-target-reduction",
+            "materiality": {
+              "kind": "retained",
+              "reason": "Retain the published uncertainty separately from the missing joint budget."
+            },
+            "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+            "residual_uncertainty": {
+              "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+              "kind": "source_reported_uncertainty",
+              "unit": "Hz",
+              "value": "1/500"
+            },
+            "source_ids": [
+              "matter1:historical-H-target"
+            ],
+            "stage": "input"
+          }
+        ],
+        "kind": "oscillator_phase_advance",
+        "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+        "prediction": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:diagnostic:early_loss:lambda=0",
+          "value": "3677052708"
+        },
+        "reference_role": "reference_dependent_evaluation",
+        "reflection_duration": {
+          "kind": "unknown",
+          "reason": "No reflection-duration-to-observation map is supplied."
+        },
+        "source_id": "matter1:assessment-declaration:early_loss:lambda=0",
+        "sources": [
+          {
+            "id": "matter1:diagnostic:early_loss:lambda=0",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "3677052708"
+                }
+              },
+              "countermodel": {
+                "Cs_gain": "1",
+                "H_gain": "1",
+                "atomic_map_status": "unjustified; witness_of_missing_constraint",
+                "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+                "conditional_unit_conversion": {
+                  "classification": "conditional_unit_conversion_not_ratio_derivation",
+                  "covariance": {
+                    "matrix": [
+                      [
+                        null,
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "matrix_units": [
+                      [
+                        "1*1",
+                        "1*Hz"
+                      ],
+                      [
+                        "Hz*1",
+                        "Hz*Hz"
+                      ]
+                    ],
+                    "rounding_policy": "exact_rational_no_tolerance",
+                    "status": "partial",
+                    "units": [
+                      "1",
+                      "Hz"
+                    ],
+                    "variables": [
+                      "ratio",
+                      "reference_frequency"
+                    ]
+                  },
+                  "first_order_frequency_variance_hz2": null,
+                  "frequency_hz": "3677052708",
+                  "frequency_variance_hz2": null,
+                  "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+                  "native_admission": "not_asserted",
+                  "period_propagation": "not_established",
+                  "quantity_kind": "transition_period",
+                  "ratio": "2/5",
+                  "reference_hz": "9192631770",
+                  "reference_kind": "exact_si_definition",
+                  "standard_uncertainty_hz_display": null,
+                  "standard_uncertainty_seconds_display": null,
+                  "transition_period_seconds": "1/3677052708",
+                  "transition_period_variance_s2": null,
+                  "uncertainty_status": "partial",
+                  "unresolved_uncertainty": [
+                    "unknown_input_covariance_or_variance"
+                  ]
+                },
+                "counts": {
+                  "outer_minus": 5,
+                  "outer_plus": 2
+                },
+                "finite_cadence_ratio": "2/5",
+                "lambda": "0",
+                "mapped_ratio": "2/5",
+                "physical_standard_uncertainty_hz": null,
+                "scenario": "early_loss",
+                "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+              },
+              "prediction_sha256": "2a86e55b63d69ac29fa576bd4e102c01446c1784c9a1a7889d027e55ced3b769"
+            },
+            "role": "model",
+            "sha256": "ecf0e4fac6f23447bb82c374bbc04b841653d422fb22dde0c5eec1d21985c8e9"
+          },
+          {
+            "id": "matter1:historical-H-target",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "177550718971/125"
+                }
+              },
+              "target": {
+                "classification": "retrospective_measurement",
+                "covariance_status": "unknown; no independence assumed",
+                "exposure_status": "known_before_model_selection",
+                "frequency_hz": "1420405751.768",
+                "isotope": "H-1",
+                "locator": "printed page 200; rendered evidence bound in v1 inventory",
+                "observable": "unperturbed_ground_state_hyperfine_frequency",
+                "prediction_measurement_covariance_hz2": null,
+                "profile": "matter1-atomic-map-obstruction-v2",
+                "schema_version": 1,
+                "source": "https://tf.nist.gov/general/pdf/13.pdf",
+                "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+                "standard_uncertainty_hz": "0.002"
+              }
+            },
+            "role": "evaluation",
+            "sha256": "f0e9560b7f8eddc5f0b1d83ce57f4578a92582db8bbfcf1cacfcf33f60c9ddca"
+          },
+          {
+            "id": "SI:Cs133-definition",
+            "payload": {
+              "defining_frequency_hz": 9192631770
+            },
+            "role": "definition",
+            "sha256": "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+          },
+          {
+            "id": "matter1:assessment-declaration:early_loss:lambda=0",
+            "payload": {
+              "comparison_assessment": {
+                "comparison": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:historical-H-target",
+                  "value": "177550718971/125"
+                },
+                "coordinate": "declared_model_commit_index",
+                "epoch": "declared_simulation_origin",
+                "id": "matter1:assessment:early_loss:lambda=0",
+                "influences": [
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "atomic-observation-law",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=0"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "historical-window-match",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=0",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "joint-uncertainty",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=0",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Historical measurement conditions are not the simulation preparation."
+                    },
+                    "correction": {
+                      "kind": "not_applied",
+                      "reason": "Use the already corrected published endpoint without adding its corrections again."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "published-target-reduction",
+                    "materiality": {
+                      "kind": "retained",
+                      "reason": "Retain the published uncertainty separately from the missing joint budget."
+                    },
+                    "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+                    "residual_uncertainty": {
+                      "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+                      "kind": "source_reported_uncertainty",
+                      "unit": "Hz",
+                      "value": "1/500"
+                    },
+                    "source_ids": [
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "input"
+                  }
+                ],
+                "kind": "oscillator_phase_advance",
+                "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+                "prediction": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:diagnostic:early_loss:lambda=0",
+                  "value": "3677052708"
+                },
+                "reference_role": "reference_dependent_evaluation",
+                "reflection_duration": {
+                  "kind": "unknown",
+                  "reason": "No reflection-duration-to-observation map is supplied."
+                },
+                "unit": "Hz",
+                "window": [
+                  20,
+                  68
+                ]
+              }
+            },
+            "role": "model",
+            "sha256": "012d7c88aaf9b493d9e01488374a939025f7d59818fb7fb68d0947826575ef1c"
+          }
+        ],
+        "unit": "Hz",
+        "window": [
+          20,
+          68
+        ]
+      },
+      "record_window_role": "simulation_window_only; historical measurement has no matched native-cut window",
+      "scenario": "early_loss"
+    },
+    {
+      "assessment": {
+        "anchor_equality": null,
+        "assessment_sha256": "644dcd3bd1af3910a8f5a5a55c0154e688d5d7365041f99a89abfb1b967aaf4e",
+        "bounded_influences": [],
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "correction_ownership": {
+          "atomic-observation-law": "unknown",
+          "historical-window-match": "unknown",
+          "joint-uncertainty": "unknown",
+          "published-target-reduction": "not_applied"
+        },
+        "corrections_applied_by_assessment": false,
+        "finite_distribution_inferred": false,
+        "independent_physical_validation": false,
+        "interpretation": "reference_dependent_comparison",
+        "reflection_to_observation_map_status": "unknown",
+        "residual": "741712458029/125",
+        "shared_source_payload_sha256": [
+          "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+        ],
+        "status": "consistent_declared_comparison_metadata",
+        "unit": "Hz",
+        "unresolved_influences": [
+          "atomic-observation-law",
+          "historical-window-match",
+          "joint-uncertainty",
+          "published-target-reduction"
+        ]
+      },
+      "classification": "retrospective_unselected_countermodel_diagnostic",
+      "historical_window_match": "unestablished",
+      "lambda": "1",
+      "record": {
+        "comparison": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:historical-H-target",
+          "value": "177550718971/125"
+        },
+        "coordinate": "declared_model_commit_index",
+        "epoch": "declared_simulation_origin",
+        "id": "matter1:assessment:early_loss:lambda=1",
+        "influences": [
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "evaluation_method": "unknown",
+            "id": "atomic-observation-law",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "No justified atomic state-to-observable law selects this countermodel."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=1"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "evaluation_method": "unknown",
+            "id": "historical-window-match",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=1",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "correction": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "evaluation_method": "unknown",
+            "id": "joint-uncertainty",
+            "materiality": {
+              "kind": "unresolved",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+            "residual_uncertainty": {
+              "kind": "unknown",
+              "reason": "Model, realization and shared-reference covariance are incomplete."
+            },
+            "source_ids": [
+              "matter1:diagnostic:early_loss:lambda=1",
+              "matter1:historical-H-target"
+            ],
+            "stage": "setup"
+          },
+          {
+            "conditions": {
+              "kind": "unknown",
+              "reason": "Historical measurement conditions are not the simulation preparation."
+            },
+            "correction": {
+              "kind": "not_applied",
+              "reason": "Use the already corrected published endpoint without adding its corrections again."
+            },
+            "evaluation_method": "unknown",
+            "id": "published-target-reduction",
+            "materiality": {
+              "kind": "retained",
+              "reason": "Retain the published uncertainty separately from the missing joint budget."
+            },
+            "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+            "residual_uncertainty": {
+              "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+              "kind": "source_reported_uncertainty",
+              "unit": "Hz",
+              "value": "1/500"
+            },
+            "source_ids": [
+              "matter1:historical-H-target"
+            ],
+            "stage": "input"
+          }
+        ],
+        "kind": "oscillator_phase_advance",
+        "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+        "prediction": {
+          "dependency_ids": [
+            "SI:Cs133-definition"
+          ],
+          "quantity_id": "frequency",
+          "source_id": "matter1:diagnostic:early_loss:lambda=1",
+          "value": "7354105416"
+        },
+        "reference_role": "reference_dependent_evaluation",
+        "reflection_duration": {
+          "kind": "unknown",
+          "reason": "No reflection-duration-to-observation map is supplied."
+        },
+        "source_id": "matter1:assessment-declaration:early_loss:lambda=1",
+        "sources": [
+          {
+            "id": "matter1:diagnostic:early_loss:lambda=1",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "7354105416"
+                }
+              },
+              "countermodel": {
+                "Cs_gain": "1",
+                "H_gain": "2",
+                "atomic_map_status": "unjustified; witness_of_missing_constraint",
+                "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+                "conditional_unit_conversion": {
+                  "classification": "conditional_unit_conversion_not_ratio_derivation",
+                  "covariance": {
+                    "matrix": [
+                      [
+                        null,
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "matrix_units": [
+                      [
+                        "1*1",
+                        "1*Hz"
+                      ],
+                      [
+                        "Hz*1",
+                        "Hz*Hz"
+                      ]
+                    ],
+                    "rounding_policy": "exact_rational_no_tolerance",
+                    "status": "partial",
+                    "units": [
+                      "1",
+                      "Hz"
+                    ],
+                    "variables": [
+                      "ratio",
+                      "reference_frequency"
+                    ]
+                  },
+                  "first_order_frequency_variance_hz2": null,
+                  "frequency_hz": "7354105416",
+                  "frequency_variance_hz2": null,
+                  "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+                  "native_admission": "not_asserted",
+                  "period_propagation": "not_established",
+                  "quantity_kind": "transition_period",
+                  "ratio": "4/5",
+                  "reference_hz": "9192631770",
+                  "reference_kind": "exact_si_definition",
+                  "standard_uncertainty_hz_display": null,
+                  "standard_uncertainty_seconds_display": null,
+                  "transition_period_seconds": "1/7354105416",
+                  "transition_period_variance_s2": null,
+                  "uncertainty_status": "partial",
+                  "unresolved_uncertainty": [
+                    "unknown_input_covariance_or_variance"
+                  ]
+                },
+                "counts": {
+                  "outer_minus": 5,
+                  "outer_plus": 2
+                },
+                "finite_cadence_ratio": "2/5",
+                "lambda": "1",
+                "mapped_ratio": "4/5",
+                "physical_standard_uncertainty_hz": null,
+                "scenario": "early_loss",
+                "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+              },
+              "prediction_sha256": "2a86e55b63d69ac29fa576bd4e102c01446c1784c9a1a7889d027e55ced3b769"
+            },
+            "role": "model",
+            "sha256": "d3aa1491d896818f42384d86492befeba82dc972cbb81c82953363152adf00b2"
+          },
+          {
+            "id": "matter1:historical-H-target",
+            "payload": {
+              "comparison_quantities": {
+                "frequency": {
+                  "kind": "oscillator_phase_advance",
+                  "unit": "Hz",
+                  "value": "177550718971/125"
+                }
+              },
+              "target": {
+                "classification": "retrospective_measurement",
+                "covariance_status": "unknown; no independence assumed",
+                "exposure_status": "known_before_model_selection",
+                "frequency_hz": "1420405751.768",
+                "isotope": "H-1",
+                "locator": "printed page 200; rendered evidence bound in v1 inventory",
+                "observable": "unperturbed_ground_state_hyperfine_frequency",
+                "prediction_measurement_covariance_hz2": null,
+                "profile": "matter1-atomic-map-obstruction-v2",
+                "schema_version": 1,
+                "source": "https://tf.nist.gov/general/pdf/13.pdf",
+                "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+                "standard_uncertainty_hz": "0.002"
+              }
+            },
+            "role": "evaluation",
+            "sha256": "f0e9560b7f8eddc5f0b1d83ce57f4578a92582db8bbfcf1cacfcf33f60c9ddca"
+          },
+          {
+            "id": "SI:Cs133-definition",
+            "payload": {
+              "defining_frequency_hz": 9192631770
+            },
+            "role": "definition",
+            "sha256": "1c8b0381f0d06f43fabd0d7dfb232f862bc43f70151a13479f0b78f6fead0b39"
+          },
+          {
+            "id": "matter1:assessment-declaration:early_loss:lambda=1",
+            "payload": {
+              "comparison_assessment": {
+                "comparison": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:historical-H-target",
+                  "value": "177550718971/125"
+                },
+                "coordinate": "declared_model_commit_index",
+                "epoch": "declared_simulation_origin",
+                "id": "matter1:assessment:early_loss:lambda=1",
+                "influences": [
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "atomic-observation-law",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "mechanism": "No justified atomic state-to-observable law selects this countermodel.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "No justified atomic state-to-observable law selects this countermodel."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=1"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "historical-window-match",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "mechanism": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Simulation cuts and historical apparatus interval are unmatched; no physical transfer is asserted."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=1",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "correction": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "joint-uncertainty",
+                    "materiality": {
+                      "kind": "unresolved",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "mechanism": "Model, realization and shared-reference covariance are incomplete.",
+                    "residual_uncertainty": {
+                      "kind": "unknown",
+                      "reason": "Model, realization and shared-reference covariance are incomplete."
+                    },
+                    "source_ids": [
+                      "matter1:diagnostic:early_loss:lambda=1",
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "setup"
+                  },
+                  {
+                    "conditions": {
+                      "kind": "unknown",
+                      "reason": "Historical measurement conditions are not the simulation preparation."
+                    },
+                    "correction": {
+                      "kind": "not_applied",
+                      "reason": "Use the already corrected published endpoint without adding its corrections again."
+                    },
+                    "evaluation_method": "unknown",
+                    "id": "published-target-reduction",
+                    "materiality": {
+                      "kind": "retained",
+                      "reason": "Retain the published uncertainty separately from the missing joint budget."
+                    },
+                    "mechanism": "Published unperturbed H frequency already includes the source reduction.",
+                    "residual_uncertainty": {
+                      "category_or_coverage_status": "published_aggregate_one_sigma; no independent recombination",
+                      "kind": "source_reported_uncertainty",
+                      "unit": "Hz",
+                      "value": "1/500"
+                    },
+                    "source_ids": [
+                      "matter1:historical-H-target"
+                    ],
+                    "stage": "input"
+                  }
+                ],
+                "kind": "oscillator_phase_advance",
+                "measurand": "retrospective diagnostic frequency versus published H endpoint; physical correspondence unestablished",
+                "prediction": {
+                  "dependency_ids": [
+                    "SI:Cs133-definition"
+                  ],
+                  "quantity_id": "frequency",
+                  "source_id": "matter1:diagnostic:early_loss:lambda=1",
+                  "value": "7354105416"
+                },
+                "reference_role": "reference_dependent_evaluation",
+                "reflection_duration": {
+                  "kind": "unknown",
+                  "reason": "No reflection-duration-to-observation map is supplied."
+                },
+                "unit": "Hz",
+                "window": [
+                  20,
+                  68
+                ]
+              }
+            },
+            "role": "model",
+            "sha256": "581aebf45db833f57e2b60cb1b707d40da715e9a3e3bf562187e434984396b3a"
+          }
+        ],
+        "unit": "Hz",
+        "window": [
+          20,
+          68
+        ]
+      },
+      "record_window_role": "simulation_window_only; historical measurement has no matched native-cut window",
+      "scenario": "early_loss"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Exact residual and metadata assessment; historical applicability and complete joint uncertainty remain unresolved."
+}

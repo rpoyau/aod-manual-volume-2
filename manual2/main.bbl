@@ -12,6 +12,22 @@
 \newblock BIPM, SI Brochure Appendix 2.
   \url{https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248}.
 
+\bibitem{gates-lv-2024}
+J.~M. Gates et~al.
+\newblock Towards the discovery of new elements: Production of livermorium
+  ({Z}=116) with {$^{50}$Ti}, 2024.
+\newblock Retained source: arXiv:2407.16079v1, 22 July 2024, Fig. 2.
+  \url{https://arxiv.org/abs/2407.16079v1}.
+
+\bibitem{heavner-nist-f2-2014}
+Thomas~P. Heavner, Elizabeth~A. Donley, Filippo Levi, Giovanni Costanzo,
+  Thomas~E. Parker, Jon~H. Shirley, Neil Ashby, Stephan Barlow, and S.~R.
+  Jefferts.
+\newblock First accuracy evaluation of {NIST-F2}.
+\newblock {\em Metrologia}, 51(3):174--182, 2014.
+\newblock August 2013 evaluation and typical Table 1 budget.
+  \url{https://doi.org/10.1088/0026-1394/51/3/174}.
+
 \bibitem{hellwig1970}
 Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
   David~W. Allan, and David~J. Glaze.

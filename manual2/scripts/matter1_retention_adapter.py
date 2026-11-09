@@ -17,6 +17,7 @@ import sys
 from matter1_atomic import canonical, read_json, require
 import matter1_constructed_coupling as constructed
 import matter1_witnessed_retention as retention
+from matter1_constructed_source import historical_recipe_digest
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = Path('manual2/data/m1/retention_adapter')
@@ -197,8 +198,8 @@ def assess(root=ROOT, *, originals):
         records[key] = case_assessment(root, original_context=originals[key])
     result = {'schema': 'matter1-retention-adapter-assessment-v1', 'profile': PROFILE,
         'classification': 'replayed construction and unprovided adapter; no combined model executed',
-        'implementation_sha256': constructed.sha(Path(__file__)),
-        'constructed_application_sha256': constructed.sha(Path(constructed.__file__)),
+        'implementation_sha256': historical_recipe_digest(root, 'manual2/scripts/matter1_retention_adapter.py'),
+        'constructed_application_sha256': historical_recipe_digest(root),
         'retention_application_sha256': constructed.sha(Path(retention.__file__)),
         'common_cadence_law': 'matter1-constructed-coupling-v1',
         'cases': records, 'R03_square_domain': square_domain(root),

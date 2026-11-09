@@ -5,8 +5,9 @@ Matter I uses two upstream repositories:
 | Dependency | Role | Binding |
 |---|---|---|
 | [`rpoyau/aod-skills`](https://github.com/rpoyau/aod-skills) | Four portable authoring/review skills | [`.agents/dependencies.json`](../.agents/dependencies.json), commit `630af16a7c51fb8836e603eb54c67bf8560fb463` |
-| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Main mathematics | [`foundation-source.json`](../manual2/evidence/foundation-source.json), commit `b78b48dd7aa1608dbb7141e9814e33c3cfcf900b` |
+| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Main mathematics | [`foundation-source.json`](../manual2/evidence/foundation-source.json), commit `71cbcf7e637ababcde3b2e073fb4ceec4b1681b9` |
 | [`rpoyau/aod`](https://github.com/rpoyau/aod) | Consumed M3 implementation and contracts | Exact executable commit/tree and file hashes in [`vendor binding`](../manual2/vendor/aod_m3/binding.json) |
+| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Metrology companion, contract and H/Cs profiles | Same upstream commit, separately pinned [`metrology binding`](../manual2/vendor/aod_m3_metrology/binding.json) |
 
 The skills pin was read from the canonical repository's `main` on 1 November
 2026. Its dated source snapshots do not identify today's accepted AOD head. Its
@@ -15,15 +16,22 @@ execution and remaining dependencies are recorded in
 [`m3-migration.md`](../manual2/evidence/m3-migration.md) and
 [`isotope-results.md`](../manual2/evidence/isotope-results.md).
 The AOD bindings identify reviewed PR43 candidates, not a version-43 release.
-The executable binding includes the typed M3 temporal observation context and
-the F1 evidence-value validation repair; Main's mathematical source bytes retain
-their earlier binding. Current exports reside in `manual2/vendor/aod_m3/current/`.
+Main, the observation exports and the metrology companion consume the reviewed
+M3 commit `71cbcf7e637ababcde3b2e073fb4ceec4b1681b9`, tree
+`3ab04df3793beda481b4fb7ed0d628ba6765da70`. The
+[`8 November rebind`](../manual2/evidence/m3-source-rebind-2026-11-08.json)
+preserves the preceding source manifest and replaced bytes. Current observation
+exports reside in `manual2/vendor/aod_m3/current/`; the metrology exports and
+their source profiles reside in `manual2/vendor/aod_m3_metrology/`.
 The original common-surrogate survival model keeps its separately verified
 `legacy-binding.json` and original mapping executor. These historical bytes are
 not the current temporal interface. The dated
 [`observation rebind`](../manual2/evidence/m3-observation-rebind-2026-11-04.json)
-records the two roles. Consumer replay checks imported Main, exact current exports,
-the unchanged legacy executor, and actual R03 observations against the pinned checkout.
+records the earlier two roles. Consumer replay checks imported Main, exact current
+exports, the unchanged legacy executor, actual R03 observations and complete
+metrology application reports against the pinned checkout. The
+[`metrology adoption`](../manual2/evidence/m3-metrology-adoption.md)
+describes the new application scope; previous receipts retain their original pins.
 A newer upstream head is an update to review, not permission
 to replace these pins silently.
 
@@ -76,6 +84,11 @@ committed prefixes, pending returns and the prior comparison to `ObservationCont
 Whole artifacts replay from separately supplied original R03 inputs. Gains remain
 stipulated at one cycle per return; no physical clock or isotope map is supplied. A pass
 does not establish native atomic/isotope admission or physical prediction.
+The metrology adapter freezes its calculations before loading evaluation targets.
+It consumes M3's source-bound comparison API, hydrogen reductions and caesium
+uncertainty records. D/T and selected Lv records expose missing inputs separately
+from the computations that can execute. This application has a new profile; it
+does not claim recovery of the unavailable historical consumer `3e40b178`.
 The separate skills checkout is not required to reproduce the scientific build;
 its project-history area and AOD-specific authoring profile are not imported.
 

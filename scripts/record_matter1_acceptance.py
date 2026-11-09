@@ -26,7 +26,8 @@ OPTIMIZED_MODULES = {'test_matter1_application', 'test_matter1_data', 'test_matt
                      'test_matter1_v2_application', 'test_matter1_m3', 'test_matter1_m3_evidence', 'test_matter1_bipm_precision',
                      'test_matter1_isotopes', 'test_matter1_survival', 'test_matter1_isotope_integration',
                      'test_matter1_constructed_coupling', 'test_matter1_witnessed_retention',
-                     'test_matter1_retention_adapter', 'test_matter1_m3_observation'}
+                     'test_matter1_retention_adapter', 'test_matter1_m3_observation',
+                     'test_matter1_m3_metrology'}
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')
@@ -251,7 +252,8 @@ def input_inventory(output):
                 'appendices/**/*.tex', 'manual2/**/*.bib', 'README.md', 'requirements-matter1.txt', 'package.json',
                 'bib/**/*', 'scripts/*.py', 'manual2/**/*.tex', 'manual2/scripts/*.py', 'manual2/scripts/*.cjs',
                 'manual2/tests/*.py', 'manual2/data/**/*', 'manual2/evidence/*.json', 'manual2/evidence/*.csv',
-                'manual2/visuals/*', 'manual2/figures/*', 'main.pdf', 'manual2.pdf', 'manual2/main.pdf')
+                'manual2/visuals/*', 'manual2/figures/*', 'manual2/vendor/**/*',
+                'manual2/evidence/pre-m3-main/**/*', 'main.pdf', 'manual2.pdf', 'manual2/main.pdf')
     result = {}
     for pattern in patterns:
         for path in REPO.glob(pattern):

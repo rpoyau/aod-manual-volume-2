@@ -12,6 +12,34 @@ sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'manual2/scripts'))
 import matter1_retention_adapter as app
+import matter1_constructed_source as source_adapter
+from manual2.tests.foundation_fixture import copy_foundation_receipts
+
+
+class RetentionSourceAdapterTests(unittest.TestCase):
+    def test_frozen_report_identities_are_separate_from_current_executors(self):
+        record = source_adapter.verify_retention_adapter(ROOT)
+        report = app.read_json(ROOT/app.DATA/'assessment.json')
+        self.assertEqual(source_adapter.historical_recipe_digest(ROOT, source_adapter.RETENTION_APPLICATION),
+                         report['implementation_sha256'])
+        self.assertEqual(source_adapter.historical_recipe_digest(ROOT), report['constructed_application_sha256'])
+        self.assertNotEqual(record['before_sha256'], record['after_sha256'])
+        self.assertEqual(app.constructed.sha(Path(app.retention.__file__)), report['retention_application_sha256'])
+
+    def test_retention_current_archive_and_resealed_receipt_rejected(self):
+        for mutation in ('current', 'archive', 'receipt'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as folder:
+                root = RetentionAdapterTests().fixture(folder)
+                record = source_adapter.verify_retention_adapter(root)
+                path = root/(record['archive'] if mutation == 'archive' else source_adapter.RETENTION_APPLICATION)
+                path.write_bytes(path.read_bytes()+b'\n# altered\n')
+                if mutation == 'receipt':
+                    record['after_sha256'] = app.constructed.sha(path)
+                    (root/source_adapter.RETENTION_RECEIPT).write_bytes(app.canonical(record))
+                before = {str(p.relative_to(root)): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+                with self.assertRaisesRegex(ValueError, 'Constructed adapter:'):
+                    source_adapter.historical_recipe_digest(root, source_adapter.RETENTION_APPLICATION)
+                self.assertEqual(before, {str(p.relative_to(root)): p.read_bytes() for p in root.rglob('*') if p.is_file()})
 
 
 class RetentionAdapterTests(unittest.TestCase):
@@ -156,6 +184,7 @@ class RetentionAdapterTests(unittest.TestCase):
 
     def fixture(self, folder):
         root = Path(folder)/'repo'
+        copy_foundation_receipts(ROOT, root)
         packet = app.constructed.DATA/'source_packet'
         shutil.copytree(ROOT/packet, root/packet)
         sources = app.read_json(ROOT/packet/'source_bindings.json')['sha256']

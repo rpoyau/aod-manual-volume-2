@@ -1,6 +1,6 @@
 {
   "profile": "static_reference_publication",
-  "foundation_source_digest": "b70a59d3611786b162726fe9458f700b36a90c066592f7b2feb1da17059b9b59",
+  "foundation_source_digest": "5abafca5129d092060a3dd333ba95d11d7ab7a6cf9ec10f011293da7f785123a",
   "manual_inputs": {
     "manual2/appendices/A_simulation_fixtures_and_context.tex": "566be2917830485cac014631772bbb6f9afb64901b5442ede16cf834ccf7f100",
     "manual2/appendices/B_quarantined_external_comparison.tex": "10d5e6bb938f4ae2bb480bca7eff95eb1044cec5ef5092c7f032e4fd2daa4e7f",
@@ -127,7 +127,11 @@
     "manual2/data/m1/isotopes/curation.json": "b25ca90dad87219f5582ad01ec1e55f48467db54621f241675b79392a6cd41e4",
     "manual2/data/m1/isotopes/target-declaration.json": "f08e6e557708aa9602a8f0227909274651e05d10c13725a522380509ac3327d3",
     "manual2/data/m1/isotopes/verification.json": "c9c7cc491df3a58a4faa1f08ceb88438dbe7f46edb43e983da15b7f8bac086c5",
-    "manual2/data/m1/m3_observation/observation_report.json": "193f82cc6572a8b7366a9c05aa024f04b9c32dbe7bc615b5cbf7b7a52f2aab8b",
+    "manual2/data/m1/m3_metrology/application_inputs.json": "01875e3e7efe4ee834916710040098742f58c8428dd39ae712af0fd154b87d1c",
+    "manual2/data/m1/m3_metrology/comparison.json": "83fe834ad6afcb14443db8c4b8a2d46aad0977ae429ec6bf3e155b00e7a104dd",
+    "manual2/data/m1/m3_metrology/metrology_report.json": "0c8700e2f95812f4a35ec085b4c57ba9b9a6081d887112d1727020a6e2282ac7",
+    "manual2/data/m1/m3_metrology/prediction.json": "fede740a329501cd02156b222e8dca6122f200c30a40b495101c79a9e60e2d16",
+    "manual2/data/m1/m3_observation/observation_report.json": "22475369d11bb34e3754a5ea8accd6689535a5aacc1a0708d213208fbddfa0c8",
     "manual2/data/m1/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
     "manual2/data/m1/matter1_coord0_enclosure_summary.csv": "031b452e1d13c64b95c97ee6dc9a78a26d62a3c2b732526ebfd102b778d24ec7",
     "manual2/data/m1/matter1_elements_1_118_ledger.csv": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
@@ -170,17 +174,17 @@
     "manual2/figures/matter1_figure_manifest.json": "9e264edc453d9b38477649063f5d4333deda9a75e62d04f32bb77041a4edba4b",
     "manual2/main.tex": "726394998bdc756b16c5b6643d75d9504527012b4e51a8469887866b9af3016e",
     "manual2/preamble.tex": "ec9bbd15cf8da977ad39521963fbe16cc7a25dd919e1786fb53b82419ffef539",
-    "manual2/refs.bib": "baf4ef87c2df3b0a90239b20cfc7766a441a30832e0a1df1bf803b70e406d8ef",
-    "manual2/sections/00_scope.tex": "ef1c90edf1e9532d2b50d9e8266df0b3b350e780e3cf728f12b4408ed99b7433",
+    "manual2/refs.bib": "a515f11f3b560c356c45197cccbd792ac452372d0276b046d7b043ff67fc5dfa",
+    "manual2/sections/00_scope.tex": "c53bd25d8b5e7f5e8851a957bbf4ee3295027a668cfe78689459dfa098adcaeb",
     "manual2/sections/01-scope-and-spine.tex": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118",
     "manual2/sections/02-coord0-enclosures.tex": "c97d8b09fdc26ae003c775d0a51111b88a826108ebdfd9b83d993ea81469d551",
     "manual2/sections/03-fusion-contact-ledger.tex": "9bfce3fd2f19d1c573a2c8666998196ddfc77349c31173f43939896bd75398b6",
     "manual2/sections/04-audits-and-falsification.tex": "a789ade5c6e9f2df284612d73637c706569097d33f6f94d500ce13451070a019",
-    "manual2/sections/05-fusion-handedness-relational-time.tex": "b44400b6b9b3e70463cc0f218496a3d1b0e3d1a267fee87c368846e76e644c03",
-    "manual2/sections/06-hyperfine-fusion-reclosure-comparison.tex": "5c6b3becb1df80aca8dd636a575f3ba0b112e1cfa1f188bb5a62474afd9406c1",
-    "manual2/sections/07-stateful-si-prediction.tex": "e90844ac4815f206016852b3900c7b4fcea640d130186d53881f5ced333633ef",
-    "manual2/sections/08-isotope-survival.tex": "ad5f67e91fb88630fe82bb2a7e35f20e67a9fd839f2955c4ea870984abbe43ea",
-    "manual2/sections/09_prediction_test_fixture_registry.tex": "f137bd7cb5e5f90ff44f00a82089f8170c265d56994649977d45ee9511a4fb12",
+    "manual2/sections/05-fusion-handedness-relational-time.tex": "6247f3488d077c06025afae67612422e81aeb31a8a5fb5c0c20696dc0015dc6f",
+    "manual2/sections/06-hyperfine-fusion-reclosure-comparison.tex": "33017c68a3820d7cc3b314aeab46554874338cafc5cf20729bf552700db4c506",
+    "manual2/sections/07-stateful-si-prediction.tex": "fc3d32c3dede1aeb212c8d009e86a6ac92207936b4ec0aeba3debd0a77d18968",
+    "manual2/sections/08-isotope-survival.tex": "ef1014284210c709e4855a1dd1af6d63f89001154d9ac4bfe01f05efbf5181b9",
+    "manual2/sections/09_prediction_test_fixture_registry.tex": "a3ea6c5de38d22c60b983a88eb22f65cba1e91bc4f22a230b884609b933288ab",
     "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2",
     "manual2/sections/generated_isotope_anchors.tex": "9f0deffbd9df4642abb89b4d93da2f8f4dd4ed16b03cc0ff492bae6eb4da35b5",
     "manual2/sections/generated_isotope_benchmarks.tex": "758ad42fce9e8923f9ce5633587c7337998fae650088d59518078704873def07",
@@ -188,11 +192,11 @@
     "manual2/sections/generated_isotope_superheavy.tex": "ef5c811d1d4437cb2e6c1bb7e9b0f1a2f4c59ad2415f01fa75a4f3d02bf271e9"
   },
   "published_artifacts": {
-    "main.pdf": "26895eeb1db6fc172742a54649c9a22bfc8ce549e39e252053f740c3c755d453",
-    "manual2/main.pdf": "a5f8ceea9e88a40bada17cf653ba327d12901d95be463d0797c949f20bf7d886",
-    "manual2.pdf": "1df27802c7d1a0e1f182cbad3a8d722e44da1bb5b48f7ed5bb43a7eee17f96dd"
+    "main.pdf": "b74f0a8cf90f8f61fa107f48f9fe5780363262b4007e533279898fd0c2838667",
+    "manual2/main.pdf": "750127eb0de2e8042af962968275e43231a3b8b85ea24056341485f477888f3b",
+    "manual2.pdf": "b82b3dd122051a4eb3251df991d9e26dce42632dd10c9dcc8d7bab99eb243e20"
   },
-  "main_pages": 73,
+  "main_pages": 70,
   "commands": [
     [
       "latexmk",

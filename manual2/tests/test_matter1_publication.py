@@ -64,7 +64,7 @@ class PublicationTests(unittest.TestCase):
         self.assertTrue(result['manual_text_equal'])
         self.assertFalse(result['main_text_matches_release'])
         self.assertTrue(result['main_text_matches_bound_authority'])
-        self.assertEqual(result['main_pages'],73)
+        self.assertEqual(result['main_pages'],70)
         self.assertGreater(result['root_main_links'],0)
         self.assertEqual(result['root_main_links'],result['nested_main_links'])
         self.assertGreaterEqual(result['chart']['minimum_font_pt'],8.99)

@@ -144,6 +144,9 @@ class ObservationTests(unittest.TestCase):
             root=Path(temp)
             shutil.copytree(ROOT/r.DATA,root/r.DATA)
             shutil.copytree(ROOT/dependency.VENDOR,root/dependency.VENDOR)
+            previous=dependency.verify_vendor(ROOT)['previous_binding']['path']
+            archive=Path(previous).parent
+            shutil.copytree(ROOT/archive,root/archive,dirs_exist_ok=True)
             scripts=root/'manual2/scripts';scripts.mkdir(parents=True,exist_ok=True)
             shutil.copy2(ROOT/'manual2/scripts/matter1_witnessed_retention.py',scripts/'matter1_witnessed_retention.py')
             o.generate(root)

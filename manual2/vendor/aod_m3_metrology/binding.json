@@ -1,0 +1,39 @@
+{
+  "authority": "reviewed_open_PR_43_candidate",
+  "dependencies": {
+    "aod_m3_temporal.py": "0927a69145bd6eae4550bd57528bbfe1f29b2e0dcff46cc1a9eeaa6c9359f004",
+    "aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
+    "aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+  },
+  "files": {
+    "LICENSE": {
+      "sha256": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+      "upstream_path": "LICENSE"
+    },
+    "current/TEMPORAL_METROLOGY.json": {
+      "sha256": "4726ecf3667c9c54dffd2dd25dffeaacf005f55b18430ae419481240cc9b7e95",
+      "upstream_path": "contracts/scientific/TEMPORAL_METROLOGY.json"
+    },
+    "current/aod_m3_metrology.py": {
+      "sha256": "7c6e34faa891ce293f390ad63242ce31023243c132cdf036b8cc6764627c22f0",
+      "upstream_path": "manual/scripts/aod_m3_metrology.py"
+    },
+    "current/cesium/protocol.json": {
+      "sha256": "0de1e3b3dd57eafd5fa0cfd590e32dcc92ace51c140e3127cd68079e4effa34d",
+      "upstream_path": "manual/data/m3/temporal_metrology/cesium/protocol.json"
+    },
+    "current/hydrogen/protocol.json": {
+      "sha256": "35871c597e922ce18831f004ac03e06236b424cf1547adbc15cce96ce8708940",
+      "upstream_path": "manual/data/m3/temporal_metrology/hydrogen/protocol.json"
+    },
+    "current/hydrogen/reported_uncertainty.json": {
+      "sha256": "71e2bf4c2891b28f1076fcc9e2b7266943cc330be394585172ed264119a38560",
+      "upstream_path": "manual/data/m3/temporal_metrology/hydrogen/reported_uncertainty.json"
+    }
+  },
+  "schema": "matter1.m3-metrology-vendor.v1",
+  "scope": "Exact companion exports; application recipes belong to Matter I. Historical 3e40b178 consumer source was unavailable; this is a new adoption.",
+  "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "upstream_repository": "https://github.com/rpoyau/aod",
+  "upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
+}

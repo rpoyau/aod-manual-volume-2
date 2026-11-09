@@ -64,6 +64,9 @@ EXPECTED_OUTPUTS = {
     'data/m1/retention_adapter/assessment.json',
     'data/m1/retention_adapter/sha256.json',
     'data/m1/m3_observation/observation_report.json',
+    'data/m1/m3_metrology/prediction.json',
+    'data/m1/m3_metrology/comparison.json',
+    'data/m1/m3_metrology/metrology_report.json',
 }
 EXPECTED_OUTPUTS.update(
     f'data/m1/constructed_coupling/{case}/{name}'
@@ -150,7 +153,7 @@ def main():
              '--root', str(root), '--output-root', str(out.parent)]
             for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology',
                          'bipm', 'bipm_precision', 'atomic', 'constructed_coupling',
-                         'witnessed_retention', 'retention_adapter', 'm3_observation')
+                         'witnessed_retention', 'retention_adapter', 'm3_observation', 'm3_metrology')
         ])
         commands.append([args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_survival.py'),
                          '--root',str(root),'--output-root',str(out.parent),'--isotope-catalog',str(catalog)])

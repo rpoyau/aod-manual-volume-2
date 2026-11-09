@@ -16,6 +16,7 @@ from pathlib import Path
 
 from matter1_atomic import ValidationError, canonical, digest, read_json, require, rational
 from matter1_m3 import legacy_mapping as mapping, verify_legacy_vendor as verify_vendor
+from matter1_foundation import prior_m3_source_bytes
 
 DATA = Path('manual2/data/m1/survival')
 CATALOG = Path('manual2/data/m1/isotopes/catalog.json')
@@ -72,7 +73,7 @@ OUTPUTS = ('prediction.json', 'comparison.json', 'survival_report.json')
 def source_bindings(root):
     result = []
     for name, labels in SOURCE_LABELS.items():
-        blob = (Path(root)/name).read_bytes()
+        blob = prior_m3_source_bytes(root, name)
         require(all(('\\label{'+label+'}').encode() in blob for label in labels), 'Survival source premise label absent')
         result.append({'path': name, 'sha256': hashlib.sha256(blob).hexdigest(), 'labels': labels})
     verify_vendor(root)

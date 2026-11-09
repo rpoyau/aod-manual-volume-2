@@ -7,7 +7,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 VENDOR = Path('manual2/vendor/aod_m3')
-BINDING_SHA256 = '7e5eb5c6882d1e880fdbe51a74322457a0cbc376b8c8f8290d094db41ef07f7f'
+BINDING_SHA256 = '51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02'
+PRIOR_BINDING_SHA256 = '7e5eb5c6882d1e880fdbe51a74322457a0cbc376b8c8f8290d094db41ef07f7f'
 LEGACY_BINDING_SHA256 = '68feb86e99330ee705f9a75161d8495d356d082740f88bf29a70217e4d331bb0'
 
 
@@ -20,6 +21,14 @@ def verify_vendor(root=ROOT):
     for name, source in result['files'].items():
         if hashlib.sha256((root / VENDOR / name).read_bytes()).hexdigest() != source['sha256']:
             raise ValueError('M3 vendor source changed: ' + name)
+    previous = result['previous_binding']
+    path = root / previous['path']
+    data = path.read_bytes()
+    if previous['sha256'] != PRIOR_BINDING_SHA256 or hashlib.sha256(data).hexdigest() != PRIOR_BINDING_SHA256:
+        raise ValueError('M3 prior vendor binding changed')
+    for name, source in json.loads(data)['files'].items():
+        if hashlib.sha256((path.parent / name).read_bytes()).hexdigest() != source['sha256']:
+            raise ValueError('M3 prior vendor source changed: ' + name)
     return result
 
 

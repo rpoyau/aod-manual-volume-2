@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'manual2/scripts'))
 sys.path.insert(0, str(ROOT / 'scripts'))
 from matter1_m3 import mapping, verify_vendor
-from matter1_foundation import binding, legacy_source_bytes, legacy_engine_digest
+from matter1_foundation import binding, legacy_source_bytes, legacy_engine_digest, PRIOR_ARCHIVE
 from publication_support import verify_foundation
 from manual2.tests.foundation_fixture import copy_foundation_receipts
 
@@ -36,12 +36,46 @@ class M3MigrationTests(unittest.TestCase):
 
     def test_full_m3_binding_and_reviewed_source_inventory(self):
         active = verify_foundation(ROOT)
-        self.assertEqual(active['upstream_head'], 'b78b48dd7aa1608dbb7141e9814e33c3cfcf900b')
-        self.assertEqual(active['active_main_pages'], 73)
-        self.assertEqual(active['authority_status'], 'open_PR_43_candidate_at_binding')
+        self.assertEqual(active['upstream_head'], '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9')
+        self.assertEqual(active['upstream_tree'], '3ab04df3793beda481b4fb7ed0d628ba6765da70')
+        self.assertEqual(active['active_main_pages'], 70)
+        self.assertEqual(active['authority_status'], 'reviewed_local_PR_43_candidate_at_binding')
         migration = json.loads((ROOT / active['reviewed_rebind']).read_bytes())
+        self.assertEqual(len(migration['files']), 7)
+        self.assertTrue(all(row['before_sha256'] is not None for row in migration['files']))
+        self.assertEqual(active['active_text_sha256'], migration['reviewed_main_render']['text_sha256'])
+        migration = json.loads((ROOT / migration['previous_rebind']).read_bytes())
         self.assertEqual(len(migration['files']), 12)
         self.assertEqual(sum(row['before_sha256'] is not None for row in migration['files']), 11)
+
+    def test_newly_changed_sources_retain_original_authority(self):
+        for name in ('appendices/B_curling_curls.tex', 'sections/04_cut_running_fractal_tesseract.tex'):
+            with self.subTest(name=name):
+                active, historic = binding(ROOT)
+                self.assertNotEqual(active['files'][name], historic['files'][name])
+                self.assertEqual(hashlib.sha256(legacy_source_bytes(ROOT, name)).hexdigest(),
+                                 historic['files'][name])
+                with tempfile.TemporaryDirectory() as tmp:
+                    root = self.fixture(tmp)
+                    p = root / PRIOR_ARCHIVE / name
+                    p.write_bytes(p.read_bytes() + b'\n% hostile prior source\n')
+                    before = snapshot(root)
+                    with self.assertRaisesRegex(ValueError, 'archived Main source changed'):
+                        legacy_source_bytes(root, name)
+                    self.assertEqual(snapshot(root), before)
+
+    def test_each_successor_receipt_and_prior_manifest_is_pinned(self):
+        for name in ('manual2/evidence/m3-source-rebind.json',
+                     'manual2/evidence/m3-source-rebind-2026-11-08.json',
+                     str(PRIOR_ARCHIVE / 'manual2/evidence/foundation-source.json')):
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
+                root = self.fixture(tmp)
+                p = root / name
+                p.write_bytes(p.read_bytes() + b'\n')
+                before = snapshot(root)
+                with self.assertRaisesRegex(ValueError, 'Preservation:'):
+                    binding(root)
+                self.assertEqual(snapshot(root), before)
 
     def test_archived_authority_and_current_source_are_both_required(self):
         name = 'sections/06_wave_state_relational_time.tex'
@@ -60,7 +94,7 @@ class M3MigrationTests(unittest.TestCase):
     def test_resealed_successor_allowlist_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = self.fixture(tmp)
-            p = root / 'manual2/evidence/m3-source-rebind.json'
+            p = root / 'manual2/evidence/m3-source-rebind-2026-11-08.json'
             record = json.loads(p.read_bytes())
             record['files'][0]['after_sha256'] = '0' * 64
             p.write_text(json.dumps(record))
@@ -99,7 +133,7 @@ class M3MigrationTests(unittest.TestCase):
                 legacy_engine_digest(root, 'manual2/scripts/matter1_atomic.py')
 
     def test_vendor_edited_source_and_resealed_binding_rejected(self):
-        self.assertEqual(verify_vendor(ROOT)['upstream_head'], '139d6cf6cdd815afd88b17864867b91f202cac5e')
+        self.assertEqual(verify_vendor(ROOT)['upstream_head'], '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9')
         for reseal in (False, True):
             with self.subTest(reseal=reseal), tempfile.TemporaryDirectory() as tmp:
                 root = Path(tmp)
@@ -115,6 +149,18 @@ class M3MigrationTests(unittest.TestCase):
                 before = snapshot(root)
                 with self.assertRaisesRegex(ValueError, 'M3 vendor'):
                     mapping(root)
+                self.assertEqual(snapshot(root), before)
+
+    def test_prior_vendor_binding_and_sources_remain_required(self):
+        for name in ('binding.json', 'current/M3_MATHEMATICAL_BINDINGS.json'):
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as tmp:
+                root = self.fixture(tmp)
+                shutil.copytree(ROOT / 'manual2/vendor/aod_m3', root / 'manual2/vendor/aod_m3')
+                p = root / PRIOR_ARCHIVE / 'manual2/vendor/aod_m3' / name
+                p.write_bytes(p.read_bytes() + b'\n')
+                before = snapshot(root)
+                with self.assertRaisesRegex(ValueError, 'M3 prior vendor'):
+                    verify_vendor(root)
                 self.assertEqual(snapshot(root), before)
 
     def test_required_upstream_absence_cannot_become_skip(self):

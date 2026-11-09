@@ -53,6 +53,28 @@ remain unchanged.}
 \aodliteraturenote{Evaluated isotope data: ENSDF~\cite{isotopes-ensdf}; evaluation cross-check:
 NUBASE2020~\cite{isotopes-nubase2020}; binding control: AME2020~\cite{isotopes-ame2020}.}
 
+\subsection{Selected implantation-to-decay records}
+\label{manual2:lv-event-records}
+\paragraph{Setup.}
+The two selected Lv-290 chains in the retained Gates et al. source begin at
+implantation in the detector. Their first decay intervals are
+\(5.66\,\mathrm{ms}\) and \(17.3\,\mathrm{ms}\), respectively. Their isotope
+assignment, transport and event-selection context remain attached to each record.
+
+\paragraph{Derivation.}
+Exact conversion of the printed intervals gives \(283/50{,}000\,\mathrm{s}\)
+and \(173/10{,}000\,\mathrm{s}\). These individual observed delays are
+distinct from formation time and ensemble half-life. The reported digitizer
+capability of up to \(125\,\mathrm{MS/s}\) does not specify the actual timestamp
+resolution or its calibration; those inputs remain missing from a complete
+timing comparison.
+
+\aodprovenance{The event records in \path{manual2/data/m1/m3_metrology/} bind
+the retained source under \path{manual2/data/m1/isotopes/sources/}; the adopted
+half-life catalog remains separate.}
+\aodliteraturenote{The two chains and detector acquisition: Gates et al.,
+Fig.~2 and experimental description~\cite{gates-lv-2024}.}
+
 \subsection{A state-dependent finite law}
 \label{manual2:survival-law}
 \paragraph{Setup.}
@@ -368,10 +390,14 @@ duration 7. Passive observation leaves the evolution unchanged; a future respons
 cannot alter an earlier decision. These controls distinguish retained history,
 active participation and directional reflection.
 
-The observation interface binds the same prepared waves, committed contacts,
-window and pending returns. Replaying the original inputs checks the complete
-report. A conversion to physical cycles still requires an observation law and
-its calibration, as in \secref{manual2:stateful-si}.
+The observation interface retains the complete prepared population, directed
+contacts, committed prefixes, pending returns and prior comparison. Its selected
+window projects two candidate reclosures and three reference reclosures from
+that history; the projection does not replace the evolving state. With the
+declared gain of one cycle per reclosure, the conditional frequency is
+\(6\,128\,421\,180\,\mathrm{Hz}\). Replaying the original inputs checks the
+complete report. Physical cycle calibration remains a separate premise, as in
+\secref{manual2:m3-metrology}.
 
 \aodprovenance{The law \path{m1:witnessed-retention:r03:integration-v1} and
 \path{manual2/data/m1/witnessed_retention/} bind the complete histories and

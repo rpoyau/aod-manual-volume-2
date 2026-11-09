@@ -1,6 +1,6 @@
 # Alpha↔Omega Dynamics — Manual Volume II: Matter I
 
-A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 Main candidate `b78b48d` (PR43, canonical marker v41.02) and AFC v2.4. The consumed M3 executable and observation interface have their own [exact vendor binding](manual2/vendor/aod_m3/binding.json). The historical survival model retains its original executable binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
+A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 candidate `71cbcf7` (PR43) and AFC v2.4. Main, the [observation exports](manual2/vendor/aod_m3/binding.json) and the [metrology companion](manual2/vendor/aod_m3_metrology/binding.json) bind that exact upstream commit. The historical survival model retains its original executable binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
@@ -54,7 +54,7 @@ python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
 python3 -B scripts/check_matter1_application.py
 python3 -B scripts/check_matter1_v2_application.py
-for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival constructed_coupling witnessed_retention retention_adapter m3_observation; do
+for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival constructed_coupling witnessed_retention retention_adapter m3_observation m3_metrology; do
   python3 -B "manual2/scripts/verify_matter1_${lane}.py"
   python3 -B -O "manual2/scripts/verify_matter1_${lane}.py"
 done
@@ -173,3 +173,36 @@ python3 -B -O manual2/scripts/verify_matter1_m3_observation.py
 Their `generate_matter1_*.py` commands accept `--root SOURCE_REPO --output-root OUTPUT_REPO`. The complete reproduction check regenerates these lanes in a disposable directory; CI and the scoped isotope acceptance recorder include their tests. Full constructed-coupling replay takes several minutes.
 
 The two examples have separate state, reference and capacity choices. `retention_adapter/assessment.json` binds the actual Fl-286, Fl-289 and Og-294 constructions and records the missing normalization, capacity and loss mappings. It does not select a combined retention law. `m3_observation/observation_report.json` consumes the exact M3 observation interface with independently reconstructed R03 histories, preparation, directed contacts and pending returns. Its replay binds the complete observation context; it supplies no physical clock calibration. Physical isotope half-life remains unresolved and Fl-298 remains unscored.
+
+## M3 metrology applications
+
+The application profile `matter1:m3-metrology:applications:v1` consumes the
+committed M3 comparison method. It preserves all five R03 cases and the existing
+four atomic countermodel outputs. Predictions are replayed from original inputs
+before the comparison loads the retrospective H target. The recorded measurement
+window remains unmatched to the simulation; neither gain witness is selected.
+
+The application also executes the inherited hydrogen Table IV, Table VI and mean
+reductions, keeping exact printed-input arithmetic distinct from the quoted
+rounded mean. The NIST-F2 typical and August 2013 uncertainty records retain
+separate identities. Correction ownership, source dependence and unknown physical
+uncertainty remain explicit.
+
+H-2 and H-3 return `missing_input` for their absent preparation, observation law,
+target provenance and apparatus records. The two retained Gates2024 Lv-290 chains
+supply implantation-to-first-decay intervals and exact unit conversions, with
+actual timestamp resolution and calibration still missing. These records do not
+change the isotope catalog or the existing Fl/Og construction studies.
+
+```sh
+python3 -B manual2/scripts/verify_matter1_m3_metrology.py
+python3 -B -O manual2/scripts/verify_matter1_m3_metrology.py
+# Explicit regeneration, separate from verification:
+python3 -B manual2/scripts/generate_matter1_m3_metrology.py --output-root /tmp/matter1-metrology
+```
+
+The three artifacts under `manual2/data/m1/m3_metrology/` separate prediction,
+comparison and the application report. `PASS_M3_METROLOGY_APPLICATIONS` verifies
+those declared computations and source bindings; physical calibration remains
+unestablished. See the [adoption record](manual2/evidence/m3-metrology-adoption.md)
+for exact source ownership and historical preservation.

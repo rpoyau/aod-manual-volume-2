@@ -3,6 +3,8 @@
 The original engine and native admission source are preserved byte-for-byte.
 The application supplies strict original-context replay, explicit preparations,
 and the capacity/loss obstruction; it does not add a nuclear retention law.
+The source-resolution adapter is separately bound; frozen receipts retain their
+historical recipe identity.
 """
 from __future__ import annotations
 
@@ -18,6 +20,8 @@ import sys
 import tempfile
 
 from matter1_atomic import canonical, read_json, require
+from matter1_foundation import prior_m3_source_bytes
+from matter1_constructed_source import historical_recipe_digest, verify_adapter
 
 DATA = Path('manual2/data/m1/constructed_coupling')
 PROFILE = 'matter1:constructed-coupling-r02:v1'
@@ -45,6 +49,7 @@ def digest(value):
 
 def check_sources(root):
     root = Path(root)
+    verify_adapter(root)
     packet = root/DATA/'source_packet'
     require(sha(packet/'ORIGINAL_MEMBER_BINDINGS.json') == MEMBERS_SHA256, 'R02 member authority changed')
     require(sha(packet/'PACKET_NOTE.md') == PACKET_NOTE_SHA256, 'R02 packet scope changed')
@@ -63,7 +68,8 @@ def check_sources(root):
     for name, expected in bindings['sha256'].items():
         require(sha(packet/name) == expected, 'R02 bound input changed: '+name)
         if name.startswith(('upstream/sections/', 'upstream/appendices/')):
-            require(sha(root/name.removeprefix('upstream/')) == expected, 'R02 mathematical source differs from application')
+            source = prior_m3_source_bytes(root, name.removeprefix('upstream/'))
+            require(hashlib.sha256(source).hexdigest() == expected, 'R02 mathematical source differs from prior authority')
     require(sha(root/'manual2/scripts/matter1_model.py') == bindings['sha256']['inputs/matter1_model.py'], 'R02 inventory source differs')
     return {'member_binding_sha256': MEMBERS_SHA256, 'selected_original_members': len(members['members']),
             'bound_inputs': len(bindings['sha256']), 'original_archive': members['archive'],
@@ -108,7 +114,7 @@ def default_contract(root):
     bindings = check_sources(root)
     return {'schema_version': 1, 'profile': PROFILE, 'paired_profile': PAIRED_PROFILE,
         'source_bindings': bindings,
-        'application_source_sha256': {name: sha(root/'manual2/scripts'/name) for name in (
+        'application_source_sha256': {name: historical_recipe_digest(root, 'manual2/scripts/'+name) for name in (
             'matter1_constructed_coupling.py', 'generate_matter1_constructed_coupling.py', 'verify_matter1_constructed_coupling.py')},
         'r02_contract': read_json(root/DATA/'source_packet/contract.json'),
         'preparations': [{'id': label+':ground', 'symbol': label.split('-')[0], 'Z': z, 'A': a, 'N': a-z,
@@ -196,7 +202,7 @@ def write_case(root, context, destination):
         (generated/'input_context.json').write_bytes(canonical(context))
         summary = case_summary(engine)
         binding = {'profile': context['profile'], 'input_context_sha256': sha(generated/'input_context.json'),
-            'application_sha256': sha(Path(__file__)), 'source_bindings': check_sources(root),
+            'application_sha256': historical_recipe_digest(root), 'source_bindings': check_sources(root),
             'effective_contract_sha256': digest(context['contract']), 'summary': summary,
             'file_sha256': {name: sha(generated/name) for name in ORIGINAL_FILES+('input_context.json',)}}
         (generated/'application_binding.json').write_bytes(canonical(binding))
@@ -213,7 +219,7 @@ def verify_case(root, expected_context, destination, *, replay=True):
     require({p.name for p in destination.iterdir()} == set(CASE_FILES), 'Incomplete or unexpected constructed case artifact')
     require((destination/'input_context.json').read_bytes() == canonical(expected_context), 'Case original input context differs')
     binding = read_json(destination/'application_binding.json')
-    require(binding['application_sha256'] == sha(Path(__file__)), 'Case application source differs')
+    require(binding['application_sha256'] == historical_recipe_digest(root), 'Case application source differs')
     require(binding['source_bindings'] == check_sources(root), 'Case source context differs')
     require(binding['effective_contract_sha256'] == digest(expected_context['contract']), 'Case effective contract differs')
     require(set(binding['file_sha256']) == set(ORIGINAL_FILES+('input_context.json',)), 'Case inventory differs')

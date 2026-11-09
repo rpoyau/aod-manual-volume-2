@@ -1,0 +1,195 @@
+{
+  "schema": "aod.scientific.temporal-metrology.v1",
+  "version": 2,
+  "owner": "Manual M3 temporal metrology companion",
+  "scope": "Exact declared observer reductions and experiment-specific provenance; physical calibration is separately evidenced",
+  "dependencies": {
+    "native_observation_contract": "contracts/scientific/TEMPORAL_OBSERVATION.json",
+    "prediction_schema_version": 3,
+    "map_contract": "contracts/scientific/MAP_CONTRACT.json",
+    "error_contract": "contracts/scientific/ERROR_BUDGET.json",
+    "whole_artifact_replay": "aod_m3_temporal.replay_prediction(prediction, original_context)"
+  },
+  "observation_kinds": [
+    "native_reclosure_count",
+    "shed_packet_event",
+    "oscillator_phase_advance",
+    "fluorescence_population_estimate",
+    "nuclear_event_timestamp"
+  ],
+  "required_observation_fields": [
+    "id",
+    "evidence_class",
+    "kind",
+    "scope",
+    "sources",
+    "preparation",
+    "apparatus",
+    "detector",
+    "estimator",
+    "coordinate",
+    "epoch",
+    "window",
+    "calibration",
+    "corrections",
+    "uncertainty",
+    "selection"
+  ],
+  "exact_serialization": {
+    "integers": "JSON integer excluding bool",
+    "rationals": "canonical integer or numerator/denominator string",
+    "printed_values": "original decimal string with source precision retained",
+    "float_inputs": "reject"
+  },
+  "evidence_authentication": "Trusted payloads and nested source records are compared in their canonical JSON representation; booleans, integers and strings are not interchangeable",
+  "correction_binding": {
+    "source_payload": "corrections[correction_id]",
+    "required_evidence_fields": [
+      "observation_id",
+      "coordinate",
+      "epoch",
+      "window",
+      "value_turns",
+      "already_applied"
+    ],
+    "ownership": "observation_id must identify the observation receiving the correction; moving a correction to another observation requires new trusted evidence"
+  },
+  "nuclear_observation_binding": {
+    "source_payload": "observations[observation_id]",
+    "required_evidence_fields": [
+      "kind",
+      "scope",
+      "coordinate",
+      "epoch",
+      "window",
+      "preparation",
+      "event_source_id",
+      "event_source_sha256"
+    ],
+    "scope": "The enclosing observation context is bound to the separately validated event source; standalone event timing fields and numerical reductions are unchanged"
+  },
+  "phase": {
+    "unit": "turn",
+    "endpoint_domain": "[0,1)",
+    "winding": "signed integer net phase wraps",
+    "advance": "winding + phase_end - phase_start",
+    "native_phase_definition_changed": false,
+    "required": [
+      "coordinate",
+      "epoch",
+      "window",
+      "orientation",
+      "unwrapping_convention",
+      "source_ids"
+    ],
+    "optional_angle_report": "tau * phase_turns"
+  },
+  "conditional_si": {
+    "defining_integer_hz": 9192631770,
+    "duration_seconds": "corrected_Cs_equivalent_advance / defining_integer_hz",
+    "mean_frequency_hz": "defining_integer_hz * compared_advance / corrected_Cs_equivalent_advance",
+    "requirements": [
+      "matched coordinate, epoch and window",
+      "positive corrected reference advance",
+      "independent reference realization and observation map",
+      "unresolved physical correspondence explicitly typed"
+    ]
+  },
+  "apparatus_profiles": {
+    "hydrogen": "continuous maser heterodyne and source-bound correction chain",
+    "cesium": "driven fountain, two interactions, calibrated fluorescence population estimator",
+    "nuclear_event": "generic timestamp/origin/selection interface; dynamics downstream"
+  },
+  "source_roles": [
+    "model",
+    "calibration",
+    "evaluation",
+    "definition"
+  ],
+  "evidence_classes": [
+    "exact_mathematical_fixture",
+    "declared_model_prediction",
+    "measured_input_reduction",
+    "calibration_identity",
+    "independent_prediction"
+  ],
+  "source_reported_uncertainty": {
+    "requires": [
+      "source",
+      "campaign_or_measurement",
+      "unit",
+      "reported_value_or_bound",
+      "category_or_coverage_status",
+      "reporting_precision"
+    ],
+    "finite_distribution_inferred": false,
+    "eligible_for_existing_standard_uncertainty_validator_without_joint_model": false
+  },
+  "invariants": [
+    "whole artifact replay for every native-linked product",
+    "observer passivity and no future cut access",
+    "calibration frozen before evaluation",
+    "canonical uncertainty source counted once",
+    "source aggregates excluded when their components already enter same budget",
+    "unknown physical components remain unknown",
+    "no packet/cycle/closure identification without observation map"
+  ],
+  "limits": [
+    "No universal seconds per bip",
+    "No independent atomic frequency from SI normalization",
+    "No nuclear kernel or lifetime fit",
+    "No promotion of printed-input replay to raw experiment reproduction",
+    "No new awareness, path-integral or universal complexity premise"
+  ],
+  "comparison_assessment": {
+    "interface": "aod_m3_metrology.assess_comparison(record, trusted_sources)",
+    "compatibility": "Schema family and numerical laws are unchanged. Contract version 2 requires observation-specific correction evidence and an authenticated enclosing nuclear observation context, and rejects type-mismatched evidence or malformed comparison metadata previously accepted. Fully bound records retain their numerical results",
+    "authentication": "Complete assessment declaration and endpoint quantities are separately bound to supplied trusted sources using canonical JSON equality",
+    "count_endpoints": "native_reclosure_count and shed_packet_event require nonnegative integral values on both sides: JSON integers or canonical integer strings accepted by exact(); boolean, float, negative, fractional and noncanonical representations are rejected. The native observation extractor still requires a JSON integer",
+    "influence_fields": [
+      "id",
+      "stage",
+      "mechanism",
+      "source_ids",
+      "correction",
+      "residual_uncertainty",
+      "evaluation_method",
+      "conditions",
+      "materiality"
+    ],
+    "stages": [
+      "input",
+      "setup",
+      "output"
+    ],
+    "correction_status": [
+      "applied",
+      "included_in_input",
+      "not_applied",
+      "unknown"
+    ],
+    "evaluation_method": "Type_A and Type_B describe methods of uncertainty evaluation, not random or systematic error classes",
+    "condition_locations": [
+      "internal_apparatus",
+      "external_environment",
+      "reference",
+      "detector"
+    ],
+    "condition_transfer": "An applied effect inferred at a different location requires independently bound transfer scope; an external ambient field is not the internal apparatus field",
+    "windows": "Observation cuts retain coordinate and epoch; a separately declared reflection duration has its own nonblank string coordinate and unit, with no implicit observation or SI map",
+    "reference_roles": [
+      "calibration_anchor",
+      "evaluation",
+      "reference_dependent_evaluation"
+    ],
+    "dependency_identity": "Shared source payload digests remain shared under identifier aliases; absence of detected overlap does not establish independence",
+    "materiality": "A bound below a positive tolerance requires authenticated influence, window, coordinate, epoch and common output unit; it does not certify a complete physical budget",
+    "arithmetic": "Exact supplied prediction minus supplied comparison; previously applied corrections are never applied again",
+    "limits": [
+      "Metadata consistency only",
+      "No inferred probability distribution or physical acceptance score",
+      "No certification of independent physical validation",
+      "Unknown residual uncertainty and applicability remain explicit"
+    ]
+  }
+}
