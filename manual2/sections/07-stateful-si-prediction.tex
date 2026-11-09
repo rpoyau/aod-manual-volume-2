@@ -1,5 +1,13 @@
-\section{State-Dependent Evolution and the SI Prediction Experiment}
+\section{State-Dependent Evolution and SI Report Maps}
 \label{manual2:stateful-si}
+
+\aodnoteblock{Record classes and data}{The state-dependent histories are
+declared model records with exact event and count coordinates. The synthetic
+SI examples are metrology records with explicitly stipulated observation maps
+and joint uncertainty. Source reductions retain measured-input provenance.
+The O0 diagnostic comparisons bind a declared countermodel map and external
+target; they do not identify that countermodel as an atomic law. Each
+subsection supplies its own input, report coordinate and comparator.}
 
 \subsection{A response that changes later events}
 \paragraph{Setup.}
@@ -53,7 +61,7 @@ R_\lambda=r\frac{g_\lambda(1)}{g_\lambda(55)}=r(1+\lambda)
 \end{equation}
 preserves the Cs normalization for every member while allowing every positive ratio. The witnesses \(\lambda=0,1\) give \(6/5,12/5\) for the baseline and \(2/5,4/5\) after intervention. This proves underdetermination by the implemented finite constraints, not a general impossibility of an atomic AOD construction.
 
-The minimum additional premise is a justified common atomic construction and observable law that fixes the relative Cs/H response without importing the tested hydrogen splitting, its reciprocal period or an equivalent gain. Selecting one countermodel by agreement with the known target would fit that target. The atomic prediction objective remains incomplete until this premise is supplied and tested.
+The minimum additional premise is a justified common atomic construction and observable law that fixes the relative Cs/H response without importing the tested hydrogen splitting, its reciprocal period or an equivalent gain. Selecting one countermodel by agreement with the known target would fit that target. The finite count constraints above do not select that common atomic law.
 
 \paragraph{Calibration.}
 For the conventional benchmark, dimensionless spin operators obey
@@ -131,9 +139,11 @@ applicability and uncertainty. It selects neither gain witness and infers no
 apparatus correction from a residual.
 
 \paragraph{Specialization.}
-The H-2 and H-3 application records identify the missing preparation,
-configuration-to-observable law, sourced target and apparatus inputs. They
-supply no isotope-specific frequency. The selected Lv-290 intervals in
+The D/T records in \secref{manual2:dt-target-data} supply hydrogen-referenced
+external frequencies. An atomic comparison still requires the preparation,
+configuration-to-observable law and matching apparatus inputs. These acquired
+targets do not alter the frozen application profile or supply a native
+isotope-specific frequency. The selected Lv-290 intervals in
 \secref{manual2:lv-event-records} instead concern detector events.
 
 \paragraph{Calibration.}

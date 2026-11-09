@@ -1,6 +1,16 @@
 \section{Isotope Half-Lives and a Common Survival Experiment}
 \label{manual2:isotope-survival}
 
+\aodnoteblock{Record classes and data}{Finite evaluated half-lives and individual
+detector intervals are measured target records, with state, quantity, source
+and uncertainty preserved. Stability qualifications, unknown values, unobserved
+declarations and rejected candidates retain their distinct inventory records.
+Nucleon grouping is exact bookkeeping. The survival,
+constructed-coupling and retained-return applications are separately declared
+models, each with its own history, coupling, capacity and report coordinate.
+An O0 physical comparison requires a common observation map; a half-life table
+alone does not supply the model's state-dependent loss rule.}
+
 \subsection{Source records and nucleon bookkeeping}
 \paragraph{Setup.}
 The element reference remains the 118 placements and 126 slots of \secref{sec:coord0-enclosures}.
@@ -78,6 +88,11 @@ Fig.~2 and experimental description~\cite{gates-lv-2024}.}
 \subsection{A state-dependent finite law}
 \label{manual2:survival-law}
 \paragraph{Setup.}
+This model's data card names the two square paths, complete choice histories,
+reference returns, kernel weights and capacity rule. The report coordinate is
+survival over reference-return counts, with exact finite-law probabilities;
+the comparator is the declared retained/loss predicate. It uses no measured
+half-life as a kernel or capacity input.
 The third application model instantiates the conditional H1 kernel of
 \mainequation{eq:admitted-kernel}, paired orientation response of
 \mainequation{eq:sadar-orientation-antisymmetry}, and excess construction of

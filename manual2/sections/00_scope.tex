@@ -1,13 +1,98 @@
 \section{Manual Volume II Scope and Record Discipline}\label{manual2:scope}
 This volume supplies a compact relational reference for \textbf{Matter I: Elements 1--118}, with eight unfilled reference slots completing the declared grouping through slot 126, and a separately scoped folding and recurrence application. It consumes AOD Main mathematics, the M3 observation and comparison interfaces, and the bound AFC v2.4 reference. Main owns the ontology, hypotheses and mathematics; this Manual owns the elemental inputs, worked constructions, declared update model, visual model, validation and historical crosswalk.
 
+\subsection{Data support and record classes}\label{manual2:data-support}
+Declare the input distinctions and their induced relations before a calculation,
+report map or residual. The simulation data card inherited from the bound AOD
+Manual is
+\begin{equation}
+(D,C_{\mathrm{support}},M_{\AO},\Pi_{\mathrm{report}},
+\sigma_{\mathrm{input}},\epsilon_{\mathrm{report}},\mathrm{src}).
+\label{eq:manual2-simulation-data-card}
+\end{equation}
+Here \(D\) names the input data, \(C_{\mathrm{support}}\) its support class,
+\(M_{\AO}\) the calculation or map, \(\Pi_{\mathrm{report}}\) the reported
+coordinate, \(\sigma_{\mathrm{input}}\) the input uncertainty where applicable,
+\(\epsilon_{\mathrm{report}}\) the residual coordinate, and \(\mathrm{src}\)
+the source record. Exact arithmetic of an input does not determine its physical
+uncertainty. A source record can be declared before a model-to-target map exists.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Applicable Manual data-support classes.} A class describes
+the supplied distinctions; it is not an execution or agreement verdict.}
+\label{tab:manual2-data-support-classes}
+\begin{tabularx}{\textwidth}{@{}p{0.07\textwidth}p{0.20\textwidth}XX@{}}
+\toprule
+Class & Name & Declared support and relation & Report coordinate\\
+\midrule
+D0 & Exact internal fixture & Integer gates, channels and comparator bins;
+internal returned-current relations & Exact integer residual and \(\delta_3\) tally\\
+O0 & Observable-map fixture & Declared observable-map value and measured-sector
+target; external comparison map & Target residual in the declared coordinate\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Record form, scientific claim and data support have distinct roles. An exact
+fixture stores its comparator and audit. A measured target record stores a
+quantity, uncertainty, coordinate and citation; a calibration anchor stores a
+convention value. An external comparison additionally binds the model's map
+value and target residual. A benchmark manifest declares the required data and
+report coordinate. Source-only acquisition records do not acquire an executed
+O0 comparison merely by supplying a target. Static grouping arithmetic is not
+automatically a D0 returned-current fixture.
+
+The scientific record classes are native exact fixture, declared
+model/simulation, metrology record and empirical comparison. Native fixtures
+establish typed relations; models declare update and coupling laws; metrology
+adds observation, calibration and units; empirical comparison adds sourced
+targets and residuals. Each application states which of these operations it
+performs. Admission, execution and empirical agreement remain separate evidence
+claims. The G0--G3 and L0--L3 support classes of Manual I concern its declared
+field-dynamics and lensing data; they are not additional Matter I maturity levels.
+
+\aodprovenance{AOD Manual I at commit \texttt{71cbcf7}:
+\path{manual/sections/00_scope.tex}, labels
+\texttt{manual:scoped-errors-data-support} and \texttt{manual:record-forms};
+\path{manual/sections/06_field_dynamics_applications.tex},
+\texttt{tab:manual-data-support-classes}. The scientific and authoring bindings
+are recorded in \path{manual2/evidence/campaign-source-binding.json}.
+The copied Manual I source records are bound in
+\path{manual2/evidence/data-classes/source-bindings.json}; the component-level
+cards are in \path{manual2/data/m1/classification/data_cards.json}.}
+
 \subsection{Reading route and evidence scope}\label{manual2:reading-route}
 The dependency order is axiom, distinction, induced relations, admitted motif, declared model, mathematical consequence. The inherited route is \mainsection{sec:specific-distinction}, \mainsection{sec:closure-phase-wave}, \mainsection{sec:curl-closure-duon-current}, \mainsection{sec:wave-state-relational-time}, and \mainsection{sec:stokes-sadar-harmonic}. The present visual model projects declared enclosure membership and local roles. It does not instantiate the native construction trace for each element.
 
-The active element table records exact grouping and support arithmetic, assigned fixture inputs and their consequences. Its admission status is pending and its native execution status is \texttt{not\_executed}. A support declaration is formal syntax; it is not a cycle or fusion certificate. Element-wide native D.E.C. rows and return witnesses remain pending as specified in \secref{sec:audits-and-falsification}. The finite construction in \secref{manual2:folding-time} has its own event, scope-map and declared-model records; its checks do not promote the element table's status.
+The active element table records exact grouping and support arithmetic, assigned
+fixture inputs and their consequences. Its support declarations are formal
+syntax, distinct from cycle or fusion certificates. D.E.C. denotes the Declared
+Edge Computation ledger: it records a declared raw AFC calculation, admissible
+edges, exact kernel, route and boundary audit. The ledger stores evaluated
+values; it does not replace the calculation or join measured targets into it.
+The finite construction in \secref{manual2:folding-time} and the all-element
+campaign in \secref{manual2:all-element-campaign} bind their own events,
+scope maps, declared laws and returned-current comparisons. Their evidence
+does not change the class of the static reference table.
 
 \subsection{Exact arithmetic and external-comparison quarantine}\label{manual2:exact-arithmetic-quarantine}
-The support polynomial, cumulative boundaries, local counts, conditional support sums and assigned-input residuals use exact integers. Labelled-slot occupancy and the declared model's temporal comparisons use exact rationals. Arithmetic exactness, structural admission, declared-model execution, metrology and empirical agreement are separate claims. The hydrogen/caesium source inventory in \secref{manual2:hyperfine-application} supplies external state identities and a retrospective target. \secref{manual2:stateful-si} adds sequential state dependence, the SI measurement layer, a conventional benchmark and an executable underdetermination test for the atomic observation law. The AOD atomic point prediction remains absent. \secref{manual2:isotope-survival} adds a source-qualified isotope catalog and an exact survival ensemble whose reference-return count is distinct from SI elapsed time. \appref{manual2:app:quarantined-external} records the comparison boundary.
+The support polynomial, cumulative boundaries, local counts, conditional support
+sums and assigned-input residuals use exact integers. Labelled-slot occupancy
+and the model's temporal comparisons use exact rationals. A measured value
+retains its quantity, unit, uncertainty, source and rounding even when its
+transcribed decimal is evaluated as an exact fraction. A native result precedes
+its external observation/value map and target join.
+
+The hydrogen/caesium inventory in \secref{manual2:hyperfine-application}
+supplies measured target and calibration records. \secref{manual2:stateful-si}
+separates state-dependent evolution, SI maps, a conventional benchmark and
+observation-law countermodels. \secref{manual2:isotope-survival} separates the
+sourced isotope catalog from the declared survival ensemble. Its
+reference-return count and an SI elapsed interval have different report
+coordinates. \appref{manual2:app:quarantined-external} defines the external
+records and comparison map; \secref{manual2:prediction-test-registry} lists the
+calculation and data forms.
 
 \paragraph{Provenance.}
 The paired Main publication is built from AOD commit \texttt{71cbcf7} before this Manual. Earlier foundation sources and source-dependent executors are archived for the frozen application records. Imported equations and sections resolve through its semantic labels. Historical v94 and v40.03r24 records are comparison inputs, with their original statuses preserved; they do not replace this foundation.

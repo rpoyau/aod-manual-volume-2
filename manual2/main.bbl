@@ -58,6 +58,12 @@ F.~G. Kondev, M.~Wang, W.~J. Huang, S.~Naimi, and G.~Audi.
 \newblock {\em Chinese Physics C}, 45:030001, 2021.
 \newblock \url{https://www-nds.iaea.org/amdc/ame2020/nubase_4.mas20.txt}.
 
+\bibitem{kramida2010}
+A.~E. Kramida.
+\newblock A critical compilation of experimental data on spectral lines and
+  energy levels of hydrogen, deuterium, and tritium.
+\newblock {\em Atomic Data and Nuclear Data Tables}, 96:586--644, 2010.
+
 \bibitem{bipm-2025-adjustment}
 H.~S. Margolis, G.~Panfilo, F.~Collini, M.~Pizzocaro, A.~D. Ludlow, R.~Siadat,
   T.~Ido, and S.~Bize.
@@ -65,6 +71,11 @@ H.~S. Margolis, G.~Panfilo, F.~Collini, M.~Pizzocaro, A.~D. Ludlow, R.~Siadat,
   2026.
 \newblock Raw input, output, covariance, README and analysis notes.
   \url{https://www.bipm.org/en/doi/10.59161/StdFreq2026}.
+
+\bibitem{mathur1967}
+B.~S. Mathur, S.~B. Crampton, D.~Kleppner, and N.~F. Ramsey.
+\newblock Hyperfine separation of tritium.
+\newblock {\em Physical Review}, 158(1):14--17, 1967.
 
 \bibitem{nist-clock-operation}
 {National Institute of Standards and Technology}.
@@ -145,5 +156,10 @@ M.~Wang, W.~J. Huang, F.~G. Kondev, G.~Audi, and S.~Naimi.
   references.
 \newblock {\em Chinese Physics C}, 45:030003, 2021.
 \newblock \url{https://www-nds.iaea.org/amdc/ame2020/mass_1.mas20.txt}.
+
+\bibitem{wineland1972}
+D.~J. Wineland and N.~F. Ramsey.
+\newblock Atomic deuterium maser.
+\newblock {\em Physical Review A}, 5(2):821--837, 1972.
 
 \end{thebibliography}

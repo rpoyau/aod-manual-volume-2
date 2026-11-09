@@ -4,6 +4,52 @@ A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
+## Data classes before calculations
+
+Each calculation starts with its input distinctions, induced relations and
+[simulation data card](manual2/data/m1/classification/data_cards.json): input,
+support class, calculation/map, report coordinate, applicable input uncertainty,
+residual coordinate and source. The class definitions are bound to **Manual I
+at `71cbcf7`**, with retained source evidence under
+[`manual2/evidence/data-classes/`](manual2/evidence/data-classes/).
+
+| Axis | Meaning in this Manual |
+|---|---|
+| Data-support class | **D0** identifies an exact internal fixture with declared gates/channels and comparator relations; **O0** identifies an observable-map comparison with a measured-sector target. These codes describe support, not completed execution. |
+| Record form | Exact fixtures, measured target records, calibration anchors, benchmark manifests and external/observable-map records retain different required fields. A source-only target has no executed O0 residual. |
+| Scientific claim class | Native exact fixture, declared model/simulation, metrology record and empirical comparison remain distinct. |
+| Execution outcome | Admission, actual execution, physical prediction and empirical agreement retain their source-bound results; assigning a class does not promote them. |
+
+Static placement arithmetic is not automatically a D0 fixture. The all-element
+campaign is a declared simulation; its specifically bound internal contact
+audits have their own D0 scope. The conditional atomic countermodels have O0
+comparison records without becoming independently established atomic laws.
+Measured isotope/hyperfine targets and Cs defining anchors stay outside the raw
+native D.E.C. calculation. External observation maps and target joins follow
+the model output. The PDF introduces these classes first and groups external
+records under **Quarantined External Comparison**.
+
+The existing isotope sources include the retained NUBASE2020 file, selected
+ENSDF evaluations and experimental records; existing BIPM inputs, covariance
+and precision checks remain unchanged. The
+[NUBASE selection lookup](manual2/data/m1/external_transitions/nubase-selection-coverage.json)
+finds ground-record matches for 132 of the 135 selected `(Z,A)` pairs. Fl-298,
+Lv-288 and Lv-294 have no such match in that snapshot. This lookup is neither
+authority for the original reference-A selection nor a physical state map.
+
+The new [D/T transition source supplement](manual2/data/m1/external_transitions/catalog.json)
+retains a downloaded deuterium publisher abstract, an explicitly untranscribed
+original tritium record, and a later evaluated/rescaled tritium value from a
+retained NIST web text extraction. The original tritium download and raw NIST
+evaluation PDF were not obtained; the supplement does not claim otherwise.
+The complete historical hydrogen PDF is included with its original source hash.
+The deuterium result's assumed-exact hydrogen reference and the tritium
+rescaling's shared reference are preserved as source assumptions, not promoted
+to physical zero uncertainty or independent measurements. Preparation,
+experimental windows, magnetic sublevels and complete covariance remain
+explicit acquisition limits. These records add external targets, not native
+inputs, physical predictions or scored comparisons.
+
 ## Read the candidate
 
 - [`manual2.pdf`](manual2.pdf) and [`main.pdf`](main.pdf) are the canonical publication pair; keep them together for external references.
@@ -91,6 +137,10 @@ On Debian/Ubuntu, the TeX packages used by CI are `latexmk texlive-xetex texlive
 From the repository root:
 
 ```sh
+python3 -B manual2/scripts/verify_matter1_data_classes.py
+python3 -B -O manual2/scripts/verify_matter1_data_classes.py
+python3 -B manual2/scripts/verify_matter1_external_transitions.py
+python3 -B -O manual2/scripts/verify_matter1_external_transitions.py
 python3 -B manual2/scripts/verify_matter1_ledger.py
 python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
@@ -103,7 +153,13 @@ done
 node manual2/scripts/check_matter1_companion.cjs
 ```
 
-Both ledger-check forms are read-only, reject unknown flags and never repair corrupted inputs. Importing the modules does not generate files. The figure checker inspects the actual PDF/SVG, embedded fonts, every mark and the companion binding; the browser checker exercises the actual standalone page.
+The data-class and transition-source verifiers read persisted records without
+regenerating them. Their receipts cover classification/source bindings and
+transcriptions, separately from scientific execution or agreement. Both
+ledger-check forms are also read-only, reject unknown flags and never repair
+corrupted inputs. Importing the modules does not generate files. The figure
+checker inspects the actual PDF/SVG, embedded fonts, every mark and the companion
+binding; the browser checker exercises the actual standalone page.
 
 ## Explicit generation and paired publication
 
@@ -139,11 +195,20 @@ After the paired build:
 
 ```sh
 python3 -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v
+python3 -B -O -m unittest manual2.tests.test_matter1_data_classes manual2.tests.test_matter1_external_transitions -v
 python3 -B -O -m unittest discover -s manual2/tests -p 'test_matter1_data.py' -v
 for lane in folding temporal hyperfine stateful metrology bipm atomic application v2_application; do
   python3 -B -O -m unittest discover -s manual2/tests -p "test_matter1_${lane}.py" -v
 done
 ```
+
+Normal discovery includes the classification and transition-source suites.
+CI also runs both explicitly under optimized Python and verifies both persisted
+lanes before generation. Their mutations reject swapped D0/O0 roles, raw
+targets promoted to native inputs, calibration promoted to prediction,
+unsupported execution/acquisition status, altered source bytes and erased
+reference dependence. CI uploads the class registry, acquired source supplement
+and read-only receipts alongside the existing artifacts.
 
 Tests mutate disposable copies: operand compensation, fixed hinge, unsupported certification/execution, identity/types, mirrors, history joins, inputs, actual exports, renderer binaries/fonts and publication bindings. Browser checks cover all 126 marks, 320/360 px layouts, pointer/keyboard, light/dark modes and invalid A inputs. They measure visible invalid-input text contrast in both themes against a 4.5:1 threshold, and boundary badge text against a scoped 7:1 target. These checks do not certify whole-page WCAG conformance. The additional suites exercise persisted coordinate-alias, event replay, wrong-map, hinge, causal-order, atomic-identity, target-exposure and status mutations without rewriting inputs. These establish the stated finite model and software guards; complete native motif admission and empirical agreement remain pending.
 
@@ -231,8 +296,11 @@ rounded mean. The NIST-F2 typical and August 2013 uncertainty records retain
 separate identities. Correction ownership, source dependence and unknown physical
 uncertainty remain explicit.
 
-H-2 and H-3 return `missing_input` for their absent preparation, observation law,
-target provenance and apparatus records. The two retained Gates2024 Lv-290 chains
+The preserved H-2/H-3 M3 application records retain their historical `missing_input`
+results for preparation, observation law, target provenance and apparatus
+records. The separate D/T source supplement adds acquired target evidence
+without rewriting those historical executions or supplying a physical map.
+The two retained Gates2024 Lv-290 chains
 supply implantation-to-first-decay intervals and exact unit conversions, with
 actual timestamp resolution and calibration still missing. These records do not
 change the isotope catalog or the existing Fl/Og construction studies.

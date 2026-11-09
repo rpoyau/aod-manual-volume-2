@@ -49,6 +49,10 @@ jobs:
           dpkg-query -W 'texlive*' >> /tmp/matter1-checks/environment.txt
       - name: Verify delivered data, exports and browser before any generation
         run: |
+          python -B manual2/scripts/verify_matter1_data_classes.py | tee /tmp/matter1-checks/data-classes.json
+          python -B -O manual2/scripts/verify_matter1_data_classes.py | tee /tmp/matter1-checks/data-classes-optimized.json
+          python -B manual2/scripts/verify_matter1_external_transitions.py | tee /tmp/matter1-checks/external-transitions.json
+          python -B -O manual2/scripts/verify_matter1_external_transitions.py | tee /tmp/matter1-checks/external-transitions-optimized.json
           python -B manual2/scripts/verify_matter1_ledger.py | tee /tmp/matter1-checks/ledger.json
           python -B -O manual2/scripts/verify_matter1_ledger.py --check-data | tee /tmp/matter1-checks/ledger-optimized.json
           python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
@@ -72,7 +76,7 @@ jobs:
           python -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v 2>&1 | tee /tmp/matter1-checks/tests.txt
       - name: Run optimized validation tests
         run: |
-          python -B -O -m unittest manual2.tests.test_matter1_data manual2.tests.test_matter1_folding manual2.tests.test_matter1_temporal manual2.tests.test_matter1_hyperfine manual2.tests.test_matter1_application manual2.tests.test_matter1_stateful manual2.tests.test_matter1_metrology manual2.tests.test_matter1_bipm manual2.tests.test_matter1_atomic manual2.tests.test_matter1_v2_application manual2.tests.test_matter1_m3 manual2.tests.test_matter1_m3_evidence manual2.tests.test_matter1_bipm_precision manual2.tests.test_matter1_isotopes manual2.tests.test_matter1_survival manual2.tests.test_matter1_isotope_integration manual2.tests.test_matter1_constructed_coupling manual2.tests.test_matter1_witnessed_retention manual2.tests.test_matter1_m3_observation manual2.tests.test_matter1_retention_adapter manual2.tests.test_matter1_m3_metrology -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+          python -B -O -m unittest manual2.tests.test_matter1_data manual2.tests.test_matter1_folding manual2.tests.test_matter1_temporal manual2.tests.test_matter1_hyperfine manual2.tests.test_matter1_application manual2.tests.test_matter1_stateful manual2.tests.test_matter1_metrology manual2.tests.test_matter1_bipm manual2.tests.test_matter1_atomic manual2.tests.test_matter1_v2_application manual2.tests.test_matter1_m3 manual2.tests.test_matter1_m3_evidence manual2.tests.test_matter1_bipm_precision manual2.tests.test_matter1_isotopes manual2.tests.test_matter1_survival manual2.tests.test_matter1_isotope_integration manual2.tests.test_matter1_constructed_coupling manual2.tests.test_matter1_witnessed_retention manual2.tests.test_matter1_m3_observation manual2.tests.test_matter1_retention_adapter manual2.tests.test_matter1_m3_metrology manual2.tests.test_matter1_data_classes manual2.tests.test_matter1_external_transitions -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
           python -B -O -m unittest discover -s manual2/tests -p 'test_matter1_campaign*.py' -v 2>&1 | tee /tmp/matter1-checks/campaign-tests-optimized.txt
       - name: Reproduce all generated artifacts
         run: |
@@ -94,6 +98,8 @@ jobs:
             manual2/figures/
             manual2/visuals/
             manual2/evidence/
+            manual2/data/m1/classification/
+            manual2/data/m1/external_transitions/
             manual2/data/m1/folding/
             manual2/data/m1/hyperfine/
             manual2/data/m1/stateful/

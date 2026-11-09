@@ -1,8 +1,15 @@
-\section{Staged Hyperfine Application}\label{manual2:hyperfine-application}
+\section{Hyperfine Target Records and Observation Map}\label{manual2:hyperfine-application}
+
+\aodnoteblock{Record class and data}{The atomic inventory supplies measured
+target records and a calibration anchor. Its distinctions are isotope, charge,
+electronic and coupled states, transition, acquisition coordinate, source and
+uncertainty. The reported H/Cs ratio is a derived external value. The native
+model-to-observable map is a separate construction; an O0 comparison uses it
+only with a compatible measured target.}
 
 \subsection{Atomic identity and sourced recurrence}
 \paragraph{Setup.}
-The proposed application compares recurrent atomic and oscillator systems through one common fusion/reclosure model. Element placement alone does not identify a hyperfine state: hold \(Z\), isotope \(A\), charge, electronic state and nuclear spin fixed, and distinguish the coupled states. The present inventory has two neutral isotopes, four states and two transitions. It adds no placement to the 118-element reference and changes no reference-A input.
+The proposed application compares recurrent atomic and oscillator systems through one common fusion/reclosure model. Element placement alone does not identify a hyperfine state: hold \(Z\), isotope \(A\), charge, electronic state and nuclear spin fixed, and distinguish the coupled states. The retained H/Cs inventory has two neutral isotopes, four states and two transitions. The supplementary D/T target records below have separate source and reference bindings. Neither inventory adds a placement to the 118-element reference or changes a reference-A input.
 
 \begin{table}[H]
 \centering\small
@@ -35,7 +42,61 @@ Atomic interrogation prepares coherence and compares its later phase with an osc
 \aodprovenance{\path{manual2/data/m1/hyperfine/target_inventory.json} binds nuclide, state, transition, source and uncertainty records. \path{sources/hellwig1970-page200.png} preserves the transcription evidence. The report retains the ratio's measured-input scope.}
 \aodliteraturenote{Historical measurement and state labels: Hellwig et al.~\cite{hellwig1970}. Atomic data: NIST~\cite{nist-hydrogen-handbook,sansonetti2005}. Defining reference: BIPM~\cite{bipm-second}. Clock operation: NIST~\cite{nist-clock-operation}.}
 
-\subsection{A common model and its remaining observation map}
+\subsection{Hydrogen-referenced deuterium and tritium data}
+\label{manual2:dt-target-data}
+\paragraph{Setup.}
+These are measured target records for the ground-state hyperfine separation,
+with derived-external hertz coordinates. They are not D0 fixtures or evaluated
+O0 residuals. The underlying experiments compare D/H or T/H maser frequencies;
+their hertz values inherit a hydrogen reference. A later rescaling of a
+tritium result is the same experiment on a changed reference convention, not
+another independent measurement.
+
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Supplementary hyperfine target records.} Parenthesized
+uncertainties retain the source's last-digit notation; a coverage probability
+or Gaussian standard deviation is not supplied by the retained excerpts.}
+\label{tab:manual2-dt-targets}
+\begin{tabularx}{\textwidth}{@{}p{0.10\textwidth}p{0.29\textwidth}XX@{}}
+\toprule
+Isotope & Reported frequency / Hz & Reference and source & Record distinction\\
+\midrule
+\({}^{2}\mathrm H\) & \(327\,384\,352.5222(17)\) &
+Wineland--Ramsey (1972), with H stipulated as
+\(1\,420\,405\,751.768\) Hz & Primary public-abstract value;
+reported uncertainty digits give \(0.0017\) Hz\\
+\({}^{3}\mathrm H\) & \(1\,516\,701\,470.775(7)\) &
+Kramida (2010), rescaling Mathur et al. (1967) to the adopted H reference &
+Evaluated external value; reported uncertainty digits give \(0.007\) Hz\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The deuterium paper's exact-reference assumption is conditional to its
+reduction; it does not set measured hydrogen uncertainty to zero. Kramida's
+adopted H value carries parenthesized uncertainty \(0.001\) Hz, a distinct
+record from Hellwig's reported \(0.002\) Hz one-sigma uncertainty. Shared
+reference contributions and covariance must remain attached when these
+targets are compared. No source uncertainty is added a second time.
+
+The deuterium public abstract is retained as downloaded publisher HTML.
+The tritium value above is transcribed from the NIST-hosted evaluation;
+the stored extraction identifies its printed pages and does not authenticate
+an undownloaded original PDF. The original tritium numerical result and its
+original H reference remain untranscribed. Experimental magnetic sublevels,
+preparation and acquisition windows are not supplied by these records. In
+particular, the H/Cs table's \(m_F=0\) assignment does not extend to deuterium.
+
+\aodprovenance{\path{manual2/data/m1/external_transitions/catalog.json}
+separates primary, evaluated and untranscribed records, local source hashes,
+reference dependence and display scope. The retained full Hellwig PDF matches
+the original source hash. These source records do not enter the D.E.C.
+calculation.}
+\aodliteraturenote{Wineland and Ramsey~\cite{wineland1972}; Mathur et al.~\cite{mathur1967};
+Kramida~\cite{kramida2010}.}
+
+\subsection{A common model and its atomic observation map}
 \paragraph{Setup.}
 The application hypothesis is a reconfiguration between two states of the same isotope, bound to one frozen fusion/reclosure model. Proposed before/after configurations must preserve the isotope identity and the actual retained inner lineages. A transition need not increase element number, mass number or folding depth. A detected transfer can be identified as native shedding only after its source, destination, direction, window and measured observable are mapped.
 
@@ -44,7 +105,7 @@ The atomic inventory (P4a), applicable construction (P2) and coupled recurrence 
 \[
 (\mathrm{P4a},\mathrm{P2},\mathrm{P3})\longrightarrow\mathrm{P4}.
 \]
-The finite declared-model checks of \secref{manual2:folding-time} instantiate selected construction and comparator predicates. They do not supply isotope-specific native admission, a physical state/configuration map, or an independently derived update rule. Thus P4 remains pending. Chirality or a ternary role cannot be equated with \(m_F\) by visual resemblance, and a separate fitted law for each spectral line cannot count as a prediction of one common model.
+The finite declared-model checks of \secref{manual2:folding-time} instantiate selected construction and comparator predicates. They do not instantiate P4: its operands include the isotope-specific admitted configuration, physical state correspondence and coupled update law. Chirality or a ternary role cannot be equated with \(m_F\) by visual resemblance, and a separate fitted law for each spectral line cannot count as a prediction of one common model.
 
 The next native AOD physical comparison requires admitted atomic configurations, their recurrent histories and coupling records, a map from measured phase/cycles to native phase/returns, a metrological duration or frequency map, and its calibration and uncertainty model. Until those premises are established, the native predicted frequency ratio and empirical score remain absent. Separately declared conditional models and conventional benchmarks can execute under their own identified premises, as in \secref{manual2:stateful-si}. Observer phase is recorded in turns; an angular display uses \(\theta=\tau\phi\), with \(\tau\) the full-turn angular constant.
 
