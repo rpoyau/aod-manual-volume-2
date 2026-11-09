@@ -1,0 +1,73 @@
+{
+  "aod_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "aod_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70",
+  "bindings": {
+    ".agents/dependencies.json": "51671278eca56d59c576820c212c12e9d8a6019cde615deac82e4eb12ea27995",
+    "manual2/evidence/campaign-baseline.json": "3bc7013c16c800fe6dc96e2cc6e4857e0184207e89a345afa20a0ff0f0a291fe",
+    "manual2/evidence/foundation-source.json": "3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1",
+    "manual2/vendor/aod_m3/binding.json": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02",
+    "manual2/vendor/aod_m3_metrology/binding.json": "992a70a89bc3158b629fe9d7db5a5a909504e43b0a6eacb79f6af151e9c9d44b"
+  },
+  "canonical_authoring": {
+    "commit": "630af16a7c51fb8836e603eb54c67bf8560fb463",
+    "entry_points": [
+      {
+        "directory_tree": "8e50720d97716d0e3eb5ba7da3dc6e5af5a426ea",
+        "entry_point": "skills/aod/SKILL.md",
+        "name": "aod",
+        "sha256": "6a5926d2fd86db985d901aa92d7d0f44493849015242cded0a5a9350eb8e3cdc"
+      },
+      {
+        "directory_tree": "8e251d4eb6764c328f9ff20c1c04565c62c91db1",
+        "entry_point": "skills/axiomatic-fundamentalism/SKILL.md",
+        "name": "axiomatic-fundamentalism",
+        "sha256": "4eeaba030dd15d44c96f8cd0021f090c38abdf8b3922269bea0381336eca5b10"
+      },
+      {
+        "directory_tree": "1f99ce9761bcaed69724f2bad4551d6df375e195",
+        "entry_point": "skills/afc/SKILL.md",
+        "name": "afc",
+        "sha256": "296b57b18dc7158daba511f554a46af66f753157b0ceefbf0a80cb6b96b3eee3"
+      },
+      {
+        "directory_tree": "aa20ce1a6498bf8c48a35582580044adffcd0061",
+        "entry_point": "skills/general-mechanics/SKILL.md",
+        "name": "general-mechanics",
+        "sha256": "01158467b37d3afff06d01a35eed496ac094f267decfe99c816821376b8cc306"
+      }
+    ],
+    "loading": "Read explicit paths from a verified external checkout; no automatic discovery or global installation implied.",
+    "project_history_required": false,
+    "repository": "https://github.com/rpoyau/aod-skills",
+    "scientific_build_dependency": false,
+    "scope": "Portable authoring/review guidance; does not certify current AOD source or scientific results.",
+    "source_bindings_path": "SOURCE_BINDINGS.json",
+    "source_bindings_sha256": "8ca4df7146540b29ce34bd573261624df87015a8200e433edb8fb6e7191fb3e5",
+    "status_at_binding": "canonical_main",
+    "tree": "9d571826e270b79e3c43aac7ebbf259a6372b1e1"
+  },
+  "installed_authoring_read": [
+    {
+      "sha256": "8c1b32c2c882cf5627c33df9779b5d62c1797059cb38796438179cb51e56d024",
+      "skill": "aod"
+    },
+    {
+      "sha256": "bbd2094206c0d1d7bdb6bf78c8a53e4cc9ff3411f6a39d84e2783c79658ecea3",
+      "skill": "axiomatic-fundamentalism"
+    },
+    {
+      "sha256": "1a01dbfbf8705cd01c3c5a34afb064a081278ebb338c01f4aab2a312d83895a4",
+      "skill": "afc"
+    },
+    {
+      "sha256": "94c7efc8671eaaa4a2b5f857b59a8d90fdadceafcb208dac11d59c984c9330b5",
+      "skill": "general-mechanics"
+    }
+  ],
+  "matter_head_at_start": "bcbebc7684205263ac88557cfa1116e53fa34af3",
+  "matter_tree_at_start": "f4edf55dcdd56f758b999fe76b8b2a0f030149c7",
+  "owner_resolution": "AOD owns scientific presentation and Main/Manual ownership under the current installed owner amendment; AF governs inference and AFC the declared finite model. Preserve the five tracked historical skills and all frozen recipes.",
+  "schema_version": 1,
+  "scope": "New downstream all-element declared campaign. No Main ontology change. Admission, execution, metrology and empirical agreement are separate claims.",
+  "source_status": "open_reviewed_PR_candidates_not_releases"
+}

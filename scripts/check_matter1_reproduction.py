@@ -139,12 +139,22 @@ def main():
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
     parser.add_argument('--generator-python',default=sys.executable)
     args=parser.parse_args();root=args.root.resolve();before=snapshot(root)
+    sys.path.insert(0,str(root/'manual2/scripts'))
+    import matter1_campaign
+    campaign_manifest=matter1_campaign.default_manifest(root)
+    expected_outputs=EXPECTED_OUTPUTS | {
+        'data/m1/campaign/'+name for name in matter1_campaign.OUTPUTS
+    } | {
+        'data/m1/campaign/cases/'+row['id']+'.json'
+        for row in campaign_manifest['configurations']
+    }
     with tempfile.TemporaryDirectory(prefix='matter1-reproduction-') as directory:
         out=Path(directory)/'manual2'
         catalog=out/'data/m1/isotopes/catalog.json'
         commands=[
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_ledger.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_isotopes.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_campaign.py'),'--root',str(root),'--output-root',str(out.parent)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog)],
           [args.generator_python,'-B',str(root/'manual2/scripts/check_matter1_figure.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--isotope-catalog',str(catalog)]
         ]
@@ -161,8 +171,8 @@ def main():
             result=subprocess.run(command,capture_output=True,text=True)
             need(result.returncode==0,'Explicit generator failed: '+result.stdout+result.stderr)
         generated = {p.relative_to(out).as_posix() for p in out.rglob('*') if p.is_file()}
-        need(generated == EXPECTED_OUTPUTS, 'Generated output inventory mismatch; missing='
-             +repr(sorted(EXPECTED_OUTPUTS-generated))+'; extra='+repr(sorted(generated-EXPECTED_OUTPUTS)))
+        need(generated == expected_outputs, 'Generated output inventory mismatch; missing='
+             +repr(sorted(expected_outputs-generated))+'; extra='+repr(sorted(generated-expected_outputs)))
         checked=[]
         for p in sorted(out.rglob('*')):
             if not p.is_file():

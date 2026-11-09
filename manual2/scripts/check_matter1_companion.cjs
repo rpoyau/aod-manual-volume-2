@@ -88,6 +88,52 @@ async function checkIsotopes(page,width,theme){
  return{width,theme,catalog_records:27,source_switch:true,chain_navigation:true,unknown_and_stable_distinct:true,minimum_badge_contrast:Math.min(...ratios),horizontal_overflow:false};
 }
 
+async function checkCampaign(page,width,theme){
+ await page.setViewportSize({width,height:1500});await page.emulateMedia({colorScheme:theme});
+ const chart=width<640?'#strips':'#chart';
+ const payload=await page.locator('#matter1-campaign-data').textContent().then(JSON.parse);
+ assert.equal(payload.records.length,145);assert.equal(new Set(payload.records.map(r=>r.id)).size,145);
+ assert.deepEqual([...new Set(payload.records.map(r=>r.z))].sort((a,b)=>a-b),Array.from({length:118},(_,i)=>i+1));
+ await page.locator('#reference-view').selectOption('campaign-cadence');
+ assert(await page.locator('#campaign-panel').isVisible());assert(await page.locator('#campaign-key').isVisible());assert(await page.locator('#half-life-key').isHidden());
+ const offered=await page.evaluate(()=>{const ids=[],root=document.getElementById('matter1');for(let z=1;z<=118;z++){root.dispatchEvent(new CustomEvent('matter1:choose',{detail:{z}}));ids.push(...[...document.querySelectorAll('#campaign-picker option')].map(e=>e.value));}return ids;});
+ assert.deepEqual([...offered].sort(),payload.records.map(r=>r.id).sort());
+ const selected=payload.records.filter(r=>r.z===114),isomers=selected.filter(r=>r.a===289);
+ await page.locator(chart+' [data-element="114"]').click();
+ const options=await page.locator('#campaign-picker option').evaluateAll(es=>es.map(e=>e.value));
+ assert.deepEqual(options,selected.map(r=>r.id));
+ assert(isomers.length>=2,'Ground and provisional isomer source records remain separately selectable');
+ for(const record of isomers){
+  await page.locator('#campaign-picker').selectOption(record.id);
+  assert.equal(await page.locator('#matter1').getAttribute('data-campaign-id'),record.id);
+  assert.equal(await page.locator('#matter1').getAttribute('data-campaign-configuration'),record.configuration_id);
+  assert.match(await page.locator('#campaign-detail').textContent(),/shared constituent inventory does not establish a distinct atomic or isomer preparation/);
+  if(record.cadence_ratio!==null){assert((await page.locator('#campaign-detail').textContent()).includes(String(record.cadence_ratio)));assert.equal(await page.locator(chart+' [data-element="114"]').getAttribute('data-campaign-value'),String(record.cadence_ratio));}
+ }
+ // A change of the external evidence source cannot mutate the model selection.
+ const before=await page.locator('#matter1').getAttribute('data-campaign-id');
+ const nuclideOptions=await page.locator('#nuclide-picker option').evaluateAll(es=>es.map(e=>e.value));
+ if(nuclideOptions.includes('Fl-286:ground')){await page.locator('#nuclide-picker').selectOption('Fl-286:ground');await page.locator('#evaluation-picker').selectOption('gates2024');assert.equal(await page.locator('#matter1').getAttribute('data-campaign-id'),before);assert.match(await page.locator(chart+' [data-element="114"]').getAttribute('aria-label'),/Bounded return ratio/);}
+ await page.locator('#reference-view').selectOption('campaign-lag');
+ assert.match(await page.locator('#campaign-detail').textContent(),/no conversion to seconds/);
+ await page.locator('#reference-view').selectOption('campaign-survival');
+ assert.match(await page.locator('#campaign-detail').textContent(),/Loss observation map not established/);
+ assert.match(await page.locator('#campaign-scale-label').textContent(),/unavailable/);
+ assert.equal(await page.locator(chart+' [data-element="114"]').getAttribute('data-campaign-kind'),'unavailable');
+ assert.equal(await page.locator(chart+' [data-element="114"]').getAttribute('data-campaign-value'),'');
+ assert(!/right.censored/i.test(await page.locator('#campaign-detail').textContent()),'Undefined loss must not be reported as censoring');
+ await page.locator('#reference-view').selectOption('campaign-cadence');
+ const labels=await page.locator(chart+' [data-slot]').evaluateAll(es=>es.map(e=>(e.querySelector('text')||e).textContent));
+ assert.deepEqual(labels,data.marks.map(r=>r.label));
+ const colors=await page.locator(chart+' [data-element]').evaluateAll(es=>es.map(e=>({fg:getComputedStyle(e.querySelector('text')||e)[e.querySelector('text')?'fill':'color'],bg:getComputedStyle(e.querySelector('.badge')||e)[e.querySelector('.badge')?'fill':'backgroundColor']})));
+ const ratios=colors.map(c=>contrastRatio(c.fg,c.bg));assert(Math.min(...ratios)>=7,'campaign label contrast target 7:1');
+ assert(!(await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+1)));
+ if(width>=640){const geometry=await checkDesktop(page);assert.deepEqual(geometry.clipped,[]);assert.deepEqual(geometry.overlaps,[]);}
+ await capture(page,'campaign-'+theme+'-'+width);
+ await page.locator('#reference-view').selectOption('structural');assert(await page.locator('#campaign-panel').isHidden());
+ return{width,theme,source_records:145,elements:118,state_records_distinct:true,external_evidence_does_not_select_model:true,undefined_loss_is_unavailable:true,minimum_badge_contrast:Math.min(...ratios),horizontal_overflow:false};
+}
+
 (async()=>{
  const executablePath=process.env.CHROMIUM_EXECUTABLE||(fs.existsSync('/opt/google/chrome/chrome')?'/opt/google/chrome/chrome':undefined);
  const browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
@@ -114,7 +160,8 @@ async function checkIsotopes(page,width,theme){
  responsive.push({width,marks:126,visible_z_symbols:118,visible_roles:true,horizontal_overflow:false});await capture(page,'narrow-'+width);
  }
  const isotopeChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])isotopeChecks.push(await checkIsotopes(page,width,theme));
+ const campaignChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])campaignChecks.push(await checkCampaign(page,width,theme));
  assert.deepEqual(errors,[]);assert.deepEqual([hash(html),hash(layoutPath)],before);
- console.log(JSON.stringify({status:'PASS',isotope_checks:isotopeChecks,desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
+ console.log(JSON.stringify({status:'PASS',isotope_checks:isotopeChecks,campaign_checks:campaignChecks,desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error.stack);process.exitCode=1;});

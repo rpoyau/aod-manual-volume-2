@@ -53,6 +53,8 @@ jobs:
           python -B -O manual2/scripts/verify_matter1_ledger.py --check-data | tee /tmp/matter1-checks/ledger-optimized.json
           python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
           python -B scripts/check_matter1_application.py | tee /tmp/matter1-checks/conservation.json
+          python -B scripts/check_matter1_campaign_preservation.py | tee /tmp/matter1-checks/campaign-preservation.json
+          python -B manual2/scripts/verify_matter1_campaign.py --products-only | tee /tmp/matter1-checks/campaign-products.json
           for lane in folding temporal hyperfine stateful metrology bipm bipm_precision atomic isotopes survival constructed_coupling witnessed_retention m3_observation retention_adapter m3_metrology; do
             python -B "manual2/scripts/verify_matter1_${lane}.py" | tee "/tmp/matter1-checks/${lane}.json"
             python -B -O "manual2/scripts/verify_matter1_${lane}.py" > "/tmp/matter1-checks/${lane}-optimized.json"
@@ -71,6 +73,7 @@ jobs:
       - name: Run optimized validation tests
         run: |
           python -B -O -m unittest manual2.tests.test_matter1_data manual2.tests.test_matter1_folding manual2.tests.test_matter1_temporal manual2.tests.test_matter1_hyperfine manual2.tests.test_matter1_application manual2.tests.test_matter1_stateful manual2.tests.test_matter1_metrology manual2.tests.test_matter1_bipm manual2.tests.test_matter1_atomic manual2.tests.test_matter1_v2_application manual2.tests.test_matter1_m3 manual2.tests.test_matter1_m3_evidence manual2.tests.test_matter1_bipm_precision manual2.tests.test_matter1_isotopes manual2.tests.test_matter1_survival manual2.tests.test_matter1_isotope_integration manual2.tests.test_matter1_constructed_coupling manual2.tests.test_matter1_witnessed_retention manual2.tests.test_matter1_m3_observation manual2.tests.test_matter1_retention_adapter manual2.tests.test_matter1_m3_metrology -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+          python -B -O -m unittest discover -s manual2/tests -p 'test_matter1_campaign*.py' -v 2>&1 | tee /tmp/matter1-checks/campaign-tests-optimized.txt
       - name: Reproduce all generated artifacts
         run: |
           python -B scripts/check_matter1_reproduction.py | tee /tmp/matter1-checks/reproduction.json
@@ -102,9 +105,37 @@ jobs:
             manual2/data/m1/constructed_coupling/
             manual2/data/m1/witnessed_retention/
             manual2/data/m1/m3_metrology/
+            manual2/data/m1/campaign/
             manual2/data/m1/m3_observation/
             manual2/vendor/aod_m3_metrology/
             manual2/vendor/aod_m3/
             /tmp/matter1-checks/
             /tmp/matter1-paired-build/*-console.txt
             /tmp/matter1-paired-build/manual2/*-console.txt
+
+  campaign-replay:
+    name: All-element original-input replay (${{ matrix.shard }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - name: Replay every assigned configuration in both Python modes
+        run: |
+          mkdir -p /tmp/campaign-checks
+          python -B manual2/scripts/verify_matter1_campaign.py --shard ${{ matrix.shard }} --shards 4 | tee /tmp/campaign-checks/normal.json
+          python -B -O manual2/scripts/verify_matter1_campaign.py --shard ${{ matrix.shard }} --shards 4 | tee /tmp/campaign-checks/optimized.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: matter1-campaign-replay-${{ matrix.shard }}
+          path: /tmp/campaign-checks/

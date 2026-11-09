@@ -12,12 +12,27 @@
 <style>
 .view-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:12px 0}select{font:inherit;max-width:100%;padding:7px;border:1px solid var(--muted);border-radius:4px;background:var(--bg);color:var(--ink)}select:focus-visible{outline:3px solid var(--selected);outline-offset:3px}.nuclide-panel{border-top:1px solid var(--line);padding:10px 0;overflow-wrap:anywhere}.nuclide-panel h2{font-size:17px;margin:4px 0}.nuclide-panel h3{font-size:14px;margin:10px 0 4px}.nuclide-panel a{color:var(--selected)}.nuclide-panel button{background:var(--bg);color:var(--ink);border:1px solid var(--muted);border-radius:4px;padding:4px 8px;margin:3px}.decay-path{padding-left:20px}.life-scale{height:12px;max-width:360px;border:1px solid var(--muted);background:linear-gradient(90deg,#f5ede1,#91bed1)}.life-key{font-size:13px;color:var(--muted)}#matter1[data-view=half-life] #chart [data-element] .badge{fill:var(--life-fill);stroke-dasharray:var(--life-dash)}#matter1[data-view=half-life] #chart [data-element] text{fill:#182737}#matter1[data-view=half-life] #chart [data-element] .edge{stroke:#182737}#matter1[data-view=half-life] #chart .selected .badge{stroke:var(--selected);stroke-width:3}#matter1[data-view=half-life] .tile{background:var(--life-fill);color:#182737;border-style:var(--life-border)}#matter1[data-view=half-life] .tile:after{background:#182737}#matter1[data-view=half-life] .tile[aria-pressed=true]{outline:2px solid var(--selected);outline-offset:1px}.observation-status{font-weight:600}.source-list{padding-left:20px}.source-list li{margin:5px 0}@media(max-width:639px){.view-controls>div{width:100%}.view-controls select{width:100%}}@media print{.view-controls{display:none}}
 </style>
+<style>
+.campaign-scale{height:12px;max-width:360px;border:1px solid var(--muted);background:linear-gradient(90deg,#f4f1e6,#add5e2)}
+#matter1[data-view^=campaign-] #chart [data-element] .badge{fill:var(--campaign-fill);stroke-dasharray:var(--campaign-dash)}
+#matter1[data-view^=campaign-] #chart [data-element] text{fill:#182737}
+#matter1[data-view^=campaign-] #chart [data-element] .edge{stroke:#182737}
+#matter1[data-view^=campaign-] #chart .selected .badge{stroke:var(--selected);stroke-width:3}
+#matter1[data-view^=campaign-] .tile{background:var(--campaign-fill);color:#182737;border-style:var(--campaign-border)}
+#matter1[data-view^=campaign-] .tile:after{background:#182737}
+#matter1[data-view^=campaign-] .tile[aria-pressed=true]{outline:2px solid var(--selected);outline-offset:1px}
+#campaign-detail dl{display:grid;grid-template-columns:minmax(100px,auto) minmax(0,1fr);gap:4px 12px;margin:8px 0}
+#campaign-detail dt{color:var(--muted)}#campaign-detail dd{margin:0;font-variant-numeric:tabular-nums}
+#campaign-picker{max-width:100%}.campaign-dependencies{padding-left:20px}
+@media print{#campaign-panel{display:none!important}}
+</style>
 </head>
 <body>
 <main id="matter1">
 <h1>AΩD · Matter I — element reference</h1>
-<div class="view-controls"><div><label for="reference-view">Reference view</label><select id="reference-view"><option value="structural">Structural roles</option><option value="half-life">Isotope half-life</option></select></div></div>
+<div class="view-controls"><div><label for="reference-view">Reference view</label><select id="reference-view"><option value="structural">Structural roles</option><option value="half-life">Isotope half-life</option><option value="campaign-cadence">Model cadence</option><option value="campaign-lag">Model lag</option><option value="campaign-survival">Model survival</option></select></div></div>
 <div id="half-life-key" hidden><div class="life-scale" aria-hidden="true"></div><p id="half-life-scale" class="life-key"></p><p class="life-key">Finite values: logarithmic color scale. Dashed border: qualified or unselected record. Stable, limits and unavailable data have separate labels; none is plotted as infinity. Badge edge positions retain structural roles. An asterisk marks a provisional isomer assignment; inspect the state details.</p></div>
+<div id="campaign-key" hidden><div class="campaign-scale" aria-hidden="true"></div><p id="campaign-scale-label" class="life-key"></p><p class="life-key">Declared finite model. Color summarizes the selected configuration for each element; exact values and scope appear below. Dashed badges have no value for this observable. Badge edges retain structural roles.</p></div>
 <svg id="chart" role="group" aria-label="All 118 element references and eight unfilled reference slots in enclosure and seat order"></svg>
 <div id="strips" hidden></div>
 <div class="legend" aria-label="Role and guide legend">
@@ -30,6 +45,7 @@
 </div>
 <p class="scope">Reference set: Z = 1–118. Slots 119–126 are unfilled in this reference. Shading and spacing are display cues.</p>
 <div id="selection" class="selected-detail" aria-live="polite"></div>
+<section id="campaign-panel" class="nuclide-panel" aria-labelledby="campaign-heading" hidden><h2 id="campaign-heading">Relational dynamics</h2><div class="view-controls"><div><label for="campaign-picker">Simulation configuration / source record</label><select id="campaign-picker"></select></div></div><div id="campaign-detail" aria-live="polite"></div><p class="scope">Construction, declared execution and physical identification are separate. No isotope half-life follows from a missing loss observation map.</p></section>
 <section class="nuclide-panel" aria-labelledby="nuclide-heading"><h2 id="nuclide-heading">Isotope and decay evidence</h2>
 <div class="view-controls"><div><label for="nuclide-picker">Isotope / nuclear state</label><select id="nuclide-picker"></select></div><div><label for="evaluation-picker">Source record</label><select id="evaluation-picker"></select></div></div>
 <div id="nuclide-detail" aria-live="polite"></div><div id="decay-detail"></div>
@@ -92,5 +108,7 @@ new ResizeObserver(resize).observe(root);resize();
 })();
 </script>
 <script>__MATTER1_ISOTOPE_JS__</script>
+<script id="matter1-campaign-data" type="application/json">__MATTER1_CAMPAIGN_JSON__</script>
+<script>__MATTER1_CAMPAIGN_JS__</script>
 </body>
 </html>

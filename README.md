@@ -13,6 +13,48 @@ This revision preserves the candidate’s element identities, positions, local c
 
 At fixed Z, changing the companion’s integer A preserves placement and changes the support sum by 68ΔA. This is conditional count exploration. The separate sourced isotope selector and optional half-life color layer use the versioned catalog; changing the arithmetic input does not change that selection.
 
+## All-element inner-recurrence campaign
+
+The versioned [campaign](manual2/data/m1/campaign/manifest.json) covers all 118
+element references and 27 curated isotope/state records: 145 provenance records
+and 135 distinct `(Z,A)` inventories. Ground/isomer records remain separate.
+The generic neutral preparation supplies distinct proton, neutron and electron
+supports, including hydrogen-1 with zero neutrons. It preserves the original
+reference selections and their unresolved selection provenance.
+
+The [engine](manual2/scripts/matter1_campaign_engine.py) extends actual inner
+return histories before binding a new outer closure to those prefixes. Its
+declared orientation kernel and traversal pacing consume previously committed
+returned-current responses. Current native admission uses the exact M3 export;
+the reused historical construction recipe has a separate binding. All prior
+R02/R03 data and the static PDF/SVG chart are preserved. The companion adds
+bounded cadence, lag and survival views with a separate campaign record selector.
+
+The campaign's cadence is a return-count ratio within each configuration's
+recorded window, with a declared generic reference. It is not an identified
+cross-isotope frequency ratio. Physical state preparation, FRG gate admission,
+emitted phase, nuclear retention/loss and SI realization remain explicit
+dependencies. The comparison artifact retains the historical H/Cs reductions
+and isotope measurements separately. No isotope half-life or hydrogen frequency
+is manufactured from the generic construction; unavailable loss differs from a
+valid survival experiment censored by its horizon.
+
+Verify all original-input executions, or a balanced shard, without writing:
+
+```sh
+python3 -B scripts/check_matter1_campaign_preservation.py
+python3 -B manual2/scripts/verify_matter1_campaign.py
+python3 -B -O manual2/scripts/verify_matter1_campaign.py --shard 0 --shards 4
+```
+
+`--products-only` verifies aggregate artifacts and source reductions without
+replaying the native cases; its result explicitly identifies that narrower
+scope. CI replays all four disjoint shards in both Python modes. Explicit
+generation supports the same shard arguments; after all shards finish,
+`generate_matter1_campaign.py --finalize` assembles products. Finalization is
+generation, not a successful verification receipt. Full reproduction generates
+all campaign cases in a disposable directory before comparing their bytes.
+
 ## Data and authority
 
 AI-assisted work follows [`AGENTS.md`](AGENTS.md) and the pinned four portable
@@ -70,6 +112,7 @@ Generate the data/chart and build the publication pair explicitly, then verify:
 ```sh
 python3 -B manual2/scripts/generate_matter1_ledger.py --output-root manual2
 python3 -B manual2/scripts/generate_matter1_isotopes.py
+python3 -B manual2/scripts/generate_matter1_campaign.py
 MPLCONFIGDIR=/tmp/matter1-mpl python3 -B manual2/scripts/generate_matter1_wheel.py
 for lane in folding temporal hyperfine stateful metrology bipm atomic; do
   python3 -B "manual2/scripts/generate_matter1_${lane}.py"

@@ -56,7 +56,7 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
 
     from matter1_isotopes import build_catalog, load_inputs
     need(json.loads(isotope_catalog.read_text()) == build_catalog(load_inputs(source_root)), "isotope catalog differs from bound source construction")
-    need(manifest.get("schema") == "matter1-figure-manifest-v2", "figure manifest schema")
+    need(manifest.get("schema") == "matter1-figure-manifest-v3", "figure manifest schema")
     need(manifest.get("isotope_catalog_sha256") == sha(isotope_catalog), "isotope catalog binding mismatch")
     need(manifest.get("isotope_layer_sha256") == sha(layer), "isotope layer binding mismatch")
     html = html_path.read_text(encoding="utf-8")
@@ -67,6 +67,24 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
     rendered = template.read_text().replace("__MATTER1_LAYOUT_JSON__", layout_path.read_text().replace("</", "<\\/"))
     rendered = rendered.replace("__MATTER1_ISOTOPE_JSON__", json.dumps(json.loads(isotope_catalog.read_text()), ensure_ascii=False, sort_keys=True, indent=2).replace("</", "<\\/"))
     rendered = rendered.replace("__MATTER1_ISOTOPE_JS__", layer.read_text())
+    need(all(rendered.count(token) == 1 for token in ("__MATTER1_CAMPAIGN_JSON__", "__MATTER1_CAMPAIGN_JS__")),
+         "companion template requires exactly one campaign binding")
+    from matter1_campaign import ui_projection, input_paths
+    campaign_layer = source_root / "visuals/matter1-campaign-layer.js"
+    need(campaign_layer.is_file(), "campaign layer source missing")
+    campaign_paths = list(input_paths(source_root.parent)) + [campaign_layer,
+        source_root / 'scripts/matter1_campaign.py', source_root / 'scripts/matter1_campaign_engine.py']
+    need(all(p.is_file() for p in campaign_paths), "campaign display input missing")
+    paths.extend(campaign_paths)
+    original_hashes.update({str(p): sha(p) for p in campaign_paths})
+    campaign = ui_projection(source_root.parent)
+    campaign_json = json.dumps(campaign, ensure_ascii=False, sort_keys=True, indent=2)
+    need(manifest.get("campaign_projection_sha256") == hashlib.sha256(campaign_json.encode()).hexdigest(), "campaign projection binding mismatch")
+    need(manifest.get("campaign_layer_sha256") == sha(campaign_layer), "campaign layer binding mismatch")
+    match = re.search(r'<script id="matter1-campaign-data" type="application/json">(.*?)</script>', html, re.S)
+    need(match is not None and json.loads(match.group(1).replace("<\\/", "</")) == campaign, "companion campaign differs from original report projection")
+    rendered = rendered.replace("__MATTER1_CAMPAIGN_JSON__", campaign_json.replace("</", "<\\/"))
+    rendered = rendered.replace("__MATTER1_CAMPAIGN_JS__", campaign_layer.read_text())
     need(rendered == html, "companion differs from bound template and source inputs")
 
     with pdfplumber.open(pdf_path) as pdf:
@@ -141,7 +159,8 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
     return {"status": "PASS", "scope": "static figure/data/export only; not native execution or empirical agreement",
             "source_sha256": sha(ledger), "pdf": pdf_result, "svg_mark_labels": 126,
             "svg_minimum_font_pt": min(svg_sizes),
-            "companion_data_binding": "equal", "isotope_catalog_binding": "equal", "inputs_unchanged": True}
+            "companion_data_binding": "equal", "isotope_catalog_binding": "equal", "campaign_projection_binding": "equal",
+            "campaign_projection_scope": "Display projection binding; the separate campaign verifier replays scientific execution.", "inputs_unchanged": True}
 
 
 def main() -> None:

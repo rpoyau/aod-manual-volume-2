@@ -253,6 +253,10 @@ def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path, i
     if catalog != build_catalog(load_inputs(Path(__file__).resolve().parents[1])):
         raise ValueError("isotope catalog differs from bound source construction")
     layer = Path(__file__).resolve().parents[1] / "visuals/matter1-isotope-layer.js"
+    from matter1_campaign import ui_projection
+    campaign = ui_projection(Path(__file__).resolve().parents[2])
+    campaign_json = json.dumps(campaign, ensure_ascii=False, sort_keys=True, indent=2)
+    campaign_layer = Path(__file__).resolve().parents[1] / "visuals/matter1-campaign-layer.js"
     renderer_binding = verify_renderer()
     rows = read_rows(ledger)
     layout = build_layout(rows)
@@ -275,12 +279,14 @@ def generate(ledger: Path, figure_dir: Path, visual_dir: Path, template: Path, i
     if html.count("__MATTER1_LAYOUT_JSON__") != 1:
         raise ValueError("companion template must contain exactly one data binding")
     html = html.replace("__MATTER1_LAYOUT_JSON__", serialized.replace("</", "<\\/"))
-    for token, value in {"__MATTER1_ISOTOPE_JSON__": json.dumps(catalog, ensure_ascii=False, sort_keys=True, indent=2).replace("</", "<\\/"), "__MATTER1_ISOTOPE_JS__": layer.read_text()}.items():
+    for token, value in {"__MATTER1_ISOTOPE_JSON__": json.dumps(catalog, ensure_ascii=False, sort_keys=True, indent=2).replace("</", "<\\/"), "__MATTER1_ISOTOPE_JS__": layer.read_text(),
+                         "__MATTER1_CAMPAIGN_JSON__": campaign_json.replace("</", "<\\/"), "__MATTER1_CAMPAIGN_JS__": campaign_layer.read_text()}.items():
         if html.count(token) != 1:
-            raise ValueError("companion requires exactly one isotope binding: " + token)
+            raise ValueError("companion requires exactly one layer binding: " + token)
         html = html.replace(token, value)
     (visual_dir / "matter1-reference.html").write_text(html, encoding="utf-8")
-    manifest = {"schema": "matter1-figure-manifest-v2", "isotope_catalog_sha256": digest(isotope_catalog), "isotope_layer_sha256": digest(layer), "source_sha256": digest(ledger),
+    manifest = {"schema": "matter1-figure-manifest-v3", "isotope_catalog_sha256": digest(isotope_catalog), "isotope_layer_sha256": digest(layer), "source_sha256": digest(ledger),
+                "campaign_projection_sha256": hashlib.sha256(campaign_json.encode()).hexdigest(), "campaign_layer_sha256": digest(campaign_layer),
                 "renderer_binding": renderer_binding,
                 "profile": "static relational reference", "width_mm": WIDTH_MM, "height_mm": HEIGHT_MM,
                 "geometry_checks": checks, "measured_text": measured,

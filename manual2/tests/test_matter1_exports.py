@@ -40,7 +40,7 @@ class ExportIntegrity(unittest.TestCase):
                 self.assertEqual(before,{p:p.read_bytes() for p in before})
 
     def test_semantic_corruptions_rejected_even_with_updated_output_hash(self):
-        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor"):
+        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor", "campaign_value", "campaign_executor"):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 figures, visuals = root / "figures", root / "visuals"
@@ -78,6 +78,21 @@ class ExportIntegrity(unittest.TestCase):
                     text = target.read_text()
                     self.assertIn("h.kind==='observationally_stable'", text)
                     target.write_text(text.replace("h.kind==='observationally_stable'", "true"))
+                elif mutation == "campaign_value":
+                    import re
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    pattern = r'(<script id="matter1-campaign-data" type="application/json">)(.*?)(</script>)'
+                    match = re.search(pattern, text, re.S)
+                    self.assertIsNotNone(match)
+                    payload = json.loads(match.group(2).replace('<\\/', '</'))
+                    payload['records'][0]['cadence_ratio'] = '999999'
+                    target.write_text(text[:match.start(2)]+json.dumps(payload)+text[match.end(2):])
+                elif mutation == "campaign_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("Loss observation map not established", text)
+                    target.write_text(text.replace("Loss observation map not established", "Physical half-life established"))
                 else:
                     target = visuals / "matter1-layout.json"
                     data = json.loads(target.read_text())
