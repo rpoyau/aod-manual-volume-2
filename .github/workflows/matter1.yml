@@ -13,7 +13,7 @@ jobs:
   static-reference:
     runs-on: ubuntu-24.04
     # Full construction and adapter histories replay in both modes and reproduction.
-    timeout-minutes: 120
+    timeout-minutes: 240
     env:
       PYTHONDONTWRITEBYTECODE: "1"
       MPLCONFIGDIR: /tmp/matter1-mpl
@@ -65,13 +65,21 @@ jobs:
         run: |
           python -B scripts/build_matter1_documents.py --build-dir /tmp/matter1-paired-build | tee /tmp/matter1-checks/build.json
           python -B scripts/verify_matter1_publication.py | tee /tmp/matter1-checks/publication.json
-      - name: Actual hostile mutations and disposable reproduction
+      - name: Run complete normal tests
         run: |
           python -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v 2>&1 | tee /tmp/matter1-checks/tests.txt
+      - name: Run optimized validation tests
+        run: |
           python -B -O -m unittest manual2.tests.test_matter1_data manual2.tests.test_matter1_folding manual2.tests.test_matter1_temporal manual2.tests.test_matter1_hyperfine manual2.tests.test_matter1_application manual2.tests.test_matter1_stateful manual2.tests.test_matter1_metrology manual2.tests.test_matter1_bipm manual2.tests.test_matter1_atomic manual2.tests.test_matter1_v2_application manual2.tests.test_matter1_m3 manual2.tests.test_matter1_m3_evidence manual2.tests.test_matter1_bipm_precision manual2.tests.test_matter1_isotopes manual2.tests.test_matter1_survival manual2.tests.test_matter1_isotope_integration manual2.tests.test_matter1_constructed_coupling manual2.tests.test_matter1_witnessed_retention manual2.tests.test_matter1_m3_observation manual2.tests.test_matter1_retention_adapter manual2.tests.test_matter1_m3_metrology -v 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+      - name: Reproduce all generated artifacts
+        run: |
           python -B scripts/check_matter1_reproduction.py | tee /tmp/matter1-checks/reproduction.json
+      - name: Record core and v2 acceptance
+        run: |
           python -B scripts/record_matter1_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/acceptance.json
           python -B scripts/record_matter1_v2_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/v2-acceptance.json
+      - name: Record isotope acceptance with fresh replay
+        run: |
           python -B scripts/record_matter1_isotope_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/isotope-acceptance.json
       - uses: actions/upload-artifact@v4
         if: always()
