@@ -13,7 +13,11 @@ FOUNDATION = Path('manual2/evidence/foundation-source.json')
 REBIND = Path('manual2/evidence/m3-source-rebind.json')
 SUCCESSOR = Path('manual2/evidence/m3-source-rebind-2026-11-08.json')
 PRIOR_ARCHIVE = ARCHIVE / 'rebind-2026-11-08'
-FOUNDATION_SHA256 = '3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1'
+FOUNDATION_SHA256 = '5b1016fe93357ed6e8a8465c9e6f1415c92e58a1f366958fd09400b2d3d1f332'
+M3_ARCHIVE = ARCHIVE / 'rebind-2026-11-11'
+M3_FOUNDATION_SHA256 = '3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1'
+CURRENT_SUCCESSOR = Path('manual2/evidence/m3-source-rebind-2026-11-11.json')
+CURRENT_SUCCESSOR_SHA256 = '15cd97e874d2028ae712e97fa107e843a2457eaa6ab6ff88f45ca1de3b2fb196'
 REBIND_SHA256 = 'd6387c4c6e24e558a00264d455fdea82906940eb9122378b8a2002492a096513'
 SUCCESSOR_SHA256 = '64f032fe6885d4cd6de870b1808c4700b352be7187fe6655bd3fac49571606b6'
 PRIOR_FOUNDATION_SHA256 = '7c2117141de36d94f18fd21b178a243c3923495a9f1c494579b21f9e7f9fe921'
@@ -50,7 +54,9 @@ def _successor_files(root, previous, migration, archive):
 
 def binding(root):
     root = Path(root)
-    active = _record(root, FOUNDATION, FOUNDATION_SHA256, 'unreviewed active foundation manifest')
+    current = _record(root, FOUNDATION, FOUNDATION_SHA256, 'unreviewed active foundation manifest')
+    active = _record(root, M3_ARCHIVE / FOUNDATION, M3_FOUNDATION_SHA256,
+                     'historical 71cb M3 foundation changed')
     migration = _record(root, REBIND, REBIND_SHA256, 'unreviewed Main successor allowlist')
     historic = _record(root, ARCHIVE / FOUNDATION, HISTORICAL_FOUNDATION_SHA256,
                        'historical foundation changed')
@@ -73,7 +79,36 @@ def binding(root):
             'Preservation: successor authority mismatch')
     expected = _successor_files(root, prior, successor, PRIOR_ARCHIVE)
     require(active['files'] == expected, 'Preservation: active Main is not the reviewed successor')
-    return active, historic
+    successor = _record(root, CURRENT_SUCCESSOR, CURRENT_SUCCESSOR_SHA256,
+                        'unreviewed producer identity rebind')
+    require(successor['previous_foundation_sha256'] == M3_FOUNDATION_SHA256
+            and successor['previous_rebind'] == str(SUCCESSOR)
+            and successor['previous_rebind_sha256'] == SUCCESSOR_SHA256
+            and successor['archive'] == str(M3_ARCHIVE)
+            and successor['previous_upstream_head'] == active['upstream_head']
+            and successor['previous_upstream_tree'] == active['upstream_tree']
+            and successor['upstream_head'] == current['upstream_head']
+            and successor['upstream_tree'] == current['upstream_tree']
+            and current['reviewed_rebind'] == str(CURRENT_SUCCESSOR)
+            and current['reviewed_rebind_sha256'] == CURRENT_SUCCESSOR_SHA256,
+            'Preservation: current producer chain mismatch')
+    require(not successor['files'] and current['files'] == active['files'],
+            'Preservation: producer identity rebind changed Main')
+    from matter1_m3_producer import BINDING_SHA256
+    producer = _record(root, Path(successor['producer_binding']), BINDING_SHA256,
+                       'current producer binding changed')
+    require(successor['producer_binding_sha256'] == BINDING_SHA256
+            and producer['upstream_head'] == current['upstream_head']
+            and producer['upstream_tree'] == current['upstream_tree'],
+            'Preservation: current producer authority mismatch')
+    return current, historic
+
+
+def historical_m3_binding(root):
+    """Select the authenticated 71cb authority for unchanged frozen profiles."""
+    binding(root)
+    return _record(Path(root), M3_ARCHIVE / FOUNDATION, M3_FOUNDATION_SHA256,
+                   'historical 71cb M3 foundation changed')
 
 
 def legacy_source_bytes(root, name):
@@ -124,3 +159,19 @@ preserves old output receipts, rather than representing an adapter as old code.
     require(digest((root / ARCHIVE / name).read_bytes()) == row['before_sha256'],
             'Preservation: original adapter changed: ' + name)
     return row['before_sha256']
+
+
+def historical_property_digest(root):
+    """Bind the current source adapter while retaining its original recipe hash."""
+    root = Path(root)
+    historical_m3_binding(root)
+    record = _record(root, Path('manual2/evidence/property-source-rebind-2026-11-11.json'),
+                     '7b0fadb4d8d57c44ba52e4d2891b2e91abbc57c5ba35bc52c11f7e4566ebca02', 'unreviewed property source adapter')
+    require(record['historical_foundation_sha256'] == M3_FOUNDATION_SHA256
+            and record['active_foundation_sha256'] == FOUNDATION_SHA256,
+            'Preservation: property foundation chain changed')
+    require(digest((root / record['path']).read_bytes()) == record['after_sha256'],
+            'Preservation: property adapter changed')
+    require(digest((root / record['archive']).read_bytes()) == record['before_sha256'],
+            'Preservation: original property recipe changed')
+    return record['before_sha256']

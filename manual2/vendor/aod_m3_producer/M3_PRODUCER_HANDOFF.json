@@ -1,0 +1,1604 @@
+{
+  "binding": {
+    "detached_patch_path": "M3_MANUALI.patch",
+    "detached_patch_sha256": "9bafde59ab1d56d251adfcbea932506cb27dd2fdd0b2d6ea9d7c01c291093033",
+    "materialization_recipe": {
+      "exact_local_commit": {
+        "checkout": "aod",
+        "commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+        "tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
+      },
+      "patch_tree": {
+        "base_commit": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+        "commands": [
+          "git checkout --detach 71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+          "git apply --index M3_MANUALI.patch",
+          "git write-tree"
+        ],
+        "expected_tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927",
+        "identity_limit": "Patch reproduces the tree; use the local checkout or Git bundle for the exact unpublished commit object.",
+        "patch": "M3_MANUALI.patch"
+      }
+    },
+    "patch_base_commit": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+    "remote_write_authorization": "none; local detached candidate only",
+    "repository": "rpoyau/aod",
+    "retained_local_repair_tree": "ee6921baa1d7741d9e80e862e87348c73f41b583",
+    "reviewed_base": "1a80693cf6235809244479a5f52ed333662bf51d",
+    "reviewed_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+    "reviewed_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70",
+    "source_delta": "The final patch from reviewed 71cbcf7 includes the retained local 9fcaf18 Boolean-dimension repair and this request implementation; successor identity is recorded above.",
+    "source_manifest_path": "SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "f29f737089e894df953f7127248dbcf9752a7af9123b0c400f418c98f5c4cee8",
+    "successor_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+    "successor_tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
+  },
+  "candidate_file_bindings": {
+    "contracts/scientific/ERROR_BUDGET.json": "d0e1b02709b32464d95dad29342748702593ea889b201aad71ee9d071bd6a257",
+    "contracts/scientific/M3_MATHEMATICAL_BINDINGS.json": "9ad94e47e841cda6d715bcc385c186629b7ae44b8027721c2fed70d86dd14bce",
+    "contracts/scientific/MAP_CONTRACT.json": "8887596e94ff8361bb25dc863716ab2e33e5964d655c4e90a31686e7a2601dd0",
+    "contracts/scientific/TEMPORAL_METROLOGY.json": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
+    "contracts/scientific/TEMPORAL_OBSERVATION.json": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
+    "manual/data/m3/experimental_input_comparison.json": "74cbe3265c9a1780232ca23f28fba1b5c8c0c4a870681ad79c2df8d0fbd29e96",
+    "manual/data/m3/temporal.json": "eac13826a7cb77ef241526792921b8c2e24510bf5ac72cf5e66a80bc8fb4ac96",
+    "manual/data/m3/temporal_metrology/report.json": "a4579339e05d63cbfe3246beb0e06da6a658c803089f3b7a09a3ae9bc9be95fb",
+    "manual/scripts/aod_cell_measures.py": "47fb40a1227632912ce71ed0d1dfaec85911f7e4b83bcf1b4a0f9ef65f15c0c9",
+    "manual/scripts/aod_m3_experimental.py": "ae8e8ed027b60fdb42e0d6ce51465785cacb0e72b5e02986822bbc4aa4c3f45b",
+    "manual/scripts/aod_m3_metrology.py": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
+    "manual/scripts/aod_m3_temporal.py": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
+    "manual/scripts/aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
+    "manual/scripts/aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+  },
+  "candidate_hash_status": "Exact bytes of the recorded clean detached successor",
+  "compatibility_and_migration": [
+    {
+      "rule": "Existing validate_error_dependencies fixtures without trusted quantity payloads retain declared synthetic typing only. Where trusted quantity metadata exists, mismatch rejects. New external inputs must use aod.m3.external-quantity.v1; no physical provenance claim is retrofitted.",
+      "subject": "Legacy finite fixtures"
+    },
+    {
+      "rule": "ObservationContext fields and aod_temporal_observation_v1 unchanged; prediction schema_version3 retained. New readout/reduction products are additive. Code/contract hashes changed, so old cached predictions must be regenerated from original typed context.",
+      "subject": "Temporal context"
+    },
+    {
+      "rule": "New quantity result budgets may use exact variance, symbolic square-root display, interval enclosure or included_in_propagation reference. They are not interchangeable with legacy map error-budget v2 component serialization; retain the result schema.",
+      "subject": "Quantity budgets"
+    },
+    {
+      "rule": "Multiple quantities from one paper may use distinct role wrappers with a common primary-file/document identity. Do not count shared parent data as independent or double-count aggregates and descendants.",
+      "subject": "Source-role wrappers"
+    },
+    {
+      "rule": "Next ManualII bundle must verify actual successor commit/tree, source manifest, module/contract hashes and supported APIs; rebind vendor/Main imports and replay its own original application contexts. This producer task does not alter or certify the consumer.",
+      "subject": "Consumer migration"
+    },
+    {
+      "rule": "Historical protocols/failed comparison archives and fixed-transfer residuals-5/29,-49/151 remain conserved. New receipt describes the successor only; it does not rewrite prior evidence.",
+      "subject": "Historical evidence"
+    }
+  ],
+  "consumer_handoff": {
+    "consumer_replay_evidence": [],
+    "imported_main_and_vendor_manifest": null,
+    "readiness": "not_rebound",
+    "rebound_producer_commit": null,
+    "rebound_producer_tree": null,
+    "receipt_verifier_result": {
+      "producer_commit_not_yet_finalized": false,
+      "status": "pending_next_bundle"
+    },
+    "repository": "rpoyau/aod-manual-volume-2",
+    "reviewed_head": "2125f2687fd3b28a928f9526071bf191d1f207b5"
+  },
+  "document_role": "verified_detached_producer_receipt",
+  "interfaces": [
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_METROLOGY.json",
+      "contract_schema": "aod.scientific.temporal-metrology.v1",
+      "contract_sha256": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
+      "contract_version": 3,
+      "evidence_paths": [
+        "tests/test_m3_quantity_inputs.py",
+        "manual/data/m3/temporal_metrology/hydrogen/source/source_receipt.json",
+        "manual/data/m3/temporal_metrology/cesium/source/source_receipt.json"
+      ],
+      "input_schema": "aod.m3.external-quantity.v1",
+      "interface_id": "trusted_quantity",
+      "output_schema": "validated trusted quantity payload (kind/unit/dimension/domain/window/role/value/uncertainty/components/corrections)",
+      "owner_path": "manual/scripts/aod_m3_metrology.py",
+      "producer_entrypoint": [
+        "aod_m3_metrology.validate_quantity(binding, trusted_sources)",
+        "aod_m3_metrology.load_primary_receipt(name)"
+      ],
+      "setup_trace_binding": "No native admission inferred; independent trusted source and quantity/model payloads are required.",
+      "sha256": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
+      "supported_scope": "Canonical equality with independent trusted quantities[quantity_id]; authenticated primary receipts for hydrogen and cesium",
+      "unsupported_scope": "A hash authenticates the selected bytes, not physical truth; legacy untyped numerical fixtures are not authenticated experimental quantities",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/ERROR_BUDGET.json",
+      "contract_schema": "aod.scientific.error-budget.v2",
+      "contract_sha256": "d0e1b02709b32464d95dad29342748702593ea889b201aad71ee9d071bd6a257",
+      "contract_version": null,
+      "evidence_paths": [
+        "tests/test_m3_quantity_inputs.py",
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes"
+      ],
+      "input_schema": "aod.m3.quantity-propagation.v1",
+      "interface_id": "uncertainty_dispatch",
+      "output_schema": "aod.m3.quantity-propagation-result.v1",
+      "owner_path": "manual/scripts/aod_m3_metrology.py",
+      "producer_entrypoint": [
+        "aod_m3_metrology.propagate_quantities(record, trusted_sources)"
+      ],
+      "setup_trace_binding": "No native admission inferred; independent trusted source and quantity/model payloads are required.",
+      "sha256": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
+      "supported_scope": "Finite laws; complete affine moments; conditional interval enclosures; explicitly partial nonlinear/metadata results; cross-output covariance and separate output budgets",
+      "unsupported_scope": "No invented covariance, normality, coverage, independent copies, physical discrepancy or nonlinear remainder",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_OBSERVATION.json",
+      "contract_schema": "aod_temporal_observation_v1",
+      "contract_sha256": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
+      "contract_version": 1,
+      "evidence_paths": [
+        "tests/test_m3_temporal.py",
+        "manual/data/m3/temporal.json"
+      ],
+      "input_schema": "ObservationContext dataclass with aod_temporal_observation_v1 law",
+      "interface_id": "original_context_prediction",
+      "output_schema": "temporal prediction schema_version=3",
+      "owner_path": "manual/scripts/aod_m3_temporal.py",
+      "producer_entrypoint": [
+        "aod_m3_temporal.predict(context)",
+        "aod_m3_temporal.replay_prediction(prediction, original_context)",
+        "aod_m3_temporal.evaluate(prediction, target, original_context=context)",
+        "aod_m3_temporal.compare_cycles(prediction, observed_source, original_context=context)"
+      ],
+      "setup_trace_binding": "Reexecutes native Wave/Contact admission from independently supplied original typed context; binds population, lineage, directed contacts, preparation, pending payloads, prior comparison, gains, coordinate and epoch.",
+      "sha256": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
+      "supported_scope": "Admitted recurrent/coupled pair and fixed positive observation gains on declared population/preparation/domain/window",
+      "unsupported_scope": "No native-to-physical atomic observation law, universal seconds per bip, or consumer construction completion",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_OBSERVATION.json",
+      "contract_schema": "aod_temporal_observation_v1",
+      "contract_sha256": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
+      "contract_version": 1,
+      "evidence_paths": [
+        "tests/test_m3_temporal.py",
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/shared_readouts"
+      ],
+      "input_schema": "Original ObservationContext plus unique {id,quantity} definitions",
+      "interface_id": "shared_native_readouts",
+      "output_schema": "aod.temporal.readouts.v1",
+      "owner_path": "manual/scripts/aod_m3_temporal.py",
+      "producer_entrypoint": [
+        "aod_m3_temporal.readouts(context, definitions)",
+        "aod_m3_temporal.replay_readouts(product, original_context=context, definitions=definitions)"
+      ],
+      "setup_trace_binding": "Every output carries the same original_context_sha256, prediction_sha256 and operator_sha256; common source identities retained and unsupplied cross-covariance stays null.",
+      "sha256": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
+      "supported_scope": "Named compared/reference reclosures, forward lag/drift, conditional average_rate_hz and elapsed_seconds from one executed prediction",
+      "unsupported_scope": "No application-specific retention/hyperfine extractor, hidden update law or inferred stochastic independence",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_OBSERVATION.json",
+      "contract_schema": "aod_temporal_observation_v1",
+      "contract_sha256": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
+      "contract_version": 1,
+      "evidence_paths": [
+        "tests/test_m3_temporal.py",
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/window"
+      ],
+      "input_schema": "Original ObservationContext and contained integer-cut window",
+      "interface_id": "window_reduction",
+      "output_schema": "aod.temporal.window-reduction.v1",
+      "owner_path": "manual/scripts/aod_m3_temporal.py",
+      "producer_entrypoint": [
+        "aod_m3_temporal.window_reduction(context, window)",
+        "aod_m3_temporal.replay_window_reduction(product, original_context=context, window=window)"
+      ],
+      "setup_trace_binding": "Complete original context and selected window are regenerated before accepting cached product.",
+      "sha256": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
+      "supported_scope": "Exact selected completed-return inventory/count, retained lineage and explicit discarded-state list",
+      "unsupported_scope": "No unique history reconstruction, future-response preservation or fresh RCD admission",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_OBSERVATION.json",
+      "contract_schema": "aod_temporal_observation_v1",
+      "contract_sha256": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
+      "contract_version": 1,
+      "evidence_paths": [
+        "tests/test_m3_temporal.py",
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/insufficient_current_only",
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/retained_pressure"
+      ],
+      "input_schema": "Original context, listed WaveStates, retained field names, exact attention and input cut",
+      "interface_id": "finite_response_reduction",
+      "output_schema": "aod.temporal.finite-response-reduction.v1",
+      "owner_path": "manual/scripts/aod_m3_temporal.py",
+      "producer_entrypoint": [
+        "aod_m3_temporal.finite_response_reduction(context, states, retained_fields, attention=attention, input_index=input_index)",
+        "aod_m3_temporal.replay_response_reduction(product, original_context=context, states=states, retained_fields=retained_fields, attention=attention, input_index=input_index)"
+      ],
+      "setup_trace_binding": "State history/boundary must match admitted population; product replay binds actual pressure/current, population/window, operator bytes and update inputs.",
+      "sha256": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
+      "supported_scope": "Exhaustive grouping and next-current equality check on the supplied finite states under existing native update",
+      "unsupported_scope": "No universal reduced dynamics or physical Markov sufficiency; pressure/current are declared state variables",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/MAP_CONTRACT.json",
+      "contract_schema": "aod.scientific.map-contract.v2",
+      "contract_sha256": "8887596e94ff8361bb25dc863716ab2e33e5964d655c4e90a31686e7a2601dd0",
+      "contract_version": null,
+      "evidence_paths": [
+        "tests/test_m3_experimental_input_comparison.py",
+        "manual/data/m3/experimental_input_comparison.json#/freeze"
+      ],
+      "input_schema": "aod.m3.prediction-plan.v1; evaluation uses separate external quantity binding and optional joint evidence locator",
+      "interface_id": "complete_prediction_freeze",
+      "output_schema": [
+        "aod.m3.frozen-prediction.v1",
+        "aod.m3.frozen-comparison.v1"
+      ],
+      "owner_path": "manual/scripts/aod_m3_experimental.py",
+      "producer_entrypoint": [
+        "aod_m3_experimental.predict(binding, trusted_sources, original_context=context)",
+        "aod_m3_experimental.evaluate(product, target, original_plan=binding, trusted_sources=trusted, original_context=context)"
+      ],
+      "setup_trace_binding": "Source dependency closure rejects evaluation aliases and nested references; parameter value/unit must equal replayed native readout and selected output must use it.",
+      "sha256": "ae8e8ed027b60fdb42e0d6ce51465785cacb0e72b5e02986822bbc4aa4c3f45b",
+      "supported_scope": "Independent trusted plan binds actual code/contracts/context, uncertainty request, readout-linked parameters, window, single candidate, stopping, output definition, comparison criterion and actual calibration exposure; target joined only after full replay",
+      "unsupported_scope": "Only fixed context-window/single declared candidate is implemented; artifact freeze cannot establish historical blindness; physical discrepancy unresolved",
+      "version": 1
+    },
+    {
+      "compatibility": "Additive current interface; exact source/code/contract bindings must be refreshed. Legacy record formats retain their own declared scope.",
+      "contract_path": "contracts/scientific/TEMPORAL_METROLOGY.json",
+      "contract_schema": "aod.scientific.temporal-metrology.v1",
+      "contract_sha256": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
+      "contract_version": 3,
+      "evidence_paths": [
+        "tests/test_m3_metrology.py",
+        "tests/test_m3_metrology_repairs.py",
+        "manual/data/m3/temporal_metrology/report.json"
+      ],
+      "input_schema": "Existing authenticated comparison/profile records",
+      "interface_id": "passive_comparison",
+      "output_schema": "Existing exact reduction and consistent_declared_comparison_metadata records",
+      "owner_path": "manual/scripts/aod_m3_metrology.py",
+      "producer_entrypoint": [
+        "aod_m3_metrology.assess_comparison(record, trusted_sources)",
+        "aod_m3_metrology.reduce_hydrogen(protocol, measurement_id)",
+        "aod_m3_metrology.reduce_cesium(protocol, campaign_id)"
+      ],
+      "setup_trace_binding": "No native admission inferred; independent trusted source and quantity/model payloads are required.",
+      "sha256": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
+      "supported_scope": "Observation-specific correction ownership; printed-source reductions; passive comparison assessment with separate residual uncertainty",
+      "unsupported_scope": "No extra correction on included inputs; no raw detector-stream replay or independent atomic validation",
+      "version": 1
+    }
+  ],
+  "manual_disposition_binding": {
+    "claim_conservation_path": "review/manual/claim-conservation.json",
+    "claim_conservation_sha256": "8e425cdd721582a090bf67d49fa9b64206b59b8e5be884dccbbd13d1bbea6f25",
+    "findings": 26,
+    "path": "review/manual/finding-dispositions.json",
+    "sha256": "22f2ff6815f5a97ded01260cf39288119d4df265b255ef9722e484eadcae27ab",
+    "status": "All26 original finding identities/dependent-claim mappings retained; five common M3 rows now integrated with actual APIs, source receipts and scoped evidence; deferred application science remains open."
+  },
+  "quantity_and_freeze": {
+    "comparison_uncertainty": "Separate authenticated target joined after full prediction replay. Without supplied joint evidence the residual is exact conditional arithmetic and combined uncertainty stays partial. Joint moment evidence must bind both endpoint identities, actual frozen prediction variance and the residual law; no independence inferred.",
+    "containing_report_sha256": "74cbe3265c9a1780232ca23f28fba1b5c8c0c4a870681ad79c2df8d0fbd29e96",
+    "full_prediction_freeze_hash_encoding": "aod_mapping_error.canonical: sorted ASCII JSON, compact separators",
+    "full_prediction_freeze_json_pointer": "/freeze/prediction",
+    "full_prediction_freeze_path": "manual/data/m3/experimental_input_comparison.json",
+    "full_prediction_freeze_sha256": "45d7475fb0981da1dfb7fd5d149d2387e9ee45b11b32425934891bd6d4e44fc4",
+    "input_perturbation_evidence": [
+      "manual/data/m3/experimental_input_comparison.json#/freeze/input_only_change",
+      "tests/test_m3_experimental_input_comparison.py::test_input_perturbation_runs_map_and_uncertainty_budget"
+    ],
+    "source_roles_and_exposure": "Definition/model/calibration/evaluation are separate roles. Prediction dependency closure rejects known evaluation payload aliases, nested source_id, source_ids, dependency_ids and included_sources. Existing exposure is retrospective or a declared fixture; artifact freeze does not prove chronology.",
+    "target_mutation_evidence": [
+      "manual/data/m3/experimental_input_comparison.json#/freeze/target_only_change",
+      "tests/test_m3_experimental_input_comparison.py::test_complete_prediction_replay_precedes_target_join_and_records_exposure",
+      "review/quantity/freeze-independent-after.json"
+    ],
+    "trusted_quantity_binding": "Independent trusted source payload quantities[quantity_id] binds source role, locator, quantity type/unit/dimension, value/domain/window, uncertainty category/coverage, aggregate/component identities and correction ownership. unit/dimension assertions from the caller alone are insufficient."
+  },
+  "readiness": "producer_verified_in_scope",
+  "reduction_claims": [
+    {
+      "bound_if_applicable": null,
+      "claim_id": "fold-boundary-only",
+      "claim_type": "exhaustive_finite",
+      "counterexample_controls": "Unsigned area2->1 and oriented top image0 while two source occurrences remain; no measure preservation or universal dynamics inference",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/fold",
+        "tests/test_m3_cells.py",
+        "tests/test_m3_temporal.py"
+      ],
+      "observable_or_future_response": "Chain boundary commutation only",
+      "original_state": "Two adjacent unit squares with complete source cell identities and construction lineages",
+      "retained_state": "Inner-to-outer map and both source occurrences",
+      "window_and_input_class": "Finite two-square cubical complex; x->min(x,2-x), y fixed"
+    },
+    {
+      "bound_if_applicable": "0 for this exact count projection only",
+      "claim_id": "contained-window-count",
+      "claim_type": "exhaustive_finite",
+      "counterexample_controls": "Changed window/context or promoted future-response claim fails product replay; count projection supplies no new RCD admission",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/window",
+        "tests/test_m3_temporal.py"
+      ],
+      "observable_or_future_response": "Exact completed-return counts2/2; no future-response claim",
+      "original_state": "Complete admitted context on native window(0,30]",
+      "retained_state": "Selected return IDs, lineages, context identity and counts for(0,23]",
+      "window_and_input_class": "All listed committed returns of the two admitted lineages"
+    },
+    {
+      "bound_if_applicable": null,
+      "claim_id": "current-state-insufficiency",
+      "claim_type": "finite_counterexample_and_exhaustive_checked_domain",
+      "counterexample_controls": "Same current-only coarse state gives different next responses; current+pressure retains equal responses for the nontrivial equal-state group. Changed current/pressure/population/window/boundary/attention/retained fields invalidate replay.",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/insufficient_current_only",
+        "manual/data/m3/experimental_input_comparison.json#/reduction_controls/retained_pressure",
+        "tests/test_m3_temporal.py"
+      ],
+      "observable_or_future_response": "Next committed current1,1/2,1",
+      "original_state": "Three declared WaveStates on admitted histories; current0 and pressures1,2,1",
+      "retained_state": "Current alone versus current and pressure",
+      "window_and_input_class": "One existing native update at supplied attention1 and admissible prior input cut; exact listed states only"
+    }
+  ],
+  "schema": "aod.m3.producer_handoff.v1",
+  "scientific_disposition": "Verified local producer interfaces and conditional arithmetic/moment/bound results. No new dynamics, empirical truth, completed atomic prediction, independent validation, universal reduction or consumer rebinding is asserted.",
+  "temporal_observation": {
+    "closure_phase_readout_semantics": "Integer native cuts are not seconds. The initial admitted closure anchors a lineage and is excluded from later-return counting. A reclosure is not an oscillator cycle, shed packet or detector timestamp. Fixed gains supply declared cycle equivalents per reclosure; they are not derived atomic laws.",
+    "correction_ownership": "Source quantity/observation retains correction owner, inclusion/application status and residual uncertainty. Already-included NP3/wall terms remain included; passive assessment and quantity dispatcher apply no corrections.",
+    "evidence_paths": [
+      "contracts/scientific/TEMPORAL_OBSERVATION.json",
+      "contracts/scientific/TEMPORAL_METROLOGY.json",
+      "manual/data/m3/temporal.json",
+      "manual/data/m3/experimental_input_comparison.json",
+      "tests/test_m3_temporal.py"
+    ],
+    "physical_correspondence_scope": "No universal seconds per bip, atomic frequency, lifetime, nuclear kernel, prepared isotope assignment or shared atomic retention/hyperfine law supplied by these interfaces. Downstream construction and readout laws must be explicitly bound and replayed.",
+    "realization_and_si_map": "Exact defining frequency9192631770Hz is separate from a realized Cs clock. Conditional elapsed interval is reference cycle equivalents divided by that integer; mean rate is compared cycle equivalents divided by elapsed interval. Coordinate/epoch and positive gains are frozen. Derived reciprocal period is not the elapsed interval.",
+    "reference_lineage_semantics": "Compared and reference are distinct admitted Wave histories with identity/scope/lineage and directed Contact witnesses. Duplicate references or shared calibration payloads are dependent evidence; absence of collision does not prove independence.",
+    "shared_calibration_dependence": "Prediction plan lists the actual calibration dependency closure. Duplicate source/quantity aliases and aggregate/component double counting reject. Supplied joint covariance is retained; calibration equality is not independent validation.",
+    "window_and_population_semantics": "Counts use(lo,hi]; original context preserves actual population/preparation, complete operative directed contacts, committed prefixes, pending payloads, and previous comparison for nonzero prior lag. Selected windows are contained in the admitted envelope and do not certify future response."
+  },
+  "uncertainty_routes": [
+    {
+      "domain_assumptions": "Every denominator interval excludes zero; declared domains contain images",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/bounds",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "bounds",
+      "remainder_or_unresolved": "No probability distribution or standard deviation inferred",
+      "result_status": "conditional",
+      "route_id": "bounds",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "5fa360917c903a08a8bbad1cb95d94cb45787f63f2be663be4522dbc1fec8f09"
+        }
+      },
+      "supplied_information": "Source interval X in[1,3] and exact reciprocal parameter1",
+      "supported_scope": "Conditional enclosure[1/3,1]",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Declared explicit m-to-cm conversion; scale source-bound and executed",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/conversion",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "Physical discrepancy independent of unit conversion",
+      "result_status": "conditional",
+      "route_id": "conversion",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "9add5c79a5a2973be07df5bf71044916d8dd270761254c871b9c7d710724c7f2"
+        }
+      },
+      "supplied_information": "Length2m with standard uncertainty1/2m and exact scale100",
+      "supported_scope": "Mean200cm; variance2500cm\u00b2",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            1,
+            0,
+            0
+          ],
+          "unit": "cm",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "All named coordinates at every atom; positive masses sum to1; source domain contains support",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/finite_joint_law",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "finite_joint_law",
+      "remainder_or_unresolved": "Physical law correspondence remains unresolved",
+      "result_status": "conditional",
+      "route_id": "finite_joint_law",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "a879c47ff84f3fae51f30497abdd2fb6c58162f1fb8bbad8a06f61df238917ca"
+        }
+      },
+      "supplied_information": "Declared complete finite support X=-1,+1 with probabilities1/2 and nonlinear X\u00b2",
+      "supported_scope": "Exact supplied-law mean1/variance0; nonlinear mean shift retained",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Preserve original category/coverage metadata",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/metadata",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "metadata",
+      "remainder_or_unresolved": "Coverage and applicable propagation unresolved",
+      "result_status": "partial",
+      "route_id": "metadata",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "df74a26510a48f24ae1ebaf47b911a233af7e8798ac907c082faf94bacc6514c"
+        }
+      },
+      "supplied_information": "Expanded uncertainty token\u00b11 at nominal2 with missing coverage factor",
+      "supported_scope": "Nominal2 retained as partial",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Typed expression dimensions and shared complete moments",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/multi_output",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "Physical discrepancy and unsupported budget terms remain unknown",
+      "result_status": "conditional",
+      "route_id": "multi_output",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "cb8ec9753a38ba6ea3146d073a29c9bf41e2a611f7e91ecf51b119a9adc0a2e9"
+        }
+      },
+      "supplied_information": "Shared X with variance2; exact factors2Hz and3s",
+      "supported_scope": "Frequency variance8Hz\u00b2, duration variance18s\u00b2 and cross covariance",
+      "unit_semantics": {
+        "duration": {
+          "dimension": [
+            0,
+            1,
+            0
+          ],
+          "unit": "s",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        },
+        "frequency": {
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "unit": "Hz",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Complete PSD input covariance; differentiability permits local diagnostic",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/nonlinear_moments",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "No complete law or justified nonlinear remainder supplied",
+      "result_status": "partial",
+      "route_id": "nonlinear_moments",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "8ad4a7be2d22fff0cd2ad8577e81ce7c19ffa05c4f4a16bab9b1e90394f2f433"
+        }
+      },
+      "supplied_information": "Only mean0 and variance2 for nonlinear X\u00b2",
+      "supported_scope": "Nominal and linearized diagnostic retained; output mean/variance unresolved",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Authenticated primary PDF/receipt and unchanged historical protocol; source assumptions retained",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/published",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "metadata",
+      "remainder_or_unresolved": "Complete component covariance not supplied; no raw stream replay",
+      "result_status": "partial",
+      "route_id": "published",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "d0fd683b871d7a3c5ae2ca9da56a9c9d5318e394f9b80e4c1465ac90b03e6aca"
+        }
+      },
+      "supplied_information": "Hydrogen TableVI printed reduction1420405751.7667Hz; source uncertainty0.0018Hz and already-included corrections",
+      "supported_scope": "Published value/category/corrections retained; partial aggregate output uncertainty",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "unit": "Hz",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Source-backed aggregate estimate treated conditionally as mean; identity affine map",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/published_moments",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "No missing component covariance or independent prediction inferred",
+      "result_status": "conditional",
+      "route_id": "published_moments",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "e0dc432d15a7f3152268a95d91df01952fbd009c2a87fccb96a109dc46cac959"
+        }
+      },
+      "supplied_information": "Published combined estimate1420405751.768Hz with aggregate standard uncertainty0.002Hz",
+      "supported_scope": "Mean177550718971/125Hz; variance1/250000Hz\u00b2",
+      "unit_semantics": {
+        "Y": {
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "unit": "Hz",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "One identity and complete covariance",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/shared_cancel",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "Cancellation conditional on same source and exact map",
+      "result_status": "conditional",
+      "route_id": "shared_cancel",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "8ad4a7be2d22fff0cd2ad8577e81ce7c19ffa05c4f4a16bab9b1e90394f2f433"
+        }
+      },
+      "supplied_information": "Shared X with mean0/variance2 used in A=X,E=X",
+      "supported_scope": "Residual variance0 with full cross-output covariance",
+      "unit_semantics": {
+        "A": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        },
+        "E": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        },
+        "residual": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    },
+    {
+      "domain_assumptions": "Exact signed parameter and one input identity",
+      "evidence_paths": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/shared_reinforce",
+        "tests/test_m3_quantity_inputs.py",
+        "tests/test_m3_experimental_input_comparison.py"
+      ],
+      "method": "moments",
+      "remainder_or_unresolved": "No substitution of independent copies",
+      "result_status": "conditional",
+      "route_id": "shared_reinforce",
+      "source_dependence": {
+        "X": {
+          "quantity_id": "X",
+          "source_sha256": "3f9f6b9b9bbba55e9983d81d2526492f6c3f8c1f9cdfeebab38ac1a4c3a18fe3"
+        }
+      },
+      "supplied_information": "Shared X with mean0/variance2 used in A=X,E=-X",
+      "supported_scope": "Residual variance8 with full cross-output covariance",
+      "unit_semantics": {
+        "A": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        },
+        "E": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        },
+        "residual": {
+          "dimension": [
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "variance": "square of output unit; exact rational; symbolic square-root display only"
+        }
+      }
+    }
+  ],
+  "unresolved_dependencies": [
+    {
+      "affected_interfaces_or_claims": [
+        "physical atomic frequency",
+        "isotope lifetime",
+        "retention/hyperfine cross-readout application",
+        "history-to-SI physical correspondence"
+      ],
+      "attempt_evidence": [
+        "manual/data/m3/temporal.json",
+        "manual/data/m3/temporal_metrology/report.json",
+        "manual/data/m3/experimental_input_comparison.json"
+      ],
+      "dependency_id": "physical-native-observation",
+      "independent_work_available": "Use typed source interfaces, conditional moments/bounds, shared original-context readouts and finite falsification controls. Only dependent physical claims are restricted.",
+      "missing_operand_or_evidence": "Application-owned preparation/dynamics histories, native-to-observer law, physical calibration and complete realization/discrepancy evidence",
+      "owner": "ManualII/MatterI application and experiment-specific calibration"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "complete nonlinear output uncertainty",
+        "combined physical standard uncertainty"
+      ],
+      "attempt_evidence": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/nonlinear_moments"
+      ],
+      "dependency_id": "nonlinear-complete-uncertainty",
+      "independent_work_available": "Retain local linearized diagnostic, authenticated measurements, exact affine portions or separately justified enclosures.",
+      "missing_operand_or_evidence": "Full joint law or justified nonlinear remainder/bound when only moments are supplied",
+      "owner": "Supplying application uncertainty model"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "propagation requiring those specific operands"
+      ],
+      "attempt_evidence": [
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/metadata",
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/published",
+        "manual/data/m3/experimental_input_comparison.json#/quantity_routes/published_moments"
+      ],
+      "dependency_id": "source-metadata-completeness",
+      "independent_work_available": "Retain original measurement/category/printed token and use supported published aggregate moment evidence separately.",
+      "missing_operand_or_evidence": "Applicable uncertainty category, coverage, component covariance or transformation where absent",
+      "owner": "External measurement/application adapter"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "PUB-C04",
+        "PUB-C05",
+        "PUB-C06"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F006",
+        "manual/appendices/C_3d_coordinate_phase_cycle_delta3_fixture.tex",
+        "manual/scripts/aod_3d_coordinate_phase_delta3.py"
+      ],
+      "current_disposition": "adapter requirements and quantization witness specified; measured ingest not implemented",
+      "dependency_id": "MI-F006",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Measured-track acquisition adapter with origin/grid/ties/time alignment and uncertainty; mass/size-to-beta rule if used",
+      "owner": "Manual I Appendix C and coordinate applications"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "AS-C01",
+        "AS-C02",
+        "AS-C03",
+        "AS-C04",
+        "AS-C05"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F008",
+        "manual/sections/02_hydrogen_facing_shell_tests.tex"
+      ],
+      "current_disposition": "awaiting primary source rows and precision/covariance; limitation explicit",
+      "dependency_id": "MI-F008",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Primary hydrogen line/component rows with observed/Ritz convention, precision, uncertainty and covariance",
+      "owner": "Manual I hydrogen comparison adapter"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "AS-C01",
+        "AS-C02",
+        "AS-C03",
+        "AS-C04",
+        "AS-C05"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F009",
+        "manual/sections/02_hydrogen_facing_shell_tests.tex"
+      ],
+      "current_disposition": "awaiting source-bound medium conversion; air/vacuum limitation explicit",
+      "dependency_id": "MI-F009",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Verified vacuum targets or explicit applicable refractive-index map with propagated uncertainty",
+      "owner": "Manual I Paschen observation map"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "AS-C12",
+        "AS-C13",
+        "AS-C14"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F010",
+        "manual/sections/05_solar_system_field_tests.tex"
+      ],
+      "current_disposition": "deferred native solar evaluator; Mercury gate remains unevaluated",
+      "dependency_id": "MI-F010",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Frozen Sun/Mercury construction and native observable evaluator with source certificates and no GR premise",
+      "owner": "Manual I solar/Mercury application"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "REST-C01",
+        "REST-C02",
+        "REST-C03",
+        "REST-C04",
+        "REST-C05",
+        "REST-C10",
+        "REST-C11"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F012",
+        "manual/sections/01_rest_energy_prediction.tex",
+        "manual/data/higgs/higgs_trace_score_formula.md",
+        "tests/test_yro_tritrioseptyro.py"
+      ],
+      "current_disposition": "deferred history producer/choice exposure; declared freeze not historical evidence",
+      "dependency_id": "MI-F012",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Higgs originating histories, detector thresholds, selection/map rationale and exposure/freeze evidence",
+      "owner": "Manual I Higgs/rest-energy application"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "REST-C01",
+        "REST-C02",
+        "REST-C04",
+        "REST-C05",
+        "REST-C09",
+        "REST-C10",
+        "REST-C11",
+        "PUB-C02",
+        "PUB-C03"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F013",
+        "manual/sections/01_rest_energy_prediction.tex",
+        "manual/appendices/B_quarantined_external_comparison.tex"
+      ],
+      "current_disposition": "deferred shared-history/rate/clock energy evaluator",
+      "dependency_id": "MI-F013",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Shared admitted-history to relational-rate to rest-energy evaluator and calibrated clock binding",
+      "owner": "Manual I rest-energy application consuming M3 clock"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "REST-C01",
+        "REST-C02",
+        "REST-C04",
+        "REST-C05",
+        "REST-C10",
+        "REST-C11"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F015",
+        "manual/sections/01_rest_energy_prediction.tex"
+      ],
+      "current_disposition": "declared identical-support resolution limit; additional B-state nondegeneracy evidence deferred",
+      "dependency_id": "MI-F015",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Retained B-state discriminator and matched nondegeneracy test or declared unresolved resolution",
+      "owner": "Rest-energy clustered B-state record"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "GAL-C12",
+        "GAL-C13",
+        "GAL-C14",
+        "GAL-C15",
+        "GAL-C16",
+        "GAL-C17"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F017",
+        "manual/sections/07_galactic_lensing_plan.tex",
+        "manual/data/lensing/swells_k1_k2_k3_comparison_table.tex"
+      ],
+      "current_disposition": "repaired target-selected development status; full exposure/future cohort evidence remains needed",
+      "dependency_id": "MI-F017",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Source-bound SWELLS K1 selection/exposure history and a frozen recipe for an independently excluded evaluation cohort",
+      "owner": "Manual I SWELLS K1 registry/card"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "GAL-C12",
+        "GAL-C13",
+        "GAL-C14",
+        "GAL-C15",
+        "GAL-C16",
+        "GAL-C17",
+        "GAL-C18"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F018",
+        "manual/sections/07_galactic_lensing_plan.tex",
+        "manual/data/lensing/swells_k0_target_tallies_delta3_acquisition.csv",
+        "manual/data/lensing/swells_k1_thetaE_delta3_scores.csv",
+        "manual/data/lensing/toy1_verification_checks.csv"
+      ],
+      "current_disposition": "deferred per-system/cohort/gate evaluator lineage",
+      "dependency_id": "MI-F018",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Per-system lensing inputs/outputs, cohort inclusion/exclusion, gate recipes and evaluator lineage",
+      "owner": "Manual I lensing applications"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "GAL-C12",
+        "GAL-C13",
+        "GAL-C14",
+        "GAL-C15",
+        "GAL-C16",
+        "GAL-C17",
+        "GAL-C18"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F019",
+        "manual/data/lensing/swells_k0_target_tallies_delta3_acquisition.csv",
+        "manual/sections/07_galactic_lensing_plan.tex"
+      ],
+      "current_disposition": "shared derivation/dependence obligation explicit; joint source adapter unresolved",
+      "dependency_id": "MI-F019",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Lensing target derivation graph and joint covariance/likelihood with source assumptions",
+      "owner": "Manual I lensing observation/target adapter"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "AS-C06",
+        "AS-C07",
+        "AS-C08",
+        "AS-C09"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F022",
+        "manual/sections/03_short_window_rcd_shedding_fixtures.tex",
+        "sections/06_field.tex"
+      ],
+      "current_disposition": "deferred nested-path generator; signed bins/throughput preserved",
+      "dependency_id": "MI-F022",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Frozen one-gate/no-cross/coupled nested-path generators and exposure/throughput map",
+      "owner": "Manual I slit/nested-gate application"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "AS-C06",
+        "AS-C07",
+        "AS-C08",
+        "AS-C09"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F023",
+        "manual/sections/03_short_window_rcd_shedding_fixtures.tex",
+        "sections/06_field.tex"
+      ],
+      "current_disposition": "repaired amount-versus-route/retention distinction; certificates remain unresolved",
+      "dependency_id": "MI-F023",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Bound sheddic route IDs, allocated amounts/conservation and retained-form lifetime/window witness",
+      "owner": "Manual I short-window fixtures"
+    },
+    {
+      "affected_interfaces_or_claims": [
+        "PUB-C07",
+        "PUB-C08"
+      ],
+      "attempt_evidence": [
+        "review/manual/finding-dispositions.json#MI-F024",
+        "manual/sections/09_prediction_test_fixture_registry.tex"
+      ],
+      "current_disposition": "repaired uninstantiated schema status, kappa definition and completion fields",
+      "dependency_id": "MI-F024",
+      "independent_work_available": "Preserve existing exact/conditional rows and declared limitations; common M3 interface and unrelated verified examples remain usable.",
+      "missing_operand_or_evidence": "Instantiated neuronal acquisition/source record with T0, Ccross, Tcross, O, residual and uncertainty",
+      "owner": "Manual I neuronal registry"
+    }
+  ],
+  "verification": {
+    "acceptance_path": "M3_ACCEPTANCE.json",
+    "acceptance_sha256": "50bcfaf4c919b94c1f550a5e2d826b7a96f0f6e5c364bcb5b21d2cc7937c9b1e",
+    "acceptance_status": "PASS_SCOPED for all23 requested producer criteria; consumer receipt remains deferred",
+    "hosted": {
+      "commit": null,
+      "result": null,
+      "run_url": null,
+      "status": "not_checked_for_successor"
+    },
+    "local": {
+      "authoring_review_path": "/home/reginaldpoyau/projects/aod/aod-skills-repository-separation/projects/aod/authoring/review.py",
+      "authoring_scope_note": "Final commands use the current aod-skills authoring predicates; recursive Python, JSON profile and Markdown amendment bindings are recorded in the command manifest. Historical pinned literal failures remain prior evidence.",
+      "commands": [
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "-p",
+            "record_inventory",
+            "--basetemp",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-tmp-normal",
+            "--junitxml",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-normal.xml",
+            "tests"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 3079.109,
+          "environment": {
+            "AOD_TEST_EXECUTION": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/execution-normal.json",
+            "AOD_TEST_FAILURES": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/failures-normal.json",
+            "AOD_TEST_INVENTORY": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/inventory-normal.json"
+          },
+          "exit_code": 0,
+          "finished": "2026-11-11T14:44:41.419586+00:00",
+          "id": "pytest-normal",
+          "started": "2026-11-11T13:53:22.305827+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-normal.stdout.txt",
+          "stdout_sha256": "b7c9e6ac3ca1c03bce728cd8f70afc048dec9367521410b9d2920bb65e7b4ae8"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "manual/scripts/aod_cell_measures.py",
+            "--check-data"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.666,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:48.603518+00:00",
+          "id": "cell-normal",
+          "started": "2026-11-11T14:45:45.935179+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/cell-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/cell-normal.stdout.txt",
+          "stdout_sha256": "ff49960a610e1161afab957bc9abd2c7a6a8fc185aa37454d9d923dbbebd4131"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "manual/scripts/aod_mapping_error.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 9.257,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:55.199287+00:00",
+          "id": "mapping-normal",
+          "started": "2026-11-11T14:45:45.938070+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/mapping-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/mapping-normal.stdout.txt",
+          "stdout_sha256": "f4681165b8ceddf4dd37239b2aba186f1715a878a398c2210fea4f45d29f04d7"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "manual/scripts/aod_m3_temporal.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 1.173,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:49.783354+00:00",
+          "id": "temporal-normal",
+          "started": "2026-11-11T14:45:48.607160+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/temporal-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/temporal-normal.stdout.txt",
+          "stdout_sha256": "15fa912dbb83f16d87c223dc13cdb10afe7778f734f9652ae042f5a17906ab73"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "manual/scripts/aod_m3_metrology.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 1.028,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:50.818309+00:00",
+          "id": "metrology-normal",
+          "started": "2026-11-11T14:45:49.786944+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/metrology-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/metrology-normal.stdout.txt",
+          "stdout_sha256": "68a54da752e6b063d2c9a5b930cb525ed8f651b1fcfb2eca2b3c134355e908c0"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "manual/scripts/aod_m3_experimental.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.211,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:53.036326+00:00",
+          "id": "experimental-normal",
+          "started": "2026-11-11T14:45:50.821876+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/experimental-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/experimental-normal.stdout.txt",
+          "stdout_sha256": "d6aefb859a33babb06c11d26d6e81227d83c23730567b945bc96824d7fdb3dc9"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "scripts/audit_scientific_sources.py",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+            "--build-root",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/publication/source-release"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 1.799,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:54.842033+00:00",
+          "id": "source-audit-normal",
+          "started": "2026-11-11T14:45:53.040124+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/source-audit-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/source-audit-normal.stdout.txt",
+          "stdout_sha256": "0584ba6b54c38662ac5ee0e4b004b1af7c23fd55b8e4725e001be91217d6447b"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "/home/reginaldpoyau/projects/aod/aod-skills-repository-separation/projects/aod/authoring/review.py",
+            "--aod-root",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 1.862,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:56.710558+00:00",
+          "id": "authoring-normal",
+          "started": "2026-11-11T14:45:54.845560+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/authoring-normal.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/authoring-normal.stdout.txt",
+          "stdout_sha256": "df880b735265ccecec94514049bbfdc51a0258974af64547a6adeae5ed2ed14f"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "-p",
+            "record_inventory",
+            "--basetemp",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-tmp-optimized",
+            "--junitxml",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-optimized.xml",
+            "tests"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 3143.616,
+          "environment": {
+            "AOD_TEST_EXECUTION": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/execution-optimized.json",
+            "AOD_TEST_FAILURES": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/failures-optimized.json",
+            "AOD_TEST_INVENTORY": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/inventory-optimized.json"
+          },
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:45.930292+00:00",
+          "id": "pytest-optimized",
+          "started": "2026-11-11T13:53:22.311191+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/pytest-optimized.stdout.txt",
+          "stdout_sha256": "e00e6313fd583b849c1a42621d12d601648662e2555d356252da3ea836603f27"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "manual/scripts/aod_cell_measures.py",
+            "--check-data"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 3.833,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:45:59.039096+00:00",
+          "id": "cell-optimized",
+          "started": "2026-11-11T14:45:55.203053+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/cell-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/cell-optimized.stdout.txt",
+          "stdout_sha256": "ff49960a610e1161afab957bc9abd2c7a6a8fc185aa37454d9d923dbbebd4131"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "manual/scripts/aod_mapping_error.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 12.205,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:08.922361+00:00",
+          "id": "mapping-optimized",
+          "started": "2026-11-11T14:45:56.714399+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/mapping-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/mapping-optimized.stdout.txt",
+          "stdout_sha256": "f4681165b8ceddf4dd37239b2aba186f1715a878a398c2210fea4f45d29f04d7"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "manual/scripts/aod_m3_temporal.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.431,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:01.477332+00:00",
+          "id": "temporal-optimized",
+          "started": "2026-11-11T14:45:59.042774+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/temporal-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/temporal-optimized.stdout.txt",
+          "stdout_sha256": "15fa912dbb83f16d87c223dc13cdb10afe7778f734f9652ae042f5a17906ab73"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "manual/scripts/aod_m3_metrology.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.231,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:03.715496+00:00",
+          "id": "metrology-optimized",
+          "started": "2026-11-11T14:46:01.481029+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/metrology-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/metrology-optimized.stdout.txt",
+          "stdout_sha256": "68a54da752e6b063d2c9a5b930cb525ed8f651b1fcfb2eca2b3c134355e908c0"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "manual/scripts/aod_m3_experimental.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 3.457,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:07.179084+00:00",
+          "id": "experimental-optimized",
+          "started": "2026-11-11T14:46:03.719512+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/experimental-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/experimental-optimized.stdout.txt",
+          "stdout_sha256": "d6aefb859a33babb06c11d26d6e81227d83c23730567b945bc96824d7fdb3dc9"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "scripts/audit_scientific_sources.py",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+            "--build-root",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/publication/source-release"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.528,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:09.713335+00:00",
+          "id": "source-audit-optimized",
+          "started": "2026-11-11T14:46:07.182865+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/source-audit-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/source-audit-optimized.stdout.txt",
+          "stdout_sha256": "0584ba6b54c38662ac5ee0e4b004b1af7c23fd55b8e4725e001be91217d6447b"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "-O",
+            "/home/reginaldpoyau/projects/aod/aod-skills-repository-separation/projects/aod/authoring/review.py",
+            "--aod-root",
+            "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 2.728,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:11.656790+00:00",
+          "id": "authoring-optimized",
+          "started": "2026-11-11T14:46:08.926190+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/authoring-optimized.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/authoring-optimized.stdout.txt",
+          "stdout_sha256": "df880b735265ccecec94514049bbfdc51a0258974af64547a6adeae5ed2ed14f"
+        },
+        {
+          "argv": [
+            "/home/reginaldpoyau/projects/aod/AOD_M3_COMPARISON_EXECUTION_R02_2026-11-08/runtime/bin/python",
+            "-B",
+            "scripts/sync_zenodo_references.py",
+            "--check"
+          ],
+          "cwd": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/aod",
+          "duration_seconds": 0.247,
+          "environment": {},
+          "exit_code": 0,
+          "finished": "2026-11-11T14:46:09.967539+00:00",
+          "id": "zenodo-references",
+          "started": "2026-11-11T14:46:09.717179+00:00",
+          "status": "PASS",
+          "stderr": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/zenodo-references.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/final-complete/zenodo-references.stdout.txt",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "commands_manifest_path": "checks/final-complete/commands.json",
+      "commands_manifest_sha256": "e03b24e7b6dafe503f1c22b8dd1ed7bdc367663c1de1a39d6aa3aad56edca39f",
+      "evidence_sha256": {
+        "checks/final-complete/commands.json": "e03b24e7b6dafe503f1c22b8dd1ed7bdc367663c1de1a39d6aa3aad56edca39f",
+        "checks/final-complete/execution-normal.json": "bc2b75e3b99494ffca53dc0b25dfd7eee258875b337039f989c1bc15a4fed692",
+        "checks/final-complete/execution-optimized.json": "9eeba54feb4294681c45227cf27b76f6b9daca215a3f6091152ce544373f5806",
+        "checks/final-complete/failures-normal.json": "6cc007a956a42249173b7b5fb230fd9892c3fd80c801dc133d931807306610f2",
+        "checks/final-complete/failures-optimized.json": "6cc007a956a42249173b7b5fb230fd9892c3fd80c801dc133d931807306610f2",
+        "checks/final-complete/inventory-normal.json": "7f52794a09969bec7a7a4d779b2d232f3937da83189ea868c91ea007edd3c5e2",
+        "checks/final-complete/inventory-optimized.json": "7f52794a09969bec7a7a4d779b2d232f3937da83189ea868c91ea007edd3c5e2",
+        "checks/final-complete/pytest-normal.xml": "2c9fd5823db069a2569023d4b0dc4fb4881233228893ae35afa9698052f0a1b5",
+        "checks/final-complete/pytest-optimized.xml": "9d88a49caeb7df858f9bc1815ff2510db9c0a510b56024f98c39a26838142794",
+        "checks/final-complete/test-inventory-comparison.json": "4398d54bd2004b98a25c3c020843e43d26e875e38029bc6be76ce6b1b1539996"
+      },
+      "exact_test_inventory": {
+        "comparison": "checks/final-complete/test-inventory-comparison.json",
+        "execution_normal": "checks/final-complete/execution-normal.json",
+        "execution_optimized": "checks/final-complete/execution-optimized.json",
+        "failures_normal": "checks/final-complete/failures-normal.json",
+        "failures_optimized": "checks/final-complete/failures-optimized.json",
+        "inventory_normal": "checks/final-complete/inventory-normal.json",
+        "inventory_optimized": "checks/final-complete/inventory-optimized.json"
+      },
+      "logs": [
+        "checks/final-complete/pytest-normal.stdout.txt",
+        "checks/final-complete/pytest-normal.stderr.txt",
+        "checks/final-complete/cell-normal.stdout.txt",
+        "checks/final-complete/cell-normal.stderr.txt",
+        "checks/final-complete/mapping-normal.stdout.txt",
+        "checks/final-complete/mapping-normal.stderr.txt",
+        "checks/final-complete/temporal-normal.stdout.txt",
+        "checks/final-complete/temporal-normal.stderr.txt",
+        "checks/final-complete/metrology-normal.stdout.txt",
+        "checks/final-complete/metrology-normal.stderr.txt",
+        "checks/final-complete/experimental-normal.stdout.txt",
+        "checks/final-complete/experimental-normal.stderr.txt",
+        "checks/final-complete/source-audit-normal.stdout.txt",
+        "checks/final-complete/source-audit-normal.stderr.txt",
+        "checks/final-complete/authoring-normal.stdout.txt",
+        "checks/final-complete/authoring-normal.stderr.txt",
+        "checks/final-complete/pytest-optimized.stdout.txt",
+        "checks/final-complete/pytest-optimized.stderr.txt",
+        "checks/final-complete/cell-optimized.stdout.txt",
+        "checks/final-complete/cell-optimized.stderr.txt",
+        "checks/final-complete/mapping-optimized.stdout.txt",
+        "checks/final-complete/mapping-optimized.stderr.txt",
+        "checks/final-complete/temporal-optimized.stdout.txt",
+        "checks/final-complete/temporal-optimized.stderr.txt",
+        "checks/final-complete/metrology-optimized.stdout.txt",
+        "checks/final-complete/metrology-optimized.stderr.txt",
+        "checks/final-complete/experimental-optimized.stdout.txt",
+        "checks/final-complete/experimental-optimized.stderr.txt",
+        "checks/final-complete/source-audit-optimized.stdout.txt",
+        "checks/final-complete/source-audit-optimized.stderr.txt",
+        "checks/final-complete/authoring-optimized.stdout.txt",
+        "checks/final-complete/authoring-optimized.stderr.txt",
+        "checks/final-complete/zenodo-references.stdout.txt",
+        "checks/final-complete/zenodo-references.stderr.txt"
+      ],
+      "note": "Actual final command outcomes and exact normal/optimized inventories; earlier interrupted/stale checks retained separately. No anchor CLI execution claimed.",
+      "omitted_commands": [
+        {
+          "current_product_hashes_verified": true,
+          "id": "anchor-check-data-cli-normal-and-optimized",
+          "pytest_coverage": {
+            "normal": {
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_actual_population_and_previous_lag_admit": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_changed_direction_and_reflection_witness_fail_admission": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_missing_cross_return_cannot_be_forged_by_count_projection": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_population_preparation_and_pending_mutations_fail": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_baseline_frozen_gain_is_not_refitted_for_changed_contexts": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_directional_duration_uses_actual_reflected_contacts": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_distinct_support_pairs_have_distinct_constructions": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_duplicate_reference_names_do_not_certify_independence": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_endpoint_bounds_recompute_from_retained_returns": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_gain_uses_training_only_and_is_frozen": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_new_baseline_conserves_original_four_native_histories": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_original_archive_and_all_member_bindings": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_original_input_changes_cannot_be_resealed": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_pending_return_is_retained_and_excluded_before_arrival": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_physical_unknowns_and_per_output_units_are_preserved": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_recomputed_hash_does_not_authorize_replaced_history": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_recurring_backgrounds_are_retained_in_every_case": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_separate_interventions_preserve_actual_committed_prefix": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_target_only_changes_preserve_complete_prediction_bytes": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_unmodified_original_controls_replay_exactly": "passed",
+              "tests/test_m3_anchor.py::AnchorLoaderTests::test_replaced_global_module_does_not_change_admission_classes": "passed"
+            },
+            "optimized": {
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_actual_population_and_previous_lag_admit": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_changed_direction_and_reflection_witness_fail_admission": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_missing_cross_return_cannot_be_forged_by_count_projection": "passed",
+              "tests/test_m3_anchor.py::AnchorAdmissionTests::test_population_preparation_and_pending_mutations_fail": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_baseline_frozen_gain_is_not_refitted_for_changed_contexts": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_directional_duration_uses_actual_reflected_contacts": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_distinct_support_pairs_have_distinct_constructions": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_duplicate_reference_names_do_not_certify_independence": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_endpoint_bounds_recompute_from_retained_returns": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_gain_uses_training_only_and_is_frozen": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_new_baseline_conserves_original_four_native_histories": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_original_archive_and_all_member_bindings": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_original_input_changes_cannot_be_resealed": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_pending_return_is_retained_and_excluded_before_arrival": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_physical_unknowns_and_per_output_units_are_preserved": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_recomputed_hash_does_not_authorize_replaced_history": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_recurring_backgrounds_are_retained_in_every_case": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_separate_interventions_preserve_actual_committed_prefix": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_target_only_changes_preserve_complete_prediction_bytes": "passed",
+              "tests/test_m3_anchor.py::AnchorEvidenceTests::test_unmodified_original_controls_replay_exactly": "passed",
+              "tests/test_m3_anchor.py::AnchorLoaderTests::test_replaced_global_module_does_not_change_admission_classes": "passed"
+            }
+          },
+          "reason": "Completed actual products() regeneration replayed original archive and engine cases, with conserved numerical leaves. The unchanged anchor implementation is additionally exercised by the full test_m3_anchor.py inventory in both Python modes; no separate anchor --check-data CLI pass is claimed.",
+          "regeneration_path": "/home/reginaldpoyau/projects/aod/AOD_M3_MANUALI_FEEDBACK_2026-11-11/checks/anchor-regeneration.json",
+          "regeneration_sha256": "4b44e98e0e2bb835ffa71437d49ca2826660040aad4acca0dd2b10dfcd74af5b",
+          "regeneration_status": "PASS",
+          "status": "not_executed_redundant"
+        }
+      ],
+      "prior_command_manifest_path": "checks/candidate-validation/commands.json",
+      "source_before_after": [
+        "checks/final-complete/source-before.json",
+        "checks/final-complete/source-after.json",
+        "checks/final-complete/source-change-check.json"
+      ],
+      "status": "PASS",
+      "test_counts": {
+        "normal": {
+          "passed": 1311,
+          "skipped": 1,
+          "total": 1312
+        },
+        "optimized": {
+          "passed": 1311,
+          "skipped": 1,
+          "total": 1312
+        }
+      }
+    },
+    "publication": {
+      "build_and_link_evidence": [
+        "checks/publication-release/source-inventory.json",
+        "checks/publication-release/build-results.json",
+        "checks/publication-release/pdf-links.json",
+        "checks/publication-release/log-diagnostics.json"
+      ],
+      "external_links": 119,
+      "main_pdf_sha256": "6efc0a6eb6f019300dc3b3ad8539399e093f1cbb03c72677b47d6e4006bb5875",
+      "manual_pdf_sha256": "b399449b08cc3bd2ec894d3d38a143712955f2e5ff4cdbdee6f7438c808f8dfd",
+      "pages": {
+        "main": 70,
+        "manual": 92
+      },
+      "source_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+      "status": "PASS_scoped_build_links_and_visual_review",
+      "visual_review_evidence": [
+        "review/manual/visual-review.json",
+        "review/manual/claim-conservation.json"
+      ]
+    },
+    "source_authentication_evidence": [
+      "review/SOURCE_BINDING.json",
+      "review/legacy-skill-binding.json",
+      "review/primary/hydrogen-visual-review.json",
+      "review/primary/cesium/visual-check.json",
+      "manual/data/m3/temporal_metrology/hydrogen/source/source_receipt.json",
+      "manual/data/m3/temporal_metrology/cesium/source/source_receipt.json"
+    ]
+  }
+}

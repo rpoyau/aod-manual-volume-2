@@ -36,11 +36,14 @@ class M3MigrationTests(unittest.TestCase):
 
     def test_full_m3_binding_and_reviewed_source_inventory(self):
         active = verify_foundation(ROOT)
-        self.assertEqual(active['upstream_head'], '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9')
-        self.assertEqual(active['upstream_tree'], '3ab04df3793beda481b4fb7ed0d628ba6765da70')
+        self.assertEqual(active['upstream_head'], '8c3149b9d3d924b80b9385b178da4ba2c39175e8')
+        self.assertEqual(active['upstream_tree'], 'b2b55cbcf18354828f7b34418ab3fa26d747a927')
         self.assertEqual(active['active_main_pages'], 70)
         self.assertEqual(active['authority_status'], 'reviewed_local_PR_43_candidate_at_binding')
         migration = json.loads((ROOT / active['reviewed_rebind']).read_bytes())
+        self.assertEqual(migration['files'], [])
+        self.assertEqual(migration['previous_upstream_head'], '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9')
+        migration = json.loads((ROOT / migration['previous_rebind']).read_bytes())
         self.assertEqual(len(migration['files']), 7)
         self.assertTrue(all(row['before_sha256'] is not None for row in migration['files']))
         self.assertEqual(active['active_text_sha256'], migration['reviewed_main_render']['text_sha256'])

@@ -52,11 +52,11 @@
   "released_text_hash_policy": "pypdf 6.10.0 extracted text, Unicode whitespace removed; binding complements source hashes and rendering.",
   "released_text_sha256": "112c039507c77fc4329f9fc89cdd4486226e2cef5d7675a9abc1084f8a07eb32",
   "reviewed_pr_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
-  "reviewed_rebind": "manual2/evidence/m3-source-rebind-2026-11-08.json",
-  "reviewed_rebind_sha256": "64f032fe6885d4cd6de870b1808c4700b352be7187fe6655bd3fac49571606b6",
+  "reviewed_rebind": "manual2/evidence/m3-source-rebind-2026-11-11.json",
+  "reviewed_rebind_sha256": "15cd97e874d2028ae712e97fa107e843a2457eaa6ab6ff88f45ca1de3b2fb196",
   "schema_version": 2,
   "source_digest": "5abafca5129d092060a3dd333ba95d11d7ab7a6cf9ec10f011293da7f785123a",
-  "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "upstream_head": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
   "upstream_repository": "https://github.com/rpoyau/aod",
-  "upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
+  "upstream_tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
 }

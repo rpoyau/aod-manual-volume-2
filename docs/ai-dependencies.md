@@ -5,9 +5,9 @@ Matter I uses two upstream repositories:
 | Dependency | Role | Binding |
 |---|---|---|
 | [`rpoyau/aod-skills`](https://github.com/rpoyau/aod-skills) | Four portable authoring/review skills | [`.agents/dependencies.json`](../.agents/dependencies.json), commit `630af16a7c51fb8836e603eb54c67bf8560fb463` |
-| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Main mathematics | [`foundation-source.json`](../manual2/evidence/foundation-source.json), commit `71cbcf7e637ababcde3b2e073fb4ceec4b1681b9` |
-| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Consumed M3 implementation and contracts | Exact executable commit/tree and file hashes in [`vendor binding`](../manual2/vendor/aod_m3/binding.json) |
-| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Metrology companion, contract and H/Cs profiles | Same upstream commit, separately pinned [`metrology binding`](../manual2/vendor/aod_m3_metrology/binding.json) |
+| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Main mathematics | [`foundation-source.json`](../manual2/evidence/foundation-source.json), commit `8c3149b9d3d924b80b9385b178da4ba2c39175e8` |
+| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Historical temporal implementation and contracts (71cb) | Exact executable commit/tree and file hashes in [`vendor binding`](../manual2/vendor/aod_m3/binding.json) |
+| [`rpoyau/aod`](https://github.com/rpoyau/aod) | Historical metrology companion and H/Cs profiles (71cb) | Same upstream commit, separately pinned [`metrology binding`](../manual2/vendor/aod_m3_metrology/binding.json) |
 
 The skills pin was read from the canonical repository's `main` on 1 November
 2026. Its dated source snapshots do not identify today's accepted AOD head. Its
@@ -16,24 +16,32 @@ execution and remaining dependencies are recorded in
 [`m3-migration.md`](../manual2/evidence/m3-migration.md) and
 [`isotope-results.md`](../manual2/evidence/isotope-results.md).
 The AOD bindings identify reviewed PR43 candidates, not a version-43 release.
-Main, the observation exports and the metrology companion consume the reviewed
-M3 commit `71cbcf7e637ababcde3b2e073fb4ceec4b1681b9`, tree
-`3ab04df3793beda481b4fb7ed0d628ba6765da70`. The
-[`8 November rebind`](../manual2/evidence/m3-source-rebind-2026-11-08.json)
-preserves the preceding source manifest and replaced bytes. Current observation
-exports reside in `manual2/vendor/aod_m3/current/`; the metrology exports and
-their source profiles reside in `manual2/vendor/aod_m3_metrology/`.
-The original common-surrogate survival model keeps its separately verified
-`legacy-binding.json` and original mapping executor. These historical bytes are
-not the current temporal interface. The dated
-[`observation rebind`](../manual2/evidence/m3-observation-rebind-2026-11-04.json)
-records the earlier two roles. Consumer replay checks imported Main, exact current
-exports, the unchanged legacy executor, actual R03 observations and complete
-metrology application reports against the pinned checkout. The
-[`metrology adoption`](../manual2/evidence/m3-metrology-adoption.md)
-describes the new application scope; previous receipts retain their original pins.
-A newer upstream head is an update to review, not permission
-to replace these pins silently.
+Main and the current producer-relative API closure consume verified M3 commit
+`8c3149b9d3d924b80b9385b178da4ba2c39175e8`, tree
+`b2b55cbcf18354828f7b34418ab3fa26d747a927`. The
+[`11 November identity rebind`](../manual2/evidence/m3-source-rebind-2026-11-11.json)
+retains the previous Main manifest; every imported Main input is unchanged.
+The [`current producer binding`](../manual2/vendor/aod_m3_producer/binding.json)
+authenticates the native, temporal, quantity-propagation and frozen-comparison
+APIs, their contracts and published-source bytes. Load these through
+`matter1_m3_producer.load(root)`. Producer readiness records a verified producer
+scope; the required consumer check separately verifies actual downstream use.
+
+The flat `manual2/vendor/aod_m3/current/` directory and metrology exports retain
+commit `71cbcf7e637ababcde3b2e073fb4ceec4b1681b9` for historical R03, campaign and
+property profiles. Their historical directory name is preserved for exact replay.
+The original common-surrogate survival model retains its older separately verified
+`legacy-binding.json`. These models and their failed or unresolved outcomes are
+not relabelled as new producer results. The property source adapter selects the
+archived 71cb Main manifest and binds its actual adapter separately from the
+original recipe hash. Existing receipts remain intact.
+
+The required consumer checker compares Main and every new exported byte against
+the exact actual 8c checkout, replays historical reports with their original
+executors, then compares current producer execution and downstream coupled
+preparations against the new vendor. The exact closure omits unrelated generic
+CLI fixture repositories; use its API, not repository-wide producer CLIs.
+A newer upstream head requires an explicit reviewed rebind.
 
 ## Load the canonical skills
 

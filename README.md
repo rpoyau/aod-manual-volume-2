@@ -1,8 +1,51 @@
 # Alpha↔Omega Dynamics — Manual Volume II: Matter I
 
-A compact elemental reference for Z = 1–118, downstream of the reviewed AOD M3 candidate `71cbcf7` (PR43) and AFC v2.4. Main, the [observation exports](manual2/vendor/aod_m3/binding.json) and the [metrology companion](manual2/vendor/aod_m3_metrology/binding.json) bind that exact upstream commit. The historical survival model retains its original executable binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
+A compact elemental reference for Z = 1–118, downstream of AOD M3 and AFC v2.4. Main and the new paired-preparation workflow consume the verified local M3 successor `8c3149b`, with exact [producer exports](manual2/vendor/aod_m3_producer/binding.json). The earlier [observation exports](manual2/vendor/aod_m3/binding.json), [metrology companion](manual2/vendor/aod_m3_metrology/binding.json) and campaign retain `71cbcf7` for historical replay. The survival model keeps its original binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
+
+## Coupled bare and neutral preparations
+
+The [versioned preparation calculation](manual2/data/m1/coupled_preparations/report.json)
+executes bare and electron-containing H-1, H-2 and H-3 through the same declared
+history-dependent law. Exact finite paths and seeded samples retain their shared
+current, burden and closure diagnostics. Full-state continuation, passive
+observation, feedback, renaming and finite reduction controls have distinct
+scopes. The diagnostic shedding control declares its load/cost bridge; it does
+not identify nuclear decay.
+
+The [reference matrix](manual2/data/m1/preparation_workflow/reference_preparations.json)
+contains 236 bare/neutral preparation slots for the retained 118 selections.
+The initial tranche executes six reference constructions at Z=1,2,3; the other
+230 slots remain prepared. These overlap the H/D/T pilot domain at H-1 and are
+not twelve distinct configurations. The original 135-neutral campaign remains
+unchanged. A selected reference can be executed with the same interface:
+
+```sh
+python -B manual2/scripts/generate_matter1_preparation_workflow.py --execute-reference 4 --preparation bare --output-root /tmp/matter1-reference-run
+```
+
+[Joint native uncertainty](manual2/data/m1/preparation_workflow/uncertainty.json)
+uses the executed finite histories and the current M3 quantity dispatcher,
+retaining covariance. [Comparison records](manual2/data/m1/preparation_workflow/comparisons.json)
+keep the published H/D/T values, original uncertainty conventions and reference
+dependence. Electron-coupled hyperfine is inapplicable to bare nuclei. Physical
+preparation, gate, phase, loss and realized-clock maps remain unresolved; this
+profile reports no physical frequency, half-life or empirical score.
+
+Verify persisted products before explicit regeneration:
+
+```sh
+python -B manual2/scripts/verify_matter1_coupled_preparations.py
+python -B -O manual2/scripts/verify_matter1_coupled_preparations.py
+python -B manual2/scripts/verify_matter1_preparation_workflow.py
+python -B -O manual2/scripts/verify_matter1_preparation_workflow.py
+python -B scripts/check_matter1_m3_consumer.py --upstream-root /path/to/aod-at-8c3149b
+```
+
+The successor is a local detached producer. Hosted checks require that exact
+dependency to be available to GitHub; local verification does not establish a
+hosted workflow result.
 
 ## Data classes before calculations
 

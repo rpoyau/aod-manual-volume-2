@@ -1,0 +1,720 @@
+{
+  "complete_physical_predictions": 0,
+  "exposure": "retrospective_targets_previously_available",
+  "external_transition_records": [
+    {
+      "a": 2,
+      "calibration_anchor": {
+        "isotope": "H-1",
+        "role": "assumed_exact_reference_in_original_paper",
+        "uncertainty_hz": "0",
+        "value_hz": "1420405751.768",
+        "zero_uncertainty_scope": "stipulated reference assumption only; not an assertion that measured hydrogen has zero uncertainty"
+      },
+      "data_support_class": null,
+      "direct_measurement": "D/H maser_frequency_comparison",
+      "direct_measurement_source_id": "kramida2010-hdt",
+      "display_scope": "derived external",
+      "electronic_state": "1s 2S1/2",
+      "experimental_window": null,
+      "exposure": "retrospective_acquisition_before_any_future_atomic_model_freeze",
+      "id": "D2-ground-hfs-WinelandRamsey1972",
+      "intended_comparison_class": "O0",
+      "isotope": "H-2",
+      "joint_covariance": null,
+      "magnetic_sublevels": null,
+      "native_calculation_input": false,
+      "native_configuration_id": null,
+      "native_observation_map": null,
+      "not_independent_of": [
+        "adopted_hydrogen_reference"
+      ],
+      "physical_comparison_status": "not_scored_map_and_preparation_unresolved",
+      "physical_prediction": null,
+      "preparation": null,
+      "quantity": "ground_state_hyperfine_frequency",
+      "record_form": "Measured target record",
+      "reported_dimensionless_ratio": null,
+      "role": "external_transition_target",
+      "scientific_claim_class": null,
+      "source_id": "wineland-ramsey1972",
+      "source_locator": "Public abstract / HTML meta[name=description]",
+      "state_label_scope": "Ground-state hyperfine separation; no measured magnetic-sublevel assignment imported",
+      "uncertainty_coverage": null,
+      "uncertainty_distribution": null,
+      "uncertainty_hz": "0.0017",
+      "uncertainty_notation": "327384352.5222(17)",
+      "uncertainty_semantics": "parenthesized last digits; coverage and distribution not established from public abstract",
+      "unit": "Hz",
+      "value_hz": "327384352.5222",
+      "value_role": "published_hz_conditioned_on_hydrogen_reference",
+      "z": 1
+    },
+    {
+      "a": 3,
+      "calibration_anchor": {
+        "isotope": "H-1",
+        "role": "original_hydrogen_reference_value_not_transcribed",
+        "uncertainty_hz": null,
+        "value_hz": null
+      },
+      "data_support_class": null,
+      "direct_measurement": "T/H maser_frequency_comparison",
+      "direct_measurement_source_id": "mathur1967",
+      "display_scope": "external",
+      "electronic_state": "1s 2S1/2",
+      "experimental_window": null,
+      "exposure": "retrospective_acquisition_before_any_future_atomic_model_freeze",
+      "id": "T3-ground-hfs-Mathur1967-untranscribed",
+      "intended_comparison_class": "O0",
+      "isotope": "H-3",
+      "joint_covariance": null,
+      "magnetic_sublevels": null,
+      "native_calculation_input": false,
+      "native_configuration_id": null,
+      "native_observation_map": null,
+      "not_independent_of": [
+        "adopted_hydrogen_reference"
+      ],
+      "physical_comparison_status": "not_scored_map_and_preparation_unresolved",
+      "physical_prediction": null,
+      "preparation": null,
+      "quantity": "ground_state_hyperfine_frequency",
+      "record_form": "Measured target record",
+      "reported_dimensionless_ratio": null,
+      "role": "external_transition_target",
+      "scientific_claim_class": null,
+      "source_id": "mathur1967",
+      "source_locator": "Public abstract; frequency comparison confirmed, equations missing from returned text",
+      "state_label_scope": "Ground-state hyperfine separation; no measured magnetic-sublevel assignment imported",
+      "uncertainty_coverage": null,
+      "uncertainty_distribution": null,
+      "uncertainty_hz": null,
+      "uncertainty_notation": null,
+      "uncertainty_semantics": "not obtained",
+      "unit": "Hz",
+      "value_hz": null,
+      "value_role": "original_primary_value_not_transcribed",
+      "z": 1
+    },
+    {
+      "a": 3,
+      "calibration_anchor": {
+        "isotope": "H-1",
+        "role": "Kramida2010_adopted_hydrogen_reference",
+        "uncertainty_hz": "0.001",
+        "uncertainty_semantics": "compiled parenthesized last digits; do not substitute for Hellwig1970 one-sigma0.002Hz",
+        "value_hz": "1420405751.768"
+      },
+      "data_support_class": null,
+      "direct_measurement": "T/H maser_frequency_comparison",
+      "direct_measurement_source_id": "mathur1967",
+      "display_scope": "derived external",
+      "electronic_state": "1s 2S1/2",
+      "experimental_window": null,
+      "exposure": "retrospective_acquisition_before_any_future_atomic_model_freeze",
+      "id": "T3-ground-hfs-Kramida2010-rescaled-Mathur1967",
+      "intended_comparison_class": "O0",
+      "isotope": "H-3",
+      "joint_covariance": null,
+      "magnetic_sublevels": null,
+      "native_calculation_input": false,
+      "native_configuration_id": null,
+      "native_observation_map": null,
+      "not_independent_of": [
+        "T3-ground-hfs-Mathur1967-untranscribed",
+        "adopted_hydrogen_reference"
+      ],
+      "physical_comparison_status": "not_scored_map_and_preparation_unresolved",
+      "physical_prediction": null,
+      "preparation": null,
+      "quantity": "ground_state_hyperfine_frequency",
+      "record_form": "Measured target record",
+      "reported_dimensionless_ratio": null,
+      "role": "external_transition_target",
+      "scientific_claim_class": null,
+      "source_id": "kramida2010-hdt",
+      "source_locator": [
+        "PDF page index 2 / printed page 588, ground-state frequency paragraph",
+        "PDF page index 5 / printed page 591, paragraph beginning quantities actually measured",
+        "PDF page index 32 / printed page 618, references 15 and 16",
+        "PDF page index 5 / printed page 591, footnote 3",
+        "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
+      ],
+      "standard_uncertainty_hz": "0.007",
+      "state_label_scope": "Ground-state hyperfine separation; no measured magnetic-sublevel assignment imported",
+      "uncertainty_convention": {
+        "caveat": "Evaluator intention; the exact meaning of uncertainties quoted from older publications is sometimes difficult to recover. This does not establish a Gaussian distribution, coverage probability or complete shared-reference covariance.",
+        "kind": "one_standard_deviation_in_evaluation",
+        "locators": [
+          "PDF page index 5 / printed page 591, footnote 3",
+          "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
+        ],
+        "source_id": "kramida2010-hdt"
+      },
+      "uncertainty_coverage": null,
+      "uncertainty_distribution": null,
+      "uncertainty_hz": "0.007",
+      "uncertainty_notation": "1516701470.775(7)",
+      "uncertainty_semantics": "Parenthesized last digits interpreted by Kramida as one standard deviation, with a legacy-source interpretation caveat; distribution, coverage probability and joint covariance remain unknown.",
+      "unit": "Hz",
+      "value_hz": "1516701470.775",
+      "value_role": "evaluated_hz_rescaling_of_Mathur1967",
+      "z": 1
+    }
+  ],
+  "joint_covariance": "not_supplied; independent files do not establish independence",
+  "native_prediction_sha256": "f6bfe9d6474138c14a894976fc722e6426db6649751eeba0f165d2d58cc7fd99",
+  "profile": "matter1:paired-preparation-workflow:v1",
+  "retained_evaluated_catalog_records": [
+    {
+      "A": 1,
+      "N": 0,
+      "Z": 1,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "H-1:ground",
+      "limits": [
+        {
+          "channel": "all_modes",
+          "confidence": "not_explicit_in_adopted_record",
+          "locator": "PDF page1, ground-state T1/2 comment",
+          "measurement": {
+            "confidence": "not_explicit_in_adopted_record",
+            "kind": "lower_limit",
+            "original": ">2.1×10^29 y",
+            "original_unit": "y",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": null,
+            "uncertainty_plus_seconds": null,
+            "unit_conversion": "Julian year = 365.25 days = 31557600 s",
+            "value_seconds": "6.62709600E+36"
+          },
+          "relation": ">",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl",
+        "line": 27,
+        "raw": "001 0010   1H       7288.971064   0.000013                            stbl              1/2+*         06          1920 IS=99.9855 78",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "1/2+*"
+      },
+      "selection_source": "ensdf-H-1",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "1/2+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "support_coordinates": {
+        "interpretation": "formal_2p2n_groups_not_physical_alpha_clusters",
+        "q": 0,
+        "r_n": 0,
+        "r_p": 1
+      },
+      "symbol": "H",
+      "updates": []
+    }
+  ],
+  "retained_isotope_measurements": [
+    {
+      "charge_state_correspondence": "not_assigned_to_bare_or_neutral_preparation_by_this_nuclide_table",
+      "decay_branching_token": "IS=99.9855 78",
+      "half_life_token": "stbl",
+      "id": "H-1:ground",
+      "line": 27,
+      "meaning": "observationally_stable_not_infinite_measured_lifetime",
+      "physical_prediction": null,
+      "raw": "001 0010   1H       7288.971064   0.000013                            stbl              1/2+*         06          1920 IS=99.9855 78",
+      "reported_uncertainty_token": "",
+      "source": {
+        "acquired_on": "2026-11-01",
+        "citation": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "id": "nubase2020",
+        "method": "retained_official_source",
+        "path": "manual2/data/m1/isotopes/sources/nubase2020.txt",
+        "sha256": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+        "title": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+      },
+      "uncertainty_semantics": "verbatim dT field; distribution and coverage not inferred",
+      "unit_token": ""
+    },
+    {
+      "charge_state_correspondence": "not_assigned_to_bare_or_neutral_preparation_by_this_nuclide_table",
+      "decay_branching_token": "IS=0.0145 78",
+      "half_life_token": "stbl",
+      "id": "H-2:ground",
+      "line": 28,
+      "meaning": "observationally_stable_not_infinite_measured_lifetime",
+      "physical_prediction": null,
+      "raw": "002 0010   2H      13135.722895   0.000015                            stbl              1+*           03          1932 IS=0.0145 78",
+      "reported_uncertainty_token": "",
+      "source": {
+        "acquired_on": "2026-11-01",
+        "citation": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "id": "nubase2020",
+        "method": "retained_official_source",
+        "path": "manual2/data/m1/isotopes/sources/nubase2020.txt",
+        "sha256": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+        "title": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+      },
+      "uncertainty_semantics": "verbatim dT field; distribution and coverage not inferred",
+      "unit_token": ""
+    },
+    {
+      "charge_state_correspondence": "not_assigned_to_bare_or_neutral_preparation_by_this_nuclide_table",
+      "decay_branching_token": "B-=100",
+      "half_life_token": "12.32",
+      "id": "H-3:ground",
+      "line": 29,
+      "meaning": "evaluated_half_life",
+      "physical_prediction": null,
+      "raw": "003 0010   3H      14949.81090    0.00008                              12.32   y 0.02   1/2+*         00          1934 B-=100",
+      "reported_uncertainty_token": "0.02",
+      "source": {
+        "acquired_on": "2026-11-01",
+        "citation": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "id": "nubase2020",
+        "method": "retained_official_source",
+        "path": "manual2/data/m1/isotopes/sources/nubase2020.txt",
+        "sha256": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+        "title": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+      },
+      "uncertainty_semantics": "verbatim dT field; distribution and coverage not inferred",
+      "unit_token": "y"
+    }
+  ],
+  "rows": [
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "No electron-coupled readout in bare scope",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "not_applicable",
+        "target": null,
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-1-bare",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    },
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "Prepared state splitting, emitted phase and realized reference are not supplied by the finite recurrence law",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "missing_observation_map",
+        "target": {
+          "quantity": {
+            "components": [],
+            "corrections": {},
+            "dimension": [
+              0,
+              -1,
+              0
+            ],
+            "domain": [
+              "0",
+              "100000000000"
+            ],
+            "kind": "atomic_ground_hyperfine_frequency",
+            "locator": "transitions/0",
+            "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-1:q0:ground",
+            "role": "evaluation",
+            "uncertainty": {
+              "category": "standard_uncertainty",
+              "printed_token": "0.002",
+              "value": "1/500"
+            },
+            "unit": "Hz",
+            "value": "177550718971/125",
+            "window": null
+          },
+          "quantity_id": "hyperfine:H-1",
+          "schema": "aod.m3.external-quantity.v1",
+          "source_id": "matter1:retained-hdt-targets",
+          "source_sha256": "39e43b3e729018574378ac068829d33971808edd4d901f85e3b03c6f42d6c3d3"
+        },
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-1-neutral",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    },
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "No electron-coupled readout in bare scope",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "not_applicable",
+        "target": null,
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-2-bare",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    },
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "Prepared state splitting, emitted phase and realized reference are not supplied by the finite recurrence law",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "missing_observation_map",
+        "target": {
+          "quantity": {
+            "components": [],
+            "corrections": {},
+            "dimension": [
+              0,
+              -1,
+              0
+            ],
+            "domain": [
+              "0",
+              "100000000000"
+            ],
+            "kind": "atomic_ground_hyperfine_frequency",
+            "locator": "records/0",
+            "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-2:q0:ground",
+            "role": "evaluation",
+            "uncertainty": {
+              "category": "unknown",
+              "reason": "Reported magnitude retained separately; a standard deviation or probability law is not established"
+            },
+            "unit": "Hz",
+            "value": "1636921762611/5000",
+            "window": null
+          },
+          "quantity_id": "hyperfine:H-2",
+          "schema": "aod.m3.external-quantity.v1",
+          "source_id": "matter1:retained-hdt-targets",
+          "source_sha256": "39e43b3e729018574378ac068829d33971808edd4d901f85e3b03c6f42d6c3d3"
+        },
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-2-neutral",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    },
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "No electron-coupled readout in bare scope",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "not_applicable",
+        "target": null,
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-3-bare",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    },
+    {
+      "atomic_transition": {
+        "prediction_hz": null,
+        "reason": "Prepared state splitting, emitted phase and realized reference are not supplied by the finite recurrence law",
+        "residual_hz": null,
+        "residual_variance": null,
+        "status": "missing_observation_map",
+        "target": {
+          "quantity": {
+            "components": [],
+            "corrections": {},
+            "dimension": [
+              0,
+              -1,
+              0
+            ],
+            "domain": [
+              "0",
+              "100000000000"
+            ],
+            "kind": "atomic_ground_hyperfine_frequency",
+            "locator": "records/2",
+            "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-3:q0:ground",
+            "role": "evaluation",
+            "uncertainty": {
+              "category": "standard_uncertainty",
+              "printed_token": "0.007",
+              "value": "7/1000"
+            },
+            "unit": "Hz",
+            "value": "60668058831/40",
+            "window": null
+          },
+          "quantity_id": "hyperfine:H-3",
+          "schema": "aod.m3.external-quantity.v1",
+          "source_id": "matter1:retained-hdt-targets",
+          "source_sha256": "39e43b3e729018574378ac068829d33971808edd4d901f85e3b03c6f42d6c3d3"
+        },
+        "variance_rule": "Var(P)+Var(O)-2*Cov(P,O)"
+      },
+      "claim": "conditional_native_diagnostics_with_unresolved_physical_comparison",
+      "id": "H-3-neutral",
+      "retention": {
+        "half_life_seconds": null,
+        "reason": "No configuration-derived closure-load/cost law and daughter/channel correspondence",
+        "status": "missing_loss_observation_map"
+      }
+    }
+  ],
+  "source_sha256": {
+    "manual2/data/m1/external_transitions/catalog.json": "30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a",
+    "manual2/data/m1/isotopes/catalog.json": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+    "manual2/data/m1/isotopes/sources/nubase2020.txt": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+    "manual2/data/m1/properties/catalog.json": "81923ed6a5adbcb995d92699ead7723b6b02ad880d8b299304b11914fdaabb24",
+    "manual2/data/m1/properties/inputs.json": "acf8fb6ad5a6e1f33f61e0f647dc2545b705be2d89667f791b380172d03cd169"
+  },
+  "target_policy": "Measurements retained; unavailable raw protocols limit only dependent inferences",
+  "target_source": {
+    "id": "matter1:retained-hdt-targets",
+    "payload": {
+      "catalog_sha256": "81923ed6a5adbcb995d92699ead7723b6b02ad880d8b299304b11914fdaabb24",
+      "quantities": {
+        "hyperfine:H-1": {
+          "components": [],
+          "corrections": {},
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "domain": [
+            "0",
+            "100000000000"
+          ],
+          "kind": "atomic_ground_hyperfine_frequency",
+          "locator": "transitions/0",
+          "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-1:q0:ground",
+          "role": "evaluation",
+          "uncertainty": {
+            "category": "standard_uncertainty",
+            "printed_token": "0.002",
+            "value": "1/500"
+          },
+          "unit": "Hz",
+          "value": "177550718971/125",
+          "window": null
+        },
+        "hyperfine:H-2": {
+          "components": [],
+          "corrections": {},
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "domain": [
+            "0",
+            "100000000000"
+          ],
+          "kind": "atomic_ground_hyperfine_frequency",
+          "locator": "records/0",
+          "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-2:q0:ground",
+          "role": "evaluation",
+          "uncertainty": {
+            "category": "unknown",
+            "reason": "Reported magnitude retained separately; a standard deviation or probability law is not established"
+          },
+          "unit": "Hz",
+          "value": "1636921762611/5000",
+          "window": null
+        },
+        "hyperfine:H-3": {
+          "components": [],
+          "corrections": {},
+          "dimension": [
+            0,
+            -1,
+            0
+          ],
+          "domain": [
+            "0",
+            "100000000000"
+          ],
+          "kind": "atomic_ground_hyperfine_frequency",
+          "locator": "records/2",
+          "meaning": "ground_state_hyperfine_separation; atomic-isotope:H-3:q0:ground",
+          "role": "evaluation",
+          "uncertainty": {
+            "category": "standard_uncertainty",
+            "printed_token": "0.007",
+            "value": "7/1000"
+          },
+          "unit": "Hz",
+          "value": "60668058831/40",
+          "window": null
+        }
+      },
+      "records": [
+        {
+          "conditions": {
+            "electronic_state": "ground",
+            "experimental_window": "1969-11 through 1970-02",
+            "magnetic_field": "unperturbed_zero_field",
+            "magnetic_sublevels": [
+              "0",
+              "0"
+            ]
+          },
+          "entity_id": "atomic-isotope:H-1:q0:ground",
+          "exposure": "retrospective",
+          "id": "hyperfine:H-1",
+          "locator": "transitions/0",
+          "method": "measured",
+          "physical_prediction": false,
+          "property": "hyperfine_frequency",
+          "qualification": "Historical reported hydrogen value; prior exposure retained.",
+          "reference_dependence": "shared_reference_quantitative_covariance_not_transcribed",
+          "selection_status": "adopted",
+          "source_id": "hyperfine-inventory",
+          "transition": "ground_state_hyperfine_separation",
+          "uncertainty": {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_standard_uncertainty",
+            "value": "0.002"
+          },
+          "unit": "Hz",
+          "value": "1420405751.768",
+          "value_kind": "numeric"
+        },
+        {
+          "conditions": {
+            "electronic_state": "ground",
+            "experimental_window": null,
+            "magnetic_field": "unperturbed_zero_field",
+            "magnetic_sublevels": null
+          },
+          "entity_id": "atomic-isotope:H-2:q0:ground",
+          "exposure": "retrospective",
+          "id": "hyperfine:H-2",
+          "locator": "records/0",
+          "method": "measured",
+          "not_independent_of": [
+            "adopted_hydrogen_reference"
+          ],
+          "physical_prediction": false,
+          "property": "hyperfine_frequency",
+          "qualification": "parenthesized last digits; coverage and distribution not established from public abstract",
+          "reference_dependence": {
+            "isotope": "H-1",
+            "role": "assumed_exact_reference_in_original_paper",
+            "uncertainty_hz": "0",
+            "value_hz": "1420405751.768",
+            "zero_uncertainty_scope": "stipulated reference assumption only; not an assertion that measured hydrogen has zero uncertainty"
+          },
+          "selection_status": "adopted",
+          "source_id": "dt-catalog",
+          "transition": "ground_state_hyperfine_separation",
+          "uncertainty": {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_last_digit_magnitude",
+            "value": "0.0017"
+          },
+          "unit": "Hz",
+          "value": "327384352.5222",
+          "value_kind": "numeric"
+        },
+        {
+          "conditions": {
+            "electronic_state": "ground",
+            "experimental_window": null,
+            "magnetic_field": "unperturbed_zero_field",
+            "magnetic_sublevels": null
+          },
+          "entity_id": "atomic-isotope:H-3:q0:ground",
+          "exposure": "retrospective",
+          "id": "hyperfine:H-3",
+          "locator": "records/2",
+          "method": "evaluated",
+          "not_independent_of": [
+            "T3-ground-hfs-Mathur1967-untranscribed",
+            "adopted_hydrogen_reference"
+          ],
+          "physical_prediction": false,
+          "property": "hyperfine_frequency",
+          "qualification": "Parenthesized last digits interpreted by Kramida as one standard deviation, with a legacy-source interpretation caveat; distribution, coverage probability and joint covariance remain unknown.",
+          "reference_dependence": {
+            "isotope": "H-1",
+            "role": "Kramida2010_adopted_hydrogen_reference",
+            "uncertainty_hz": "0.001",
+            "uncertainty_semantics": "compiled parenthesized last digits; do not substitute for Hellwig1970 one-sigma0.002Hz",
+            "value_hz": "1420405751.768"
+          },
+          "selection_status": "adopted",
+          "source_id": "dt-catalog",
+          "transition": "ground_state_hyperfine_separation",
+          "uncertainty": {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_standard_uncertainty",
+            "value": "0.007"
+          },
+          "unit": "Hz",
+          "value": "1516701470.775",
+          "value_kind": "numeric"
+        }
+      ]
+    },
+    "role": "evaluation",
+    "sha256": "39e43b3e729018574378ac068829d33971808edd4d901f85e3b03c6f42d6c3d3"
+  }
+}

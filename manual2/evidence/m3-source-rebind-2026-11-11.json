@@ -1,0 +1,15 @@
+{
+  "archive": "manual2/evidence/pre-m3-main/rebind-2026-11-11",
+  "files": [],
+  "previous_foundation_sha256": "3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1",
+  "previous_rebind": "manual2/evidence/m3-source-rebind-2026-11-08.json",
+  "previous_rebind_sha256": "64f032fe6885d4cd6de870b1808c4700b352be7187fe6655bd3fac49571606b6",
+  "previous_upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "previous_upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70",
+  "producer_binding": "manual2/vendor/aod_m3_producer/binding.json",
+  "producer_binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
+  "schema_version": 1,
+  "scope": "Producer identity rebind with unchanged imported Main bytes; original 71cb execution remains historical",
+  "upstream_head": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+  "upstream_tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
+}

@@ -140,6 +140,7 @@ def expected_output_paths(root):
     import matter1_campaign
     import matter1_property_model
     import matter1_properties
+    import matter1_preparation_workflow
     campaign_manifest=matter1_campaign.default_manifest(root)
     expected_outputs=EXPECTED_OUTPUTS | {
         'data/m1/campaign/'+name for name in matter1_campaign.OUTPUTS
@@ -149,6 +150,9 @@ def expected_output_paths(root):
     }
     expected_outputs |= {('data/m1/properties/model/' + name) for name in matter1_property_model.OUTPUTS}
     expected_outputs |= {'data/m1/properties/' + name for name in matter1_properties.OUTPUTS}
+    expected_outputs |= {'data/m1/coupled_preparations/' + name for name in
+                         ('protocol.json', 'pilots.json', 'ensembles.json', 'controls.json', 'report.json')}
+    expected_outputs |= {'data/m1/preparation_workflow/' + name for name in matter1_preparation_workflow.OUTPUTS}
     return expected_outputs
 
 
@@ -167,6 +171,8 @@ def main():
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_isotopes.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_campaign.py'),'--root',str(root),'--output-root',str(out.parent)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_properties.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_coupled_preparations.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_preparation_workflow.py'),'--root',str(root),'--output-root',str(out.parent)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_property_model.py'),'--root',str(root),'--output-root',str(out.parent)],
           [args.generator_python,'-B',str(root/'manual2/scripts/compare_matter1_property_model.py'),'--root',str(root),'--prediction-root',str(out.parent),'--target',str(out/'data/m1/properties/catalog.json')],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog),'--property-root',str(out.parent)],

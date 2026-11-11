@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 
 import matter1_campaign_engine as native
+from matter1_foundation import historical_m3_binding, historical_property_digest
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = Path('manual2/data/m1/properties/model')
@@ -63,7 +64,7 @@ def read_json(path):
 
 def source_bindings(root):
     root=Path(root)
-    foundation=read_json(root/'manual2/evidence/foundation-source.json')
+    foundation=historical_m3_binding(root)
     require(foundation['upstream_head']==UPSTREAM,'Property model foundation changed')
     rows=[]
     for name,labels in MAIN.items():
@@ -76,7 +77,9 @@ def source_bindings(root):
     for name in ('manual2/scripts/matter1_campaign_engine.py',
                  'manual2/vendor/aod_m3/current/aod_native_closure_wave.py',
                  'manual2/scripts/matter1_property_model.py'):
-        rows.append({'path':name,'sha256':hashlib.sha256((root/name).read_bytes()).hexdigest()})
+        sha=(historical_property_digest(root) if name.endswith('/matter1_property_model.py')
+             else hashlib.sha256((root/name).read_bytes()).hexdigest())
+        rows.append({'path':name,'sha256':sha})
     require((root/'manual2/scripts/matter1_property_model.py').read_bytes()==Path(__file__).read_bytes(),
             'Executing property model differs from requested source')
     return {'upstream_head':UPSTREAM,'files':rows,'role':'Main definitions consumed by a downstream application; no Main change'}

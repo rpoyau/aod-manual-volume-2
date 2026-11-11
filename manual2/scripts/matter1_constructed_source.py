@@ -35,7 +35,7 @@ def verify_adapter(root):
     require(record['path'] == APPLICATION, 'unexpected application')
     foundation.binding(root)
     require(record['historical_foundation_sha256'] == foundation.PRIOR_FOUNDATION_SHA256
-            and record['active_foundation_sha256'] == foundation.FOUNDATION_SHA256,
+            and record['active_foundation_sha256'] == foundation.M3_FOUNDATION_SHA256,
             'foundation chain differs')
     require(digest((root / APPLICATION).read_bytes()) == record['after_sha256'],
             'current executor changed')

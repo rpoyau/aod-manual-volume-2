@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rpoyau/aod
-          ref: 71cbcf7e637ababcde3b2e073fb4ceec4b1681b9
+          ref: 8c3149b9d3d924b80b9385b178da4ba2c39175e8
           path: .m3-upstream
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -57,6 +57,10 @@ jobs:
           python -B -O manual2/scripts/verify_matter1_properties.py | tee /tmp/matter1-checks/properties-optimized.json
           python -B manual2/scripts/verify_matter1_property_model.py | tee /tmp/matter1-checks/property-model.json
           python -B -O manual2/scripts/verify_matter1_property_model.py | tee /tmp/matter1-checks/property-model-optimized.json
+          python -B manual2/scripts/verify_matter1_coupled_preparations.py | tee /tmp/matter1-checks/coupled-preparations.json
+          python -B -O manual2/scripts/verify_matter1_coupled_preparations.py | tee /tmp/matter1-checks/coupled-preparations-optimized.json
+          python -B manual2/scripts/verify_matter1_preparation_workflow.py | tee /tmp/matter1-checks/preparation-workflow.json
+          python -B -O manual2/scripts/verify_matter1_preparation_workflow.py | tee /tmp/matter1-checks/preparation-workflow-optimized.json
           python -B manual2/scripts/verify_matter1_ledger.py | tee /tmp/matter1-checks/ledger.json
           python -B -O manual2/scripts/verify_matter1_ledger.py --check-data | tee /tmp/matter1-checks/ledger-optimized.json
           python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
@@ -108,6 +112,8 @@ jobs:
             manual2/data/m1/classification/
             manual2/data/m1/external_transitions/
             manual2/data/m1/properties/
+            manual2/data/m1/coupled_preparations/
+            manual2/data/m1/preparation_workflow/
             manual2/data/m1/folding/
             manual2/data/m1/hyperfine/
             manual2/data/m1/stateful/
@@ -123,6 +129,7 @@ jobs:
             manual2/data/m1/m3_observation/
             manual2/vendor/aod_m3_metrology/
             manual2/vendor/aod_m3/
+            manual2/vendor/aod_m3_producer/
             /tmp/matter1-checks/
             /tmp/matter1-paired-build/*-console.txt
             /tmp/matter1-paired-build/manual2/*-console.txt

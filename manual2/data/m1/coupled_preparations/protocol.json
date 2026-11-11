@@ -1,0 +1,130 @@
+{
+  "checkpoint": "Complete state and RNG at round barriers; no unfinished pending emission may be dropped.",
+  "clock": "Generic independently admitted 3:3:6 reference, not a physical Cs clock.",
+  "diagnostic_shedding": "Separate explicit signed-support compatible-cost control; not the pilot nuclear loss law.",
+  "exposure": "Retrospective known-target setting; target files are not read by this generator.",
+  "finite_domains": "All six pilots at one round; H1-E1 also two rounds; at most six binary choices.",
+  "law": {
+    "kernel": "(1+max(0,R),1+max(0,-R)), normalized exactly, orientations (+1,-1)",
+    "loss_rule": null,
+    "outer_return": "one new outer closure after all inner rounds, bound to their extended prefixes",
+    "pacing": "own RD + last-two-contact RCD + max(0,R); feedback-off uses own RD after the first common round",
+    "physical_identification": null,
+    "preparation": "distinct p(3,3), n(3,4), e(1,2) seeds; ordered directed ring; common outer enclosure",
+    "reference": "independent 3:3:6 recurrence with RD-paced traversals, one-cut restart",
+    "reflection_map": "declared application bridge: (max(0,lag),max(0,-lag)) directional reflection counts; max(0,lag) adds reflected support extent; admission does not derive this map",
+    "response": "R = orientation_at_emission * RCD * committed receiver-minus-sender recurrence lag",
+    "rounds": "all inner returns and their emitted cross-returns commit before the next round",
+    "state": "complete ordered inner returns, contacts, pending/current round, and RNG state; no histories merged"
+  },
+  "law_role": "Authenticated application choices reused with successor native admission.",
+  "observation": "Shared native history before any averaging; terminal window is configuration-specific.",
+  "physical_prediction_claim": false,
+  "pilot_setups": [
+    {
+      "config": {
+        "a": 1,
+        "electron_count": 0,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H1-E0"
+    },
+    {
+      "config": {
+        "a": 1,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H1-E1"
+    },
+    {
+      "config": {
+        "a": 2,
+        "electron_count": 0,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H2-E0"
+    },
+    {
+      "config": {
+        "a": 2,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H2-E1"
+    },
+    {
+      "config": {
+        "a": 3,
+        "electron_count": 0,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H3-E0"
+    },
+    {
+      "config": {
+        "a": 3,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 1,
+        "seed": 20261111,
+        "z": 1
+      },
+      "id": "H3-E1"
+    }
+  ],
+  "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+  "profile": "matter1:coupled-preparations:v1",
+  "sample_seeds": [
+    20261111,
+    20261112,
+    20261113,
+    20261114,
+    20261115,
+    20261116,
+    20261117,
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124,
+    20261125,
+    20261126,
+    20261127,
+    20261128,
+    20261129,
+    20261130,
+    20261131,
+    20261132,
+    20261133,
+    20261134,
+    20261135,
+    20261136,
+    20261137,
+    20261138,
+    20261139,
+    20261140,
+    20261141,
+    20261142
+  ],
+  "sample_size_per_domain": 32,
+  "sampling_criterion": "Union-bound path-indicator Hoeffding diagnostic, alpha=1/100; no favorable-seed selection.",
+  "schema_version": 1
+}
