@@ -1,0 +1,87 @@
+{
+  "items": [
+    {
+      "id": "EP-STATE",
+      "premise": "physical preparation to native state",
+      "required_evidence": "A state-specific construction must distinguish the measured electronic and nuclear states.",
+      "status": "unresolved"
+    },
+    {
+      "id": "EP-PHASE",
+      "premise": "native return to emitted phase",
+      "required_evidence": "A justified emitted-phase law must fix relative gains before target comparison.",
+      "status": "unresolved"
+    },
+    {
+      "id": "EP-ENERGY",
+      "premise": "native history to energy",
+      "required_evidence": "An energy observable and its dimensional normalization must be justified independently of evaluated energies.",
+      "status": "unresolved"
+    },
+    {
+      "id": "EP-MASS",
+      "premise": "native construction to neutral atomic mass",
+      "required_evidence": "A rest-mass observable must account for the specified whole atomic state; transition energy is not atomic rest mass.",
+      "status": "unresolved"
+    },
+    {
+      "id": "EP-SI",
+      "premise": "realized clock and uncertainty",
+      "required_evidence": "An applicable realization, compatible observation window and joint uncertainty must be supplied.",
+      "status": "unresolved"
+    },
+    {
+      "id": "EP-JOINT",
+      "premise": "one law across independent properties",
+      "required_evidence": "One fixed model must predict independently measured quantities without per-property retuning.",
+      "status": "unresolved"
+    }
+  ],
+  "model_work_completed": "six generic executions, causal controls and explicit map non-identifiability witnesses",
+  "physical_model_completed": false,
+  "prediction_sha256": "b45dc177dc0375b1aec4f46dcdcc4c01b94da42ec65b405de62cf20d8b4c2fae",
+  "profile": "matter1:element-properties:pilot-obstruction:v1",
+  "schema_version": 1,
+  "source_bindings": {
+    "files": [
+      {
+        "labels": [
+          "eq:key-proposed-admitted-trace"
+        ],
+        "path": "sections/05_curl_closure_duon_current.tex",
+        "sha256": "a46d92b6eb2dba5c461b0a8db1e0374384fb578be5c3ebbc8ec62cdd8150a06f"
+      },
+      {
+        "labels": [
+          "eq:wave-update-trace",
+          "eq:cadence-ratio"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "2add34566c97406939bfa6c67b1d6acef99ad13c22422ec5edc0800df7e52d2b"
+      },
+      {
+        "labels": [
+          "def:m3-map",
+          "prop:m3-atomic-gain",
+          "eq:m3-finite-law"
+        ],
+        "path": "sections/07_cell_measures_mappings.tex",
+        "sha256": "759a6a8cae5f02bd1ddaf6c28057dbd7c4e87440ef49a0a5559e75f2b137c2e5"
+      },
+      {
+        "path": "manual2/scripts/matter1_campaign_engine.py",
+        "sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef"
+      },
+      {
+        "path": "manual2/vendor/aod_m3/current/aod_native_closure_wave.py",
+        "sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+      },
+      {
+        "path": "manual2/scripts/matter1_property_model.py",
+        "sha256": "f20ebf365a37eb5a24be6f261cd2198adda2695fbbca9d4991dad3c0cd23ac1d"
+      }
+    ],
+    "role": "Main definitions consumed by a downstream application; no Main change",
+    "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9"
+  }
+}

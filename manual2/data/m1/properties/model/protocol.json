@@ -1,0 +1,178 @@
+{
+  "claim": "executable missing-premise diagnosis; no atomic physical prediction",
+  "controls": {
+    "feedback_intervention": "feedback off after common first round, with the same forced admissible orientation path",
+    "passive_observation": "observer=False must preserve complete trajectory and RNG state",
+    "pilot": "H-1",
+    "state_label_control": "two declared spectroscopy-state requests share one generic config because the state-to-native map is absent"
+  },
+  "evaluation": {
+    "adopted_target_ids": {
+      "Cs-133": "hyperfine:Cs-133",
+      "H-1": "hyperfine:H-1",
+      "H-2": "hyperfine:H-2",
+      "H-3": "hyperfine:H-3",
+      "He-3": "hyperfine:He-3",
+      "He-4": "hyperfine:He-4"
+    },
+    "calibration_inputs": [
+      "Cs defining frequency only"
+    ],
+    "countermodel_residual_role": "descriptive diagnostic only; no selected law or empirical AOD score",
+    "criterion_origin": "retrospective; targets already exposed, not a preregistered or independent test",
+    "envelope_semantics": "descriptive rectangular source envelopes; not joint confidence intervals; no Gaussian law, independence or coverage probability assumed",
+    "exposure": "retrospective; known targets predate this protocol",
+    "failure_policy": "A valid out-of-domain witness or violated claimed invariant rejects the declared candidate; a future calibrated empirical rejection applies to the frozen model-and-observation conjunction, not all AOD.",
+    "family_ratio_criterion": "Under identification of the stipulated bridge with the selected H/D/T targets, every common-gain isotope ratio must lie in the ratio envelope formed from reported values plus/minus their quoted uncertainty magnitudes. One failed ratio excludes the whole common-Z gain family from that diagnostic criterion.",
+    "fitted_parameters": [],
+    "revision_policy": "Record a new protocol and preserve the failed version before changing laws, targets, exclusions or criteria.",
+    "target_access_in_prediction": "forbidden",
+    "target_conditions": {
+      "electronic_state": "ground",
+      "magnetic_field": "unperturbed_zero_field"
+    },
+    "target_transition": "ground_state_hyperfine_separation",
+    "whole_law_gate": "incomplete if any requested physical observable lacks its state/observation law; never substitute a derived duplicate for an independent observable"
+  },
+  "global_map_family": {
+    "dimensional_status": "typed positive maps only; no energy operator, rest-mass law or physical identification is established",
+    "domain": "pilot Z in {1,2,55}; lambda >= 0; q_i and q_Cs positive bounded cadences",
+    "energy_formula": "E_i=energy_scale_J*r_i*g_lambda(Z)",
+    "formula": "g_lambda(Z)=1+lambda*(55-Z)/54; r_i=q_i/q_Cs; nu_i=nu_Cs*r_i*g_lambda(Z)",
+    "mass_formula": "m_i=mass_scale_kg*B_i/B_Cs",
+    "per_property_or_isotope_retuning": false,
+    "selection": "none; all witnesses are unselected countermodels",
+    "witnesses": [
+      {
+        "energy_scale_J": "1",
+        "id": "W0",
+        "lambda": "0",
+        "mass_scale_kg": "1"
+      },
+      {
+        "energy_scale_J": "2",
+        "id": "W1",
+        "lambda": "1",
+        "mass_scale_kg": "2"
+      }
+    ]
+  },
+  "native_configs": {
+    "Cs-133": {
+      "a": 133,
+      "electron_count": 55,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 55
+    },
+    "H-1": {
+      "a": 1,
+      "electron_count": 1,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 1
+    },
+    "H-2": {
+      "a": 2,
+      "electron_count": 1,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 1
+    },
+    "H-3": {
+      "a": 3,
+      "electron_count": 1,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 1
+    },
+    "He-3": {
+      "a": 3,
+      "electron_count": 2,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 2
+    },
+    "He-4": {
+      "a": 4,
+      "electron_count": 2,
+      "feedback": true,
+      "rounds": 3,
+      "seed": 20261109,
+      "z": 2
+    }
+  },
+  "native_rule": "unchanged matter1:inner-recurrence-campaign:v1",
+  "pilot_order": [
+    "H-1",
+    "H-2",
+    "H-3",
+    "He-3",
+    "He-4",
+    "Cs-133"
+  ],
+  "profile": "matter1:element-properties:pilot-obstruction:v1",
+  "reference": {
+    "frequency_hz": "9192631770",
+    "role": "retained exact Cs SI definition only; not a realized clock",
+    "source": "https://www.bipm.org/en/si-base-units/second"
+  },
+  "reference_policy": "configuration-specific generic reference; comparison to Cs below is a stipulated diagnostic bridge, not an identified atomic frequency ratio",
+  "requested_observables": [
+    "hyperfine_frequency",
+    "excitation_energy",
+    "atomic_mass",
+    "ionization_energy",
+    "ground_configuration",
+    "spin_parity"
+  ],
+  "schema_version": 1,
+  "source_bindings": {
+    "files": [
+      {
+        "labels": [
+          "eq:key-proposed-admitted-trace"
+        ],
+        "path": "sections/05_curl_closure_duon_current.tex",
+        "sha256": "a46d92b6eb2dba5c461b0a8db1e0374384fb578be5c3ebbc8ec62cdd8150a06f"
+      },
+      {
+        "labels": [
+          "eq:wave-update-trace",
+          "eq:cadence-ratio"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "2add34566c97406939bfa6c67b1d6acef99ad13c22422ec5edc0800df7e52d2b"
+      },
+      {
+        "labels": [
+          "def:m3-map",
+          "prop:m3-atomic-gain",
+          "eq:m3-finite-law"
+        ],
+        "path": "sections/07_cell_measures_mappings.tex",
+        "sha256": "759a6a8cae5f02bd1ddaf6c28057dbd7c4e87440ef49a0a5559e75f2b137c2e5"
+      },
+      {
+        "path": "manual2/scripts/matter1_campaign_engine.py",
+        "sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef"
+      },
+      {
+        "path": "manual2/vendor/aod_m3/current/aod_native_closure_wave.py",
+        "sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+      },
+      {
+        "path": "manual2/scripts/matter1_property_model.py",
+        "sha256": "f20ebf365a37eb5a24be6f261cd2198adda2695fbbca9d4991dad3c0cd23ac1d"
+      }
+    ],
+    "role": "Main definitions consumed by a downstream application; no Main change",
+    "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9"
+  },
+  "stopping_rule": "three inner rounds and one new outer reclosure for every pilot"
+}

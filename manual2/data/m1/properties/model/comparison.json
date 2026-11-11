@@ -1,0 +1,531 @@
+{
+  "derived_frequency_period_energy_tests_count_as_independent": false,
+  "evaluation_catalog_sha256": "81923ed6a5adbcb995d92699ead7723b6b02ad880d8b299304b11914fdaabb24",
+  "exposure": "retrospective",
+  "fitted_parameters": [],
+  "independent_property_tests_completed": 0,
+  "interpretation": "Residuals describe unselected dimensional/phase countermodels. They neither select a map nor constitute a test of a completed AOD atomic law.",
+  "joint_family_diagnostic": {
+    "checks": [
+      {
+        "all_lambda_values_covered": true,
+        "covariance": "unknown; shared H dependence retained; rectangle is not a joint-confidence region",
+        "denominator": "H-1",
+        "descriptive_ratio_envelope": [
+          "654768705041/2840811503540",
+          "79849842079/346440427260"
+        ],
+        "entire_common_gain_family_ratio": "3/22",
+        "numerator": "H-2",
+        "reason": "g_lambda(1) cancels algebraically for every positive member; the two witnesses also agree exactly.",
+        "reported_point_ratio": "1636921762611/7102028758840",
+        "status": "outside_reported_envelope",
+        "uncertainty_semantics": [
+          {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_last_digit_magnitude",
+            "value": "0.0017"
+          },
+          {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_standard_uncertainty",
+            "value": "0.002"
+          }
+        ]
+      },
+      {
+        "all_lambda_values_covered": true,
+        "covariance": "unknown; shared H dependence retained; rectangle is not a joint-confidence region",
+        "denominator": "H-1",
+        "descriptive_ratio_envelope": [
+          "758350735384/710202875885",
+          "5971265633/5592148629"
+        ],
+        "entire_common_gain_family_ratio": "3/35",
+        "numerator": "H-3",
+        "reason": "g_lambda(1) cancels algebraically for every positive member; the two witnesses also agree exactly.",
+        "reported_point_ratio": "1516701470775/1420405751768",
+        "status": "outside_reported_envelope",
+        "uncertainty_semantics": [
+          {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_standard_uncertainty",
+            "value": "0.007"
+          },
+          {
+            "coverage": null,
+            "distribution": null,
+            "kind": "reported_standard_uncertainty",
+            "value": "0.002"
+          }
+        ]
+      }
+    ],
+    "classification": "retrospective_whole_countermodel_family_diagnostic",
+    "disposition": "incompatible_with_retained_source_envelopes",
+    "hypothesis": "Identify the stipulated bridge outputs with the selected zero-field H/D/T hyperfine targets and use the explicitly declared descriptive-envelope criterion.",
+    "observable_types_in_diagnostic": 1,
+    "parameter_fit_performed": false,
+    "physical_AOD_theory_refuted": false,
+    "scope": "One frequency observable across isotopes; does not satisfy the independent multi-property gate and does not provide a physical state/observation map."
+  },
+  "multiobservable_matrix": [
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "hyperfine_frequency",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    },
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "excitation_energy",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    },
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "atomic_mass",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    },
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "ionization_energy",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    },
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "ground_configuration",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    },
+    {
+      "independent_empirical_score": null,
+      "law_status": "missing_premise",
+      "property": "spin_parity",
+      "reason": "No selected physical state/observable law; derived re-expression is not an independent observation."
+    }
+  ],
+  "per_property_retuning": false,
+  "physical_model_empirical_score": null,
+  "prediction_sha256": "b45dc177dc0375b1aec4f46dcdcc4c01b94da42ec65b405de62cf20d8b4c2fae",
+  "profile": "matter1:element-properties:pilot-obstruction:v1",
+  "protocol_sha256": "76b7a324e5f6d68ec751149accf4a88175327394dd879303ea112470a925bdc4",
+  "rows": [
+    {
+      "comparison_status": "unselected_countermodel_residual_only",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [
+        {
+          "diagnostic_frequency_hz": "104183160060",
+          "relative_residual": "12845344288529/177550718971",
+          "residual_hz": "12845344288529/125",
+          "standardized_residual": null,
+          "witness": "W0"
+        },
+        {
+          "diagnostic_frequency_hz": "208366320120",
+          "relative_residual": "25868239296029/177550718971",
+          "residual_hz": "25868239296029/125",
+          "standardized_residual": null,
+          "witness": "W1"
+        }
+      ],
+      "entity_id": "atomic-isotope:H-1:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {
+          "electronic_state": "ground",
+          "experimental_window": "1969-11 through 1970-02",
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": [
+            "0",
+            "0"
+          ]
+        },
+        "external_state_identity": "atomic-isotope:H-1:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "H-1",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {
+          "electronic_state": "ground",
+          "experimental_window": "1969-11 through 1970-02",
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": [
+            "0",
+            "0"
+          ]
+        },
+        "entity_id": "atomic-isotope:H-1:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:H-1",
+        "locator": "transitions/0",
+        "method": "measured",
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "Historical reported hydrogen value; prior exposure retained.",
+        "reference_dependence": "shared_reference_quantitative_covariance_not_transcribed",
+        "selection_status": "adopted",
+        "source_id": "hyperfine-inventory",
+        "transition": "ground_state_hyperfine_separation",
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "reported_standard_uncertainty",
+          "value": "0.002"
+        },
+        "unit": "Hz",
+        "value": "1420405751.768",
+        "value_kind": "numeric"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:H-1"
+      }
+    },
+    {
+      "comparison_status": "unselected_countermodel_residual_only",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [
+        {
+          "diagnostic_frequency_hz": "156274740090/11",
+          "relative_residual": "254455853687093/6002046462907",
+          "residual_hz": "763367561061279/55000",
+          "standardized_residual": null,
+          "witness": "W0"
+        },
+        {
+          "diagnostic_frequency_hz": "312549480180/11",
+          "relative_residual": "514913753837093/6002046462907",
+          "residual_hz": "1544741261511279/55000",
+          "standardized_residual": null,
+          "witness": "W1"
+        }
+      ],
+      "entity_id": "atomic-isotope:H-2:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": null
+        },
+        "external_state_identity": "atomic-isotope:H-2:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "H-2",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": null
+        },
+        "entity_id": "atomic-isotope:H-2:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:H-2",
+        "locator": "records/0",
+        "method": "measured",
+        "not_independent_of": [
+          "adopted_hydrogen_reference"
+        ],
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "parenthesized last digits; coverage and distribution not established from public abstract",
+        "reference_dependence": {
+          "isotope": "H-1",
+          "role": "assumed_exact_reference_in_original_paper",
+          "uncertainty_hz": "0",
+          "value_hz": "1420405751.768",
+          "zero_uncertainty_scope": "stipulated reference assumption only; not an assertion that measured hydrogen has zero uncertainty"
+        },
+        "selection_status": "adopted",
+        "source_id": "dt-catalog",
+        "transition": "ground_state_hyperfine_separation",
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "reported_last_digit_magnitude",
+          "value": "0.0017"
+        },
+        "unit": "Hz",
+        "value": "327384352.5222",
+        "value_kind": "numeric"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:H-2"
+      }
+    },
+    {
+      "comparison_status": "unselected_countermodel_residual_only",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [
+        {
+          "diagnostic_frequency_hz": "8929985148",
+          "relative_residual": "5814340139/1189569781",
+          "residual_hz": "296531347089/40",
+          "standardized_residual": null,
+          "witness": "W0"
+        },
+        {
+          "diagnostic_frequency_hz": "17859970296",
+          "relative_residual": "12818250059/1189569781",
+          "residual_hz": "653730753009/40",
+          "standardized_residual": null,
+          "witness": "W1"
+        }
+      ],
+      "entity_id": "atomic-isotope:H-3:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": null
+        },
+        "external_state_identity": "atomic-isotope:H-3:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "H-3",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": null
+        },
+        "entity_id": "atomic-isotope:H-3:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:H-3",
+        "locator": "records/2",
+        "method": "evaluated",
+        "not_independent_of": [
+          "T3-ground-hfs-Mathur1967-untranscribed",
+          "adopted_hydrogen_reference"
+        ],
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "Parenthesized last digits interpreted by Kramida as one standard deviation, with a legacy-source interpretation caveat; distribution, coverage probability and joint covariance remain unknown.",
+        "reference_dependence": {
+          "isotope": "H-1",
+          "role": "Kramida2010_adopted_hydrogen_reference",
+          "uncertainty_hz": "0.001",
+          "uncertainty_semantics": "compiled parenthesized last digits; do not substitute for Hellwig1970 one-sigma0.002Hz",
+          "value_hz": "1420405751.768"
+        },
+        "selection_status": "adopted",
+        "source_id": "dt-catalog",
+        "transition": "ground_state_hyperfine_separation",
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "reported_standard_uncertainty",
+          "value": "0.007"
+        },
+        "unit": "Hz",
+        "value": "1516701470.775",
+        "value_kind": "numeric"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:H-3"
+      }
+    },
+    {
+      "comparison_status": "no_numeric_target_for_requested_external_state",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [],
+      "entity_id": "atomic-isotope:He-3:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {},
+        "external_state_identity": "atomic-isotope:He-3:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "He-3",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {},
+        "entity_id": "atomic-isotope:He-3:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:He-3",
+        "locator": null,
+        "method": "not_available",
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "No matching ground-state hyperfine frequency source acquired; electronic-state applicability must be established before comparison.",
+        "selection_status": "adopted",
+        "source_id": null,
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "not_supplied",
+          "value": null
+        },
+        "unit": "Hz",
+        "value": null,
+        "value_kind": "unknown"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:He-3"
+      }
+    },
+    {
+      "comparison_status": "no_numeric_target_for_requested_external_state",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [],
+      "entity_id": "atomic-isotope:He-4:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {},
+        "external_state_identity": "atomic-isotope:He-4:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "He-4",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {},
+        "entity_id": "atomic-isotope:He-4:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:He-4",
+        "locator": null,
+        "method": "not_available",
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "No matching ground-state hyperfine frequency source acquired; electronic-state applicability must be established before comparison.",
+        "selection_status": "adopted",
+        "source_id": null,
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "not_supplied",
+          "value": null
+        },
+        "unit": "Hz",
+        "value": null,
+        "value_kind": "unknown"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:He-4"
+      }
+    },
+    {
+      "comparison_status": "calibrant_reproduction_not_prediction",
+      "complete_joint_uncertainty": null,
+      "diagnostics": [
+        {
+          "diagnostic_frequency_hz": "9192631770",
+          "relative_residual": "0",
+          "residual_hz": "0",
+          "standardized_residual": null,
+          "witness": "W0"
+        },
+        {
+          "diagnostic_frequency_hz": "9192631770",
+          "relative_residual": "0",
+          "residual_hz": "0",
+          "standardized_residual": null,
+          "witness": "W1"
+        }
+      ],
+      "entity_id": "atomic-isotope:Cs-133:q0:ground",
+      "matching": {
+        "conditional_scope": "descriptive residual for an unselected bridge; no state/field/window-matched physical score",
+        "external_conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": [
+            "0",
+            "0"
+          ]
+        },
+        "external_state_identity": "atomic-isotope:Cs-133:q0:ground",
+        "external_transition": "ground_state_hyperfine_separation",
+        "native_field_regime": "not represented; recorded zero-field target conditions are not native admission",
+        "native_to_experimental_window": "unestablished",
+        "native_to_external_state": "unestablished"
+      },
+      "physical_prediction_test": "not_executed_missing_selected_state_and_observation_law",
+      "pilot": "Cs-133",
+      "property": "hyperfine_frequency",
+      "shared_reference_covariance": null,
+      "target": {
+        "conditions": {
+          "electronic_state": "ground",
+          "experimental_window": null,
+          "magnetic_field": "unperturbed_zero_field",
+          "magnetic_sublevels": [
+            "0",
+            "0"
+          ]
+        },
+        "entity_id": "atomic-isotope:Cs-133:q0:ground",
+        "exposure": "retrospective",
+        "id": "hyperfine:Cs-133",
+        "locator": "transitions/1",
+        "method": "definition",
+        "physical_prediction": false,
+        "property": "hyperfine_frequency",
+        "qualification": "Cs defining anchor is not a realized-clock measurement.",
+        "reference_dependence": "See retained inventory source and correction context",
+        "selection_status": "adopted",
+        "source_id": "hyperfine-inventory",
+        "transition": "ground_state_hyperfine_separation",
+        "uncertainty": {
+          "coverage": null,
+          "distribution": null,
+          "kind": "exact_definition_only",
+          "value": "0"
+        },
+        "unit": "Hz",
+        "value": "9192631770",
+        "value_kind": "numeric"
+      },
+      "target_selection": {
+        "policy": "explicit adopted source/transition record; alternate records retained",
+        "requested_record_id": "hyperfine:Cs-133"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "whole_law_disposition": "incomplete_missing_premises"
+}
