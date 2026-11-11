@@ -85,6 +85,42 @@ class ExternalTransitionTests(unittest.TestCase):
                 for opt in (False,True):self.assertNotEqual(self.cli(root,opt).returncode,0)
                 self.assertEqual(snapshot(root),before);p.write_bytes(old)
 
+    def test_evaluator_standard_uncertainty_keeps_its_source_and_limits(self):
+        base=json.loads((ROOT/v.DATA/'catalog.json').read_text())
+        t=base['records'][2]
+        self.assertEqual(t['standard_uncertainty_hz'],'0.007')
+        self.assertEqual(t['uncertainty_convention']['kind'],'one_standard_deviation_in_evaluation')
+        self.assertEqual(t['uncertainty_convention']['source_id'],'kramida2010-hdt')
+        self.assertEqual(t['uncertainty_convention']['locators'],v.UNCERTAINTY_LOCATORS)
+        self.assertIsNone(t['uncertainty_distribution'])
+        self.assertIsNone(t['uncertainty_coverage'])
+        self.assertIsNone(t['joint_covariance'])
+        self.assertIsNone(base['records'][1]['value_hz'])
+        self.assertNotIn('standard_uncertainty_hz',base['records'][0])
+        for field,value in [('standard_uncertainty_hz','0'),('uncertainty_distribution','Gaussian'),
+                            ('uncertainty_coverage','0.6827'),('joint_covariance',{'independent':True})]:
+            changed=deepcopy(base);changed['records'][2][field]=value
+            with self.subTest(field=field),self.assertRaises(ValueError):v.validate_metadata(changed)
+        for field,value in [('caveat',''),('source_id','mathur1967'),('locators',[])]:
+            changed=deepcopy(base);changed['records'][2]['uncertainty_convention'][field]=value
+            with self.subTest(field=field),self.assertRaises(ValueError):v.validate_metadata(changed)
+
+    def test_persisted_uncertainty_promotion_and_lost_caveat_reject_read_only(self):
+        changes=[lambda d:d['records'][2].__setitem__('uncertainty_distribution','Gaussian'),
+                 lambda d:d['records'][2].__setitem__('uncertainty_coverage','0.6827'),
+                 lambda d:d['records'][2]['uncertainty_convention'].__setitem__('caveat',''),
+                 lambda d:d['records'][0].__setitem__('standard_uncertainty_hz','0.0017')]
+        with tempfile.TemporaryDirectory() as folder:
+            root=self.fixture(folder);p=root/v.DATA/'catalog.json';original=p.read_bytes()
+            for mutate in changes:
+                data=json.loads(original);mutate(data);p.write_text(json.dumps(data))
+                before=snapshot(root)
+                for opt in (False,True):
+                    self.assertNotEqual(self.cli(root,opt).returncode,0)
+                    self.assertEqual(snapshot(root),before)
+                p.write_bytes(original)
+            self.assertEqual(self.cli(root).returncode,0)
+
     def test_current_native_run_cannot_open_the_acquired_targets(self):
         import matter1_campaign_engine as engine
         config=engine.default_config(1,1);expected=engine.run_case(config,ROOT)

@@ -10,7 +10,7 @@ from pathlib import Path
 import re
 
 DATA = Path('manual2/data/m1/external_transitions')
-CATALOG_SHA256 = '0ef05771e1fce3c6880a545fe4b3f1c3e8e3c726bb5c65519b2affb1fbec5d47'
+CATALOG_SHA256 = '30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a'
 IDS = ('D2-ground-hfs-WinelandRamsey1972',
        'T3-ground-hfs-Mathur1967-untranscribed',
        'T3-ground-hfs-Kramida2010-rescaled-Mathur1967')
@@ -20,6 +20,13 @@ ACQUISITION = {
     'kramida2010-hdt': 'web_pdf_text_extraction_only_raw_pdf_download_failed',
     'hellwig1970-full': 'copied_verified_earlier_primary_download',
 }
+UNCERTAINTY_LOCATORS = [
+    'PDF page index 5 / printed page 591, footnote 3',
+    'PDF page index 22 / printed page 608, explanation of experimental uncertainties',
+]
+UNCERTAINTY_CAVEAT = ('Evaluator intention; the exact meaning of uncertainties quoted from older '
+    'publications is sometimes difficult to recover. This does not establish a Gaussian '
+    'distribution, coverage probability or complete shared-reference covariance.')
 
 def need(condition, message):
     if not condition:
@@ -84,6 +91,14 @@ def validate_metadata(data):
          and 'not an assertion' in d['calibration_anchor']['zero_uncertainty_scope'], 'Conditional reference assumption is not physical zero uncertainty')
     need((t['value_hz'],t['uncertainty_hz'])==('1516701470.775','0.007'), 'Evaluated tritium transcription differs')
     need(t['calibration_anchor']['uncertainty_hz']=='0.001' and original['id'] in t['not_independent_of'], 'Rescaling dependence differs')
+    need(t['standard_uncertainty_hz']=='0.007' and t['standard_uncertainty_hz']==t['uncertainty_hz'],
+         'Evaluated T standard uncertainty differs')
+    need(t['uncertainty_convention']=={
+        'kind':'one_standard_deviation_in_evaluation', 'source_id':'kramida2010-hdt',
+        'locators':UNCERTAINTY_LOCATORS, 'caveat':UNCERTAINTY_CAVEAT},
+        'Evaluated T uncertainty convention, source or caveat differs')
+    need(all(row.get('standard_uncertainty_hz') is None and row.get('uncertainty_convention') is None
+             for row in (d,original)), 'Evaluator convention cannot promote the separate primary records')
     return rows,sources
 
 def verify(root):
@@ -106,6 +121,11 @@ def verify(root):
     need(extracted['raw_pdf_path'] is None and extracted['raw_pdf_sha256'] is None, 'Extraction cannot claim original-file authentication')
     facts=extracted['facts']
     need(facts['tritium_rescaled_frequency_hz']==rows[2]['value_hz'] and facts['tritium_parenthesized_uncertainty_hz']==rows[2]['uncertainty_hz'], 'Evaluation extraction differs')
+    need(facts['tritium_standard_uncertainty_hz']==rows[2]['standard_uncertainty_hz'] and
+         facts['parenthesized_uncertainty_convention']==rows[2]['uncertainty_convention'],
+         'Evaluation uncertainty convention differs from target')
+    need(facts['uncertainty_coverage'] is None and facts['uncertainty_distribution'] is None and
+         facts['joint_covariance'] is None, 'Standard uncertainty does not supply a distribution or covariance')
     legacy=json.loads((root/'manual2/data/m1/hyperfine/target_inventory.json').read_text())
     h=next(s for s in legacy['sources'] if s['source_id']=='hellwig1970')
     need(h['pdf_sha256']==sources['hellwig1970-full']['sha256'], 'Full hydrogen PDF differs from original source binding')

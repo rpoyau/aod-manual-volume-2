@@ -142,14 +142,26 @@
       "source_locator": [
         "PDF page index 2 / printed page 588, ground-state frequency paragraph",
         "PDF page index 5 / printed page 591, paragraph beginning quantities actually measured",
-        "PDF page index 32 / printed page 618, references 15 and 16"
+        "PDF page index 32 / printed page 618, references 15 and 16",
+        "PDF page index 5 / printed page 591, footnote 3",
+        "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
       ],
+      "standard_uncertainty_hz": "0.007",
       "state_label_scope": "Ground-state hyperfine separation; no measured magnetic-sublevel assignment imported",
+      "uncertainty_convention": {
+        "caveat": "Evaluator intention; the exact meaning of uncertainties quoted from older publications is sometimes difficult to recover. This does not establish a Gaussian distribution, coverage probability or complete shared-reference covariance.",
+        "kind": "one_standard_deviation_in_evaluation",
+        "locators": [
+          "PDF page index 5 / printed page 591, footnote 3",
+          "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
+        ],
+        "source_id": "kramida2010-hdt"
+      },
       "uncertainty_coverage": null,
       "uncertainty_distribution": null,
       "uncertainty_hz": "0.007",
       "uncertainty_notation": "1516701470.775(7)",
-      "uncertainty_semantics": "parenthesized last digits in evaluated compilation; coverage not transcribed",
+      "uncertainty_semantics": "Parenthesized last digits interpreted by Kramida as one standard deviation, with a legacy-source interpretation caveat; distribution, coverage probability and joint covariance remain unknown.",
       "unit": "Hz",
       "value_hz": "1516701470.775",
       "value_role": "evaluated_hz_rescaling_of_Mathur1967",
@@ -196,11 +208,13 @@
       "locator": [
         "PDF page index 2 / printed page 588, ground-state frequency paragraph",
         "PDF page index 5 / printed page 591, paragraph beginning quantities actually measured",
-        "PDF page index 32 / printed page 618, references 15 and 16"
+        "PDF page index 32 / printed page 618, references 15 and 16",
+        "PDF page index 5 / printed page 591, footnote 3",
+        "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
       ],
       "path": "nist2010-hdt-web-extraction.json",
       "publication_date": "2010-06-09",
-      "sha256": "d0ea7e9ed22363c3b43b578057ae3db1271cb810d30b72e739fbffb0044e675b",
+      "sha256": "0989bbcf76b04caffa3c83a8431f7050cbe8f96a42a1e16a25068cefd4db1e12",
       "source_class": "authoritative_evaluated_compilation",
       "title": "A critical compilation of experimental data on spectral lines and energy levels of hydrogen, deuterium, and tritium",
       "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"

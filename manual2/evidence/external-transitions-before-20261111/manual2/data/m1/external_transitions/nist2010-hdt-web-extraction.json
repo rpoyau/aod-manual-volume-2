@@ -1,0 +1,38 @@
+{
+  "acquisition_status": "web_pdf_text_extraction_only_raw_pdf_download_failed",
+  "author": "A. E. Kramida",
+  "doi": "10.1016/j.adt.2010.05.001",
+  "extracted_on": "2026-11-09",
+  "extraction_method": "Manual transcription of the web tool PDF-text result; numeric and calibration statements only; not an original laboratory data stream",
+  "facts": {
+    "adopted_hydrogen_frequency_hz": "1420405751.768",
+    "adopted_hydrogen_parenthesized_uncertainty_hz": "0.001",
+    "deuterium_frequency_hz": "327384352.5222",
+    "deuterium_parenthesized_uncertainty_hz": "0.0017",
+    "deuterium_reference_adjustment": "none; adopted H reference coincides with original Wineland-Ramsey reference",
+    "directly_measured_quantities": "D/H and T/H maser-frequency ratios in Wineland-Ramsey1972 and Mathur1967; Hz values depend on the adopted H reference",
+    "joint_covariance": null,
+    "tritium_parenthesized_uncertainty_hz": "0.007",
+    "tritium_reference_adjustment": "Kramida recalculates Mathur1967 using the adopted H value; original Mathur printed numeric frequency and reference have not been recovered in this acquisition",
+    "tritium_rescaled_frequency_hz": "1516701470.775",
+    "uncertainty_coverage": "not transcribed; no one-sigma assertion in this supplement"
+  },
+  "limits": [
+    "Evaluated rescaling, not a new independent measurement",
+    "No original D/T event stream, preparation recipe or microscopic coupling map downloaded",
+    "Does not replace Hellwig1970 printed-page200 one-sigma0.002Hz record"
+  ],
+  "locators": [
+    "PDF page index 2 / printed page 588, ground-state frequency paragraph",
+    "PDF page index 5 / printed page 591, paragraph beginning quantities actually measured",
+    "PDF page index 32 / printed page 618, references 15 and 16"
+  ],
+  "publication_year": 2010,
+  "raw_pdf_path": null,
+  "raw_pdf_sha256": null,
+  "schema": "matter1.external-source-extraction.v1",
+  "source_class": "authoritative_evaluated_compilation",
+  "source_id": "kramida2010-hdt",
+  "title": "A critical compilation of experimental data on spectral lines and energy levels of hydrogen, deuterium, and tritium",
+  "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564"
+}

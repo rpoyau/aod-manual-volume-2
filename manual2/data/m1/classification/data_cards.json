@@ -713,8 +713,8 @@
             "/warnings"
           ],
           "path": "manual2/data/m1/external_transitions/catalog.json",
-          "selected_sha256": "2372808b38977693383753a976e9edc8d2ad809d7f12ca9585381de6653970f8",
-          "sha256": "0ef05771e1fce3c6880a545fe4b3f1c3e8e3c726bb5c65519b2affb1fbec5d47"
+          "selected_sha256": "7236f407fb03ca8f8102e495cd7e397346d426f1fd14c36bad54644ad690472a",
+          "sha256": "30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a"
         }
       ],
       "claim_class": "metrology record",
@@ -724,7 +724,7 @@
         "M_AOmega": "Source acquisition and evaluated reference rescaling; not native simulation",
         "Pi_report": "ground-state hyperfine Hz with source reference dependence retained",
         "epsilon_report": null,
-        "sigma_input": "Published last-digit uncertainty; untranscribed coverage and joint covariance remain null",
+        "sigma_input": "Evaluated T standard uncertainty 0.007 Hz with legacy-source caveat; primary D abstract qualification separate; distribution, coverage probability and joint covariance remain unknown",
         "src": [
           "manual2/data/m1/external_transitions/catalog.json"
         ]
@@ -768,6 +768,6 @@
   "scope": "Classification overlay for selected existing artifact families/components; not scientific replay, native admission, physical prediction or empirical scoring.",
   "source_lock": {
     "path": "manual2/evidence/data-classes/source-bindings.json",
-    "sha256": "e5209d63f768bd3b002ea1c6c042a16a405aae8ed16d100db1260bb826422bcc"
+    "sha256": "c7cb00b17666e3b23fbc6e56165de81d5c0e6cc310d646925e2da6ac52ccba52"
   }
 }

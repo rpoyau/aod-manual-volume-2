@@ -1,0 +1,773 @@
+{
+  "authority_commit": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "cards": [
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/executed_checks",
+            "/native_evidence_lanes",
+            "/interpretation"
+          ],
+          "path": "manual2/data/m1/matter1_audit_report.json",
+          "selected_sha256": "b187659de8396cddd54e3b56d5d269d0d111d7e7b08f75a8d11cb0fbb36c4a05",
+          "sha256": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": null,
+        "D": "118 reference-A selections and 126 placement slots; source selection provenance remains unresolved",
+        "M_AOmega": "Exact declared grouping and conditional support arithmetic",
+        "Pi_report": "slot/count and exact conditional support sum",
+        "epsilon_report": null,
+        "sigma_input": "Exact arithmetic of declared inputs; no physical uncertainty inferred",
+        "src": [
+          "manual2/data/m1/matter1_audit_report.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "internal"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/interpretation": "PASS covers reference integrity and conditional arithmetic only; no admission, native duration, retention or empirical agreement is inferred.",
+          "/profile": "static_relational_reference",
+          "/status": "PASS"
+        }
+      },
+      "id": "static-reference",
+      "record_form": "Benchmark manifest",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "Static arithmetic is not a returned-current gate/comparator fixture."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/comparison_rows",
+            "/response_rows",
+            "/statuses",
+            "/certificates"
+          ],
+          "path": "manual2/data/m1/folding/temporal_report.json",
+          "selected_sha256": "5e40aa751d563de1b8e0616c0d646cce320b293de3e0281c6184ea591158ab66",
+          "sha256": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": "D0",
+        "D": "Finite declared H1 return/contact histories",
+        "M_AOmega": "Committed comparator and signed current-pair response",
+        "Pi_report": "exact recurrence ratio, lag and signed pair residual",
+        "epsilon_report": "signed pair cancellation; scoped comparator residual",
+        "sigma_input": "Exact finite model operands",
+        "src": [
+          "manual2/data/m1/folding/temporal_report.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "internal"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/certificates": "finite_predicate_witness_not_motif_admission",
+          "/finite_model_execution": "executed",
+          "/statuses": {
+            "atomic_mapping_status": "pending",
+            "empirical_status": "not_tested",
+            "native_admission_status": "pending",
+            "native_execution_status": "not_claimed",
+            "record_class": "declared_finite_folding_model"
+          }
+        }
+      },
+      "id": "folding-current-comparator",
+      "record_form": "Exact fixture",
+      "support_class": {
+        "code": "D0",
+        "name": "exact internal fixture",
+        "scope": "D0 covers this internal comparator audit only; finite witnesses are not complete motif admission."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/result/execution",
+            "/result/observation",
+            "/result/trajectory/contacts",
+            "/result/physical"
+          ],
+          "path": "manual2/data/m1/campaign/cases/Z001-A001.json",
+          "selected_sha256": "c3b90ac530c59084bf80ac558bb67dc046808269b0a1cb6f2906f1d756e9ee7a",
+          "sha256": "c19329bcfe0977209b85783afc193738f0d23c6e2d7a969763afdd0725c0e8f4"
+        }
+      ],
+      "claim_class": "native exact fixture",
+      "data_card": {
+        "C_support": "D0",
+        "D": "H-1 generic neutral fixture; distinct p/e constituents and committed native return pairs",
+        "M_AOmega": "Current-native compare and exact directed-contact audit within declared pacing",
+        "Pi_report": "native current-pair RCD, recurrence count and lag",
+        "epsilon_report": "internal pair/comparator consistency, not a spectral residual",
+        "sigma_input": "Exact fixture operands; no SI unit supplied",
+        "src": [
+          "manual2/data/m1/campaign/cases/Z001-A001.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "internal"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/result/execution/native_inner_and_outer_returns_admitted": true,
+          "/result/execution/status": "bounded_declared_model_executed",
+          "/result/physical": {
+            "atomic_state_identification": null,
+            "emitted_phase_map": null,
+            "frequency_hz": null,
+            "half_life_seconds": null,
+            "nuclear_loss_rule": null,
+            "survival_probability": null,
+            "unresolved_dependencies": [
+              "atomic preparation and internal coupling identification",
+              "emitted phase observation map",
+              "configuration-derived nuclear retention/loss law",
+              "physical calibration and full uncertainty"
+            ]
+          }
+        }
+      },
+      "id": "campaign-current-audit",
+      "record_form": "Exact fixture",
+      "support_class": {
+        "code": "D0",
+        "name": "exact internal fixture",
+        "scope": "Native exact fixture identifies selected typed comparisons only, not hydrogen atomic admission or the whole campaign model."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/configuration_count",
+            "/native_comparisons",
+            "/unresolved_dependencies",
+            "/physical_atomic_prediction",
+            "/physical_half_life_prediction"
+          ],
+          "path": "manual2/data/m1/campaign/prediction.json",
+          "selected_sha256": "788ab966a155c3d5eb928882feb4bee016d4228f18fface830f976c0bb8ea1a5",
+          "sha256": "450754040872d8c9685292022c6f112184e3a8137b4bab5b12d523184c4b412a"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": null,
+        "D": "135 distinct (Z,A) neutral generic preparations; all source state records retained separately",
+        "M_AOmega": "Versioned finite state-dependent recurrence law and independent 3:3:6 reference",
+        "Pi_report": "bounded returns/lag in configuration-specific scheduler windows",
+        "epsilon_report": null,
+        "sigma_input": "Exact sampled finite history; no atomic preparation/map uncertainty supplied",
+        "src": [
+          "manual2/data/m1/campaign/prediction.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "internal"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/configuration_count": 135,
+          "/physical_atomic_prediction": null,
+          "/physical_half_life_prediction": null,
+          "/target_access": "evaluation_values_not_read"
+        }
+      },
+      "id": "campaign-declared-dynamics",
+      "record_form": "Benchmark manifest",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "A declared campaign is not automatically a D0 fixture or O0 atomic-frequency comparison."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/transitions/0",
+            "/sources"
+          ],
+          "path": "manual2/data/m1/hyperfine/target_inventory.json",
+          "selected_sha256": "f22537d912ab853e9b7d3fcadb1c65f6bf549d8704f9903b5ad5035eb5b0da7c",
+          "sha256": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "Historical H-1 ground-state hyperfine interval; known target exposure",
+        "M_AOmega": "Source transcription, with published combined uncertainty retained",
+        "Pi_report": "transition frequency Hz",
+        "epsilon_report": null,
+        "sigma_input": "Published one-sigma 0.002 Hz; shared-reference covariance not independently reconstructed",
+        "src": [
+          "manual2/data/m1/hyperfine/target_inventory.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "measured"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/transitions/0/native_mapping_status": "pending",
+          "/transitions/0/role": "retrospective_target",
+          "/transitions/0/uncertainty_kind": "reported_one_sigma"
+        }
+      },
+      "id": "hydrogen-measured-transition",
+      "record_form": "Measured target record",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "A raw measured target does not instantiate an O0 map or a native prediction."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/transitions/1",
+            "/sources"
+          ],
+          "path": "manual2/data/m1/hyperfine/target_inventory.json",
+          "selected_sha256": "c464a69fcc93fab0cc6b9d91c0cd0a5e7e52bfeeb47452fbdeaa39064e4f291e",
+          "sha256": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "Cs-133 SI defining unperturbed transition",
+        "M_AOmega": "Convention anchor; realized oscillator uncertainty is separate",
+        "Pi_report": "exact defining frequency Hz",
+        "epsilon_report": "convention identity only",
+        "sigma_input": "Definition uncertainty zero; realization uncertainty is not zero by definition",
+        "src": [
+          "manual2/data/m1/hyperfine/target_inventory.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "external"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/transitions/1/realization_uncertainty_hz": null,
+          "/transitions/1/role": "defining_reference",
+          "/transitions/1/uncertainty_kind": "exact_si_definition"
+        }
+      },
+      "id": "cesium-defining-anchor",
+      "record_form": "Calibration anchor",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "A defining anchor is not an independent prediction or measured realization."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/isotopes/5",
+            "/isotopes/6",
+            "/isotopes/7",
+            "/isotopes/8",
+            "/isotopes/9",
+            "/isotopes/10",
+            "/isotopes/11",
+            "/isotopes/12",
+            "/isotopes/13",
+            "/isotopes/14",
+            "/isotopes/15",
+            "/isotopes/17",
+            "/isotopes/18",
+            "/isotopes/19",
+            "/isotopes/20",
+            "/isotopes/21",
+            "/isotopes/22",
+            "/isotopes/23",
+            "/isotopes/25",
+            "/sources"
+          ],
+          "path": "manual2/data/m1/isotopes/catalog.json",
+          "selected_sha256": "56ebd0f80609517a2cb642c17f5a50ee0d709d406ac7a0d1439a61a6df2e83a4",
+          "sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "Finite selected evaluated half-life records; original nuclear-state and tentative-isomer assignments retained",
+        "M_AOmega": "Selected source transcription and decimal SI-prefix conversion; no averaging",
+        "Pi_report": "total half-life seconds; partial channels and individual delays remain distinct",
+        "epsilon_report": null,
+        "sigma_input": "Source asymmetric uncertainties and confidence qualifications; no distribution invented",
+        "src": [
+          "manual2/data/m1/isotopes/catalog.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "measured"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {}
+      },
+      "id": "isotope-finite-targets",
+      "record_form": "Measured target record",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "Selected finite target rows only. Neither evaluation nor tentative state assignment establishes native isotope identity."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/isotopes/0",
+            "/isotopes/1",
+            "/isotopes/2",
+            "/isotopes/3",
+            "/isotopes/4",
+            "/isotopes/16",
+            "/isotopes/24",
+            "/isotopes/26",
+            "/coverage"
+          ],
+          "path": "manual2/data/m1/isotopes/catalog.json",
+          "selected_sha256": "816b935c4f0fbb45f579cabba51e4ee1d079429625e291bb3144a3c880ffd6f3",
+          "sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "Observational stability, unknown/tentative records, Fl-298 unobserved declaration and rejected Og-295 candidate",
+        "M_AOmega": "Source inventory with original qualifications; no point target assigned",
+        "Pi_report": "qualified record or unknown, not zero/infinite half-life",
+        "epsilon_report": null,
+        "sigma_input": "Null value and unknown uncertainty remain null; no measured point inferred",
+        "src": [
+          "manual2/data/m1/isotopes/catalog.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "external"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {}
+      },
+      "id": "isotope-nonpoint-inventory",
+      "record_form": "Benchmark manifest",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "Not every catalog row is measured. Model-target declarations remain declarations, and source crosschecks are not promoted."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            ""
+          ],
+          "path": "manual2/data/m1/hyperfine/observation_map.json",
+          "selected_sha256": "3d099cdef140f36769173072a44da5492a681f0c763226b8ddc9873fce367a1f",
+          "sha256": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": "O0",
+        "D": "Specified atomic transition endpoints and required construction/comparison stages",
+        "M_AOmega": "Declared observation-map contract; map and atomic configuration operands absent",
+        "Pi_report": "intended frequency ratio and phase lag",
+        "epsilon_report": "intended target residual; not evaluated",
+        "sigma_input": "Not supplied for a completed physical map",
+        "src": [
+          "manual2/data/m1/hyperfine/observation_map.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "value map"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/empirical_score": null,
+          "/empirical_status": "not_compared",
+          "/map_status": "pending",
+          "/native_admission_status": "pending",
+          "/native_execution_status": "not_executed",
+          "/predicted_frequency_ratio": null
+        }
+      },
+      "id": "atomic-observation-declaration",
+      "record_form": "Observable-map record",
+      "support_class": {
+        "code": "O0",
+        "name": "observable-map fixture",
+        "scope": "O0 identifies intended observable-map support only. Declaration has no completed map value or empirical score."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/rows",
+            "/classification",
+            "/selection_policy",
+            "/covariance_status"
+          ],
+          "path": "manual2/data/m1/atomic/comparison.json",
+          "selected_sha256": "4b5f9835d8e2eab0b35544b196c356a842e76fcf080e79e0d1242b40f029a20b",
+          "sha256": "049693be7747aa338b6429d4b34df722fa8f2b6a9b27a78c00bfe14750cd8139"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": "O0",
+        "D": "Unselected conditional observation maps and the exposed H-1 target",
+        "M_AOmega": "Retrospective underdetermination diagnostics; no map selected or fitted",
+        "Pi_report": "conditional frequency residual Hz and relative residual",
+        "epsilon_report": "conditional diagnostic residual, not an empirical AOD score",
+        "sigma_input": "Atomic-map uncertainty/joint covariance incomplete; standardized residual null",
+        "src": [
+          "manual2/data/m1/atomic/comparison.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "value map"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/atomic_empirical_score": null,
+          "/atomic_prediction_test_status": "not_executed_no_selected_atomic_map",
+          "/classification": "retrospective_underdetermination_diagnostic"
+        }
+      },
+      "id": "atomic-countermodel-residuals",
+      "record_form": "External comparison record",
+      "support_class": {
+        "code": "O0",
+        "name": "observable-map fixture",
+        "scope": "Computed diagnostic residuals do not establish an atomic prediction or empirical agreement."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/rows",
+            "/approximation",
+            "/input_uncertainties"
+          ],
+          "path": "manual2/data/m1/atomic/benchmark.json",
+          "selected_sha256": "7343b8055797d642ed139d2e68c5a2c74b5edd15adece2a6304bc6ccb59e05e0",
+          "sha256": "6aeb1b5c78bce831c522a9dc63d89027a5f064ee0ab43813e43158316e104fab"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": null,
+        "D": "Conventional spin-only Hamiltonian with measured/defining zero-field inputs",
+        "M_AOmega": "External calibrated benchmark, including its stated approximations",
+        "Pi_report": "frequency and field-shift Hz",
+        "epsilon_report": null,
+        "sigma_input": "Partial benchmark uncertainty; no precision-spectroscopy claim",
+        "src": [
+          "manual2/data/m1/atomic/benchmark.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "demonstration"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/classification": "conventional_external_calibrated_benchmark",
+          "/native_atomic_prediction": false,
+          "/uncertainty_status": "partial; g approximation, field calibration and covariance not supplied",
+          "/zero_field_agreement_role": "calibrant_reproduction_only"
+        }
+      },
+      "id": "conventional-hyperfine-benchmark",
+      "record_form": "Benchmark manifest",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "A conventional calibrated calculation is not native AOD output; zero-field agreement is calibration."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/hydrogen",
+            "/cesium",
+            "/isotope_applications/livermorium"
+          ],
+          "path": "manual2/data/m1/m3_metrology/metrology_report.json",
+          "selected_sha256": "71bf107951984e27b1a425e0ee2c9f54a6ec13a390a60e1e0f0bdfc6d3494a0a",
+          "sha256": "0c8700e2f95812f4a35ec085b4c57ba9b9a6081d887112d1727020a6e2282ac7"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "Published H Table IV/VI and Cs realization records; selected Lv event delays",
+        "M_AOmega": "Source-bound metrological reductions with acquisition protocols",
+        "Pi_report": "source frequency/correction Hz and individual event delay seconds",
+        "epsilon_report": null,
+        "sigma_input": "Published uncertainty retained; full model/realization covariance not silently supplied",
+        "src": [
+          "manual2/data/m1/m3_metrology/metrology_report.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "derived external"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/complete_physical_uncertainty": {
+            "kind": "unknown",
+            "reason": "Complete physical observation/model uncertainty not established"
+          },
+          "/independent_physical_prediction": false,
+          "/physical_calibration": "not established"
+        }
+      },
+      "id": "source-metrology-reductions",
+      "record_form": "Benchmark manifest",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "Source reductions are distinct from atomic prediction and half-life estimates from individual delays."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/exact_assertions",
+            "/causal_control",
+            "/statuses",
+            "/native_medians"
+          ],
+          "path": "manual2/data/m1/survival/survival_report.json",
+          "selected_sha256": "b7a9d54f9c320a004385c838518d4acde3a8cfd865f455c8e406270f7e1b8ede",
+          "sha256": "26c7005f2bc5269339ef4abd1096c8602add40dba20075d005d7a45afd434d7f"
+        }
+      ],
+      "claim_class": "declared model/simulation",
+      "data_card": {
+        "C_support": "D0",
+        "D": "Declared finite Q4 histories, exact gates and competing outcomes",
+        "M_AOmega": "Exact finite kernel, probability conservation and antisymmetric-response controls",
+        "Pi_report": "survival and first-discrete-crossing reference-return count",
+        "epsilon_report": "probability-mass and internal pair residuals",
+        "sigma_input": "Exact finite distribution; no physical loss/time map uncertainty supplied",
+        "src": [
+          "manual2/data/m1/survival/survival_report.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "internal"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/geometry_or_test_success_is_native_admission": false,
+          "/physical_prediction_executed": false,
+          "/statuses": {
+            "construction": "declared_Q4_finite_predicate_model",
+            "empirical_agreement": "not_claimed",
+            "execution": "executed_exact_finite_histories",
+            "native_isotope_state_map": "not_established",
+            "native_motif_admission": "not_established",
+            "physical_loss_map": "not_established",
+            "physical_uncertainty": "unknown",
+            "reference_clock_map": "not_established"
+          }
+        }
+      },
+      "id": "finite-survival-internal-audit",
+      "record_form": "Exact fixture",
+      "support_class": {
+        "code": "D0",
+        "name": "exact internal fixture",
+        "scope": "D0 covers exact internal checks in the declared survival model, not physical isotope admission or seconds."
+      }
+    },
+    {
+      "bindings": [
+        {
+          "json_pointers": [
+            "/records",
+            "/source_rows",
+            "/warnings"
+          ],
+          "path": "manual2/data/m1/external_transitions/catalog.json",
+          "selected_sha256": "2372808b38977693383753a976e9edc8d2ad809d7f12ca9585381de6653970f8",
+          "sha256": "0ef05771e1fce3c6880a545fe4b3f1c3e8e3c726bb5c65519b2affb1fbec5d47"
+        }
+      ],
+      "claim_class": "metrology record",
+      "data_card": {
+        "C_support": null,
+        "D": "D/H and T/H maser comparisons; H-conditioned reported frequencies and separately untranscribed original T value",
+        "M_AOmega": "Source acquisition and evaluated reference rescaling; not native simulation",
+        "Pi_report": "ground-state hyperfine Hz with source reference dependence retained",
+        "epsilon_report": null,
+        "sigma_input": "Published last-digit uncertainty; untranscribed coverage and joint covariance remain null",
+        "src": [
+          "manual2/data/m1/external_transitions/catalog.json"
+        ]
+      },
+      "decimal_display": {
+        "policy": "Preserve source value, unit, uncertainty, rounding and qualification. Exact decimal transcription does not imply exact physical measurement.",
+        "scopes": [
+          "derived external",
+          "external"
+        ]
+      },
+      "execution_outcome": {
+        "classifier_confers_empirical_agreement": false,
+        "classifier_confers_native_admission": false,
+        "classifier_confers_physical_prediction": false,
+        "classifier_executes_model": false,
+        "source_fields": {
+          "/missing_dependencies_unchanged": [
+            "prepared_atomic_state_and_native_dynamics_recipe",
+            "native_configuration_to_atomic_observable_map",
+            "matching_experimental_windows_and_conditions",
+            "realization_uncertainty_and_joint_covariance"
+          ],
+          "/records/0/scientific_claim_class": null,
+          "/records/1/value_hz": null,
+          "/records/2/scientific_claim_class": null,
+          "/scope": "Source acquisition and state-resolved target inventory only; no native mapping, execution, prediction, lifetime or agreement is inferred"
+        }
+      },
+      "id": "deuterium-tritium-target-supplement",
+      "record_form": "Measured target record",
+      "support_class": {
+        "code": null,
+        "name": null,
+        "scope": "Metrology record names the source-acquisition role only. Original row scientific_claim_class remains null; no map or empirical score is added."
+      }
+    }
+  ],
+  "null_support_semantics": "No applicable instantiated Manual I support class for this component; null is metadata, not a new support class.",
+  "schema": "matter1.manual-i-data-cards.v1",
+  "scope": "Classification overlay for selected existing artifact families/components; not scientific replay, native admission, physical prediction or empirical scoring.",
+  "source_lock": {
+    "path": "manual2/evidence/data-classes/source-bindings.json",
+    "sha256": "e5209d63f768bd3b002ea1c6c042a16a405aae8ed16d100db1260bb826422bcc"
+  }
+}

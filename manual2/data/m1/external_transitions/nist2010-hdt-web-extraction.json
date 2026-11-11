@@ -1,9 +1,10 @@
 {
   "acquisition_status": "web_pdf_text_extraction_only_raw_pdf_download_failed",
+  "amended_on": "2026-11-11",
   "author": "A. E. Kramida",
   "doi": "10.1016/j.adt.2010.05.001",
   "extracted_on": "2026-11-09",
-  "extraction_method": "Manual transcription of the web tool PDF-text result; numeric and calibration statements only; not an original laboratory data stream",
+  "extraction_method": "Manual transcription of the web tool PDF-text result; numeric, calibration and evaluator uncertainty-convention statements; not an original laboratory data stream",
   "facts": {
     "adopted_hydrogen_frequency_hz": "1420405751.768",
     "adopted_hydrogen_parenthesized_uncertainty_hz": "0.001",
@@ -12,10 +13,21 @@
     "deuterium_reference_adjustment": "none; adopted H reference coincides with original Wineland-Ramsey reference",
     "directly_measured_quantities": "D/H and T/H maser-frequency ratios in Wineland-Ramsey1972 and Mathur1967; Hz values depend on the adopted H reference",
     "joint_covariance": null,
+    "parenthesized_uncertainty_convention": {
+      "caveat": "Evaluator intention; the exact meaning of uncertainties quoted from older publications is sometimes difficult to recover. This does not establish a Gaussian distribution, coverage probability or complete shared-reference covariance.",
+      "kind": "one_standard_deviation_in_evaluation",
+      "locators": [
+        "PDF page index 5 / printed page 591, footnote 3",
+        "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
+      ],
+      "source_id": "kramida2010-hdt"
+    },
     "tritium_parenthesized_uncertainty_hz": "0.007",
     "tritium_reference_adjustment": "Kramida recalculates Mathur1967 using the adopted H value; original Mathur printed numeric frequency and reference have not been recovered in this acquisition",
     "tritium_rescaled_frequency_hz": "1516701470.775",
-    "uncertainty_coverage": "not transcribed; no one-sigma assertion in this supplement"
+    "tritium_standard_uncertainty_hz": "0.007",
+    "uncertainty_coverage": null,
+    "uncertainty_distribution": null
   },
   "limits": [
     "Evaluated rescaling, not a new independent measurement",
@@ -25,7 +37,9 @@
   "locators": [
     "PDF page index 2 / printed page 588, ground-state frequency paragraph",
     "PDF page index 5 / printed page 591, paragraph beginning quantities actually measured",
-    "PDF page index 32 / printed page 618, references 15 and 16"
+    "PDF page index 32 / printed page 618, references 15 and 16",
+    "PDF page index 5 / printed page 591, footnote 3",
+    "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
   ],
   "publication_year": 2010,
   "raw_pdf_path": null,

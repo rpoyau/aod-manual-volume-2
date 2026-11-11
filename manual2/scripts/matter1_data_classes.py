@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = 'manual2/data/m1/'
 REGISTRY = BASE + 'classification/data_cards.json'
 LOCK = 'manual2/evidence/data-classes/source-bindings.json'
-LOCK_SHA256 = 'e5209d63f768bd3b002ea1c6c042a16a405aae8ed16d100db1260bb826422bcc'
+LOCK_SHA256 = 'c7cb00b17666e3b23fbc6e56165de81d5c0e6cc310d646925e2da6ac52ccba52'
 AUTHORITY_COMMIT = '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9'
 AUTHORITY_TREE = '3ab04df3793beda481b4fb7ed0d628ba6765da70'
 SUPPORT = {'D0': 'exact internal fixture', 'O0': 'observable-map fixture'}
@@ -122,7 +122,7 @@ def specifications():
               'Declared finite Q4 histories, exact gates and competing outcomes', 'Exact finite kernel, probability conservation and antisymmetric-response controls', 'survival and first-discrete-crossing reference-return count', 'Exact finite distribution; no physical loss/time map uncertainty supplied', 'probability-mass and internal pair residuals',
               'D0 covers exact internal checks in the declared survival model, not physical isotope admission or seconds.', ['/statuses','/physical_prediction_executed','/geometry_or_test_success_is_native_admission']),
         _spec('deuterium-tritium-target-supplement', 'external_transitions/catalog.json', ['/records','/source_rows','/warnings'], None, 'Measured target record', CLAIMS[2], ['derived external','external'],
-              'D/H and T/H maser comparisons; H-conditioned reported frequencies and separately untranscribed original T value', 'Source acquisition and evaluated reference rescaling; not native simulation', 'ground-state hyperfine Hz with source reference dependence retained', 'Published last-digit uncertainty; untranscribed coverage and joint covariance remain null', None,
+              'D/H and T/H maser comparisons; H-conditioned reported frequencies and separately untranscribed original T value', 'Source acquisition and evaluated reference rescaling; not native simulation', 'ground-state hyperfine Hz with source reference dependence retained', 'Evaluated T standard uncertainty 0.007 Hz with legacy-source caveat; primary D abstract qualification separate; distribution, coverage probability and joint covariance remain unknown', None,
               'Metrology record names the source-acquisition role only. Original row scientific_claim_class remains null; no map or empirical score is added.', ['/scope','/missing_dependencies_unchanged','/records/0/scientific_claim_class','/records/1/value_hz','/records/2/scientific_claim_class']),
     ]
 
