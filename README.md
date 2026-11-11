@@ -195,15 +195,14 @@ After the paired build:
 
 ```sh
 python3 -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v
-python3 -B -O -m unittest manual2.tests.test_matter1_data_classes manual2.tests.test_matter1_external_transitions -v
-python3 -B -O -m unittest discover -s manual2/tests -p 'test_matter1_data.py' -v
-for lane in folding temporal hyperfine stateful metrology bipm atomic application v2_application; do
-  python3 -B -O -m unittest discover -s manual2/tests -p "test_matter1_${lane}.py" -v
-done
+python3 -B -O scripts/matter1_test_inventory.py --run-optimized
+python3 -B -O -m unittest discover -s manual2/tests -p 'test_matter1_campaign*.py' -v
 ```
 
-Normal discovery includes the classification and transition-source suites.
-CI also runs both explicitly under optimized Python and verifies both persisted
+The optimized runner and all acceptance recorders share the module inventory in
+`scripts/matter1_test_inventory.py`; the campaign suite retains a separate receipt.
+Normal discovery and that inventory include the classification and transition-source suites.
+CI verifies both persisted
 lanes before generation. Their mutations reject swapped D0/O0 roles, raw
 targets promoted to native inputs, calibration promoted to prediction,
 unsupported execution/acquisition status, altered source bytes and erased
@@ -317,3 +316,40 @@ comparison and the application report. `PASS_M3_METROLOGY_APPLICATIONS` verifies
 those declared computations and source bindings; physical calibration remains
 unestablished. See the [adoption record](manual2/evidence/m3-metrology-adoption.md)
 for exact source ownership and historical preservation.
+
+
+## Element and isotope properties
+
+The [property catalog](manual2/data/m1/properties/README.md) adds 500 distinct
+entities and 4,354 records. There are 1,067 numeric values from retained sources
+and declared mass reductions; 2,756 values remain unknown. The offline adoption
+interfaces support later official-source additions. Broad atomic, weight and
+response data acquisition remains explicitly partial.
+
+The standalone [companion](manual2/visuals/matter1-reference.html) has an
+“Element and isotope properties” inspector. Select an element, then a specific
+entity/state and property. Source locators, uncertainty conventions and missing
+values remain visible. The original 118 positions and eight unfilled slots keep
+their geometry.
+
+Six native pilot histories and matched controls are implemented separately from
+the sourced values. Their frozen protocol exposes missing state, phase, energy,
+mass and realization laws. The common-gain bridge family fails its declared
+retrospective H/D/T ratio diagnostic; no completed physical atomic prediction is
+claimed. See the [milestone record](manual2/evidence/element-properties/README.md).
+
+```sh
+python3 -B manual2/scripts/verify_matter1_properties.py
+python3 -B -O manual2/scripts/verify_matter1_properties.py
+python3 -B manual2/scripts/verify_matter1_property_model.py
+python3 -B -O manual2/scripts/verify_matter1_property_model.py
+# Explicit generation; comparison opens targets only after native replay:
+python3 -B manual2/scripts/generate_matter1_properties.py --output-root /tmp/matter1-properties
+python3 -B manual2/scripts/generate_matter1_property_model.py --output-root /tmp/matter1-properties
+python3 -B manual2/scripts/compare_matter1_property_model.py --prediction-root /tmp/matter1-properties
+```
+
+CI verifies source data, native replay, hostile tests, exact regeneration, paired
+publication and browser views before recording a separate scoped property
+acceptance receipt. That receipt distinguishes partial acquisition from missing
+physical laws. Historical acceptance receipts remain historical.

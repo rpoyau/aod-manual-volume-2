@@ -56,7 +56,7 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
 
     from matter1_isotopes import build_catalog, load_inputs
     need(json.loads(isotope_catalog.read_text()) == build_catalog(load_inputs(source_root)), "isotope catalog differs from bound source construction")
-    need(manifest.get("schema") == "matter1-figure-manifest-v3", "figure manifest schema")
+    need(manifest.get("schema") == "matter1-figure-manifest-v4", "figure manifest schema")
     need(manifest.get("isotope_catalog_sha256") == sha(isotope_catalog), "isotope catalog binding mismatch")
     need(manifest.get("isotope_layer_sha256") == sha(layer), "isotope layer binding mismatch")
     html = html_path.read_text(encoding="utf-8")
@@ -85,6 +85,17 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
     need(match is not None and json.loads(match.group(1).replace("<\\/", "</")) == campaign, "companion campaign differs from original report projection")
     rendered = rendered.replace("__MATTER1_CAMPAIGN_JSON__", campaign_json.replace("</", "<\\/"))
     rendered = rendered.replace("__MATTER1_CAMPAIGN_JS__", campaign_layer.read_text())
+    from matter1_property_projection import ui_projection as property_projection, input_paths as property_paths
+    properties_layer = source_root / 'visuals/matter1-properties-layer.js'
+    property_inputs = property_paths(source_root.parent) + [properties_layer]
+    paths.extend(property_inputs)
+    original_hashes.update({str(p): sha(p) for p in property_inputs})
+    properties_json = json.dumps(property_projection(source_root.parent), ensure_ascii=False, sort_keys=True, indent=2)
+    need(manifest.get('properties_projection_sha256') == hashlib.sha256(properties_json.encode()).hexdigest(), 'property projection binding mismatch')
+    need(manifest.get('properties_layer_sha256') == sha(properties_layer), 'property layer binding mismatch')
+    for token, value in {'__MATTER1_PROPERTIES_JSON__': properties_json.replace('</', '<\\/'), '__MATTER1_PROPERTIES_JS__': properties_layer.read_text()}.items():
+        need(rendered.count(token) == 1, 'companion requires exactly one property binding: ' + token)
+        rendered = rendered.replace(token, value)
     need(rendered == html, "companion differs from bound template and source inputs")
 
     with pdfplumber.open(pdf_path) as pdf:
@@ -159,7 +170,7 @@ def verify(ledger: Path, figures: Path, visuals: Path, isotope_catalog: Path | N
     return {"status": "PASS", "scope": "static figure/data/export only; not native execution or empirical agreement",
             "source_sha256": sha(ledger), "pdf": pdf_result, "svg_mark_labels": 126,
             "svg_minimum_font_pt": min(svg_sizes),
-            "companion_data_binding": "equal", "isotope_catalog_binding": "equal", "campaign_projection_binding": "equal",
+            "companion_data_binding": "equal", "isotope_catalog_binding": "equal", "campaign_projection_binding": "equal", "properties_projection_binding": "equal",
             "campaign_projection_scope": "Display projection binding; the separate campaign verifier replays scientific execution.", "inputs_unchanged": True}
 
 

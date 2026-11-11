@@ -40,7 +40,7 @@ class ExportIntegrity(unittest.TestCase):
                 self.assertEqual(before,{p:p.read_bytes() for p in before})
 
     def test_semantic_corruptions_rejected_even_with_updated_output_hash(self):
-        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor", "campaign_value", "campaign_executor"):
+        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor", "campaign_value", "campaign_executor", "property_value", "property_executor"):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 figures, visuals = root / "figures", root / "visuals"
@@ -88,6 +88,20 @@ class ExportIntegrity(unittest.TestCase):
                     payload = json.loads(match.group(2).replace('<\\/', '</'))
                     payload['records'][0]['cadence_ratio'] = '999999'
                     target.write_text(text[:match.start(2)]+json.dumps(payload)+text[match.end(2):])
+                elif mutation == "property_value":
+                    import re
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    match = re.search(r'(<script id="matter1-properties-data" type="application/json">)(.*?)(</script>)', text, re.S)
+                    self.assertIsNotNone(match)
+                    payload = json.loads(match.group(2).replace('<\\/', '</'))
+                    payload['catalog']['properties'][0]['physical_prediction'] = True
+                    target.write_text(text[:match.start(2)] + json.dumps(payload) + text[match.end(2):])
+                elif mutation == "property_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("r.physical_prediction?'claimed':'not established'", text)
+                    target.write_text(text.replace("r.physical_prediction?'claimed':'not established'", "'confirmed'"))
                 elif mutation == "campaign_executor":
                     target = visuals / "matter1-reference.html"
                     text = target.read_text()

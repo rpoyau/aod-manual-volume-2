@@ -1,10 +1,12 @@
 {
-  "schema": "matter1-figure-manifest-v3",
+  "schema": "matter1-figure-manifest-v4",
   "isotope_catalog_sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
   "isotope_layer_sha256": "893484e571e5f727f8e14db4193ad9536a589cd652bcea5d799c4c5b78dd233b",
   "source_sha256": "e0e27b97f2ccbc6908115277000199a8cc3131f670eaa9d38162d4ba64ce13f0",
   "campaign_projection_sha256": "0e1507b6ea64e32b9b629fc712b72a8e64bab4ff20008367f89d371bd1135544",
   "campaign_layer_sha256": "6ac4cf4d548c01908bc458e6fa377fb605c25be063d8fc667426e2f539f565e7",
+  "properties_projection_sha256": "5de7d49291781254e69815953a9992e1bd9238e98ac2ceadcc4c0e2a294c5599",
+  "properties_layer_sha256": "57999972e9a97a1ffb241b2626826b5fcca04980b98b69abd936bf1a7c42f9d1",
   "renderer_binding": {
     "profile": "matter1-linux-x86_64-cpython-3.12.14-pypi-v1",
     "lock_sha256": "a1aaf0b138242446fa50faa2d6b74bf20e28843528a2736d1c3be1e0930b3ab0",
@@ -1800,6 +1802,6 @@
     "aod_matter1_wheel_accessible.pdf": "95c1bcfb8420e9e04bb14178360f0bd1902357e7b08379fb19fff88966271d0d",
     "aod_matter1_wheel_accessible.svg": "9d33f65ef935c9b3cc83efb735d9fdf14810e4935b722ae36312a403de529999",
     "matter1-layout.json": "7742eeacddf98a186b20c3a0b3f405917a16ce858ea89ea52e3e50dc06281ca7",
-    "matter1-reference.html": "fe89f54483843249e432bd67d248662dad36180c709de3c317c981bab8e245a9"
+    "matter1-reference.html": "15098f240b2e1a1221ad966af71f4e4c2c67ee324e9a72e1279ba9348b6366b5"
   }
 }

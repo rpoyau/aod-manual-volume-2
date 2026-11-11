@@ -26,6 +26,9 @@
 #campaign-picker{max-width:100%}.campaign-dependencies{padding-left:20px}
 @media print{#campaign-panel{display:none!important}}
 </style>
+<style>
+#properties-panel{margin-top:12px}.property-card{border-top:1px solid var(--line);padding:10px 0}.property-value{font-size:17px;font-variant-numeric:tabular-nums}.property-card dl{display:grid;grid-template-columns:minmax(90px,auto) minmax(0,1fr);gap:4px 12px}.property-card dt{color:var(--muted)}.property-card dd{margin:0}.property-gaps{padding-left:20px}.property-gaps li{margin:6px 0}#property-detail{overflow-wrap:anywhere}#property-detail h3{font-size:15px}@media print{#properties-panel{display:none!important}}
+</style>
 </head>
 <body>
 <main id="matter1">
@@ -50,6 +53,12 @@
 <div class="view-controls"><div><label for="nuclide-picker">Isotope / nuclear state</label><select id="nuclide-picker"></select></div><div><label for="evaluation-picker">Source record</label><select id="evaluation-picker"></select></div></div>
 <div id="nuclide-detail" aria-live="polite"></div><div id="decay-detail"></div>
 <p class="scope">Evaluated measurements and experimental reports are external evidence. Formal nucleon grouping does not establish alpha clusters or native isotope admission.</p></section>
+<details id="properties-panel" class="nuclide-panel">
+<summary>Element and isotope properties</summary>
+<p class="scope">Select an element above, then a specific charge and state here. An isotope-unspecified atomic evaluation does not become a measurement of a selected isotope. Unknown values and source qualifications remain visible.</p>
+<div class="view-controls"><div><label for="property-state">Property entity / state</label><select id="property-state"></select></div><div><label for="property-filter">Property</label><select id="property-filter"><option value="">All properties</option></select></div></div>
+<div id="property-detail" aria-live="polite"></div>
+</details>
 <details id="isotopes">
 <summary>Isotope-count detail</summary>
 <div class="fields">
@@ -110,5 +119,7 @@ new ResizeObserver(resize).observe(root);resize();
 <script>__MATTER1_ISOTOPE_JS__</script>
 <script id="matter1-campaign-data" type="application/json">__MATTER1_CAMPAIGN_JSON__</script>
 <script>__MATTER1_CAMPAIGN_JS__</script>
+<script id="matter1-properties-data" type="application/json">__MATTER1_PROPERTIES_JSON__</script>
+<script>__MATTER1_PROPERTIES_JS__</script>
 </body>
 </html>

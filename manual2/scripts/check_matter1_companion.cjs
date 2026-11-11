@@ -134,6 +134,32 @@ async function checkCampaign(page,width,theme){
  return{width,theme,source_records:145,elements:118,state_records_distinct:true,external_evidence_does_not_select_model:true,undefined_loss_is_unavailable:true,minimum_badge_contrast:Math.min(...ratios),horizontal_overflow:false};
 }
 
+async function checkProperties(page,width,theme){
+ await page.setViewportSize({width,height:1500});await page.emulateMedia({colorScheme:theme});
+ const panel=page.locator('#properties-panel');if(!await panel.getAttribute('open'))await page.locator('#properties-panel summary').click();
+ const payload=await page.locator('#matter1-properties-data').textContent().then(JSON.parse);
+ const offered=await page.evaluate(()=>{const ids=[],root=document.getElementById('matter1');for(let z=1;z<=118;z++){root.dispatchEvent(new CustomEvent('matter1:choose',{detail:{z}}));ids.push(...[...document.querySelectorAll('#property-state option')].map(e=>e.value));}return ids;});
+ assert.deepEqual([...offered].sort(),payload.states.entities.map(e=>e.id).sort());
+ const chart=width<640?'#strips':'#chart';await page.locator(chart+' [data-element="1"]').click();
+ const isotope=payload.states.entities.find(e=>e.z===1&&e.a===1&&e.pilot);
+ assert(isotope,'Hydrogen-1 pilot identity missing');
+ await page.locator('#property-state').selectOption(isotope.id);
+ assert.equal(await page.locator('#matter1').getAttribute('data-property-state'),isotope.id);
+ const first=payload.catalog.properties.find(r=>r.entity_id===isotope.id&&r.value!=null);
+ if(first){await page.locator('#property-filter').selectOption(first.property);const text=await page.locator('#property-detail').textContent();assert(text.includes(String(first.value)));assert(text.includes('Target exposure'));assert(text.includes('Physical prediction'));assert(text.includes('not established'));await capture(page,'properties-source-'+theme+'-'+width);}
+ await page.locator('#property-filter').selectOption('');
+ // Entering a hypothetical mass in the old count calculator never selects a source state.
+ if(await page.locator('#mass-a').isHidden())await page.locator('#isotopes summary').click();
+ const state=await page.locator('#property-state').inputValue();await page.locator('#mass-a').fill('10');assert.equal(await page.locator('#property-state').inputValue(),state);
+ await page.locator('#isotopes summary').click();
+ // Changing source state is keyboard accessible and independent of the chart count.
+ await page.locator('#property-state').focus();await page.keyboard.press('Home');await page.keyboard.press('ArrowDown');await page.keyboard.press('Enter');
+ assert.equal(await page.locator('#matter1').getAttribute('data-a'),'10');
+ assert(!(await page.evaluate(()=>document.documentElement.scrollWidth>document.documentElement.clientWidth+1)));
+ await capture(page,'properties-'+theme+'-'+width);await page.locator('#properties-panel summary').click();
+ return {width,theme,entities:offered.length,element_coverage:118,source_state_separate_from_count:true,horizontal_overflow:false};
+}
+
 (async()=>{
  const executablePath=process.env.CHROMIUM_EXECUTABLE||(fs.existsSync('/opt/google/chrome/chrome')?'/opt/google/chrome/chrome':undefined);
  const browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{})});
@@ -161,7 +187,8 @@ async function checkCampaign(page,width,theme){
  }
  const isotopeChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])isotopeChecks.push(await checkIsotopes(page,width,theme));
  const campaignChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])campaignChecks.push(await checkCampaign(page,width,theme));
+ const propertyChecks=[];for(const width of [736,360,320])for(const theme of ["light","dark"])propertyChecks.push(await checkProperties(page,width,theme));
  assert.deepEqual(errors,[]);assert.deepEqual([hash(html),hash(layoutPath)],before);
- console.log(JSON.stringify({status:'PASS',isotope_checks:isotopeChecks,campaign_checks:campaignChecks,desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
+ console.log(JSON.stringify({status:'PASS',input_sha256:{'manual2/visuals/matter1-reference.html':before[0],'manual2/visuals/matter1-layout.json':before[1]},property_checks:propertyChecks,isotope_checks:isotopeChecks,campaign_checks:campaignChecks,desktop:{marks:126,named_labels:118,unfilled_slots:8,overlaps:[],clipped_text:[]},responsive,conditional_count_checks:'O16→17=861; C12/13/14=613/681/749; placement fixed',invalid_inputs_rejected:4,error_contrast:contrast,contrast_scope:'Visible error text and unselected boundary badges in both themes; not whole-page WCAG conformance',keyboard_and_pointer:true,light_and_dark:true,page_errors:errors,inputs_unchanged:true},null,2));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error.stack);process.exitCode=1;});

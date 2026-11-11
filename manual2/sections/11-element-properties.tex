@@ -1,0 +1,115 @@
+\section{State-Resolved Element Properties}
+\label{manual2:element-properties}
+
+\paragraph{Setup.}
+The property catalog distinguishes an element, an isotope in a nuclear state,
+and an atom or ion in an electronic state. Its identity fields are atomic
+number, isotope assignment, nuclear state, charge and electronic state. An
+unspecified isotope remains unspecified. A neutral ground-state ionization
+energy describes the transition to the singly charged continuum; the second
+ionization energy has a singly charged initial state. Electron affinity also
+requires the negative-ion endpoint. A nuclear mass and an atomic mass have
+different electron inventories.
+
+Each property record binds one entity, one quantity, its unit, source locator,
+value qualification and uncertainty convention. The method of obtaining a
+value, prior exposure to the target and the scope of a model claim are separate
+fields. An evaluated value may incorporate a measurement or an extrapolation;
+neither designation establishes a native AOD prediction. A decimal point value,
+an interval, a one-sided limit, a text assignment and an unknown are distinct
+records. An unknown uncertainty is not zero.
+
+\paragraph{Derivation.}
+Let \(s\) denote a complete declared state identity, \(p\) a property and
+\(c\) its conditions. An empirical property comparison is admissible only after the
+prediction and target have been assigned the same triple:
+\begin{equation}
+  (s,p,c)_{\mathrm{prediction}}=(s,p,c)_{\mathrm{target}}.
+  \label{eq:manual2-property-identity}
+\end{equation}
+This is a catalog join condition, not a physical observation law. Residuals
+between an unselected hypothetical map and a known target remain arithmetic
+diagnostics; they do not pass this empirical comparison gate. In particular,
+an isotope-unspecified atomic evaluation cannot supply an isotope shift.
+A selected line requires its endpoints; a field-dependent shift also requires
+the field, state assignment and applicable regime. No magnetic sublevel is
+created from an unresolved total angular momentum label.
+
+The constructed histories of \secref{manual2:all-element-campaign} retain their
+formation witnesses and relational observables. Assigning an atomic state to a
+history and assigning an emitted phase or an energy to that state are additional
+maps. Distinct positive maps satisfying the declared native and dimensional
+constraints can assign different values to the same history. These typed
+witnesses show that those constraints alone do not select a physical value. A common calibration
+anchor supplies a scale only after the relevant dimensionless relation has
+been established.
+
+\paragraph{Specialization.}
+The pilot comprises hydrogen-1, hydrogen-2, hydrogen-3, helium-3, helium-4 and
+caesium-133. Atomic identities with unspecified isotope remain separate from these
+pilot assignments. The element extension covers atomic numbers 1--118. Its 500 entities carry
+4\,354 property records: 1\,067 numeric values, 267 source text assignments,
+2\,756 unknowns and 264 inapplicable entries. Broad electronic configuration,
+ionization, affinity, level and line tables remain unacquired; their unknown
+entries do not assert that physical measurements are unavailable. Neutral-atom masses,
+decay channels and state assignments apply to the curated isotope set of
+\secref{manual2:isotope-survival}, extended by the pilot identities.
+
+Standard atomic weight and isotope abundance describe a stated material or
+terrestrial composition convention. They remain separate from the mass of an
+individual isotope. Mass excess, binding energy, separation energy and decay
+energy retain their source definitions and electron conventions. A derived
+difference requires compatible input masses and a covariance treatment before
+it can acquire an uncertainty.
+
+For the retained pilot histories, write \(q_i\) for each generic bounded
+cadence in its configuration-specific window. One deliberately hypothetical
+cross-configuration bridge is
+\begin{equation}
+ \widetilde\nu_i=\nu_{\mathrm{Cs}}\frac{q_i}{q_{\mathrm{Cs}}}
+ \left(1+\lambda\frac{55-Z_i}{54}\right),\qquad \lambda\geq0.
+ \label{eq:manual2-property-bridge-family}
+\end{equation}
+Here \(\nu_{\mathrm{Cs}}\) is the retained defining frequency. This choice
+normalizes Cs for every \(\lambda\) but does not identify the generic cadence
+with an atomic transition. The executed hydrogen-isotope cadences are
+\(q_{\mathrm H}=1/3\), \(q_{\mathrm D}=1/22\) and
+\(q_{\mathrm T}=1/35\). Since all three have \(Z=1\), their shared factor
+cancels in D/H and T/H, fixing those ratios throughout this stipulated family.
+
+\paragraph{Calibration.}
+The existing hydrogen and caesium records retain their exposure and roles from
+\secref{manual2:hyperfine-application}. A defining frequency is exact as a
+convention; realization uncertainty belongs to the realization. Already seen
+spectroscopic targets remain retrospective. A frozen model protocol fixes its
+inputs, common calibration and comparison domain before the separate target
+join. Missing state or observation maps leave the corresponding prediction
+undefined; they do not produce a zero residual.
+
+\paragraph{Falsification.}
+A charge mismatch, substituted isotope, changed transition endpoint or removed
+source qualification invalidates a comparison. A new target value must not
+alter the generated native history or prediction inputs. Matched feedback and
+passive-observation controls distinguish a dynamical intervention from a
+display operation. The shared finite dynamics and its state correspondence
+must support every claimed observable without an independently tuned gain for
+each property. In the stipulated pilot bridge family, the common gain cancels
+between hydrogen isotopes. The resulting D/H and T/H ratios are respectively
+\(3/22\) and \(3/35\), outside the declared retrospective envelopes formed
+from the retained quoted uncertainty magnitudes. This rejects that bridge family
+under its stated diagnostic criterion. Those envelopes are not a joint
+confidence region; the result supplies neither a completed atomic observation
+law nor a rejection of other AOD models.
+
+\aodprovenance{The additive catalog and coverage matrix reside in
+\path{manual2/data/m1/properties/}. Its model protocol and separately
+generated comparisons retain the distinction between a native construction,
+an application choice and an empirical observable. The original element ledger
+and its 126 reference positions remain those of
+\appref{manual2:app:element-ledger}.}
+
+\aodliteraturenote{The offline atomic adoption interface addresses the NIST Atomic Spectra
+Database\cite{nist-asd}. Acquired neutral-atom masses use AME2020\cite{iupac-ame};
+spin, abundance and decay assignments use NUBASE2020\cite{isotopes-nubase2020},
+with dated moment and radius records from ENSDF\cite{isotopes-ensdf}. The retained source manifests specify the acquired
+files, locators and qualifications for each adopted value.}
