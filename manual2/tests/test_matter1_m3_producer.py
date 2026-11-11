@@ -190,5 +190,211 @@ class PreparationFreezeTests(unittest.TestCase):
                 trusted_sources=trusted, original_context=self.context)
 
 
+
+class CurrentConsumerAcceptanceTests(unittest.TestCase):
+    """Synthetic execution receipts exercise acceptance guards, not scientific evidence."""
+    @classmethod
+    def setUpClass(cls):
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import record_matter1_isotope_acceptance as recorder
+        import matter1_m3 as historical
+        import matter1_coupled_preparations as coupled
+        import matter1_preparation_workflow as workflow
+        from publication_support import verify_foundation
+        cls.recorder = recorder
+        read = lambda name: json.loads((ROOT / name).read_text())
+        current = p.verify(ROOT)
+        foundation = verify_foundation(ROOT)
+        old = read('manual2/data/m1/m3_observation/observation_report.json')
+        cls.observation = {'status': 'PASS_M3_OBSERVATION',
+            'profile': 'matter1:r03:m3-observation:v1', 'cases': 5,
+            'report_sha256': hashlib.sha256((ROOT / 'manual2/data/m1/m3_observation/observation_report.json').read_bytes()).hexdigest(),
+            'physical_calibration': 'not established'}
+        cls.metrology = {'status': 'PASS_M3_METROLOGY_APPLICATIONS',
+            'profile': 'matter1:m3-metrology:applications:v1',
+            'outputs': {name: hashlib.sha256((ROOT / 'manual2/data/m1/m3_metrology' / name).read_bytes()).hexdigest()
+                        for name in ('comparison.json', 'metrology_report.json', 'prediction.json')},
+            'native_cases': 5, 'atomic_diagnostics': 4,
+            'physical_calibration': 'not established', 'independent_physical_prediction': False}
+        typed = {}
+        for name, item in old['cases'].items():
+            record = item['prediction']['complete_temporal_record']
+            typed[name] = {'original_input_sha256': item['original_input_sha256'],
+                'counts': record['counts'], 'context_sha256': record['observation_context']['input_sha256']}
+        pilots = recorder.replay_current_coupled(ROOT)
+        cls.coupled_results = pilots
+        uncertainty = read('manual2/data/m1/preparation_workflow/uncertainty.json')['cases']['H-1-neutral']
+        frozen = read('manual2/data/m1/preparation_workflow/frozen_diagnostic.json')
+        cls.receipt = {'status': 'PASS_REQUIRED_M3_CONSUMER',
+            'upstream_head': current['upstream_head'], 'upstream_tree': current['upstream_tree'],
+            'api_contract_sha256': current['files']['contracts/scientific/TEMPORAL_OBSERVATION.json']['sha256'],
+            'foundation_upstream_head': foundation['upstream_head'],
+            'foundation_source_digest': foundation['source_digest'],
+            'historical_observation_metrology_head': historical.verify_vendor(ROOT)['upstream_head'],
+            'historical_survival_executor_head': historical.verify_legacy_vendor(ROOT)['upstream_head'],
+            'metrology': {'persisted_historical_verification': cls.metrology},
+            'typed_observation': {**cls.observation, 'current_actual_upstream_equals_vendored': True,
+                                  'cases': typed},
+            'quantity_comparison_dependency': {'actual_upstream_equals_vendored': True,
+                'routes': ['bounds', 'conversion', 'finite_joint_law', 'metadata', 'multi_output',
+                           'nonlinear_moments', 'published', 'published_moments', 'shared_cancel', 'shared_reinforce']},
+            'coupled_preparations': {name: {'actual_upstream_equals_vendored': True,
+                'result_sha256': coupled.digest(value)} for name, value in pilots.items()},
+            'application_joint_propagation': {'actual_upstream_equals_vendored': True,
+                'result_sha256': workflow.digest(uncertainty)},
+            'complete_application_freeze': {'actual_upstream_equals_vendored': True,
+                'result_sha256': workflow.digest(frozen), 'output': frozen['prediction']['output']},
+            'executed': {'common_prefix_through_cut': 39,
+                'feedback_disabled_original_validator_rejected': True,
+                'cases': {'baseline': {'counts': {'outer_plus': 6, 'outer_minus': 5}},
+                          'intervention': {'counts': {'outer_plus': 2, 'outer_minus': 5}}},
+                'atomic_point_prediction': {'frequency_hz': None}}}
+
+    def validate(self, receipt):
+        self.recorder.validate_m3_consumer(ROOT, receipt, self.metrology, self.observation,
+                                           self.coupled_results)
+
+    def test_complete_current_receipt_preserves_historical_authority(self):
+        self.validate(deepcopy(self.receipt))
+        self.assertNotEqual(self.receipt['upstream_head'],
+                            self.receipt['historical_observation_metrology_head'])
+
+    def test_stale_current_authority_rejected(self):
+        for key in ('upstream_head', 'upstream_tree', 'api_contract_sha256',
+                    'foundation_upstream_head', 'foundation_source_digest'):
+            with self.subTest(field=key):
+                receipt = deepcopy(self.receipt)
+                receipt[key] = '0' * len(receipt[key])
+                with self.assertRaises(ValueError):
+                    self.validate(receipt)
+
+    def test_historical_identity_or_report_cannot_be_relabelled(self):
+        for key in ('historical_observation_metrology_head', 'historical_survival_executor_head'):
+            with self.subTest(field=key):
+                receipt = deepcopy(self.receipt)
+                receipt[key] = receipt['upstream_head']
+                with self.assertRaises(ValueError):
+                    self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['metrology']['persisted_historical_verification']['native_cases'] = 0
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['typed_observation']['report_sha256'] = '0' * 64
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+
+    def test_every_current_quantity_route_required_once(self):
+        for name in self.receipt['quantity_comparison_dependency']['routes']:
+            with self.subTest(route=name):
+                receipt = deepcopy(self.receipt)
+                receipt['quantity_comparison_dependency']['routes'].remove(name)
+                with self.assertRaises(ValueError):
+                    self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['quantity_comparison_dependency']['routes'].append('bounds')
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+
+    def test_all_six_coupled_cases_and_exact_results_required(self):
+        for name in self.receipt['coupled_preparations']:
+            with self.subTest(case=name):
+                receipt = deepcopy(self.receipt)
+                del receipt['coupled_preparations'][name]
+                with self.assertRaises(ValueError):
+                    self.validate(receipt)
+                receipt = deepcopy(self.receipt)
+                receipt['coupled_preparations'][name]['result_sha256'] = '0' * 64
+                with self.assertRaises(ValueError):
+                    self.validate(receipt)
+
+    def test_one_round_pilots_cannot_replace_two_round_consumer(self):
+        import matter1_coupled_preparations as coupled
+        pilots = json.loads((ROOT / 'manual2/data/m1/coupled_preparations/pilots.json').read_text())
+        receipt = deepcopy(self.receipt)
+        for name, value in pilots.items():
+            receipt['coupled_preparations'][name]['result_sha256'] = coupled.digest(value)
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+
+    def test_actual_execution_flags_require_true_boolean(self):
+        routes = [('typed_observation', 'current_actual_upstream_equals_vendored'),
+                  ('quantity_comparison_dependency', 'actual_upstream_equals_vendored'),
+                  ('application_joint_propagation', 'actual_upstream_equals_vendored'),
+                  ('complete_application_freeze', 'actual_upstream_equals_vendored')]
+        for name, key in routes:
+            for bad in (False, 1, 'true'):
+                with self.subTest(route=name, flag=bad):
+                    receipt = deepcopy(self.receipt)
+                    receipt[name][key] = bad
+                    with self.assertRaises(ValueError):
+                        self.validate(receipt)
+        for name in self.receipt['coupled_preparations']:
+            receipt = deepcopy(self.receipt)
+            receipt['coupled_preparations'][name]['actual_upstream_equals_vendored'] = False
+            with self.assertRaises(ValueError):
+                self.validate(receipt)
+
+    def test_joint_and_frozen_outputs_are_bound_to_application(self):
+        for name in ('application_joint_propagation', 'complete_application_freeze'):
+            receipt = deepcopy(self.receipt)
+            receipt[name]['result_sha256'] = '0' * 64
+            with self.assertRaises(ValueError):
+                self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['complete_application_freeze']['output']['unit'] = 'Hz'
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+
+    def test_typed_observation_and_feedback_cannot_be_partial(self):
+        receipt = deepcopy(self.receipt)
+        del receipt['typed_observation']['cases']['burden']
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['typed_observation']['cases']['burden']['original_input_sha256'] = '0' * 64
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+        for key, value in (('common_prefix_through_cut', 38),
+                           ('feedback_disabled_original_validator_rejected', False)):
+            receipt = deepcopy(self.receipt)
+            receipt['executed'][key] = value
+            with self.assertRaises(ValueError):
+                self.validate(receipt)
+        receipt = deepcopy(self.receipt)
+        receipt['executed']['atomic_point_prediction']['frequency_hz'] = 1
+        with self.assertRaises(ValueError):
+            self.validate(receipt)
+
+    def test_evidence_hashes_exclude_changing_runner_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            checks = Path(tmp)
+            for name in self.recorder.EVIDENCE_INPUTS:
+                (checks / name).write_bytes(b'completed scientific input')
+            output = checks / 'isotope-acceptance.json'
+            expected = self.recorder.evidence_input_hashes(checks, output)
+            self.assertEqual(len(expected), 23)
+            for name in ('isotope-acceptance-console.json', 'acceptance-commands.json',
+                         'property-acceptance.json'):
+                (checks / name).write_bytes(b'now being written')
+            self.assertEqual(self.recorder.evidence_input_hashes(checks, output), expected)
+            (checks / 'm3-consumer.json').write_bytes(b'changed scientific input')
+            with self.assertRaises(ValueError):
+                self.recorder.evidence.check_equal(
+                    self.recorder.evidence_input_hashes(checks, output), expected,
+                    'acceptance inputs changed during replay')
+
+    def test_missing_evidence_or_output_alias_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            checks = Path(tmp)
+            for name in self.recorder.EVIDENCE_INPUTS:
+                (checks / name).write_bytes(b'complete')
+            with self.assertRaises(ValueError):
+                self.recorder.evidence_input_hashes(checks, checks / 'm3-consumer.json')
+            (checks / 'm3-consumer.json').unlink()
+            with self.assertRaises(ValueError):
+                self.recorder.evidence_input_hashes(checks, checks / 'acceptance.json')
+
+
 if __name__ == '__main__':
     unittest.main()
