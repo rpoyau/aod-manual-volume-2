@@ -64,9 +64,13 @@ class ProducerMigrationTests(unittest.TestCase):
                             hashlib.sha256(Path(properties.__file__).read_bytes()).hexdigest())
 
     def test_missing_actual_producer_cannot_skip(self):
+        from functools import partial
+        from unittest.mock import patch
         with tempfile.TemporaryDirectory() as tmp:
-            with self.assertRaises(Exception):
-                p.verify(ROOT, tmp)
+            with patch.object(p.subprocess, 'check_output',
+                              partial(p.subprocess.check_output, stderr=p.subprocess.PIPE)):
+                with self.assertRaises(Exception):
+                    p.verify(ROOT, tmp)
 
     def _copy_vendor(self, tmp):
         dest = Path(tmp)
