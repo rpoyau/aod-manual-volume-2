@@ -134,13 +134,12 @@ def pdf_projection(path):
     return result
 
 
-def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
-    parser.add_argument('--generator-python',default=sys.executable)
-    args=parser.parse_args();root=args.root.resolve();before=snapshot(root)
-    sys.path.insert(0,str(root/'manual2/scripts'))
+def expected_output_paths(root):
+    root = Path(root).resolve()
+    sys.path.insert(0, str(root/'manual2/scripts'))
     import matter1_campaign
+    import matter1_property_model
+    import matter1_properties
     campaign_manifest=matter1_campaign.default_manifest(root)
     expected_outputs=EXPECTED_OUTPUTS | {
         'data/m1/campaign/'+name for name in matter1_campaign.OUTPUTS
@@ -148,6 +147,18 @@ def main():
         'data/m1/campaign/cases/'+row['id']+'.json'
         for row in campaign_manifest['configurations']
     }
+    expected_outputs |= {('data/m1/properties/model/' + name) for name in matter1_property_model.OUTPUTS}
+    expected_outputs |= {'data/m1/properties/' + name for name in matter1_properties.OUTPUTS}
+    return expected_outputs
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
+    parser.add_argument('--generator-python',default=sys.executable)
+    args=parser.parse_args();root=args.root.resolve();before=snapshot(root)
+    sys.path.insert(0,str(root/'manual2/scripts'))
+    expected_outputs = expected_output_paths(root)
     with tempfile.TemporaryDirectory(prefix='matter1-reproduction-') as directory:
         out=Path(directory)/'manual2'
         catalog=out/'data/m1/isotopes/catalog.json'
@@ -155,7 +166,10 @@ def main():
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_ledger.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_isotopes.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
           [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_campaign.py'),'--root',str(root),'--output-root',str(out.parent)],
-          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_properties.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_property_model.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/compare_matter1_property_model.py'),'--root',str(root),'--prediction-root',str(out.parent),'--target',str(out/'data/m1/properties/catalog.json')],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog),'--property-root',str(out.parent)],
           [args.generator_python,'-B',str(root/'manual2/scripts/check_matter1_figure.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--isotope-catalog',str(catalog)]
         ]
         commands.extend([
@@ -193,7 +207,7 @@ def main():
                 mode='byte equality'
             checked.append({'path':str(rel),'comparison':mode})
     need(snapshot(root)==before,'Reproduction changed source bytes')
-    print(json.dumps({'status':'PASS_REPRODUCTION','outputs':checked,'source_unchanged':True,'scope':'Data/table/chart/companion and declared application output reproduction; no native admission or empirical agreement claim.'},indent=2))
+    print(json.dumps({'status':'PASS_REPRODUCTION','outputs':checked,'source_unchanged':True,'source_sha256':before,'scope':'Data/table/chart/companion and declared application output reproduction; no native admission or empirical agreement claim.'},indent=2))
 
 if __name__=='__main__':
     try: main()

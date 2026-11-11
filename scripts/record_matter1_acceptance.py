@@ -9,6 +9,7 @@ plain test logs are execution evidence, not independently attested provenance.
 from __future__ import annotations
 import argparse
 from isotope_preservation import preserved_digest
+from matter1_test_inventory import OPTIMIZED_MODULES
 import ast
 from copy import deepcopy
 import hashlib
@@ -20,14 +21,6 @@ sys.dont_write_bytecode = True
 
 REPO = Path(__file__).resolve().parents[1]
 PLAN = Path('manual2/evidence/fusion-acceptance-plan.json')
-OPTIMIZED_MODULES = {'test_matter1_application', 'test_matter1_data', 'test_matter1_folding',
-                     'test_matter1_temporal', 'test_matter1_hyperfine', 'test_matter1_stateful',
-                     'test_matter1_metrology', 'test_matter1_atomic', 'test_matter1_bipm',
-                     'test_matter1_v2_application', 'test_matter1_m3', 'test_matter1_m3_evidence', 'test_matter1_bipm_precision',
-                     'test_matter1_isotopes', 'test_matter1_survival', 'test_matter1_isotope_integration',
-                     'test_matter1_constructed_coupling', 'test_matter1_witnessed_retention',
-                     'test_matter1_retention_adapter', 'test_matter1_m3_observation',
-                     'test_matter1_m3_metrology'}
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')
@@ -200,8 +193,8 @@ def validate_receipts(directory):
     expect(reproduction, 'status', 'PASS_REPRODUCTION', 'reproduction')
     expect(reproduction, 'source_unchanged', True, 'reproduction')
     output_paths = [r['path'] for r in reproduction['outputs']]
-    from check_matter1_reproduction import EXPECTED_OUTPUTS
-    require(len(output_paths) == len(set(output_paths)) and set(output_paths) == EXPECTED_OUTPUTS, 'reproduction: incomplete or duplicate output inventory')
+    from check_matter1_reproduction import expected_output_paths
+    require(len(output_paths) == len(set(output_paths)) and set(output_paths) == expected_output_paths(REPO), 'reproduction: incomplete or duplicate output inventory')
     for row in reproduction['outputs']:
         path = Path(row['path'])
         require(not path.is_absolute() and '..' not in path.parts and (REPO / 'manual2' / path).is_file(), 'reproduction: missing current output')
