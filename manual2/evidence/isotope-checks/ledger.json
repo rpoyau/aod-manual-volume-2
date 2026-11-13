@@ -1,0 +1,55 @@
+{
+  "assigned_class_counts": {
+    "deficit": 9,
+    "neutral": 72,
+    "surplus": 37,
+    "unfilled": 8
+  },
+  "c22_assigned_ttl_qualified_fraction": "0",
+  "c22_labelled_reference_occupancy_fraction": "7/11",
+  "disjoint_class_counts": {
+    "deficit": 9,
+    "named_anchor_neutral": 6,
+    "named_anchor_surplus": 2,
+    "neutral": 66,
+    "surplus": 35,
+    "unfilled": 8
+  },
+  "executed_checks": {
+    "complete_unique_reference_slots": 126,
+    "exact_reference_relations": 126,
+    "historical_observable_pairs": 708,
+    "preserved_numeric_baseline_rows": 126,
+    "r24_declaration_joins": 118,
+    "v94_placement_field_comparisons": 708
+  },
+  "independent_attributes": {
+    "named_anchors": 8,
+    "named_anchors_with_assigned_surplus": 2
+  },
+  "interpretation": "PASS covers reference integrity and conditional arithmetic only; no admission, native duration, retention or empirical agreement is inferred.",
+  "labelled_reference_occupancy_fraction": "59/63",
+  "named_element_references": 118,
+  "native_evidence_lanes": {
+    "admissibility": "not_executed",
+    "exact_kernel": "not_executed",
+    "fusion_certification": "not_executed",
+    "q4_traversal": "not_executed",
+    "retained_return": "not_executed",
+    "sadar_pairing": "not_executed",
+    "scope_instance": "not_executed"
+  },
+  "observable_lanes": {
+    "E0": "reference_registry",
+    "E1": "not_scored",
+    "E2": "not_scored",
+    "E3": "not_scored",
+    "E4": "not_scored",
+    "E5": "not_scored"
+  },
+  "profile": "static_relational_reference",
+  "schema_version": 2,
+  "status": "PASS",
+  "total_reference_slots": 126,
+  "unfilled_reference_slots": 8
+}

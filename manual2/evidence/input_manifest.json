@@ -1,0 +1,19 @@
+{
+  "files": {
+    "data/m1/field_migration.json": "bd572ec782eb661038e7fac74b784e7c23403141b9999bb9d39284d6503863d9",
+    "data/m1/history/r24_occurrence_cards.csv": "8b0f1e740c5c4630692cf3ad9de6627f3e23c12216b6c7d8ae28d742dbef2fb1",
+    "data/m1/history/r24_sadar_declarations.csv": "d0d3788a2a192b9416c4889d393ad5dc7687d20747329a99dea168c4fa61bc19",
+    "data/m1/history/r24_transition_packets.csv": "4bda5fbd2585dd0dc795db8c35b30f6f1ee32953c5018e2f6a18a1824cea6f80",
+    "data/m1/history/v94_observable_matrix.csv": "a7d4afe041bf2cade6969763abaac330c2b9df38056fb1d61b0b094ee53eaf39",
+    "data/m1/history/v94_placements.csv": "0d1421804754958ea7d3819c8e749b680f2f89f988f5cda98a7e5b62e990985c",
+    "data/m1/history/v94_value_maps.csv": "a1bdff48cbd661680a7b51b7a027696be093bfc136281a79eef49a0e19c6c1b7",
+    "data/m1/input_provenance.json": "9352019cd46d846f8563464f3dc0fbd3a580a8edfa6cf9104cfe3b3adb9de7a5",
+    "data/m1/model_inputs.json": "2a04c01ba292456611b79926dc786da99dd9b4f9238bf4e7c88220c6c3a0fa43",
+    "data/m1/reference_inputs.csv": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232",
+    "data/m1/schema.json": "17d1ca9092ed16fc3b88ea415a4dfb18f8730b10c7c083916271df4bfe13abe4",
+    "evidence/historical_sources.json": "7f1e64f44884d9022bbda30205d2a345167f72653397dd919e866eded4be3e81",
+    "evidence/pr1_baseline_ledger_v1.csv": "202ab421ab2359b6b9e0838e0d5f39b8a8144b0f5ae03704853655c98db51246"
+  },
+  "profile": "static_relational_reference",
+  "schema_version": 2
+}

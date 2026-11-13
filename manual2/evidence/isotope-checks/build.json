@@ -1,0 +1,551 @@
+{
+  "status": "PASS_PAIRED_BUILD",
+  "build_directory": "/tmp/isotope-publication-ci-label",
+  "publication": {
+    "status": "PASS_PUBLICATION",
+    "foundation_source_digest": "b70a59d3611786b162726fe9458f700b36a90c066592f7b2feb1da17059b9b59",
+    "main_pages": 73,
+    "manual_pages": 33,
+    "semantic_main_destination_count": 74,
+    "root_main_links": 104,
+    "nested_main_links": 104,
+    "manual_text_equal": true,
+    "main_text_matches_release": false,
+    "main_text_matches_bound_authority": true,
+    "main_links": [
+      {
+        "page": 4,
+        "target": "main.pdf",
+        "destination": "section.1"
+      },
+      {
+        "page": 4,
+        "target": "main.pdf",
+        "destination": "section.2"
+      },
+      {
+        "page": 4,
+        "target": "main.pdf",
+        "destination": "section.3"
+      },
+      {
+        "page": 4,
+        "target": "main.pdf",
+        "destination": "section.4"
+      },
+      {
+        "page": 4,
+        "target": "main.pdf",
+        "destination": "section.5"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.1"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.3"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.5"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.8"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.13"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.15"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.33"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.37"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.5"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.13"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.33"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.10"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.36"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.35"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.177"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.31"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.32"
+      },
+      {
+        "page": 5,
+        "target": "main.pdf",
+        "destination": "equation.179"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "subsubsection.B.4.1"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "subsubsection.B.1.10"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "equation.34"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "equation.40"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "equation.43"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "subsection.5.7"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "subsection.B.3"
+      },
+      {
+        "page": 6,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.13"
+      },
+      {
+        "page": 7,
+        "target": "main.pdf",
+        "destination": "equation.91"
+      },
+      {
+        "page": 7,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.10"
+      },
+      {
+        "page": 7,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.13"
+      },
+      {
+        "page": 7,
+        "target": "main.pdf",
+        "destination": "subsection.5.8"
+      },
+      {
+        "page": 7,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.12"
+      },
+      {
+        "page": 9,
+        "target": "main.pdf",
+        "destination": "equation.40"
+      },
+      {
+        "page": 9,
+        "target": "main.pdf",
+        "destination": "equation.115"
+      },
+      {
+        "page": 9,
+        "target": "main.pdf",
+        "destination": "equation.116"
+      },
+      {
+        "page": 9,
+        "target": "main.pdf",
+        "destination": "equation.35"
+      },
+      {
+        "page": 9,
+        "target": "main.pdf",
+        "destination": "equation.116"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.108"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.109"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.111"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.120"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.122"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.108"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "equation.109"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.12"
+      },
+      {
+        "page": 10,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.6.6"
+      },
+      {
+        "page": 11,
+        "target": "main.pdf",
+        "destination": "subsection.5.17"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.1"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.4"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.5"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.7"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.8"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.17.10"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.66"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.96"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "subsection.1.1"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.31"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.5"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.6"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.46"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.41"
+      },
+      {
+        "page": 12,
+        "target": "main.pdf",
+        "destination": "equation.42"
+      },
+      {
+        "page": 13,
+        "target": "main.pdf",
+        "destination": "equation.28"
+      },
+      {
+        "page": 13,
+        "target": "main.pdf",
+        "destination": "equation.21"
+      },
+      {
+        "page": 13,
+        "target": "main.pdf",
+        "destination": "equation.8"
+      },
+      {
+        "page": 13,
+        "target": "main.pdf",
+        "destination": "equation.74"
+      },
+      {
+        "page": 13,
+        "target": "main.pdf",
+        "destination": "equation.15"
+      },
+      {
+        "page": 14,
+        "target": "main.pdf",
+        "destination": "equation.54"
+      },
+      {
+        "page": 14,
+        "target": "main.pdf",
+        "destination": "equation.55"
+      },
+      {
+        "page": 14,
+        "target": "main.pdf",
+        "destination": "equation.58"
+      },
+      {
+        "page": 14,
+        "target": "main.pdf",
+        "destination": "equation.61"
+      },
+      {
+        "page": 14,
+        "target": "main.pdf",
+        "destination": "equation.63"
+      },
+      {
+        "page": 15,
+        "target": "main.pdf",
+        "destination": "equation.94"
+      },
+      {
+        "page": 15,
+        "target": "main.pdf",
+        "destination": "equation.96"
+      },
+      {
+        "page": 15,
+        "target": "main.pdf",
+        "destination": "equation.101"
+      },
+      {
+        "page": 15,
+        "target": "main.pdf",
+        "destination": "equation.108"
+      },
+      {
+        "page": 15,
+        "target": "main.pdf",
+        "destination": "equation.109"
+      },
+      {
+        "page": 17,
+        "target": "main.pdf",
+        "destination": "equation.61"
+      },
+      {
+        "page": 17,
+        "target": "main.pdf",
+        "destination": "equation.63"
+      },
+      {
+        "page": 17,
+        "target": "main.pdf",
+        "destination": "equation.57"
+      },
+      {
+        "page": 17,
+        "target": "main.pdf",
+        "destination": "equation.54"
+      },
+      {
+        "page": 18,
+        "target": "main.pdf",
+        "destination": "equation.61"
+      },
+      {
+        "page": 18,
+        "target": "main.pdf",
+        "destination": "equation.52"
+      },
+      {
+        "page": 18,
+        "target": "main.pdf",
+        "destination": "equation.53"
+      },
+      {
+        "page": 18,
+        "target": "main.pdf",
+        "destination": "equation.54"
+      },
+      {
+        "page": 20,
+        "target": "main.pdf",
+        "destination": "equation.168"
+      },
+      {
+        "page": 23,
+        "target": "main.pdf",
+        "destination": "equation.66"
+      },
+      {
+        "page": 23,
+        "target": "main.pdf",
+        "destination": "equation.96"
+      },
+      {
+        "page": 23,
+        "target": "main.pdf",
+        "destination": "equation.109"
+      },
+      {
+        "page": 24,
+        "target": "main.pdf",
+        "destination": "equation.168"
+      },
+      {
+        "page": 24,
+        "target": "main.pdf",
+        "destination": "subsection.7.5"
+      },
+      {
+        "page": 27,
+        "target": "main.pdf",
+        "destination": "section.I"
+      },
+      {
+        "page": 27,
+        "target": "main.pdf",
+        "destination": "section.H"
+      },
+      {
+        "page": 27,
+        "target": "main.pdf",
+        "destination": "equation.181"
+      },
+      {
+        "page": 28,
+        "target": "main.pdf",
+        "destination": "subsection.I.2"
+      },
+      {
+        "page": 28,
+        "target": "main.pdf",
+        "destination": "subsection.I.4"
+      },
+      {
+        "page": 28,
+        "target": "main.pdf",
+        "destination": "section*.103"
+      },
+      {
+        "page": 29,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.13"
+      },
+      {
+        "page": 29,
+        "target": "main.pdf",
+        "destination": "subsubsection.5.7.13"
+      },
+      {
+        "page": 29,
+        "target": "main.pdf",
+        "destination": "equation.35"
+      }
+    ],
+    "chart": {
+      "width_mm": 179.99999999998556,
+      "height_mm": 205.5681818181805,
+      "minimum_font_pt": 9.299999999999955,
+      "placements": [
+        {
+          "page": 8,
+          "chart_characters": 743,
+          "minimum_font_pt": 9.300464999999917,
+          "scale": 1.000049999999996
+        }
+      ]
+    }
+  }
+}

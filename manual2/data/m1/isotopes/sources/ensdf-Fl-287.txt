@@ -1,0 +1,45 @@
+287 Fl                                                                                                                             287 Fl
+114 173                                                        From ENSDF                                                          114 173
+
+
+
+                                                                Adopted Levels
+
+                                                                    History
+                                       Type          Author           Citation           Literature Cutoff Date
+                                  Full Evaluation   C. Morse    NDS 182, 130 (2022).          14-Sep-2021
+
+Q(β− )=−3819 SY; S(n)=5748 SY; S(p)=3317 SY; Q(α)=1.017×104 5              2021Wa16
+∆Q(β− )=759, ∆S(n)=826, ∆S(p)=854 (2021WA16).
+S(2n)=13146 SY 738, S(2p)=5736 SY 799, Q(εp)=190 SY 933 (2021WA16).
+287 Fl has been observed as the product of the 244 Pu(48 Ca,5n) reaction at JINR (2004OG07) and the 242 Pu(48 Ca,3n) reaction at
+
+     JINR (2004OG12) and LBNL (2009ST21); as the α-decay daughter of 291 Lv at JINR (2004OG07,2006OG05) and GSI
+     (2016HO09 reassigns one chain tentatively assigned to 293 Lv in 2012HO12 to 291 Lv); and in a gas-phase chemistry experiment at
+     JINR (2010EI01). Chains of genetically linked nuclei were identified based on the observation of time- and position-correlated α
+     decays, terminated by spontaneous fission. 287 Fl was identified as a member of these chains based on the comparison of the
+     observed decay properties of these chains with decay properties of known nuclei.
+Other: 1999OG07 identifies two decay chains originating with 287 Fl, but these results have not been reproduced.
+Half-lives, branching ratios, and α-decay energies in this evaluation have been computed from the individual events listed in the
+     references above. Half-life uncertainties have been computed according to the method of 1984SC13. An additional 10 keV
+     systematic uncertainty is assumed for the α-decay energies, which is added in quadrature to the averaged statistical uncertainty.
+
+                                                                  287 Fl Levels
+
+
+
+                                                        Cross Reference (XREF) Flags
+
+                                                        A      291 Lv α decay (19 ms)
+
+
+ E(level)        T1/2         XREF                                                  Comments
+  0          0.40 s +13−8     A         %α=100; %SF<5
+                                        E(level): Assumed ground state.
+                                        T1/2 : From sixteen events.
+
+
+
+
+                                                                     1
+

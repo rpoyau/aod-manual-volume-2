@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "manual2/data/m1/atomic/benchmark.json": "6aeb1b5c78bce831c522a9dc63d89027a5f064ee0ab43813e43158316e104fab",
+    "manual2/data/m1/atomic/comparison.json": "049693be7747aa338b6429d4b34df722fa8f2b6a9b27a78c00bfe14750cd8139",
+    "manual2/data/m1/campaign/cases/Z001-A001.json": "c19329bcfe0977209b85783afc193738f0d23c6e2d7a969763afdd0725c0e8f4",
+    "manual2/data/m1/campaign/prediction.json": "450754040872d8c9685292022c6f112184e3a8137b4bab5b12d523184c4b412a",
+    "manual2/data/m1/external_transitions/catalog.json": "30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a",
+    "manual2/data/m1/folding/temporal_report.json": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53",
+    "manual2/data/m1/hyperfine/observation_map.json": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f",
+    "manual2/data/m1/hyperfine/target_inventory.json": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42",
+    "manual2/data/m1/isotopes/catalog.json": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+    "manual2/data/m1/m3_metrology/metrology_report.json": "0c8700e2f95812f4a35ec085b4c57ba9b9a6081d887112d1727020a6e2282ac7",
+    "manual2/data/m1/matter1_audit_report.json": "a8ceb9d6d5df17e69d5df1c70a826765c8236496886922dd7531b3106a00f0f2",
+    "manual2/data/m1/survival/survival_report.json": "26c7005f2bc5269339ef4abd1096c8602add40dba20075d005d7a45afd434d7f"
+  },
+  "authoring": {
+    "commit": "630af16a7c51fb8836e603eb54c67bf8560fb463",
+    "record_template": "manual2/evidence/data-classes/authoring/manual-record.md",
+    "repository": "https://github.com/rpoyau/aod-skills",
+    "tree": "9d571826e270b79e3c43aac7ebbf259a6372b1e1"
+  },
+  "authority": {
+    "anchors": [
+      "manual:scoped-errors-data-support",
+      "manual:record-forms",
+      "tab:manual-data-support-classes",
+      "manual:external-comparison"
+    ],
+    "commit": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+    "files": {
+      "manual2/evidence/data-classes/authoring/LICENSE.txt": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+      "manual2/evidence/data-classes/authoring/manual-record.md": "5e8ff2a1b12442451db2c1e84a08661cc90b86c5c3ed8da6b3cfe80e6a5e21b3",
+      "manual2/evidence/data-classes/manual-i/LICENSE": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+      "manual2/evidence/data-classes/manual-i/manual/appendices/B_quarantined_external_comparison.tex.source": "c4f9c515d3bccefbb87443dc003c2e507b0fd09a8dd406c66508dbd201ff9644",
+      "manual2/evidence/data-classes/manual-i/manual/sections/00_scope.tex.source": "9485a9da2fc7b359fc68ffbd2572f2c087f61ff5bbec840efadf8b5c3ba95411",
+      "manual2/evidence/data-classes/manual-i/manual/sections/06_field_dynamics_applications.tex.source": "df8e812de2f512dae31310fd7f0eda95f506f1ad70478a995965553141339cde",
+      "manual2/evidence/data-classes/manual-i/manual/sections/09_prediction_test_fixture_registry.tex.source": "27995f0b7b269c960a4036b421ee5642ac2e93fbe9716e4d547dcf7ba8a61e40"
+    },
+    "original_upstream_paths": {
+      "manual2/evidence/data-classes/manual-i/manual/appendices/B_quarantined_external_comparison.tex.source": "manual/appendices/B_quarantined_external_comparison.tex",
+      "manual2/evidence/data-classes/manual-i/manual/sections/00_scope.tex.source": "manual/sections/00_scope.tex",
+      "manual2/evidence/data-classes/manual-i/manual/sections/06_field_dynamics_applications.tex.source": "manual/sections/06_field_dynamics_applications.tex",
+      "manual2/evidence/data-classes/manual-i/manual/sections/09_prediction_test_fixture_registry.tex.source": "manual/sections/09_prediction_test_fixture_registry.tex"
+    },
+    "reference_filename_policy": "TeX source bytes are retained under .tex.source names so reference evidence is not treated as active Manual II publication input.",
+    "repository": "https://github.com/rpoyau/aod",
+    "role": "Manual I classification definitions; copied references are not active Main includes",
+    "tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
+  },
+  "schema": "matter1.manual-i-classification-source-bindings.v1",
+  "scope": "Source binding and classification overlay only; frozen numerical artifacts are not regenerated."
+}

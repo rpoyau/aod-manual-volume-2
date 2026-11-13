@@ -1,0 +1,1029 @@
+{
+  "examples": {
+    "ambiguous_cycle_slips": {
+      "acquisition": {
+        "cycle_slip_alternatives": [
+          -1,
+          0,
+          1
+        ],
+        "cycle_slip_status": "ambiguous",
+        "dead_time_seconds": "0",
+        "dead_time_status": "none_by_synthetic_setup",
+        "extrapolation_model": null,
+        "noise_model": "declared_joint_covariance_not_independent_samples"
+      },
+      "binding": {
+        "comparison_cut": 12,
+        "contact_cuts": [
+          4,
+          8,
+          12
+        ],
+        "lineages": [
+          {
+            "id": "synthetic:reference",
+            "prefix_sha256": "ce0c79a3c9e375c8586c4eedd5e780064d27d5d2c562a03b04996b387f83f804",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:reference:return:0"
+              },
+              {
+                "cut": 3,
+                "id": "synthetic:reference:return:1"
+              },
+              {
+                "cut": 6,
+                "id": "synthetic:reference:return:2"
+              },
+              {
+                "cut": 9,
+                "id": "synthetic:reference:return:3"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:reference:return:4"
+              }
+            ]
+          },
+          {
+            "id": "synthetic:compared",
+            "prefix_sha256": "a6f7444107ac2dd0cb7c2612b3f794f30578aa120b0a785a880802614301e6b4",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:compared:return:0"
+              },
+              {
+                "cut": 4,
+                "id": "synthetic:compared:return:1"
+              },
+              {
+                "cut": 8,
+                "id": "synthetic:compared:return:2"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:compared:return:3"
+              }
+            ]
+          }
+        ],
+        "native_certificate_status": "not_claimed",
+        "reference_increment": 4,
+        "reference_lineage": "synthetic:reference",
+        "scope": "synthetic:common-window",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "budget": [
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "physical_cycles"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "physical_cycles",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "919263177/2000000000",
+          "unit": "cycle"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "fractional_offset"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "fractional_offset",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "1/500000000000",
+          "unit": "1"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "endpoint_correction"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "endpoint_correction",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "3/100000000000",
+          "unit": "s"
+        }
+      ],
+      "calibration": {
+        "available_at_cut": 0,
+        "evidence_id": "synthetic:calibration",
+        "exposed_targets": [
+          "H-1",
+          "Rb-87"
+        ],
+        "fitted_targets": [],
+        "mode": "online",
+        "prediction_class": "not_an_atomic_prediction",
+        "traceability": "synthetic_setup_not_physical_traceability",
+        "validity_cuts": [
+          0,
+          12
+        ]
+      },
+      "covariance": {
+        "matrix": [
+          [
+            "845044788588133329/4000000000000000000",
+            "0",
+            "2757789531/400000000000000000000"
+          ],
+          [
+            "0",
+            "1/250000000000000000000000",
+            "0"
+          ],
+          [
+            "2757789531/400000000000000000000",
+            "0",
+            "9/10000000000000000000000"
+          ]
+        ],
+        "matrix_units": [
+          [
+            "cycle*cycle",
+            "cycle*1",
+            "cycle*s"
+          ],
+          [
+            "1*cycle",
+            "1*1",
+            "1*s"
+          ],
+          [
+            "s*cycle",
+            "s*1",
+            "s*s"
+          ]
+        ],
+        "rounding_policy": "exact_rational_no_tolerance",
+        "status": "complete",
+        "units": [
+          "cycle",
+          "1",
+          "s"
+        ],
+        "variables": [
+          "physical_cycles",
+          "fractional_offset",
+          "endpoint_correction"
+        ]
+      },
+      "coverage": {
+        "coverage_basis": null,
+        "expanded_factor": null,
+        "standard": true
+      },
+      "endpoint_correction_seconds": "0",
+      "measurand": {
+        "coordinate_status": "declared_synthetic",
+        "epoch_seconds": "0",
+        "global_gravitational_correction_seconds": null,
+        "kind": "elapsed_interval",
+        "point_or_scale": "synthetic:connector",
+        "time_coordinate": "local_proper_time",
+        "transfer_model": null
+      },
+      "model_id": "m1:synthetic-si-map:v2",
+      "observation": {
+        "calibration_record": "synthetic:stipulated-alpha",
+        "cycles_per_return": "4596315885/2",
+        "endpoint_phase_cycles": [
+          "0",
+          "0"
+        ],
+        "kind": "synthetic_affine_cycle_map",
+        "map_status": "declared_synthetic_only",
+        "observed_cycles": "9192631770",
+        "reference_lineage": "synthetic:reference",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "reference": {
+        "effective_window": [
+          0,
+          12
+        ],
+        "fractional_offset": "0",
+        "kind": "synthetic_realization",
+        "nominal_hz": "9192631770",
+        "nominal_ratio": "1",
+        "offset_status": "stipulated_synthetic",
+        "realization_status": "synthetic_not_device"
+      },
+      "schema_version": 2,
+      "source_binding": {
+        "external_sources": {
+          "SI_definition": "https://www.bipm.org/en/si-base-units/second",
+          "realization": "https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248",
+          "uncertainty": "https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf"
+        },
+        "labels": [
+          "eq:cadence-ratio",
+          "eq:count-comparator-realization",
+          "eq:relational-time"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+      },
+      "statuses": {
+        "atomic_prediction": "not_performed",
+        "device_calibration": "not_performed",
+        "native_admission": "not_claimed",
+        "record_class": "synthetic_declared_metrology"
+      }
+    },
+    "complete_synthetic": {
+      "acquisition": {
+        "cycle_slip_alternatives": [
+          0
+        ],
+        "cycle_slip_status": "resolved_by_synthetic_setup",
+        "dead_time_seconds": "0",
+        "dead_time_status": "none_by_synthetic_setup",
+        "extrapolation_model": null,
+        "noise_model": "declared_joint_covariance_not_independent_samples"
+      },
+      "binding": {
+        "comparison_cut": 12,
+        "contact_cuts": [
+          4,
+          8,
+          12
+        ],
+        "lineages": [
+          {
+            "id": "synthetic:reference",
+            "prefix_sha256": "ce0c79a3c9e375c8586c4eedd5e780064d27d5d2c562a03b04996b387f83f804",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:reference:return:0"
+              },
+              {
+                "cut": 3,
+                "id": "synthetic:reference:return:1"
+              },
+              {
+                "cut": 6,
+                "id": "synthetic:reference:return:2"
+              },
+              {
+                "cut": 9,
+                "id": "synthetic:reference:return:3"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:reference:return:4"
+              }
+            ]
+          },
+          {
+            "id": "synthetic:compared",
+            "prefix_sha256": "a6f7444107ac2dd0cb7c2612b3f794f30578aa120b0a785a880802614301e6b4",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:compared:return:0"
+              },
+              {
+                "cut": 4,
+                "id": "synthetic:compared:return:1"
+              },
+              {
+                "cut": 8,
+                "id": "synthetic:compared:return:2"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:compared:return:3"
+              }
+            ]
+          }
+        ],
+        "native_certificate_status": "not_claimed",
+        "reference_increment": 4,
+        "reference_lineage": "synthetic:reference",
+        "scope": "synthetic:common-window",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "budget": [
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "physical_cycles"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "physical_cycles",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "919263177/2000000000",
+          "unit": "cycle"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "fractional_offset"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "fractional_offset",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "1/500000000000",
+          "unit": "1"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "endpoint_correction"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "endpoint_correction",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "3/100000000000",
+          "unit": "s"
+        }
+      ],
+      "calibration": {
+        "available_at_cut": 0,
+        "evidence_id": "synthetic:calibration",
+        "exposed_targets": [
+          "H-1",
+          "Rb-87"
+        ],
+        "fitted_targets": [],
+        "mode": "online",
+        "prediction_class": "not_an_atomic_prediction",
+        "traceability": "synthetic_setup_not_physical_traceability",
+        "validity_cuts": [
+          0,
+          12
+        ]
+      },
+      "covariance": {
+        "matrix": [
+          [
+            "845044788588133329/4000000000000000000",
+            "0",
+            "2757789531/400000000000000000000"
+          ],
+          [
+            "0",
+            "1/250000000000000000000000",
+            "0"
+          ],
+          [
+            "2757789531/400000000000000000000",
+            "0",
+            "9/10000000000000000000000"
+          ]
+        ],
+        "matrix_units": [
+          [
+            "cycle*cycle",
+            "cycle*1",
+            "cycle*s"
+          ],
+          [
+            "1*cycle",
+            "1*1",
+            "1*s"
+          ],
+          [
+            "s*cycle",
+            "s*1",
+            "s*s"
+          ]
+        ],
+        "rounding_policy": "exact_rational_no_tolerance",
+        "status": "complete",
+        "units": [
+          "cycle",
+          "1",
+          "s"
+        ],
+        "variables": [
+          "physical_cycles",
+          "fractional_offset",
+          "endpoint_correction"
+        ]
+      },
+      "coverage": {
+        "coverage_basis": null,
+        "expanded_factor": null,
+        "standard": true
+      },
+      "endpoint_correction_seconds": "0",
+      "measurand": {
+        "coordinate_status": "declared_synthetic",
+        "epoch_seconds": "0",
+        "global_gravitational_correction_seconds": null,
+        "kind": "elapsed_interval",
+        "point_or_scale": "synthetic:connector",
+        "time_coordinate": "local_proper_time",
+        "transfer_model": null
+      },
+      "model_id": "m1:synthetic-si-map:v2",
+      "observation": {
+        "calibration_record": "synthetic:stipulated-alpha",
+        "cycles_per_return": "4596315885/2",
+        "endpoint_phase_cycles": [
+          "0",
+          "0"
+        ],
+        "kind": "synthetic_affine_cycle_map",
+        "map_status": "declared_synthetic_only",
+        "observed_cycles": "9192631770",
+        "reference_lineage": "synthetic:reference",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "reference": {
+        "effective_window": [
+          0,
+          12
+        ],
+        "fractional_offset": "0",
+        "kind": "synthetic_realization",
+        "nominal_hz": "9192631770",
+        "nominal_ratio": "1",
+        "offset_status": "stipulated_synthetic",
+        "realization_status": "synthetic_not_device"
+      },
+      "schema_version": 2,
+      "source_binding": {
+        "external_sources": {
+          "SI_definition": "https://www.bipm.org/en/si-base-units/second",
+          "realization": "https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248",
+          "uncertainty": "https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf"
+        },
+        "labels": [
+          "eq:cadence-ratio",
+          "eq:count-comparator-realization",
+          "eq:relational-time"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+      },
+      "statuses": {
+        "atomic_prediction": "not_performed",
+        "device_calibration": "not_performed",
+        "native_admission": "not_claimed",
+        "record_class": "synthetic_declared_metrology"
+      }
+    },
+    "unknown_cross_covariance": {
+      "acquisition": {
+        "cycle_slip_alternatives": [
+          0
+        ],
+        "cycle_slip_status": "resolved_by_synthetic_setup",
+        "dead_time_seconds": "0",
+        "dead_time_status": "none_by_synthetic_setup",
+        "extrapolation_model": null,
+        "noise_model": "declared_joint_covariance_not_independent_samples"
+      },
+      "binding": {
+        "comparison_cut": 12,
+        "contact_cuts": [
+          4,
+          8,
+          12
+        ],
+        "lineages": [
+          {
+            "id": "synthetic:reference",
+            "prefix_sha256": "ce0c79a3c9e375c8586c4eedd5e780064d27d5d2c562a03b04996b387f83f804",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:reference:return:0"
+              },
+              {
+                "cut": 3,
+                "id": "synthetic:reference:return:1"
+              },
+              {
+                "cut": 6,
+                "id": "synthetic:reference:return:2"
+              },
+              {
+                "cut": 9,
+                "id": "synthetic:reference:return:3"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:reference:return:4"
+              }
+            ]
+          },
+          {
+            "id": "synthetic:compared",
+            "prefix_sha256": "a6f7444107ac2dd0cb7c2612b3f794f30578aa120b0a785a880802614301e6b4",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:compared:return:0"
+              },
+              {
+                "cut": 4,
+                "id": "synthetic:compared:return:1"
+              },
+              {
+                "cut": 8,
+                "id": "synthetic:compared:return:2"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:compared:return:3"
+              }
+            ]
+          }
+        ],
+        "native_certificate_status": "not_claimed",
+        "reference_increment": 4,
+        "reference_lineage": "synthetic:reference",
+        "scope": "synthetic:common-window",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "budget": [
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "physical_cycles"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "physical_cycles",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "919263177/2000000000",
+          "unit": "cycle"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "fractional_offset"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "fractional_offset",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "1/500000000000",
+          "unit": "1"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "endpoint_correction"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "endpoint_correction",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "3/100000000000",
+          "unit": "s"
+        }
+      ],
+      "calibration": {
+        "available_at_cut": 0,
+        "evidence_id": "synthetic:calibration",
+        "exposed_targets": [
+          "H-1",
+          "Rb-87"
+        ],
+        "fitted_targets": [],
+        "mode": "online",
+        "prediction_class": "not_an_atomic_prediction",
+        "traceability": "synthetic_setup_not_physical_traceability",
+        "validity_cuts": [
+          0,
+          12
+        ]
+      },
+      "covariance": {
+        "matrix": [
+          [
+            "845044788588133329/4000000000000000000",
+            null,
+            "2757789531/400000000000000000000"
+          ],
+          [
+            null,
+            "1/250000000000000000000000",
+            "0"
+          ],
+          [
+            "2757789531/400000000000000000000",
+            "0",
+            "9/10000000000000000000000"
+          ]
+        ],
+        "matrix_units": [
+          [
+            "cycle*cycle",
+            "cycle*1",
+            "cycle*s"
+          ],
+          [
+            "1*cycle",
+            "1*1",
+            "1*s"
+          ],
+          [
+            "s*cycle",
+            "s*1",
+            "s*s"
+          ]
+        ],
+        "rounding_policy": "exact_rational_no_tolerance",
+        "status": "partial",
+        "units": [
+          "cycle",
+          "1",
+          "s"
+        ],
+        "variables": [
+          "physical_cycles",
+          "fractional_offset",
+          "endpoint_correction"
+        ]
+      },
+      "coverage": {
+        "coverage_basis": null,
+        "expanded_factor": null,
+        "standard": true
+      },
+      "endpoint_correction_seconds": "0",
+      "measurand": {
+        "coordinate_status": "declared_synthetic",
+        "epoch_seconds": "0",
+        "global_gravitational_correction_seconds": null,
+        "kind": "elapsed_interval",
+        "point_or_scale": "synthetic:connector",
+        "time_coordinate": "local_proper_time",
+        "transfer_model": null
+      },
+      "model_id": "m1:synthetic-si-map:v2",
+      "observation": {
+        "calibration_record": "synthetic:stipulated-alpha",
+        "cycles_per_return": "4596315885/2",
+        "endpoint_phase_cycles": [
+          "0",
+          "0"
+        ],
+        "kind": "synthetic_affine_cycle_map",
+        "map_status": "declared_synthetic_only",
+        "observed_cycles": "9192631770",
+        "reference_lineage": "synthetic:reference",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "reference": {
+        "effective_window": [
+          0,
+          12
+        ],
+        "fractional_offset": "0",
+        "kind": "synthetic_realization",
+        "nominal_hz": "9192631770",
+        "nominal_ratio": "1",
+        "offset_status": "stipulated_synthetic",
+        "realization_status": "synthetic_not_device"
+      },
+      "schema_version": 2,
+      "source_binding": {
+        "external_sources": {
+          "SI_definition": "https://www.bipm.org/en/si-base-units/second",
+          "realization": "https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248",
+          "uncertainty": "https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf"
+        },
+        "labels": [
+          "eq:cadence-ratio",
+          "eq:count-comparator-realization",
+          "eq:relational-time"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+      },
+      "statuses": {
+        "atomic_prediction": "not_performed",
+        "device_calibration": "not_performed",
+        "native_admission": "not_claimed",
+        "record_class": "synthetic_declared_metrology"
+      }
+    },
+    "unmodeled_dead_time": {
+      "acquisition": {
+        "cycle_slip_alternatives": [
+          0
+        ],
+        "cycle_slip_status": "resolved_by_synthetic_setup",
+        "dead_time_seconds": "1/10",
+        "dead_time_status": "unmodeled",
+        "extrapolation_model": null,
+        "noise_model": "declared_joint_covariance_not_independent_samples"
+      },
+      "binding": {
+        "comparison_cut": 12,
+        "contact_cuts": [
+          4,
+          8,
+          12
+        ],
+        "lineages": [
+          {
+            "id": "synthetic:reference",
+            "prefix_sha256": "ce0c79a3c9e375c8586c4eedd5e780064d27d5d2c562a03b04996b387f83f804",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:reference:return:0"
+              },
+              {
+                "cut": 3,
+                "id": "synthetic:reference:return:1"
+              },
+              {
+                "cut": 6,
+                "id": "synthetic:reference:return:2"
+              },
+              {
+                "cut": 9,
+                "id": "synthetic:reference:return:3"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:reference:return:4"
+              }
+            ]
+          },
+          {
+            "id": "synthetic:compared",
+            "prefix_sha256": "a6f7444107ac2dd0cb7c2612b3f794f30578aa120b0a785a880802614301e6b4",
+            "returns": [
+              {
+                "cut": 0,
+                "id": "synthetic:compared:return:0"
+              },
+              {
+                "cut": 4,
+                "id": "synthetic:compared:return:1"
+              },
+              {
+                "cut": 8,
+                "id": "synthetic:compared:return:2"
+              },
+              {
+                "cut": 12,
+                "id": "synthetic:compared:return:3"
+              }
+            ]
+          }
+        ],
+        "native_certificate_status": "not_claimed",
+        "reference_increment": 4,
+        "reference_lineage": "synthetic:reference",
+        "scope": "synthetic:common-window",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "budget": [
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "physical_cycles"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "physical_cycles",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "919263177/2000000000",
+          "unit": "cycle"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "fractional_offset"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "fractional_offset",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "1/500000000000",
+          "unit": "1"
+        },
+        {
+          "correction_status": "applied_or_zero_by_setup",
+          "covariance_group": "synthetic_joint_budget",
+          "covers": [
+            "endpoint_correction"
+          ],
+          "distribution": "declared_local_covariance",
+          "evaluation": "synthetic_Type_B",
+          "id": "endpoint_correction",
+          "included": true,
+          "included_in_aggregate": null,
+          "source": "R02_declared_example_not_device_data",
+          "standard_uncertainty": "3/100000000000",
+          "unit": "s"
+        }
+      ],
+      "calibration": {
+        "available_at_cut": 0,
+        "evidence_id": "synthetic:calibration",
+        "exposed_targets": [
+          "H-1",
+          "Rb-87"
+        ],
+        "fitted_targets": [],
+        "mode": "online",
+        "prediction_class": "not_an_atomic_prediction",
+        "traceability": "synthetic_setup_not_physical_traceability",
+        "validity_cuts": [
+          0,
+          12
+        ]
+      },
+      "covariance": {
+        "matrix": [
+          [
+            "845044788588133329/4000000000000000000",
+            "0",
+            "2757789531/400000000000000000000"
+          ],
+          [
+            "0",
+            "1/250000000000000000000000",
+            "0"
+          ],
+          [
+            "2757789531/400000000000000000000",
+            "0",
+            "9/10000000000000000000000"
+          ]
+        ],
+        "matrix_units": [
+          [
+            "cycle*cycle",
+            "cycle*1",
+            "cycle*s"
+          ],
+          [
+            "1*cycle",
+            "1*1",
+            "1*s"
+          ],
+          [
+            "s*cycle",
+            "s*1",
+            "s*s"
+          ]
+        ],
+        "rounding_policy": "exact_rational_no_tolerance",
+        "status": "complete",
+        "units": [
+          "cycle",
+          "1",
+          "s"
+        ],
+        "variables": [
+          "physical_cycles",
+          "fractional_offset",
+          "endpoint_correction"
+        ]
+      },
+      "coverage": {
+        "coverage_basis": null,
+        "expanded_factor": null,
+        "standard": true
+      },
+      "endpoint_correction_seconds": "0",
+      "measurand": {
+        "coordinate_status": "declared_synthetic",
+        "epoch_seconds": "0",
+        "global_gravitational_correction_seconds": null,
+        "kind": "elapsed_interval",
+        "point_or_scale": "synthetic:connector",
+        "time_coordinate": "local_proper_time",
+        "transfer_model": null
+      },
+      "model_id": "m1:synthetic-si-map:v2",
+      "observation": {
+        "calibration_record": "synthetic:stipulated-alpha",
+        "cycles_per_return": "4596315885/2",
+        "endpoint_phase_cycles": [
+          "0",
+          "0"
+        ],
+        "kind": "synthetic_affine_cycle_map",
+        "map_status": "declared_synthetic_only",
+        "observed_cycles": "9192631770",
+        "reference_lineage": "synthetic:reference",
+        "window": [
+          0,
+          12
+        ]
+      },
+      "reference": {
+        "effective_window": [
+          0,
+          12
+        ],
+        "fractional_offset": "0",
+        "kind": "synthetic_realization",
+        "nominal_hz": "9192631770",
+        "nominal_ratio": "1",
+        "offset_status": "stipulated_synthetic",
+        "realization_status": "synthetic_not_device"
+      },
+      "schema_version": 2,
+      "source_binding": {
+        "external_sources": {
+          "SI_definition": "https://www.bipm.org/en/si-base-units/second",
+          "realization": "https://www.bipm.org/documents/20126/41489667/SI-App2-second.pdf/3c76fec8-04d9-f484-5c3c-a2e280a0f248",
+          "uncertainty": "https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf"
+        },
+        "labels": [
+          "eq:cadence-ratio",
+          "eq:count-comparator-realization",
+          "eq:relational-time"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+      },
+      "statuses": {
+        "atomic_prediction": "not_performed",
+        "device_calibration": "not_performed",
+        "native_admission": "not_claimed",
+        "record_class": "synthetic_declared_metrology"
+      }
+    }
+  },
+  "schema_version": 2,
+  "statuses": {
+    "atomic_prediction": "not_performed",
+    "device_calibration": "not_performed",
+    "native_admission": "not_claimed",
+    "record_class": "synthetic_declared_metrology"
+  }
+}

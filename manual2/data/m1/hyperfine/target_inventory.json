@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "profile": "historical-H1-Cs133-reference-v1",
+  "inventory_status": "external_inventory",
+  "sources": [
+    {
+      "source_id": "hellwig1970",
+      "title": "Measurement of the Unperturbed Hydrogen Hyperfine Transition Frequency",
+      "authors": [
+        "H. Hellwig",
+        "R. F. C. Vessot",
+        "M. W. Levine",
+        "P. W. Zitzewitz",
+        "D. W. Allan",
+        "D. J. Glaze"
+      ],
+      "publication": "IEEE Transactions on Instrumentation and Measurement IM-19(4), 200–209 (1970)",
+      "url": "https://tf.nist.gov/general/pdf/13.pdf",
+      "locator": "Printed page 200 (PDF page 1), abstract and footnote; corrections described in the article",
+      "accessed": "2026-10-26",
+      "status": "external_primary_source",
+      "pdf_sha256": "e8bba435fbb9e6b54f41fa1d60f9c02df8e06b6a73ce8fab323afb3ea7d02dc4",
+      "rendered_evidence": "sources/hellwig1970-page200.png",
+      "rendered_sha256": "94d0dfbe049c66f1e259183abc3ef74dd227d40cc1b0920fc68c98c263f6a3cf",
+      "transcription_status": "visually_verified",
+      "transcription_note": "Printed abstract gives one-sigma 2 × 10^-3 Hz. Web OCR reading 10^-2 is incorrect."
+    },
+    {
+      "source_id": "bipm-second",
+      "title": "SI base unit: second",
+      "url": "https://www.bipm.org/en/si-base-units/second",
+      "locator": "Definition of the second using the unperturbed Cs-133 ground-state hyperfine transition",
+      "accessed": "2026-10-26",
+      "status": "external_primary_source"
+    },
+    {
+      "source_id": "nist-clock-operation",
+      "title": "Beams of Atoms: The First Atomic Clocks",
+      "url": "https://www.nist.gov/atomic-clocks/how-atomic-clocks-work/beams-atoms-first-atomic-clocks",
+      "locator": "Preparation, interrogation, population feedback and oscillator-cycle counting",
+      "accessed": "2026-10-26",
+      "status": "external_primary_source"
+    },
+    {
+      "source_id": "nist-hydrogen",
+      "title": "Atomic Data for Hydrogen",
+      "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable1_a.htm",
+      "locator": "H-1 nuclear spin 1/2 and neutral ground state 1s 2S1/2; no mass values consumed",
+      "accessed": "2026-10-26",
+      "status": "external_primary_source"
+    },
+    {
+      "source_id": "nist-cesium",
+      "title": "Handbook of Basic Atomic Spectroscopic Data",
+      "url": "https://www.nist.gov/document/jpcrd690pdf",
+      "locator": "Sansonetti and Martin, JPCRD 34(4) (2005), printed page 1652: Cs-133 I=7/2, neutral ground state [Xe]6s 2S1/2",
+      "accessed": "2026-10-26",
+      "status": "external_primary_source"
+    }
+  ],
+  "isotopes": [
+    {
+      "isotope_id": "atom:Z001:A001:q0",
+      "z": 1,
+      "a": 1,
+      "symbol": "H",
+      "charge": 0,
+      "element_reference_id": "matter1:reference:Z001:A001",
+      "nuclear_spin_I": "1/2",
+      "electronic_configuration": "1s",
+      "term": "2S1/2",
+      "electronic_J": "1/2",
+      "label_source_id": "nist-hydrogen"
+    },
+    {
+      "isotope_id": "atom:Z055:A133:q0",
+      "z": 55,
+      "a": 133,
+      "symbol": "Cs",
+      "charge": 0,
+      "element_reference_id": "matter1:reference:Z055:A133",
+      "nuclear_spin_I": "7/2",
+      "electronic_configuration": "[Xe]6s",
+      "term": "2S1/2",
+      "electronic_J": "1/2",
+      "label_source_id": "nist-cesium"
+    }
+  ],
+  "states": [
+    {
+      "state_id": "atom:Z001:A001:q0:ground:F0:mF0",
+      "isotope_id": "atom:Z001:A001:q0",
+      "electronic_state": "ground",
+      "F": "0",
+      "m_F": "0",
+      "quantum_number_status": "external_state_label",
+      "source_id": "hellwig1970",
+      "native_configuration_id": null
+    },
+    {
+      "state_id": "atom:Z001:A001:q0:ground:F1:mF0",
+      "isotope_id": "atom:Z001:A001:q0",
+      "electronic_state": "ground",
+      "F": "1",
+      "m_F": "0",
+      "quantum_number_status": "external_state_label",
+      "source_id": "hellwig1970",
+      "native_configuration_id": null
+    },
+    {
+      "state_id": "atom:Z055:A133:q0:ground:F3:mF0",
+      "isotope_id": "atom:Z055:A133:q0",
+      "electronic_state": "ground",
+      "F": "3",
+      "m_F": "0",
+      "quantum_number_status": "external_state_label",
+      "source_id": "hellwig1970",
+      "native_configuration_id": null
+    },
+    {
+      "state_id": "atom:Z055:A133:q0:ground:F4:mF0",
+      "isotope_id": "atom:Z055:A133:q0",
+      "electronic_state": "ground",
+      "F": "4",
+      "m_F": "0",
+      "quantum_number_status": "external_state_label",
+      "source_id": "hellwig1970",
+      "native_configuration_id": null
+    }
+  ],
+  "transitions": [
+    {
+      "transition_id": "atom:Z001:A001:q0:ground:clock",
+      "isotope_id": "atom:Z001:A001:q0",
+      "state_ids": [
+        "atom:Z001:A001:q0:ground:F0:mF0",
+        "atom:Z001:A001:q0:ground:F1:mF0"
+      ],
+      "observable": "unperturbed_ground_state_hyperfine_frequency",
+      "unit": "Hz",
+      "role": "retrospective_target",
+      "source_id": "hellwig1970",
+      "native_mapping_status": "pending",
+      "frequency_hz": "1420405751.768",
+      "standard_uncertainty_hz": "0.002",
+      "uncertainty_kind": "reported_one_sigma",
+      "measurement_interval": "1969-11 through 1970-02",
+      "conditions": "Historical corrected unperturbed interval; not a current recommended value",
+      "corrections": [
+        "wall_collisions",
+        "cavity_pulling",
+        "spin_exchange",
+        "magnetic_fields",
+        "second_order_doppler"
+      ],
+      "reference_transition_id": "atom:Z055:A133:q0:ground:clock",
+      "reference_group": "NBS-III_shared_reference",
+      "evaluation_count": 2,
+      "aggregation_status": "published_combined_result",
+      "covariance_status": "shared_reference_quantitative_covariance_not_transcribed",
+      "covariance_hz2": null,
+      "evaluation_relation": "Two evaluations used the same NBS-III caesium reference; the source explicitly says they are not completely independent. No independent recombination is performed.",
+      "uncertainty_scope": "The reported standard uncertainty is retained as published; the defining Cs value adds no definition uncertainty. A new joint evaluation requires the original realization/covariance budget."
+    },
+    {
+      "transition_id": "atom:Z055:A133:q0:ground:clock",
+      "isotope_id": "atom:Z055:A133:q0",
+      "state_ids": [
+        "atom:Z055:A133:q0:ground:F3:mF0",
+        "atom:Z055:A133:q0:ground:F4:mF0"
+      ],
+      "observable": "unperturbed_ground_state_hyperfine_frequency",
+      "unit": "Hz",
+      "role": "defining_reference",
+      "source_id": "bipm-second",
+      "native_mapping_status": "pending",
+      "frequency_hz": "9192631770",
+      "standard_uncertainty_hz": "0",
+      "uncertainty_kind": "exact_si_definition",
+      "realization_uncertainty_hz": null,
+      "realization_uncertainty_status": "not_transcribed",
+      "conditions": "Unperturbed ground-state Cs-133 reference defining the SI second; realization uncertainty is not zero by definition."
+    }
+  ],
+  "clock_operation": {
+    "source_id": "nist-clock-operation",
+    "counted_observable": "stabilized_oscillator_cycles",
+    "feedback_observable": "detected_state_populations",
+    "native_closure_identification": "pending"
+  }
+}

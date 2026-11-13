@@ -1,0 +1,21 @@
+{
+  "active_foundation_sha256": "3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1",
+  "after_sha256": "ab9759a205a4b35974d69fa41b7528dad996778a302e4c5e24d25a5766f9ec12",
+  "archive": "manual2/evidence/pre-m3-main/rebind-2026-11-08/manual2/scripts/matter1_constructed_coupling.py",
+  "before_sha256": "e61be2e212e20edf07962fd791ac1af20583f9b00ac78dc1e774c98c1e4bb1f9",
+  "changes": [
+    "Use prior_m3_source_bytes for mathematical source resolution",
+    "Validate the actual current adapter and archived original before returning its historical recipe digest"
+  ],
+  "historical_consumer_head": "fedad377608bf3fee3364e4a79b3578f3f96dc2b",
+  "historical_foundation_sha256": "7c2117141de36d94f18fd21b178a243c3923495a9f1c494579b21f9e7f9fe921",
+  "identity_policy": "Existing application_source_sha256 and application_sha256 fields remain historical recipe identities. This receipt separately identifies the actual current executor by after_sha256; it does not claim the adapter bytes equal the old executor.",
+  "new_physical_premises": false,
+  "path": "manual2/scripts/matter1_constructed_coupling.py",
+  "preserved_fields": [
+    "application_source_sha256",
+    "application_sha256"
+  ],
+  "schema": "matter1.constructed-source-adapter.v1",
+  "scope": "Source-resolution-only adapter: resolve frozen R02 mathematical premises against their verified prior M3 authority. Dynamics, preparations, numerical calculations, generators and all frozen data remain unchanged."
+}

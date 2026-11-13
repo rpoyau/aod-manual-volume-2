@@ -1,0 +1,27 @@
+{
+  "canonical_marker": "v41.02",
+  "files": {
+    "ERROR_BUDGET.json": {
+      "sha256": "4d7f8fc7209b09cbb9903bc13ce08bd3b4a90dee0b15f6e4de75fa67bd30bea6",
+      "upstream_path": "contracts/scientific/ERROR_BUDGET.json"
+    },
+    "M3_MATHEMATICAL_BINDINGS.json": {
+      "sha256": "7048264c2faed6ca6ea3af449bf2f07ccb447648a78bec132c99b059b52055ab",
+      "upstream_path": "contracts/scientific/M3_MATHEMATICAL_BINDINGS.json"
+    },
+    "MAP_CONTRACT.json": {
+      "sha256": "8aaf2820643fcab6414264d2eae553921b58fc09300c226fdce8e0dd87a492bf",
+      "upstream_path": "contracts/scientific/MAP_CONTRACT.json"
+    },
+    "aod_mapping_error.py": {
+      "sha256": "b1d414e32819d3a601834883e112634bdffd7df82d742de9ede5580c96e620fc",
+      "upstream_path": "manual/scripts/aod_mapping_error.py"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Exact upstream mapping module and contracts, not a physical calibration or native admission",
+  "upstream_head": "3ffb3c9984eef95ca4b105ac323d249f30412816",
+  "upstream_repository": "https://github.com/rpoyau/aod",
+  "upstream_status": "open_PR_43_candidate_at_binding",
+  "upstream_tree": "4e260a7c8e22ab5b78a73a0a12e784f1be46c984"
+}

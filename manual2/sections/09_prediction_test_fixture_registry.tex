@@ -1,0 +1,80 @@
+\section{Calculation and Data Registry}\label{manual2:prediction-test-registry}
+\paragraph{Setup.}
+Each record identifies its data support before its report coordinate. D0 denotes
+an exact internal fixture comparison; O0 denotes a declared observable-map
+comparison. A dash means that this row is a reference, source or acquisition
+record rather than such a comparison. Record form, model premises and execution
+evidence retain the separate meanings of \secref{manual2:data-support}. The
+registry locates calculations and sources; it is not an agreement verdict.
+The application roles below are descriptive. Normative record forms and claim
+classes are bound component by component in
+\path{manual2/data/m1/classification/data_cards.json}.
+
+{\small
+\begin{longtable}{@{}p{0.23\textwidth}p{0.20\textwidth}p{0.08\textwidth}p{0.39\textwidth}@{}}
+\caption{\textbf{Matter I calculation and data forms.} Support applies to the
+specified comparison, not to every field in its source artifact.}
+\label{tab:manual2-prediction-test-registry}\\
+\toprule
+Record & Application role & Support & Input and report coordinate\\
+\midrule
+\endfirsthead
+\toprule
+Record & Application role & Support & Input and report coordinate\\
+\midrule
+\endhead
+Support polynomial & Reference calculation & --- & Exact integer support expression\\
+Enclosure groups and local tuples & Reference calculation & --- & Group membership and local role projection\\
+Reference-A and assigned classes & Input manifest & --- & Pinned selections and assigned inputs; original selection provenance retained\\
+Conditional support and residuals & Reference calculation & --- & Consequences of the assigned inputs, distinct from admitted accessors\\
+v94 placement crosswalk & Historical comparison & --- & 118 rows and six fields; 708 placement comparisons\\
+v94 observable inventory & Benchmark manifest & --- & 118 elements across E0--E5; original declaration scope\\
+r24 occurrence/packet crosswalk & Historical declaration & --- & Occurrence, packet and SADAR identifiers\\
+Element-ledger D.E.C. declaration & Benchmark manifest & --- & Required boundary, edge, kernel, return and certificate fields\\
+Two-face construction & Exact geometric example & --- & Injective Q4 incidence and illustrative traversal counts\\
+Finite fold and recurrence v1 & Declared model & --- & Mapped histories, rational cadence/lag and assigned contact-duration map\\
+Sequential recurrence v2 & Declared model & --- & Matched capacity intervention, later retention, returns and contacts\\
+SI observation layer & Metrology record & --- & Synthetic observation maps, interval coordinate and joint uncertainty examples\\
+BIPM adjustment data & Measured-source reduction & --- & Published frequency/covariance records and 105 rounding-aware checks\\
+Cs/H diagnostic comparison & Observable-map record & O0 & Unselected gain countermodels and retrospective target residuals\\
+Conventional hyperfine benchmark & External model record & --- & Imported splitting and spin-Hamiltonian numerical response\\
+Hydrogen/caesium inventory & Measured target / calibration anchor & --- & Two isotopes, four states, two transitions and derived reference ratio\\
+Finite isotope targets & Measured target record & --- & Evaluated half-lives, uncertainties, tentative state assignments and channels\\
+Nonpoint isotope inventory & Benchmark manifest & --- & Stability qualifications, unknown values, unobserved declarations and rejected candidates\\
+Survival ensemble & Declared model & --- & Exact finite history law; median in reference-return counts\\
+M3 mapping and BIPM precision & Metrology / exact arithmetic record & --- & Typed finite-law moments and conditional printed-zero precision check\\
+M3 metrology applications & Observable-map / source-reduction record & O0 & R03 diagnostic maps, H/Cs source reductions and retrospective residuals\\
+All-element inner recurrence & Declared model & --- & 135 generic inventories; 145 source/state records; bounded cadence and lag\\
+Coupled bare/neutral preparations & Declared model & --- & Six H/D/T histories and joint laws; scoped controls and reference extension (\secref{manual2:coupled-preparation-pilots})\\
+Signed current pair audits & Exact fixture & D0 & Integer contact responses and opposite views; zero pair residual\\
+H-2/H-3 target supplement & Measured target / source acquisition & --- & Hydrogen-referenced D frequency and evaluated T rescaling; original T numerical record untranscribed\\
+Selected Lv events & Measured target record & --- & Two sourced implantation-to-decay intervals, distinct from half-life\\
+Other mass and spectral records & Benchmark manifest & --- & Required quantity, source, report map and comparison coordinate\\
+\bottomrule
+\end{longtable}
+}
+
+\paragraph{Specialization.}
+The original v94 observable matrix has 708 rows: 118 E0 identity/registry rows,
+and 118 rows in each of E1 placement/classification, E2 atomic mass/standard
+atomic weight, E3 isotope support, E4 spectra and E5 reaction/routes. E0 is the
+active historical registry; E1--E5 are unscored declarations. Its ten value maps
+were not attached. That historical scope is separate from the six-field
+placement comparison, and the exact predecessor status tokens remain in the
+source crosswalk.
+
+The r24 crosswalk retains occurrence, transition-packet and SADAR declaration
+IDs as historical identifiers. These declarations contain no executed
+source-to-destination event witnesses or measured scores. Correspondence of
+the original and public atlas is bound by parsed manifest content and five
+matching file hashes; it is not an identity claim about an entire public
+repository.
+
+\paragraph{Falsification.}
+A target record without its value map and compatible coordinate cannot acquire
+a residual. A source hash cannot supply a construction witness. A historical
+declaration cannot substitute for an executed transition. These distinctions
+apply independently of the D0 or O0 support code.
+
+\paragraph{Provenance.}
+The release provenance records the reviewed PR, original v94/r24 archive hashes, extracted member hashes, the six-field mapping, historical identifier joins and the current input bindings. Small verified source extracts and the generated \path{declaration_crosswalk.csv}, \path{observable_coverage.csv} and \path{value_map_status.csv} are stored under \path{manual2/data/m1/history/}. Their bindings are in \path{manual2/evidence/historical_sources.json}; current input hashes are in \path{manual2/evidence/input_manifest.json}. Exact static checks, source identity checks and any future scientific claims retain separate result scopes.

@@ -1,0 +1,275 @@
+{
+  "approximation": "Leading spin-only g_J=2, g_I=0 for both species; neglect bound-state, nuclear-Zeeman and environmental corrections. Numerical benchmark, not precision spectroscopy.",
+  "classification": "conventional_external_calibrated_benchmark",
+  "input_uncertainties": {
+    "Cs-133": "0",
+    "H-1": "0.002"
+  },
+  "inputs_sha256": "ae679187a0ffdce6c772726f6c513d7abd17859eb5c05f112d1ad33a077e4a38",
+  "native_atomic_prediction": false,
+  "rows": [
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-1065305692.97193299318969775816022498177638",
+        "355102817.08793299318969775816022498177638"
+      ],
+      "field_tesla": "-0.0001",
+      "frequency_hz": "1420408510.05986598637939551632044996355276",
+      "frequency_squared_exact_hz2": "5043900838626221032573147241/2500000000",
+      "isotope": "H-1",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-35650106243371/100000",
+          "177550718971/250"
+        ],
+        [
+          "177550718971/250",
+          "-35370181345029/100000"
+        ]
+      ],
+      "shift_hz": "2758.29186598637939551632044996355276",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "4258584169118425779835/15439192954"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-1065304313.96391472719439067056411457985190",
+        "355101438.079914727194390670564114579851895"
+      ],
+      "field_tesla": "-0.000001",
+      "frequency_hz": "1420405752.04382945438878134112822915970379",
+      "frequency_squared_exact_hz2": "50438812510979918056090358587241/25000000000000",
+      "isotope": "H-1",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-3551154341869171/10000000",
+          "177550718971/250"
+        ],
+        [
+          "177550718971/250",
+          "-3550874416970829/10000000"
+        ]
+      ],
+      "shift_hz": "0.27582945438878134112822915970379",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "4258584169118425779835/15439192954"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-1065304313.826",
+        "355101437.942"
+      ],
+      "field_tesla": "0",
+      "frequency_hz": "1420405751.768",
+      "frequency_squared_exact_hz2": "31524257807119019298841/15625",
+      "isotope": "H-1",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-177550718971/500",
+          "177550718971/250"
+        ],
+        [
+          "177550718971/250",
+          "-177550718971/500"
+        ]
+      ],
+      "shift_hz": "0.000",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "4258584169118425779835/15439192954"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-1065304313.96391472719439067056411457985190",
+        "355101438.079914727194390670564114579851895"
+      ],
+      "field_tesla": "0.000001",
+      "frequency_hz": "1420405752.04382945438878134112822915970379",
+      "frequency_squared_exact_hz2": "50438812510979918056090358587241/25000000000000",
+      "isotope": "H-1",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-3550874416970829/10000000",
+          "177550718971/250"
+        ],
+        [
+          "177550718971/250",
+          "-3551154341869171/10000000"
+        ]
+      ],
+      "shift_hz": "0.27582945438878134112822915970379",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "4258584169118425779835/15439192954"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-1065305692.97193299318969775816022498177638",
+        "355102817.08793299318969775816022498177638"
+      ],
+      "field_tesla": "0.0001",
+      "frequency_hz": "1420408510.05986598637939551632044996355276",
+      "frequency_squared_exact_hz2": "5043900838626221032573147241/2500000000",
+      "isotope": "H-1",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-35370181345029/100000",
+          "177550718971/250"
+        ],
+        [
+          "177550718971/250",
+          "-35650106243371/100000"
+        ]
+      ],
+      "shift_hz": "2758.29186598637939551632044996355276",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "4258584169118425779835/15439192954"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-5170855583.72487405085840159051492778908095",
+        "4021776612.47487405085840159051492778908097"
+      ],
+      "field_tesla": "-0.0001",
+      "frequency_hz": "9192632196.19974810171680318102985557816194",
+      "frequency_squared_exact_hz2": "211261216736520510194758587241/2500000000",
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-57593911011671/100000",
+          "4596315885"
+        ],
+        [
+          "4596315885",
+          "-57313986113329/100000"
+        ]
+      ],
+      "shift_hz": "426.19974810171680318102985557816194",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "19589487177944758587241/459631588500"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-5170855370.6463099878990359547805701936839",
+        "4021776399.39630998789903595478057019368392"
+      ],
+      "field_tesla": "-0.000001",
+      "frequency_hz": "9192631770.04261997579807190956114038736785",
+      "frequency_squared_exact_hz2": "2112611971489922809677944758587241/25000000000000",
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-5745534818699171/10000000",
+          "4596315885"
+        ],
+        [
+          "4596315885",
+          "-5745254893800829/10000000"
+        ]
+      ],
+      "shift_hz": "0.04261997579807190956114038736785",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "19589487177944758587241/459631588500"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-5170855370.625",
+        "4021776399.375"
+      ],
+      "field_tesla": "0",
+      "frequency_hz": "9192631770",
+      "frequency_squared_exact_hz2": "84504478858813332900",
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-4596315885/8",
+          "4596315885"
+        ],
+        [
+          "4596315885",
+          "-4596315885/8"
+        ]
+      ],
+      "shift_hz": "0",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "19589487177944758587241/459631588500"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-5170855370.6463099878990359547805701936839",
+        "4021776399.39630998789903595478057019368392"
+      ],
+      "field_tesla": "0.000001",
+      "frequency_hz": "9192631770.04261997579807190956114038736785",
+      "frequency_squared_exact_hz2": "2112611971489922809677944758587241/25000000000000",
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-5745254893800829/10000000",
+          "4596315885"
+        ],
+        [
+          "4596315885",
+          "-5745534818699171/10000000"
+        ]
+      ],
+      "shift_hz": "0.04261997579807190956114038736785",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "19589487177944758587241/459631588500"
+    },
+    {
+      "complete_standard_uncertainty_hz": null,
+      "eigenvalues_hz": [
+        "-5170855583.72487405085840159051492778908095",
+        "4021776612.47487405085840159051492778908097"
+      ],
+      "field_tesla": "0.0001",
+      "frequency_hz": "9192632196.19974810171680318102985557816194",
+      "frequency_squared_exact_hz2": "211261216736520510194758587241/2500000000",
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "matrix_hz": [
+        [
+          "-57313986113329/100000",
+          "4596315885"
+        ],
+        [
+          "4596315885",
+          "-57593911011671/100000"
+        ]
+      ],
+      "shift_hz": "426.19974810171680318102985557816194",
+      "state_tracking": "lower_and_upper_mF0_eigenbranches_continued_from_F=I-1/2,I+1/2",
+      "uncertainty_status": "partial_benchmark_not_precision_measurement",
+      "weak_field_quadratic_coefficient_hz_per_tesla2": "19589487177944758587241/459631588500"
+    }
+  ],
+  "schema_version": 1,
+  "uncertainty_status": "partial; g approximation, field calibration and covariance not supplied",
+  "zero_field_agreement_role": "calibrant_reproduction_only"
+}

@@ -1,0 +1,78 @@
+{
+  "archives": {
+    "r24": {
+      "filename": "bundle-v40.03r24-authoring-elementary-matter-118-transition-atlas-materialized.zip",
+      "nested_source": {
+        "member": "source.zip",
+        "sha256": "f05c9c7a6021ad9eda8e13fe9a4fb1bb6c6771aa26d83700c0325a409b0b0e80",
+        "size_bytes": 7732861
+      },
+      "sha256": "4a784c34e2fd67f0131086e0fd4ae94b571de4ecec3a6281a3d7f26935de2e52",
+      "size_bytes": 48674929
+    },
+    "v94": {
+      "filename": "bundle-v94.zip",
+      "sha256": "5c5fd976ef2290cf04c54436d7c1d749b1f1a5b494354a0c7d2bad532ff93179",
+      "size_bytes": 2516896
+    }
+  },
+  "expected_status": {
+    "r24_sadar": "declared_not_executed",
+    "r24_transition": "declared_not_executed_in_this_gate",
+    "v94_E0": "active_registry",
+    "v94_E1_to_E5": "declared_lane_not_scored_in_v94",
+    "v94_value_maps": "deferred_not_attached"
+  },
+  "interpretation": "Exact raw member excerpts for identity, placement, coverage and declaration joins. They are comparison evidence and do not establish completed native dynamics.",
+  "members": {
+    "data/m1/history/r24_occurrence_cards.csv": {
+      "archive_id": "r24",
+      "member": "manual-2/data/elementary/elementary_matter_118_occurrence_cards.csv",
+      "nested_member": "source.zip",
+      "records": 118,
+      "sha256": "8b0f1e740c5c4630692cf3ad9de6627f3e23c12216b6c7d8ae28d742dbef2fb1",
+      "size_bytes": 39583
+    },
+    "data/m1/history/r24_sadar_declarations.csv": {
+      "archive_id": "r24",
+      "member": "manual-2/data/elementary/elementary_matter_118_sadar_flow_declarations.csv",
+      "nested_member": "source.zip",
+      "records": 118,
+      "sha256": "d0d3788a2a192b9416c4889d393ad5dc7687d20747329a99dea168c4fa61bc19",
+      "size_bytes": 33377
+    },
+    "data/m1/history/r24_transition_packets.csv": {
+      "archive_id": "r24",
+      "member": "manual-2/data/elementary/elementary_matter_118_transition_packets.csv",
+      "nested_member": "source.zip",
+      "records": 118,
+      "sha256": "4bda5fbd2585dd0dc795db8c35b30f6f1ee32953c5018e2f6a18a1824cea6f80",
+      "size_bytes": 56208
+    },
+    "data/m1/history/v94_observable_matrix.csv": {
+      "archive_id": "v94",
+      "member": "bundle-v94/data/element_observable_lane_matrix_full_v94.csv",
+      "nested_member": null,
+      "records": 708,
+      "sha256": "a7d4afe041bf2cade6969763abaac330c2b9df38056fb1d61b0b094ee53eaf39",
+      "size_bytes": 102873
+    },
+    "data/m1/history/v94_placements.csv": {
+      "archive_id": "v94",
+      "member": "bundle-v94/data/element_coord0_placement_v94.csv",
+      "nested_member": null,
+      "records": 118,
+      "sha256": "0d1421804754958ea7d3819c8e749b680f2f89f988f5cda98a7e5b62e990985c",
+      "size_bytes": 4449
+    },
+    "data/m1/history/v94_value_maps.csv": {
+      "archive_id": "v94",
+      "member": "bundle-v94/data/value_map_quarantine_v94.csv",
+      "nested_member": null,
+      "records": 10,
+      "sha256": "a1bdff48cbd661680a7b51b7a027696be093bfc136281a79eef49a0e19c6c1b7",
+      "size_bytes": 709
+    }
+  },
+  "schema_version": 2
+}

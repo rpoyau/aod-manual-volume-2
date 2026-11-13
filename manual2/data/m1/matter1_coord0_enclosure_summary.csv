@@ -1,0 +1,10 @@
+m,enclosure,seats_2m,gamma_prev,gamma_m,z_range,hinge_z,boundary_slot_z,boundary_slot_kind,c_close
+3,C_6,6,0,6,1..6,3,6,element_reference,18
+4,C_8,8,6,14,7..14,10,14,element_reference,24
+5,C_10,10,14,24,15..24,19,24,element_reference,30
+6,C_12,12,24,36,25..36,30,36,element_reference,36
+7,C_14,14,36,50,37..50,43,50,element_reference,42
+8,C_16,16,50,66,51..66,58,66,element_reference,48
+9,C_18,18,66,84,67..84,75,84,element_reference,54
+10,C_20,20,84,104,85..104,94,104,element_reference,60
+11,C_22,22,104,126,105..126,115,126,unfilled_reference_slot,66

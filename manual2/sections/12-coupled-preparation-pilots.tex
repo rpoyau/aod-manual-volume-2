@@ -1,0 +1,222 @@
+\section{Coupled H/D/T Preparations}
+\label{manual2:coupled-preparation-pilots}
+\paragraph{Setup.}
+What changes when an electron is added to the same isotope inventory under the
+coupled recurrence law? The six preparations have $Z=1$, $A=1,2,3$ and
+$E=0,1$, hence $N=A-1$ and charge $1-E$. Bare means $E=0$; for general $Z$,
+a singly ionized preparation instead has $E=Z-1$. The labels H, D and T select
+these inventories. Physical nuclear and electronic state correspondence
+remains an additional application map.
+
+The constituent templates, directed contact ring, orientation kernel, pacing
+and response law are those of \secref{manual2:all-element-campaign}. Each
+pilot executes one inner round and a separate outer return. The boundary is
+fixed; this profile selects no external forcing or sweep term. Completed
+contacts update later rounds, while the full directional histories remain
+available. A single constituent has no artificial self-contact. The
+application choices and stopping rule are fixed before comparison targets are
+read. The new protocol uses the admitted constructions of AOD commit
+\texttt{8c3149b}; earlier experiments retain their original source bindings.
+
+\paragraph{Derivation.}
+The support $B$ and structural recurrence count follow
+\eqnref{eq:manual2-campaign-support}. Every return carries its admitted trace
+and certificate. From the same executed history, $J$ sums signed current
+contacts and $C$ sums their absolute burdens; formation contacts are excluded
+from both sums. Table~\ref{tab:manual2-coupled-pilots} gives the retained
+single-run outputs. Here $n_i$ counts newly executed inner reclosures, $n_c$
+counts all committed inner contacts including formation, and $k_o$ is the
+terminal outer cut. These are native count coordinates.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Preparation & $B$ & $RD$ & $n_i$ & $n_c$ & $k_o$ & $J$ & $C$\\
+\midrule
+H bare    & 30  & 61  & 1 & 0  & 4910  & 0   & 0\\
+H neutral & 34  & 69  & 2 & 6  & 5689  & 9   & 9\\
+D bare    & 98  & 197 & 2 & 6  & 29261 & 61  & 61\\
+D neutral & 102 & 205 & 3 & 9  & 29305 & 70  & 70\\
+T bare    & 166 & 333 & 3 & 9  & 40357 & 198 & 198\\
+T neutral & 170 & 341 & 4 & 12 & 40401 & 189 & 207\\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Six executed preparations.} One inner round, seed 20261111
+and one new outer return per row. Seed choice is execution provenance;
+these rows are individual conditional histories.}
+\label{tab:manual2-coupled-pilots}
+\end{table}
+
+The T-neutral row retains opposing contributions: $J=189$ while $C=207$.
+Its node divergences are $(-70,-76,137,9)$ and sum to zero. Oriented internal
+and boundary sums are checked for every subset of each pilot's constituents.
+Thus a balanced whole boundary does not erase its channel currents.
+
+The independently admitted generic reference is counted in each actual local
+window $[k_0,k_o]$. Table~\ref{tab:manual2-coupled-laws} gives those windows
+and the complete one-round laws. Every enumerated path uses the same
+state-dependent engine as the sampler; its exact mass is the product of the
+successive conditional kernel entries. The masses sum to one in each row.
+The six means of $J$ are zero, while their variances differ. $C$ and $k_o$ are
+constant within each of these one-round laws.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{@{}lrrrlrl@{}}
+\toprule
+Preparation & Paths & $\operatorname{Var}(J)$ & $C$ & Window & $n_r$ & Cadence\\
+\midrule
+H bare    & 2  & 0     & 0   & $[1125,4910]$  & 1  & undefined\\
+H neutral & 4  & 81    & 9   & $[1285,5689]$  & 1  & undefined\\
+D bare    & 4  & 3721  & 61  & $[1797,29261]$ & 7  & $1/7$\\
+D neutral & 8  & 3802  & 70  & $[1833,29305]$ & 7  & $1/7$\\
+T bare    & 8  & 22490 & 198 & $[2345,40357]$ & 10 & $1/10$\\
+T neutral & 16 & 22571 & 207 & $[2381,40401]$ & 10 & $1/10$\\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Exact law and local reference.} $n_r$ counts reference returns.
+One reference contact does not define a cadence interval. The other ratios
+are native local-window readouts; the differing windows and generic reference
+do not establish a common physical clock across preparations.}
+\label{tab:manual2-coupled-laws}
+\end{table}
+
+\paragraph{Specialization.}
+The bare/neutral contrasts hold isotope inventory, templates, law and round
+horizon fixed. Adding the electron changes the boundary, contacts and terminal
+window as well as the inventory. It adds one inner reclosure; the outer cuts
+change by $779$, $44$ and $44$ for H, D and T. These are effects of the stated
+preparation intervention, not an isolated physical electron-coupling effect.
+
+A second H-neutral round exercises feedback. Its 16 exact paths give
+$\mathbb{E}[J]=0$, $\mathbb{E}[C]=18$,
+$\mathbb{E}[k_o]=20593/2$ and $n_i=4$, with
+$\operatorname{Var}(J)=162$, $\operatorname{Var}(k_o)=301401/4$ and
+$\operatorname{Cov}(J,k_o)=4941/2$. The shared histories therefore cannot be
+replaced by independent current and timing marginals. The M3 finite-law map
+of \mainequation{eq:m3-finite-law} propagates the full joint distribution;
+direct path summation independently checks its covariance.
+
+Each of the seven finite domains also retains all 32 declared seed runs.
+Their maximum path-frequency discrepancies range from $1/32$ to $3/22$ and
+satisfy the predeclared finite-sample diagnostic in the protocol. This is a
+reproducible sampler check; a deterministic seed list does not itself acquire
+an independent-sampling confidence guarantee.
+
+For H neutral, four first-round histories reduce to two groups of two under
+the retained response, directional RCD, cut, round and per-wave return counts.
+Within each group, the complete joint law of the next reduced state and listed
+readouts agrees. Equal burden alone fails this comparison. The result covers
+one further step of this two-constituent law, not arbitrary future horizons
+or scale changes; the fine histories remain stored.
+
+A separate cancellation control begins with signed current zero and burden
+18. Its declared compatible-support cost retains 9 and exports the opposing
+9 through a certified route. Reserved, pending and arrived ownership remain
+distinct. The retained current becomes 9, changing the next orientation
+probabilities from $(1/2,1/2)$ to $(10/11,1/11)$. From the same cut and forced
+orientation, pacing changes from 70 to 79 and the next return from 14295 to
+14844. This diagnostic load/cost bridge demonstrates operative availability;
+it is not a nuclear loss law. A further native control starts at equal current
+zero with pressures 1 and 2: the same attention 1 produces currents 1 and
+$1/2$. Present net current alone is therefore insufficient state.
+
+The reference extension retains all 118 selected element identities as 236
+bare/neutral preparation slots. Its first tranche executes the six reference
+configurations at $Z=1,2,3$ under the same one-round law; 230 remain prepared
+for execution. This tranche overlaps the H/D/T pilots and is counted separately.
+The earlier 135 neutral configurations remain a distinct historical campaign.
+No slot count is a count of completed physical predictions.
+
+\paragraph{Calibration.}
+The native readouts are evaluated on each history before averaging or reporting.
+The M3 frozen diagnostic selects the internal proton/electron pair. Its proton
+reclosure count is 2: one formation recurrence and one newly executed recurrence.
+It reports a count with no SI conversion. A radiation frequency would require
+admitted transition endpoints, an emitted-phase map and a realized reference;
+a physical loss time additionally requires a justified closure-load/cost and
+daughter/channel map. The attempted constructions retain these missing
+operands alongside their independent native outputs.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.66\linewidth}@{}}
+\toprule
+Contribution & Present scope\\
+\midrule
+Configuration and arithmetic & Declared exact inputs and rational path arithmetic. Exact transcription supplies no physical error bound.\\
+Intrinsic branching & Complete joint finite laws, including shared current--timing covariance.\\
+Sampling & All declared runs and path-frequency discrepancies; finite-budget diagnostic only.\\
+Measured setup and environment & No applicable measured input distribution; physical state assignment and model discrepancy remain unresolved.\\
+Clock and observation & No physical cycle map or realized clock for these native readouts.\\
+External targets & Sourced values and their distinct uncertainty semantics retained; shared dependence is not replaced by independence.\\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Input and output error scope.} Conditional exact moments do not
+constitute a complete physical uncertainty budget. Unknown contributions are
+not numerical zeros.}
+\label{tab:manual2-coupled-uncertainty}
+\end{table}
+
+The retained ground-state target records are shown in
+Table~\ref{tab:manual2-coupled-targets}. D uses an adopted hydrogen reference;
+T is a subsequent evaluation with its recorded legacy-source caveat.
+Their joint covariance and distribution are not established by the transcribed
+records. Missing raw protocols limit those inferences without removing the
+measurements. Targets were already known and remain evaluation inputs.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{@{}lrl@{}}
+\toprule
+Target & Frequency (Hz) & Reported uncertainty (Hz)\\
+\midrule
+H~\cite{hellwig1970} & $1\,420\,405\,751.768$ & $0.002$, one standard deviation\\
+D~\cite{wineland1972} & $327\,384\,352.5222$ & $0.0017$, last-digit magnitude\\
+T~\cite{kramida2010} & $1\,516\,701\,470.775$ & $0.007$, evaluated standard uncertainty\\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Retained comparison inputs.} Unperturbed ground-state hyperfine
+separations. The T standard-uncertainty interpretation retains its legacy-source
+qualification; neither a joint probability law nor independent errors is supplied.}
+\label{tab:manual2-coupled-targets}
+\end{table}
+
+Electron-coupled atomic hyperfine is not applicable to the three bare
+preparations. For the neutral preparations its observation map is incomplete.
+Consequently no predicted Hz value, residual or joint standardized score is
+assigned. Shared nuclear and boundary questions remain available within their
+own domains. The earlier common-gain bridge failure in
+\secref{manual2:element-properties} retains its retrospective,
+model-specific interpretation.
+
+The retained NUBASE2020 rows mark H and D \texttt{stbl} and give T a half-life
+of $12.32$ years with reported $dT=0.02$ years (source lines 27--29)~\cite{isotopes-nubase2020}.
+The stability token is observational, not a measured infinite lifetime.
+These nuclide records supply neither a bare/neutral charge-state correspondence
+nor a Gaussian or coverage interpretation of $dT$.
+
+\paragraph{Falsification.}
+Removing the passive observer or resuming the authenticated full state and RNG
+after the first round leaves the trajectory and final RNG unchanged. A matched
+H-neutral path has outer cut 10571 with feedback and 9473 with feedback disabled,
+after a common first round; its respective path masses $5/44$ and $1/16$ forbid
+calling this fixed-path contrast an unconditional sampling effect. Relabelling
+constituent names preserves corresponding events and outputs.
+Target mutation must leave frozen native outputs unchanged. An altered window,
+current or population invalidates its cached observation.
+
+A ring adjacency or scalar cross term cannot supply the missing FRG gate,
+path/bin and value-map witness. An observed computational horizon is not
+physical stability, decay or survival censoring. These limits apply to the
+declared preparation, dynamics and readout conjunction; they neither suppress
+its exact native results nor convert implementation checks into empirical
+agreement.
+
+\aodprovenance{The versioned protocol, six histories, exact and sampled laws,
+controls and report are under \path{manual2/data/m1/coupled_preparations/}.
+The source-bound joint uncertainty, target comparisons, frozen diagnostic and
+236-slot matrix are under \path{manual2/data/m1/preparation_workflow/}.
+The corresponding generators and verifiers reproduce these scientific records;
+source bindings retain the old experiments separately.}

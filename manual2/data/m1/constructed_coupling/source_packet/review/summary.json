@@ -1,0 +1,218 @@
+{
+  "cases": [
+    {
+      "case": "baseline",
+      "closures_per_atomic_traversal": "4/127571",
+      "closures_per_reference_bip": "2/951",
+      "hi_inclusive": 4000000000,
+      "kind": "cumulative",
+      "lag_drift": -1898,
+      "lo_exclusive": 63037,
+      "load_contact_count": 3732,
+      "native_directional_comparison": [
+        {
+          "lag": "-1898",
+          "operative_RCD": 61,
+          "ratio": "2/951",
+          "receiver": "P",
+          "sender": "R"
+        },
+        {
+          "lag": "1898",
+          "operative_RCD": 34292,
+          "ratio": "951/2",
+          "receiver": "R",
+          "sender": "P"
+        }
+      ],
+      "new_parent_closures": 4,
+      "parent_atomic_traversals": 127571,
+      "parent_capacity": null,
+      "parent_loss": null,
+      "parent_return_cuts": [
+        972694984,
+        1945139969,
+        2917584954,
+        3890029939
+      ],
+      "parent_structural_RD": 31017,
+      "parent_window_load": 224657122,
+      "pending_currents": 0,
+      "phase_bias": "0",
+      "reference_bips": 1902,
+      "reference_structural_RD": 61,
+      "returned_clicks_all_channels": 11212,
+      "seconds": null,
+      "tick_emissions_all_channels": 11212,
+      "unwrapped_lag_end": -1898,
+      "unwrapped_lag_start": 0
+    },
+    {
+      "case": "add_346_to_parent",
+      "closures_per_atomic_traversal": "1/31789",
+      "closures_per_reference_bip": "2/951",
+      "hi_inclusive": 4000000000,
+      "kind": "cumulative",
+      "lag_drift": -1898,
+      "lo_exclusive": 63037,
+      "load_contact_count": 4419,
+      "native_directional_comparison": [
+        {
+          "lag": "-1898",
+          "operative_RCD": 61,
+          "ratio": "2/951",
+          "receiver": "P",
+          "sender": "R"
+        },
+        {
+          "lag": "1898",
+          "operative_RCD": 34301,
+          "ratio": "951/2",
+          "receiver": "R",
+          "sender": "P"
+        }
+      ],
+      "new_parent_closures": 4,
+      "parent_atomic_traversals": 127156,
+      "parent_capacity": null,
+      "parent_loss": null,
+      "parent_return_cuts": [
+        972694984,
+        1949235995,
+        2925930309,
+        3902624623
+      ],
+      "parent_structural_RD": 31017,
+      "parent_window_load": 278833758,
+      "pending_currents": 0,
+      "phase_bias": "0",
+      "reference_bips": 1902,
+      "reference_structural_RD": 61,
+      "returned_clicks_all_channels": 11899,
+      "seconds": null,
+      "tick_emissions_all_channels": 11899,
+      "unwrapped_lag_end": -1898,
+      "unwrapped_lag_start": 0
+    },
+    {
+      "case": "same_addition_feedback_disabled",
+      "closures_per_atomic_traversal": "4/127571",
+      "closures_per_reference_bip": "2/951",
+      "hi_inclusive": 4000000000,
+      "kind": "cumulative",
+      "lag_drift": -1898,
+      "lo_exclusive": 63037,
+      "load_contact_count": 4419,
+      "native_directional_comparison": [
+        {
+          "lag": "-1898",
+          "operative_RCD": 61,
+          "ratio": "2/951",
+          "receiver": "P",
+          "sender": "R"
+        },
+        {
+          "lag": "1898",
+          "operative_RCD": 34292,
+          "ratio": "951/2",
+          "receiver": "R",
+          "sender": "P"
+        }
+      ],
+      "new_parent_closures": 4,
+      "parent_atomic_traversals": 127571,
+      "parent_capacity": null,
+      "parent_loss": null,
+      "parent_return_cuts": [
+        972694984,
+        1945139969,
+        2917584954,
+        3890029939
+      ],
+      "parent_structural_RD": 31017,
+      "parent_window_load": 278830895,
+      "pending_currents": 0,
+      "phase_bias": "0",
+      "reference_bips": 1902,
+      "reference_structural_RD": 61,
+      "returned_clicks_all_channels": 11899,
+      "seconds": null,
+      "tick_emissions_all_channels": 11899,
+      "unwrapped_lag_end": -1898,
+      "unwrapped_lag_start": 0
+    },
+    {
+      "case": "one_fewer_346_constituent",
+      "closures_per_atomic_traversal": "4/128127",
+      "closures_per_reference_bip": "4/1909",
+      "hi_inclusive": 4000000000,
+      "kind": "cumulative",
+      "lag_drift": -1905,
+      "lo_exclusive": 62765,
+      "load_contact_count": 3747,
+      "native_directional_comparison": [
+        {
+          "lag": "-1905",
+          "operative_RCD": 61,
+          "ratio": "4/1909",
+          "receiver": "P",
+          "sender": "R"
+        },
+        {
+          "lag": "1905",
+          "operative_RCD": 34141,
+          "ratio": "1909/4",
+          "receiver": "R",
+          "sender": "P"
+        }
+      ],
+      "new_parent_closures": 4,
+      "parent_atomic_traversals": 128127,
+      "parent_capacity": null,
+      "parent_loss": null,
+      "parent_return_cuts": [
+        964231296,
+        1928212593,
+        2892193890,
+        3856175187
+      ],
+      "parent_structural_RD": 30881,
+      "parent_window_load": 226466451,
+      "pending_currents": 0,
+      "phase_bias": "0",
+      "reference_bips": 1909,
+      "reference_structural_RD": 61,
+      "returned_clicks_all_channels": 11257,
+      "seconds": null,
+      "tick_emissions_all_channels": 11257,
+      "unwrapped_lag_end": -1905,
+      "unwrapped_lag_start": 0
+    }
+  ],
+  "first_parent_action_difference": {
+    "added_feedback": {
+      "cut": 1007809362,
+      "edge_index": 1120,
+      "field": "P",
+      "from": 7,
+      "kind": "edge",
+      "occurrence": 3,
+      "pressure_binding": "4c78946215b8b992bcaeed94f6b15e8aa3c1c0011ac613af6efca7d423b84e1f",
+      "pressure_used": 31489,
+      "to": 6
+    },
+    "baseline": {
+      "cut": 1007809225,
+      "edge_index": 1120,
+      "field": "P",
+      "from": 7,
+      "kind": "edge",
+      "occurrence": 3,
+      "pressure_binding": "fe02d0951343fbd41401abf2c553cb664ddb49a9668acc7a0fd02c39e5730106",
+      "pressure_used": 31352,
+      "to": 6
+    }
+  },
+  "matched_controls_pass": true,
+  "retention_identified": false
+}

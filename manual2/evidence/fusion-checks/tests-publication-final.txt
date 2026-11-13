@@ -1,0 +1,17 @@
+test_actual_broken_semantic_destination_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_actual_broken_semantic_destination_rejected) ... ok
+test_changed_main_source_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_changed_main_source_rejected) ... ok
+test_corrupted_pdf_rejected_without_repair (manual2.tests.test_matter1_publication.PublicationTests.test_corrupted_pdf_rejected_without_repair) ... ok
+test_current_publication_and_final_figure (manual2.tests.test_matter1_publication.PublicationTests.test_current_publication_and_final_figure) ... ok
+test_forged_publication_page_count_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_forged_publication_page_count_rejected) ... ok
+test_missing_main_aux_rejected_without_repair (manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_aux_rejected_without_repair) ... ok
+test_missing_main_receipt_artifact_entry_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_missing_main_receipt_artifact_entry_rejected) ... ok
+test_missing_publication_artifact_receipt_entry_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_missing_publication_artifact_receipt_entry_rejected) ... ok
+test_missing_semantic_link_rejected_when_other_links_remain (manual2.tests.test_matter1_publication.PublicationTests.test_missing_semantic_link_rejected_when_other_links_remain) ... ok
+test_stale_main_receipt_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_stale_main_receipt_rejected) ... ok
+test_stale_publication_foundation_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_stale_publication_foundation_rejected) ... ok
+test_wrong_published_pdf_target_rejected (manual2.tests.test_matter1_publication.PublicationTests.test_wrong_published_pdf_target_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 5.690s
+
+OK

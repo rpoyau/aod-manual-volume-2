@@ -1,0 +1,15 @@
+{
+  "baseline_numeric_comparisons": 3024,
+  "elements": 118,
+  "historical_request_head": "34843ea6f40b07c68f61cdc9427ecaa29864c6bc",
+  "historical_request_tree": "cb88126f228f070e1f8598bcc1924a9d69811a73",
+  "preserved_files": 85,
+  "r24_declaration_joins": 118,
+  "scope": "Byte conservation against the request base and existing exact/historical ledger checks; no live remote, native or physical claim.",
+  "slots": 126,
+  "source_unchanged": true,
+  "status": "PASS_CONSERVATION",
+  "tracked_skill_entry_points": 5,
+  "tracked_skill_files": 11,
+  "v94_placement_field_comparisons": 708
+}

@@ -1,0 +1,488 @@
+\section{Isotope Half-Lives and a Common Survival Experiment}
+\label{manual2:isotope-survival}
+
+\aodnoteblock{Record classes and data}{Finite evaluated half-lives and individual
+detector intervals are measured target records, with state, quantity, source
+and uncertainty preserved. Stability qualifications, unknown values, unobserved
+declarations and rejected candidates retain their distinct inventory records.
+Nucleon grouping is exact bookkeeping. The survival,
+constructed-coupling and retained-return applications are separately declared
+models, each with its own history, coupling, capacity and report coordinate.
+An O0 physical comparison requires a common observation map; a half-life table
+alone does not supply the model's state-dependent loss rule.}
+
+\subsection{Source records and nucleon bookkeeping}
+\paragraph{Setup.}
+The element reference remains the 118 placements and 126 slots of \secref{sec:coord0-enclosures}.
+A separate isotope layer joins by atomic number and symbol. It retains the nuclear-state
+assignment, selected evaluation, original notation, asymmetric uncertainty, decay channels
+and experimental overlap. Total half-life, channel-partial half-life and an individual
+waiting time are distinct quantities. Observational stability supplies no measured infinity.
+
+\paragraph{Derivation.}
+For the formal grouping of a record with proton count \(Z\), neutron count \(N=A-Z\), define
+\begin{equation}
+q=\min(\lfloor Z/2\rfloor,\lfloor N/2\rfloor),\quad
+r_p=Z-2q,\quad r_n=N-2q,\qquad A=4q+r_p+r_n.
+\label{eq:manual2-isotope-grouping}
+\end{equation}
+These are exact integer coordinates. Identifying a group with a physical alpha cluster
+requires an additional construction. The bookkeeping alone supplies neither a loss
+probability nor a half-life.
+
+\paragraph{Specialization.}
+Tables~\ref{tab:isotope-anchors}--\ref{tab:isotope-superheavy} keep the printed reference
+compact. The companion retains the broader family records, source-specific updates and
+uncertainty qualifications. H-1 and Cs-133 retain their recurrence roles. Fe-56 is the
+selected binding benchmark; the Ni-62 digital control prevents calling Fe-56 the maximum
+binding energy per nucleon. Pb-208 remains observationally stable, with its experimental
+alpha-channel limit stored separately from total lifetime.
+
+\input{sections/generated_isotope_anchors.tex}
+\input{sections/generated_isotope_benchmarks.tex}
+\input{sections/generated_isotope_superheavy.tex}
+\input{sections/generated_isotope_chains.tex}
+
+\paragraph{Calibration.}
+Evaluated half-lives retain their source units and explicit conversion to seconds.
+Newer experimental analyses remain distinct from the adopted evaluation; overlapping
+events are not averaged as independent data. Fl-298 has no measured half-life and receives
+no empirical score. The progression Fl-289, Og-294, Fl-298 is a comparison set, not a decay
+chain. The sourced alpha edges in Fig.~\ref{fig:isotope-chains} obey \(\Delta Z=-2\),
+\(\Delta A=-4\); spontaneous fission does not acquire an invented unique daughter.
+
+\paragraph{Falsification.}
+Source, state, quantity and status mutations must fail without rewriting inputs.
+The logarithmic half-life display names the selected isotope and gives limits, stability,
+unknown records and uncovered elements nonnumeric treatments. It does not reinterpret
+the structural-role colors or an arbitrary \(A\) arithmetic input as measured stability.
+
+\aodprovenance{\path{manual2/data/m1/isotopes/} binds the source bytes, selected records,
+updates and generated tables. The original element ledger and historical numeric records
+remain unchanged.}
+\aodliteraturenote{Evaluated isotope data: ENSDF~\cite{isotopes-ensdf}; evaluation cross-check:
+NUBASE2020~\cite{isotopes-nubase2020}; binding control: AME2020~\cite{isotopes-ame2020}.}
+
+\subsection{Selected implantation-to-decay records}
+\label{manual2:lv-event-records}
+\paragraph{Setup.}
+The two selected Lv-290 chains in the retained Gates et al. source begin at
+implantation in the detector. Their first decay intervals are
+\(5.66\,\mathrm{ms}\) and \(17.3\,\mathrm{ms}\), respectively. Their isotope
+assignment, transport and event-selection context remain attached to each record.
+
+\paragraph{Derivation.}
+Exact conversion of the printed intervals gives \(283/50{,}000\,\mathrm{s}\)
+and \(173/10{,}000\,\mathrm{s}\). These individual observed delays are
+distinct from formation time and ensemble half-life. The reported digitizer
+capability of up to \(125\,\mathrm{MS/s}\) does not specify the actual timestamp
+resolution or its calibration; those inputs remain missing from a complete
+timing comparison.
+
+\aodprovenance{The event records in \path{manual2/data/m1/m3_metrology/} bind
+the retained source under \path{manual2/data/m1/isotopes/sources/}; the adopted
+half-life catalog remains separate.}
+\aodliteraturenote{The two chains and detector acquisition: Gates et al.,
+Fig.~2 and experimental description~\cite{gates-lv-2024}.}
+
+\subsection{A state-dependent finite law}
+\label{manual2:survival-law}
+\paragraph{Setup.}
+This model's data card names the two square paths, complete choice histories,
+reference returns, kernel weights and capacity rule. The report coordinate is
+survival over reference-return counts, with exact finite-law probabilities;
+the comparator is the declared retained/loss predicate. It uses no measured
+half-life as a kernel or capacity input.
+The third application model instantiates the conditional H1 kernel of
+\mainequation{eq:admitted-kernel}, paired orientation response of
+\mainequation{eq:sadar-orientation-antisymmetry}, and excess construction of
+\mainequation{eq:shedding-excess}. Main does not select a nuclear state, its kernel weights
+or a physical loss observation for this example. Within the declared finite scope, the
+application fixes two retained square paths
+\begin{align}
+\gamma_+&=(0000,1000,1001,0001,0000),\\
+\gamma_-&=(0000,0100,0101,0001,0000).
+\label{eq:manual2-survival-paths}
+\end{align}
+Their vertices have one injective Q4 encoding. At \(0000\), the incoming ancestor slot
+is \(0001\); the three continuations are \(1000,0100,0010\). The third exits through
+\(0010\), then takes \(1010\) or \(0110\). These last routes carry hypothetical alpha
+and fission labels, each with declared conditional weight one. Their nuclear identification
+is not established.
+
+A separate reference lineage repeats \(\gamma_+\). Both lineages begin with two distinct
+retained-start witnesses. One step of the survival experiment completes a new reference
+return, binds the already committed candidate prefix, normalizes the kernel, executes the
+selected path and commits the response for the next contact. Four H1 traversals and the
+retained start witness the finite square return; passing this predicate does not establish
+native motif admission. The structural hinge is retained. No universal seconds per
+traversal or scheduler cut are assigned.
+
+\paragraph{Derivation.}
+Let \(h\) be a particular retained choice history, with signed committed memory \(R_h\),
+common capacity \(C\ge0\), and common positive loss gain \(\lambda\). The declared
+specialization is
+\begin{align}
+X_h&=\max(0,|R_h|-C),&
+(w_+,w_-,w_{\rm exit})&=(1,1,\lambda X_h),\\
+P_+(h)=P_-(h)&=\frac{1}{2+\lambda X_h},&
+P_{\rm exit}(h)&=\frac{\lambda X_h}{2+\lambda X_h},\label{eq:manual2-survival-kernel}\\
+R_{h\sigma}&=R_h+\sigma,&\sigma&\in\{-1,+1\}.
+\end{align}
+The last update retains the oriented response pair \((\sigma,-\sigma)\). Its unit
+magnitude specializes declared pressure \(2\) and signed lag magnitude \(1/2\);
+neither is an isotope-derived support accessor or a lag inferred from measured decay.
+This is the explicit application premise between the source response form and the
+weight law. Zero exit weight leaves the exit structurally admitted and unrealized.
+
+For exact history mass \(\mu_h\), multiplication by the probabilities in
+\eqnref{eq:manual2-survival-kernel} supplies the child masses. Absorbed histories retain
+their completed return IDs and inner scope map. They have no later candidate return.
+Distinct prefixes remain distinct even if their numerical memories agree. Summing only
+retained histories after reference return \(c\) gives
+\begin{equation}
+S(c)=\Pr(C_{\rm loss}>c)=\sum_{h\ \mathrm{retained\ after}\ c}\mu_h,
+\qquad
+c_{1/2}=\min\{c:S(c)\le\tfrac12\}.
+\label{eq:manual2-survival-median}
+\end{equation}
+Thus \(c_{1/2}\) is the first discrete crossing. The recorded crossing interval
+\((c_{1/2}-1,c_{1/2}]\) makes no within-cycle interpolation. If no crossing occurs by
+the horizon, the result is a censored lower bound. A single loss event is not this
+ensemble median.
+
+\paragraph{Specialization.}
+With \(R_\varnothing=0,C=1,\lambda=1\), exact propagation gives
+\begin{equation}
+\bigl(S(0),\ldots,S(8)\bigr)=
+\left(1,1,1,\frac56,\frac34,\frac35,\frac{19}{36},
+\frac{703}{1680},\frac{211}{576}\right).
+\label{eq:manual2-survival-results}
+\end{equation}
+The median crosses in \((6,7]\) reference returns. Each run expands 255 retained
+prefixes without merging. Doubling the common loss gain gives \((4,5]\); setting
+the common capacity to zero gives \((2,3]\). Disabling new response commits at return
+2 leaves \(S(c)=1\) through return 8. Its survival agrees with the baseline through
+return 2 and first differs at return 3: \(1\) versus \(5/6\). This controlled change
+therefore affects subsequent loss rather than merely annotating a precomputed trace.
+
+The finite law is evaluated with the exact M3 mapping implementation and
+\mainequation{eq:m3-finite-law}. For the retained indicator at return 8, its expectation
+is \(211/576\) and its variance is \((211/576)(365/576)\). This ensemble spread is
+distinct from uncertainty about the nuclear model or the experimental calibration.
+
+\paragraph{Calibration.}
+No isotope-specific hazard or capacity is fitted. Within this model, every isotope label selects
+the same surrogate configuration; \eqnref{eq:manual2-isotope-grouping} does not change
+its law. A physical elapsed-time report would require an observation map taking reference
+returns to observed oscillator cycles. For example, the hypothetical constant gain
+\(g>0\) would give \(T=gc/\Delta\nu_{\rm Cs}\), with
+\(\Delta\nu_{\rm Cs}=9\,192\,631\,770\,\mathrm{Hz}\). The unselected gains \(g=1,2\)
+give different times while preserving all native histories and the same SI definition.
+The defining frequency alone therefore cannot select a decay-time prediction. Realization,
+model discrepancy and covariance remain unresolved rather than numerical zeros.
+
+\paragraph{Falsification.}
+The exact tests reject probability leakage, coordinate aliases, lost lineage, a forged
+return, nonantisymmetric response, later survival disconnected from feedback, and status
+promotion. The target-free prediction runs without the isotope catalog. The comparison
+replays that complete prediction before consuming validated source records. A changed
+target or a self-consistent replacement hash cannot rewrite the frozen prediction.
+
+\aodprovenance{\path{manual2/data/m1/survival/} records the common model contract, four
+exact runs, prediction, comparison and unresolved construction obligations. The earlier
+finite folding and stateful fixtures remain separate. The observation-gain dependency
+instantiates \mainsection{prop:m3-atomic-gain}. The model identity is
+\path{m1:finite-history-retention-survival:v3}.}
+\aodliteraturenote{SI reference definition: BIPM~\cite{bipm-second}.}
+
+\subsection{A measured test of the restricted specialization}
+\paragraph{Setup.}
+Equal surrogate states with a common observation and clock map imply identical survival
+distributions and a half-life ratio of one. This restricted consequence is testable even
+though the isotope-to-native-state construction is incomplete. The selected adopted
+records were exposed before this calculation; this is a retrospective comparison.
+
+\paragraph{Derivation.}
+Using numerator and denominator source uncertainty envelopes without treating them as
+independent Gaussian inputs yields
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Half-life ratio & Adopted central ratio & Source-envelope ratio range\\
+\midrule
+Og-294 / Lv-290 & \(29/415\) & \([2/59,51/320]\)\\
+Lv-290 / Fl-286 & \(1/20\) & \([16/515,59/695]\)\\
+Lv-293 / Fl-289 & \(19/480\) & \([17/800,79/950]\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+All three ranges exclude one. These are descriptive enclosures constructed from the
+reported uncertainties, not a joint confidence statement or significance score.
+
+\paragraph{Specialization.}
+The identity-insensitive, shared-clock specialization disagrees with these reported
+envelopes. A successful common law must therefore distinguish the isotope configurations
+or their justified observation relations. The measurements do not select a replacement
+law. This result does not falsify the general AOD construction or establish a native
+nuclear prediction. The next obligations are an admitted isotope/state configuration,
+an independently justified state-to-loss law, the reference observation map and a complete
+physical uncertainty model. Fl-298 remains an unscored target.
+
+\paragraph{Calibration.}
+A separate conventional benchmark imports each adopted \(T_{1/2}\) and defines
+\(S(t)=\exp(-\lambda_{\rm exp}t)\),
+\(\lambda_{\rm exp}=\ln2/T_{1/2}\). Its mean lifetime is
+\(T_{1/2}/\ln2\), not \(T_{1/2}\). Reproducing survival \(1/2\) at an imported
+half-life checks the conventional calculation; it does not predict that half-life.
+The native finite law in \eqnref{eq:manual2-survival-kernel} is not assumed exponential.
+
+\paragraph{Falsification.}
+A physical isotope prediction must fix its state construction and observation law before
+joining the evaluation target. Independent prediction additionally requires an exposure
+design beyond these already known records. Source-specific revisions remain separately
+bound comparisons, and no unobserved lifetime can be counted as agreement.
+
+\aodprovenance{The separate \path{prediction.json} and \path{comparison.json} bind their
+complete inputs and exact outputs. Tests SURV-01--19 state their finite assertion scope;
+passing them does not certify nuclear admission.}
+
+\subsection{Constructed-field cadence}
+\label{manual2:constructed-coupling}
+\paragraph{Setup.}
+The R02 constructed-coupling law assigns 118 distinct \(3{:}3{:}6\) and
+176 distinct \(3{:}4{:}6\) constituent formation waves to an Og-294 candidate.
+Their scope maps bind the inner certificates to an outer construction with
+15,508 outward occurrences and structural \(RD=31{,}017\). The 294 inner
+formation histories remain fixed while five aggregate fields evolve: parent,
+reference and three coupled backgrounds. This is a declared aggregate reduction;
+the constituent assignment does not establish a nuclear configuration.
+The third background is present in every case; the feedback intervention changes
+its influence on the parent.
+
+\paragraph{Derivation.}
+Each new outer reclosure emits a contact with its committed prefix. The common
+sequencer sets the next action interval to the field's structural RD plus its
+incoming last-two-contact RCD durations; after completion, the next start follows
+one cut later. Forward and reverse reflection histories
+retain their direction, lag and contact operands. The resulting counts are
+\begin{table}[H]
+\centering\small
+\caption{Constructed coupling to cut \(4\times10^9\), counted after each
+case's parent formation.}
+\label{tab:manual2-constructed-cadence}
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+Case & New parent reclosures & Reference bips & Ratio\\
+\midrule
+Baseline & 4 & 1902 & \(2/951\)\\
+Added \(3{:}4{:}6\) feedback & 4 & 1902 & \(2/951\)\\
+Same contact, feedback disabled & 4 & 1902 & \(2/951\)\\
+One fewer \(3{:}4{:}6\) constituent & 4 & 1909 & \(4/1909\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+Added feedback changes later return timings despite the equal final ratio.
+The baseline ratios in successive disjoint windows are
+\(1/513,1/489,1/461,1/439\). Its horizon record has 127,571 parent H1
+traversals, including 3,507 in an unfinished return, four structural hinges and
+zero extra dwells. The channels record 11,212 ticks and 11,212 clicks.
+A label change alone leaves the trajectory unchanged.
+
+\paragraph{Specialization.}
+The baseline nonnegative load over the full window is \(224{,}657{,}122\).
+The same committed operands give signed diagnostic \(-224{,}657{,}122\).
+The sum specializes \mainequation{eq:temporal-sadar-burden}; capacity remains
+unassigned.
+For that fixed load, the unselected capacities \(112{,}328{,}561\),
+\(224{,}657{,}122\) and \(224{,}657{,}123\) give respective excesses
+\(112{,}328{,}561,0,0\) under \mainequation{eq:closure-residual} and
+\mainequation{eq:shedding-excess}. Neither the load nor ordinary emitted current
+selects a parent-loss event or a survival distribution.
+
+\aodprovenance{The law \path{matter1:constructed-coupling-r02:v1} and
+\path{manual2/data/m1/constructed_coupling/} retain the formation, scope maps,
+directed contacts and window records. Recurrence uses
+\mainequation{eq:wave-update-trace}, \mainequation{eq:coupling-trace} and
+\mainequation{eq:cadence-ratio}.}
+
+\subsection{Witnessed response, burden and retention}
+\label{manual2:witnessed-retention}
+\paragraph{Setup.}
+The separate R03 law prepares four candidate square returns, two reference
+returns, three background \(3{:}4{:}6\) returns and two outer-parent formation
+returns. The parent folds the evolving candidate wave; reference and background
+remain external. Each round completes the reference and background comparisons,
+decides from prior committed responses, then executes a candidate return or an
+open exit. An accepted return commits the response for a later decision.
+The raw normalization unit is \(u=5\), the reference cross-return's structural
+RD. Raw closure capacity is \(C^{\mathrm{close}}=5\), hence diagnostic capacity
+one. These choices belong to R03.
+
+\paragraph{Derivation.}
+With \(C_{3,e}=1\), active committed contributions \(e\in A_h\) supply
+\begin{equation}
+R_h=\sum_{e\in A_h}\rho^D_{\omega,e}\Lambda_e i_e,
+\qquad
+B_h=\sum_{e\in A_h}\rho^D_{\omega,e}|\Lambda_e|.
+\label{eq:manual2-witnessed-response-burden}
+\end{equation}
+The lag comes from certified return counts; orientation comes from the candidate
+return witness. Signed cancellation leaves the burden contributions present.
+The common conditional weight formula is
+\begin{equation}
+X(L)=\frac{\max(0,L-5)}5,\qquad
+(w_+,w_-,w_{\mathrm{exit}})=(1,1,X(L)),\qquad
+P_{\mathrm{exit}}=\frac{X(L)}{2+X(L)}.
+\label{eq:manual2-witnessed-retention-kernel}
+\end{equation}
+The net-memory control uses \(L=|R_h|\); the burden model uses \(L=B_h\).
+The reference contributes raw pressure 5 and lag 1. The constructed background
+has \(RD=68+1+68=137\) and baseline lag zero.
+
+\begin{table}[H]
+\centering\small
+\caption{Two-return prefixes, each with probability \(1/4\). Exit probabilities
+apply at the subsequent decision.}
+\label{tab:manual2-witnessed-response}
+\begin{tabular}{@{}lrrrrcc@{}}
+\toprule
+Prefix & \(R_h\) & \(B_h\) & \(R_h/u\) & \(B_h/u\) & Net exit & Burden exit\\
+\midrule
+\(++\) & 10 & 10 & 2 & 2 & \(1/3\) & \(1/3\)\\
+\(+-\) & 0 & 10 & 0 & 2 & 0 & \(1/3\)\\
+\(-+\) & 0 & 10 & 0 & 2 & 0 & \(1/3\)\\
+\(--\) & \(-10\) & 10 & \(-2\) & 2 & \(1/3\) & \(1/3\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Specialization.}
+Exact path probabilities give the retained masses in
+\tabref{tab:manual2-witnessed-survival}. Gating feedback preserves its response
+history while disabling its use. Restricting active membership to the latest
+response group records the earlier group's exclusion; the duration-participation
+window remains fixed. Neither operation erases a contribution. A relief of a
+fixed retained group would require its own recorded rebalancing operation.
+\begin{table}[H]
+\centering\small
+\caption{R03 survival after three new reference returns.}
+\label{tab:manual2-witnessed-survival}
+\begin{tabular}{@{}lc@{}}
+\toprule
+Case & \(S(3)\)\\
+\midrule
+Net memory & \(5/6\)\\
+Nonnegative burden & \(2/3\)\\
+Burden input gated after response 2 & 1\\
+Only latest response group participates & 1\\
+Second new \(3{:}4{:}6\) return held pending & \(5/76\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+Holding the background return pending after its first H1 edge changes its lag
+to one. The second
+response carries raw burden \(5+137=142\); total burden 147 gives next-exit
+probability \(71/76\). This is a finite intervention under the same capacity
+rule. Its median loss count crosses in \((2,3]\); the other four cases have
+no median crossing by the horizon.
+
+An absorbed third-round history retains two new parent reclosures over three
+reference bips, two new candidate reclosures, eight candidate H1 traversals and
+ten outer H1 traversals. The last two outer edges form an open exit, not another
+return. The absorbed burden case has two candidate hinges, three outer hinges
+including the exit turn, zero optional dwells, six channel ticks and six clicks;
+the reference completes twelve H1 traversals. The loss witness exposes the
+complete evolving inner lineage. Surviving
+histories are censored at three reference returns. Individual loss count,
+ensemble median, current emission and physical half-life remain distinct.
+
+\paragraph{Falsification.}
+The first four cases share the committed prefix before the third decision.
+Reversing all current orientations reverses signed response and preserves
+burden. A separate reflection control gives forward duration 5 and reverse
+duration 7. Passive observation leaves the evolution unchanged; a future response
+cannot alter an earlier decision. These controls distinguish retained history,
+active participation and directional reflection.
+
+The observation interface retains the complete prepared population, directed
+contacts, committed prefixes, pending returns and prior comparison. Its selected
+window projects two candidate reclosures and three reference reclosures from
+that history; the projection does not replace the evolving state. With the
+declared gain of one cycle per reclosure, the conditional frequency is
+\(6\,128\,421\,180\,\mathrm{Hz}\). Replaying the original inputs checks the
+complete report. Physical cycle calibration remains a separate premise, as in
+\secref{manual2:m3-metrology}.
+
+\aodprovenance{The law \path{m1:witnessed-retention:r03:integration-v1} and
+\path{manual2/data/m1/witnessed_retention/} bind the complete histories and
+terminal counts. The burden, residual and excess specialize
+\mainequation{eq:temporal-sadar-burden}, \mainequation{eq:closure-residual} and
+\mainequation{eq:shedding-excess}; their use at a later decision follows
+\mainequation{eq:causal-update}.}
+
+\subsection{Two configurations under one common law}
+\label{manual2:paired-configurations}
+\paragraph{Setup.}
+The paired construction selects Fl-286 and Fl-289 ground-state labels externally,
+with Og-294 as a larger control. Preparation fixes distinct two-return constituent
+seeds, their ordering, outer fold and common reference/background seeds. Each
+candidate retains its constituent witnesses, assembly maps and directed aggregate
+couplings. Physical preparation and internal nuclear couplings are unspecified.
+
+\paragraph{Derivation.}
+The declared \(3{:}3{:}6\) proton-facing and \(3{:}4{:}6\) neutron-facing
+inventories give
+\begin{table}[H]
+\centering\small
+\caption{Support of the three explicitly constructed aggregate candidates.}
+\label{tab:manual2-paired-constructions}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Candidate & \(3{:}3{:}6\) waves & \(3{:}4{:}6\) waves & Outward occurrences & RD\\
+\midrule
+Fl-286 & 114 & 172 & 15116 & 30233\\
+Fl-289 & 114 & 175 & 15320 & 30641\\
+Og-294 & 118 & 176 & 15508 & 31017\\
+\bottomrule
+\end{tabular}
+\end{table}
+The common R02 update and contact laws act on the five aggregate fields;
+the constituent formation histories remain fixed. No isotope-specific capacity,
+hazard or lifetime multiplier enters this construction.
+Counting after formation cuts \(61469\), \(62285\) and \(63037\), respectively,
+to the common cut \(4\times10^9\) gives parent/reference counts
+\(4/1940=1/485\) for Fl-286, \(4/1920=1/480\) for Fl-289 and
+\(4/1902=2/951\) for Og-294. Each parent completes four reclosures;
+their return cuts and reference exposures differ.
+
+\paragraph{Specialization.}
+A combined R02--R03 model requires an explicit map of states, retained scopes,
+event order, active contribution groups, normalization, capacity, reference
+exposure and the loss/exposure operation. R02's reference has structural RD 61;
+R03's square cross-return has RD 5. The latter's raw capacity 5 is a choice of
+that protocol. It does not supply a nuclear aggregate capacity. A positive
+burden or surplus alone supplies no loss predicate.
+
+The adapter assessment binds each constructed state, directed contact history
+and reference exposure. It leaves the normalization, capacity and loss map
+unselected. Thus the count-domain comparison is reproducible while the
+combined retention law remains undetermined.
+
+The isotope/state identification, physical update and retention law,
+experimental loss and elapsed-time map, and dependence-aware uncertainty remain
+unspecified. Fl-298 remains unscored. The previously exposed Fl measurements
+can support a retrospective comparison once those premises are supplied.
+
+\paragraph{Falsification.}
+Relabelling the Fl-286 construction as Og-294 leaves its identity, actions,
+packets and return history unchanged through cut \(1{,}100{,}000\).
+Adding three neutron-facing constituents between the paired preparations
+changes the parent identity and scope map under the same law. A label change and
+a configuration change therefore have distinct witnessed effects.
+
+\aodprovenance{\path{matter1:paired-aggregate-configurations:v1} binds the common
+law and separate preparations under \path{manual2/data/m1/constructed_coupling/}.
+\path{manual2/data/m1/retention_adapter/} records their adapter assessment;
+\path{manual2/data/m1/m3_observation/} binds the R03 observation report.
+The R02 and R03 examples retain their separate law identities.}

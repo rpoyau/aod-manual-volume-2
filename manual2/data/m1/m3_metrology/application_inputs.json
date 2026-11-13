@@ -1,0 +1,48 @@
+{
+  "deferred_isotopes": [
+    "H-2",
+    "H-3"
+  ],
+  "livermorium": {
+    "detector": "SHREC implantation detector; CAEN VX2740 digitizers",
+    "digitizer_limit": "Paper states up to 125 MS/s; actual timestamp resolution is not supplied.",
+    "events": [
+      {
+        "event": "first escape-like alpha assigned to Lv-290",
+        "id": "gates2024:Lv290:chain1:first_decay",
+        "interval": "5.66",
+        "locator": "Figure 2(b) and accompanying first-chain discussion",
+        "pixel": [
+          160,
+          36
+        ],
+        "text_witness": "EVR-like event followed 5.66 ms later by a 0.60(1)-MeV"
+      },
+      {
+        "event": "first full-energy alpha assigned to Lv-290",
+        "id": "gates2024:Lv290:chain2:first_decay",
+        "interval": "17.3",
+        "locator": "Figure 2(c) and accompanying second-chain discussion",
+        "pixel": [
+          94,
+          24
+        ],
+        "text_witness": "MeV EVR followed 17.3 ms later by a recoil-corrected"
+      }
+    ],
+    "origin": "implantation",
+    "selection": "Both published Lv-290 chains in Gates et al. 2024 Figure 2, without selecting by agreement with a model.",
+    "selection_conditions": "EVR 10<E<30 MeV, at least one full-energy alpha and subsequent spontaneous fission in the same pixel within one second of implantation.",
+    "source_files": {
+      "manual2/data/m1/isotopes/sources/gates2024.pdf": "d6094d1fb197893edcca12822dc18d6561da178d37c585a35b30e14aa26a86a9",
+      "manual2/data/m1/isotopes/sources/gates2024.txt": "10e0b8becd7221474700abf6d97ebdeb4db127c5c618b1e687124be7d4a76bde"
+    },
+    "source_id": "gates2024",
+    "timestamp_calibration": null,
+    "timestamp_resolution": null,
+    "timing_uncertainty": null,
+    "transport": "Evaporation residues selected by Berkeley Gas-filled Separator before implantation. Formation time is not the recorded origin.",
+    "unit": "ms"
+  },
+  "schema": "matter1.m3-metrology-application-inputs.v1"
+}

@@ -1,0 +1,221 @@
+#!/usr/bin/env python3
+"""Generate into a disposable directory; compare without replacing source outputs."""
+from __future__ import annotations
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+
+
+EXPECTED_OUTPUTS = {
+    'data/m1/isotopes/catalog.json',
+    'data/m1/isotopes/verification.json',
+    'data/m1/survival/prediction.json',
+    'data/m1/survival/comparison.json',
+    'data/m1/survival/survival_report.json',
+    'data/m1/bipm/bipm_precision_report.json',
+    'data/m1/stateful/baseline_scenario.json',
+    'data/m1/stateful/early_loss_scenario.json',
+    'data/m1/stateful/baseline_trace.json',
+    'data/m1/stateful/early_loss_trace.json',
+    'data/m1/stateful/stateful_report.json',
+    'data/m1/metrology/metrology_inputs.json',
+    'data/m1/metrology/metrology_report.json',
+    'data/m1/bipm/bipm_report.json',
+    'data/m1/atomic/prediction.json',
+    'data/m1/atomic/comparison.json',
+    'data/m1/atomic/benchmark.json',
+    'data/m1/atomic/obligations.json',
+    'data/m1/atomic/atomic_report.json',
+    'data/m1/folding/event_ledger.json',
+    'data/m1/folding/folding_report.json',
+    'data/m1/folding/temporal_trace.json',
+    'data/m1/folding/temporal_report.json',
+    'data/m1/hyperfine/hyperfine_report.json',
+    'data/m1/history/declaration_crosswalk.csv',
+    'data/m1/history/observable_coverage.csv',
+    'data/m1/history/value_map_status.csv',
+    'data/m1/matter1_audit_report.json',
+    'data/m1/matter1_coord0_enclosure_summary.csv',
+    'data/m1/matter1_elements_1_118_ledger.csv',
+    'data/matter1_audit_report.json',
+    'data/matter1_coord0_enclosure_summary.csv',
+    'data/matter1_elements_1_118_ledger.csv',
+    'figures/aod_matter1_wheel_accessible.pdf',
+    'figures/aod_matter1_wheel_accessible.svg',
+    'figures/matter1_figure_manifest.json',
+    'sections/generated_elements_longtable.tex',
+    'sections/generated_isotope_anchors.tex',
+    'sections/generated_isotope_benchmarks.tex',
+    'sections/generated_isotope_superheavy.tex',
+    'sections/generated_isotope_chains.tex',
+    'visuals/matter1-layout.json',
+    'visuals/matter1-reference.html',
+    'data/m1/constructed_coupling/constructed_report.json',
+    'data/m1/witnessed_retention/prediction.json',
+    'data/m1/witnessed_retention/survival.csv',
+    'data/m1/witnessed_retention/two_history_comparison.csv',
+    'data/m1/witnessed_retention/terminal_counts.csv',
+    'data/m1/witnessed_retention/finite_kernels.json',
+    'data/m1/witnessed_retention/sha256.json',
+    'data/m1/retention_adapter/assessment.json',
+    'data/m1/retention_adapter/sha256.json',
+    'data/m1/m3_observation/observation_report.json',
+    'data/m1/m3_metrology/prediction.json',
+    'data/m1/m3_metrology/comparison.json',
+    'data/m1/m3_metrology/metrology_report.json',
+}
+EXPECTED_OUTPUTS.update(
+    f'data/m1/constructed_coupling/{case}/{name}'
+    for case in (
+        'r02/baseline', 'r02/add_346_to_parent',
+        'r02/same_addition_feedback_disabled', 'r02/one_fewer_346_constituent',
+        'configurations/Fl-286', 'configurations/Fl-289',
+    )
+    for name in (
+        'checks.json', 'constructed_state.json', 'closures.csv',
+        'windowed_relations.csv', 'directional_rd_rcd.csv',
+        'atomic_and_hinge_events.jsonl.gz', 'tick_events.jsonl.gz',
+        'click_and_rcd_events.jsonl.gz', 'pressure_events.jsonl.gz',
+        'nonnegative_load_terms.jsonl.gz', 'outer_return_witnesses.jsonl.gz',
+        'terminal_survival.csv', 'prediction.json', 'input_context.json',
+        'application_binding.json',
+    )
+)
+
+
+def need(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def snapshot(root):
+    # Include the active generators/checkers and bound Main source, not installed
+    # packages or temporary build logs. New/deleted files change the inventory.
+    paths = set()
+    for folder in ('manual2', 'scripts', '.github/workflows'):
+        paths.update(p for p in (root/folder).rglob('*') if p.is_file()
+                     and '__pycache__' not in p.parts
+                     and p.suffix not in {'.aux','.out','.toc','.fls','.xdv','.blg','.pyc'}
+                     # Historical data logs are bound source inputs, not build logs.
+                     and (p.suffix != '.log' or p.is_relative_to(root/'manual2/data')))
+    for name in ('README.md','requirements-matter1.txt','package.json'):
+        if (root/name).is_file(): paths.add(root/name)
+    foundation = root/'manual2/evidence/foundation-source.json'
+    if foundation.is_file():
+        paths.update(root/name for name in json.loads(foundation.read_text())['files'] if (root/name).is_file())
+    return {p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
+
+
+def pdf_projection(path):
+    import pdfplumber
+
+    def normalized(value):
+        if isinstance(value, float): return round(value, 3)
+        if isinstance(value, (tuple, list)): return [normalized(v) for v in value]
+        return value
+
+    text_keys=('text','x0','top','x1','bottom','size','fontname','upright',
+               'stroking_color','non_stroking_color')
+    vector_keys=('x0','top','x1','bottom','path','linewidth','stroke','fill',
+                 'evenodd','stroking_color','non_stroking_color','dash')
+    result=[]
+    with pdfplumber.open(path) as pdf:
+        for page in pdf.pages:
+            need(not page.images, 'Unexpected raster image in the vector chart: '+str(path))
+            result.append({'size':[round(page.width,3),round(page.height,3)],
+                           'chars':[{k:normalized(c.get(k)) for k in text_keys} for c in page.chars],
+                           'vectors':{kind:[{k:normalized(obj.get(k)) for k in vector_keys}
+                                            for obj in page.objects.get(kind,[])]
+                                      for kind in ('line','rect','curve')}})
+    return result
+
+
+def expected_output_paths(root):
+    root = Path(root).resolve()
+    sys.path.insert(0, str(root/'manual2/scripts'))
+    import matter1_campaign
+    import matter1_property_model
+    import matter1_properties
+    import matter1_preparation_workflow
+    campaign_manifest=matter1_campaign.default_manifest(root)
+    expected_outputs=EXPECTED_OUTPUTS | {
+        'data/m1/campaign/'+name for name in matter1_campaign.OUTPUTS
+    } | {
+        'data/m1/campaign/cases/'+row['id']+'.json'
+        for row in campaign_manifest['configurations']
+    }
+    expected_outputs |= {('data/m1/properties/model/' + name) for name in matter1_property_model.OUTPUTS}
+    expected_outputs |= {'data/m1/properties/' + name for name in matter1_properties.OUTPUTS}
+    expected_outputs |= {'data/m1/coupled_preparations/' + name for name in
+                         ('protocol.json', 'pilots.json', 'ensembles.json', 'controls.json', 'report.json')}
+    expected_outputs |= {'data/m1/preparation_workflow/' + name for name in matter1_preparation_workflow.OUTPUTS}
+    return expected_outputs
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
+    parser.add_argument('--generator-python',default=sys.executable)
+    args=parser.parse_args();root=args.root.resolve();before=snapshot(root)
+    sys.path.insert(0,str(root/'manual2/scripts'))
+    expected_outputs = expected_output_paths(root)
+    with tempfile.TemporaryDirectory(prefix='matter1-reproduction-') as directory:
+        out=Path(directory)/'manual2'
+        catalog=out/'data/m1/isotopes/catalog.json'
+        commands=[
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_ledger.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_isotopes.py'),'--root',str(root/'manual2'),'--output-root',str(out)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_campaign.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_properties.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_coupled_preparations.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_preparation_workflow.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_property_model.py'),'--root',str(root),'--output-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/compare_matter1_property_model.py'),'--root',str(root),'--prediction-root',str(out.parent),'--target',str(out/'data/m1/properties/catalog.json')],
+          [args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_wheel.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--template',str(root/'manual2/visuals/matter1-reference.template.html'),'--isotope-catalog',str(catalog),'--property-root',str(out.parent)],
+          [args.generator_python,'-B',str(root/'manual2/scripts/check_matter1_figure.py'),'--ledger',str(out/'data/m1/matter1_elements_1_118_ledger.csv'),'--figure-dir',str(out/'figures'),'--visual-dir',str(out/'visuals'),'--isotope-catalog',str(catalog)]
+        ]
+        commands.extend([
+            [args.generator_python, '-B', str(root / 'manual2/scripts' / f'generate_matter1_{name}.py'),
+             '--root', str(root), '--output-root', str(out.parent)]
+            for name in ('folding', 'temporal', 'hyperfine', 'stateful', 'metrology',
+                         'bipm', 'bipm_precision', 'atomic', 'constructed_coupling',
+                         'witnessed_retention', 'retention_adapter', 'm3_observation', 'm3_metrology')
+        ])
+        commands.append([args.generator_python,'-B',str(root/'manual2/scripts/generate_matter1_survival.py'),
+                         '--root',str(root),'--output-root',str(out.parent),'--isotope-catalog',str(catalog)])
+        for command in commands:
+            result=subprocess.run(command,capture_output=True,text=True)
+            need(result.returncode==0,'Explicit generator failed: '+result.stdout+result.stderr)
+        generated = {p.relative_to(out).as_posix() for p in out.rglob('*') if p.is_file()}
+        need(generated == expected_outputs, 'Generated output inventory mismatch; missing='
+             +repr(sorted(expected_outputs-generated))+'; extra='+repr(sorted(generated-expected_outputs)))
+        checked=[]
+        for p in sorted(out.rglob('*')):
+            if not p.is_file():
+                continue
+            rel=p.relative_to(out);original=root/'manual2'/rel
+            need(original.is_file(),'Missing persisted output: '+str(rel))
+            if p.suffix=='.pdf':
+                need(pdf_projection(p)==pdf_projection(original),'PDF text/geometry reproduction mismatch: '+str(rel))
+                mode='PDF text, vector geometry, colors and size'
+            elif p.name=='matter1_figure_manifest.json':
+                left=json.loads(p.read_text());right=json.loads(original.read_text())
+                for value in (left,right):
+                    value['files'].pop('aod_matter1_wheel_accessible.pdf',None)
+                need(left==right,'Figure manifest reproduction mismatch')
+                mode='manifest excluding PDF binary hash'
+            else:
+                need(p.read_bytes()==original.read_bytes(),'Output reproduction mismatch: '+str(rel))
+                mode='byte equality'
+            checked.append({'path':str(rel),'comparison':mode})
+    need(snapshot(root)==before,'Reproduction changed source bytes')
+    print(json.dumps({'status':'PASS_REPRODUCTION','outputs':checked,'source_unchanged':True,'source_sha256':before,'scope':'Data/table/chart/companion and declared application output reproduction; no native admission or empirical agreement claim.'},indent=2))
+
+if __name__=='__main__':
+    try: main()
+    except (ValueError,OSError,KeyError) as exc:
+        print('FAIL_REPRODUCTION: '+str(exc),file=sys.stderr);raise SystemExit(1)

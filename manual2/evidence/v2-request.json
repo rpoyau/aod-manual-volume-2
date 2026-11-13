@@ -1,0 +1,45 @@
+{
+  "available_archive": {
+    "bytes": 63942,
+    "manifest_entries": 26,
+    "sha256": "6bd43011a84a0b2c976ec8f43d50d48911e3365ddad5632212f5bf21a9d7a585"
+  },
+  "base_head": "81326ecb6d42107d00e9f2b626ed720f8b5b58ba",
+  "base_tree": "1c4fa29a786f4ee84aa866787c7c8b928deb9e9b",
+  "binding_scope": "Available R02 contract plus explicit owner execution/amendments and byte-identical REVIEW-3; no claim to have read the unavailable 42-entry archive.",
+  "mentioned_latest_archive": {
+    "approximate_bytes": 136000,
+    "availability": "not_attached_in_available_files",
+    "integrity": "not_verified"
+  },
+  "request_sha256": {
+    "manual2/evidence/v2-request/CODEX_PROMPT.txt": "3c176b59113b235b413e9052351fa558244fe9a3d2fb97e11c6bcfba0392c019",
+    "manual2/evidence/v2-request/NEXT_CODEX_REQUEST.md": "604f8248676dd0b701b83c108b4eb0d30091425976eac408a98bf99b2e249546",
+    "manual2/evidence/v2-request/PREDICTION_OBJECTIVE.md": "4da28ef4f1eec3f06148f2b2dca5b4b81ee66efd427a6023ea27175b5b926afc",
+    "manual2/evidence/v2-request/REVIEW-3.md": "28ba22223505641163eede6014a762df5515ff38688629582c2d2d7cc4a6d5e6",
+    "manual2/evidence/v2-request/SI_ACCEPTANCE.csv": "b535e63c8b383b148e100e2e901fe335ad0cc3ae15ab6364d23ba3762d451ba7",
+    "manual2/evidence/v2-request/SI_ANCHOR_CONTRACT.md": "da0a03d8ed6fde9f9679bce5bb61e5b0a2515e29b6878a261b92b0ae9c78dc80"
+  },
+  "v1_sha256": {
+    "manual2/data/m1/folding/event_ledger.json": "8c470013c381d09bf53c631493b6a558c54b7c7264383c69143cc3cea6b1f4ae",
+    "manual2/data/m1/folding/folding_report.json": "f6f0503f09a3f866a76062d4be881af40e1a43fa64ec3ae2c460ddc539b7b0a1",
+    "manual2/data/m1/folding/temporal_model.json": "3c3af0eb7e36b7e3c4da2280329b5f5eb289267120322f9087d6d9adad0a3ee9",
+    "manual2/data/m1/folding/temporal_report.json": "3255da8e58a9e5b5cf3f0c7a48f901c02495c63a9d3f1fae5972d71d7cc16c53",
+    "manual2/data/m1/folding/temporal_trace.json": "9e0bdc5e091f567aa2047e522387d57d7c87b7374f762d69318fcfe3bb71465c",
+    "manual2/data/m1/folding/two_square_fold.json": "2a163a187fd0b3f4a1bdc91e6fe4a473486744a47707bcb1571ad45a0c5d5505",
+    "manual2/data/m1/hyperfine/hyperfine_report.json": "6bed7dbd36098a95346ca2071787767f6898e406b07ac0c25f0446943eab46f9",
+    "manual2/data/m1/hyperfine/observation_map.json": "979f0543966422ace6066de994facf28066ff9e35604da7a0d074a255e83037f",
+    "manual2/data/m1/hyperfine/sources/hellwig1970-page200.png": "94d0dfbe049c66f1e259183abc3ef74dd227d40cc1b0920fc68c98c263f6a3cf",
+    "manual2/data/m1/hyperfine/target_exposure.json": "812947cfae982932ab1b17c0a40f5dc9df0bdb8ad7e848b990c263a04a87e555",
+    "manual2/data/m1/hyperfine/target_inventory.json": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42",
+    "manual2/scripts/generate_matter1_folding.py": "b2a97d5151ddd20de8445e06464a8b35ee7a247cb208450965de770ee6cf2395",
+    "manual2/scripts/generate_matter1_hyperfine.py": "6742fdde95b5834894690f9dcdc025a6564f912de9cd09638e251b27129a37fa",
+    "manual2/scripts/generate_matter1_temporal.py": "249f424525a6e8b9b74a99b5356fa5d43c1e7be8dc36b3c7e4911009606db707",
+    "manual2/scripts/matter1_folding.py": "c9565228021a6e86bcc95ec18d14261a92ed8aca5762d7c9c0a0da5f2d9f1d7b",
+    "manual2/scripts/matter1_hyperfine.py": "779d64f104232bed536069795c6521c7c833e03dd8f29777da26f4865587537c",
+    "manual2/scripts/matter1_temporal.py": "0ba3f7e0e2b8bc44fb83385548702d21549f0ca76a422abc3c04a1a500716b5c",
+    "manual2/scripts/verify_matter1_folding.py": "98af8c5e30c3ebdc5c4934a76fc2e3875f99597681859cefb51ea08754091c38",
+    "manual2/scripts/verify_matter1_hyperfine.py": "54063b7e2851a3e95f209df3e07c45c32763e9d617e42a2b6fea8f82767d22c9",
+    "manual2/scripts/verify_matter1_temporal.py": "4455a4b2546acfd18405e0413724717e556d42ef6c6171d37b21514263ecf962"
+  }
+}

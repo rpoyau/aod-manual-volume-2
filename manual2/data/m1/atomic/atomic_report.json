@@ -1,0 +1,18 @@
+{
+  "PRED_01": "incomplete; executable underdetermination evidence",
+  "PRED_02": "Cs normalization and no target read verified for diagnostic; atomic map unresolved",
+  "PRED_03": "separate target-independent artifact; no atomic point prediction",
+  "PRED_04": "separate diagnostic residuals; atomic uncertainty/score unresolved",
+  "PRED_05": "finite-model intervention changes diagnostic observable; atomic identification unresolved",
+  "atomic_prediction_objective": "incomplete",
+  "benchmark_rows": 10,
+  "benchmark_sha256": "6aeb1b5c78bce831c522a9dc63d89027a5f064ee0ab43813e43158316e104fab",
+  "comparison_sha256": "049693be7747aa338b6429d4b34df722fa8f2b6a9b27a78c00bfe14750cd8139",
+  "countermodel_count": 4,
+  "native_atomic_admission": "pending",
+  "obligations_sha256": "26cc01645faf30aaadda96333a7b00d24753371ddb0151638b914f0b96c769ff",
+  "prediction_sha256": "19996e532960fd3bbd9f808cd44e9d73bc92a7ba2a79e39861280689036c220b",
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "schema_version": 1,
+  "status": "scoped_attempt_and_benchmark_executed"
+}

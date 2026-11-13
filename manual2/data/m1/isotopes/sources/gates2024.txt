@@ -1,0 +1,790 @@
+                                                                           Towards the Discovery of New Elements:
+                                                                         Production of Livermorium (Z=116) with 50 Ti
+
+                                           J.M. Gates,1, ∗ R. Orford,1 D. Rudolph,2, 1 C. Appleton,1 B.M. Barrios,3 J.Y. Benitez,1 M. Bordeau,4 W. Botha,3
+                                                 C.M. Campbell,1 J. Chadderton,5 A.T. Chemey,6 R.M. Clark,1 H.L. Crawford,1 J.D. Despotopulos,7
+                                                O. Dorvaux,4 N.E. Esker,3 P. Fallon,1 C.M. Folden III,8, 9 B.J.P. Gall,4 F.H. Garcia,1, † P. Golubev,2, 1
+                                           J.A. Gooding,1, 10 M. Grebo,1, 10 K.E. Gregorich,7 M. Guerrero,3 R.A. Henderson,7 R.-D. Herzberg,5 Y. Hrabar,2
+                                             T.T. King,11 M. Kireeff Covo,1 A.S. Kirkland,8, 9 R. Krücken,1 E. Leistenschneider,1 E.M. Lykiardopoulou,1
+                                           M. McCarthy,1, 10 J.A. Mildon,8, 9 C. Müller-Gatermann,12 L. Phair,1 J.L. Pore,1 E. Rice,1, 10 K.P. Rykaczewski,11
+                                                  B.N. Sammis,7 L.G. Sarmiento,2 D. Seweryniak,12 D.K. Sharp,13 A. Sinjari,1, 10 P. Steinegger,14, 15
+                                                  M.A. Stoyer,7, 1 J.M. Szornel,1 K. Thomas,7 D.S. Todd,1 P. Vo,3 V. Watson,1 and P.T. Wooddy7
+
+
+
+
+arXiv:2407.16079v1 [nucl-ex] 22 Jul 2024
+                                                         1
+                                                             Nuclear Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+                                                                           2
+                                                                             Department of Physics, Lund University, 22100 Lund, Sweden
+                                                                                 3
+                                                                                   San José State University, San Jose, CA 95192, USA
+                                                                   4
+                                                                     Université de Strasbourg, CNRS, IPHC UMR 7178, 67037 Strasbourg, France
+                                                                                            5
+                                                                                              University of Liverpool, Liverpool, UK
+                                                                                    6
+                                                                                      Oregon State Univesity, Corvallis, OR 97331, USA
+                                                                       7
+                                                                         Lawrence Livermore National Laboratory, Livermore, CA 94550, USA
+                                                                   8
+                                                                     Cyclotron Institute, Texas A&M University, College Station, TX, 77843 USA
+                                                               9
+                                                                 Department of Chemistry, Texas A&M University, College Station, TX 77843, USA
+                                                                                   10
+                                                                                      University of California, Berkeley, CA 94720, USA
+                                                                            11
+                                                                               Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA
+                                                                                12
+                                                                                   Argonne National Laboratory, Lemont, IL 60439, USA
+                                                                                        13
+                                                                                           University of Manchester, Manchester, UK
+                                                                   14
+                                                                      Department of Chemistry and Applied Biosciences, ETH Zürich, Zurich, CH
+                                                                  15
+                                                                     Nuclear Energy and Safety Division, Paul Scherrer Institute, Villigen PSI, CH
+                                                                                                      (Dated: July 24, 2024)
+                                                           The 244 Pu(50 Ti,xn)294−x Lv reaction was investigated at Lawrence Berkeley National Laboratory’s
+                                                        88-Inch Cyclotron facility. The experiment was aimed at the production of a superheavy element
+                                                        with Z ≥ 114 by irradiating an actinide target with a beam heavier than 48 Ca. Produced Lv ions
+                                                        were separated from the unwanted beam and nuclear reaction products using the Berkeley Gas-filled
+                                                        Separator and implanted into a newly commissioned focal plane detector system. Two decay chains
+                                                        were observed and assigned to the decay of 290 Lv. The production cross section was measured to be
+                                                        σprod = 0.44(+58
+                                                                      −28 ) pb at a center-of-target center-of-mass energy of 220(3) MeV. This represents the
+                                                        first published measurement of the production of a superheavy element near the ‘Island-of-Stability’,
+                                                        with a beam of 50 Ti and is an essential precursor in the pursuit of searching for new elements beyond
+                                                        Z = 118.
+
+
+                                              The production of SuperHeavy Elements (SHE, Z >                reactions (Z ≤ 113). The production of SHE from both
+                                           103), and the investigation of their nuclear proper-              of these reaction mechanisms showed similar properties
+                                           ties, stands as an important frontier in modern nuclear           – quickly decreasing cross sections with increasing Z of
+                                           physics, pushing the boundaries of our understanding of           the compound nucleus. The heaviest element produced
+                                           the fundamental constituents of matter [1]. The exis-             with one of these reactions was Nh (Z = 113), using
+                                           tence of SHE was first theorized in the 1950’s as the re-         the 209 Bi(70 Zn,n) reaction. At a cross section of just
+                                           sult of stabilization of very heavy (A ≈ 300), neutron-rich       σprod = 22(+20
+                                                                                                                          −13 ) fb [16, 17], only three decays of
+                                                                                                                                                                  278
+                                                                                                                                                                      Nh
+                                           (N ≈ 184) nuclei due to the presence of closed nuclear            were observed in over 500 days of beamtime, seeming
+                                           shells [2–5]. Today, the concept of an ‘Island of Stability’      to mark the end of new SHE production. Fortunately,
+                                           remains an intriguing topic [6], with its exact position          a major breakthrough was underway with the produc-
+                                           and extent on the Segré chart continuing to be a subject         tion of SHE by irradiating actinide targets from 238 U
+                                           of active pursuit both in theoretical and experimental            (Z = 92) to 249 Cf (Z = 98) with beams of 48 Ca (Z = 20)
+                                           nuclear physics [7–14].                                           [18]. Between 2000 and 2016, five new elements were
+                                                                                                             added to the periodic table [19] and over 50 isotopes with
+                                              Over the decades, SHE from Z = 104 − 118 were dis-
+                                           covered using different types of nuclear reactions: first         Z = 104 − 118 were discovered [20]. Since many of these
+                                                                                                             are located near the ‘Island of Stability’, these discover-
+                                           by impinging light ions on actinide targets in so-called
+                                           ‘hot’-fusion reactions (Z ≤ 106) [15], and then by using          ies have provided crucial insights into the chemistry and
+                                           transition metal beams (e.g., 50 Ti, 51 V, 54 Cr, 62,64 Ni,       physics of SHE [21]. One of the key focuses of the field
+                                           70                                                                is now on the production of new SHE.
+                                              Zn) on targets of Pb or Bi, in so-called ‘cold’-fusion
+                                                                                                                                           2
+
+   Presently, oganesson (Og, Z = 118) marks the limit                                  100
+                                                                                                   [23]
+for the production of SHE using 48 Ca beams. To at-                                                [24]
+tempt production of elements with Z = 119 or 120 using                                             [24]
+                                                                                      10−1         [25]
+48
+   Ca, targets of Es (Z = 99) or Fm (Z = 100) would be                                             [25]
+
+
+
+
+                                                                 cross section (pb)
+required. Unfortunately, neither of these elements can                                             [28]
+                                                                                      10−2         [31]
+be produced in sufficient quantities to produce a suit-                                            [34]
+able target [22]. Therefore, a new reaction approach is                                            [49]
+
+required. In this pursuit, there have been numerous theo-                             10−3
+retical studies aimed at predicting the production rate of
+new elements using actinide targets and ion beams heav-
+                                                                                      10−4
+ier than 48 Ca, such as 50 Ti, 51 V, or 54 Cr [23–41]. Most of
+these models are able to reproduce the known excitation
+functions for the production of SHE with 48 Ca beams on                               10−5
+                                                                                             210          220       230        240   250
+actinide targets reasonably well. They also largely agree                                                       Ec. m. (MeV)
+that reactions with 50 Ti have the highest cross sections
+for the production of elements with Z = 119 and 120              FIG. 1. Theoretical predictions of cross sections for the pro-
+when compared to the other beam species. But the simi-           duction of element Z = 120 from the 3n (thin, red lines) and
+larities end there. As shown in Fig. 1, the predicted cross      4n (thick, blue lines) exit channels of the 50 Ti+249 Cf reaction
+sections for the 50 Ti+249 Cf reaction span more than three      taken from [23–25, 28, 31, 34, 49].
+orders of magnitude. Further, proposed ion-beam ener-
+gies for maximum production differ by tens of MeV. No-
+tably, these predictions are highly sensitive to the mass        ments where the cross sections are predicted to be more
+models used in the calculations [23, 24] and there are no        accessible. For this reason, we chose to investigate the
+mass measurements in the region with which to anchor             production of Lv (Z = 116) using the 50 Ti+244 Pu reac-
+the mass models. The disagreements within theoretical            tion. Several groups have published theoretical excitation
+cross sections are currently hindering experimental ef-          functions or cross section predictions for both this reac-
+forts to produce new elements: The expected low cross            tion and reactions with 50 Ti beams to make elements
+sections imply that only one event every few weeks or            with Z ≥ 119 [23, 30, 36, 50]. For example, the au-
+months could be detected under ideal experimental set-           thors of Ref. [23] predict that 290 Lv can be produced
+tings. Another complication comes in planning these ex-          at a cross section of ≈ 0.2 pb at an excitation energy
+periments, where choosing the correct excitation energy          of ≈ 45 MeV, whereas the authors of Ref. [36] report
+of the compound nucleus that corresponds to the maxi-            a maximum cross section of ≈ 0.1 pb at an excitation
+mum cross section is absolutely critical. If experimental        energy of ≈ 39 MeV. Ref. [30] contains two predictions
+settings are off by only a few MeV, the production rate          created with different mass models, both of which give
+may decrease dramatically.                                       a cross section of ≈ 0.05 pb at an excitation energy of
+   Several experimental campaigns have attempted to              ≈ 40 MeV. A further calculation indicates that the cross
+make new elements with Z = 119, 120, and 122 using the           section is between 0.12 and 0.86 pb [50]. Hence, measur-
+reactions 64 Ni+238 U [42], 58 Fe+244 Pu [43], 50 Ti+249 Bk      ing the cross section of this reaction experimentally would
+[44], 50 Ti+249 Cf [44], and 70 Zn+238 U [45]. All have been     give an important benchmark for constraining theoretical
+unsuccessful to date, reaching one-event cross section lim-      predictions.
+its of 0.09, 0.4, 0.065, 0.2, and 7.2 pb, respectively. No-         Here we report on the first results from the
+                                                                 244
+tably, these published upper-limit values are not able to            Pu(50 Ti,xn)294−x Lv experiment using the Berkeley
+sufficiently constrain theoretical predictions. Recently,        Gas-filled Separator (BGS) [51] at Lawrence Berkeley
+a press release from the Joint Institute for Nuclear Re-         National Laboratory’s (LBNL) 88-Inch Cyclotron facil-
+search (JINR) claimed the production of the new iso-             ity. This marks the beginning of a new era of SHE pro-
+tope 288 Lv in the reaction 54 Cr+238 U [46]. However, no        duction and research utilizing beams beyond 48 Ca.
+publication is presently available regarding the observed           Isotopically enriched 50 Ti (≥90%) was acquired as
+event(s), the measured cross section, or the utilized ex-        50
+                                                                    TiO2 and reduced to its metallic form at Argonne
+perimental setup. Additionally, an earlier publication re-       National Laboratory (ANL). During four experimental
+ports on the possible production of element 120 using the        campaigns, the metallic 50 Ti was then used to produce
+reaction 54 Cr+248 Cm [47]. However, element 120 is still        a 50 Ti12+ beam from the Versatile ECR for NUclear
+regarded as undiscovered, as other members of that col-          Science (VENUS) ion source [52, 53] using a newly-
+laboration attribute the same decay chain to a sequence          developed induction oven [54]. The average beam in-
+of random events [48].                                           tensity out of VENUS was ≈ 100 eµA. This beam was
+   Given the status of new element searches, it is clearly       accelerated to energies of 282(3) MeV using the LBNL 88-
+important to test these production mechanisms for ele-           Inch Cyclotron. The beam energy was measured at the
+                                                                                                                         3
+
+start of each campaign by non-destructively measuring          ucts with Bρ = 2.19 T·m to its focal plane. This was
+the time-of-flight of individual beam pulses between two       increased to Bρ = 2.24 T·m for the last ≈ 3.1 days. The
+fast-current transformers separated by 3.563(5) m along        efficiency for transporting Lv EVRs through the BGS
+a neighboring beamline [55]. The values obtained from          was estimated to be 70(7)% using the simulation code in
+this process were used to ensure that the relative energy      [51]. For the efficiency simulations, it was assumed that
+did not change between the different experimental cam-         the BGS Bρ was tuned such that Lv EVRs were centered
+paigns. The average 50 Ti beam intensity was ≈ 6 × 1012        in the focal-plane detector.
+ions per second at the exit of the cyclotron. After accel-        At the BGS focal plane, the EVRs were implanted into
+eration, the beam passed through a differential pumping        the SuperHeavy RECoil (SHREC) detector provided by
+section that isolates the vacuum of the cyclotron from         Lund University [68]. SHREC, and its read-out system
+the 0.45-Torr He fill gas within the BGS. There are sev-       were previously commissioned at the BGS focal plane us-
+eral collimators within the differential pumping section       ing 254 No EVRs produced in the 208 Pb(48 Ca,2n) reaction
+that may slightly reduce the beam intensity on target as       [69] and 288−289 Fl EVRs produced in the 244 Pu(48 Ca,3-
+compared to that at the exit of the cyclotron.                 4n) reaction. In brief, SHREC has an implantation
+   The beam then impinged on the target composed of            detector that is situated perpendicular to the path of
+four arc-shaped segments forming a rotating target wheel       the beam. This detector is comprised of three side-by-
+with a diameter of 12.2 cm. A fast-acting beam chopper,        side double-sided silicon-strip detectors (DSSDs). Each
+installed before the beam is inflected into the cyclotron,     DSSD has an active area of 58.5 mm×58.5 mm and is sub-
+can interrupt the beam in case of system failures, pro-        divided into 58 strips on both the front side (junction)
+tecting the target [56]. Each target segment consisted         and the rear side (ohmic). On the front side of the detec-
+of a 2.1(1)-µm thick nat Ti backing foil onto which 244 Pu     tor, the 174 strips denote position in the horizontal direc-
+had been electrodeposited. The electrodeposition was           tion. On the back sides of the detector, the 58 strips were
+performed at Lawrence Livermore National Laboratory            wire-bonded across all three DSSDs, yielding 58 strips
+(LLNL). The targets were oriented in the beamline such         denoting vertical position. Directly downstream of the
+that the beam first passed through the Ti foil before en-      implantation detector is an identical set of three DSSDs
+tering the 244 Pu layer. Prior to beam irradiation, the tar-   that serve to veto signals from light, high-energy, charged
+get foils were measured to have an average target thick-       particles. These particles pass through the 300 µm im-
+nesses of 0.435(40) mg/cm2 through γ-ray analysis of the       plantation detector, depositing only a portion of their en-
+decay of the short-lived 240m Np, which is part of the de-     ergy in the implantation and veto detectors. They may
+cay path originating from 244 Pu. Note that some target        thus mimic escape- and α-like events. Upstream of the
+material is sputtered during irradiation and that these        implantation detector is a ‘tunnel’ of eight DSSDs which
+targets were also previously irradiated for ten days dur-      can catch the remaining energy fraction of α particles
+ing a 244 Pu(48 Ca,xn) experiment. They may thus be            that escape from the face of the implantation detector.
+thinner than when initially produced.                          The geometric efficiency of SHREC for detecting a full-
+   To allow for cross-section calculations, two silicon pin-   energy α-particle in the implantation detector is & 50%.
+diode detectors were positioned at angles of ±27.2(1)◦         Depending on the implantation profile, reconstructed α
+directly downstream of the target. These detectors mon-        decays that split their energy deposition between the im-
+itor the integral of beam intensity times target thickness     plantation detector and the upstream detectors increase
+through the detection of Rutherford-scattered beam par-        the efficiency to 75-80% [68, 69].
+ticles. The fraction of 4π subtended by each detector is          Signals from all DSSDs were processed with com-
+Ω = 2.1(2) × 10−4 .                                            pact charge-sensitive preamplifiers [70] and sent to ten
+   Energy losses of the beam in the targets were assessed      64-channel CAEN VX2740 digitizers (16 bit, up to
+with SRIM2013 [57]. The beam is estimated to have lost         125 MS/s). Each digitizer channel self-triggered above
+15(1) MeV passing through the backing foil and an addi-        an energy threshold of . 200 keV. Signals were pro-
+tional 3 to 5 MeV passing through the 244 Pu target layer,     cessed using the Digital Pulse Processing Pulse Height
+depending on the target thickness of the segment. This         Analysis (DPP-PHA) firmware controlled through the
+yields an average center-of-target center-of-mass frame        CoMPASS software from CAEN [71]. Waveforms (30-µs
+energy of 220(3) MeV, which corresponds to an average          long), timestamps, detector strip identifiers, and uncal-
+compound-nucleus excitation energy of 41(2) MeV ac-            ibrated ‘energies’ from an online trapezoidal filter were
+cording to the Thomas-Fermi mass tables [58].                  recorded for all events. [68, 69]. Energy calibrations were
+   The targets were irradiated for a total of 22.1 days.       performed for SHREC before and after each experiment
+During these measurements, the recoiling evaporation           using α sources consisting of 148 Gd, 239 Pu, 241 Am, and
+                                                               244
+residues (EVRs) were separated from the beam and un-               Cm, as well as a 207 Bi conversion-electron source. This
+wanted nuclear reaction products in the BGS [51] based         calibration technique was previously optimized using α-
+on their differing magnetic rigidities (Bρ) in 0.45-Torr       decay lines of 254 No and 250 Fm [69].
+He. The BGS was initially set to bend reaction prod-              The expected reaction products of this experiment
+                                                                                                                                                                                                                                                         4
+
+(a)                              #16
+                                               (b) #1                                EVR                 290
+                                                                                                           Lv
+                                                                                                                           286
+                                                                                                                             Fl
+                                                                                                                                              282
+                                                                                                                                                Cn
+                                                                                                                                                     (c) #2     EVR                                           290
+                                                                                                                                                                                                                Lv
+                                                                                                                                                                                                                                286
+                                                                                                                                                                                                                                  Fl
+                                                                                                                                                                                                                                                  282
+                                                                                                                                                                                                                                                    Cn
+     Reference chain                             14:47                                         5.66 ms        20.6 ms               2.00 ms             13:21          17.3 ms                                     297 ms               1.75 ms
+                                290 Lv          April 27                            (160,36)               α                 α                 SF      June 16 (94,24)                                          α                 α                SF
+                                8.3( 36 ) ms
+                                    19
+                                                 2024                                                                                                   2024
+
+
+
+
+                                                Pulse height (arb. units)                                                                              Pulse height (arb. units)
+                                α 10.84(8)
+
+                  #54                                                                21.9              0.60(1)           10.24(2)          ~ 230                                            20.2            10.90(2)         10.20(3)          ~ 230
+                                                                            8k                 300                4k                                                               8k                4k                4k
+                 286 Fl
+                105( 18 ) ms
+                                                                                                                                    20k                                                                                                 20k
+                     13
+                α 10.18(2)
+                SF        44%
+  #30
+ 282 Cn
+0.85( 19 ) ms
+      13                                                                     0                   0                 0                  0                                             0                 0                 0                 0
+                                                                                 0 10 20 30          0 10 20 30        0 10 20 30         0 10 20 30                                    0 10 20 30        0 10 20 30        0 10 20 30        0 10 20 30
+SF                                                                                Time (µs)           Time (µs)         Time (µs)          Time (µs)                                     Time (µs)         Time (µs)         Time (µs)         Time (µs)
+
+
+FIG. 2. (a) Reference α-decay chain of 290 Lv [59]. Lifetimes, α-particle energies, and branching ratios are based on published
+data of decay events associated with 290 Lv, 286 Fl, and 282 Cn [14, 60–67]. The number of events previously observed for each
+isotope is signified by #N above each isotope. (b) Waveforms of preamplifier pulses of the decay chain #1 assigned to 290 Lv.
+Numbers in the panels are calibrated detected energies in MeV. Correlation times are given between recoil implantation (orange),
+α decays (yellow), and fission (green). The decay chain was observed in pixel (160,36). (c) Same as (b) but for decay chain #2
+assigned to 290 Lv. The decay chain was observed in pixel (94,24). The waveforms in lighter colors in the two rightmost graphs
+were registered in the neighboring pixel (93,24).
+
+
+were from the 3n and 4n exit channels, 291 Lv and                                                                                    events. The first decay chain consisted of a 21.9-MeV
+290
+    Lv, respectively. The decay properties of both iso-                                                                              EVR-like event followed 5.66 ms later by a 0.60(1)-MeV
+topes and their daughters have previously been published                                                                             escape-like event in the same pixel. An α-like event was
+through their production both directly and indirectly in                                                                             observed 20.6 ms after the escape. The detected energy
+the 249 Cf(48 Ca,3n) [60, 61], 245 Cm(48 Ca,2-3n) [60–62],                                                                           was E = 10.24(2) MeV, which includes the α-particle en-
+244
+    Pu(48 Ca,5n) [60] and 242 Pu(48 Ca,3-4n) [14, 63–65, 67]                                                                         ergy and the energy from the recoiling daughter nucleus.
+reactions. A discussion of the search parameters for                                                                                 Following procedures outlined in Ref. [72], the α-particle
+decay chains originating from 291 Lv is included in the                                                                              energy was calculated to be Eα = 10.16(2) MeV. The α
+supplemental material [59]. No decay chains were ob-                                                                                 energy and lifetime are consistent with the known decay
+served that fit the known decay properties of 291 Lv and                                                                             properties of 286 Fl and was assigned accordingly. Based
+its daughters.                                                                                                                       on its observed lifetime and position in the decay chain,
+   Data from the published decay chain of 290 Lv are sum-                                                                            the 0.60(1)-MeV escape-like event was assigned to an α-
+marized in Fig. 2(a), Fig. 3, and Ref. [59]. Potential                                                                               decay of 290 Lv where the α-particle escaped out of the
+decay chains originating from 290 Lv were identified us-                                                                             front of the implantation detector and did not impact
+ing correlations that required observing the implanta-                                                                               one of the upstream detectors. Thus, only a fraction of
+tion of an EVR (10< E(MeV) <30) followed by the de-                                                                                  its decay energy was recorded (see, e.g., the spectra in
+cay of at least one full-energy α (either 290 Lv or 286 Fl,                                                                          Fig. 2(a) in the Supplemental Material of Ref. [72]). The
+[9.75< E(MeV) <11.25]) followed by a spontaneous fis-                                                                                rate of escape-like events (0.2 < E(MeV) < 6.0) was
+sion (SF) event (E > 120 MeV). All three events must                                                                                 7.8 × 10−3 Hz per pixel. The probability for observing a
+occur within the same (x, y) pixel of the implantation                                                                               random escape-like event in the 26 ms between the EVR
+detector and the SF must be within one second of the                                                                                 and the first observed full-energy α decay in the chain is
+EVR. The efficiency for detecting a decay chain originat-                                                                            2.0 × 10−4. The observed decay assigned to 286 Fl was fol-
+ing from 290 Lv under these conditions is ≈ 95%, based on                                                                            lowed just 2.00 ms later by an ≈ 230 MeV SF-like event.
+Monte Carlo simulations of decay chains with branching                                                                               The approximate energy of the SF-like event was deter-
+ratios shown in Fig. 2(a). The number of expected decay                                                                              mined by constructing an unsaturated waveform from
+chains arising from correlations of random background                                                                                the unsaturated portions of the recorded waveform using
+events was calculated for each pixel individually, based                                                                             benchmarked pole-zero corrections [68] and then extract-
+on the rate of EVR-, α-, and SF-like events in that pixel,                                                                           ing the pulse height using a trapezoidal energy filter. The
+then summed across the entire detector. The median rate                                                                              lifetimes, decay modes, and decay energies of the events
+of EVR-, α-, and SF-like events within the above energy                                                                              above are fully consistent with a decay chain consisting
+ranges was 1.2 × 10−4 , 1.4 × 10−5 , 5.1 × 10−8 Hz/pixel,                                                                            of a 290 Lv EVR implanting into SHREC, followed by the
+                                                                                                                                     290
+respectively. The probability for random background                                                                                      Lv α escaping the front of SHREC, a full-energy α-
+events to form a chain that would be detected using these                                                                            decay of 286 Fl, and terminating with the SF of 282 Cn
+search conditions is 1.7 × 10−6 .                                                                                                    [cf. Fig. 2(a) and Fig. 3].
+
+   Two decay chains were observed that met the crite-                                                                                  The second decay chain [Fig. 2(c)] consisted of a 20.2
+ria above. They are shown in Fig. 2(b) and (c), in-                                                                                  MeV EVR followed 17.3 ms later by a recoil-corrected
+cluding baseline-corrected waveforms of all constituent                                                                              Eα =10.81(3) MeV full-energy α. A second full-energy
+                                                                                                                                                                                            5
+
+α with Eα = 10.12(4) MeV was detected 297 ms later.                                                                              average Bρ=2.27(3) T·m.
+The decay chain was terminated by an ≈230 MeV SF-                                                                                   The cross section for two events, derived from the
+like event 1.75 ms after the second α-particle. Based                                                                            observed number of Rutherford-scattered particles, is
+on the energies, lifetimes, and decay modes, this series                                                                         σprod = 0.44(+58
+                                                                                                                                                −28 ) pb at the 68% confidence level [73, 74].
+of events was assigned to a decay chain consisting of an                                                                         The error represents statistical (counting) errors only. In
+implanted 290 Lv EVR followed by α decays of 290 Lv and                                                                          addition to the cited statistical errors, there is a system-
+286
+    Fl, and terminating with SF of 282 Cn. The probability                                                                       atic error on the cross section. The factors contributing
+of observing two chains composed of random background                                                                            to systematic errors in a BGS experiment result from un-
+events based on the rates discussed above was 1.4×10−12.                                                                         certainties in: (i) the efficiency for transporting an EVR
+   The first 290 Lv decay chain was observed in pixel                                                                            from the target to SHREC, (ii) the angle of the Ruther-
+(x, y) = (160, 36) when the BGS Bρ was set to 2.19 T·m.                                                                          ford detectors and the Rutherford scattering cross sec-
+The measured dispersion of the BGS is 16(2) mm/%(Bρ)                                                                             tions, (iii) the solid angle subtended by the collimators
+[69], corresponding to a measured Bρ = 2.29(4) T·m.                                                                              upstream of the Rutherford detectors, (iv) the attenua-
+The second event was observed in pixel (x, y) = (94, 24)                                                                         tion factors of the screens between the target and Ruther-
+and was detected after the BGS Bρ was increased. The                                                                             ford detectors, and (v) the energy from the cyclotron.
+second event occurred at a Bρ=2.25(4) T·m, giving an                                                                             These five factors and how their associated errors were
+                                                                                                                                 determined are discussed in detail in [75] for experiments
+                                                                                                                                 at the BGS and are expected to result in an additional
+
+
+
+    Counts per channel
+                         0.4
+                                                        (a)
+                                                                                   3.0
+                                                                                                                          (b)
+                                                                                                                                 12% systematic uncertainty in the measured cross sec-
+                                 10.84(7)                                                       32)
+                                                                                           8.2( 18
+                                                                                   2.0
+                                                                                                                                 tions. In cases where the reaction is run in the BGS for
+                                 #12                                                       #13
+                         0.2                       290
+                                                         Lv
+                                                                                                                                 the first time and the Bρ through the BGS is unknown,
+                                                                                   1.0                                           there is an additional uncertainty in detection efficiency.
+                         0.0                                                       0.0                                              The two-event cross section reported in this work is
+                                     10.0       11.0                                          0.1         1     10         100
+                                                                                                                                 higher than theoretical predictions of Ref. [23, 30, 36],
+
+
+
+    Counts per channel
+                         1.5                            (c)                                                               (d)    and all three references can be excluded at the 68%
+                                 10.18(2)                                          10         106( 17
+                                                                                                   13 )
+                         1.0     #31                                                          #51                                confidence level at the experimental excitation energy
+                                                   286
+                                        *                Fl                         5                                            of 41(2) MeV. The cross section is consistent with the
+                         0.5
+                                                                                                                                 theoretical prediction from Ref. [50], when theoretical
+                         0.0
+                               9.0        10.0       11.0
+                                                                                    0
+                                                                                          1         10        100    1000        uncertainties are included. The observation of the two
+
+
+
+
+                                                              Counts per channel
+                                     Energy Eα (MeV)                                                                             events at an excitation energy of 41(2) MeV is also con-
+       (e)                                     290 Lv                              10                                     (f)    sistent with the proposed optimal excitation energies in
+                                                                                              0.88(19
+                                                                                                   13 )
+                                                8.2 ms
+                                                                                                                    282
+                                      286 Fl
+                                               α 10.84                                        #32                     Cn         Refs. [30, 36], although lower than that from [23].
+                                                                                    5
+                                      106 ms                                                                                        The 4n reaction between 48 Ca and 244 Pu has been
+                                     α 10.18
+                          282 Cn     SF 43%                                                                                      investigated previously and has been observed to have
+                                                                                    0
+                         0.88 ms
+                                                                                         0.01   0.1      1    10                 a cross section between σprod = 5.3(+36    −21 ) pb [62, 72]
+                         SF                                                                 Correlation Time (ms)
+                                                                                                                                 and σprod = 9.8(+39 −31 ) pb  [76]. These  values are ≈ 10-
+FIG. 3. Compilation of information on the decays of 290 Lv,                                                                      20 times larger than the cross section reported in this
+286
+    Fl, and 282 Cn [14, 60–67]. Panels (a) and (c) provide ex-                                                                   work between 50 Ti and 244 Pu with the same exit chan-
+perimental decay-energy spectra from events associated with                                                                      nel. This indicates that the cross section for the pro-
+the decay steps 290 Lv →286 Fl and 286 Fl →282 Cn, respectively.                                                                 duction of element 120 with 50 Ti beams could be ≈ 25-
+For a single entry, a Gaussian with integral one and a width                                                                     50 fb, based on the known 48 Ca(249 Cf,3n) cross section
+compliant with its measured uncertainty was added into the                                                                       of σprod = 0.5(+16−3 ) pb [61], demonstrating that a sub-
+spectra. The numbers in the top left of these panels are the α-
+decay energies, in MeV, extracted from the histogram mean
+                                                                                                                                 stantial – but seemingly manageable – reduction in pro-
+in the intervals [10.0,11.7] and [9.9,10.5] MeV, respectively.                                                                   duction cross sections has to be expected in the push to-
+The right column [(b), (d), (f)] shows the correlation times of                                                                  wards discovering higher-Z elements with beams beyond
+                                                                                                                                 48
+the decays along the decay chain starting with 290 Lv. Exper-                                                                       Ca. Production of SHE with 48 Ca beams has been well-
+imental data points are comprised in the histograms (black                                                                       studied and excitation functions have been mapped out
+lines). The shaded areas (blue) provide correlation-time dis-                                                                    for 2-5n exit channels in many cases. Comparison of this
+tributions expected for the corresponding half life, T1/2 in                                                                     systematic data to a single point on the 244 Pu(50 Ti,4n)
+ms, which are given in the top left corner of each panel. For
+all panels, the number after the hashtag, #, indicates the
+                                                                                                                                 excitation function is of high interest, although further
+number of available data points. Entries marked in dark red                                                                      investigations of these reactions with beams beyond 48 Ca
+correspond to the events associated with the observation of                                                                      are crucial for constraining theoretical cross section cal-
+290
+    Lv in this work. The 9.6 MeV peak marked with an * in                                                                        culations. Uncertainties in these predictions can only
+(c) was explained in detail in [14]. Panel (e) shows the revised                                                                 be reduced with the availability of additional experimen-
+aggregated information of the 290 Lv decay chain including the                                                                   tal data across a wider range of excitation energies and
+events from this work (cf. Fig. 2) [59].                                                                                         beam/target combinations.
+                                                                                                                                6
+
+   In summary, at the LBNL 88-Inch Cyclotron facility,                 P. Möller, and B. Nilsson, On the nuclear structure
+a 244 Pu target was irradiated with a high-intensity beam              and stability of heavy and superheavy elements,
+of 50 Ti. Two decay chains were observed and assigned                  Nucl. Phys. A 131, 1 (1969).
+                                                                   [6] O. R. Smits, Ch. E. Düllmann, P. Indelicato, W.
+to the decay of 290 Lv with a production cross section of
+                                                                       Nazarewicz, and P. Schwerdtfeger, The quest for su-
+σprod = 0.44(+58
+              −28 ) pb at a center-of-target excitation en-            perheavy elements and the limit of the periodic table,
+ergy of 41(2) MeV. This is the first reported production               Nat. Rev. Phys. 6, 86 (2024).
+of a SHE near the predicted ‘Island-of-Stability’ with a           [7] S. Ćwiok, J. Dobaczewski, P.-H. Heenen, P. Magierski,
+beam other than 48 Ca. While the cross section observed                and W. Nazarewicz, Shell structure of the superheavy
+here does reflect the expected decrease in SHE produc-                 elements, Nucl. Phys. A 611, 211 (1996).
+tion when moving to heavier beams, the success of this             [8] M. Bender, K. Rutz, P.-G. Reinhard, J. A.
+measurement validates that discoveries of new SHE are                  Maruhn, and W. Greiner, Shell structure of super-
+                                                                       heavy nuclei in self-consistent mean-field models,
+indeed within experimental reach.
+                                                                       Phys. Rev. C 60, 034304 (1999).
+                                                                   [9] A. T. Kruppa, M. Bender, W. Nazarewicz, P.-G.
+                                                                       Reinhard, T. Vertse, and S. Ćwiok, Shell correc-
+               ACKNOWLEDGEMENTS                                        tions of superheavy nuclei in self-consistent calculations,
+                                                                       Phys. Rev. C 61, 034313 (2000).
+   We gratefully acknowledge the operations staff of              [10] S. Ćwiok, P.-H. Heenen, and W. Nazarewicz, Shape
+the 88-Inch Cyclotron for providing the intense beams                  coexistence and triaxiality in the superheavy nuclei,
+of 50 Ti and stable operating conditions. This work                    Nature 433, 705 (2005).
+was supported in part by the U.S. Department of En-               [11] W. Zhang, J. Meng, S. Q. Zhang, L. S. Geng,
+                                                                       and H. Toki, Magic numbers for superheavy nuclei
+ergy, Office of Science, Office of Nuclear Physics un-                 in relativistic continuum hartree–bogoliubov theory,
+der contract numbers DE-AC02-05CH11231 (LBNL),                         Nucl. Phys. A 753, 106 (2005).
+DE-AC02-06CH11357 (ANL) and DE-FG02-93ER40773                     [12] A. Sobiczewski and K. Pomorski, Description of
+(TAMU); the Swedish Knut and Alice Wallenberg Foun-                    structure and properties of superheavy nuclei,
+dation (KAW 2015.0021), the Wenner-Gren Founda-                        Prog. Part. Nucl. Phys. 58, 292 (2007).
+tions (SSv2020-0003), the Carl Trygger Foundation                 [13] J. L. Egido and A. Jungclaus, Predominance of
+(CTS 20:1146), and the Royal Physiographic Soci-                       triaxial shapes in transitional super-heavy nuclei:
+                                                                       Ground-state deformation and shape coexistence
+ety in Lund; UK Science and Technology Facilities                      along the flerovium (Z = 114) chain of isotopes,
+Council under grant numbers ST/V001027/1 (Liver-                       Phys. Rev. Lett. 125, 192504 (2020).
+pool), ST/T004797/1 and ST/V001116/1 (Manchester);                [14] A. Såmark-Roth et al., Spectroscopy along flerovium de-
+startup package from the Oregon State University Col-                  cay chains: Discovery of 280 Ds and an excited state in
+                                                                       282
+lege of Engineering (OSU); Office of Nuclear Regula-                       Cn, Phys. Rev. Lett. 126, 032503 (2021).
+tory Research, Nuclear Regulatory Commission under                [15] S.         Hofmann,          Super-heavy            nuclei,
+award 31310022M0019 (SJSU); U.S. Department of En-                     J. Phys. G: Nucl. Part. Phys 42, 114001 (2015).
+                                                                  [16] K. Morita et al., Experiment on the synthesis of
+ergy under contract DE-AC52-07NA27344 (LLNL) and                       element 113 in the reaction 209 Bi(70 Zn, n)278 113,
+DE-AC05-00OR22725 (ORNL); Swiss National Science                       J. Phys. Soc. Japan 73, 2593 (2004).
+Foundation under grant number 200020 196981; CNRS                 [17] K. Morita et al., New result in the production and
+research funds (IPHC). The authors are indebted (for the               decay of an isotope, 278 113, of the 113th element,
+use of 244 Pu) to the U.S. Department of Energy, through               J. Phys. Soc. Japan 81, 103201 (2012).
+the transplutonium element production facilities at Oak           [18] Yu. Ts. Oganessian, A. Sobiczewski and G. M. Ter-
+Ridge National Laboratory.                                             Akopian, Superheavy nuclei: from predictions to discov-
+                                                                       ery, Phys. Scr. 92, 023003 (2017).
+                                                                  [19] L. Öhrström and J. Reedijk, Names and sym-
+                                                                       bols of the elements with atomic numbers 113,
+                                                                       115, 117 and 118 (IUPAC recommendations 2016),
+  ∗                                                                    Pure Appl. Chem. 88, 1225 (2016).
+     Corresponding Author: jmgates@lbl.gov                        [20] Special      issue     on      superheavy        elements,
+  †
+     Present affiliation: Department of Chemistry, The Uni-            Nucl. Phys. A 944 (2015).
+     versity of British Columbia, 2036 Main Mall, Vancouver,      [21] Nobel     Symposium      NS160      –    Chemistry     and
+     British Columbia, V6T 1Z1, Canada                                 Physics of Heavy and Superheavy Elements,
+ [1] 2023 Long Range Plan for Nuclear Science.                         EPJ Web of Conferences 131, 1 (2016).
+ [2] G. Scharff-Goldhaber, Nucleonics 15, 122 (1957).             [22] J. B. Roberto, M. Du, J. G. Ezold, S. L. Hogle,
+ [3] W. D. Myers and W. J. Swiatecki, Nuclear masses and               J. Moon, K. Myhre, and K. P. Rykaczewski, Ac-
+     deformations, Nucl. Phys. 81, 1 (1966).                           tinide targets for the synthesis of superheavy nuclei,
+ [4] A. Sobiczewski, F. A. Gareev, and B. N. Kalinkin, Closed          Euro. Phys. J. A 59, 304 (2023).
+     shells for Z > 82 and N > 126 in a diffuse potential well,   [23] V. Zagrebaev and W. Greiner, Synthesis of super-
+     Phys. Lett. 22, 500 (1966).                                       heavy nuclei: A search for new production reactions,
+ [5] S. G. Nilsson, C. F. Tsang, A. Sobiczewski,                       Phys. Rev. C 78, 034610 (2008).
+     Z. Szymański, S. Wycech, C. Gustafson, I.-L. Lamm,
+                                                                                                                                7
+
+[24] G. G. Adamian, N. V. Antonenko, and W. Scheid,                    Int. J. Modern Phys. E 32, 2330002 (2023).
+     Feature of production of new superheavy nu-                  [42] S. Hofmann et al., Probing Shell Effects at Z=120 and
+     clei in actinide-based complete-fusion reactions,                 N =184, Tech. Rep. (GSI Scientific Report, 2008).
+     Euro. Phys. J. A 41, 235 (2009).                             [43] Yu. Ts. Oganessian et al., Attempt to pro-
+[25] A. K. Nasirov, G. Mandaglio, G. Giardina, A. So-                  duce element 120 in the 244 Pu +58 Fe reaction,
+     biczewski, and A. I. Muminov, Effects of the entrance             Phys. Rev. C 79, 024603 (2009).
+     channel and fission barrier in the synthesis of superheavy   [44] J. Khuyagbaatar et al., Search for elements 119 and 120,
+     element Z = 120, Phys. Rev. C 84, 044612 (2011).                  Phys. Rev. C 102, 064602 (2020).
+[26] N. Wang, J. Tian, and W. Scheid, Systemat-                   [45] S. Hofmann et al., New results on elements 111 and 112,
+     ics of fusion probability in “hot” fusion reactions,              Eur. Phys. J. A 14, 147 (2002).
+     Phys. Rev. C 84, 061601 (2011).                              [46] Press release from JINR, (accessed 4/2024).
+[27] Z.-H. Liu and J.-D. Bao, Role of the coupling between        [47] S. Hofmann et al., Review of even element
+     neck and radial degrees of freedom in evolution from din-         super-heavy nuclei and search for element 120,
+     ucleus to mononucleus, Phys. Rev. C 83, 044613 (2011).            Euro. Phys. J. A 52, 180 (2016).
+[28] K. Siwek-Wilczyńska, T. Cap, M. Kowal, A. Sobiczewski,      [48] F. P. Heßberger and D. Ackermann, Some critical re-
+     and J. Wilczyński, Predictions of the fusion-by-diffusion        marks on a sequence of events interpreted to possibly
+     model for the synthesis cross sections of Z = 114–120 ele-        originate from a decay chain of an element 120 isotope,
+     ments based on macroscopic-microscopic fission barriers,          Euro. Phys. J. A 53, 123 (2017).
+     Phys. Rev. C 86, 014611 (2012).                              [49] M.-H. Zhang, Y.-H. Zhang, Y. Zou, C. Wang, L. Zhu,
+[29] N. Wang, E.-G. Zhao, W. Scheid, and S.-G. Zhou,                   and F.-S. Zhang, Predictions of synthesizing ele-
+     Theoretical study of the synthesis of superheavy nuclei           ments with Z = 119 and 120 in fusion reactions,
+     with Z=119 and 120 in heavy-ion reactions with trans-             Phys. Rev. C 109, 014622 (2024).
+     uranium targets, Phys. Rev. C 85, 041601 (2012).             [50] T. Cap, private communication.
+[30] A. N. Kuzmina, G. G. Adamian, N. V. Antonenko,               [51] K. E. Gregorich, Simulation of recoil tra-
+     and W. Scheid, Influence of proton shell closure on               jectories    in     gas-filled   magnetic      separators.,
+     production and identification of new superheavy nuclei,           Nucl. Instrum. Methods Phys. Res. A 711, 47 (2013).
+     Phys. Rev. C 85, 014319 (2012).                              [52] D. Leitner, S. R. Abbott, R. D. Dwinell, M. Leit-
+[31] Z.-H. Liu and J.-D. Bao, Possibility to produce el-               ner, C. Taylor, and C. M. Lyneis, Commissioning
+     ement 120 in the 54 Cr+248 Cm hot fusion reaction,                of the superconducting ECR ion source VENUS, in
+     Phys. Rev. C 87, 034616 (2013).                                   Proceedings of the 2003 Particle Accelerator Conference ,
+[32] J. Jiang, Q. Chai, B. Wang, W. Zhao, M. Liu, and                  Vol. 1 (2003) p. 86.
+     H. Wang, Investigation of production cross sections for      [53] D. Leitner, C. M. Lyneis, S. R. Abbott, D. Collins,
+     superheavy nuclei with Z =116-121 in dinuclear system             R. D. Dwinell, M. L. Galloway, M. Leitner, and D. S.
+     concept, Nucl. Phys. Rev. 30, 4 (2013).                           Todd, Next generation ECR ion sources: First results
+[33] J. Zhang, C. Wang, and Z. Ren, Calculation of                     of the superconducting 28GHz ECRIS – VENUS,
+     evaporation residue cross sections for the synthe-                Nucl. Instrum. Methods Phys. Res. B 235, 486 (2005),
+     sis of superheavy nuclei in hot fusion reactions,                 the Physics of Highly Charged Ions.
+     Nucl. Phys. A 909, 36 (2013).                                [54] D. S. Todd, New induction oven for VENUS, to be pub-
+[34] L. Zhu, W.-J. Xie, and F.-S. Zhang, Production cross              lished.
+     sections of superheavy elements Z = 119 and 120 in hot       [55] M. Kireeff Covo, Nondestructive synchronous beam cur-
+     fusion reactions, Phys. Rev. C 89, 024615 (2014).                 rent monitor, Rev. Sci. Instrum. 85, 125106 (2014).
+[35] V. I. Zagrebaev and W. Greiner, Cross sec-                   [56] M. Kireeff Covo, P. Bloemhard, J. Benitez, M. John-
+     tions for the production of superheavy nuclei,                    son, D. Todd, J. Cruz Duran, B. Ninemire, and
+     Nucl. Phys. A 944, 257 (2015).                                    L. Phair, Single radio frequency bucket injection in the
+[36] G. G. Adamian, N. V. Antonenko, H. Lenske, and                    88-Inch Cyclotron using a pulsed high voltage chopper,
+     L. A. Malov, Predictions of identification and produc-            Rev. Sci. Instrum. 95, 015112 (2024).
+     tion of new superheavy nuclei with Z = 119 and 120,          [57] J. F. Ziegler, M. Ziegler, and J. Biersack, SRIM –
+     Phys. Rev. C 101, 034301 (2020).                                  the stopping and range of ions in matter (2010),
+[37] F. Niu, P. Chen, and Z. Feng, Systematics on production           Nucl. Instrum. Methods Phys. Res. B. 268, 1818 (2010),
+     of superheavy nuclei Z=119-122 in fusion-evaporation re-          19th International Conference on Ion Beam Analysis.
+     actions, Nucl. Sci. Tech. 32, 103 (2021).                    [58] W. D. Myers and W. J. Swiatecki, Nuclear
+[38] J.-X. Li and H.-F. Zhang, Predictions for the                     properties according to the thomas-fermi model,
+     synthesis of the Z = 119 superheavy element,                      Nucl. Phys. A 601, 141 (1996).
+     Phys. Rev. C 105, 054606 (2022).                             [59] See supplemental material for cross-section predictions to
+[39] J.-X. Li and H.-F. Zhang, Predictions for the                     produce element Z = 116, Lv, as well as an aggregated
+     synthesis of the Z = 120 superheavy element,                      analysis of existing data of the 290 Lv decay chain, .
+     Phys. Rev. C 106, 034613 (2022).                             [60] Yu. Ts. Oganessian et al., Heavy element research at
+[40] S. H. Zhu and X. J. Bao, Possibility to synthesize                Dubna, Nucl. Phys. A 734, 109 (2004).
+     Z = 120 superheavy nuclei with Z > 20 projectiles,           [61] Yu. Ts. Oganessian et al., Synthesis of the isotopes of
+     Phys. Rev. C 108, 014604 (2023).                                  elements 118 and 116 in the 249 Cf and 245 Cm +48 Ca
+[41] J.-J. Li, N. Tang, Y.-H. Zhang, M.-H. Zhang, C. Wang,             fusion reactions, Phys. Rev. C 74, 044602 (2006).
+     X.-R. Zhang, L. Zhu, and F.-S. Zhang, Progress on pro-       [62] Yu. Ts. Oganessian et al., Measurements of
+     duction cross-sections of unknown nuclei in fusion evap-          cross sections for the fusion-evaporation reactions
+     oration reactions and multinucleon transfer reactions,
+                                                                                                                                  8
+
+    244               292−x                            293−x
+        Pu(48 Ca, xn)        114 and 245 Cm(48 Ca, xn)        116,   [70] P. Golubev et al., The Lund–York–Cologne Calorime-
+     Phys. Rev. C 69, 054607 (2004).                                      ter (LYCCA): Concept, design and prototype de-
+[63] Yu. Ts. Oganessian et al., Measurements of cross sections            velopments for a fair-nustar detector system to
+     and decay properties of the isotopes of elements 112, 114,           discriminate relativistic heavy-ion reaction products,
+     and 116 produced in the fusion reactions 233,238 U, 242 Pu,          Nucl. Instrum. Methods Phys. Res. A 723, 55 (2013).
+     and 248 Cm +48 Ca, Phys. Rev. C 70, 064609 (2004).              [71] See      CAEN        CoMPASS       documentation       at:
+[64] L. Stavsetra, K. E. Gregorich, J. Dvorak, P. A. Ellison,             https://www.caen.it/products/compass/            (Access:
+     I. Dragojević, M. A. Garcia, and H. Nitsche, Independent            May, 2024).
+     verification of element 114 production in the 48 Ca+242 Pu      [72] A. Såmark-Roth et al., Spectroscopy along flerovium
+     reaction, Phys. Rev. Lett. 103, 132502 (2009).                       decay chains:       III. details on experiment, anal-
+[65] P. A. Ellison et al., New superheavy el-                             ysis, 282 cn, and spontaneous fission branches,
+                                         242
+     ement         isotopes:                 Pu(48 Ca, 5n)285 114,        Phys. Rev. C 107, 024301 (2023).
+     Phys. Rev. Lett. 105, 182701 (2010).                            [73] K.-H. Schmidt, C.-C. Sahm, K. Pielenz, and H. G. Clerc,
+[66] Yu. Ts. Oganessian et al., Production and de-                        Some remarks on the error analysis in the case of poor
+     cay of the heaviest nuclei 293,294 117 and 294 118,                  statistics, Z. Phys. A 316, 19 (1984).
+     Phys. Rev. Lett. 109, 162501 (2012).                            [74] K.-H. Schmidt, A new test for random events of an ex-
+[67] Yu. Ts. Oganessian et al., Investigation of 48 Ca-                   ponential distribution, Eur. Phys. J. A 8, 141 (2000).
+     induced reactions with 242 Pu and 238 U tar-                    [75] K. E. Gregorich et al, Attempt to confirm super-
+     gets at the jinr superheavy element factory,                         heavy element production in the 48 Ca +238 U reaction,
+     Phys. Rev. C 106, 024612 (2022).                                     Phys. Rev. C 72, 014605 (2005).
+[68] P. Golubev et al., Source characterization of a detector        [76] J. M. Gates et al., First superheavy element experiments
+     for heavy and superheavy nuclei, to be published.                    at the GSI recoil separator TASCA: The production and
+[69] R. Orford et al., Commissioning of the SHREC detector                decay of element 114 in the 244 Pu(48 Ca,3-4n) reaction,
+     with 254 No, to be published.                                        Phys. Rev. C 83, 054618 (2011).
+                                                                                  Supplemental Material
+                                                                         Towards the Discovery of New Elements:
+                                                                       Production of Livermorium (Z = 116) with 50 Ti
+
+
+                                              The Supplemental Material provides (i) detailed re-          to decay via emission of α particles to the SF-decaying
+                                                                                                           267
+                                           sults and statistical assessments in the analysis of events        Rf [60-67]. Candidates for decay chains originating
+                                           stemming from decay chains starting with the isotope            from this isotope were searched for by looking for corre-
+                                           290
+                                               Lv, and (ii) details concerning the search parameters       lations, required to all be detected within the same pixel
+                                           for decay chains originating from 291 Lv.                       of the detector, that consisted of an:
+                                              The numbering of references in this Supplemental Ma-
+                                           terial corresponds to references in the main article.                 1. Evaporation residue (EVR) [10 < E (MeV) < 30]
+
+
+
+
+arXiv:2407.16079v1 [nucl-ex] 22 Jul 2024
+                                                                                                                    followed by at least one α-like particle [9.50 <
+                                                                                                                    E (MeV) < 11.25] within 3 s, followed by a sponta-
+                                              I.     DETAILS OF PUBLISHED 290 LV DECAY                              neous fission-like event with E > 120 MeV within
+                                                                CHAINS                                              25 s.
+
+                                                                                                                 2. EVR [10 < E (MeV) < 30] followed by at least two
+                                              Decay properties such as decay energies and lifetimes,
+                                                                                                                    α-like particles [9.00 < E (MeV) < 11.25] within
+                                           relating to various ensembles of data associated with pre-
+                                                                                                                    30 s, followed by a spontaneous fission-like event
+                                           vious experiments in the direct or indirect production of
+                                           290                                                                      with E > 120 MeV within 2 s.
+                                               Lv, 286 Fl, or 282 Cn, and with the result of the present
+                                           work (cf. main article) included, are compiled: Distribu-             3. EVR [10 < E (MeV) < 30] followed by three or
+                                           tions of decay energies and correlation times along with                 more α-like particles [8.00 < E (MeV) < 11.25]
+                                           determined Eα and T1/2 values are presented for the dif-                 within 300 s, followed by a spontaneous fission-like
+                                           ferent ensembles in Fig. 1 for 286 Fl and 282 Cn, respec-                event with E > 120 MeV within 150 min.
+                                           tively. An overview, together with a statistical assess-
+                                           ment of the correlation times attributed to the single          These α-particle energy ranges were chosen to fully en-
+                                           decay steps relevant to the current study, is presented         compass the known energy ranges for chains terminat-
+                                           Table I for the ensembles of decay chains corresponding         ing in SF at 283 Cn, 279 Ds, and 267 Rf, respectively. The
+                                           to 290 Lv (cf. main article) and Fig. 1, respectively. Ta-      lifetimes were chosen to accept events within five half-
+                                           ble II provides a summary of aggregated experimental            lives of known decays. The efficiency for detecting a de-
+                                           results concerning the decays of 290 Lv, 286 Fl, and 282 Cn.    cay chain originating from 291 Lv under these conditions
+                                                                                                           is ≈ 85%. The probability for any one of the SF-like
+                                                                                                           events to combine with random background-like events
+                                               II.    SEARCH PARAMETERS FOR DECAY                          to form a chain meeting the requirements listed above
+                                                     CHAINS ORIGINATING FROM 291 LV                        is 1.4 × 10−3 , 2.1 × 10−6 , and 1.7 × 10−3 , for conditions
+                                                                                                           (1)-(3), respectively. If a chain is observed within these
+                                              The known decay chain originating from 291 Lv and            broad parameters, then lifetimes and decay energies must
+                                           its daughters typically terminates in spontaneous fission       also fall within accepted windows for the known isotopes,
+                                           (SF) at 283 Cn or 279 Ds, although it has been observed         thus reducing random rates further.
+                                                                                                                                                               2
+
+
+
+
+                     0.6    10.22(4)   (a)      4      126( 48                            0.82(41
+                                                            27)              (b)               20 )              (c)
+
+                                                                                                                         direct
+                            #1+7                       #13                                 #9
+
+
+                     0.0                        0
+
+
+
+
+                                                                                                                           ALL               combined   indirect
+                     0.3    10.18(5)   (d)             115( 50                            1.24(75
+                                                            27)              (e)               34 )              (f)
+                            #8                  3      #11                                 #7
+
+
+
+
+Counts per channel
+                     0.0                        0
+                            10.20(3)   (g)      6      121( 31
+                                                            21)              (h)          0.98(33
+                                                                                               20 )              (i)
+                     0.6    #1+15                      #24                                 #16
+
+
+                     0.0                        0
+
+
+
+
+                                                                                                                         combined Dubna 2022         previous work
+                     1.0    10.16(2)   (j)             91(23
+                                                          15)                (k)          0.71(26
+                                                                                               15 )              (l)
+                            #14                 4      #25                                 #14
+                     0.5
+
+                     0.0                    0
+                     1.6    10.18(2)   (m) 10          105( 18                                 19
+                                                            13)              (n)          0.85(13 )              (o)
+                            #1+29                      #49                                 #30
+                     0.8
+
+                     0.0                        0
+                           9.5   10.0 10.5             1     10 100 103 0.01 0.1 1                               10
+                             Energy (MeV)                      Correlation time (ms)
+FIG. 1: (Color online) The left column provides experimental decay-energy spectra from events associated with the decay step
+286
+   Fl → 282 Cn. For a single entry, a Gaussian with integral one and a width compliant with its measured uncertainty was added
+into the respective spectrum. The numbers at the top left of each panel in the left column are the (α-decay) energies extracted
+by computing the histogram mean in the interval [9.9,10.5] MeV. The middle and right columns provide the correlation times
+for the decays of 286 Fl and 282 Cn, respectively. Experimental data points are comprised in the histograms (black lines). The
+shaded areas (blue) provide correlation-time distributions expected for the corresponding half life, T1/2 , which are given in the
+top left corner of each panel. For all panels, the number behind the hashtag, #, indicates the number of available data points.
+The first row, panels (a)-(c), refers to previous direct production of 286 Fl [14,63-65]. The second row, panels (d)-(f), refers to
+previous indirect production of 286 Fl [61,62,66]. The spectra in the third row, panels (g)-(i), are the sums of the spectra in
+the first and second row. The fourth row, panels (j)-(l), refer to the recent data obtained at JINR Dubna [67]. The spectra in
+the fifth row, panels (m)-(o), are the sums of the spectra in the third and fourth row, i.e. comprise current best values for the
+main decay characteristics of 286 Fl and 282 Cn prior to the present study. For the update including the data points from the
+present study, see Fig. 2 of the main article and Table I of this Supplemental Material. For the interpretation of the peak at
+9.60(1) MeV in panels (a), (g), and (m), see Refs. [14,72].
+                                                                                                                                     3
+
+
+TABLE I: Overview of correlation time analyses of single decay steps according to Ref. [74] of various ensembles of decay chains
+associated with previous direct (’Cn&Fl’) and indirect (’Lv&Og’) production of 286 Fl, recent production of 286 Fl [67], and the
+present events interpreted to start from 290 Lv, respectively. These correspond to ensembles as displayed in the respective rows
+of Fig. 3 in the main article and Fig. 1.
+                                                                                       286
+     Label                        previous        previous         previous               Fl              all          including
+                                  (Cn&Fl)         (Lv&Og)                              (2022)                          this work
+     References                   [14,63-65]      [61,62,66]                            [67]
+     290
+        Lv
+     No. of chains                                    16              16                                  16               18
+     data points                                      11              11                                  11               13
+     T1/2 (290 Lv) (ms)                             8.3(36
+                                                        19 )        8.3(36
+                                                                        19 )                            8.3(36
+                                                                                                            19 )         8.2(32
+                                                                                                                             18 )
+     σΘexp                                           2.13b           2.13b                               2.13b            2.02b
+     [σΘ,low , σΘ,high ] [74]                     [0.67,1.81]     [0.67,1.81]                         [0.67,1.81]      [0.72,1.77]
+     data points                                      11              11                                  11               12
+     Edecay (MeV)                                  10.84(8)        10.84(8)                            10.84(8)         10.84(7)a
+     286
+        Fl
+     No. of chains                    13               16              29                 25               54               56
+     data points                      13               11              24                 25               49               51
+     T1/2 (286 Fl) (ms)            126(4827 )       115(5731 )      121(31
+                                                                         21 )          91(23
+                                                                                           15 )         105(18
+                                                                                                             13 )        106(17
+                                                                                                                              13 )
+     σΘexp                           0.96             1.44            1.22               0.97             1.10             1.11
+     [σΘ,low , σΘ,high ] [74]    [0.72,1.77]      [0.67,1.81]     [0.84,1.72]        [0.85,1.71]      [0.97,1.57]      [0.98,1.58]
+     data points                       7                8              15                 14               29               31
+     Edecay (MeV)                 10.22(4)         10.18(5)        10.20(3)           10.16(2)         10.18(2)         10.18(2)c
+     282
+        Cn
+     data points                       9               7               16                 14               30               32
+     T1/2 (282 Cn) (ms)           0.82(4120 )      1.24(75
+                                                         34 )      0.98(33
+                                                                         20 )         0.71(26
+                                                                                            15 )       0.85(19
+                                                                                                             13 )       0.88(19
+                                                                                                                              13 )
+     σΘexp                           0.99            0.43d            0.87               1.04             0.98             0.97
+     [σΘ,low , σΘ,high ] [74]    [0.62,1.84]      [0.52,1.87]     [0.77,1.75]        [0.73,1.77]      [0.89,1.67]      [0.90,1.66]
+     a
+         Result from the integration of the energy spectrum in Fig. 3(a) of the main article in the interval [10.0,11.7] MeV.
+                        b
+                          The experimental value for σΘexp falls outside the upper 1-σ confidence limit [74].
+           c
+             Result from the integration of the energy spectra in the left column of Fig. 1 in the interval [9.9,10.5] MeV.
+                         d
+                           The experimental value for σΘexp falls outside the lower 1-σ confidence limit [74].
+
+
+
+
+           TABLE II: Summary of aggregated experimental results concerning the decays of 290 Lv, 286 Fl, and 282 Cn.
+                      Eα             Qα             T1/2          bα a            T1/2 (α)b            HFb            T1/2 (SF)b
+                     (MeV)          (MeV)           (ms)                            (ms)                                (ms)
+     290
+           Lv       10.84(7)      10.99(7)        8.2(32
+                                                      18 )         1               8.2(32
+                                                                                        18 )        1.4(157)        not applicable
+     286
+           Fl       10.18(2)      10.32(2)        106(17
+                                                      13 )       31/56                   31
+                                                                                   191(23 )          2.2(75 )          247(40
+                                                                                                                           30 )
+                    9.57(3)c       9.71(3)                       1/56           5.9(10
+                                                                                     7 ) × 10
+                                                                                             3
+                                                                                                     1.3(54 )
+    282
+           Cn           not applicable            0.88(19
+                                                       13 )        0                   not applicable                  0.88(19
+                                                                                                                            13 )
+              a
+                Due to incomplete knowledge from some previous studies, the branching ratio can only be estimated.
+     b
+         The uncertainties cannot account for uncertainties in branching ratios. See preceding note. Hindrance factors were
+                      calculated based on C. Qi et al., Phys. Rev. C 80, 044326 (2009). See also Refs. [14,72].
+                                          c
+                                            See corresponding note in Table II in Ref. [14].
+

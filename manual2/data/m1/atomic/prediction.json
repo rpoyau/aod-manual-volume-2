@@ -1,0 +1,365 @@
+{
+  "atomic_prediction": {
+    "admission_status": "native_atomic_admission_pending",
+    "frequency_hz": null,
+    "ratio": null,
+    "standard_uncertainty_hz": null,
+    "transition_period_seconds": null
+  },
+  "calibration": {
+    "fitted_parameters": [],
+    "realized_device_calibration": "not_performed",
+    "reference_hz": "9192631770",
+    "reference_kind": "exact_si_definition"
+  },
+  "calibration_sha256": "9387d2bfa232450d90a11c0403a43e2c364c19d08834679b406ada6934be30b5",
+  "countermodels": [
+    {
+      "Cs_gain": "1",
+      "H_gain": "1",
+      "atomic_map_status": "unjustified; witness_of_missing_constraint",
+      "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+      "conditional_unit_conversion": {
+        "classification": "conditional_unit_conversion_not_ratio_derivation",
+        "covariance": {
+          "matrix": [
+            [
+              null,
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "matrix_units": [
+            [
+              "1*1",
+              "1*Hz"
+            ],
+            [
+              "Hz*1",
+              "Hz*Hz"
+            ]
+          ],
+          "rounding_policy": "exact_rational_no_tolerance",
+          "status": "partial",
+          "units": [
+            "1",
+            "Hz"
+          ],
+          "variables": [
+            "ratio",
+            "reference_frequency"
+          ]
+        },
+        "first_order_frequency_variance_hz2": null,
+        "frequency_hz": "11031158124",
+        "frequency_variance_hz2": null,
+        "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+        "native_admission": "not_asserted",
+        "period_propagation": "not_established",
+        "quantity_kind": "transition_period",
+        "ratio": "6/5",
+        "reference_hz": "9192631770",
+        "reference_kind": "exact_si_definition",
+        "standard_uncertainty_hz_display": null,
+        "standard_uncertainty_seconds_display": null,
+        "transition_period_seconds": "1/11031158124",
+        "transition_period_variance_s2": null,
+        "uncertainty_status": "partial",
+        "unresolved_uncertainty": [
+          "unknown_input_covariance_or_variance"
+        ]
+      },
+      "counts": {
+        "outer_minus": 5,
+        "outer_plus": 6
+      },
+      "finite_cadence_ratio": "6/5",
+      "lambda": "0",
+      "mapped_ratio": "6/5",
+      "physical_standard_uncertainty_hz": null,
+      "scenario": "baseline",
+      "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+    },
+    {
+      "Cs_gain": "1",
+      "H_gain": "2",
+      "atomic_map_status": "unjustified; witness_of_missing_constraint",
+      "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+      "conditional_unit_conversion": {
+        "classification": "conditional_unit_conversion_not_ratio_derivation",
+        "covariance": {
+          "matrix": [
+            [
+              null,
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "matrix_units": [
+            [
+              "1*1",
+              "1*Hz"
+            ],
+            [
+              "Hz*1",
+              "Hz*Hz"
+            ]
+          ],
+          "rounding_policy": "exact_rational_no_tolerance",
+          "status": "partial",
+          "units": [
+            "1",
+            "Hz"
+          ],
+          "variables": [
+            "ratio",
+            "reference_frequency"
+          ]
+        },
+        "first_order_frequency_variance_hz2": null,
+        "frequency_hz": "22062316248",
+        "frequency_variance_hz2": null,
+        "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+        "native_admission": "not_asserted",
+        "period_propagation": "not_established",
+        "quantity_kind": "transition_period",
+        "ratio": "12/5",
+        "reference_hz": "9192631770",
+        "reference_kind": "exact_si_definition",
+        "standard_uncertainty_hz_display": null,
+        "standard_uncertainty_seconds_display": null,
+        "transition_period_seconds": "1/22062316248",
+        "transition_period_variance_s2": null,
+        "uncertainty_status": "partial",
+        "unresolved_uncertainty": [
+          "unknown_input_covariance_or_variance"
+        ]
+      },
+      "counts": {
+        "outer_minus": 5,
+        "outer_plus": 6
+      },
+      "finite_cadence_ratio": "6/5",
+      "lambda": "1",
+      "mapped_ratio": "12/5",
+      "physical_standard_uncertainty_hz": null,
+      "scenario": "baseline",
+      "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+    },
+    {
+      "Cs_gain": "1",
+      "H_gain": "1",
+      "atomic_map_status": "unjustified; witness_of_missing_constraint",
+      "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+      "conditional_unit_conversion": {
+        "classification": "conditional_unit_conversion_not_ratio_derivation",
+        "covariance": {
+          "matrix": [
+            [
+              null,
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "matrix_units": [
+            [
+              "1*1",
+              "1*Hz"
+            ],
+            [
+              "Hz*1",
+              "Hz*Hz"
+            ]
+          ],
+          "rounding_policy": "exact_rational_no_tolerance",
+          "status": "partial",
+          "units": [
+            "1",
+            "Hz"
+          ],
+          "variables": [
+            "ratio",
+            "reference_frequency"
+          ]
+        },
+        "first_order_frequency_variance_hz2": null,
+        "frequency_hz": "3677052708",
+        "frequency_variance_hz2": null,
+        "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+        "native_admission": "not_asserted",
+        "period_propagation": "not_established",
+        "quantity_kind": "transition_period",
+        "ratio": "2/5",
+        "reference_hz": "9192631770",
+        "reference_kind": "exact_si_definition",
+        "standard_uncertainty_hz_display": null,
+        "standard_uncertainty_seconds_display": null,
+        "transition_period_seconds": "1/3677052708",
+        "transition_period_variance_s2": null,
+        "uncertainty_status": "partial",
+        "unresolved_uncertainty": [
+          "unknown_input_covariance_or_variance"
+        ]
+      },
+      "counts": {
+        "outer_minus": 5,
+        "outer_plus": 2
+      },
+      "finite_cadence_ratio": "2/5",
+      "lambda": "0",
+      "mapped_ratio": "2/5",
+      "physical_standard_uncertainty_hz": null,
+      "scenario": "early_loss",
+      "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+    },
+    {
+      "Cs_gain": "1",
+      "H_gain": "2",
+      "atomic_map_status": "unjustified; witness_of_missing_constraint",
+      "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+      "conditional_unit_conversion": {
+        "classification": "conditional_unit_conversion_not_ratio_derivation",
+        "covariance": {
+          "matrix": [
+            [
+              null,
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "matrix_units": [
+            [
+              "1*1",
+              "1*Hz"
+            ],
+            [
+              "Hz*1",
+              "Hz*Hz"
+            ]
+          ],
+          "rounding_policy": "exact_rational_no_tolerance",
+          "status": "partial",
+          "units": [
+            "1",
+            "Hz"
+          ],
+          "variables": [
+            "ratio",
+            "reference_frequency"
+          ]
+        },
+        "first_order_frequency_variance_hz2": null,
+        "frequency_hz": "7354105416",
+        "frequency_variance_hz2": null,
+        "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+        "native_admission": "not_asserted",
+        "period_propagation": "not_established",
+        "quantity_kind": "transition_period",
+        "ratio": "4/5",
+        "reference_hz": "9192631770",
+        "reference_kind": "exact_si_definition",
+        "standard_uncertainty_hz_display": null,
+        "standard_uncertainty_seconds_display": null,
+        "transition_period_seconds": "1/7354105416",
+        "transition_period_variance_s2": null,
+        "uncertainty_status": "partial",
+        "unresolved_uncertainty": [
+          "unknown_input_covariance_or_variance"
+        ]
+      },
+      "counts": {
+        "outer_minus": 5,
+        "outer_plus": 2
+      },
+      "finite_cadence_ratio": "2/5",
+      "lambda": "1",
+      "mapped_ratio": "4/5",
+      "physical_standard_uncertainty_hz": null,
+      "scenario": "early_loss",
+      "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+    }
+  ],
+  "dependency_gates": {
+    "P2": "native_atomic_construction_and_accessor_unresolved",
+    "P3": "native_atomic_coupled_lineages_unresolved",
+    "P4": "physical_atomic_observation_map_unresolved",
+    "P4a": "external_state_inventory_only"
+  },
+  "engine_bindings": [
+    {
+      "path": "manual2/scripts/matter1_atomic.py",
+      "sha256": "00fc9ee7d37e39f67a60dcc93398d0b7a7511ef9e66c4f3d0ab9ede144ce3a12"
+    },
+    {
+      "path": "manual2/scripts/matter1_stateful.py",
+      "sha256": "254b9fe299ca2942f26a3963d12572f056f9e1aceb2293271412d216234a2e95"
+    },
+    {
+      "path": "manual2/scripts/matter1_temporal.py",
+      "sha256": "0ba3f7e0e2b8bc44fb83385548702d21549f0ca76a422abc3c04a1a500716b5c"
+    },
+    {
+      "path": "manual2/scripts/matter1_folding.py",
+      "sha256": "c9565228021a6e86bcc95ec18d14261a92ed8aca5762d7c9c0a0da5f2d9f1d7b"
+    },
+    {
+      "path": "manual2/scripts/matter1_metrology.py",
+      "sha256": "591e64cf77e266762c723ec6cfca5c82510134445fa4f3c7941ff72539464062"
+    }
+  ],
+  "exposure": "H_and_Rb_previously_exposed; no_independent_prediction_claim",
+  "model_contract_sha256": "9fee0ecff98b9e870bf3252bf1eeec99b6bff720cb19af553d8fe907c2370ecd",
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "proof": {
+    "consequence": "For positive cadence r, R_lambda=r*(1+lambda); any positive ratio is obtained by lambda=R/r-1. Cs calibration does not select lambda.",
+    "fixed": [
+      "finite histories within each scenario",
+      "Cs normalization",
+      "single map family for both Z values"
+    ],
+    "free_parameter": "lambda in g_lambda(Z)",
+    "minimum_extra_premise": "A source-justified atomic configuration/update and observation rule fixing relative H/Cs phase or cycle gain independently of the tested H splitting.",
+    "scope": "non-identifiability from the presently established finite constraints, not proof that AOD cannot determine a ratio with additional atomic construction"
+  },
+  "schema_version": 1,
+  "source_bindings": [
+    {
+      "label_lines": {
+        "eq:key-proposed-admitted-trace": 156
+      },
+      "labels": [
+        "eq:key-proposed-admitted-trace"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    {
+      "label_lines": {
+        "eq:cadence-ratio": 114,
+        "eq:rcd-duration-participation": 69,
+        "eq:wave-update-trace": 33
+      },
+      "labels": [
+        "eq:wave-update-trace",
+        "eq:rcd-duration-participation",
+        "eq:cadence-ratio"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    }
+  ],
+  "status": "prediction_objective_incomplete_observation_map_underdetermined",
+  "target_access": "not_read"
+}

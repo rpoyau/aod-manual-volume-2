@@ -1,0 +1,56 @@
+282 Cn                                                                                                                               282 Cn
+112    170                                                         From ENSDF                                                        112    170
+
+
+
+                                                                   Adopted Levels
+
+                                                                      History
+                                      Type            Author              Citation         Literature Cutoff Date
+                                Full Evaluation     Balraj Singh     NDS 156, 70 (2019)         31-Jan-2019
+
+Q(β− )=−4750 SY; S(n)=7120 SY; S(p)=3610 SY; Q(α)=10170 SY               2017Wa10
+Estimated uncertainties (2017Wa10): ∆Q(β− )=750, ∆S(n)=760, ∆S(p)=1040, ∆Q(α)=200.
+S(2n)=12860 880, S(2p)=6120 1020 (syst,2017Wa10).
+282 Cn produced in four ways, three different α-decay chains, and directly in one correlated decay chain:
+
+1. from α-decay chain 294 Og -> 290 Lv -> 286 Fl -> 282 Cn; 294 Og produced in four correlated decay chains, but only two of these
+     decay through α decay of 286 Fl. See 294 Og Adopted Levels, and 2012Og06, 2011Og07, 2006Og05, 2004Og10 and 2004Og12 for
+     details.
+2. from α-decay chain 290 Lv -> 286 Fl -> 282 Cn. 290 Lv produced in 12 correlated decay chains, but only seven of these decay
+     through α-decay mode of 286 Fl. See 290 Lv Adopted Levels, and 2006Og05 and 2004Og07 for details.
+3. from α-decay chain 286 Fl -> 282 Cn, where 286 Fl is produced in 11 correlated decay chains, but only in six of these 286 Fl
+     decays by α-decay mode. See 286 Fl Adopted Levels, and 2010El06, 2009St21, 2004Og12 and 2004Og10 for details.
+4. 282 Cn produced in 238 U(48 Ca,4n),E=240 MeV (2004Og12,2004OgZZ), where only one SF event is observed and assigned to
+     282 Cn based on expected cross section, with energy of the evaporation residues (EVR)=10.8 MeV, energy of the SF event=222
+
+     MeV, and ∆t(SF)=0.207 ms.
+2018Ut02: 240 Pu(48 Ca,α2n),E=250 MeV at JINR-Dubna. Several SF decays with measured evaporation residue energy, decay time,
+     and SF energy assigned were observed, eight of these events with 1-ms activity could belong to 282 Cn or 284 Fl, the latter through
+     4n-channel.
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 134 primary references dealing with
+     the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                                    282 Cn Levels
+
+
+
+                                                         Cross Reference (XREF) Flags
+
+                                                         A     286 Fl α decay (166 ms)
+
+
+ E(level)    Jπ          T1/2          XREF                                               Comments
+  0          0+    0.96 ms +35−20      A          %SF=100 (2016Ho09); %α≤7 (2016Ho09)
+                                                  Only the SF decay seen in all the 16 observed decay chains.
+                                                  E(level): the reported activity is assumed to belong to the g.s. of 282 Cn.
+                                                  T1/2 : from 2016Ho09 review, based on analysis of 14 events. Others: 0.91 ms +33−19
+                                                    (2017Og01 and 2015Og05 reviews); 0.82 ms +30−18 (2011Og07, 2012Og06,
+                                                    2006Og05, based on analysis of 12 events); 0.50 ms +33−14 (2004Og12, from
+                                                    analysis of six events); 1.0 ms +48−5 (2004Og07, from analysis of one event).
+
+
+
+
+                                                                       1
+

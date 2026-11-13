@@ -1,0 +1,64 @@
+{
+  "added_metadata": [
+    "declaration_id",
+    "record_kind",
+    "input_binding_id",
+    "is_group_boundary",
+    "is_named_anchor",
+    "admission_status",
+    "execution_status"
+  ],
+  "from_schema": 1,
+  "legacy_route_mapping": {
+    "Exoshedding / Yro Route": {
+      "assigned_route_class": "surplus",
+      "is_named_anchor": 0
+    },
+    "Filled Anchor + Exoshedding": {
+      "assigned_route_class": "surplus",
+      "is_named_anchor": 1
+    },
+    "Filled Shared Enclosure (m:m:0::2m)": {
+      "assigned_route_class": "neutral",
+      "is_named_anchor": 1
+    },
+    "Open-Seat Acceptor (E2^0)": {
+      "assigned_route_class": "deficit",
+      "is_named_anchor": 0
+    },
+    "Seated Retained Closure (E2^+-)": {
+      "assigned_route_class": "neutral",
+      "is_named_anchor": 0
+    },
+    "Unretained Open Cutoff": {
+      "assigned_route_class": "unfilled",
+      "is_named_anchor": 0
+    }
+  },
+  "numeric_conservation": "Every canonical integer field in the 126-row frozen v1 ledger is preserved under numeric_renames.",
+  "numeric_renames": {
+    "p_d": "assigned_pressure",
+    "rd_fuse": "support_sum",
+    "ttl_c": "assigned_ttl"
+  },
+  "semantic_changes": {
+    "cf_certified": "Certificate-shaped syntax is now expressly a declaration; no certificate claim survives.",
+    "route_class": "Legacy descriptive route prose maps to the four assigned codes neutral, deficit, surplus, unfilled.",
+    "support_sum": "Preserves legacy rd_fuse numbers as a conditional arithmetic expression, not an admitted R_D value."
+  },
+  "string_renames": {
+    "cf_certified": "support_declaration",
+    "route_class": "assigned_route_class",
+    "sheddic_path": "assigned_sheddic_path",
+    "yro_status": "assigned_yro_status"
+  },
+  "to_schema": 2,
+  "unchanged_placement_fields": [
+    "symbol",
+    "m_order",
+    "seat_s",
+    "gamma_prev",
+    "gamma_m",
+    "enclosure_l"
+  ]
+}

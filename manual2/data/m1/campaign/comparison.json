@@ -1,0 +1,1851 @@
+{
+  "cesium_realization_records": {
+    "August2013": {
+      "Cs_SI_frequency_role": "calibration_identity",
+      "campaign_id": "August2013",
+      "complete_covariance": {
+        "kind": "unknown",
+        "reason": "Complete physical observation/model uncertainty not established"
+      },
+      "evidence_class": "measured_input_reduction",
+      "independent_atomic_prediction": false,
+      "method": "Laser-cooled atomic fountain; two Ramsey interactions with applied microwave field; optical population readout; line servo",
+      "missing_raw_inputs": [
+        "campaign-resolved initial state populations and all laser controls",
+        "time-stamped per-cycle population/fluorescence samples",
+        "complete servo logs",
+        "campaign-specific field,temperature,density streams and covariances",
+        "fullupdatedAugust2013componentbudget"
+      ],
+      "nominal_synthesis_is_exact_carrier": false,
+      "profile_sha256": "727c293115f4ec81bd901d7dd5f4bfb26ec96045f235525eeb490321b5233b6d",
+      "raw_population_and_servo_replay": false,
+      "reported_entries": [],
+      "source_reported_uncertainty": {
+        "TypeA": {
+          "campaign_or_measurement": "August2013",
+          "category_or_coverage_status": "published TypeA standard uncertainty",
+          "finite_distribution_inferred": false,
+          "printed_fractional_times_1e15": "0.44",
+          "reported_value_or_bound": "10111894947/2500000000000000",
+          "reporting_precision": "preserved printed token",
+          "source": "10.1088/0026-1394/51/3/174",
+          "unit": "Hz"
+        },
+        "TypeB": {
+          "campaign_or_measurement": "August2013",
+          "category_or_coverage_status": "published TypeB standard uncertainty",
+          "finite_distribution_inferred": false,
+          "printed_fractional_times_1e15": "0.16",
+          "reported_value_or_bound": "919263177/625000000000000",
+          "reporting_precision": "preserved printed token",
+          "source": "10.1088/0026-1394/51/3/174",
+          "unit": "Hz"
+        }
+      },
+      "spin_exchange_statistics_already_in_TypeA": true
+    },
+    "typical_Table1": {
+      "Cs_SI_frequency_role": "calibration_identity",
+      "campaign_id": "typical_Table1",
+      "complete_covariance": {
+        "kind": "unknown",
+        "reason": "Complete physical observation/model uncertainty not established"
+      },
+      "evidence_class": "measured_input_reduction",
+      "independent_atomic_prediction": false,
+      "method": "Laser-cooled atomic fountain; two Ramsey interactions with applied microwave field; optical population readout; line servo",
+      "missing_raw_inputs": [
+        "campaign-resolved initial state populations and all laser controls",
+        "time-stamped per-cycle population/fluorescence samples",
+        "complete servo logs",
+        "campaign-specific field,temperature,density streams and covariances",
+        "fullupdatedAugust2013componentbudget"
+      ],
+      "nominal_synthesis_is_exact_carrier": false,
+      "profile_sha256": "727c293115f4ec81bd901d7dd5f4bfb26ec96045f235525eeb490321b5233b6d",
+      "raw_population_and_servo_replay": false,
+      "reported_entries": [
+        {
+          "effect": "gravity_and_second_order_Doppler",
+          "magnitude": "179.87",
+          "standard_uncertainty": "0.03"
+        },
+        {
+          "effect": "second_order_Zeeman_typical",
+          "magnitude": "286.06",
+          "standard_uncertainty": "0.02"
+        },
+        {
+          "effect": "blackbody_radiation",
+          "magnitude": "-0.087",
+          "standard_uncertainty": "0.005"
+        },
+        {
+          "effect": "spin_exchange_low_density",
+          "included_in_TypeB_total": false,
+          "magnitude": "-0.71",
+          "role": "informational; statistical component in TypeA",
+          "standard_uncertainty": "0.24"
+        },
+        {
+          "effect": "spin_exchange_nonlinearity",
+          "magnitude": "0",
+          "standard_uncertainty": "0.02"
+        },
+        {
+          "effect": "distributed_cavity_phase_m0",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "distributed_cavity_phase_m1",
+          "magnitude": "0",
+          "standard_uncertainty": "0.028"
+        },
+        {
+          "effect": "distributed_cavity_phase_m2",
+          "magnitude": "0",
+          "standard_uncertainty": "0.02"
+        },
+        {
+          "effect": "microwave_power",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty": "0.08"
+        },
+        {
+          "effect": "microwave_spurious",
+          "magnitude": "0",
+          "standard_uncertainty": "0.05"
+        },
+        {
+          "effect": "cavity_pulling",
+          "magnitude": "0.015",
+          "standard_uncertainty": "0.015"
+        },
+        {
+          "effect": "Rabi_pulling",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "Ramsey_pulling",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "Majorana_transitions",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "fluorescence_light_shift",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "dc_Stark",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "background_gas_collisions",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "Bloch_Siegert",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        },
+        {
+          "effect": "integrator_offset",
+          "magnitude_bound": "<0.01",
+          "standard_uncertainty_bound": "<0.01"
+        }
+      ],
+      "source_reported_uncertainty": {
+        "TypeB": {
+          "campaign_or_measurement": "typical_Table1",
+          "category_or_coverage_status": "published TypeB standard uncertainty",
+          "finite_distribution_inferred": false,
+          "printed_fractional_times_1e15": "0.11",
+          "reported_value_or_bound": "10111894947/10000000000000000",
+          "reporting_precision": "preserved printed token",
+          "source": "10.1088/0026-1394/51/3/174",
+          "unit": "Hz"
+        }
+      },
+      "spin_exchange_statistics_already_in_TypeA": true
+    }
+  },
+  "correction_policy": "Use each historical reduction once; keep Table IV, Table VI and published mean separate.",
+  "empirical_agreement": null,
+  "evaluation_catalog_sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+  "fitted_parameters": [],
+  "hydrogen_exposure": "retrospective_known_before_model_selection",
+  "hydrogen_observation": {
+    "beat_definition": "nu_B = nu_M - 284 nu_R - nu_S",
+    "matched_native_and_historical_window": false,
+    "method": "continuous_active_maser_heterodyne",
+    "phase_definition_turns": "DeltaPhi_B = DeltaPhi_M - 284 DeltaPhi_R - DeltaPhi_S",
+    "physical_H_Cs_ratio": null,
+    "predicted_frequency_hz": null,
+    "predicted_period_seconds": null,
+    "reason": "Generic recurrence does not identify state-resolved maser emission or apparatus preparation."
+  },
+  "hydrogen_source_reductions": {
+    "published_mean": {
+      "apparatus": "published combination of two continuous maser reductions",
+      "complete_physical_uncertainty": {
+        "kind": "unknown",
+        "reason": "Complete physical observation/model uncertainty not established"
+      },
+      "corrected_frequency_hz": "14204057517679/10000",
+      "correction_chain": [
+        {
+          "frequency_hz": "14204057517679/10000",
+          "measurements": [
+            "table_iv",
+            "table_vi"
+          ],
+          "operation": "arithmetic_mean"
+        }
+      ],
+      "correction_ownership": {
+        "combined": "No new correction added to corrected estimates"
+      },
+      "evidence_class": "measured_input_reduction",
+      "independent_atomic_prediction": false,
+      "measurement_id": "published_mean",
+      "method": "continuous_active_maser_heterodyne",
+      "missing_raw_inputs": [
+        "Four individual cavity/flux measurements for each tuned beat",
+        "Unrounded bulb diameters and fit inputs",
+        "1970 apparatus-specific preparation parameters",
+        "Emitted microwave phase/amplitude time series"
+      ],
+      "profile_sha256": "428bcdd706881032274bdf1bf339915e4c6df692ea8a231f9f4494e2abc2e462",
+      "published_rounded_frequency_hz": "1420405751.768",
+      "raw_phase_stream_available": false,
+      "source_id": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+      "source_reported_uncertainty": {
+        "campaign_or_measurement": "published_mean",
+        "category_or_coverage_status": "published standard uncertainty",
+        "combination_scope": "printed component arithmetic; source convention, not complete physical covariance",
+        "component_square_sum_hz2": null,
+        "components_hz": {},
+        "finite_distribution_inferred": false,
+        "reported_value_or_bound": "0.002",
+        "reporting_precision": "preserved decimal token",
+        "source": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+        "unit": "Hz"
+      }
+    },
+    "table_iv": {
+      "apparatus": "SAO portable hydrogen maser",
+      "complete_physical_uncertainty": {
+        "kind": "unknown",
+        "reason": "Complete physical observation/model uncertainty not established"
+      },
+      "corrected_frequency_hz": "14204057517691/10000",
+      "correction_chain": [
+        {
+          "frequency_hz": "1420000000",
+          "term": "nominal_reference_multiple",
+          "value_token": "5000000"
+        },
+        {
+          "frequency_hz": "71020289721/50",
+          "source_locator": "p205 TableIV nu_S; p204 setting",
+          "term": "synthesizer",
+          "value_token": "405794.4200"
+        },
+        {
+          "frequency_hz": "14204057943007/10000",
+          "source_locator": "p205 TableIV nu_B; electronic-counter beat-period measurement",
+          "term": "beat",
+          "value_token": "-0.1193"
+        },
+        {
+          "frequency_hz": "3551014379223/2500",
+          "source_locator": "p205 TableIV delta_UTC; nominal UTC offset",
+          "term": "UTC_to_atomic_time",
+          "value_token": "-42.6115"
+        },
+        {
+          "frequency_hz": "14204057516877/10000",
+          "source_locator": "p205 TableIV delta_N; p204 discussion/Fig2",
+          "term": "NP3_reference_offset",
+          "value_token": "-0.0015"
+        },
+        {
+          "frequency_hz": "14204057517079/10000",
+          "source_locator": "p205 TableIV delta_W; p201 HU transfer 20.19 mHz rounded in table",
+          "term": "wall",
+          "value_token": "0.0202"
+        },
+        {
+          "frequency_hz": "7102028758853/5000",
+          "source_locator": "p205 TableIV delta_D; measured bulb 320.15 K",
+          "term": "second_order_Doppler",
+          "value_token": "0.0627"
+        },
+        {
+          "frequency_hz": "14204057517691/10000",
+          "source_locator": "p205 TableIV delta_Z; measured Zeeman 1020 Hz",
+          "term": "Zeeman",
+          "value_token": "-0.0015"
+        }
+      ],
+      "correction_ownership": {
+        "already_in_input": [],
+        "applied": [
+          "UTC",
+          "NP3",
+          "wall",
+          "Doppler",
+          "Zeeman"
+        ],
+        "zero_correction_does_not_remove_uncertainty": true
+      },
+      "evidence_class": "measured_input_reduction",
+      "independent_atomic_prediction": false,
+      "measurement_id": "table_iv",
+      "method": "continuous_active_maser_heterodyne",
+      "missing_raw_inputs": [
+        "Four individual cavity/flux measurements for each tuned beat",
+        "Unrounded bulb diameters and fit inputs",
+        "1970 apparatus-specific preparation parameters",
+        "Emitted microwave phase/amplitude time series"
+      ],
+      "profile_sha256": "428bcdd706881032274bdf1bf339915e4c6df692ea8a231f9f4494e2abc2e462",
+      "published_rounded_frequency_hz": null,
+      "raw_phase_stream_available": false,
+      "source_id": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+      "source_reported_uncertainty": {
+        "campaign_or_measurement": "table_iv",
+        "category_or_coverage_status": "published standard uncertainty",
+        "combination_scope": "printed component arithmetic; source convention, not complete physical covariance",
+        "component_square_sum_hz2": "14651/2500000000",
+        "components_hz": {
+          "Doppler": "0.0001",
+          "Zeeman": "0.00002",
+          "beat": "0.0004",
+          "reference_offset": "0.0013",
+          "wall": "0.0020"
+        },
+        "finite_distribution_inferred": false,
+        "reported_value_or_bound": "0.0024",
+        "reporting_precision": "preserved decimal token",
+        "source": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+        "unit": "Hz"
+      }
+    },
+    "table_vi": {
+      "apparatus": "NBS-H2; successive TFE-Teflon storage bulbs",
+      "complete_physical_uncertainty": {
+        "kind": "unknown",
+        "reason": "Complete physical observation/model uncertainty not established"
+      },
+      "corrected_frequency_hz": "14204057517667/10000",
+      "correction_chain": [
+        {
+          "frequency_hz": "1420000000",
+          "term": "nominal_reference_multiple",
+          "value_token": "5000000"
+        },
+        {
+          "frequency_hz": "1420405795",
+          "source_locator": "p207 TableVI nu_S; p206 setting",
+          "term": "synthesizer",
+          "value_token": "405795.0000"
+        },
+        {
+          "frequency_hz": "7102028971601/5000",
+          "source_locator": "p207 TableVI corrected nu_B; p206 TableV regression intercept; delta_N already included",
+          "term": "zero_wall_corrected_beat",
+          "value_token": "-0.6798"
+        },
+        {
+          "frequency_hz": "14204057517087/10000",
+          "source_locator": "p207 TableVI delta_UTC",
+          "term": "UTC_to_atomic_time",
+          "value_token": "-42.6115"
+        },
+        {
+          "frequency_hz": "3551014379417/2500",
+          "source_locator": "p207 TableVI delta_D; mean bulb 297.05 K",
+          "term": "second_order_Doppler",
+          "value_token": "0.0581"
+        },
+        {
+          "frequency_hz": "14204057517667/10000",
+          "source_locator": "p207 TableVI delta_Z; mean Zeeman 245 Hz",
+          "term": "Zeeman",
+          "value_token": "-0.0001"
+        }
+      ],
+      "correction_ownership": {
+        "already_in_input": [
+          "NP3",
+          "wall"
+        ],
+        "applied": [
+          "UTC",
+          "Doppler",
+          "Zeeman"
+        ],
+        "zero_correction_does_not_remove_uncertainty": true
+      },
+      "evidence_class": "measured_input_reduction",
+      "independent_atomic_prediction": false,
+      "measurement_id": "table_vi",
+      "method": "continuous_active_maser_heterodyne",
+      "missing_raw_inputs": [
+        "Four individual cavity/flux measurements for each tuned beat",
+        "Unrounded bulb diameters and fit inputs",
+        "1970 apparatus-specific preparation parameters",
+        "Emitted microwave phase/amplitude time series"
+      ],
+      "profile_sha256": "428bcdd706881032274bdf1bf339915e4c6df692ea8a231f9f4494e2abc2e462",
+      "published_rounded_frequency_hz": null,
+      "raw_phase_stream_available": false,
+      "source_id": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+      "source_reported_uncertainty": {
+        "campaign_or_measurement": "table_vi",
+        "category_or_coverage_status": "published standard uncertainty",
+        "combination_scope": "printed component arithmetic; source convention, not complete physical covariance",
+        "component_square_sum_hz2": "7851/2500000000",
+        "components_hz": {
+          "Doppler": "0.0001",
+          "Zeeman": "0.00002",
+          "corrected_zero_wall_intercept": "0.0012",
+          "reference_offset": "0.0013"
+        },
+        "finite_distribution_inferred": false,
+        "reported_value_or_bound": "0.0018",
+        "reporting_precision": "preserved decimal token",
+        "source": "Hellwig_Vessot_Levine_Zitzewitz_Allan_Glaze_1970",
+        "unit": "Hz"
+      }
+    }
+  },
+  "prediction_sha256": "b5ff00f9388dfdaf4a5f915d6398798e44fef4a07183799152c71e298e83887b",
+  "profile": "matter1:all-elements-campaign:v1",
+  "rows": [
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z001-A001",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [
+        {
+          "channel": "all_modes",
+          "confidence": "not_explicit_in_adopted_record",
+          "locator": "PDF page1, ground-state T1/2 comment",
+          "measurement": {
+            "confidence": "not_explicit_in_adopted_record",
+            "kind": "lower_limit",
+            "original": ">2.1\u00d710^29 y",
+            "original_unit": "y",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": null,
+            "uncertainty_plus_seconds": null,
+            "unit_conversion": "Julian year = 365.25 days = 31557600 s",
+            "value_seconds": "6.62709600E+36"
+          },
+          "relation": ">",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "H-1:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "state_assignment": "established_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z026-A056",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fe-56:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fe-56"
+        }
+      ],
+      "state_assignment": "established_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z028-A062",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Ni-62:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Ni-62"
+        }
+      ],
+      "state_assignment": "established_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z055-A133",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Cs-133:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cs-133"
+        }
+      ],
+      "state_assignment": "established_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z082-A208",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [
+        {
+          "channel": "alpha",
+          "confidence": "90% confidence level",
+          "daughter": {
+            "A": 204,
+            "Z": 80,
+            "id": "Hg-204:ground",
+            "symbol": "Hg"
+          },
+          "locator": "PDF page6, section4.5.4, equation(5)",
+          "measurement": {
+            "confidence": "90% confidence level",
+            "kind": "lower_limit",
+            "original": ">2.6\u00d710^21 y at90% C.L.",
+            "original_unit": "y",
+            "quantity": "channel_partial_half_life",
+            "uncertainty_minus_seconds": null,
+            "uncertainty_plus_seconds": null,
+            "unit_conversion": "Julian year = 365.25 days = 31557600 s",
+            "value_seconds": "8.20497600E+28"
+          },
+          "relation": ">",
+          "source_id": "pb-alpha2012"
+        }
+      ],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Pb-208:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Pb-208"
+        },
+        {
+          "locator": "PDF page6, section4.5.4, equation(5)",
+          "role": "channel_specific_limit",
+          "source_id": "pb-alpha2012"
+        }
+      ],
+      "state_assignment": "established_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z112-A280",
+      "empirical_status": "reported_observed",
+      "evaluation": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "10 US +18-4",
+        "original_unit": "us",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.000004",
+        "uncertainty_plus_seconds": "0.000018",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.000010"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Cn-280:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "Cn-280 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z112-A282",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.96 ms +35\u221220",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.00020",
+        "uncertainty_plus_seconds": "0.00035",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.00096"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Cn-282:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-282"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": ".88 ms (+.19/\u2212.13)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.00013",
+            "uncertainty_plus_seconds": "0.00019",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.00088"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z112-A285",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "33 s +10\u22126",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "6",
+        "uncertainty_plus_seconds": "10",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "33"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Cn-285:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-285"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A284",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "2.5 ms +18\u22128",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0008",
+        "uncertainty_plus_seconds": "0.0018",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0025"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-284:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-284"
+        },
+        {
+          "locator": "XUNDL Fl-284 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": [
+        {
+          "decay_channels": [
+            {
+              "branching_original": "Complement of reported %SF=76 +9\u221219; no independent uncertainty calculated",
+              "daughter": {
+                "A": 280,
+                "Z": 112,
+                "id": "Cn-280:ground",
+                "symbol": "Cn"
+              },
+              "mode": "alpha",
+              "source_id": "xundl2025",
+              "status": "observed"
+            },
+            {
+              "branching_original": "%SF=76 +9\u221219",
+              "daughter": null,
+              "mode": "spontaneous_fission",
+              "source_id": "xundl2025",
+              "status": "observed"
+            }
+          ],
+          "half_life": {
+            "confidence": "not_specified_in_XUNDL_compilation",
+            "kind": "measured",
+            "original": "2.5 ms (+1.2/\u2212.6)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.0006",
+            "uncertainty_plus_seconds": "0.0012",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.0025"
+          },
+          "locator": "XUNDL Fl-284 level record",
+          "overlap": "Source overlaps prior daughter analyses; not averaged here.",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ]
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A285",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "101 ms +59\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.059",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.101"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-285:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-285"
+        },
+        {
+          "locator": "XUNDL Fl-285 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "not_specified_in_XUNDL_compilation",
+            "kind": "measured",
+            "original": "86 ms (+43/\u221221)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.021",
+            "uncertainty_plus_seconds": "0.043",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.086"
+          },
+          "locator": "XUNDL Fl-285 level record",
+          "overlap": "Source overlaps prior daughter analyses; not averaged here.",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ]
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A286",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "166 ms +40\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.040",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.166"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-286:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-286"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": [
+        {
+          "channel_partial_half_lives": [
+            {
+              "alpha_energy": "10.18 MeV",
+              "branching_estimate": "31/56",
+              "channel": "alpha_main",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "191 ms (+31/\u221223)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.023",
+                "uncertainty_plus_seconds": "0.031",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "0.191"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            },
+            {
+              "alpha_energy": "9.57 MeV",
+              "branching_estimate": "1/56",
+              "channel": "alpha_rare",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "5900 ms (+1000/\u2212700)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.7",
+                "uncertainty_plus_seconds": "1",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "5.9"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            },
+            {
+              "alpha_energy": null,
+              "branching_estimate": "24/56",
+              "channel": "spontaneous_fission",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "247 ms (+40/\u221230)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.03",
+                "uncertainty_plus_seconds": "0.04",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "0.247"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            }
+          ],
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": "106 ms (+17/\u221213)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.013",
+            "uncertainty_plus_seconds": "0.017",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.106"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A287",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.40 s +13\u22128",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.08",
+        "uncertainty_plus_seconds": "0.13",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.40"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-287:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-287"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A288",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.64 s +14\u221210",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.10",
+        "uncertainty_plus_seconds": "0.14",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.64"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-288:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 4, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-288"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A289",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "2.4 s +8\u22125",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.5",
+        "uncertainty_plus_seconds": "0.8",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "2.4"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-289:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-289"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A289",
+      "empirical_status": "tentative_isomer",
+      "evaluation": {
+        "confidence": "NUBASE quoted uncertainty; no distribution imported",
+        "kind": "measured",
+        "original": "1.1 +/- .8 s",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.8",
+        "uncertainty_plus_seconds": "0.8",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "1.1"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-289:m_candidate",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "fixed-width row 289 1141",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "state_assignment": "tentative_isomer",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A290",
+      "empirical_status": "tentative_assignment",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "19 s +91\u22129",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "9",
+        "uncertainty_plus_seconds": "91",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "19"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-290:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-290"
+        }
+      ],
+      "state_assignment": "tentative_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z114-A298",
+      "empirical_status": "unobserved_model_target",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "Unobserved model target; no half-life assigned",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "unscored_target_no_measured_value",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Fl-298:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "Fl-298 record",
+          "role": "selected_comparison",
+          "source_id": "target-declaration"
+        }
+      ],
+      "state_assignment": "not_established",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A288",
+      "empirical_status": "reported_observed",
+      "evaluation": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "2.0 MS +23-7",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0007",
+        "uncertainty_plus_seconds": "0.0023",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0020"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-288:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "Lv-288 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-288"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A289",
+      "empirical_status": "reported_observed",
+      "evaluation": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "2.4 MS +44-9",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0009",
+        "uncertainty_plus_seconds": "0.0044",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0024"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-289:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "Lv-289 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-289"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A290",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "8.3 ms +35\u221219",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0019",
+        "uncertainty_plus_seconds": "0.0035",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0083"
+      },
+      "event_times": [
+        {
+          "locator": "PDF page1, Event#1",
+          "original": "Event#1 delta_talpha1=0.207 ms",
+          "quantity": "event_waiting_time",
+          "role": "single_event_not_half_life",
+          "source_id": "ensdf-Lv-290",
+          "value_seconds": ".000207"
+        }
+      ],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-290:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-290"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": "8.2 ms (+3.2/\u22121.8)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.0018",
+            "uncertainty_plus_seconds": "0.0032",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.0082"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A291",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "19 ms +17\u22126",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.006",
+        "uncertainty_plus_seconds": "0.017",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.019"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-291:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-291"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A292",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "12.8 ms +70\u221233",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0033",
+        "uncertainty_plus_seconds": "0.0070",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0128"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-292:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 3, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-292"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A293",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "95 ms +63\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.063",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.095"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-293:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-293"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A293",
+      "empirical_status": "tentative_isomer",
+      "evaluation": {
+        "confidence": "NUBASE quoted uncertainty; no distribution imported",
+        "kind": "measured",
+        "original": "80 +/- 60 ms",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.060",
+        "uncertainty_plus_seconds": "0.060",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.080"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-293:m_candidate",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "fixed-width row 293 1161",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "state_assignment": "tentative_isomer",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z116-A294",
+      "empirical_status": "tentative_assignment",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "No measured half-life in adopted tentative record",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Lv-294:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-294"
+        }
+      ],
+      "state_assignment": "tentative_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z118-A294",
+      "empirical_status": "evaluated_observed",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.58 ms +44\u221218",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.00018",
+        "uncertainty_plus_seconds": "0.00044",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.00058"
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Og-294:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-294"
+        }
+      ],
+      "state_assignment": "assumed_ground_state",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    },
+    {
+      "comparison_status": "physical_loss_and_clock_maps_unestablished",
+      "configuration_id": "Z118-A295",
+      "empirical_status": "unobserved_rejected_candidate",
+      "evaluation": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "Unobserved; candidate chain rejected in reanalysis",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "event_times": [],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "limits": [],
+      "model_seconds": null,
+      "normalized_residual": null,
+      "overlapping_measurements_averaged": false,
+      "quantity": "total_half_life",
+      "record_id": "Og-295:ground",
+      "residual_seconds": null,
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-295"
+        }
+      ],
+      "state_assignment": "not_established",
+      "uncertainty": {
+        "model": "unknown",
+        "realization": "unknown",
+        "shared_source_covariance": "unknown"
+      },
+      "updates": []
+    }
+  ],
+  "schema_version": 1,
+  "selected_event_reductions": {
+    "deuterium_tritium": {
+      "H-2": {
+        "frequency_hz": null,
+        "missing": [
+          "prepared_state_and_dynamics_recipe",
+          "native_to_observable_map",
+          "source_bound_transition_target_and_apparatus",
+          "realization_and_joint_uncertainty"
+        ],
+        "physical_prediction": null,
+        "status": "missing_input"
+      },
+      "H-3": {
+        "frequency_hz": null,
+        "missing": [
+          "prepared_state_and_dynamics_recipe",
+          "native_to_observable_map",
+          "source_bound_transition_target_and_apparatus",
+          "realization_and_joint_uncertainty"
+        ],
+        "physical_prediction": null,
+        "status": "missing_input"
+      }
+    },
+    "livermorium": {
+      "detector": "SHREC implantation detector; CAEN VX2740 digitizers",
+      "digitizer_limit": "Paper states up to 125 MS/s; actual timestamp resolution is not supplied.",
+      "events": [
+        {
+          "classification": "published_implantation_to_decay_interval",
+          "event": "first escape-like alpha assigned to Lv-290",
+          "id": "gates2024:Lv290:chain1:first_decay",
+          "interval": "5.66",
+          "interval_seconds": "283/50000",
+          "lifetime_prediction": null,
+          "locator": "Figure 2(b) and accompanying first-chain discussion",
+          "m3_event_timing_status": "missing_input",
+          "missing": [
+            "actual_timestamp_resolution",
+            "detector_timebase_calibration"
+          ],
+          "origin": "implantation",
+          "pixel": [
+            160,
+            36
+          ],
+          "resolution": null,
+          "text_witness": "EVR-like event followed 5.66 ms later by a 0.60(1)-MeV",
+          "timebase_calibration": "unknown",
+          "timestamp_origin": "implantation",
+          "timing_uncertainty": "unknown",
+          "transcription_status": "source_bound_exact_decimal_reduction"
+        },
+        {
+          "classification": "published_implantation_to_decay_interval",
+          "event": "first full-energy alpha assigned to Lv-290",
+          "id": "gates2024:Lv290:chain2:first_decay",
+          "interval": "17.3",
+          "interval_seconds": "173/10000",
+          "lifetime_prediction": null,
+          "locator": "Figure 2(c) and accompanying second-chain discussion",
+          "m3_event_timing_status": "missing_input",
+          "missing": [
+            "actual_timestamp_resolution",
+            "detector_timebase_calibration"
+          ],
+          "origin": "implantation",
+          "pixel": [
+            94,
+            24
+          ],
+          "resolution": null,
+          "text_witness": "MeV EVR followed 17.3 ms later by a recoil-corrected",
+          "timebase_calibration": "unknown",
+          "timestamp_origin": "implantation",
+          "timing_uncertainty": "unknown",
+          "transcription_status": "source_bound_exact_decimal_reduction"
+        }
+      ],
+      "formation_timestamp_inferred": false,
+      "half_life_inferred_from_two_intervals": false,
+      "nuclear_dynamics": "not_implemented",
+      "selection": "Both published Lv-290 chains in Gates et al. 2024 Figure 2, without selecting by agreement with a model.",
+      "selection_conditions": "EVR 10<E<30 MeV, at least one full-energy alpha and subsequent spontaneous fission in the same pixel within one second of implantation.",
+      "source_files": {
+        "manual2/data/m1/isotopes/sources/gates2024.pdf": "d6094d1fb197893edcca12822dc18d6561da178d37c585a35b30e14aa26a86a9",
+        "manual2/data/m1/isotopes/sources/gates2024.txt": "10e0b8becd7221474700abf6d97ebdeb4db127c5c618b1e687124be7d4a76bde"
+      },
+      "transport": "Evaporation residues selected by Berkeley Gas-filled Separator before implantation. Formation time is not the recorded origin."
+    }
+  },
+  "uncertainty_status": "incomplete_no_zero_substitution_or_independence_assumption"
+}

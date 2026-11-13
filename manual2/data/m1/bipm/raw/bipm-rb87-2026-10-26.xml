@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<freq:stdfreq
+	xmlns:freq="NPL_MeP_Schema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:si="https://ptb.de/si"
+	>
+	<freq:label>6.835 GHz - 87Rb</freq:label>
+	<freq:freqlabel>6.835 GHz</freq:freqlabel>
+	<freq:target>87Rb</freq:target>
+	<freq:validfrom>2026-03-27</freq:validfrom>
+	<freq:srs>true</freq:srs>
+	<freq:transitionname>5s ^2S_{1/2} (F=1) - 5s ^2S_{1/2} (F=2)</freq:transitionname>
+	<freq:compname></freq:compname>
+	<freq:value>
+		<si:real>
+			<si:value>6834682610.9043129</si:value>
+			<si:unit>\hertz</si:unit>
+			<si:expandedUnc>
+				<si:uncertainty>2.3e-06</si:uncertainty>
+				<si:coverageFactor>1</si:coverageFactor>
+				<si:coverageProbability>0.68</si:coverageProbability>
+				<si:distribution>normal</si:distribution>
+			</si:expandedUnc>
+		</si:real>
+	</freq:value>
+	<freq:numberofrules>0</freq:numberofrules>
+	<freq:numberoffunccs>0</freq:numberoffunccs>
+	<freq:numberoftransitions>0</freq:numberoftransitions>
+</freq:stdfreq>

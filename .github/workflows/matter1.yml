@@ -1,0 +1,162 @@
+name: Matter I reference, isotope survival and SI application
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  static-reference:
+    runs-on: ubuntu-24.04
+    # Full construction and adapter histories replay in both modes and reproduction.
+    timeout-minutes: 240
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      MPLCONFIGDIR: /tmp/matter1-mpl
+    steps:
+      - uses: actions/checkout@v4
+      - name: Provision exact M3 upstream dependency
+        uses: actions/checkout@v4
+        with:
+          repository: rpoyau/aod
+          ref: 8c3149b9d3d924b80b9385b178da4ba2c39175e8
+          path: .m3-upstream
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+      - name: Install and record environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-xetex texlive-latex-extra texlive-science texlive-fonts-recommended
+          python -m pip install -r requirements-matter1.txt
+          npm install --ignore-scripts --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          mkdir -p /tmp/matter1-checks
+          python -B manual2/scripts/matter1_renderer.py | tee /tmp/matter1-checks/renderer.json
+          python --version > /tmp/matter1-checks/environment.txt
+          python -m pip freeze >> /tmp/matter1-checks/environment.txt
+          node --version >> /tmp/matter1-checks/environment.txt
+          xelatex --version >> /tmp/matter1-checks/environment.txt
+          latexmk --version >> /tmp/matter1-checks/environment.txt
+          dpkg-query -W 'texlive*' >> /tmp/matter1-checks/environment.txt
+      - name: Verify delivered data, exports and browser before any generation
+        run: |
+          python -B manual2/scripts/verify_matter1_data_classes.py | tee /tmp/matter1-checks/data-classes.json
+          python -B -O manual2/scripts/verify_matter1_data_classes.py | tee /tmp/matter1-checks/data-classes-optimized.json
+          python -B manual2/scripts/verify_matter1_external_transitions.py | tee /tmp/matter1-checks/external-transitions.json
+          python -B -O manual2/scripts/verify_matter1_external_transitions.py | tee /tmp/matter1-checks/external-transitions-optimized.json
+          python -B manual2/scripts/verify_matter1_properties.py | tee /tmp/matter1-checks/properties.json
+          python -B -O manual2/scripts/verify_matter1_properties.py | tee /tmp/matter1-checks/properties-optimized.json
+          python -B manual2/scripts/verify_matter1_property_model.py | tee /tmp/matter1-checks/property-model.json
+          python -B -O manual2/scripts/verify_matter1_property_model.py | tee /tmp/matter1-checks/property-model-optimized.json
+          python -B manual2/scripts/verify_matter1_coupled_preparations.py | tee /tmp/matter1-checks/coupled-preparations.json
+          python -B -O manual2/scripts/verify_matter1_coupled_preparations.py | tee /tmp/matter1-checks/coupled-preparations-optimized.json
+          python -B manual2/scripts/verify_matter1_preparation_workflow.py | tee /tmp/matter1-checks/preparation-workflow.json
+          python -B -O manual2/scripts/verify_matter1_preparation_workflow.py | tee /tmp/matter1-checks/preparation-workflow-optimized.json
+          python -B manual2/scripts/verify_matter1_ledger.py | tee /tmp/matter1-checks/ledger.json
+          python -B -O manual2/scripts/verify_matter1_ledger.py --check-data | tee /tmp/matter1-checks/ledger-optimized.json
+          python -B manual2/scripts/check_matter1_figure.py | tee /tmp/matter1-checks/figure.json
+          python -B scripts/check_matter1_application.py | tee /tmp/matter1-checks/conservation.json
+          python -B scripts/check_matter1_campaign_preservation.py | tee /tmp/matter1-checks/campaign-preservation.json
+          python -B manual2/scripts/verify_matter1_campaign.py --products-only | tee /tmp/matter1-checks/campaign-products.json
+          for lane in folding temporal hyperfine stateful metrology bipm bipm_precision atomic isotopes survival constructed_coupling witnessed_retention m3_observation retention_adapter m3_metrology; do
+            python -B "manual2/scripts/verify_matter1_${lane}.py" | tee "/tmp/matter1-checks/${lane}.json"
+            python -B -O "manual2/scripts/verify_matter1_${lane}.py" > "/tmp/matter1-checks/${lane}-optimized.json"
+          done
+          python -B scripts/check_matter1_v2_application.py | tee /tmp/matter1-checks/v2-conservation.json
+          python -B scripts/check_matter1_m3_consumer.py --upstream-root .m3-upstream | tee /tmp/matter1-checks/m3-consumer.json
+          python -B -O scripts/check_matter1_m3_consumer.py --upstream-root .m3-upstream > /tmp/matter1-checks/m3-consumer-optimized.json
+          node manual2/scripts/check_matter1_companion.cjs --screenshots-dir /tmp/matter1-checks/browser | tee /tmp/matter1-checks/browser.json
+      - name: Build paired publication and verify actual PDF references
+        run: |
+          python -B scripts/build_matter1_documents.py --build-dir /tmp/matter1-paired-build | tee /tmp/matter1-checks/build.json
+          python -B scripts/verify_matter1_publication.py | tee /tmp/matter1-checks/publication.json
+      - name: Run complete normal tests
+        run: |
+          python -B -m unittest discover -s manual2/tests -p 'test_matter1_*.py' -v 2>&1 | tee /tmp/matter1-checks/tests.txt
+      - name: Run optimized validation tests
+        run: |
+          python -B -O scripts/matter1_test_inventory.py --run-optimized 2>&1 | tee /tmp/matter1-checks/tests-optimized.txt
+          python -B -O -m unittest discover -s manual2/tests -p 'test_matter1_campaign*.py' -v 2>&1 | tee /tmp/matter1-checks/campaign-tests-optimized.txt
+      - name: Reproduce all generated artifacts
+        run: |
+          python -B scripts/check_matter1_reproduction.py | tee /tmp/matter1-checks/reproduction.json
+      - name: Record core and v2 acceptance
+        run: |
+          python -B scripts/record_matter1_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/acceptance.json
+          python -B scripts/record_matter1_v2_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/v2-acceptance.json
+      - name: Record isotope acceptance with fresh replay
+        run: |
+          python -B scripts/record_matter1_isotope_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/isotope-acceptance.json
+      - name: Record element-property scope with fresh replay
+        run: |
+          python -B scripts/record_matter1_property_acceptance.py --checks-dir /tmp/matter1-checks --output /tmp/matter1-checks/property-acceptance.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: matter1-static-reference
+          path: |
+            main.pdf
+            manual2.pdf
+            manual2/figures/
+            manual2/visuals/
+            manual2/evidence/
+            manual2/data/m1/classification/
+            manual2/data/m1/external_transitions/
+            manual2/data/m1/properties/
+            manual2/data/m1/coupled_preparations/
+            manual2/data/m1/preparation_workflow/
+            manual2/data/m1/folding/
+            manual2/data/m1/hyperfine/
+            manual2/data/m1/stateful/
+            manual2/data/m1/metrology/
+            manual2/data/m1/bipm/
+            manual2/data/m1/atomic/
+            manual2/data/m1/isotopes/
+            manual2/data/m1/survival/
+            manual2/data/m1/constructed_coupling/
+            manual2/data/m1/witnessed_retention/
+            manual2/data/m1/m3_metrology/
+            manual2/data/m1/campaign/
+            manual2/data/m1/m3_observation/
+            manual2/vendor/aod_m3_metrology/
+            manual2/vendor/aod_m3/
+            manual2/vendor/aod_m3_producer/
+            /tmp/matter1-checks/
+            /tmp/matter1-paired-build/*-console.txt
+            /tmp/matter1-paired-build/manual2/*-console.txt
+
+  campaign-replay:
+    name: All-element original-input replay (${{ matrix.shard }})
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - name: Replay every assigned configuration in both Python modes
+        run: |
+          mkdir -p /tmp/campaign-checks
+          python -B manual2/scripts/verify_matter1_campaign.py --shard ${{ matrix.shard }} --shards 4 | tee /tmp/campaign-checks/normal.json
+          python -B -O manual2/scripts/verify_matter1_campaign.py --shard ${{ matrix.shard }} --shards 4 | tee /tmp/campaign-checks/optimized.json
+          git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: matter1-campaign-replay-${{ matrix.shard }}
+          path: /tmp/campaign-checks/

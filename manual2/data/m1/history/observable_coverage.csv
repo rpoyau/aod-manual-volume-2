@@ -1,0 +1,709 @@
+declaration_id,z,symbol,lane,lane_name,predecessor_status,candidate_status
+matter1:reference:Z001:A001,1,H,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z001:A001,1,H,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z001:A001,1,H,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z001:A001,1,H,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z001:A001,1,H,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z001:A001,1,H,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z002:A004,2,He,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z002:A004,2,He,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z002:A004,2,He,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z002:A004,2,He,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z002:A004,2,He,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z002:A004,2,He,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z003:A007,3,Li,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z003:A007,3,Li,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z003:A007,3,Li,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z003:A007,3,Li,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z003:A007,3,Li,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z003:A007,3,Li,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z004:A009,4,Be,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z004:A009,4,Be,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z004:A009,4,Be,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z004:A009,4,Be,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z004:A009,4,Be,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z004:A009,4,Be,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z005:A011,5,B,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z005:A011,5,B,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z005:A011,5,B,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z005:A011,5,B,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z005:A011,5,B,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z005:A011,5,B,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z006:A012,6,C,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z006:A012,6,C,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z006:A012,6,C,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z006:A012,6,C,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z006:A012,6,C,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z006:A012,6,C,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z007:A014,7,N,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z007:A014,7,N,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z007:A014,7,N,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z007:A014,7,N,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z007:A014,7,N,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z007:A014,7,N,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z008:A016,8,O,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z008:A016,8,O,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z008:A016,8,O,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z008:A016,8,O,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z008:A016,8,O,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z008:A016,8,O,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z009:A019,9,F,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z009:A019,9,F,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z009:A019,9,F,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z009:A019,9,F,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z009:A019,9,F,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z009:A019,9,F,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z010:A020,10,Ne,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z010:A020,10,Ne,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z010:A020,10,Ne,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z010:A020,10,Ne,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z010:A020,10,Ne,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z010:A020,10,Ne,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z011:A023,11,Na,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z011:A023,11,Na,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z011:A023,11,Na,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z011:A023,11,Na,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z011:A023,11,Na,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z011:A023,11,Na,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z012:A024,12,Mg,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z012:A024,12,Mg,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z012:A024,12,Mg,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z012:A024,12,Mg,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z012:A024,12,Mg,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z012:A024,12,Mg,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z013:A027,13,Al,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z013:A027,13,Al,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z013:A027,13,Al,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z013:A027,13,Al,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z013:A027,13,Al,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z013:A027,13,Al,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z014:A028,14,Si,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z014:A028,14,Si,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z014:A028,14,Si,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z014:A028,14,Si,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z014:A028,14,Si,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z014:A028,14,Si,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z015:A031,15,P,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z015:A031,15,P,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z015:A031,15,P,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z015:A031,15,P,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z015:A031,15,P,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z015:A031,15,P,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z016:A032,16,S,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z016:A032,16,S,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z016:A032,16,S,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z016:A032,16,S,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z016:A032,16,S,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z016:A032,16,S,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z017:A035,17,Cl,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z017:A035,17,Cl,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z017:A035,17,Cl,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z017:A035,17,Cl,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z017:A035,17,Cl,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z017:A035,17,Cl,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z018:A040,18,Ar,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z018:A040,18,Ar,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z018:A040,18,Ar,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z018:A040,18,Ar,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z018:A040,18,Ar,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z018:A040,18,Ar,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z019:A039,19,K,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z019:A039,19,K,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z019:A039,19,K,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z019:A039,19,K,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z019:A039,19,K,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z019:A039,19,K,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z020:A040,20,Ca,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z020:A040,20,Ca,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z020:A040,20,Ca,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z020:A040,20,Ca,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z020:A040,20,Ca,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z020:A040,20,Ca,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z021:A045,21,Sc,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z021:A045,21,Sc,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z021:A045,21,Sc,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z021:A045,21,Sc,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z021:A045,21,Sc,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z021:A045,21,Sc,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z022:A048,22,Ti,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z022:A048,22,Ti,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z022:A048,22,Ti,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z022:A048,22,Ti,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z022:A048,22,Ti,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z022:A048,22,Ti,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z023:A051,23,V,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z023:A051,23,V,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z023:A051,23,V,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z023:A051,23,V,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z023:A051,23,V,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z023:A051,23,V,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z024:A052,24,Cr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z024:A052,24,Cr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z024:A052,24,Cr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z024:A052,24,Cr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z024:A052,24,Cr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z024:A052,24,Cr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z025:A055,25,Mn,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z025:A055,25,Mn,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z025:A055,25,Mn,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z025:A055,25,Mn,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z025:A055,25,Mn,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z025:A055,25,Mn,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z026:A056,26,Fe,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z026:A056,26,Fe,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z026:A056,26,Fe,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z026:A056,26,Fe,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z026:A056,26,Fe,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z026:A056,26,Fe,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z027:A059,27,Co,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z027:A059,27,Co,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z027:A059,27,Co,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z027:A059,27,Co,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z027:A059,27,Co,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z027:A059,27,Co,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z028:A058,28,Ni,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z028:A058,28,Ni,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z028:A058,28,Ni,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z028:A058,28,Ni,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z028:A058,28,Ni,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z028:A058,28,Ni,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z029:A063,29,Cu,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z029:A063,29,Cu,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z029:A063,29,Cu,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z029:A063,29,Cu,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z029:A063,29,Cu,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z029:A063,29,Cu,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z030:A064,30,Zn,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z030:A064,30,Zn,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z030:A064,30,Zn,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z030:A064,30,Zn,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z030:A064,30,Zn,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z030:A064,30,Zn,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z031:A069,31,Ga,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z031:A069,31,Ga,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z031:A069,31,Ga,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z031:A069,31,Ga,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z031:A069,31,Ga,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z031:A069,31,Ga,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z032:A074,32,Ge,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z032:A074,32,Ge,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z032:A074,32,Ge,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z032:A074,32,Ge,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z032:A074,32,Ge,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z032:A074,32,Ge,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z033:A075,33,As,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z033:A075,33,As,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z033:A075,33,As,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z033:A075,33,As,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z033:A075,33,As,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z033:A075,33,As,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z034:A080,34,Se,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z034:A080,34,Se,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z034:A080,34,Se,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z034:A080,34,Se,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z034:A080,34,Se,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z034:A080,34,Se,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z035:A079,35,Br,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z035:A079,35,Br,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z035:A079,35,Br,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z035:A079,35,Br,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z035:A079,35,Br,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z035:A079,35,Br,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z036:A084,36,Kr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z036:A084,36,Kr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z036:A084,36,Kr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z036:A084,36,Kr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z036:A084,36,Kr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z036:A084,36,Kr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z037:A085,37,Rb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z037:A085,37,Rb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z037:A085,37,Rb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z037:A085,37,Rb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z037:A085,37,Rb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z037:A085,37,Rb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z038:A088,38,Sr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z038:A088,38,Sr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z038:A088,38,Sr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z038:A088,38,Sr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z038:A088,38,Sr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z038:A088,38,Sr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z039:A089,39,Y,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z039:A089,39,Y,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z039:A089,39,Y,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z039:A089,39,Y,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z039:A089,39,Y,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z039:A089,39,Y,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z040:A090,40,Zr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z040:A090,40,Zr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z040:A090,40,Zr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z040:A090,40,Zr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z040:A090,40,Zr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z040:A090,40,Zr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z041:A093,41,Nb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z041:A093,41,Nb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z041:A093,41,Nb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z041:A093,41,Nb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z041:A093,41,Nb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z041:A093,41,Nb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z042:A098,42,Mo,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z042:A098,42,Mo,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z042:A098,42,Mo,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z042:A098,42,Mo,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z042:A098,42,Mo,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z042:A098,42,Mo,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z043:A098,43,Tc,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z043:A098,43,Tc,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z043:A098,43,Tc,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z043:A098,43,Tc,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z043:A098,43,Tc,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z043:A098,43,Tc,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z044:A102,44,Ru,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z044:A102,44,Ru,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z044:A102,44,Ru,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z044:A102,44,Ru,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z044:A102,44,Ru,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z044:A102,44,Ru,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z045:A103,45,Rh,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z045:A103,45,Rh,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z045:A103,45,Rh,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z045:A103,45,Rh,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z045:A103,45,Rh,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z045:A103,45,Rh,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z046:A106,46,Pd,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z046:A106,46,Pd,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z046:A106,46,Pd,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z046:A106,46,Pd,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z046:A106,46,Pd,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z046:A106,46,Pd,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z047:A107,47,Ag,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z047:A107,47,Ag,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z047:A107,47,Ag,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z047:A107,47,Ag,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z047:A107,47,Ag,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z047:A107,47,Ag,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z048:A114,48,Cd,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z048:A114,48,Cd,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z048:A114,48,Cd,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z048:A114,48,Cd,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z048:A114,48,Cd,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z048:A114,48,Cd,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z049:A115,49,In,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z049:A115,49,In,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z049:A115,49,In,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z049:A115,49,In,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z049:A115,49,In,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z049:A115,49,In,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z050:A120,50,Sn,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z050:A120,50,Sn,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z050:A120,50,Sn,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z050:A120,50,Sn,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z050:A120,50,Sn,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z050:A120,50,Sn,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z051:A121,51,Sb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z051:A121,51,Sb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z051:A121,51,Sb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z051:A121,51,Sb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z051:A121,51,Sb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z051:A121,51,Sb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z052:A130,52,Te,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z052:A130,52,Te,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z052:A130,52,Te,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z052:A130,52,Te,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z052:A130,52,Te,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z052:A130,52,Te,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z053:A127,53,I,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z053:A127,53,I,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z053:A127,53,I,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z053:A127,53,I,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z053:A127,53,I,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z053:A127,53,I,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z054:A132,54,Xe,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z054:A132,54,Xe,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z054:A132,54,Xe,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z054:A132,54,Xe,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z054:A132,54,Xe,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z054:A132,54,Xe,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z055:A133,55,Cs,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z055:A133,55,Cs,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z055:A133,55,Cs,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z055:A133,55,Cs,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z055:A133,55,Cs,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z055:A133,55,Cs,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z056:A138,56,Ba,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z056:A138,56,Ba,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z056:A138,56,Ba,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z056:A138,56,Ba,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z056:A138,56,Ba,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z056:A138,56,Ba,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z057:A139,57,La,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z057:A139,57,La,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z057:A139,57,La,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z057:A139,57,La,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z057:A139,57,La,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z057:A139,57,La,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z058:A140,58,Ce,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z058:A140,58,Ce,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z058:A140,58,Ce,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z058:A140,58,Ce,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z058:A140,58,Ce,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z058:A140,58,Ce,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z059:A141,59,Pr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z059:A141,59,Pr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z059:A141,59,Pr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z059:A141,59,Pr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z059:A141,59,Pr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z059:A141,59,Pr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z060:A142,60,Nd,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z060:A142,60,Nd,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z060:A142,60,Nd,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z060:A142,60,Nd,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z060:A142,60,Nd,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z060:A142,60,Nd,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z061:A145,61,Pm,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z061:A145,61,Pm,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z061:A145,61,Pm,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z061:A145,61,Pm,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z061:A145,61,Pm,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z061:A145,61,Pm,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z062:A152,62,Sm,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z062:A152,62,Sm,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z062:A152,62,Sm,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z062:A152,62,Sm,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z062:A152,62,Sm,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z062:A152,62,Sm,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z063:A153,63,Eu,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z063:A153,63,Eu,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z063:A153,63,Eu,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z063:A153,63,Eu,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z063:A153,63,Eu,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z063:A153,63,Eu,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z064:A158,64,Gd,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z064:A158,64,Gd,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z064:A158,64,Gd,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z064:A158,64,Gd,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z064:A158,64,Gd,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z064:A158,64,Gd,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z065:A159,65,Tb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z065:A159,65,Tb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z065:A159,65,Tb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z065:A159,65,Tb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z065:A159,65,Tb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z065:A159,65,Tb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z066:A164,66,Dy,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z066:A164,66,Dy,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z066:A164,66,Dy,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z066:A164,66,Dy,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z066:A164,66,Dy,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z066:A164,66,Dy,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z067:A165,67,Ho,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z067:A165,67,Ho,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z067:A165,67,Ho,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z067:A165,67,Ho,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z067:A165,67,Ho,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z067:A165,67,Ho,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z068:A166,68,Er,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z068:A166,68,Er,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z068:A166,68,Er,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z068:A166,68,Er,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z068:A166,68,Er,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z068:A166,68,Er,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z069:A169,69,Tm,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z069:A169,69,Tm,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z069:A169,69,Tm,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z069:A169,69,Tm,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z069:A169,69,Tm,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z069:A169,69,Tm,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z070:A174,70,Yb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z070:A174,70,Yb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z070:A174,70,Yb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z070:A174,70,Yb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z070:A174,70,Yb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z070:A174,70,Yb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z071:A175,71,Lu,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z071:A175,71,Lu,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z071:A175,71,Lu,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z071:A175,71,Lu,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z071:A175,71,Lu,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z071:A175,71,Lu,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z072:A180,72,Hf,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z072:A180,72,Hf,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z072:A180,72,Hf,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z072:A180,72,Hf,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z072:A180,72,Hf,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z072:A180,72,Hf,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z073:A181,73,Ta,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z073:A181,73,Ta,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z073:A181,73,Ta,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z073:A181,73,Ta,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z073:A181,73,Ta,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z073:A181,73,Ta,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z074:A184,74,W,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z074:A184,74,W,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z074:A184,74,W,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z074:A184,74,W,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z074:A184,74,W,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z074:A184,74,W,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z075:A187,75,Re,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z075:A187,75,Re,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z075:A187,75,Re,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z075:A187,75,Re,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z075:A187,75,Re,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z075:A187,75,Re,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z076:A192,76,Os,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z076:A192,76,Os,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z076:A192,76,Os,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z076:A192,76,Os,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z076:A192,76,Os,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z076:A192,76,Os,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z077:A193,77,Ir,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z077:A193,77,Ir,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z077:A193,77,Ir,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z077:A193,77,Ir,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z077:A193,77,Ir,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z077:A193,77,Ir,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z078:A195,78,Pt,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z078:A195,78,Pt,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z078:A195,78,Pt,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z078:A195,78,Pt,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z078:A195,78,Pt,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z078:A195,78,Pt,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z079:A197,79,Au,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z079:A197,79,Au,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z079:A197,79,Au,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z079:A197,79,Au,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z079:A197,79,Au,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z079:A197,79,Au,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z080:A202,80,Hg,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z080:A202,80,Hg,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z080:A202,80,Hg,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z080:A202,80,Hg,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z080:A202,80,Hg,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z080:A202,80,Hg,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z081:A205,81,Tl,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z081:A205,81,Tl,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z081:A205,81,Tl,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z081:A205,81,Tl,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z081:A205,81,Tl,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z081:A205,81,Tl,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z082:A208,82,Pb,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z082:A208,82,Pb,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z082:A208,82,Pb,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z082:A208,82,Pb,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z082:A208,82,Pb,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z082:A208,82,Pb,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z083:A209,83,Bi,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z083:A209,83,Bi,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z083:A209,83,Bi,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z083:A209,83,Bi,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z083:A209,83,Bi,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z083:A209,83,Bi,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z084:A209,84,Po,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z084:A209,84,Po,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z084:A209,84,Po,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z084:A209,84,Po,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z084:A209,84,Po,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z084:A209,84,Po,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z085:A210,85,At,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z085:A210,85,At,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z085:A210,85,At,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z085:A210,85,At,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z085:A210,85,At,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z085:A210,85,At,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z086:A222,86,Rn,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z086:A222,86,Rn,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z086:A222,86,Rn,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z086:A222,86,Rn,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z086:A222,86,Rn,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z086:A222,86,Rn,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z087:A223,87,Fr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z087:A223,87,Fr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z087:A223,87,Fr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z087:A223,87,Fr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z087:A223,87,Fr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z087:A223,87,Fr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z088:A226,88,Ra,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z088:A226,88,Ra,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z088:A226,88,Ra,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z088:A226,88,Ra,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z088:A226,88,Ra,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z088:A226,88,Ra,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z089:A227,89,Ac,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z089:A227,89,Ac,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z089:A227,89,Ac,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z089:A227,89,Ac,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z089:A227,89,Ac,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z089:A227,89,Ac,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z090:A232,90,Th,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z090:A232,90,Th,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z090:A232,90,Th,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z090:A232,90,Th,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z090:A232,90,Th,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z090:A232,90,Th,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z091:A231,91,Pa,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z091:A231,91,Pa,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z091:A231,91,Pa,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z091:A231,91,Pa,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z091:A231,91,Pa,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z091:A231,91,Pa,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z092:A238,92,U,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z092:A238,92,U,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z092:A238,92,U,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z092:A238,92,U,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z092:A238,92,U,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z092:A238,92,U,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z093:A237,93,Np,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z093:A237,93,Np,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z093:A237,93,Np,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z093:A237,93,Np,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z093:A237,93,Np,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z093:A237,93,Np,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z094:A244,94,Pu,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z094:A244,94,Pu,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z094:A244,94,Pu,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z094:A244,94,Pu,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z094:A244,94,Pu,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z094:A244,94,Pu,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z095:A243,95,Am,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z095:A243,95,Am,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z095:A243,95,Am,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z095:A243,95,Am,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z095:A243,95,Am,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z095:A243,95,Am,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z096:A247,96,Cm,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z096:A247,96,Cm,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z096:A247,96,Cm,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z096:A247,96,Cm,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z096:A247,96,Cm,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z096:A247,96,Cm,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z097:A247,97,Bk,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z097:A247,97,Bk,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z097:A247,97,Bk,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z097:A247,97,Bk,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z097:A247,97,Bk,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z097:A247,97,Bk,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z098:A251,98,Cf,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z098:A251,98,Cf,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z098:A251,98,Cf,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z098:A251,98,Cf,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z098:A251,98,Cf,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z098:A251,98,Cf,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z099:A252,99,Es,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z099:A252,99,Es,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z099:A252,99,Es,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z099:A252,99,Es,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z099:A252,99,Es,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z099:A252,99,Es,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z100:A257,100,Fm,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z100:A257,100,Fm,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z100:A257,100,Fm,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z100:A257,100,Fm,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z100:A257,100,Fm,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z100:A257,100,Fm,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z101:A258,101,Md,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z101:A258,101,Md,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z101:A258,101,Md,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z101:A258,101,Md,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z101:A258,101,Md,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z101:A258,101,Md,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z102:A259,102,No,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z102:A259,102,No,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z102:A259,102,No,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z102:A259,102,No,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z102:A259,102,No,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z102:A259,102,No,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z103:A266,103,Lr,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z103:A266,103,Lr,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z103:A266,103,Lr,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z103:A266,103,Lr,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z103:A266,103,Lr,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z103:A266,103,Lr,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z104:A267,104,Rf,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z104:A267,104,Rf,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z104:A267,104,Rf,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z104:A267,104,Rf,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z104:A267,104,Rf,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z104:A267,104,Rf,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z105:A268,105,Db,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z105:A268,105,Db,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z105:A268,105,Db,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z105:A268,105,Db,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z105:A268,105,Db,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z105:A268,105,Db,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z106:A269,106,Sg,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z106:A269,106,Sg,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z106:A269,106,Sg,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z106:A269,106,Sg,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z106:A269,106,Sg,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z106:A269,106,Sg,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z107:A270,107,Bh,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z107:A270,107,Bh,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z107:A270,107,Bh,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z107:A270,107,Bh,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z107:A270,107,Bh,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z107:A270,107,Bh,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z108:A277,108,Hs,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z108:A277,108,Hs,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z108:A277,108,Hs,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z108:A277,108,Hs,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z108:A277,108,Hs,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z108:A277,108,Hs,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z109:A278,109,Mt,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z109:A278,109,Mt,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z109:A278,109,Mt,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z109:A278,109,Mt,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z109:A278,109,Mt,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z109:A278,109,Mt,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z110:A281,110,Ds,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z110:A281,110,Ds,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z110:A281,110,Ds,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z110:A281,110,Ds,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z110:A281,110,Ds,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z110:A281,110,Ds,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z111:A282,111,Rg,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z111:A282,111,Rg,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z111:A282,111,Rg,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z111:A282,111,Rg,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z111:A282,111,Rg,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z111:A282,111,Rg,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z112:A285,112,Cn,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z112:A285,112,Cn,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z112:A285,112,Cn,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z112:A285,112,Cn,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z112:A285,112,Cn,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z112:A285,112,Cn,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z113:A286,113,Nh,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z113:A286,113,Nh,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z113:A286,113,Nh,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z113:A286,113,Nh,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z113:A286,113,Nh,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z113:A286,113,Nh,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z114:A289,114,Fl,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z114:A289,114,Fl,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z114:A289,114,Fl,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z114:A289,114,Fl,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z114:A289,114,Fl,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z114:A289,114,Fl,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z115:A290,115,Mc,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z115:A290,115,Mc,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z115:A290,115,Mc,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z115:A290,115,Mc,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z115:A290,115,Mc,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z115:A290,115,Mc,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z116:A293,116,Lv,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z116:A293,116,Lv,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z116:A293,116,Lv,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z116:A293,116,Lv,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z116:A293,116,Lv,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z116:A293,116,Lv,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z117:A294,117,Ts,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z117:A294,117,Ts,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z117:A294,117,Ts,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z117:A294,117,Ts,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z117:A294,117,Ts,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z117:A294,117,Ts,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z118:A294,118,Og,E0,identity / registry,active_registry,reference_registry
+matter1:reference:Z118:A294,118,Og,E1,placement / classification,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z118:A294,118,Og,E2,atomic mass / standard atomic weight,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z118:A294,118,Og,E3,isotope support,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z118:A294,118,Og,E4,spectral lane,declared_lane_not_scored_in_v94,not_scored
+matter1:reference:Z118:A294,118,Og,E5,reaction / route lane,declared_lane_not_scored_in_v94,not_scored

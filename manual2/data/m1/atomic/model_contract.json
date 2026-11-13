@@ -1,0 +1,94 @@
+{
+  "admission_status": "native_atomic_admission_pending",
+  "dependency_gates": {
+    "P2": "native_atomic_construction_and_accessor_unresolved",
+    "P3": "native_atomic_coupled_lineages_unresolved",
+    "P4": "physical_atomic_observation_map_unresolved",
+    "P4a": "external_state_inventory_only"
+  },
+  "diagnostic_assignment": {
+    "Cs-133": "outer_minus",
+    "H-1": "outer_plus"
+  },
+  "exposure": "H_and_Rb_previously_exposed; no_independent_prediction_claim",
+  "external_states": [
+    {
+      "F_pair": [
+        "0",
+        "1"
+      ],
+      "I": "1/2",
+      "J": "1/2",
+      "a": 1,
+      "isotope": "H-1",
+      "m_F": "0",
+      "z": 1
+    },
+    {
+      "F_pair": [
+        "3",
+        "4"
+      ],
+      "I": "7/2",
+      "J": "1/2",
+      "a": 133,
+      "isotope": "Cs-133",
+      "m_F": "0",
+      "z": 55
+    }
+  ],
+  "map_family": {
+    "domain": "lambda > -1 on Z in {1,55}",
+    "formula": "g_lambda(Z)=1+lambda*(55-Z)/54; R_lambda=(N_plus/N_minus)*g_lambda(1)/g_lambda(55)",
+    "purpose": "Show Cs normalization and finite traces do not determine the missing atomic observation map.",
+    "selection_status": "no_member_selected_as_atomic_model",
+    "witness_values": [
+      "0",
+      "1"
+    ]
+  },
+  "native_configuration_status": "not_constructed_for_these_atomic_states",
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "reference": {
+    "frequency_hz": "9192631770",
+    "isotope": "Cs-133",
+    "role": "exact_si_definition",
+    "source": "https://www.bipm.org/en/si-base-units/second",
+    "z": 55
+  },
+  "schema_version": 1,
+  "source_bindings": [
+    {
+      "label_lines": {
+        "eq:key-proposed-admitted-trace": 156
+      },
+      "labels": [
+        "eq:key-proposed-admitted-trace"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    {
+      "label_lines": {
+        "eq:cadence-ratio": 114,
+        "eq:rcd-duration-participation": 69,
+        "eq:wave-update-trace": 33
+      },
+      "labels": [
+        "eq:wave-update-trace",
+        "eq:rcd-duration-participation",
+        "eq:cadence-ratio"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    }
+  ],
+  "state_assignment_status": "hypothetical_labels_for_counterexample_only",
+  "state_sources": {
+    "Cs-133": "https://steck.us/alkalidata/cesiumnumbers.pdf",
+    "H-1": "https://tf.nist.gov/general/pdf/13.pdf"
+  },
+  "status": "executable_underdetermination_attempt",
+  "target_policy": "prediction_stage_does_not_read_evaluation_or_benchmark_inputs",
+  "uncertainty_status": "physical_model_discrepancy_and_mapping_unresolved"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "manual2/scripts/matter1_atomic.py": {
+      "after_sha256": "8b3b20448bac3a1ecc62e027342a9f420e390088d3482e551d0a7de9fc36d1df",
+      "before_sha256": "00fc9ee7d37e39f67a60dcc93398d0b7a7511ef9e66c4f3d0ab9ede144ce3a12"
+    },
+    "manual2/scripts/matter1_metrology.py": {
+      "after_sha256": "0dd1d93cb2833af7f98cd678e6e0e8f27c7abdb20e446222b7a78a813199003d",
+      "before_sha256": "591e64cf77e266762c723ec6cfca5c82510134445fa4f3c7941ff72539464062"
+    },
+    "manual2/scripts/matter1_temporal.py": {
+      "after_sha256": "97ff33c8d8961b651398418fa602a049228af1c26a26f85547cd5eda2f18307f",
+      "before_sha256": "0ba3f7e0e2b8bc44fb83385548702d21549f0ca76a422abc3c04a1a500716b5c"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Source-resolution-only changes preserve frozen v1/v2 outputs without historical authority relabelling"
+}

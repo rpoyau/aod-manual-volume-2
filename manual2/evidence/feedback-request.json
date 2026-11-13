@@ -1,0 +1,231 @@
+{
+  "acceptance_requests": [
+    {
+      "gate": "integration",
+      "id": "MI-FB-01",
+      "required_evidence": "Actual AGENTS/dependency/foundation/vendor records",
+      "requirement": "Source dependencies, current instructions and active include graph are bound",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-02",
+      "required_evidence": "Old law/numerics/evidence conservation; source-driven successor bindings explicit",
+      "requirement": "Historical common-surrogate model and retrospective rejection remain identifiable",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-03",
+      "required_evidence": "Actual scope maps, primitive traces, motifs and lineage certificates",
+      "requirement": "R02 constituent and outer closure formation remain witnessed",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-04",
+      "required_evidence": "Expected counts, timing changes, direction and window results",
+      "requirement": "R02 live coupling and population controls reproduce original results",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-05",
+      "required_evidence": "Frozen 294 inner formation histories versus five evolving aggregate fields",
+      "requirement": "R02 aggregate reduction is described accurately",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-06",
+      "required_evidence": "Frozen contract and normalized/raw output comparison",
+      "requirement": "R03 raw unit=5 and raw capacity=5 remain declared",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-07",
+      "required_evidence": "++/+- exact table and complete response provenance",
+      "requirement": "Signed cancellation retains nonnegative contribution history",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-08",
+      "required_evidence": "Strictly later effect and future-input mutations",
+      "requirement": "Next kernel consumes committed prior response only",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-09",
+      "required_evidence": "Exact enumeration and independent probability/moment check",
+      "requirement": "R03 S3 values reproduce in all five cases",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-10",
+      "required_evidence": "Matched-prefix and no-erasure controls",
+      "requirement": "Feedback gating/window exclusions preserve history",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-11",
+      "required_evidence": "Full contact witnesses, lag drift and RCD controls",
+      "requirement": "Pending 3:4:6 and directional reflection controls retain actual provenance",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-12",
+      "required_evidence": "Loss/exposure witness and hostile substitution tests",
+      "requirement": "Outer loss preserves evolving inner lineage and distinct return IDs",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-13",
+      "required_evidence": "Terminal and window table tests; partial return cannot become closure",
+      "requirement": "Reclosures/reference bips/traversals/hinges/dwells/partial returns/ticks/clicks remain distinct",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-14",
+      "required_evidence": "Recomputed hash, incomplete artifact and target-only controls",
+      "requirement": "Serialization and whole-artifact original-context replay remain strict",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-15",
+      "required_evidence": "Model/source bindings and explicit adapter scope",
+      "requirement": "R02/R03 retain distinct law identities unless a new adapter is fully bound",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "research_deliverable",
+      "id": "MI-FB-16",
+      "required_evidence": "State/preparation, constituents, assembly, internal couplings and accessors",
+      "requirement": "Fl-286/Fl-289 configuration investigation supplies actual objects or precise obstruction",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "research_deliverable",
+      "id": "MI-FB-17",
+      "required_evidence": "Label-only and actual-configuration controls; no isotope fitted capacity",
+      "requirement": "One common rule is frozen before lifetime comparison; no forced output separation",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-18",
+      "required_evidence": "No invented physical seconds, daughter or half-life",
+      "requirement": "Count-domain results retain censoring and loss/median distinctions",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "handoff",
+      "id": "MI-FB-19",
+      "required_evidence": "Upstream file identity, actual clean checkout and separate Main pin",
+      "requirement": "Exact new M3 vendor/consumer binding is executed in both modes",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-20",
+      "required_evidence": "118 placements, 126 slots, source/state records and required export/browser checks",
+      "requirement": "Data/chart/historical records and renderer tolerances are conserved",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-21",
+      "required_evidence": "Persisted-first checks, disposable generation and current scoped receipts",
+      "requirement": "New generators and read-only verifiers enter the full reproduction inventory",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "integration",
+      "id": "MI-FB-22",
+      "required_evidence": "Main-first build, publication verifier and visual inspection",
+      "requirement": "Paired publication resolves actual Main destinations and changed pages",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "physical_claim_only",
+      "id": "SURV-ATOM-01",
+      "required_evidence": "Construction and support accessors with justified identification",
+      "requirement": "Selected isotope/state/preparation maps to complete admitted physical configuration",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "physical_claim_only",
+      "id": "SURV-ATOM-02",
+      "required_evidence": "Scientific derivation or independently supported model premises",
+      "requirement": "Common physical update/capacity/retention/loss law is justified",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "physical_claim_only",
+      "id": "SURV-ATOM-03",
+      "required_evidence": "Observation/clock evidence; daughter witness if claimed",
+      "requirement": "Loss and reference returns map to experimental endpoint and elapsed time",
+      "status": "planned_not_executed"
+    },
+    {
+      "gate": "physical_claim_only",
+      "id": "SURV-ATOM-04",
+      "required_evidence": "Preparation/discrepancy/realization/detection/censoring budget",
+      "requirement": "Physical uncertainty and dependence are accounted for",
+      "status": "planned_not_executed"
+    }
+  ],
+  "authoring_dependency": {
+    "commit": "630af16a7c51fb8836e603eb54c67bf8560fb463",
+    "tree": "9d571826e270b79e3c43aac7ebbf259a6372b1e1"
+  },
+  "base_commit": "192cad032cdf579344ab21aa25a0bf7454981e89",
+  "base_tree": "665322a1126901ab035c1f136412b39135677c7b",
+  "bundle_archive_sha256": "347ebc2d8a4088d041c1c35bd88374fe3e22ef601f2f06e240d0a00aa8a73b58",
+  "bundle_documents": {
+    "ACCEPTANCE.csv": "2292f86eceffe7d68f359699b118cade75ae0f29630a09b6f27c6f23eeaf57db",
+    "CODEX_REQUEST.md": "aaba59aed534bf17c0ddc81c99b6f090489cdd69698f2ed22abe9ed8a2fe70e3",
+    "EXPECTED_RESULTS.md": "4c8740235d6c948de0776d919906c7cf08051dbcf00d08cfb6af908a385dcdc3",
+    "FEEDBACK_PLAN.md": "b79ea0bef0adc0e59449e396ae6b09b36be7591afd7f8d55c1ec75d162af5634",
+    "FILE_SCOPE.csv": "43d9b9363e1d5315f08571503ce5cdb5da252e80221e3c5410a98b7fa860ce16",
+    "HANDOFF_CONTRACT.json": "7a5a4aa84eaf9829445b6772b11b1ea0e78d2c7c2e525d6b99a18977e47acf30",
+    "SOURCE_BINDINGS.json": "70e096be0a2d40dfea77d69702f38a9287fabc998e08005d584e16b895a274d5",
+    "VALIDATION.md": "67a1e992383e6a0978ea0ac7fd60179b88b5db62dd279b3291102da9ce5a4e5e"
+  },
+  "execution_scope": "Detached Matter I candidate; preserve independent R02/R03 model identities and existing common-surrogate evidence. No remote writes.",
+  "handoff_scope": "The existing required consumer is executed separately. It is not evidence for the unspecified new observation-interface candidate.",
+  "schema": "matter1.feedback-request.v1",
+  "scientific_dependencies": {
+    "existing_executable_commit": "3ffb3c9984eef95ca4b105ac323d249f30412816",
+    "mathematical_source_commit": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+    "new_observation_candidate": null
+  },
+  "source_packets": {
+    "constructed_coupling": {
+      "archive_crc_passed": true,
+      "bytes": 56690064,
+      "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+      "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+      "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+      "manifest_entries_verified": 85,
+      "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+    },
+    "witnessed_retention": {
+      "archive_crc_passed": true,
+      "bytes": 1492984,
+      "filename": "AOD_MatterI_Witnessed_Retention_R03_2026-11-03.zip",
+      "library_file_id": "libfile_b1dcd33793d8819183efcd782296306d",
+      "library_url": "https://chatgpt.com/library?file_id=libfile_b1dcd33793d8819183efcd782296306d&account_id=personal",
+      "manifest_entries_verified": 28,
+      "sha256": "a60a0ea586bc21bf5a27a71d256af31fee80cec06b162071ba55531d636ba7ec"
+    }
+  }
+}

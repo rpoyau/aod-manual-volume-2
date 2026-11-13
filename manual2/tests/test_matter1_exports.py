@@ -1,0 +1,125 @@
+"""Actual hostile export mutations, without modifying delivered artifacts."""
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import shutil
+import sys
+import tempfile
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from check_matter1_figure import verify
+
+
+@unittest.skipUnless(importlib.util.find_spec("pdfplumber"), "PDF export checks require pdfplumber")
+class ExportIntegrity(unittest.TestCase):
+    def test_actual_exports_and_data_agree(self):
+        result = verify(ROOT / "data/m1/matter1_elements_1_118_ledger.csv", ROOT / "figures", ROOT / "visuals")
+        self.assertEqual(result["pdf"]["marks_checked"], 126)
+        self.assertTrue(result["inputs_unchanged"])
+
+    def test_explicit_source_root_rejects_other_checkout_template_and_resealed_catalog(self):
+        # verify was imported from ROOT above: source selection must follow the explicit root.
+        for mutation in ('template', 'catalog'):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp)
+                for folder in ('figures','visuals','data/m1/isotopes'):
+                    shutil.copytree(ROOT/folder,root/folder)
+                ledger=root/'ledger.csv';shutil.copyfile(ROOT/'data/m1/matter1_elements_1_118_ledger.csv',ledger)
+                if mutation=='template':
+                    (root/'visuals/matter1-reference.template.html').write_text('CORRUPTED TEMPLATE')
+                else:
+                    path=root/'data/m1/isotopes/catalog.json'
+                    catalog=json.loads(path.read_bytes());catalog['isotopes'][0]['native_admission']='admitted';path.write_text(json.dumps(catalog))
+                    path=root/'figures/matter1_figure_manifest.json';manifest=json.loads(path.read_bytes());manifest['isotope_catalog_sha256']=hashlib.sha256((root/'data/m1/isotopes/catalog.json').read_bytes()).hexdigest();path.write_text(json.dumps(manifest))
+                before={p:p.read_bytes() for p in root.rglob('*') if p.is_file()}
+                with self.assertRaises(ValueError):
+                    verify(ledger,root/'figures',root/'visuals',source_root=root)
+                self.assertEqual(before,{p:p.read_bytes() for p in before})
+
+    def test_semantic_corruptions_rejected_even_with_updated_output_hash(self):
+        for mutation in ("svg_label", "svg_small_font", "companion_identity", "layout_slot", "isotope_value", "isotope_executor", "campaign_value", "campaign_executor", "property_value", "property_executor"):
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                figures, visuals = root / "figures", root / "visuals"
+                figures.mkdir(); visuals.mkdir()
+                for name in ("aod_matter1_wheel_accessible.pdf", "aod_matter1_wheel_accessible.svg", "matter1_figure_manifest.json"):
+                    shutil.copyfile(ROOT / "figures" / name, figures / name)
+                for name in ("matter1-reference.html", "matter1-layout.json"):
+                    shutil.copyfile(ROOT / "visuals" / name, visuals / name)
+                ledger = root / "ledger.csv"
+                shutil.copyfile(ROOT / "data/m1/matter1_elements_1_118_ledger.csv", ledger)
+                manifest_path = figures / "matter1_figure_manifest.json"
+                manifest = json.loads(manifest_path.read_text())
+                if mutation == "svg_label":
+                    target = figures / "aod_matter1_wheel_accessible.svg"
+                    text = target.read_text()
+                    self.assertIn(">100 Fm</text>", text)
+                    target.write_text(text.replace(">100 Fm</text>", ">100 ZZ</text>"))
+                elif mutation == "svg_small_font":
+                    target = figures / "aod_matter1_wheel_accessible.svg"
+                    text = target.read_text()
+                    self.assertIn("font-size: 9.3px", text)
+                    target.write_text(text.replace("font-size: 9.3px", "font-size: 8px", 1))
+                elif mutation == "companion_identity":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn('"symbol": "Fm"', text)
+                    target.write_text(text.replace('"symbol": "Fm"', '"symbol": "ZZ"'))
+                elif mutation == "isotope_value":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn('"value_seconds": "0.00058"', text)
+                    target.write_text(text.replace('"value_seconds": "0.00058"', '"value_seconds": "58"'))
+                elif mutation == "isotope_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("h.kind==='observationally_stable'", text)
+                    target.write_text(text.replace("h.kind==='observationally_stable'", "true"))
+                elif mutation == "campaign_value":
+                    import re
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    pattern = r'(<script id="matter1-campaign-data" type="application/json">)(.*?)(</script>)'
+                    match = re.search(pattern, text, re.S)
+                    self.assertIsNotNone(match)
+                    payload = json.loads(match.group(2).replace('<\\/', '</'))
+                    payload['records'][0]['cadence_ratio'] = '999999'
+                    target.write_text(text[:match.start(2)]+json.dumps(payload)+text[match.end(2):])
+                elif mutation == "property_value":
+                    import re
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    match = re.search(r'(<script id="matter1-properties-data" type="application/json">)(.*?)(</script>)', text, re.S)
+                    self.assertIsNotNone(match)
+                    payload = json.loads(match.group(2).replace('<\\/', '</'))
+                    payload['catalog']['properties'][0]['physical_prediction'] = True
+                    target.write_text(text[:match.start(2)] + json.dumps(payload) + text[match.end(2):])
+                elif mutation == "property_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("r.physical_prediction?'claimed':'not established'", text)
+                    target.write_text(text.replace("r.physical_prediction?'claimed':'not established'", "'confirmed'"))
+                elif mutation == "campaign_executor":
+                    target = visuals / "matter1-reference.html"
+                    text = target.read_text()
+                    self.assertIn("Loss observation map not established", text)
+                    target.write_text(text.replace("Loss observation map not established", "Physical half-life established"))
+                else:
+                    target = visuals / "matter1-layout.json"
+                    data = json.loads(target.read_text())
+                    data["marks"][-1]["seat"] = 21
+                    target.write_text(json.dumps(data))
+                manifest["files"][target.name] = hashlib.sha256(target.read_bytes()).hexdigest()
+                manifest_path.write_text(json.dumps(manifest))
+                paths = [x for x in root.rglob("*") if x.is_file()]
+                before = {p: p.read_bytes() for p in paths}
+                with self.assertRaises(ValueError):
+                    verify(ledger, figures, visuals)
+                self.assertEqual({p: p.read_bytes() for p in paths}, before)
+
+
+if __name__ == "__main__":
+    unittest.main()

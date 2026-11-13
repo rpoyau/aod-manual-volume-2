@@ -1,0 +1,45 @@
+{
+  "approximation": "Leading spin-only g_J=2, g_I=0 for both species; neglect bound-state, nuclear-Zeeman and environmental corrections. Numerical benchmark, not precision spectroscopy.",
+  "classification": "conventional_external_calibrated_benchmark",
+  "constant_source": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+  "constant_version": "2022 CODATA; Bohr magneton in Hz/T row",
+  "field_status": "stipulated_ideal_field_values; no measured field calibration",
+  "field_values_tesla": [
+    "-0.0001",
+    "-0.000001",
+    "0",
+    "0.000001",
+    "0.0001"
+  ],
+  "g_I": "0",
+  "g_J": "2",
+  "hamiltonian": "H/h=A_over_h I.dot.J+(mu_B/h) B (g_J J_z+g_I I_z); m_F=0 block",
+  "hamiltonian_source": "https://steck.us/alkalidata/cesiumnumbers.pdf",
+  "mu_B_over_h_hz_per_tesla": "13996244917.1",
+  "mu_B_over_h_standard_uncertainty": "4.4",
+  "native_admission_status": "not_a_native_AOD_model",
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "schema_version": 1,
+  "source_locator": "revision 2.3.4, section 3, hyperfine and Zeeman Hamiltonians; Breit-Rabi expression",
+  "species": [
+    {
+      "I": "1/2",
+      "J": "1/2",
+      "isotope": "H-1",
+      "source": "https://tf.nist.gov/general/pdf/13.pdf",
+      "splitting_hz": "1420405751.768",
+      "splitting_role": "imported_measured_benchmark_calibrant",
+      "splitting_standard_uncertainty_hz": "0.002"
+    },
+    {
+      "I": "7/2",
+      "J": "1/2",
+      "isotope": "Cs-133",
+      "source": "https://www.bipm.org/en/si-base-units/second",
+      "splitting_hz": "9192631770",
+      "splitting_role": "exact_si_definition",
+      "splitting_standard_uncertainty_hz": "0"
+    }
+  ],
+  "uncertainty_status": "partial; g approximation, field calibration and covariance not supplied"
+}

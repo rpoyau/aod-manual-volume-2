@@ -1,0 +1,1230 @@
+{
+  "Fl-298": "unscored",
+  "R03_square_domain": {
+    "case": "burden",
+    "complete_context_sha256": "9d968d5e9b6f56ff1ac7f70da14d59bdea8fab3d46e4fcf526f419aedeaa5fae",
+    "decision_exit_probability": "1/3",
+    "inner_model": "one evolving candidate square retained through outer folds",
+    "loss_model": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+    "model_id": "m1:witnessed-retention:r03:integration-v1",
+    "original_contract_sha256": "4956f89792615dd7af9b731fa1b02bf57d40a59d20a5a6f48bbdc0224b815e98",
+    "prefix": "+-",
+    "raw_burden": "10",
+    "raw_capacity": "5",
+    "raw_normalization_unit": 5,
+    "raw_signed_response": "0",
+    "reference_identity": "9b49b47225a92420f57117212d90e2eadae04c8b994f36769cf5d4a7567f391a",
+    "reference_structural_RD": 5,
+    "transferred_to_aggregate": false
+  },
+  "assessment_sha256": "55ee73199d90a7c76f73f8905b4c4a40825fe24068903afa371d79639ae9b007",
+  "cases": {
+    "configurations/Fl-286": {
+      "actual_construction": {
+        "committed_parent_prefix": "567539402abe1dae1a65c62320af79ad43b4edf5f8a51b6f603925fc258609bc",
+        "complete_parent_returns": [
+          {
+            "certificate_sha256": "a5b4da42c865c219a8fd678177cda4806cc214b595b1892d3a891983a2d34728",
+            "committed": 31233,
+            "id": "b77f7987481bd7e8518d5c3a33d9b89f2437590a281385a0923c17f8ff60c68a",
+            "trace_sha256": "6697e6622364d4ac01b0f7bfa2f40ff6a43af88bc943c5b1092b686dd01972a6"
+          },
+          {
+            "certificate_sha256": "133fb86cccad9cbdc9ead9b7c8de69e389bfba0603419bd9997b7de2aa3b9741",
+            "committed": 61469,
+            "id": "c852ff96bf84f67193c8931613b523c1f80f6f56e18868b0c959cd0eee29371e",
+            "trace_sha256": "8c6da628233c58b486a8421a109fd2fc6f933ce88daa785fbdaef73fc31e64bb"
+          },
+          {
+            "certificate_sha256": "690e26d6e7d69271b4044fb985a897caf70cbfd5522aceb415c721615c0fae9d",
+            "committed": 924412344,
+            "id": "c7c2bdfda33f8316121ae9b7b470d5b50bd5e3f402188d164ed08f73b5b11092",
+            "trace_sha256": "96394702dbbb70e24ab3c475b85450d1afbb8d72adddd994698258dc49e5d6ff"
+          },
+          {
+            "certificate_sha256": "55c5e9fe06cd88f92fec274d3070af07fa894cbb9c8324d62cb6b5e9c152766b",
+            "committed": 1848574689,
+            "id": "e114226596f674fff828fb0d3a90a1efdc00fc214a0edde36c4d360cac2e8a5c",
+            "trace_sha256": "19b8213b3137bf24a7df7e991eadb1b310bd29bb197b8887a72ae409f1511ae1"
+          },
+          {
+            "certificate_sha256": "c79b4ef73408a357f73b4c36efc3b78147fdd51d328bea2932e93adc41b1ab92",
+            "committed": 2772737034,
+            "id": "334684022124d903e9fea9e7248398b46e6d2484a856bdc2eac4c05e81f28635",
+            "trace_sha256": "fe88e1a725845a705e51a65410aa2cd29577656be8ea286e7d9981ed9783756b"
+          },
+          {
+            "certificate_sha256": "3d50a7cfeb2f6d1823ec64834306e52d0bfc2f9e9b86d350a3b2c26c7fb807dd",
+            "committed": 3696899379,
+            "id": "5b083fdd92003e7f994e7ac9ef9fa229bd9b320b16c06f0f272df84ea54331ab",
+            "trace_sha256": "64436a3324ffc3bc856aacb73ff9ca5b73d1460e294730391389836609db7ab8"
+          }
+        ],
+        "constituent_histories": {
+          "records": 286,
+          "sha256": "3b2a062975a23d06164e90deed8475dc8ab18d350958c109de4840b58a7dc3a1"
+        },
+        "directed_channels": [
+          [
+            "B0",
+            "B1"
+          ],
+          [
+            "B0",
+            "P"
+          ],
+          [
+            "B0",
+            "R"
+          ],
+          [
+            "B1",
+            "B0"
+          ],
+          [
+            "B1",
+            "P"
+          ],
+          [
+            "B1",
+            "R"
+          ],
+          [
+            "B2",
+            "P"
+          ],
+          [
+            "P",
+            "B0"
+          ],
+          [
+            "P",
+            "B1"
+          ],
+          [
+            "P",
+            "R"
+          ],
+          [
+            "R",
+            "B0"
+          ],
+          [
+            "R",
+            "B1"
+          ],
+          [
+            "R",
+            "P"
+          ]
+        ],
+        "distinct_constituents": 286,
+        "evolving_aggregate_fields": 5,
+        "fold_proposal_sha256": "69a1a6121f2e5beee3eb5a2befae219f21d0bbd61f980cf933446f51eb5ccf07",
+        "frozen_inner_formation_histories": true,
+        "full_wave_prefixes": {
+          "B0": "b9c6b6da8d9c9e9e437ac29ffcdfb47fd91719fefb6c0c87cf1ca03b2b9395d7",
+          "B1": "d373d91be97ad28cbc31cc78bcc8e04473633fd18a56fd27219a181ce13da490",
+          "B2": "576f668c9718869d4dece9003bf296f989b2739e7a36f7d47d0e02af2e80bfe3",
+          "P": "567539402abe1dae1a65c62320af79ad43b4edf5f8a51b6f603925fc258609bc",
+          "R": "ca82d4f9d97e57a24bb87a4550c9d8432a52dde90de2f4e77e7fd2ba3883d480"
+        },
+        "outward_occurrences": 15116,
+        "parent_identity": "abb48183b5ff4a7506025a02dc63c69c966465a474d15be25f8ce7768d2606a1",
+        "scale": 1,
+        "scope": "declared:matter1-coupling:outer",
+        "scope_map_sha256": "abc6ded31b6038644ef106d43f2a8cfe4a3c16eb38f3f4a6501d97cb0a5d7e65",
+        "structural_RD": 30233
+      },
+      "burden": {
+        "contributing_contacts": 3814,
+        "contributions_retained": true,
+        "nonnegative_sum": "234639505",
+        "signed_response": "-234639505"
+      },
+      "complete_history": {
+        "actions": {
+          "records": 640282,
+          "sha256": "2cf86b57668950a450ba2f328c467dd9ba8d57d9693d856a63ca8fc0790feb6c"
+        },
+        "burden_operands": {
+          "records": 3814,
+          "sha256": "89c64f95d1b53a7f7b8d5e22a8195985b418dc78a625855bd6510a000a8c59f5"
+        },
+        "directed_contacts": {
+          "B0<-B1": {
+            "records": 939,
+            "sha256": "56c27d02dba39e39f5e4544533ca9a7cd9618d1a0c41e006b6fb6bb1396e9cff"
+          },
+          "B0<-P": {
+            "records": 6,
+            "sha256": "067406588f583e6b816cbfc6b112049e45d53872c7e6b02005f80d2fb14b0e31"
+          },
+          "B0<-R": {
+            "records": 1942,
+            "sha256": "66738c9ccbfd6e545399ddf38147b7be6443b290e3a1391796e4b36fb2abfb9f"
+          },
+          "B1<-B0": {
+            "records": 939,
+            "sha256": "29363e259235de2d83e45c10f7b68da6978dd0236765d5d58eaab2cb34ad18fe"
+          },
+          "B1<-P": {
+            "records": 6,
+            "sha256": "5b0c2605124cd98701af3296aff9389c9c1d7c54d7c7ba9435912b946a65f8b1"
+          },
+          "B1<-R": {
+            "records": 1942,
+            "sha256": "75c339749ea28e08074eba2250a258969e05dda91e5db5dce41ad5c5c2d5be5e"
+          },
+          "B2<-P": {
+            "records": 6,
+            "sha256": "15ff8815375e6e798dd82e7c58d7c1666e2c7699eab5a45eed90fad65ad27353"
+          },
+          "P<-B0": {
+            "records": 939,
+            "sha256": "b9c12a4fe52ace4e979f48b213bf714697b675f7da9bb7fcddae3a19b851fc4c"
+          },
+          "P<-B1": {
+            "records": 939,
+            "sha256": "a6f809b3626d503ab07d209294546a9408b7d64f3282802a8e1fbd3982e3e6dd"
+          },
+          "P<-R": {
+            "records": 1942,
+            "sha256": "f521be848c7d18e637127564064058d5b6aab499f3648c17a7919d74c5b46f75"
+          },
+          "R<-B0": {
+            "records": 939,
+            "sha256": "c30b8d4658471c4fd1e5d097239cf0e1a380ff3e5c859c7c34b9a84e9a2325b0"
+          },
+          "R<-B1": {
+            "records": 939,
+            "sha256": "207c5bee72a89ca9f26c4ff3077237eaf23c7bbd414659511cc3d23f094f4804"
+          },
+          "R<-P": {
+            "records": 6,
+            "sha256": "b16961e8f97ac3366850925b0b33c88668cd5385301c7175163dab4cd0f814fe"
+          }
+        },
+        "emitted_currents": {
+          "records": 11458,
+          "sha256": "b1e9852c9fe182aa45ad11d77d354868fed9f7651fa632b703cb47b1e0352a9a"
+        },
+        "pending_currents": {
+          "records": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "pressure_updates": {
+          "records": 9539,
+          "sha256": "5fa01457c0d7511de45f91b15f578254aae23885922e0601a199998681a4d4a5"
+        },
+        "returned_currents": {
+          "records": 11484,
+          "sha256": "86e39a2331becfbc613a82f3167724fe6b495968d5fe9a55e4629b846b494b0c"
+        }
+      },
+      "counts": {
+        "case": "baseline",
+        "closures_per_atomic_traversal": "4/130843",
+        "closures_per_reference_bip": "1/485",
+        "hi_inclusive": 4000000000,
+        "kind": "cumulative",
+        "lag_drift": -1936,
+        "lo_exclusive": 61469,
+        "load_contact_count": 3814,
+        "new_parent_closures": 4,
+        "parent_atomic_traversals": 130843,
+        "parent_capacity": null,
+        "parent_loss": null,
+        "parent_structural_RD": 30233,
+        "parent_window_load": 234639505,
+        "phase_bias": "0",
+        "reference_bips": 1940,
+        "reference_structural_RD": 61,
+        "seconds": null,
+        "unwrapped_lag_end": -1936,
+        "unwrapped_lag_start": 0
+      },
+      "ensemble_median": null,
+      "existing_cadence_law_causal_witness": {
+        "affected_action": {
+          "cut": 280568,
+          "edge_index": 1,
+          "field": "P",
+          "from": 0,
+          "kind": "edge",
+          "occurrence": 2,
+          "pressure_binding": "5b83d83b6a79cefab2dbcd296ee7250dacfbfdf4f7d607a8679140b3dfc73678",
+          "pressure_used": 30568,
+          "to": 1
+        },
+        "contact_commit_cuts": [
+          100137,
+          200137,
+          100137,
+          200137,
+          100061,
+          200061
+        ],
+        "contact_ids": [
+          "seed:P:B0:100000",
+          "seed:P:B0:200000",
+          "seed:P:B1:100000",
+          "seed:P:B1:200000",
+          "seed:P:R:100000",
+          "seed:P:R:200000"
+        ],
+        "pressure_binding": "5b83d83b6a79cefab2dbcd296ee7250dacfbfdf4f7d607a8679140b3dfc73678",
+        "response_cut": 250000
+      },
+      "horizon_status": "construction horizon reached; no defined loss observable or survival censoring claim",
+      "loss_reference_count": null,
+      "native_admission": {
+        "admitted_distinct_parent_constituents": 286,
+        "admitted_outer_waves": 5,
+        "directional_comparisons": [
+          {
+            "lag": "-1936",
+            "operative_RCD": 61,
+            "ratio": "1/485",
+            "receiver": "P",
+            "sender": "R"
+          },
+          {
+            "lag": "1936",
+            "operative_RCD": 33425,
+            "ratio": "485",
+            "receiver": "R",
+            "sender": "P"
+          }
+        ]
+      },
+      "original_context": {
+        "case": "baseline",
+        "contract": {
+          "N": 172,
+          "Z": 114,
+          "assignment_status": "externally assigned constituent inventory; physical nuclear identification unproved",
+          "background": {
+            "B2_history": "present in every run and receives P from formation; the intervention adds B2-to-P influence",
+            "always_bidirectional": [
+              "B0",
+              "B1"
+            ],
+            "motif": "3:4:6"
+          },
+          "cases": [
+            "baseline",
+            "add_346_to_parent",
+            "same_addition_feedback_disabled",
+            "one_fewer_346_constituent"
+          ],
+          "contact_update": "emit after a genuine outer reclosure; reflection=(max(0,receiver_phase-sender_phase),max(0,sender_phase-receiver_phase)); arrival=start+source_RD+forward_reflection; immutable emission prefixes",
+          "current_model": "each directed channel has an admitted Monon pivot and Dion-pivot-Dion witness on each returned contact; repeated returns admit a Duon current; seating changes state only, with no added slowdown",
+          "decay_channel_or_daughter_map": null,
+          "electron_shell": "outside this nucleus-only construction",
+          "engine_start_cut": 250000,
+          "freeze_policy": "choices and horizon written before first execution; implementation fixes recorded separately",
+          "horizon_cut": 4000000000,
+          "inner_history": "two admitted seeded returns per distinct constituent; preserved during outer execution; no resolved internal nuclear dynamics",
+          "intervention_cut": 1000000000,
+          "load_diagnostic": "sum over arrivals to parent in the declared window of operative last-two-contact rho times abs(lag at emission); terms remain nonnegative and individually bound",
+          "nuclear_constituents": {
+            "neutron_facing": "3:4:6",
+            "proton_facing": "3:3:6"
+          },
+          "outer_scope_map": "ordered constituent word/shell occurrences map their last-axis H1 step into a shared Q4 register; reverse the complete branch after one hinge; bind every inner certificate in the fold proposal",
+          "outer_update": "reuse the earlier declared inverse-pressure sequencer: next action interval = own structural RD + sum incoming last-two-contact RCD durations; next start marker is one cut after completion",
+          "parent_capacity": null,
+          "parent_loss_rule": null,
+          "physical_seconds": null,
+          "prediction_policy": "deterministic finite construction; no lifetime, target, calibration gain or SI constant read by dynamics; no half-life or physical decay prediction",
+          "reference": {
+            "constituents": [
+              [
+                3,
+                3
+              ]
+            ],
+            "interpretation": "declared recurrent comparison field; not a Cs atomic clock",
+            "name": "R"
+          },
+          "response_participation": "one per active incoming edge; no clipping",
+          "schema": "matter1-constructed-coupling-v1",
+          "selected_label": "Fl-286:ground declared aggregate",
+          "window_endpoints": [
+            1000000000,
+            2000000000,
+            3000000000,
+            4000000000
+          ]
+        },
+        "preparation": {
+          "A": 286,
+          "N": 172,
+          "Z": 114,
+          "comparison_status": "retrospective; no measured lifetime is read",
+          "id": "Fl-286:ground",
+          "internal_nuclear_couplings": null,
+          "operative_couplings": "same R02 five-aggregate-field directed channel law",
+          "physical_preparation": null,
+          "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+          "state": "externally selected ground-state label; physical state identification unproved",
+          "symbol": "Fl"
+        },
+        "profile": "matter1:paired-aggregate-configurations:v1"
+      },
+      "original_context_sha256": "6edfddb3e72663ff88f4dc097b3aa11dc6f88aab1748388949ac78af1f02fe7f",
+      "physical_isotope_admission": false,
+      "physical_seconds": null,
+      "record_sha256": "0f1a42e4048ec90a192c531e7d6c8edb812133b1145ea245b6b12940ce43d0f0",
+      "reference": {
+        "identity": "bab1fd980bd1bbcc851fb1ff39bc1c27bdb38e29a92cbaa979788de090f09b9b",
+        "new_bips": 1940,
+        "physical_clock_identification": null,
+        "prefix_sha256": "ca82d4f9d97e57a24bb87a4550c9d8432a52dde90de2f4e77e7fd2ba3883d480",
+        "structural_RD": 61
+      },
+      "retention_mapping": {
+        "capacity": null,
+        "decision_schedule": null,
+        "exposure_operation": null,
+        "kernel_state": null,
+        "loss_predicate": null,
+        "normalization": null,
+        "status": "unprovided; the cadence response witness does not define a retention decision"
+      },
+      "schema": "matter1-retention-adapter-case-v1",
+      "source_bindings": {
+        "archive_verification_scope": "selected member bytes and original manifest bindings; full archive is not present",
+        "bound_inputs": 9,
+        "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+        "member_binding_sha256": "72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b",
+        "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+        "original_archive": {
+          "archive_crc_passed": true,
+          "bytes": 56690064,
+          "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+          "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+          "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+          "manifest_entries_verified": 85,
+          "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+        },
+        "selected_original_members": 39
+      },
+      "survival_probability": null
+    },
+    "configurations/Fl-289": {
+      "actual_construction": {
+        "committed_parent_prefix": "00e83d6558737871d217fc779ee744d589393ebe18ed50bd12958eba3ce5d5cb",
+        "complete_parent_returns": [
+          {
+            "certificate_sha256": "695666d5f3e2764d365552a6d89fb512ca884a4b765ef4dff44407e9453c6b9c",
+            "committed": 31641,
+            "id": "18346f0b2fe322e3c0db9c7ab07aca840c7307d525b72db4309981acef182f2b",
+            "trace_sha256": "8c0f563aa4b0194bfcd461e8f866db885d6ccc6c65d1cd80959fb4c22e1abb58"
+          },
+          {
+            "certificate_sha256": "356497b1456ca8604d3bd4b941ee905901fbb761e6755605c0a7e186ff4e20fc",
+            "committed": 62285,
+            "id": "30cb6436c711f97d41d465f2311eee80045abc1b7050452d8e9dc5a2c739c87c",
+            "trace_sha256": "19eec98c0bebf88bb148e155093b7a9937a51b7175f3c6b40585cfe4965120c7"
+          },
+          {
+            "certificate_sha256": "3464ccd3cc2e7ef47b6554221ef7e01836371218aa79372890f15fe39fa5fd64",
+            "committed": 949385616,
+            "id": "d9cb2d46438c049d8c6415c7074d1b5fb44ef12e24d7d840009409378acfb905",
+            "trace_sha256": "9fc608be6287584904e770bd4d0c5f51556e0fedf763f4ed9eda2d5c159ef0e9"
+          },
+          {
+            "certificate_sha256": "8207a3adfc22b87829e622227b48ff379f8d3be81c736e45ded0aefbe99de8ce",
+            "committed": 1898521233,
+            "id": "ff36ad852566820c955d52b916d91a8b3631ce917e1a54d8cf6417392377b0cf",
+            "trace_sha256": "6eb4b70f7201b10d88e8cc4fd62c3bc95345a2a452a2c829464c72e7104157da"
+          },
+          {
+            "certificate_sha256": "7022ba7f60cac331bfb66a308d7448fad6fb0efd714a945749f10307da909b67",
+            "committed": 2847656850,
+            "id": "760a1d984b7ac7b44d5eb59a607c6c17c5f3e44c12c144df96d769ad8547d0ed",
+            "trace_sha256": "6cf7bb679a642a8f42e97e473da38ed267dc1441400888e666a44608aecea8df"
+          },
+          {
+            "certificate_sha256": "00918f9637bb08b955759a97077b1ac0abbc2a6f4e87f8511ad5c5dcb3735521",
+            "committed": 3796792467,
+            "id": "53928eb7de64be31dc77b04cb3ef824ace2c29b4c148658ffb52f48cb4699f72",
+            "trace_sha256": "805238a0650d01ab54ebf9ac04932113e9c0527bcaf3dfb55cce1614a65d61f4"
+          }
+        ],
+        "constituent_histories": {
+          "records": 289,
+          "sha256": "74203bfa0992666e1eb704b9be4b10e773526ab8652402d72c62952731b43904"
+        },
+        "directed_channels": [
+          [
+            "B0",
+            "B1"
+          ],
+          [
+            "B0",
+            "P"
+          ],
+          [
+            "B0",
+            "R"
+          ],
+          [
+            "B1",
+            "B0"
+          ],
+          [
+            "B1",
+            "P"
+          ],
+          [
+            "B1",
+            "R"
+          ],
+          [
+            "B2",
+            "P"
+          ],
+          [
+            "P",
+            "B0"
+          ],
+          [
+            "P",
+            "B1"
+          ],
+          [
+            "P",
+            "R"
+          ],
+          [
+            "R",
+            "B0"
+          ],
+          [
+            "R",
+            "B1"
+          ],
+          [
+            "R",
+            "P"
+          ]
+        ],
+        "distinct_constituents": 289,
+        "evolving_aggregate_fields": 5,
+        "fold_proposal_sha256": "46a998778215a76b5edd611476b2b6c81f0d1e5e9d320302b0b6b223edab197c",
+        "frozen_inner_formation_histories": true,
+        "full_wave_prefixes": {
+          "B0": "a5e0b94a7780658fc22f001223f754cc45b88d7fc87ffab09d58ad89239701b1",
+          "B1": "e4c6d5ae26a14e7a10e35fe291287dcbe6fba13e9e963d8d0c57eb9e8fd5125c",
+          "B2": "d0a84e13a6fbfa0bd2ddd074bbab5cf1b8b6006393baafe140d6ff777b593002",
+          "P": "00e83d6558737871d217fc779ee744d589393ebe18ed50bd12958eba3ce5d5cb",
+          "R": "adc003413214543fe2102db53271d4dc47d77bb0563547b8c4c27d3f8cff2dd2"
+        },
+        "outward_occurrences": 15320,
+        "parent_identity": "caaf782a5b0d16f9fc24e92a9ca15cdb3835798b1f2e08838ff13c626479ab76",
+        "scale": 1,
+        "scope": "declared:matter1-coupling:outer",
+        "scope_map_sha256": "3ff05930cbfee208718c20db5889fc2e0a7f67b58a3167182f6bb04630fd3db0",
+        "structural_RD": 30641
+      },
+      "burden": {
+        "contributing_contacts": 3772,
+        "contributions_retained": true,
+        "nonnegative_sum": "229504185",
+        "signed_response": "-229504185"
+      },
+      "complete_history": {
+        "actions": {
+          "records": 632484,
+          "sha256": "db3a01feaee40ca5cc2a0548d5bbab841464ad3a676c6974f951e7821b38e23c"
+        },
+        "burden_operands": {
+          "records": 3772,
+          "sha256": "e96e9f325447c1c25f2fa52021353b0b1e0b7c37601e68338e7f21b97497e7db"
+        },
+        "directed_contacts": {
+          "B0<-B1": {
+            "records": 928,
+            "sha256": "3369dc35618c676ca67a5e44302e8ca71547896f1497c6e6107a6b657dbfc5d2"
+          },
+          "B0<-P": {
+            "records": 6,
+            "sha256": "ab786c0f93f29d4d52d6b5d3b0c523df2310c2d45274ba5ef9802cd3b3fb539d"
+          },
+          "B0<-R": {
+            "records": 1922,
+            "sha256": "d20a66038adfc89722bd47c2e28cb404e66a051cf46f4ec45cda90b74be98a75"
+          },
+          "B1<-B0": {
+            "records": 928,
+            "sha256": "1a1dd61b855426685410fd8f76a1170aed58c774d5dce585a614e7a805a17a13"
+          },
+          "B1<-P": {
+            "records": 6,
+            "sha256": "294ef23b48f50ee5d0abcae2782562991596976f23d47d0cf4f7d7a227f356d1"
+          },
+          "B1<-R": {
+            "records": 1922,
+            "sha256": "c82b46dbaa0695b1c413e4be40622c181f77ca26c99cfe0301e0d8feb91a3a97"
+          },
+          "B2<-P": {
+            "records": 6,
+            "sha256": "54fcfef312d226302a756f5bdd714c82860bc59aca7bcc79f9145521d8bddc5f"
+          },
+          "P<-B0": {
+            "records": 928,
+            "sha256": "e5bd308c644fe4de259b8adad06ea158cddcd3d59ac6855788fef6b02db90e7a"
+          },
+          "P<-B1": {
+            "records": 928,
+            "sha256": "88de55f40b5be68755c65b86fdc1ceb44cbab42798a7f92f339818ffd20bc85e"
+          },
+          "P<-R": {
+            "records": 1922,
+            "sha256": "3c569bc4c9a925c5add9df9259f624b1e8cc550133fcdce94b89a77f9f54714f"
+          },
+          "R<-B0": {
+            "records": 928,
+            "sha256": "b363466c91236411204c063d514a2799057ee52be1177dd9bcc604c4584c9fb6"
+          },
+          "R<-B1": {
+            "records": 928,
+            "sha256": "1dc5a259cc1193abd66c676daabce24c38a17b2cfe255270afdb40485135f4d2"
+          },
+          "R<-P": {
+            "records": 6,
+            "sha256": "7883102b8e3b9a47778db7ec7bac17b0bc071f8acb1bc83dddca8b90e1486ea5"
+          }
+        },
+        "emitted_currents": {
+          "records": 11332,
+          "sha256": "e2ae0498e8143386f5ec2b75fbe7c088962f46714dcdad1f82aeb110fe98eaee"
+        },
+        "pending_currents": {
+          "records": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "pressure_updates": {
+          "records": 9461,
+          "sha256": "a204b8b390779282e10cd77f3674556f6cffd7222318465bd5f23adbdc9ed575"
+        },
+        "returned_currents": {
+          "records": 11358,
+          "sha256": "4a357a33e10e899957da9a8f065d4f668fbc02b635a448ecd5e222ecfba96261"
+        }
+      },
+      "counts": {
+        "case": "baseline",
+        "closures_per_atomic_traversal": "1/32280",
+        "closures_per_reference_bip": "1/480",
+        "hi_inclusive": 4000000000,
+        "kind": "cumulative",
+        "lag_drift": -1916,
+        "lo_exclusive": 62285,
+        "load_contact_count": 3772,
+        "new_parent_closures": 4,
+        "parent_atomic_traversals": 129120,
+        "parent_capacity": null,
+        "parent_loss": null,
+        "parent_structural_RD": 30641,
+        "parent_window_load": 229504185,
+        "phase_bias": "0",
+        "reference_bips": 1920,
+        "reference_structural_RD": 61,
+        "seconds": null,
+        "unwrapped_lag_end": -1916,
+        "unwrapped_lag_start": 0
+      },
+      "ensemble_median": null,
+      "existing_cadence_law_causal_witness": {
+        "affected_action": {
+          "cut": 280976,
+          "edge_index": 1,
+          "field": "P",
+          "from": 0,
+          "kind": "edge",
+          "occurrence": 2,
+          "pressure_binding": "fc09c8b96669d2b4a0a7a08eb55555429213f1a95b899e80c2eac915c89531ed",
+          "pressure_used": 30976,
+          "to": 1
+        },
+        "contact_commit_cuts": [
+          100137,
+          200137,
+          100137,
+          200137,
+          100061,
+          200061
+        ],
+        "contact_ids": [
+          "seed:P:B0:100000",
+          "seed:P:B0:200000",
+          "seed:P:B1:100000",
+          "seed:P:B1:200000",
+          "seed:P:R:100000",
+          "seed:P:R:200000"
+        ],
+        "pressure_binding": "fc09c8b96669d2b4a0a7a08eb55555429213f1a95b899e80c2eac915c89531ed",
+        "response_cut": 250000
+      },
+      "horizon_status": "construction horizon reached; no defined loss observable or survival censoring claim",
+      "loss_reference_count": null,
+      "native_admission": {
+        "admitted_distinct_parent_constituents": 289,
+        "admitted_outer_waves": 5,
+        "directional_comparisons": [
+          {
+            "lag": "-1916",
+            "operative_RCD": 61,
+            "ratio": "1/480",
+            "receiver": "P",
+            "sender": "R"
+          },
+          {
+            "lag": "1916",
+            "operative_RCD": 33876,
+            "ratio": "480",
+            "receiver": "R",
+            "sender": "P"
+          }
+        ]
+      },
+      "original_context": {
+        "case": "baseline",
+        "contract": {
+          "N": 175,
+          "Z": 114,
+          "assignment_status": "externally assigned constituent inventory; physical nuclear identification unproved",
+          "background": {
+            "B2_history": "present in every run and receives P from formation; the intervention adds B2-to-P influence",
+            "always_bidirectional": [
+              "B0",
+              "B1"
+            ],
+            "motif": "3:4:6"
+          },
+          "cases": [
+            "baseline",
+            "add_346_to_parent",
+            "same_addition_feedback_disabled",
+            "one_fewer_346_constituent"
+          ],
+          "contact_update": "emit after a genuine outer reclosure; reflection=(max(0,receiver_phase-sender_phase),max(0,sender_phase-receiver_phase)); arrival=start+source_RD+forward_reflection; immutable emission prefixes",
+          "current_model": "each directed channel has an admitted Monon pivot and Dion-pivot-Dion witness on each returned contact; repeated returns admit a Duon current; seating changes state only, with no added slowdown",
+          "decay_channel_or_daughter_map": null,
+          "electron_shell": "outside this nucleus-only construction",
+          "engine_start_cut": 250000,
+          "freeze_policy": "choices and horizon written before first execution; implementation fixes recorded separately",
+          "horizon_cut": 4000000000,
+          "inner_history": "two admitted seeded returns per distinct constituent; preserved during outer execution; no resolved internal nuclear dynamics",
+          "intervention_cut": 1000000000,
+          "load_diagnostic": "sum over arrivals to parent in the declared window of operative last-two-contact rho times abs(lag at emission); terms remain nonnegative and individually bound",
+          "nuclear_constituents": {
+            "neutron_facing": "3:4:6",
+            "proton_facing": "3:3:6"
+          },
+          "outer_scope_map": "ordered constituent word/shell occurrences map their last-axis H1 step into a shared Q4 register; reverse the complete branch after one hinge; bind every inner certificate in the fold proposal",
+          "outer_update": "reuse the earlier declared inverse-pressure sequencer: next action interval = own structural RD + sum incoming last-two-contact RCD durations; next start marker is one cut after completion",
+          "parent_capacity": null,
+          "parent_loss_rule": null,
+          "physical_seconds": null,
+          "prediction_policy": "deterministic finite construction; no lifetime, target, calibration gain or SI constant read by dynamics; no half-life or physical decay prediction",
+          "reference": {
+            "constituents": [
+              [
+                3,
+                3
+              ]
+            ],
+            "interpretation": "declared recurrent comparison field; not a Cs atomic clock",
+            "name": "R"
+          },
+          "response_participation": "one per active incoming edge; no clipping",
+          "schema": "matter1-constructed-coupling-v1",
+          "selected_label": "Fl-289:ground declared aggregate",
+          "window_endpoints": [
+            1000000000,
+            2000000000,
+            3000000000,
+            4000000000
+          ]
+        },
+        "preparation": {
+          "A": 289,
+          "N": 175,
+          "Z": 114,
+          "comparison_status": "retrospective; no measured lifetime is read",
+          "id": "Fl-289:ground",
+          "internal_nuclear_couplings": null,
+          "operative_couplings": "same R02 five-aggregate-field directed channel law",
+          "physical_preparation": null,
+          "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+          "state": "externally selected ground-state label; physical state identification unproved",
+          "symbol": "Fl"
+        },
+        "profile": "matter1:paired-aggregate-configurations:v1"
+      },
+      "original_context_sha256": "a49600a200afb25a3d6c7fa60adb83047a97433ead3e0247c0a9a281e74521c1",
+      "physical_isotope_admission": false,
+      "physical_seconds": null,
+      "record_sha256": "55f1d94899e413a8082a0c472658f238bf423be4f6cdf5b26443c5848f4dd931",
+      "reference": {
+        "identity": "bab1fd980bd1bbcc851fb1ff39bc1c27bdb38e29a92cbaa979788de090f09b9b",
+        "new_bips": 1920,
+        "physical_clock_identification": null,
+        "prefix_sha256": "adc003413214543fe2102db53271d4dc47d77bb0563547b8c4c27d3f8cff2dd2",
+        "structural_RD": 61
+      },
+      "retention_mapping": {
+        "capacity": null,
+        "decision_schedule": null,
+        "exposure_operation": null,
+        "kernel_state": null,
+        "loss_predicate": null,
+        "normalization": null,
+        "status": "unprovided; the cadence response witness does not define a retention decision"
+      },
+      "schema": "matter1-retention-adapter-case-v1",
+      "source_bindings": {
+        "archive_verification_scope": "selected member bytes and original manifest bindings; full archive is not present",
+        "bound_inputs": 9,
+        "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+        "member_binding_sha256": "72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b",
+        "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+        "original_archive": {
+          "archive_crc_passed": true,
+          "bytes": 56690064,
+          "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+          "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+          "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+          "manifest_entries_verified": 85,
+          "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+        },
+        "selected_original_members": 39
+      },
+      "survival_probability": null
+    },
+    "r02/baseline": {
+      "actual_construction": {
+        "committed_parent_prefix": "27c0cd4b7dc757e38bdff8acbc41f73287ca83e9fb4eb0f179513e0a57441bca",
+        "complete_parent_returns": [
+          {
+            "certificate_sha256": "d1bccc13e8cecd0eb04dcb0fe612df8ade8cbdfb806e0c355555237e2ac77bbd",
+            "committed": 32017,
+            "id": "d32380af5737570fc64b3c69646d5648da968af050a81a863c0178c8a7c4e4bb",
+            "trace_sha256": "b46e9d871eb4fdb7951b158ff39b7b198fec65fd3445145debec8c5690f315ad"
+          },
+          {
+            "certificate_sha256": "1664f4dc1a8fa61c9a77aa36cad164a380abd9bc37377fed9f10b4705c899184",
+            "committed": 63037,
+            "id": "1545dacf1cd608d735e7f2ffa0aee4080958325333367f1fa15862e95f390546",
+            "trace_sha256": "05a03de8a288cad9851ec76e89d737e6ecb20b53e355dfe5f56ed7a7f57b809a"
+          },
+          {
+            "certificate_sha256": "380232eef0571e312aa220729983ec44149e698a4e3c6a927038e59b6e7d5541",
+            "committed": 972694984,
+            "id": "74db0df0e9ccda3f60f9dc3bb09720fdc8f532c09c747e510839811d67fd5805",
+            "trace_sha256": "c4b0d9f207525de6fe7eb0bea6053ffcdc772262e35e10703efbb0d7ef8cffb9"
+          },
+          {
+            "certificate_sha256": "c7f949b33361a2d0e2f04494f9e5c6d281ff37f8eb71fcbcaf88d6272ff6e503",
+            "committed": 1945139969,
+            "id": "b6495d719b94af87df3f1b8d414188a7e6d0ecb29ffeae93577a8150ce79b75e",
+            "trace_sha256": "01686d302f235b9047d9bc942decac98ac77ef4325e77ba0450cf61ecf5430c4"
+          },
+          {
+            "certificate_sha256": "4a4bbfc2664715b3dae9393564d5ef6315682ce65554ad7b82ae419fb4d6048c",
+            "committed": 2917584954,
+            "id": "6eeea11d76ca193520a637eaf2237a4ca908315978a9513a3f67559a331d0211",
+            "trace_sha256": "9dc8527bd510a98b3d4db624671b1ea2745f7676d9967ce53a5760900a6a79f7"
+          },
+          {
+            "certificate_sha256": "447514cdf3ddef571f07996247d53b5fc37692a8ead681bb8358a26a893f9fc6",
+            "committed": 3890029939,
+            "id": "65f52ca07dcb2056d8b5646d6c0ad0d5a0b84ced6fe49b06678ed412f8171e08",
+            "trace_sha256": "d2ca1c207f8c3c414773162f059be6ecd8b111881a7828196b0d1203927aab6e"
+          }
+        ],
+        "constituent_histories": {
+          "records": 294,
+          "sha256": "4c96e19c3d2b257adf814b1afc8038aa2b3bb7f942a8d2f2a2e20cf31a597645"
+        },
+        "directed_channels": [
+          [
+            "B0",
+            "B1"
+          ],
+          [
+            "B0",
+            "P"
+          ],
+          [
+            "B0",
+            "R"
+          ],
+          [
+            "B1",
+            "B0"
+          ],
+          [
+            "B1",
+            "P"
+          ],
+          [
+            "B1",
+            "R"
+          ],
+          [
+            "B2",
+            "P"
+          ],
+          [
+            "P",
+            "B0"
+          ],
+          [
+            "P",
+            "B1"
+          ],
+          [
+            "P",
+            "R"
+          ],
+          [
+            "R",
+            "B0"
+          ],
+          [
+            "R",
+            "B1"
+          ],
+          [
+            "R",
+            "P"
+          ]
+        ],
+        "distinct_constituents": 294,
+        "evolving_aggregate_fields": 5,
+        "fold_proposal_sha256": "227efbe9de3951db0f60499b38b4de40e170bbbf1e075a4f79fbf1da4cdd0a5b",
+        "frozen_inner_formation_histories": true,
+        "full_wave_prefixes": {
+          "B0": "5f525ca4808c737a2962272b38ea1ea499a87878cdb7c83f3822f062d2196e13",
+          "B1": "100e5f0f302065acd774c3b4f043681b923aa6ce123c366c88d46f765404e38c",
+          "B2": "b5357f217e23642c764f5b2839bc6ccc46ac6904875a400ead56674d65aef207",
+          "P": "27c0cd4b7dc757e38bdff8acbc41f73287ca83e9fb4eb0f179513e0a57441bca",
+          "R": "805acc48aeea994d6c36e210195135415c4270bebfd984a0398c143e36a3b748"
+        },
+        "outward_occurrences": 15508,
+        "parent_identity": "8ed366eec0c62f2e9b9b37d8923ea4e360215877944037160c8ad27af7e663f5",
+        "scale": 1,
+        "scope": "declared:matter1-coupling:outer",
+        "scope_map_sha256": "ded4b238a6ecaad990bfa48e75b12d6ecc2b08089b3013afcdac125d3a507c14",
+        "structural_RD": 31017
+      },
+      "burden": {
+        "contributing_contacts": 3732,
+        "contributions_retained": true,
+        "nonnegative_sum": "224657122",
+        "signed_response": "-224657122"
+      },
+      "complete_history": {
+        "actions": {
+          "records": 625472,
+          "sha256": "47ae5f408ccbc529111573a74a6f03670a1ace05dec448342638679a8fac6060"
+        },
+        "burden_operands": {
+          "records": 3732,
+          "sha256": "e781d18df32f8d1ed3e9aa1c7846842e1b9512c27a99ec2b16d8f44ce3929dc2"
+        },
+        "directed_contacts": {
+          "B0<-B1": {
+            "records": 917,
+            "sha256": "f7170c5e7631b41dc43c507f88c6ea799d8373015b29d45e1931b63c6b221755"
+          },
+          "B0<-P": {
+            "records": 6,
+            "sha256": "9389185315687bc491b4987bf2c1fe21a19844dbce02cf9f5985932e56e9d632"
+          },
+          "B0<-R": {
+            "records": 1904,
+            "sha256": "34f67c5330bd94eb57fecc711a3e45bb7a66865252bee61079782f925dd0ff94"
+          },
+          "B1<-B0": {
+            "records": 917,
+            "sha256": "61dcba98c34392bf901051fdb81e3ce399be38025a56fe18bc9f790ab46a9588"
+          },
+          "B1<-P": {
+            "records": 6,
+            "sha256": "49afe66ebcccf8e442bf2fcf1a4b06e5cfd4140e6295abc01ab59ab68d7c8844"
+          },
+          "B1<-R": {
+            "records": 1904,
+            "sha256": "7a65b5a9adff687ca26926c5224d8aa67d57bfceebb080be33c1b571abd891f0"
+          },
+          "B2<-P": {
+            "records": 6,
+            "sha256": "1e9d3c1e3cad90579be00bb45df83f9ae65c0847257f198b77093578efd64d85"
+          },
+          "P<-B0": {
+            "records": 917,
+            "sha256": "c11764a8110f3718a3689cb8434100ee25205bb99f0365a5c89a21781e3af47e"
+          },
+          "P<-B1": {
+            "records": 917,
+            "sha256": "657084093dcda0449befc14c49ab5202b34fbeecb1169f0809d0688ee0add8e3"
+          },
+          "P<-R": {
+            "records": 1904,
+            "sha256": "ce031ff76f6c61542bffc74769ae9700a467f36e359c2f8a256f48bf76780b3d"
+          },
+          "R<-B0": {
+            "records": 917,
+            "sha256": "307485a8c3d4bb5d9cd4fcf17680f5fe467ffa782b265f54a5e739b1be0a9583"
+          },
+          "R<-B1": {
+            "records": 917,
+            "sha256": "90327ac07e1b4e9761fcfb4999386bea261de8c58c05bdb79f984f97fa710fcc"
+          },
+          "R<-P": {
+            "records": 6,
+            "sha256": "284777d1235d8b8e7a435867ade19e0398a93ddf7cab9a0b2bfca1b07ca688aa"
+          }
+        },
+        "emitted_currents": {
+          "records": 11212,
+          "sha256": "050d54876f48b8b257be919e50d37e8a517c2208cbe4abe06fe8fdfd04d0ea6c"
+        },
+        "pending_currents": {
+          "records": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "pressure_updates": {
+          "records": 9334,
+          "sha256": "3c15035aead08bb26edc3c529adf0fbe4b7b92624951582a604a7e9283fabead"
+        },
+        "returned_currents": {
+          "records": 11238,
+          "sha256": "fd9b95458bbc2e73cdfcce51a72c8e2a7f763b462a2b1cecc40765a679b9dd23"
+        }
+      },
+      "counts": {
+        "case": "baseline",
+        "closures_per_atomic_traversal": "4/127571",
+        "closures_per_reference_bip": "2/951",
+        "hi_inclusive": 4000000000,
+        "kind": "cumulative",
+        "lag_drift": -1898,
+        "lo_exclusive": 63037,
+        "load_contact_count": 3732,
+        "new_parent_closures": 4,
+        "parent_atomic_traversals": 127571,
+        "parent_capacity": null,
+        "parent_loss": null,
+        "parent_structural_RD": 31017,
+        "parent_window_load": 224657122,
+        "phase_bias": "0",
+        "reference_bips": 1902,
+        "reference_structural_RD": 61,
+        "seconds": null,
+        "unwrapped_lag_end": -1898,
+        "unwrapped_lag_start": 0
+      },
+      "ensemble_median": null,
+      "existing_cadence_law_causal_witness": {
+        "affected_action": {
+          "cut": 281352,
+          "edge_index": 1,
+          "field": "P",
+          "from": 0,
+          "kind": "edge",
+          "occurrence": 2,
+          "pressure_binding": "ff461f4ebcdbe0327df8d469b0dd3ca1366f3c3466ecea1a505c4da2de33aa23",
+          "pressure_used": 31352,
+          "to": 1
+        },
+        "contact_commit_cuts": [
+          100137,
+          200137,
+          100137,
+          200137,
+          100061,
+          200061
+        ],
+        "contact_ids": [
+          "seed:P:B0:100000",
+          "seed:P:B0:200000",
+          "seed:P:B1:100000",
+          "seed:P:B1:200000",
+          "seed:P:R:100000",
+          "seed:P:R:200000"
+        ],
+        "pressure_binding": "ff461f4ebcdbe0327df8d469b0dd3ca1366f3c3466ecea1a505c4da2de33aa23",
+        "response_cut": 250000
+      },
+      "horizon_status": "construction horizon reached; no defined loss observable or survival censoring claim",
+      "loss_reference_count": null,
+      "native_admission": {
+        "admitted_distinct_parent_constituents": 294,
+        "admitted_outer_waves": 5,
+        "directional_comparisons": [
+          {
+            "lag": "-1898",
+            "operative_RCD": 61,
+            "ratio": "2/951",
+            "receiver": "P",
+            "sender": "R"
+          },
+          {
+            "lag": "1898",
+            "operative_RCD": 34292,
+            "ratio": "951/2",
+            "receiver": "R",
+            "sender": "P"
+          }
+        ]
+      },
+      "original_context": {
+        "case": "baseline",
+        "contract": {
+          "N": 176,
+          "Z": 118,
+          "assignment_status": "externally assigned constituent inventory; physical nuclear identification unproved",
+          "background": {
+            "B2_history": "present in every run and receives P from formation; the intervention adds B2-to-P influence",
+            "always_bidirectional": [
+              "B0",
+              "B1"
+            ],
+            "motif": "3:4:6"
+          },
+          "cases": [
+            "baseline",
+            "add_346_to_parent",
+            "same_addition_feedback_disabled",
+            "one_fewer_346_constituent"
+          ],
+          "contact_update": "emit after a genuine outer reclosure; reflection=(max(0,receiver_phase-sender_phase),max(0,sender_phase-receiver_phase)); arrival=start+source_RD+forward_reflection; immutable emission prefixes",
+          "current_model": "each directed channel has an admitted Monon pivot and Dion-pivot-Dion witness on each returned contact; repeated returns admit a Duon current; seating changes state only, with no added slowdown",
+          "decay_channel_or_daughter_map": null,
+          "electron_shell": "outside this nucleus-only construction",
+          "engine_start_cut": 250000,
+          "freeze_policy": "choices and horizon written before first execution; implementation fixes recorded separately",
+          "horizon_cut": 4000000000,
+          "inner_history": "two admitted seeded returns per distinct constituent; preserved during outer execution; no resolved internal nuclear dynamics",
+          "intervention_cut": 1000000000,
+          "load_diagnostic": "sum over arrivals to parent in the declared window of operative last-two-contact rho times abs(lag at emission); terms remain nonnegative and individually bound",
+          "nuclear_constituents": {
+            "neutron_facing": "3:4:6",
+            "proton_facing": "3:3:6"
+          },
+          "outer_scope_map": "ordered constituent word/shell occurrences map their last-axis H1 step into a shared Q4 register; reverse the complete branch after one hinge; bind every inner certificate in the fold proposal",
+          "outer_update": "reuse the earlier declared inverse-pressure sequencer: next action interval = own structural RD + sum incoming last-two-contact RCD durations; next start marker is one cut after completion",
+          "parent_capacity": null,
+          "parent_loss_rule": null,
+          "physical_seconds": null,
+          "prediction_policy": "deterministic finite construction; no lifetime, target, calibration gain or SI constant read by dynamics; no half-life or physical decay prediction",
+          "reference": {
+            "constituents": [
+              [
+                3,
+                3
+              ]
+            ],
+            "interpretation": "declared recurrent comparison field; not a Cs atomic clock",
+            "name": "R"
+          },
+          "response_participation": "one per active incoming edge; no clipping",
+          "schema": "matter1-constructed-coupling-v1",
+          "selected_label": "Og-294 nucleus candidate",
+          "window_endpoints": [
+            1000000000,
+            2000000000,
+            3000000000,
+            4000000000
+          ]
+        },
+        "preparation": {
+          "A": 294,
+          "N": 176,
+          "Z": 118,
+          "comparison_status": "retrospective; no measured lifetime is read",
+          "id": "Og-294:ground",
+          "internal_nuclear_couplings": null,
+          "operative_couplings": "same R02 five-aggregate-field directed channel law",
+          "physical_preparation": null,
+          "preparation": "ordered distinct proton-facing then neutron-facing two-return constituent seeds; declared outer fold; fixed reference and background seeds",
+          "state": "externally selected ground-state label; physical state identification unproved",
+          "symbol": "Og"
+        },
+        "profile": "matter1:constructed-coupling-r02:v1"
+      },
+      "original_context_sha256": "cc955d5fb85e31082068df16ac769a0dd52982b3e9d73bb3ce64cd488ecf6066",
+      "physical_isotope_admission": false,
+      "physical_seconds": null,
+      "record_sha256": "ddbc0e6d66cd40f6875aa4a40641990612de22f9f45288c7eacc2f519b21d6bd",
+      "reference": {
+        "identity": "bab1fd980bd1bbcc851fb1ff39bc1c27bdb38e29a92cbaa979788de090f09b9b",
+        "new_bips": 1902,
+        "physical_clock_identification": null,
+        "prefix_sha256": "805acc48aeea994d6c36e210195135415c4270bebfd984a0398c143e36a3b748",
+        "structural_RD": 61
+      },
+      "retention_mapping": {
+        "capacity": null,
+        "decision_schedule": null,
+        "exposure_operation": null,
+        "kernel_state": null,
+        "loss_predicate": null,
+        "normalization": null,
+        "status": "unprovided; the cadence response witness does not define a retention decision"
+      },
+      "schema": "matter1-retention-adapter-case-v1",
+      "source_bindings": {
+        "archive_verification_scope": "selected member bytes and original manifest bindings; full archive is not present",
+        "bound_inputs": 9,
+        "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+        "member_binding_sha256": "72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b",
+        "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+        "original_archive": {
+          "archive_crc_passed": true,
+          "bytes": 56690064,
+          "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+          "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+          "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+          "manifest_entries_verified": 85,
+          "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+        },
+        "selected_original_members": 39
+      },
+      "survival_probability": null
+    }
+  },
+  "classification": "replayed construction and unprovided adapter; no combined model executed",
+  "combined_loss_model": null,
+  "common_cadence_law": "matter1-constructed-coupling-v1",
+  "constructed_application_sha256": "e61be2e212e20edf07962fd791ac1af20583f9b00ac78dc1e774c98c1e4bb1f9",
+  "experimental_inputs_read": [],
+  "fitted_parameters": [],
+  "implementation_sha256": "8cc549a78c52a527f14d7d22d13db59af2e8ccc320555d6e62d6bbe6d78a0b5f",
+  "missing_bindings": {
+    "capacity": "The square raw capacity 5 is a fixture choice. An aggregate capacity law or independently selected family member is not supplied.",
+    "event_order": "Existing strictly later cadence responses are witnessed; a retention decision schedule and its committed-input selection remain unspecified.",
+    "loss": "No aggregate loss predicate, exposure operation or daughter transformation is supplied; emitted currents are not parent decay.",
+    "normalization": "R02 reference structural RD is 61; R03 raw unit is 5. No aggregate burden-to-kernel normalization is supplied.",
+    "reference": "R02 has its own complete reference-return history. No map to R03 rounds or observed elapsed time is supplied.",
+    "state": "No map from the many-constituent aggregate and frozen inner formation histories to the evolving R03 square candidate is supplied."
+  },
+  "physical_half_life": null,
+  "profile": "matter1:retention-adapter-assessment:v1",
+  "retention_application_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+  "schema": "matter1-retention-adapter-assessment-v1",
+  "scientific_obligations": {
+    "SURV-ATOM-01": "Physical isotope/state/preparation identification and resolved internal nuclear dynamics remain unprovided.",
+    "SURV-ATOM-02": "A common cadence law is executed; aggregate retention normalization, capacity, update and loss bindings remain unprovided.",
+    "SURV-ATOM-03": "Physical loss endpoint, daughter identity and reference-to-observed-time mapping remain unprovided.",
+    "SURV-ATOM-04": "Physical preparation, discrepancy, realization, detection/censoring and dependent uncertainty remain unprovided."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-11",
+  "preserved_prior_bytes": {
+    "manual2/evidence/external-transitions-before-20261111/manual2/data/m1/classification/data_cards.json": "ea47f9c7ff58e055cb3ad67c805c2213592d3a5ee880ee686735624a34abe5ab",
+    "manual2/evidence/external-transitions-before-20261111/manual2/data/m1/external_transitions/catalog.json": "0ef05771e1fce3c6880a545fe4b3f1c3e8e3c726bb5c65519b2affb1fbec5d47",
+    "manual2/evidence/external-transitions-before-20261111/manual2/data/m1/external_transitions/nist2010-hdt-web-extraction.json": "d0ea7e9ed22363c3b43b578057ae3db1271cb810d30b72e739fbffb0044e675b",
+    "manual2/evidence/external-transitions-before-20261111/manual2/evidence/data-classes/source-bindings.json": "e5209d63f768bd3b002ea1c6c042a16a405aae8ed16d100db1260bb826422bcc"
+  },
+  "previous_head": "d44b26b554edf90075c0c96da0c0ca245009799a",
+  "reason": "CS-R01: retain the evaluated-T one-standard-deviation convention and legacy-source caveat; no numerical values, physical prediction or native trajectory changed.",
+  "schema": "matter1.external-transition-uncertainty-rebind.v1",
+  "source_locators": [
+    "PDF page index 5 / printed page 591, footnote 3",
+    "PDF page index 22 / printed page 608, explanation of experimental uncertainties"
+  ],
+  "source_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=842564",
+  "successor_sha256": {
+    "manual2/data/m1/classification/data_cards.json": "15068a00bf9d05f00b1a2603d79b9b8d581a4bbf669ed8a0079452febc4bf94a",
+    "manual2/data/m1/external_transitions/catalog.json": "30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a",
+    "manual2/data/m1/external_transitions/nist2010-hdt-web-extraction.json": "0989bbcf76b04caffa3c83a8431f7050cbe8f96a42a1e16a25068cefd4db1e12",
+    "manual2/evidence/data-classes/source-bindings.json": "c7cb00b17666e3b23fbc6e56165de81d5c0e6cc310d646925e2da6ac52ccba52"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "acceptance": [
+    {
+      "count": 135,
+      "id": "FB1",
+      "outcome": "executed_for_campaign_configurations",
+      "scope": "Generic inventory construction and scoped native folding"
+    },
+    {
+      "count": 135,
+      "id": "FB2",
+      "matched_control_runs_recorded_here": 0,
+      "outcome": "baseline_executed_controls_require_separate_test_evidence",
+      "scope": "Declared finite internal baseline dynamics"
+    },
+    {
+      "ensemble_distribution_claimed": false,
+      "id": "FB3",
+      "outcome": "no_state_reduction_claim",
+      "scope": "Exact conditional kernels sampled with complete histories retained"
+    },
+    {
+      "dependencies": [
+        "physical_preparation_to_constructed_state",
+        "native_FRG_ring_gate_for_atomic_coupling",
+        "atomic_state_to_emitted_phase_observation_map",
+        "isotope_state_dependent_retention_capacity_and_loss_observable",
+        "decay_channel_and_daughter_identification"
+      ],
+      "id": "FB4",
+      "outcome": "unresolved",
+      "scope": "State-resolved physical observation"
+    },
+    {
+      "dependencies": [
+        "reference_reclosures_to_realized_SI_cycles"
+      ],
+      "id": "FB5",
+      "outcome": "unresolved",
+      "scope": "Realized SI mapping"
+    },
+    {
+      "dependencies": [
+        "matched_apparatus_window_and_complete_joint_uncertainty"
+      ],
+      "id": "FB6",
+      "outcome": "unresolved",
+      "scope": "Complete physical uncertainty and comparison"
+    },
+    {
+      "assertion": "Generation is not verification; run the read-only campaign verifier.",
+      "id": "FB7",
+      "outcome": "requires_separate_fresh_verification",
+      "scope": "Reproduction"
+    }
+  ],
+  "comparison_sha256": "0e9fcd37ca5b2314c1e83c29ceb2460056ab25e82df056a93e2fdd409d42a5f7",
+  "configuration_results": 135,
+  "coverage": {
+    "distinct_Z_A": 135,
+    "elements": 118,
+    "isotope_state_records": 27,
+    "reference_records": 118,
+    "reference_slots_preserved": 126,
+    "source_records": 145
+  },
+  "execution_counts": {
+    "baseline_executed": 135,
+    "bounded_native_observations": 135,
+    "generic_constructed": 135,
+    "matched_controls_in_this_artifact": 0
+  },
+  "frozen_models_preserved": [
+    "R02",
+    "R03",
+    "legacy_survival",
+    "static_reference"
+  ],
+  "independent_physical_prediction": false,
+  "manifest_sha256": "22c0edb2301de95f3487941dd4e452efa0deafe29bc1513f27be563a1db89b27",
+  "physical_prediction_objective": "unresolved_observation_and_state_identification",
+  "prediction_sha256": "b5ff00f9388dfdaf4a5f915d6398798e44fef4a07183799152c71e298e83887b",
+  "profile": "matter1:all-elements-campaign:v1",
+  "schema_version": 1,
+  "stopping_policy": {
+    "internal_rounds": 3,
+    "new_outer_reclosures": 1,
+    "physical_survival_horizon": null,
+    "rule": "Complete the declared internal rounds, then one outer reclosure; no physical decay stopping claim."
+  },
+  "unresolved_dependencies": [
+    "physical_preparation_to_constructed_state",
+    "native_FRG_ring_gate_for_atomic_coupling",
+    "atomic_state_to_emitted_phase_observation_map",
+    "isotope_state_dependent_retention_capacity_and_loss_observable",
+    "decay_channel_and_daughter_identification",
+    "reference_reclosures_to_realized_SI_cycles",
+    "matched_apparatus_window_and_complete_joint_uncertainty"
+  ]
+}

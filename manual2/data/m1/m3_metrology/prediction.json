@@ -1,0 +1,990 @@
+{
+  "application_code_sha256": "744b06971d4158212a55b9a7fc0227a0ba58ecf7076a07993c8555254fd1633b",
+  "atomic_diagnostics": {
+    "atomic_prediction": {
+      "admission_status": "native_atomic_admission_pending",
+      "frequency_hz": null,
+      "ratio": null,
+      "standard_uncertainty_hz": null,
+      "transition_period_seconds": null
+    },
+    "calibration": {
+      "fitted_parameters": [],
+      "realized_device_calibration": "not_performed",
+      "reference_hz": "9192631770",
+      "reference_kind": "exact_si_definition"
+    },
+    "calibration_sha256": "9387d2bfa232450d90a11c0403a43e2c364c19d08834679b406ada6934be30b5",
+    "countermodels": [
+      {
+        "Cs_gain": "1",
+        "H_gain": "1",
+        "atomic_map_status": "unjustified; witness_of_missing_constraint",
+        "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+        "conditional_unit_conversion": {
+          "classification": "conditional_unit_conversion_not_ratio_derivation",
+          "covariance": {
+            "matrix": [
+              [
+                null,
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            "matrix_units": [
+              [
+                "1*1",
+                "1*Hz"
+              ],
+              [
+                "Hz*1",
+                "Hz*Hz"
+              ]
+            ],
+            "rounding_policy": "exact_rational_no_tolerance",
+            "status": "partial",
+            "units": [
+              "1",
+              "Hz"
+            ],
+            "variables": [
+              "ratio",
+              "reference_frequency"
+            ]
+          },
+          "first_order_frequency_variance_hz2": null,
+          "frequency_hz": "11031158124",
+          "frequency_variance_hz2": null,
+          "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+          "native_admission": "not_asserted",
+          "period_propagation": "not_established",
+          "quantity_kind": "transition_period",
+          "ratio": "6/5",
+          "reference_hz": "9192631770",
+          "reference_kind": "exact_si_definition",
+          "standard_uncertainty_hz_display": null,
+          "standard_uncertainty_seconds_display": null,
+          "transition_period_seconds": "1/11031158124",
+          "transition_period_variance_s2": null,
+          "uncertainty_status": "partial",
+          "unresolved_uncertainty": [
+            "unknown_input_covariance_or_variance"
+          ]
+        },
+        "counts": {
+          "outer_minus": 5,
+          "outer_plus": 6
+        },
+        "finite_cadence_ratio": "6/5",
+        "lambda": "0",
+        "mapped_ratio": "6/5",
+        "physical_standard_uncertainty_hz": null,
+        "scenario": "baseline",
+        "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+      },
+      {
+        "Cs_gain": "1",
+        "H_gain": "2",
+        "atomic_map_status": "unjustified; witness_of_missing_constraint",
+        "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+        "conditional_unit_conversion": {
+          "classification": "conditional_unit_conversion_not_ratio_derivation",
+          "covariance": {
+            "matrix": [
+              [
+                null,
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            "matrix_units": [
+              [
+                "1*1",
+                "1*Hz"
+              ],
+              [
+                "Hz*1",
+                "Hz*Hz"
+              ]
+            ],
+            "rounding_policy": "exact_rational_no_tolerance",
+            "status": "partial",
+            "units": [
+              "1",
+              "Hz"
+            ],
+            "variables": [
+              "ratio",
+              "reference_frequency"
+            ]
+          },
+          "first_order_frequency_variance_hz2": null,
+          "frequency_hz": "22062316248",
+          "frequency_variance_hz2": null,
+          "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+          "native_admission": "not_asserted",
+          "period_propagation": "not_established",
+          "quantity_kind": "transition_period",
+          "ratio": "12/5",
+          "reference_hz": "9192631770",
+          "reference_kind": "exact_si_definition",
+          "standard_uncertainty_hz_display": null,
+          "standard_uncertainty_seconds_display": null,
+          "transition_period_seconds": "1/22062316248",
+          "transition_period_variance_s2": null,
+          "uncertainty_status": "partial",
+          "unresolved_uncertainty": [
+            "unknown_input_covariance_or_variance"
+          ]
+        },
+        "counts": {
+          "outer_minus": 5,
+          "outer_plus": 6
+        },
+        "finite_cadence_ratio": "6/5",
+        "lambda": "1",
+        "mapped_ratio": "12/5",
+        "physical_standard_uncertainty_hz": null,
+        "scenario": "baseline",
+        "trace_sha256": "0c5474a8f31b97c5ea426336bdea519ae7dad6e6c58b5be4a00bfd2b6974ea62"
+      },
+      {
+        "Cs_gain": "1",
+        "H_gain": "1",
+        "atomic_map_status": "unjustified; witness_of_missing_constraint",
+        "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+        "conditional_unit_conversion": {
+          "classification": "conditional_unit_conversion_not_ratio_derivation",
+          "covariance": {
+            "matrix": [
+              [
+                null,
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            "matrix_units": [
+              [
+                "1*1",
+                "1*Hz"
+              ],
+              [
+                "Hz*1",
+                "Hz*Hz"
+              ]
+            ],
+            "rounding_policy": "exact_rational_no_tolerance",
+            "status": "partial",
+            "units": [
+              "1",
+              "Hz"
+            ],
+            "variables": [
+              "ratio",
+              "reference_frequency"
+            ]
+          },
+          "first_order_frequency_variance_hz2": null,
+          "frequency_hz": "3677052708",
+          "frequency_variance_hz2": null,
+          "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+          "native_admission": "not_asserted",
+          "period_propagation": "not_established",
+          "quantity_kind": "transition_period",
+          "ratio": "2/5",
+          "reference_hz": "9192631770",
+          "reference_kind": "exact_si_definition",
+          "standard_uncertainty_hz_display": null,
+          "standard_uncertainty_seconds_display": null,
+          "transition_period_seconds": "1/3677052708",
+          "transition_period_variance_s2": null,
+          "uncertainty_status": "partial",
+          "unresolved_uncertainty": [
+            "unknown_input_covariance_or_variance"
+          ]
+        },
+        "counts": {
+          "outer_minus": 5,
+          "outer_plus": 2
+        },
+        "finite_cadence_ratio": "2/5",
+        "lambda": "0",
+        "mapped_ratio": "2/5",
+        "physical_standard_uncertainty_hz": null,
+        "scenario": "early_loss",
+        "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+      },
+      {
+        "Cs_gain": "1",
+        "H_gain": "2",
+        "atomic_map_status": "unjustified; witness_of_missing_constraint",
+        "classification": "unselected_observation_map_countermodel_not_atomic_prediction",
+        "conditional_unit_conversion": {
+          "classification": "conditional_unit_conversion_not_ratio_derivation",
+          "covariance": {
+            "matrix": [
+              [
+                null,
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            "matrix_units": [
+              [
+                "1*1",
+                "1*Hz"
+              ],
+              [
+                "Hz*1",
+                "Hz*Hz"
+              ]
+            ],
+            "rounding_policy": "exact_rational_no_tolerance",
+            "status": "partial",
+            "units": [
+              "1",
+              "Hz"
+            ],
+            "variables": [
+              "ratio",
+              "reference_frequency"
+            ]
+          },
+          "first_order_frequency_variance_hz2": null,
+          "frequency_hz": "7354105416",
+          "frequency_variance_hz2": null,
+          "linearity_scope": "Local first-order approximation; marginal guards are not distribution-free error bounds.",
+          "native_admission": "not_asserted",
+          "period_propagation": "not_established",
+          "quantity_kind": "transition_period",
+          "ratio": "4/5",
+          "reference_hz": "9192631770",
+          "reference_kind": "exact_si_definition",
+          "standard_uncertainty_hz_display": null,
+          "standard_uncertainty_seconds_display": null,
+          "transition_period_seconds": "1/7354105416",
+          "transition_period_variance_s2": null,
+          "uncertainty_status": "partial",
+          "unresolved_uncertainty": [
+            "unknown_input_covariance_or_variance"
+          ]
+        },
+        "counts": {
+          "outer_minus": 5,
+          "outer_plus": 2
+        },
+        "finite_cadence_ratio": "2/5",
+        "lambda": "1",
+        "mapped_ratio": "4/5",
+        "physical_standard_uncertainty_hz": null,
+        "scenario": "early_loss",
+        "trace_sha256": "d5cda63e010530f07cd9d7d18999db404d39d12c8891b61723ae91e4f60c776f"
+      }
+    ],
+    "dependency_gates": {
+      "P2": "native_atomic_construction_and_accessor_unresolved",
+      "P3": "native_atomic_coupled_lineages_unresolved",
+      "P4": "physical_atomic_observation_map_unresolved",
+      "P4a": "external_state_inventory_only"
+    },
+    "engine_bindings": [
+      {
+        "path": "manual2/scripts/matter1_atomic.py",
+        "sha256": "00fc9ee7d37e39f67a60dcc93398d0b7a7511ef9e66c4f3d0ab9ede144ce3a12"
+      },
+      {
+        "path": "manual2/scripts/matter1_stateful.py",
+        "sha256": "254b9fe299ca2942f26a3963d12572f056f9e1aceb2293271412d216234a2e95"
+      },
+      {
+        "path": "manual2/scripts/matter1_temporal.py",
+        "sha256": "0ba3f7e0e2b8bc44fb83385548702d21549f0ca76a422abc3c04a1a500716b5c"
+      },
+      {
+        "path": "manual2/scripts/matter1_folding.py",
+        "sha256": "c9565228021a6e86bcc95ec18d14261a92ed8aca5762d7c9c0a0da5f2d9f1d7b"
+      },
+      {
+        "path": "manual2/scripts/matter1_metrology.py",
+        "sha256": "591e64cf77e266762c723ec6cfca5c82510134445fa4f3c7941ff72539464062"
+      }
+    ],
+    "exposure": "H_and_Rb_previously_exposed; no_independent_prediction_claim",
+    "model_contract_sha256": "9fee0ecff98b9e870bf3252bf1eeec99b6bff720cb19af553d8fe907c2370ecd",
+    "profile": "matter1-atomic-map-obstruction-v2",
+    "proof": {
+      "consequence": "For positive cadence r, R_lambda=r*(1+lambda); any positive ratio is obtained by lambda=R/r-1. Cs calibration does not select lambda.",
+      "fixed": [
+        "finite histories within each scenario",
+        "Cs normalization",
+        "single map family for both Z values"
+      ],
+      "free_parameter": "lambda in g_lambda(Z)",
+      "minimum_extra_premise": "A source-justified atomic configuration/update and observation rule fixing relative H/Cs phase or cycle gain independently of the tested H splitting.",
+      "scope": "non-identifiability from the presently established finite constraints, not proof that AOD cannot determine a ratio with additional atomic construction"
+    },
+    "schema_version": 1,
+    "source_bindings": [
+      {
+        "label_lines": {
+          "eq:key-proposed-admitted-trace": 156
+        },
+        "labels": [
+          "eq:key-proposed-admitted-trace"
+        ],
+        "path": "sections/05_curl_closure_duon_current.tex",
+        "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+      },
+      {
+        "label_lines": {
+          "eq:cadence-ratio": 114,
+          "eq:rcd-duration-participation": 69,
+          "eq:wave-update-trace": 33
+        },
+        "labels": [
+          "eq:wave-update-trace",
+          "eq:rcd-duration-participation",
+          "eq:cadence-ratio"
+        ],
+        "path": "sections/06_wave_state_relational_time.tex",
+        "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+      }
+    ],
+    "status": "prediction_objective_incomplete_observation_map_underdetermined",
+    "target_access": "not_read"
+  },
+  "diagnostic_windows": {
+    "baseline": [
+      20,
+      68
+    ],
+    "early_loss": [
+      20,
+      68
+    ]
+  },
+  "loader_code_sha256": "1d16feec2a316e5e4bbb0874d216698a91cfe86b6723c61648e75ecb9669b879",
+  "native_r03": {
+    "burden": {
+      "conditional_outputs": {
+        "average_rate_hz": "6128421180",
+        "elapsed_seconds": "1/3064210590"
+      },
+      "context_sha256": "4c77308f401fecd76fa2838483822cab20dc3635e0965161bc7d23a68c6ab6ab",
+      "native_binding": {
+        "classification": "conditional_model_prediction_not_atomic_prediction",
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "native_schema_version": 3,
+        "original_context_sha256": "4c77308f401fecd76fa2838483822cab20dc3635e0965161bc7d23a68c6ab6ab",
+        "physical_correspondence": "unestablished",
+        "prediction_sha256": "6038b2cb41c8e5d002966ee2eed84a0435115155d00553550726e575e68eff05"
+      },
+      "native_observations": {
+        "compared": {
+          "channel": "compared",
+          "count": 2,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "6038b2cb41c8e5d002966ee2eed84a0435115155d00553550726e575e68eff05",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        },
+        "reference": {
+          "channel": "reference",
+          "count": 3,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "6038b2cb41c8e5d002966ee2eed84a0435115155d00553550726e575e68eff05",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        }
+      },
+      "original_input": {
+        "case": "burden",
+        "contract": {
+          "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+          "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+          "capacity": {
+            "diagnostic_units": "1",
+            "raw_rule": "C_close=u",
+            "status": "declared fixture capacity, not inferred nuclear capacity"
+          },
+          "cases": [
+            "net_memory",
+            "burden",
+            "burden_feedback_off",
+            "burden_latest_response_window",
+            "burden_background_pending"
+          ],
+          "controls": {
+            "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+            "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+            "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+            "direction": "recompute forward and reverse RCD from separately bound directional traces",
+            "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+            "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+          },
+          "experimental_inputs": [],
+          "fit_parameters": [],
+          "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+          "formation_returns": {
+            "background": 3,
+            "candidate": 4,
+            "outer_parent": 2,
+            "reference": 2
+          },
+          "freeze": "written before first execution; all common choices remain fixed across the declared comparisons",
+          "horizon": {
+            "allowed_cut_window": [
+              0,
+              100000
+            ],
+            "new_reference_returns": 3
+          },
+          "isotope_state_assignment": null,
+          "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+          "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+          "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+          "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+          "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+          "physical_seconds": null,
+          "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+          "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+          "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+          "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+          "schema": "witnessed-cancellation-retention-v1",
+          "scope": "declared finite retention fixture; no isotope or physical decay identification"
+        },
+        "endpoint": "third prepared decision before its selected outcome",
+        "retained_prefix": "++",
+        "reverse_extra": 0,
+        "schema": "matter1:r03:m3-observation:v1",
+        "sources": {
+          "adapter_code_sha256": "8f60e063090fde6614f9ba073977f6f35a6f83b0b6ac9a326027849d73032aa4",
+          "native_code_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+          "retention_code_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+          "vendor_binding_sha256": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02"
+        }
+      },
+      "pending_count": 0,
+      "physical_elapsed_seconds": null,
+      "physical_half_life": null,
+      "population_size": 4
+    },
+    "burden_background_pending": {
+      "conditional_outputs": {
+        "average_rate_hz": "6128421180",
+        "elapsed_seconds": "1/3064210590"
+      },
+      "context_sha256": "45f4f25b56ab68d031facb1e7d1bb88fd51a7e4b244a4f3abc072d5c56e5d692",
+      "native_binding": {
+        "classification": "conditional_model_prediction_not_atomic_prediction",
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "native_schema_version": 3,
+        "original_context_sha256": "45f4f25b56ab68d031facb1e7d1bb88fd51a7e4b244a4f3abc072d5c56e5d692",
+        "physical_correspondence": "unestablished",
+        "prediction_sha256": "fdde2ceef841ec9ace4e271309c1c7161da300e5ea3f87a657bb05e7241e740e"
+      },
+      "native_observations": {
+        "compared": {
+          "channel": "compared",
+          "count": 2,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "fdde2ceef841ec9ace4e271309c1c7161da300e5ea3f87a657bb05e7241e740e",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2138
+          ]
+        },
+        "reference": {
+          "channel": "reference",
+          "count": 3,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "fdde2ceef841ec9ace4e271309c1c7161da300e5ea3f87a657bb05e7241e740e",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2138
+          ]
+        }
+      },
+      "original_input": {
+        "case": "burden_background_pending",
+        "contract": {
+          "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+          "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+          "capacity": {
+            "diagnostic_units": "1",
+            "raw_rule": "C_close=u",
+            "status": "declared fixture capacity, not inferred nuclear capacity"
+          },
+          "cases": [
+            "net_memory",
+            "burden",
+            "burden_feedback_off",
+            "burden_latest_response_window",
+            "burden_background_pending"
+          ],
+          "controls": {
+            "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+            "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+            "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+            "direction": "recompute forward and reverse RCD from separately bound directional traces",
+            "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+            "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+          },
+          "experimental_inputs": [],
+          "fit_parameters": [],
+          "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+          "formation_returns": {
+            "background": 3,
+            "candidate": 4,
+            "outer_parent": 2,
+            "reference": 2
+          },
+          "freeze": "written before first execution; all common choices remain fixed across the declared comparisons",
+          "horizon": {
+            "allowed_cut_window": [
+              0,
+              100000
+            ],
+            "new_reference_returns": 3
+          },
+          "isotope_state_assignment": null,
+          "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+          "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+          "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+          "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+          "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+          "physical_seconds": null,
+          "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+          "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+          "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+          "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+          "schema": "witnessed-cancellation-retention-v1",
+          "scope": "declared finite retention fixture; no isotope or physical decay identification"
+        },
+        "endpoint": "third prepared decision before its selected outcome",
+        "retained_prefix": "++",
+        "reverse_extra": 0,
+        "schema": "matter1:r03:m3-observation:v1",
+        "sources": {
+          "adapter_code_sha256": "8f60e063090fde6614f9ba073977f6f35a6f83b0b6ac9a326027849d73032aa4",
+          "native_code_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+          "retention_code_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+          "vendor_binding_sha256": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02"
+        }
+      },
+      "pending_count": 1,
+      "physical_elapsed_seconds": null,
+      "physical_half_life": null,
+      "population_size": 4
+    },
+    "burden_feedback_off": {
+      "conditional_outputs": {
+        "average_rate_hz": "6128421180",
+        "elapsed_seconds": "1/3064210590"
+      },
+      "context_sha256": "c15c2f439a60ca7002a5791b4ddf193310564cb918bc3665c544341dd208043c",
+      "native_binding": {
+        "classification": "conditional_model_prediction_not_atomic_prediction",
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "native_schema_version": 3,
+        "original_context_sha256": "c15c2f439a60ca7002a5791b4ddf193310564cb918bc3665c544341dd208043c",
+        "physical_correspondence": "unestablished",
+        "prediction_sha256": "2e2a446b70e48d6632b70c2cdc9f31185b32dc4255ec5e97828a1ee2e3d50e7c"
+      },
+      "native_observations": {
+        "compared": {
+          "channel": "compared",
+          "count": 2,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "2e2a446b70e48d6632b70c2cdc9f31185b32dc4255ec5e97828a1ee2e3d50e7c",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        },
+        "reference": {
+          "channel": "reference",
+          "count": 3,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "2e2a446b70e48d6632b70c2cdc9f31185b32dc4255ec5e97828a1ee2e3d50e7c",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        }
+      },
+      "original_input": {
+        "case": "burden_feedback_off",
+        "contract": {
+          "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+          "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+          "capacity": {
+            "diagnostic_units": "1",
+            "raw_rule": "C_close=u",
+            "status": "declared fixture capacity, not inferred nuclear capacity"
+          },
+          "cases": [
+            "net_memory",
+            "burden",
+            "burden_feedback_off",
+            "burden_latest_response_window",
+            "burden_background_pending"
+          ],
+          "controls": {
+            "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+            "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+            "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+            "direction": "recompute forward and reverse RCD from separately bound directional traces",
+            "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+            "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+          },
+          "experimental_inputs": [],
+          "fit_parameters": [],
+          "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+          "formation_returns": {
+            "background": 3,
+            "candidate": 4,
+            "outer_parent": 2,
+            "reference": 2
+          },
+          "freeze": "written before first execution; all common choices remain fixed across the declared comparisons",
+          "horizon": {
+            "allowed_cut_window": [
+              0,
+              100000
+            ],
+            "new_reference_returns": 3
+          },
+          "isotope_state_assignment": null,
+          "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+          "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+          "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+          "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+          "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+          "physical_seconds": null,
+          "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+          "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+          "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+          "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+          "schema": "witnessed-cancellation-retention-v1",
+          "scope": "declared finite retention fixture; no isotope or physical decay identification"
+        },
+        "endpoint": "third prepared decision before its selected outcome",
+        "retained_prefix": "++",
+        "reverse_extra": 0,
+        "schema": "matter1:r03:m3-observation:v1",
+        "sources": {
+          "adapter_code_sha256": "8f60e063090fde6614f9ba073977f6f35a6f83b0b6ac9a326027849d73032aa4",
+          "native_code_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+          "retention_code_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+          "vendor_binding_sha256": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02"
+        }
+      },
+      "pending_count": 0,
+      "physical_elapsed_seconds": null,
+      "physical_half_life": null,
+      "population_size": 4
+    },
+    "burden_latest_response_window": {
+      "conditional_outputs": {
+        "average_rate_hz": "6128421180",
+        "elapsed_seconds": "1/3064210590"
+      },
+      "context_sha256": "359269d1709aa92966fa80a847133f68148a2621a262c1fb09cbda1d4e2a80dd",
+      "native_binding": {
+        "classification": "conditional_model_prediction_not_atomic_prediction",
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "native_schema_version": 3,
+        "original_context_sha256": "359269d1709aa92966fa80a847133f68148a2621a262c1fb09cbda1d4e2a80dd",
+        "physical_correspondence": "unestablished",
+        "prediction_sha256": "cf08b2de6d01bb8c22e9a4c440065faa790effc18b092a148cbdec90e4d383b7"
+      },
+      "native_observations": {
+        "compared": {
+          "channel": "compared",
+          "count": 2,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "cf08b2de6d01bb8c22e9a4c440065faa790effc18b092a148cbdec90e4d383b7",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        },
+        "reference": {
+          "channel": "reference",
+          "count": 3,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "cf08b2de6d01bb8c22e9a4c440065faa790effc18b092a148cbdec90e4d383b7",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        }
+      },
+      "original_input": {
+        "case": "burden_latest_response_window",
+        "contract": {
+          "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+          "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+          "capacity": {
+            "diagnostic_units": "1",
+            "raw_rule": "C_close=u",
+            "status": "declared fixture capacity, not inferred nuclear capacity"
+          },
+          "cases": [
+            "net_memory",
+            "burden",
+            "burden_feedback_off",
+            "burden_latest_response_window",
+            "burden_background_pending"
+          ],
+          "controls": {
+            "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+            "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+            "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+            "direction": "recompute forward and reverse RCD from separately bound directional traces",
+            "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+            "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+          },
+          "experimental_inputs": [],
+          "fit_parameters": [],
+          "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+          "formation_returns": {
+            "background": 3,
+            "candidate": 4,
+            "outer_parent": 2,
+            "reference": 2
+          },
+          "freeze": "written before first execution; all common choices remain fixed across the declared comparisons",
+          "horizon": {
+            "allowed_cut_window": [
+              0,
+              100000
+            ],
+            "new_reference_returns": 3
+          },
+          "isotope_state_assignment": null,
+          "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+          "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+          "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+          "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+          "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+          "physical_seconds": null,
+          "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+          "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+          "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+          "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+          "schema": "witnessed-cancellation-retention-v1",
+          "scope": "declared finite retention fixture; no isotope or physical decay identification"
+        },
+        "endpoint": "third prepared decision before its selected outcome",
+        "retained_prefix": "++",
+        "reverse_extra": 0,
+        "schema": "matter1:r03:m3-observation:v1",
+        "sources": {
+          "adapter_code_sha256": "8f60e063090fde6614f9ba073977f6f35a6f83b0b6ac9a326027849d73032aa4",
+          "native_code_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+          "retention_code_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+          "vendor_binding_sha256": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02"
+        }
+      },
+      "pending_count": 0,
+      "physical_elapsed_seconds": null,
+      "physical_half_life": null,
+      "population_size": 4
+    },
+    "net_memory": {
+      "conditional_outputs": {
+        "average_rate_hz": "6128421180",
+        "elapsed_seconds": "1/3064210590"
+      },
+      "context_sha256": "4d4ac54cb362d2c63b50151525e4d987470a47a338e8adb811056e5a460ff182",
+      "native_binding": {
+        "classification": "conditional_model_prediction_not_atomic_prediction",
+        "complete_physical_uncertainty": {
+          "kind": "unknown",
+          "reason": "Complete physical observation/model uncertainty not established"
+        },
+        "native_schema_version": 3,
+        "original_context_sha256": "4d4ac54cb362d2c63b50151525e4d987470a47a338e8adb811056e5a460ff182",
+        "physical_correspondence": "unestablished",
+        "prediction_sha256": "8c3df4145a529274f8506fb62fadde00bffadff090061e2c6640666a948c658e"
+      },
+      "native_observations": {
+        "compared": {
+          "channel": "compared",
+          "count": 2,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "8c3df4145a529274f8506fb62fadde00bffadff090061e2c6640666a948c658e",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        },
+        "reference": {
+          "channel": "reference",
+          "count": 3,
+          "kind": "native_reclosure_count",
+          "prediction_sha256": "8c3df4145a529274f8506fb62fadde00bffadff090061e2c6640666a948c658e",
+          "scope": "declared:retention-fixture:inner",
+          "window": [
+            1073,
+            2412
+          ]
+        }
+      },
+      "original_input": {
+        "case": "net_memory",
+        "contract": {
+          "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+          "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+          "capacity": {
+            "diagnostic_units": "1",
+            "raw_rule": "C_close=u",
+            "status": "declared fixture capacity, not inferred nuclear capacity"
+          },
+          "cases": [
+            "net_memory",
+            "burden",
+            "burden_feedback_off",
+            "burden_latest_response_window",
+            "burden_background_pending"
+          ],
+          "controls": {
+            "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+            "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+            "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+            "direction": "recompute forward and reverse RCD from separately bound directional traces",
+            "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+            "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+          },
+          "experimental_inputs": [],
+          "fit_parameters": [],
+          "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+          "formation_returns": {
+            "background": 3,
+            "candidate": 4,
+            "outer_parent": 2,
+            "reference": 2
+          },
+          "freeze": "written before first execution; all common choices remain fixed across the declared comparisons",
+          "horizon": {
+            "allowed_cut_window": [
+              0,
+              100000
+            ],
+            "new_reference_returns": 3
+          },
+          "isotope_state_assignment": null,
+          "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+          "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+          "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+          "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+          "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+          "physical_seconds": null,
+          "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+          "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+          "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+          "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+          "schema": "witnessed-cancellation-retention-v1",
+          "scope": "declared finite retention fixture; no isotope or physical decay identification"
+        },
+        "endpoint": "third prepared decision before its selected outcome",
+        "retained_prefix": "++",
+        "reverse_extra": 0,
+        "schema": "matter1:r03:m3-observation:v1",
+        "sources": {
+          "adapter_code_sha256": "8f60e063090fde6614f9ba073977f6f35a6f83b0b6ac9a326027849d73032aa4",
+          "native_code_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+          "retention_code_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+          "vendor_binding_sha256": "51eb331eb9500f80245053dd55fde632e16a2d4f7e27976193ffa5378a0a0c02"
+        }
+      },
+      "pending_count": 0,
+      "physical_elapsed_seconds": null,
+      "physical_half_life": null,
+      "population_size": 4
+    }
+  },
+  "physical_atomic_prediction": null,
+  "profile": "matter1:m3-metrology:applications:v1",
+  "schema_version": 1,
+  "scope": "Existing declared recipes and unselected observation-map countermodels; no isotope gain selected.",
+  "target_access": "not_read",
+  "vendor": {
+    "authority": "reviewed_open_PR_43_candidate",
+    "dependencies": {
+      "aod_m3_temporal.py": "0927a69145bd6eae4550bd57528bbfe1f29b2e0dcff46cc1a9eeaa6c9359f004",
+      "aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
+      "aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+    },
+    "files": {
+      "LICENSE": {
+        "sha256": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+        "upstream_path": "LICENSE"
+      },
+      "current/TEMPORAL_METROLOGY.json": {
+        "sha256": "4726ecf3667c9c54dffd2dd25dffeaacf005f55b18430ae419481240cc9b7e95",
+        "upstream_path": "contracts/scientific/TEMPORAL_METROLOGY.json"
+      },
+      "current/aod_m3_metrology.py": {
+        "sha256": "7c6e34faa891ce293f390ad63242ce31023243c132cdf036b8cc6764627c22f0",
+        "upstream_path": "manual/scripts/aod_m3_metrology.py"
+      },
+      "current/cesium/protocol.json": {
+        "sha256": "0de1e3b3dd57eafd5fa0cfd590e32dcc92ace51c140e3127cd68079e4effa34d",
+        "upstream_path": "manual/data/m3/temporal_metrology/cesium/protocol.json"
+      },
+      "current/hydrogen/protocol.json": {
+        "sha256": "35871c597e922ce18831f004ac03e06236b424cf1547adbc15cce96ce8708940",
+        "upstream_path": "manual/data/m3/temporal_metrology/hydrogen/protocol.json"
+      },
+      "current/hydrogen/reported_uncertainty.json": {
+        "sha256": "71e2bf4c2891b28f1076fcc9e2b7266943cc330be394585172ed264119a38560",
+        "upstream_path": "manual/data/m3/temporal_metrology/hydrogen/reported_uncertainty.json"
+      }
+    },
+    "schema": "matter1.m3-metrology-vendor.v1",
+    "scope": "Exact companion exports; application recipes belong to Matter I. Historical 3e40b178 consumer source was unavailable; this is a new adoption.",
+    "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+    "upstream_repository": "https://github.com/rpoyau/aod",
+    "upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
+  }
+}

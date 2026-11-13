@@ -1,0 +1,78 @@
+{
+  "case_count": 11,
+  "causal_control": {
+    "baseline_survival_at_3": "5/6",
+    "common_survival_through_count": 2,
+    "feedback_off_survival_at_3": "1",
+    "first_later_difference_count": 3,
+    "intervention_at_reference_count": 2
+  },
+  "comparison_sha256": "ec1ccb7e6d73e2ea254180ff1e37ca6825d547e629f7d313b65b328ea8f4dcbf",
+  "exact_assertions": [
+    "H1 traversal and injective Q4 coordinates",
+    "normalized admissible kernels including zero-weight admitted exit",
+    "probability mass conservation at every reference return",
+    "monotone survival and absorbing competing outcomes",
+    "antisymmetric responses affect subsequent kernels",
+    "unmerged history identities and retained inner lineage",
+    "M3 full finite joint law reproduces survival and spread",
+    "target-free replay precedes source-bound comparison"
+  ],
+  "executed_variants": [
+    "baseline",
+    "loss_gain_2",
+    "feedback_off",
+    "capacity_0"
+  ],
+  "fitted_parameters": [],
+  "geometry_or_test_success_is_native_admission": false,
+  "native_medians": {
+    "baseline": {
+      "crossing": 7,
+      "interval_convention": "(lower,upper]",
+      "interval_reference_returns": [
+        6,
+        7
+      ],
+      "kind": "first_discrete_crossing"
+    },
+    "capacity_0": {
+      "crossing": 3,
+      "interval_convention": "(lower,upper]",
+      "interval_reference_returns": [
+        2,
+        3
+      ],
+      "kind": "first_discrete_crossing"
+    },
+    "feedback_off": {
+      "bound_convention": "strictly_greater",
+      "kind": "right_censored",
+      "lower_bound_reference_returns": 8
+    },
+    "loss_gain_2": {
+      "crossing": 5,
+      "interval_convention": "(lower,upper]",
+      "interval_reference_returns": [
+        4,
+        5
+      ],
+      "kind": "first_discrete_crossing"
+    }
+  },
+  "physical_prediction_executed": false,
+  "prediction_sha256": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
+  "profile": "m1:finite-history-retention-survival:v3",
+  "schema_version": 3,
+  "source_envelope_disagreements": 3,
+  "statuses": {
+    "construction": "declared_Q4_finite_predicate_model",
+    "empirical_agreement": "not_claimed",
+    "execution": "executed_exact_finite_histories",
+    "native_isotope_state_map": "not_established",
+    "native_motif_admission": "not_established",
+    "physical_loss_map": "not_established",
+    "physical_uncertainty": "unknown",
+    "reference_clock_map": "not_established"
+  }
+}

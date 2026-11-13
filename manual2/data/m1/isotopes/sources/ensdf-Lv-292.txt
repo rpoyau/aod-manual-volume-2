@@ -1,0 +1,183 @@
+292 Lv     -1                                                                                                                 292 Lv     -1
+116    176                                       From ENSDF - Evaluated January 2019                                          116    176
+
+
+
+                                                                Adopted Levels
+
+                                                                    History
+                                    Type           Author               Citation        Literature Cutoff Date
+                              Full Evaluation    Balraj Singh     NDS 156, 148 (2019)        31-Jan-2019
+
+Q(β− )=−5330 SY; S(n)=7220 SY; S(p)=3040 SY; Q(α)=10774 15          2017Wa10
+Estimated uncertainties (2017Wa10): 1050 for Q(β− ), 1010 for S(n), 1130 for S(p).
+Q(α)=10.776 MeV 15 from Eα=10.628 15 (2016Ho09, 2015Og05, see also other review articles from the Dubna and GSI groups).
+S(2n)=13100 1040 (syst,2017Wa10). S(2p)=4120 (theory,1997Mo25).
+EVR=Evaporation Residues.
+
+The 292 Lv nuclide has been identified by Dubna-Livermore-ORNL collaboration (2004Og12, also many other papers from this
+   group), and later independently by the GSI group (2012Ho12). A total of ten EVR-α-α-SF correlated decay chains have been
+   reported so far. The 292 Lv nuclide decays 100% (2016Ho09) by α to 288 Fl. 2017Ka66 (also 2014MoZV) reported observation of
+   three correlated events at GARIS-RIKEN facility, one with a tentative identification of EVR-α-α-α-SF event starting from 292 Lv
+   and ending in 280 Ds, which decays by SF. No information is yet available from x-ray observation or chemical procedures.
+
+Experiments at FLNR-JINR-Dubna, using Dubna gas-filled recoil separator (DGFRS):
+2004Og12, 2004OgZZ (also 2005Og03,2007Og05,2009Og07,2011Og07): 292 Lv produced and identified in 248 Cm(48 Ca,4n), E=247
+   MeV, excitation energy of 36.8-41.1 MeV for the compound nucleus 296 Lv. Experiments carried out using U400 cyclotron and
+   Dubna gas-filled recoil separator (DGFRS) at FLNR-JINR-Dubna facility. Identification of mass number and nuclide was made on
+   the basis of excitation functions, and detecting correlated events between evaporation residues (EVR), alpha particles and SF
+   decays. A total of six decay chains were assigned to 292 Lv, but in one of these events EVR was missing, and in two events, one of
+   the alphas escaped detection, as summarized below. Measured cross sections, EVR-α-α-SF correlations, Eα, half-lives. Note that an
+   earlier assignment of one EVR-multiple α-SF correlated decay chain assigned to the 292 Lv nuclide was by the Dubna-Livermore
+   collaboration in 2001Og01 and 2002Og09 (also 1999Og10,2000Og07, 2001Og06,2001Og11,2002Og03,2002Og09,2002Og13) by
+   interpreting 4n-channel in 248 Cm(48 Ca,xn)296 Lv*,E(48 Ca)=240 MeV reaction, and compound nucleus excitation energy of
+   30.4-35.8 MeV. Later this decay chain was assigned by 2004Og07 and 2004Og12 (also 2005Og03) to 3n-reaction channel, instead,
+   thus leading to the discovery of the 293 Lv nuclide (see 293 Lv Adopted Levels).
+Additional information 1.
+
+History of EVR -> α1 -> α2 -> SF decay chains from 248 Cm(48 Ca,4n)296 Lv*, E=247 MeV (2004OgZZ), where ∆t values are
+    time differences between successive decays:
+
+Chain #1: Energy of EVR=10.6 MeV:
+Eα1 =10.63 MeV 8, ∆t1 =20.7 ms, assigned to 292 Lv.
+Eα2 =9.99 MeV 8, ∆t2 =2.239 s, assigned to 288 Fl.
+ESF =178 MeV, ∆t3 =24.599 ms, assigned to 284 Cn: decays by SF.
+
+Chain #2: Missing EVR.
+Eα1 =10.63 MeV 14, assigned to 292 Lv.
+Eα2 =10.01 MeV 17, ∆t2 =0.832 s, assigned to 288 Fl.
+ESF =201 MeV, ∆t3 =54.8 ms, assigned to 284 Cn: decays by SF.
+
+Chain #3: Energy of EVR=12.6 MeV:
+Eα1 =10.68 MeV 7, ∆t1 =35.2 ms, assigned to 292 Lv.
+Eα2 =missing α, assigned to 288 Fl.
+ESF =193 MeV, ∆t3 =616.7 ms, assigned to 284 Cn: decays by SF.
+
+Chain #4: Energy of EVR=12.1 MeV:
+Eα1 =10.66 MeV 12, ∆t1 =11.832 ms, assigned to 292 Lv.
+Eα2 =9.82 MeV 12, ∆t2 =1.090 s, assigned to 288 Fl.
+ESF =213 MeV, ∆t3 =274.5 ms, assigned to 284 Cn: decays by SF.
+
+
+
+
+                                                                     1
+292 Lv     -2                                                                                                                    292 Lv     -2
+116    176                                                     From ENSDF                                                        116    176
+
+
+
+                                                          Adopted Levels (continued)
+
+Chain #5: Energy of EVR=14.6 MeV.
+Eα1 =missing α, assigned to 292 Lv.
+Eα2 =9.85 MeV 10, ∆t2 =0.416 s, assigned to 288 Fl.
+ESF =212 MeV, ∆t3 =158.1 ms, assigned to 284 Cn: decays by SF.
+
+Chain #6: Energy of EVR=14.4 MeV:
+Eα1 =10.69 MeV 47, ∆t1 =35.9 ms, assigned to 292 Lv.
+Eα2 =9.91 MeV 14, ∆t2 =0.509 s, assigned to 288 Fl.
+ESF =202 MeV, ∆t3 =117.9 ms, assigned to 284 Cn: decays by SF.
+
+Experiments at GSI using SHIP recoil separator:
+2012Ho12: 248 Cm(48 Ca,4n)296 Lv*, E=265.4,270.2 MeV, 40.9 MeV excitation energy of the compound nucleus, SHIP-GSI facility.
+    Measured cross sections, (EVR)-α-α-SF position and time correlations, Eα, half-lives, Eγ. Four correlated decay chains were
+    observed. See also 2016Ho06 for analysis of shell-correction energies and estimates of fission barriers using experimental data for
+    several decay chains, including that of 292 Lv.
+———————————————————————-.
+History of EVR -> α1 -> α2 -> SF decay chains from 248 Cm(48 Ca,4n)296 Lv*, E=265.4 MeV (2012Ho12):
+
+Chain #1: Energy of EVR=9.0 MeV:
+Eα1 =2.715 MeV, ∆t1 =3.3 ms, assigned to 292 Lv.
+Eα2 =9.959 MeV 15, ∆t2 =994 ms, assigned to 288 Fl.
+ESF =207 MeV 20, ∆t3 =50 ms, assigned to 284 Cn: SF decay.
+Eγ=180.3 keV seen in coincidence mode.
+
+Chain #2: Energy of EVR=18.0 MeV:
+Eα1 =10.625 MeV 15, ∆t1 =0.076 ms, assigned to 292 Lv.
+Eα2 =9.896 MeV 15, ∆t2 =1.236 ms, assigned to 288 Fl.
+ESF =220 MeV 20, ∆t3 =269 ms, assigned to 284 Cn: SF decay.
+Eγ=55.0 keV seen in coincidence mode.
+
+Chain #3: Energy of EVR=22.3 MeV:
+Eα1 =1.4 MeV, ∆t1 =28.8 ms, assigned to 292 Lv.
+Eα2 =1.8 MeV, ∆t2 =252 ms, assigned to 288 Fl.
+ESF =218 MeV 20, ∆t3 =121 ms, assigned to 284 Cn: SF decay.
+Eγ=350.4 keV seen in coincidence mode.
+
+Chain #4: Energy of EVR=20.8 MeV:
+Eα1 =10.630 MeV 50, ∆t1 =11.6 ms, assigned to 292 Lv.
+Eα2 =9.837 MeV 50, ∆t2 =72 ms, assigned to 288 Fl.
+ESF =206 MeV 20, ∆t3 =25 ms, assigned to 284 Cn: SF decay.
+Eγ=496.1 keV seen in coincidence mode.
+
+2017Ka66: 292 Lv produced in 248 Cm(48 Ca,4n),E=261.6 MeV (E* =41.3 MeV using RIKEN Linear Accelerator (RILAC) and
+    gas-filled recoil ion separator (GARIS). Two EVR-α-α-SF correlated events and a third tentative EVR-α-α-α-SF were observed
+    with the decay history given below. Production σ=3.1 pb +28−18 for three chains. The third chain, with two possible interpretations,
+    also led to a tentative identification of 280 Ds isotope. 2014MoZV is an earlier report from the same group.
+Chain #1: Energy of EVR=15.6 MeV.
+Eα1 =10.79 MeV 7, ∆t1 =32 ms, assigned to 292 Lv.
+Eα2 =9.89 MeV 3, ∆t2 =548 ms, assigned to 288 Fl.
+ESF =232 MeV, ∆t3 =65 ms, assigned to 284 Cn: SF decay; SF decay events in coincidence with 371.7-keV γ ray.
+
+Chain #2: Energy of EVR=12.9 MeV.
+Eα1 =2.77 MeV escaped α, ∆t1 =2.3 ms, assigned to 292 Lv.
+
+
+
+
+                                                                      2
+292 Lv     -3                                                                                                                292 Lv     -3
+116    176                                                    From ENSDF                                                     116    176
+
+
+
+                                                        Adopted Levels (continued)
+
+Eα2 =9.99 MeV 3, ∆t2 =243 ms, assigned to 288 Fl.
+ESF =182 MeV, ∆t3 =839 ms, assigned to 284 Cn: SF decay.
+
+Chain #3 (first interpretation): Energy of EVR=15.3 MeV:
+Eα1 =10.66 MeV 2, ∆t1 =13.1 ms, assigned to 292 Lv.
+Eα2 =3.50 MeV escaped α, ∆t2 =282 ms, assigned to 288 Fl.
+ESF =163 MeV, ∆t3 =9.6 ms, assigned to 284 Cn: SF decay; SF decay events in coincidence with 393.1-keV γ ray.
+
+Chain #3 (second interpretation): Energy of EVR=15.3 MeV:
+Eα1 =10.66 MeV 2, ∆t1 =4.1 ms, assigned to 292 Lv.
+Eα2 =0.83 MeV escaped α, ∆t2 =9.0 ms, assigned to 288 Fl.
+Eα3 =3.50 MeV escaped α, ∆t3 =282 ms, assigned to 284 Cn.
+ESF =163 MeV, ∆t4 =9.6 ms, assigned to 280 Ds: SF decay; SF decay events in coincidence with 393.1-keV γ ray.
+
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 233 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                                292 Lv Levels
+
+
+
+ E(level)       Jπ        T1/2                                                   Comments
+  0             0+   12.8 ms +70−33   %α=100 (2016Ho09); %SF≤9 (2016Ho09)
+                                      Only the α decay mode has been observed.
+                                      E(level): the reported activity is assumed to belong to the g.s. of 292 Lv.
+                                      T1/2 : from analysis of eight decay chains (2012Ho12, also 2016Ho09, 2015Og01, 2015Og05,
+                                        2015OgZX, and 2017Og01 review articles), value is based on the analysis of a total of ten
+                                        observed events (six by Dubna-Livermore collaboration and four by the GSI group) out of
+                                        which four from each experiment were used for the determination of average half-life. Value
+                                        of 11.9 ms +217−26 from two correlated events in 2017Ka66 is not included in this averaged
+                                        value, however, its inclusion will hardly affect the adopted value. Other: T1/2 =18 ms +16−6
+                                        (2004Og12,2011Og07) from four out of six observed events assigned to 292 Lv.
+                                      Theoretical Q(α)=10.82 MeV, and α-decay half-life=43 ms (1997Mo25).
+                                      Only the α-decay mode has been observed. Out of a total of ten events assigned to 292 Lv,
+                                        alpha-particle energies were analyzed from seven events, with an average Eα=10.628 MeV 15
+                                        (2016Ho09,2015Og01) deduced from four events, implying Q(α)=10.776 MeV 15 for the
+                                        decay of 292 Lv populating the g.s. in 288 Fl. Other Eα=10.66 MeV 7 (2004Og12,2011Og07)
+                                        from five out of six observed events assigned to 292 Lv, 10.625 MeV 15 (2012Ho12), 10.67
+                                        MeV 2 (2017Ka66, from two correlated events).
+                                      Measured production σ=3.3 pb +25−14 at E(48 Ca)=247 MeV (2004Og12); 3.4 pb +27−16 at
+                                        E(48 Ca)=265.4 MeV (2012Ho12); 3.1 pb +28−18 at E(48 Ca)=216.6 MeV (2017Ka66).
+
+
+
+
+                                                                    3
+

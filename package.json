@@ -1,0 +1,7 @@
+{
+  "name": "aod-matter-i-reference-checks",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {"check:companion": "node manual2/scripts/check_matter1_companion.cjs"},
+  "devDependencies": {"playwright": "1.62.1"}
+}

@@ -1,0 +1,1106 @@
+{
+  "claim": "Executed conditional six-preparation method, exact and sampled history diagnostics, scoped continuation and reduction controls.",
+  "controls_sha256": "cdb9cf22c3b329dcb620f622b5521fc3ff188f0a017b283257d12708a89a510b",
+  "exact_domains": {
+    "H1-E0": {
+      "covariance": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "0",
+        "inner_reclosures": "1",
+        "outer_commit": "4910",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 2,
+      "total_probability": "1"
+    },
+    "H1-E1": {
+      "covariance": [
+        [
+          "81",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "9",
+        "inner_reclosures": "2",
+        "outer_commit": "5689",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 4,
+      "total_probability": "1"
+    },
+    "H1-E1-feedback": {
+      "covariance": [
+        [
+          "162",
+          "0",
+          "4941/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "4941/2",
+          "0",
+          "301401/4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "18",
+        "inner_reclosures": "4",
+        "outer_commit": "20593/2",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 16,
+      "total_probability": "1"
+    },
+    "H2-E0": {
+      "covariance": [
+        [
+          "3721",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "61",
+        "inner_reclosures": "2",
+        "outer_commit": "29261",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 4,
+      "total_probability": "1"
+    },
+    "H2-E1": {
+      "covariance": [
+        [
+          "3802",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "70",
+        "inner_reclosures": "3",
+        "outer_commit": "29305",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 8,
+      "total_probability": "1"
+    },
+    "H3-E0": {
+      "covariance": [
+        [
+          "22490",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "198",
+        "inner_reclosures": "3",
+        "outer_commit": "40357",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 8,
+      "total_probability": "1"
+    },
+    "H3-E1": {
+      "covariance": [
+        [
+          "22571",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "means": {
+        "accumulated_burden": "207",
+        "inner_reclosures": "4",
+        "outer_commit": "40401",
+        "signed_current": "0"
+      },
+      "observable_order": [
+        "signed_current",
+        "accumulated_burden",
+        "outer_commit",
+        "inner_reclosures"
+      ],
+      "path_count": 16,
+      "total_probability": "1"
+    }
+  },
+  "paired_preparations": [
+    {
+      "bare": "H1-E0",
+      "changed": [
+        "electron inventory",
+        "directed contacts",
+        "parent boundary",
+        "configuration terminal window"
+      ],
+      "electron_containing": "H1-E1",
+      "fixed": [
+        "Z",
+        "A",
+        "constituent templates",
+        "conditional law",
+        "round horizon",
+        "seed provenance"
+      ],
+      "isotope": 1,
+      "readout_difference": {
+        "accumulated_burden": 9,
+        "inner_reclosures": 1,
+        "outer_commit": 779,
+        "signed_current": 9
+      },
+      "scope": "Declared preparation intervention; differing topology/window are explicit operands, not a physical electron-effect claim."
+    },
+    {
+      "bare": "H2-E0",
+      "changed": [
+        "electron inventory",
+        "directed contacts",
+        "parent boundary",
+        "configuration terminal window"
+      ],
+      "electron_containing": "H2-E1",
+      "fixed": [
+        "Z",
+        "A",
+        "constituent templates",
+        "conditional law",
+        "round horizon",
+        "seed provenance"
+      ],
+      "isotope": 2,
+      "readout_difference": {
+        "accumulated_burden": 9,
+        "inner_reclosures": 1,
+        "outer_commit": 44,
+        "signed_current": 9
+      },
+      "scope": "Declared preparation intervention; differing topology/window are explicit operands, not a physical electron-effect claim."
+    },
+    {
+      "bare": "H3-E0",
+      "changed": [
+        "electron inventory",
+        "directed contacts",
+        "parent boundary",
+        "configuration terminal window"
+      ],
+      "electron_containing": "H3-E1",
+      "fixed": [
+        "Z",
+        "A",
+        "constituent templates",
+        "conditional law",
+        "round horizon",
+        "seed provenance"
+      ],
+      "isotope": 3,
+      "readout_difference": {
+        "accumulated_burden": 9,
+        "inner_reclosures": 1,
+        "outer_commit": 44,
+        "signed_current": -9
+      },
+      "scope": "Declared preparation intervention; differing topology/window are explicit operands, not a physical electron-effect claim."
+    }
+  ],
+  "physical_prediction_complete": false,
+  "pilots": [
+    {
+      "a": 1,
+      "accumulated_burden": 0,
+      "atomic_transition_status": "not_applicable",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 30,
+      "cadence_ratio": null,
+      "charge": 1,
+      "contact_count": 0,
+      "e": 0,
+      "id": "H1-E0",
+      "inner_reclosures": 1,
+      "n": 0,
+      "node_divergence": [
+        0
+      ],
+      "outer_commit": 4910,
+      "reference_returns": 1,
+      "reference_window": [
+        1125,
+        4910
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 0,
+      "structural_RD": 61,
+      "z": 1
+    },
+    {
+      "a": 1,
+      "accumulated_burden": 9,
+      "atomic_transition_status": "incomplete_dependent_output",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [
+          [
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            9,
+            1,
+            "current:0:1:0"
+          ],
+          [
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            61,
+            0,
+            "current:0:0:1"
+          ]
+        ],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "9",
+            "divergence": "9",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          },
+          {
+            "boundary": "-9",
+            "divergence": "-9",
+            "internal": "0",
+            "members": [
+              1
+            ]
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 34,
+      "cadence_ratio": null,
+      "charge": 0,
+      "contact_count": 6,
+      "e": 1,
+      "id": "H1-E1",
+      "inner_reclosures": 2,
+      "n": 0,
+      "node_divergence": [
+        9,
+        -9
+      ],
+      "outer_commit": 5689,
+      "reference_returns": 1,
+      "reference_window": [
+        1285,
+        5689
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 9,
+      "structural_RD": 69,
+      "z": 1
+    },
+    {
+      "a": 2,
+      "accumulated_burden": 61,
+      "atomic_transition_status": "not_applicable",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [
+          [
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            61,
+            1,
+            "current:0:0:1"
+          ],
+          [
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            137,
+            0,
+            "current:0:1:0"
+          ]
+        ],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "-61",
+            "divergence": "-61",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          },
+          {
+            "boundary": "61",
+            "divergence": "61",
+            "internal": "0",
+            "members": [
+              1
+            ]
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 98,
+      "cadence_ratio": "1/7",
+      "charge": 1,
+      "contact_count": 6,
+      "e": 0,
+      "id": "H2-E0",
+      "inner_reclosures": 2,
+      "n": 1,
+      "node_divergence": [
+        -61,
+        61
+      ],
+      "outer_commit": 29261,
+      "reference_returns": 7,
+      "reference_window": [
+        1797,
+        29261
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 61,
+      "structural_RD": 197,
+      "z": 1
+    },
+    {
+      "a": 2,
+      "accumulated_burden": 70,
+      "atomic_transition_status": "incomplete_dependent_output",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [
+          [
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            9,
+            1,
+            "current:0:2:0"
+          ],
+          [
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            61,
+            1,
+            "current:0:0:1"
+          ],
+          [
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            137,
+            0,
+            "current:0:1:2"
+          ]
+        ],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "-52",
+            "divergence": "-52",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          },
+          {
+            "boundary": "61",
+            "divergence": "61",
+            "internal": "0",
+            "members": [
+              1
+            ]
+          },
+          {
+            "boundary": "9",
+            "divergence": "9",
+            "internal": "0",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "boundary": "-9",
+            "divergence": "-9",
+            "internal": "0",
+            "members": [
+              2
+            ]
+          },
+          {
+            "boundary": "-61",
+            "divergence": "-61",
+            "internal": "0",
+            "members": [
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": "52",
+            "divergence": "52",
+            "internal": "0",
+            "members": [
+              1,
+              2
+            ]
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 102,
+      "cadence_ratio": "1/7",
+      "charge": 0,
+      "contact_count": 9,
+      "e": 1,
+      "id": "H2-E1",
+      "inner_reclosures": 3,
+      "n": 1,
+      "node_divergence": [
+        -52,
+        61,
+        -9
+      ],
+      "outer_commit": 29305,
+      "reference_returns": 7,
+      "reference_window": [
+        1833,
+        29305
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 70,
+      "structural_RD": 205,
+      "z": 1
+    },
+    {
+      "a": 3,
+      "accumulated_burden": 198,
+      "atomic_transition_status": "not_applicable",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [
+          [
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            61,
+            1,
+            "current:0:0:1"
+          ],
+          [
+            "bccfb9fb4b4ef0bb03d9128da6c1b9ef84ab6dcef0aa7442fb089814885f3234",
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            137,
+            1,
+            "current:0:1:2"
+          ],
+          [
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            "bccfb9fb4b4ef0bb03d9128da6c1b9ef84ab6dcef0aa7442fb089814885f3234",
+            137,
+            0,
+            "current:0:2:0"
+          ]
+        ],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "-61",
+            "divergence": "-61",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          },
+          {
+            "boundary": "-76",
+            "divergence": "-76",
+            "internal": "0",
+            "members": [
+              1
+            ]
+          },
+          {
+            "boundary": "-137",
+            "divergence": "-137",
+            "internal": "0",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "boundary": "137",
+            "divergence": "137",
+            "internal": "0",
+            "members": [
+              2
+            ]
+          },
+          {
+            "boundary": "76",
+            "divergence": "76",
+            "internal": "0",
+            "members": [
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": "61",
+            "divergence": "61",
+            "internal": "0",
+            "members": [
+              1,
+              2
+            ]
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 166,
+      "cadence_ratio": "1/10",
+      "charge": 1,
+      "contact_count": 9,
+      "e": 0,
+      "id": "H3-E0",
+      "inner_reclosures": 3,
+      "n": 2,
+      "node_divergence": [
+        -61,
+        -76,
+        137
+      ],
+      "outer_commit": 40357,
+      "reference_returns": 10,
+      "reference_window": [
+        2345,
+        40357
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 198,
+      "structural_RD": 333,
+      "z": 1
+    },
+    {
+      "a": 3,
+      "accumulated_burden": 207,
+      "atomic_transition_status": "incomplete_dependent_output",
+      "boundary_balance": {
+        "boundary_motion": "fixed; no sweep term is selected in this profile",
+        "channels": [
+          [
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            9,
+            -1,
+            "current:0:3:0"
+          ],
+          [
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            "54411c9abd32b5eca5e0fc8fa9ec2d3d2a8b90e264fa84d54efcdeb73f9d821c",
+            61,
+            1,
+            "current:0:0:1"
+          ],
+          [
+            "bccfb9fb4b4ef0bb03d9128da6c1b9ef84ab6dcef0aa7442fb089814885f3234",
+            "b2f43273f01c08da9c22773c5786768d487bb3907415ff4f3eeeb3e9067d1ad2",
+            137,
+            1,
+            "current:0:1:2"
+          ],
+          [
+            "dbe52eb233592dc96e3bc2b8dc3ed8a4ba6a1d7b83e5d1f6ed6760f6df248bb7",
+            "bccfb9fb4b4ef0bb03d9128da6c1b9ef84ab6dcef0aa7442fb089814885f3234",
+            137,
+            0,
+            "current:0:2:3"
+          ]
+        ],
+        "regions": [
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": []
+          },
+          {
+            "boundary": "-70",
+            "divergence": "-70",
+            "internal": "0",
+            "members": [
+              0
+            ]
+          },
+          {
+            "boundary": "-76",
+            "divergence": "-76",
+            "internal": "0",
+            "members": [
+              1
+            ]
+          },
+          {
+            "boundary": "-146",
+            "divergence": "-146",
+            "internal": "0",
+            "members": [
+              0,
+              1
+            ]
+          },
+          {
+            "boundary": "137",
+            "divergence": "137",
+            "internal": "0",
+            "members": [
+              2
+            ]
+          },
+          {
+            "boundary": "67",
+            "divergence": "67",
+            "internal": "0",
+            "members": [
+              0,
+              2
+            ]
+          },
+          {
+            "boundary": "61",
+            "divergence": "61",
+            "internal": "0",
+            "members": [
+              1,
+              2
+            ]
+          },
+          {
+            "boundary": "-9",
+            "divergence": "-9",
+            "internal": "0",
+            "members": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "boundary": "9",
+            "divergence": "9",
+            "internal": "0",
+            "members": [
+              3
+            ]
+          },
+          {
+            "boundary": "-61",
+            "divergence": "-61",
+            "internal": "0",
+            "members": [
+              0,
+              3
+            ]
+          },
+          {
+            "boundary": "-67",
+            "divergence": "-67",
+            "internal": "0",
+            "members": [
+              1,
+              3
+            ]
+          },
+          {
+            "boundary": "-137",
+            "divergence": "-137",
+            "internal": "0",
+            "members": [
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "boundary": "146",
+            "divergence": "146",
+            "internal": "0",
+            "members": [
+              2,
+              3
+            ]
+          },
+          {
+            "boundary": "76",
+            "divergence": "76",
+            "internal": "0",
+            "members": [
+              0,
+              2,
+              3
+            ]
+          },
+          {
+            "boundary": "70",
+            "divergence": "70",
+            "internal": "0",
+            "members": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "boundary": "0",
+            "divergence": "0",
+            "internal": "0",
+            "members": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "shed_transport": "not selected in the campaign law; separate diagnostic control below"
+      },
+      "branch_occurrences": 170,
+      "cadence_ratio": "1/10",
+      "charge": 0,
+      "contact_count": 12,
+      "e": 1,
+      "id": "H3-E1",
+      "inner_reclosures": 4,
+      "n": 2,
+      "node_divergence": [
+        -70,
+        -76,
+        137,
+        9
+      ],
+      "outer_commit": 40401,
+      "reference_returns": 10,
+      "reference_window": [
+        2381,
+        40401
+      ],
+      "retention_status": "incomplete_dependent_output",
+      "rounds": 1,
+      "scope": "Finite native contact/current/count arithmetic; no physical SI interpretation.",
+      "signed_current": 189,
+      "structural_RD": 341,
+      "z": 1
+    }
+  ],
+  "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+  "profile": "matter1:coupled-preparations:v1",
+  "protocol_sha256": "2b0856139dc51f280716556be745c1f4acbb3bcd821b98781590582805f02d97",
+  "sample_domains": {
+    "H1-E0": {
+      "criterion_passed": true,
+      "epsilon": 0.30596835383510207,
+      "max_path_frequency_error": "1/32",
+      "sample_size": 32
+    },
+    "H1-E1": {
+      "criterion_passed": true,
+      "epsilon": 0.3231827010296364,
+      "max_path_frequency_error": "1/8",
+      "sample_size": 32
+    },
+    "H1-E1-feedback": {
+      "criterion_passed": true,
+      "epsilon": 0.3551167521214814,
+      "max_path_frequency_error": "3/22",
+      "sample_size": 32
+    },
+    "H2-E0": {
+      "criterion_passed": true,
+      "epsilon": 0.3231827010296364,
+      "max_path_frequency_error": "1/8",
+      "sample_size": 32
+    },
+    "H2-E1": {
+      "criterion_passed": true,
+      "epsilon": 0.3395253789351549,
+      "max_path_frequency_error": "3/32",
+      "sample_size": 32
+    },
+    "H3-E0": {
+      "criterion_passed": true,
+      "epsilon": 0.3395253789351549,
+      "max_path_frequency_error": "3/32",
+      "sample_size": 32
+    },
+    "H3-E1": {
+      "criterion_passed": true,
+      "epsilon": 0.3551167521214814,
+      "max_path_frequency_error": "3/32",
+      "sample_size": 32
+    }
+  },
+  "schema_version": 1
+}

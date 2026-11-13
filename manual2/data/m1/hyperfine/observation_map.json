@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "profile": "historical-H1-Cs133-reference-v1",
+  "map_status": "pending",
+  "required_stages": [
+    "P4a",
+    "P2",
+    "P3"
+  ],
+  "native_model_id": null,
+  "native_model_sha256": null,
+  "scope_id": null,
+  "native_admission_status": "pending",
+  "native_execution_status": "not_executed",
+  "empirical_status": "not_compared",
+  "model_policy": "one_frozen_common_fusion_reclosure_model",
+  "spin_role_identification": "not_established",
+  "phase_map_status": "pending",
+  "configuration_bindings": [
+    {
+      "transition_id": "atom:Z001:A001:q0:ground:clock",
+      "state_ids": [
+        "atom:Z001:A001:q0:ground:F0:mF0",
+        "atom:Z001:A001:q0:ground:F1:mF0"
+      ],
+      "native_before_id": null,
+      "native_after_id": null,
+      "native_model_id": null
+    },
+    {
+      "transition_id": "atom:Z055:A133:q0:ground:clock",
+      "state_ids": [
+        "atom:Z055:A133:q0:ground:F3:mF0",
+        "atom:Z055:A133:q0:ground:F4:mF0"
+      ],
+      "native_before_id": null,
+      "native_after_id": null,
+      "native_model_id": null
+    }
+  ],
+  "recurrence_observable_map": {
+    "external_observable": "stabilized_oscillator_cycles",
+    "native_observable": "distinct_certified_retained_reclosures",
+    "binding_status": "pending",
+    "binding_id": null
+  },
+  "transferred_radiation_map": {
+    "status": "pending",
+    "source_window_id": null,
+    "destination_window_id": null,
+    "physical_map_id": null,
+    "sheddic_output_id": null
+  },
+  "predicted_frequency_ratio": null,
+  "predicted_phase_lag": null,
+  "empirical_score": null,
+  "unresolved_dependencies": [
+    "P2 admission and committed return witnesses bound to the physical isotope/state model, beyond a finite mathematical example",
+    "P3 comparator, phase, lag and RCD records for those same mapped atomic lineages",
+    "Physical observation map from oscillator recurrence and quantum phase to native certified reclosure and closure phase",
+    "One common frozen transition law and state-configuration map before any independent spectral scoring",
+    "New independent target and documented selection history for an independent prediction claim",
+    "Quantitative realization/covariance budget if the original evaluations are recombined or a new precision score is attempted"
+  ]
+}
