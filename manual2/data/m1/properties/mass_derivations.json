@@ -1,0 +1,3922 @@
+{
+  "counts": {
+    "isotopes": 6,
+    "null": 9,
+    "numeric": 15,
+    "records": 24
+  },
+  "covariance_adoption": {
+    "adopted": [
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "697723/3125000",
+              "-12807491/100000000000",
+              "16123067/100000000000"
+            ],
+            [
+              "-12807491/100000000000",
+              "19583639/100000000000",
+              "33877561/500000000000"
+            ],
+            [
+              "16123067/100000000000",
+              "33877561/500000000000",
+              "4582553/20000000000"
+            ]
+          ],
+          "input_mean": {
+            "10000": "126083114488/125",
+            "10010": "503912515949/500",
+            "20010": "503525444461/250"
+          },
+          "input_order": [
+            "10000",
+            "10010",
+            "20010"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "55745550659/250000000000",
+          "mean_shift": "0",
+          "nominal": "1194084979/500",
+          "output_mean": "1194084979/500",
+          "output_variance": "55745550659/250000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "2224.566229",
+        "coefficients": [
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "neutron_separation_energy:isotope:H-2:ground",
+        "standard_deviation": {
+          "display": "0.4722099137",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(55745550659/250000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      },
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "697723/3125000",
+              "-12807491/100000000000",
+              "16123067/100000000000"
+            ],
+            [
+              "-12807491/100000000000",
+              "19583639/100000000000",
+              "33877561/500000000000"
+            ],
+            [
+              "16123067/100000000000",
+              "33877561/500000000000",
+              "4582553/20000000000"
+            ]
+          ],
+          "input_mean": {
+            "10000": "126083114488/125",
+            "10010": "503912515949/500",
+            "20010": "503525444461/250"
+          },
+          "input_order": [
+            "10000",
+            "10010",
+            "20010"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "55745550659/250000000000",
+          "mean_shift": "0",
+          "nominal": "1194084979/500",
+          "output_mean": "1194084979/500",
+          "output_variance": "55745550659/250000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "2224.566229",
+        "coefficients": [
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "proton_separation_energy:isotope:H-2:ground",
+        "standard_deviation": {
+          "display": "0.4722099137",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(55745550659/250000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      },
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "697723/3125000",
+              "16123067/100000000000",
+              "-6365779/100000000000"
+            ],
+            [
+              "16123067/100000000000",
+              "4582553/20000000000",
+              "27516799/100000000000"
+            ],
+            [
+              "-6365779/100000000000",
+              "27516799/100000000000",
+              "64828247/10000000000"
+            ]
+          ],
+          "input_mean": {
+            "10000": "126083114488/125",
+            "20010": "503525444461/250",
+            "30010": "75401232033/25"
+          },
+          "input_order": [
+            "10000",
+            "20010",
+            "30010"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "22988275329/100000000000",
+          "mean_shift": "0",
+          "nominal": "1679353107/250",
+          "output_mean": "1679353107/250",
+          "output_variance": "22988275329/100000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "6257.230055",
+        "coefficients": [
+          1,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "neutron_separation_energy:isotope:H-3:ground",
+        "standard_deviation": {
+          "display": "0.4794608986",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(22988275329/100000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      },
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "19583639/100000000000",
+              "33877561/500000000000",
+              "17875423/50000000000"
+            ],
+            [
+              "33877561/500000000000",
+              "4582553/20000000000",
+              "1078957/4000000000"
+            ],
+            [
+              "17875423/50000000000",
+              "1078957/4000000000",
+              "36557601/10000000000"
+            ]
+          ],
+          "input_mean": {
+            "10010": "503912515949/500",
+            "20010": "503525444461/250",
+            "30020": "3016029321967/1000"
+          },
+          "input_order": [
+            "10010",
+            "20010",
+            "30020"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "740434741/250000000000",
+          "mean_shift": "0",
+          "nominal": "235899511/40",
+          "output_mean": "235899511/40",
+          "output_variance": "740434741/250000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "5493.475079",
+        "coefficients": [
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "proton_separation_energy:isotope:He-3:ground",
+        "standard_deviation": {
+          "display": "0.05442186109",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(740434741/250000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      },
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "697723/3125000",
+              "-5491243/62500000000",
+              "-3024039/250000000000000"
+            ],
+            [
+              "-5491243/62500000000",
+              "36557601/10000000000",
+              "-2190771/500000000000000000"
+            ],
+            [
+              "-3024039/250000000000000",
+              "-2190771/500000000000000000",
+              "6267359/250000000"
+            ]
+          ],
+          "input_mean": {
+            "10000": "126083114488/125",
+            "30020": "3016029321967/1000",
+            "40020": "400260325413/100"
+          },
+          "input_order": [
+            "10000",
+            "30020",
+            "40020"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "62955215131268771/250000000000000000",
+          "mean_shift": "0",
+          "nominal": "22090983741/1000",
+          "output_mean": "22090983741/1000",
+          "output_variance": "62955215131268771/250000000000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "20577.62107",
+        "coefficients": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "neutron_separation_energy:isotope:He-4:ground",
+        "standard_deviation": {
+          "display": "0.5018175570",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(62955215131268771/250000000000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      },
+      {
+        "atomic_mass_reduction": {
+          "adequacy": "structural affine proof",
+          "arithmetic": "exact rational",
+          "input_covariance": [
+            [
+              "19583639/100000000000",
+              "8468127/25000000000",
+              "-7970471/2500000000000000000"
+            ],
+            [
+              "8468127/25000000000",
+              "64828247/10000000000",
+              "20546323/5000000000000000000"
+            ],
+            [
+              "-7970471/2500000000000000000",
+              "20546323/5000000000000000000",
+              "6267359/250000000"
+            ]
+          ],
+          "input_mean": {
+            "10010": "503912515949/500",
+            "30010": "75401232033/25",
+            "40020": "400260325413/100"
+          },
+          "input_order": [
+            "10010",
+            "30010",
+            "40020"
+          ],
+          "jacobian": [
+            "1",
+            "1",
+            "-1"
+          ],
+          "linearized_variance_diagnostic": "81063868120394619/2500000000000000000",
+          "mean_shift": "0",
+          "nominal": "2658882386/125",
+          "output_mean": "2658882386/125",
+          "output_variance": "81063868120394619/2500000000000000000",
+          "uncertainty_status": "exact_for_declared_affine_model"
+        },
+        "baseline_mass_excess_value_keV": "19813.866094",
+        "coefficients": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "record_id": "proton_separation_energy:isotope:He-4:ground",
+        "standard_deviation": {
+          "display": "0.1800709506",
+          "display_rule": "10 significant digits, round half even",
+          "expression": "sqrt(81063868120394619/2500000000000000000)"
+        },
+        "unit": "nano-u",
+        "variance_unit": "(nano-u)^2"
+      }
+    ],
+    "atomic_mass_inputs": [
+      {
+        "a": 1,
+        "code": 10000,
+        "covariance_variance_nano_u2": "697723/3125000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 1,
+          "code": 10000,
+          "covariance_variance_nano_u2": "697723/3125000",
+          "diagonal_compatible": true,
+          "line": 37,
+          "mean_nano_u": "10086649159/10",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "47/100",
+          "raw_row": "0  1    1    0    1  n         8071.31806     0.00044       0.0        0.0     B-    782.3470     0.0004    1 008664.91590     0.00047",
+          "sigma_last_place_nano_u": "1/100",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 0
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; n-1",
+        "mean_nano_u": "126083114488/125",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "473/1000",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 0
+      },
+      {
+        "a": 1,
+        "code": 10010,
+        "covariance_variance_nano_u2": "19583639/100000000000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 1,
+          "code": 10010,
+          "covariance_variance_nano_u2": "19583639/100000000000",
+          "diagonal_compatible": true,
+          "line": 38,
+          "mean_nano_u": "503912515949/500",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "7/500",
+          "raw_row": "  -1    0    1    1 H          7288.971064    0.000013      0.0        0.0     B-      *                    1 007825.031898    0.000014",
+          "sigma_last_place_nano_u": "1/1000",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 1
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; H-1",
+        "mean_nano_u": "503912515949/500",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "7/500",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 1
+      },
+      {
+        "a": 2,
+        "code": 20010,
+        "covariance_variance_nano_u2": "4582553/20000000000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 2,
+          "code": 20010,
+          "covariance_variance_nano_u2": "4582553/20000000000",
+          "diagonal_compatible": true,
+          "line": 39,
+          "mean_nano_u": "503525444461/250",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "3/200",
+          "raw_row": "0  0    1    1    2 H         13135.722895    0.000015   1112.2831     0.0002  B-      *                    2 014101.777844    0.000015",
+          "sigma_last_place_nano_u": "1/1000",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 1
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; H-2",
+        "mean_nano_u": "503525444461/250",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "3/200",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 1
+      },
+      {
+        "a": 3,
+        "code": 30010,
+        "covariance_variance_nano_u2": "64828247/10000000000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 3,
+          "code": 30010,
+          "covariance_variance_nano_u2": "64828247/10000000000",
+          "diagonal_compatible": true,
+          "line": 40,
+          "mean_nano_u": "75401232033/25",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "2/25",
+          "raw_row": "0  1    2    1    3 H         14949.81090     0.00008    2827.2654     0.0003  B-     18.59202    0.00006   3 016049.28132     0.00008",
+          "sigma_last_place_nano_u": "1/100",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 1
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; H-3",
+        "mean_nano_u": "75401232033/25",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "81/1000",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 1
+      },
+      {
+        "a": 3,
+        "code": 30020,
+        "covariance_variance_nano_u2": "36557601/10000000000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 3,
+          "code": 30020,
+          "covariance_variance_nano_u2": "36557601/10000000000",
+          "diagonal_compatible": true,
+          "line": 41,
+          "mean_nano_u": "301602932197/100",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "3/50",
+          "raw_row": "  -1    1    2    3 He        14931.21888     0.00006    2572.68044    0.00015 B- -13736#      2000#        3 016029.32197     0.00006",
+          "sigma_last_place_nano_u": "1/100",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 2
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; He-3",
+        "mean_nano_u": "3016029321967/1000",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "3/50",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 2
+      },
+      {
+        "a": 4,
+        "code": 40020,
+        "covariance_variance_nano_u2": "6267359/250000000",
+        "diagonal_compatible": true,
+        "electronic_table_record": {
+          "a": 4,
+          "code": 40020,
+          "covariance_variance_nano_u2": "6267359/250000000",
+          "diagonal_compatible": true,
+          "line": 44,
+          "mean_nano_u": "400260325413/100",
+          "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+          "quoted_sigma_nano_u": "4/25",
+          "raw_row": "   0    2    2    4 He         2424.91587     0.00015    7073.9156     0.0002  B- -22898.2740   212.1320    4 002603.25413     0.00016",
+          "sigma_last_place_nano_u": "1/100",
+          "source_id": "ame2020-atomic-masses",
+          "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+          "state": "ground",
+          "z": 2
+        },
+        "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns; He-4",
+        "mean_nano_u": "400260325413/100",
+        "mean_status": "Precise Table A printed atomic mass used as an estimated mean; not exact physical knowledge.",
+        "quoted_sigma_nano_u": "79/500",
+        "sigma_last_place_nano_u": "1/1000",
+        "source_id": "ame2020-part-ii",
+        "source_sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "state": "ground",
+        "z": 2
+      },
+      {
+        "a": 129,
+        "code": 1290530,
+        "covariance_variance_nano_u2": "11460459",
+        "diagonal_compatible": true,
+        "line": 1636,
+        "mean_nano_u": "128904983643",
+        "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+        "quoted_sigma_nano_u": "3385",
+        "raw_row": "  23   76   53  129 I        -88507.176       3.153      8435.9908     0.0244  B-    188.8936     3.1534  128 904983.643       3.385",
+        "sigma_last_place_nano_u": "1",
+        "source_id": "ame2020-atomic-masses",
+        "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+        "state": "ground",
+        "z": 53
+      },
+      {
+        "a": 132,
+        "code": 1320540,
+        "covariance_variance_nano_u2": "14797989/500000",
+        "diagonal_compatible": true,
+        "line": 1689,
+        "mean_nano_u": "6595207754173/50",
+        "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+        "quoted_sigma_nano_u": "136/25",
+        "raw_row": "  24   78   54  132 Xe       -89278.97451     0.00507    8427.6229     0.0003  B-  -2126.2813     1.0359  131 904155.08346     0.00544",
+        "sigma_last_place_nano_u": "1/100",
+        "source_id": "ame2020-atomic-masses",
+        "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+        "state": "ground",
+        "z": 54
+      },
+      {
+        "a": 132,
+        "code": 1320550,
+        "covariance_variance_nano_u2": "1236723",
+        "diagonal_compatible": true,
+        "line": 1690,
+        "mean_nano_u": "131906437740",
+        "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+        "quoted_sigma_nano_u": "1112",
+        "raw_row": "  22   77   55  132 Cs       -87152.693       1.036      8405.5878     0.0079  B-   1282.2099     1.4773  131 906437.740       1.112",
+        "sigma_last_place_nano_u": "1",
+        "source_id": "ame2020-atomic-masses",
+        "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+        "state": "ground",
+        "z": 55
+      },
+      {
+        "a": 133,
+        "code": 1330550,
+        "covariance_variance_nano_u2": "36957279/500000",
+        "diagonal_compatible": false,
+        "line": 1707,
+        "mean_nano_u": "132905451958",
+        "mean_status": "Retained printed atomic mass used as an estimated mean; source precision retained.",
+        "quoted_sigma_nano_u": "8",
+        "raw_row": "  23   78   55  133 Cs       -88070.943       0.008      8409.9786     0.0003  B-   -517.4310     0.9920  132 905451.958       0.008",
+        "sigma_last_place_nano_u": "1",
+        "source_id": "ame2020-atomic-masses",
+        "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+        "state": "ground",
+        "z": 55
+      }
+    ],
+    "coverage": {
+      "adopted_rows": 6,
+      "candidate_rows": 9,
+      "entries": 55,
+      "held_rows": 3,
+      "required_codes": [
+        10000,
+        10010,
+        20010,
+        30010,
+        30020,
+        40020,
+        1290530,
+        1320540,
+        1320550,
+        1330550
+      ]
+    },
+    "held": [
+      {
+        "incompatible_codes": [
+          1330550
+        ],
+        "reason": "Covariance diagonal and retained atomic-mass marginal are incompatible under nearest last-place rounding.",
+        "record_id": "neutron_separation_energy:isotope:Cs-133:ground",
+        "status": "held"
+      },
+      {
+        "incompatible_codes": [
+          1330550
+        ],
+        "reason": "Covariance diagonal and retained atomic-mass marginal are incompatible under nearest last-place rounding.",
+        "record_id": "proton_separation_energy:isotope:Cs-133:ground",
+        "status": "held"
+      },
+      {
+        "incompatible_codes": [
+          1330550
+        ],
+        "reason": "Covariance diagonal and retained atomic-mass marginal are incompatible under nearest last-place rounding.",
+        "record_id": "alpha_decay_q:isotope:Cs-133:ground",
+        "status": "held"
+      }
+    ],
+    "limits": [
+      "Source masses and decimal covariance coefficients remain evaluated estimates.",
+      "No normal distribution, finite support or deterministic measurement bound is inferred.",
+      "No covariance is transferred to separately printed binding-energy-per-nucleon inputs.",
+      "Baseline mass-excess reductions and uncertainty fields remain unchanged."
+    ],
+    "manifest": {
+      "path": "manual2/data/m1/properties/covariance_inputs.json",
+      "sha256": "2431db81fe58f3973efa0658b19abb9c118c1880d36a21202a525db9ffaaee7c"
+    },
+    "method": {
+      "covariance": "Published evaluated atomic-mass variance/covariance entries in squared nano-u; no dimensionless correlation normalization is applied.",
+      "diagonal_compatibility": "Compare squared nearest-last-place interval around the retained atomic-mass uncertainty to the covariance diagonal; failure holds the affected reductions. This explicit compatibility criterion does not replace the published diagonal. Nearest-last-place compatibility is an explicit conservative criterion here, not an authenticated universal AME rounding rule.",
+      "energy_conversion": {
+        "locator": "Table A, printed page030002-3, PDFpage4, 1u row",
+        "reason": "Native mass-unit covariance only. This coefficient has uncertainty and may share source dependence; no independence or exact conversion is imposed.",
+        "source_id": "ame2020-part-i",
+        "standard_uncertainty": "0.00028",
+        "status": "not_applied",
+        "unit": "keV/u",
+        "value": "931494.10242"
+      },
+      "means": "Use precise Part II Table A atomic masses for n,H1,H2,H3,He3,He4 as estimated means, retaining all printed digits. Other required means remain from the electronic table and are not promoted beyond compatible coverage. Baseline mass-excess values are unchanged.",
+      "precision": "Retain all covariance decimal digits. Use a complete selected principal submatrix and exact rational PSD check without correction.",
+      "primary_documentation_status": "Both official Part I and Part II PDFs retained and hashed; precise Table A transcription visually checked. The nearest-last-place gate remains an explicitly declared compatibility criterion.",
+      "primary_method_reference": "https://cpc.ihep.ac.cn/article/doi/10.1088/1674-1137/abddb0",
+      "primary_precision_reference": "https://cpc.ihep.ac.cn/article/doi/10.1088/1674-1137/abddaf",
+      "sigma_convention": {
+        "kind": "one_standard_deviation",
+        "locator": "Printed page030002-2, PDFpage3, opening paragraph",
+        "source_id": "ame2020-part-i",
+        "status": "source_confirmed",
+        "systematics_qualification": "Part II printed page030003-5, PDFpage6 identifies # values as partly based on trends from the mass surface. Selected adopted atomic masses have no # marker; this adoption does not erase qualifications elsewhere."
+      },
+      "statistical_scope": "AME2020 reports one-standard-deviation uncertainties (Part I printed page030002-2, PDFpage3). Published adjusted covariance and mass estimates are used as moment inputs; no Gaussian distribution, finite support or hard error bound is inferred."
+    },
+    "output_covariance_nano_u2": [
+      [
+        "55745550659/250000000000",
+        "55745550659/250000000000",
+        "111491006631/500000000000",
+        "-22411/500000000000",
+        "1114909879145737417/5000000000000000000",
+        "-411274262583/5000000000000000000"
+      ],
+      [
+        "55745550659/250000000000",
+        "55745550659/250000000000",
+        "111491006631/500000000000",
+        "-22411/500000000000",
+        "1114909879145737417/5000000000000000000",
+        "-411274262583/5000000000000000000"
+      ],
+      [
+        "111491006631/500000000000",
+        "111491006631/500000000000",
+        "22988275329/100000000000",
+        "6460809/2500000000",
+        "137892551521538731/625000000000000000",
+        "-4168967034711269/625000000000000000"
+      ],
+      [
+        "-22411/500000000000",
+        "-22411/500000000000",
+        "6460809/2500000000",
+        "740434741/250000000000",
+        "-14537483654983243/5000000000000000000",
+        "-12650406834983243/5000000000000000000"
+      ],
+      [
+        "1114909879145737417/5000000000000000000",
+        "1114909879145737417/5000000000000000000",
+        "137892551521538731/625000000000000000",
+        "-14537483654983243/5000000000000000000",
+        "62955215131268771/250000000000000000",
+        "141426406798082329/5000000000000000000"
+      ],
+      [
+        "-411274262583/5000000000000000000",
+        "-411274262583/5000000000000000000",
+        "-4168967034711269/625000000000000000",
+        "-12650406834983243/5000000000000000000",
+        "141426406798082329/5000000000000000000",
+        "81063868120394619/2500000000000000000"
+      ]
+    ],
+    "output_order": [
+      "neutron_separation_energy:isotope:H-2:ground",
+      "proton_separation_energy:isotope:H-2:ground",
+      "neutron_separation_energy:isotope:H-3:ground",
+      "proton_separation_energy:isotope:He-3:ground",
+      "neutron_separation_energy:isotope:He-4:ground",
+      "proton_separation_energy:isotope:He-4:ground"
+    ],
+    "physical_budget_complete": false,
+    "reason": "Complete published covariance applied only to source-compatible atomic-mass reductions.",
+    "schema": "matter1.mass-covariance-adoption.v1",
+    "source_matrix": {
+      "entries": [
+        {
+          "column": 10000,
+          "line": 6,
+          "row": 10000,
+          "token": "0.22327136",
+          "value": "697723/3125000"
+        },
+        {
+          "column": 10000,
+          "line": 7,
+          "row": 10010,
+          "token": "-0.12807491E-03",
+          "value": "-12807491/100000000000"
+        },
+        {
+          "column": 10010,
+          "line": 8,
+          "row": 10010,
+          "token": "0.19583639E-03",
+          "value": "19583639/100000000000"
+        },
+        {
+          "column": 10000,
+          "line": 9,
+          "row": 20010,
+          "token": "0.16123067E-03",
+          "value": "16123067/100000000000"
+        },
+        {
+          "column": 10010,
+          "line": 10,
+          "row": 20010,
+          "token": "0.67755122E-04",
+          "value": "33877561/500000000000"
+        },
+        {
+          "column": 20010,
+          "line": 11,
+          "row": 20010,
+          "token": "0.22912765E-03",
+          "value": "4582553/20000000000"
+        },
+        {
+          "column": 10000,
+          "line": 12,
+          "row": 30010,
+          "token": "-0.63657790E-04",
+          "value": "-6365779/100000000000"
+        },
+        {
+          "column": 10010,
+          "line": 13,
+          "row": 30010,
+          "token": "0.33872508E-03",
+          "value": "8468127/25000000000"
+        },
+        {
+          "column": 20010,
+          "line": 14,
+          "row": 30010,
+          "token": "0.27516799E-03",
+          "value": "27516799/100000000000"
+        },
+        {
+          "column": 30010,
+          "line": 15,
+          "row": 30010,
+          "token": "0.64828247E-02",
+          "value": "64828247/10000000000"
+        },
+        {
+          "column": 10000,
+          "line": 16,
+          "row": 30020,
+          "token": "-0.87859888E-04",
+          "value": "-5491243/62500000000"
+        },
+        {
+          "column": 10010,
+          "line": 17,
+          "row": 30020,
+          "token": "0.35750846E-03",
+          "value": "17875423/50000000000"
+        },
+        {
+          "column": 20010,
+          "line": 18,
+          "row": 30020,
+          "token": "0.26973925E-03",
+          "value": "1078957/4000000000"
+        },
+        {
+          "column": 30010,
+          "line": 19,
+          "row": 30020,
+          "token": "0.30500575E-02",
+          "value": "1220023/400000000"
+        },
+        {
+          "column": 30020,
+          "line": 20,
+          "row": 30020,
+          "token": "0.36557601E-02",
+          "value": "36557601/10000000000"
+        },
+        {
+          "column": 10000,
+          "line": 21,
+          "row": 40020,
+          "token": "-0.12096156E-07",
+          "value": "-3024039/250000000000000"
+        },
+        {
+          "column": 10010,
+          "line": 22,
+          "row": 40020,
+          "token": "-0.31881884E-11",
+          "value": "-7970471/2500000000000000000"
+        },
+        {
+          "column": 20010,
+          "line": 23,
+          "row": 40020,
+          "token": "-0.12196705E-10",
+          "value": "-2439341/200000000000000000"
+        },
+        {
+          "column": 30010,
+          "line": 24,
+          "row": 40020,
+          "token": "0.41092646E-11",
+          "value": "20546323/5000000000000000000"
+        },
+        {
+          "column": 30020,
+          "line": 25,
+          "row": 40020,
+          "token": "-0.43815420E-11",
+          "value": "-2190771/500000000000000000"
+        },
+        {
+          "column": 40020,
+          "line": 26,
+          "row": 40020,
+          "token": "0.25069436E-01",
+          "value": "6267359/250000000"
+        },
+        {
+          "column": 10000,
+          "line": 171997,
+          "row": 1290530,
+          "token": "0.15657200",
+          "value": "39143/250000"
+        },
+        {
+          "column": 10010,
+          "line": 171998,
+          "row": 1290530,
+          "token": "0.29201487E-02",
+          "value": "29201487/10000000000"
+        },
+        {
+          "column": 20010,
+          "line": 171999,
+          "row": 1290530,
+          "token": "0.13139836E-02",
+          "value": "3284959/2500000000"
+        },
+        {
+          "column": 30010,
+          "line": 172000,
+          "row": 1290530,
+          "token": "0.52978224E-02",
+          "value": "3311139/625000000"
+        },
+        {
+          "column": 30020,
+          "line": 172001,
+          "row": 1290530,
+          "token": "0.55518956E-02",
+          "value": "13879739/2500000000"
+        },
+        {
+          "column": 40020,
+          "line": 172002,
+          "row": 1290530,
+          "token": "0.30136154E-04",
+          "value": "15068077/500000000000"
+        },
+        {
+          "column": 1290530,
+          "line": 172583,
+          "row": 1290530,
+          "token": "11460459.",
+          "value": "11460459"
+        },
+        {
+          "column": 10000,
+          "line": 188197,
+          "row": 1320540,
+          "token": "-0.21403343E-02",
+          "value": "-21403343/10000000000"
+        },
+        {
+          "column": 10010,
+          "line": 188198,
+          "row": 1320540,
+          "token": "0.33734734E-02",
+          "value": "16867367/5000000000"
+        },
+        {
+          "column": 20010,
+          "line": 188199,
+          "row": 1320540,
+          "token": "0.13076182E-02",
+          "value": "6538091/5000000000"
+        },
+        {
+          "column": 30010,
+          "line": 188200,
+          "row": 1320540,
+          "token": "0.59427512E-02",
+          "value": "7428439/1250000000"
+        },
+        {
+          "column": 30020,
+          "line": 188201,
+          "row": 1320540,
+          "token": "0.62581720E-02",
+          "value": "1564543/250000000"
+        },
+        {
+          "column": 40020,
+          "line": 188202,
+          "row": 1320540,
+          "token": "0.50270437E-07",
+          "value": "50270437/1000000000000000"
+        },
+        {
+          "column": 1290530,
+          "line": 188783,
+          "row": 1320540,
+          "token": "27.393866",
+          "value": "13696933/500000"
+        },
+        {
+          "column": 1320540,
+          "line": 188810,
+          "row": 1320540,
+          "token": "29.595978",
+          "value": "14797989/500000"
+        },
+        {
+          "column": 10000,
+          "line": 188811,
+          "row": 1320550,
+          "token": "-0.62228091E-01",
+          "value": "-62228091/1000000000"
+        },
+        {
+          "column": 10010,
+          "line": 188812,
+          "row": 1320550,
+          "token": "0.34764311E-02",
+          "value": "34764311/10000000000"
+        },
+        {
+          "column": 20010,
+          "line": 188813,
+          "row": 1320550,
+          "token": "0.12937275E-02",
+          "value": "517491/400000000"
+        },
+        {
+          "column": 30010,
+          "line": 188814,
+          "row": 1320550,
+          "token": "0.60827951E-02",
+          "value": "60827951/10000000000"
+        },
+        {
+          "column": 30020,
+          "line": 188815,
+          "row": 1320550,
+          "token": "0.64109666E-02",
+          "value": "32054833/5000000000"
+        },
+        {
+          "column": 40020,
+          "line": 188816,
+          "row": 1320550,
+          "token": "-0.39224158E-07",
+          "value": "-19612079/500000000000000"
+        },
+        {
+          "column": 1290530,
+          "line": 189397,
+          "row": 1320550,
+          "token": "26.148991",
+          "value": "26148991/1000000"
+        },
+        {
+          "column": 1320540,
+          "line": 189424,
+          "row": 1320550,
+          "token": "26.435555",
+          "value": "5287111/200000"
+        },
+        {
+          "column": 1320550,
+          "line": 189425,
+          "row": 1320550,
+          "token": "1236723.0",
+          "value": "1236723"
+        },
+        {
+          "column": 10000,
+          "line": 193759,
+          "row": 1330550,
+          "token": "-0.23482954E-02",
+          "value": "-11741477/5000000000"
+        },
+        {
+          "column": 10010,
+          "line": 193760,
+          "row": 1330550,
+          "token": "0.34623428E-02",
+          "value": "8655857/2500000000"
+        },
+        {
+          "column": 20010,
+          "line": 193761,
+          "row": 1330550,
+          "token": "0.13448511E-02",
+          "value": "13448511/10000000000"
+        },
+        {
+          "column": 30010,
+          "line": 193762,
+          "row": 1330550,
+          "token": "0.61014364E-02",
+          "value": "15253591/2500000000"
+        },
+        {
+          "column": 30020,
+          "line": 193763,
+          "row": 1330550,
+          "token": "0.64250100E-02",
+          "value": "642501/100000000"
+        },
+        {
+          "column": 40020,
+          "line": 193764,
+          "row": 1330550,
+          "token": "-0.42719083E-07",
+          "value": "-42719083/1000000000000000"
+        },
+        {
+          "column": 1290530,
+          "line": 194345,
+          "row": 1330550,
+          "token": "26.345217",
+          "value": "26345217/1000000"
+        },
+        {
+          "column": 1320540,
+          "line": 194372,
+          "row": 1330550,
+          "token": "26.590641",
+          "value": "26590641/1000000"
+        },
+        {
+          "column": 1320550,
+          "line": 194373,
+          "row": 1330550,
+          "token": "73.482498",
+          "value": "36741249/500000"
+        },
+        {
+          "column": 1330550,
+          "line": 194381,
+          "row": 1330550,
+          "token": "73.914558",
+          "value": "36957279/500000"
+        }
+      ],
+      "exact_psd_rank": 10,
+      "matrix": [
+        [
+          "697723/3125000",
+          "-12807491/100000000000",
+          "16123067/100000000000",
+          "-6365779/100000000000",
+          "-5491243/62500000000",
+          "-3024039/250000000000000",
+          "39143/250000",
+          "-21403343/10000000000",
+          "-62228091/1000000000",
+          "-11741477/5000000000"
+        ],
+        [
+          "-12807491/100000000000",
+          "19583639/100000000000",
+          "33877561/500000000000",
+          "8468127/25000000000",
+          "17875423/50000000000",
+          "-7970471/2500000000000000000",
+          "29201487/10000000000",
+          "16867367/5000000000",
+          "34764311/10000000000",
+          "8655857/2500000000"
+        ],
+        [
+          "16123067/100000000000",
+          "33877561/500000000000",
+          "4582553/20000000000",
+          "27516799/100000000000",
+          "1078957/4000000000",
+          "-2439341/200000000000000000",
+          "3284959/2500000000",
+          "6538091/5000000000",
+          "517491/400000000",
+          "13448511/10000000000"
+        ],
+        [
+          "-6365779/100000000000",
+          "8468127/25000000000",
+          "27516799/100000000000",
+          "64828247/10000000000",
+          "1220023/400000000",
+          "20546323/5000000000000000000",
+          "3311139/625000000",
+          "7428439/1250000000",
+          "60827951/10000000000",
+          "15253591/2500000000"
+        ],
+        [
+          "-5491243/62500000000",
+          "17875423/50000000000",
+          "1078957/4000000000",
+          "1220023/400000000",
+          "36557601/10000000000",
+          "-2190771/500000000000000000",
+          "13879739/2500000000",
+          "1564543/250000000",
+          "32054833/5000000000",
+          "642501/100000000"
+        ],
+        [
+          "-3024039/250000000000000",
+          "-7970471/2500000000000000000",
+          "-2439341/200000000000000000",
+          "20546323/5000000000000000000",
+          "-2190771/500000000000000000",
+          "6267359/250000000",
+          "15068077/500000000000",
+          "50270437/1000000000000000",
+          "-19612079/500000000000000",
+          "-42719083/1000000000000000"
+        ],
+        [
+          "39143/250000",
+          "29201487/10000000000",
+          "3284959/2500000000",
+          "3311139/625000000",
+          "13879739/2500000000",
+          "15068077/500000000000",
+          "11460459",
+          "13696933/500000",
+          "26148991/1000000",
+          "26345217/1000000"
+        ],
+        [
+          "-21403343/10000000000",
+          "16867367/5000000000",
+          "6538091/5000000000",
+          "7428439/1250000000",
+          "1564543/250000000",
+          "50270437/1000000000000000",
+          "13696933/500000",
+          "14797989/500000",
+          "5287111/200000",
+          "26590641/1000000"
+        ],
+        [
+          "-62228091/1000000000",
+          "34764311/10000000000",
+          "517491/400000000",
+          "60827951/10000000000",
+          "32054833/5000000000",
+          "-19612079/500000000000000",
+          "26148991/1000000",
+          "5287111/200000",
+          "1236723",
+          "36741249/500000"
+        ],
+        [
+          "-11741477/5000000000",
+          "8655857/2500000000",
+          "13448511/10000000000",
+          "15253591/2500000000",
+          "642501/100000000",
+          "-42719083/1000000000000000",
+          "26345217/1000000",
+          "26590641/1000000",
+          "36741249/500000",
+          "36957279/500000"
+        ]
+      ],
+      "order": [
+        10000,
+        10010,
+        20010,
+        30010,
+        30020,
+        40020,
+        1290530,
+        1320540,
+        1320550,
+        1330550
+      ],
+      "rounding": "Published decimal coefficients retained exactly; no PSD correction.",
+      "unit": "(nano-u)^2"
+    },
+    "sources": [
+      {
+        "acquired_on": "2026-11-12",
+        "bytes": 6076578,
+        "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf.",
+        "doi": "10.1088/1674-1137/abddaf",
+        "encoding": "AAAZZZi: A mass number, Z atomic number, i isomeric state; i=0 for selected ground states",
+        "id": "ame2020-covariance",
+        "member": "covariance.mas20",
+        "member_sha256": "2b872779234a035f961a59d82534b174ad4201adb942b3fd10b7617ad9272b0c",
+        "member_unit_header": "Variances and Covariances in nano-amu**2",
+        "path": "manual2/data/m1/properties/sources/ame2020-covariance.zip",
+        "sha256": "34683516facd856b240178936632cb7952a1cb65579b3b806db4adc50f63f865",
+        "unit": "(nano-u)^2",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/covariance.zip"
+      },
+      {
+        "acquired_on": "2026-11-01",
+        "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf. Unrounded electronic mass table.",
+        "doi": "10.1088/1674-1137/abddaf",
+        "id": "ame2020-atomic-masses",
+        "path": "manual2/data/m1/isotopes/sources/ame2020.txt",
+        "quantity": "neutral-atom mass in u; neutron Z=0,A=1 reference",
+        "sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+      },
+      {
+        "acquired_on": "2026-11-12",
+        "bytes": 2625079,
+        "citation": "W. J. Huang, M. Wang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (I). Evaluation of input data, and adjustment procedures, Chinese Physics C 45, 030002 (2021). DOI: 10.1088/1674-1137/abddb0.",
+        "doi": "10.1088/1674-1137/abddb0",
+        "id": "ame2020-part-i",
+        "path": "manual2/data/m1/properties/sources/ame2020-part-i.pdf",
+        "sha256": "876c56676edc32757c62875bc5cc9c589573384d4d7b0af072f9d6103d09be7b",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/Huang_2021_Chinese_Phys._C_45_030002.pdf"
+      },
+      {
+        "acquired_on": "2026-11-12",
+        "bytes": 2702490,
+        "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf.",
+        "doi": "10.1088/1674-1137/abddaf",
+        "id": "ame2020-part-ii",
+        "path": "manual2/data/m1/properties/sources/ame2020-part-ii.pdf",
+        "sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+        "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/Wang_2021_Chinese_Phys._C_45_030003.pdf"
+      }
+    ],
+    "status": "partial",
+    "typed_m3_acceptance": false
+  },
+  "dependencies": {
+    "coefficient_rank": 7,
+    "identical_outputs": [
+      [
+        "neutron_separation_energy:isotope:H-2:ground",
+        "proton_separation_energy:isotope:H-2:ground"
+      ]
+    ],
+    "interpretation": "Algebraic rank does not establish uncorrelated outputs or independent experiments.",
+    "mass_combination_rows": 9,
+    "zero_output_combinations": [
+      [
+        {
+          "coefficient": 1,
+          "record_id": "neutron_separation_energy:isotope:He-4:ground"
+        },
+        {
+          "coefficient": -1,
+          "record_id": "proton_separation_energy:isotope:He-4:ground"
+        },
+        {
+          "coefficient": -1,
+          "record_id": "neutron_separation_energy:isotope:H-3:ground"
+        },
+        {
+          "coefficient": 1,
+          "record_id": "proton_separation_energy:isotope:He-3:ground"
+        }
+      ]
+    ]
+  },
+  "limits": [
+    "Retained decimal reductions are retrospective source calculations, not physical predictions.",
+    "A conditional SD range is not a deterministic error bound or coverage interval.",
+    "Different output SD endpoints need not be attainable together under one joint covariance.",
+    "Binding-per-nucleon and mass-excess fields retain distinct source representations."
+  ],
+  "physical_budget_complete": false,
+  "producer": {
+    "binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
+    "commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+    "route": "mapping.evaluate and mapping.propagate raw exact affine arithmetic",
+    "tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
+  },
+  "rows": [
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.0"
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-1:ground",
+      "id": "binding_energy:isotope:H-1:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground": "0.0"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          }
+        },
+        "result": "0"
+      },
+      "magnitude_scaling": {
+        "coefficient": 1,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "0.0"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-1:ground",
+      "id": "neutron_separation_energy:isotope:H-1:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": 0,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 0,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-1:ground",
+      "id": "proton_separation_energy:isotope:H-1:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": 0,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 0
+        }
+      ],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 0,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-1:ground",
+      "id": "alpha_decay_q:isotope:H-1:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": -3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": -1
+        }
+      ],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": -3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": -1
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.0004"
+      },
+      "coefficients": [
+        {
+          "coefficient": 2,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-2:ground",
+      "id": "binding_energy:isotope:H-2:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground": "1112.2831"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "2"
+          }
+        },
+        "result": "11122831/5000"
+      },
+      "magnitude_scaling": {
+        "coefficient": 2,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0.0004"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 2,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "2224.5662"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.000412",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.000468"
+      },
+      "entity_id": "isotope:H-2:ground",
+      "id": "neutron_separation_energy:isotope:H-2:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": "8071.31806",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": "7288.971064",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground": "13135.722895"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "2224566229/1000000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 2,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "2224.566229"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.000412",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.000468"
+      },
+      "entity_id": "isotope:H-2:ground",
+      "id": "proton_separation_energy:isotope:H-2:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": "8071.31806",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": "7288.971064",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground": "13135.722895"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "2224566229/1000000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 2,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "2224.566229"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-2:ground",
+      "id": "alpha_decay_q:isotope:H-2:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": -2,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": -1
+        }
+      ],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": -2,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": -1
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.0009"
+      },
+      "coefficients": [
+        {
+          "coefficient": 3,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-3:ground",
+      "id": "binding_energy:isotope:H-3:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground": "2827.2654"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "3"
+          }
+        },
+        "result": "42408981/5000"
+      },
+      "magnitude_scaling": {
+        "coefficient": 3,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0.0009"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 3,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "8481.7962"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.000345",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.000535"
+      },
+      "entity_id": "isotope:H-3:ground",
+      "id": "neutron_separation_energy:isotope:H-3:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": "8071.31806",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground": "13135.722895",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground": "14949.81090"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "1251446011/200000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "6257.230055"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-3:ground",
+      "id": "proton_separation_energy:isotope:H-3:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 0
+        }
+      ],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground",
+          "state": "ground",
+          "z": 1
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:H-3:ground",
+      "id": "alpha_decay_q:isotope:H-3:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": -1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": -1
+        }
+      ],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": -1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": -1
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.00045"
+      },
+      "coefficients": [
+        {
+          "coefficient": 3,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:He-3:ground",
+      "id": "binding_energy:isotope:He-3:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground": "2572.68044"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "3"
+          }
+        },
+        "result": "192951033/25000"
+      },
+      "magnitude_scaling": {
+        "coefficient": 3,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0.00045"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 3,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "7718.04132"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:He-3:ground",
+      "id": "neutron_separation_energy:isotope:He-3:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 2
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.000032",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.000088"
+      },
+      "entity_id": "isotope:He-3:ground",
+      "id": "proton_separation_energy:isotope:He-3:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": "7288.971064",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground": "13135.722895",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground": "14931.21888"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "5493475079/1000000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 2,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 3,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "5493.475079"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:He-3:ground",
+      "id": "alpha_decay_q:isotope:He-3:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": -1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 0
+        }
+      ],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground",
+          "state": "ground",
+          "z": 2
+        },
+        {
+          "a": -1,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.0008"
+      },
+      "coefficients": [
+        {
+          "coefficient": 4,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:He-4:ground",
+      "id": "binding_energy:isotope:He-4:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground": "7073.9156"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "4"
+          }
+        },
+        "result": "17684789/625"
+      },
+      "magnitude_scaling": {
+        "coefficient": 4,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0.0008"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 4,
+          "coefficient": 4,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "28295.6624"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.00023",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.00065"
+      },
+      "entity_id": "isotope:He-4:ground",
+      "id": "neutron_separation_energy:isotope:He-4:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": "8071.31806",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground": "14931.21888",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground": "2424.91587"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "2057762107/100000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground",
+          "state": "ground",
+          "z": 2
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "20577.62107"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.000057",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.000243"
+      },
+      "entity_id": "isotope:He-4:ground",
+      "id": "proton_separation_energy:isotope:He-4:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": "7288.971064",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground": "14949.81090",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground": "2424.91587"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "9906933047/500000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 3,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "19813.866094"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "not_supplied",
+        "value": null
+      },
+      "coefficients": null,
+      "conditional_sd_range": null,
+      "entity_id": "isotope:He-4:ground",
+      "id": "alpha_decay_q:isotope:He-4:ground",
+      "m3_nominal": null,
+      "magnitude_scaling": null,
+      "missing_inputs": [
+        {
+          "a": 0,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "state": "ground",
+          "z": 0
+        }
+      ],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "reason": "Required parent/daughter/source masses not available or entity is not a ground-state mass record.",
+      "requested_inputs": [
+        {
+          "a": 4,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        },
+        {
+          "a": 0,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": null,
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "missing_source_inputs",
+      "unit": "keV",
+      "value": null
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "scaled_source_reported_magnitude",
+        "value": "0.0399"
+      },
+      "coefficients": [
+        {
+          "coefficient": 133,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground"
+        }
+      ],
+      "conditional_sd_range": null,
+      "entity_id": "isotope:Cs-133:ground",
+      "id": "binding_energy:isotope:Cs-133:ground",
+      "m3_nominal": {
+        "expression": [
+          "mul",
+          [
+            "parameter",
+            "coefficient_0"
+          ],
+          [
+            "input",
+            "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground"
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground": "8409.9786"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "133"
+          }
+        },
+        "result": "5592635769/5000"
+      },
+      "magnitude_scaling": {
+        "coefficient": 133,
+        "convention_evidence": "source_convention",
+        "kind": "scaled_source_reported_magnitude",
+        "statistical_convention": "source_documented_rounded_marginals",
+        "value": "0.0399"
+      },
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "binding_energy",
+      "requested_inputs": [
+        {
+          "a": 133,
+          "coefficient": 133,
+          "quantity": "binding_energy_per_nucleon",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground",
+          "state": "ground",
+          "z": 55
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "1118527.1538"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "1.02756",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "1.04444"
+      },
+      "entity_id": "isotope:Cs-133:ground",
+      "id": "neutron_separation_energy:isotope:Cs-133:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": "8071.31806",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground": "-87152.693",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground": "-88070.943"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "449478403/50000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "neutron_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 132,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground",
+          "state": "ground",
+          "z": 55
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+          "state": "ground",
+          "z": 0
+        },
+        {
+          "a": 133,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground",
+          "state": "ground",
+          "z": 55
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "8989.56806"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "0.002917",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "0.013083"
+      },
+      "entity_id": "isotope:Cs-133:ground",
+      "id": "proton_separation_energy:isotope:Cs-133:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": "7288.971064",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground": "-89278.97451",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground": "-88070.943"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "1"
+          },
+          "coefficient_1": {
+            "value": "1"
+          },
+          "coefficient_2": {
+            "value": "-1"
+          }
+        },
+        "result": "3040469777/500000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "proton_separation_energy",
+      "requested_inputs": [
+        {
+          "a": 132,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground",
+          "state": "ground",
+          "z": 54
+        },
+        {
+          "a": 1,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+          "state": "ground",
+          "z": 1
+        },
+        {
+          "a": 133,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground",
+          "state": "ground",
+          "z": 55
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "6080.939554"
+    },
+    {
+      "catalog_uncertainty": {
+        "coverage": null,
+        "distribution": null,
+        "kind": "joint_covariance_not_supplied",
+        "value": null
+      },
+      "coefficients": [
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+        },
+        {
+          "coefficient": -1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground"
+        },
+        {
+          "coefficient": 1,
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+        }
+      ],
+      "conditional_sd_range": {
+        "convention_evidence": "source_convention",
+        "coverage": null,
+        "joint_covariance_adopted": false,
+        "kind": "range_of_possible_standard_deviations",
+        "lower": "3.14485",
+        "missing_magnitudes": [],
+        "premise": "Each retained quoted magnitude is interpreted as the marginal standard deviation of the named source quantity.",
+        "premise_status": "source_documented_rounded_marginals",
+        "status": "conditional_on_marginal_sd",
+        "unit": "keV",
+        "upper": "3.16115"
+      },
+      "entity_id": "isotope:Cs-133:ground",
+      "id": "alpha_decay_q:isotope:Cs-133:ground",
+      "m3_nominal": {
+        "expression": [
+          "add",
+          [
+            "add",
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_0"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground"
+              ]
+            ],
+            [
+              "mul",
+              [
+                "parameter",
+                "coefficient_1"
+              ],
+              [
+                "input",
+                "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground"
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "parameter",
+              "coefficient_2"
+            ],
+            [
+              "input",
+              "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground"
+            ]
+          ]
+        ],
+        "input_values": {
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground": "2424.91587",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground": "-88507.176",
+          "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground": "-88070.943"
+        },
+        "parameters": {
+          "coefficient_0": {
+            "value": "-1"
+          },
+          "coefficient_1": {
+            "value": "-1"
+          },
+          "coefficient_2": {
+            "value": "1"
+          }
+        },
+        "result": "-198868287/100000"
+      },
+      "magnitude_scaling": null,
+      "missing_inputs": [],
+      "physical_prediction": false,
+      "property": "alpha_decay_q",
+      "requested_inputs": [
+        {
+          "a": 133,
+          "coefficient": 1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground",
+          "state": "ground",
+          "z": 55
+        },
+        {
+          "a": 129,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground",
+          "state": "ground",
+          "z": 53
+        },
+        {
+          "a": 4,
+          "coefficient": -1,
+          "quantity": "mass_excess",
+          "source_quantity_id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+          "state": "ground",
+          "z": 2
+        }
+      ],
+      "status": "exact_decimal_reduction",
+      "unit": "keV",
+      "value": "-1988.68287"
+    }
+  ],
+  "schema": "matter1.mass-derivations.v1",
+  "scope": "complete_six_isotope_pilot_mass_derivations",
+  "source": {
+    "id": "ame2020",
+    "path": "manual2/data/m1/isotopes/sources/ame2020.txt",
+    "sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307"
+  },
+  "source_convention": {
+    "kind": "one_standard_deviation",
+    "locator": "Printed page030002-2, PDFpage3, opening paragraph",
+    "manifest": {
+      "path": "manual2/data/m1/properties/covariance_inputs.json",
+      "sha256": "2431db81fe58f3973efa0658b19abb9c118c1880d36a21202a525db9ffaaee7c"
+    },
+    "precision": "Quoted decimal magnitudes are retained; precise covariance diagonals do not replace them.",
+    "scope": "Selected evaluated inputs without a systematics marker.",
+    "source_id": "ame2020-part-i",
+    "source_sha256": "876c56676edc32757c62875bc5cc9c589573384d4d7b0af072f9d6103d09be7b",
+    "status": "source_documented_rounded_marginals"
+  },
+  "source_quantities": {
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground": {
+      "a": 1,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A1:ground",
+      "locator": {
+        "line": 38,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "  -1    0    1    1 H          7288.971064    0.000013      0.0        0.0     B-      *                    1 007825.031898    0.000014",
+      "reported_magnitude": "0.0",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "0.0",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground": {
+      "a": 2,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A2:ground",
+      "locator": {
+        "line": 39,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "0  0    1    1    2 H         13135.722895    0.000015   1112.2831     0.0002  B-      *                    2 014101.777844    0.000015",
+      "reported_magnitude": "0.0002",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "1112.2831",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground": {
+      "a": 3,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z1:A3:ground",
+      "locator": {
+        "line": 40,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "0  1    2    1    3 H         14949.81090     0.00008    2827.2654     0.0003  B-     18.59202    0.00006   3 016049.28132     0.00008",
+      "reported_magnitude": "0.0003",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "2827.2654",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground": {
+      "a": 3,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A3:ground",
+      "locator": {
+        "line": 41,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "  -1    1    2    3 He        14931.21888     0.00006    2572.68044    0.00015 B- -13736#      2000#        3 016029.32197     0.00006",
+      "reported_magnitude": "0.00015",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "2572.68044",
+      "z": 2
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground": {
+      "a": 4,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z2:A4:ground",
+      "locator": {
+        "line": 44,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "   0    2    2    4 He         2424.91587     0.00015    7073.9156     0.0002  B- -22898.2740   212.1320    4 002603.25413     0.00016",
+      "reported_magnitude": "0.0002",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "7073.9156",
+      "z": 2
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground": {
+      "a": 133,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:binding_energy_per_nucleon:Z55:A133:ground",
+      "locator": {
+        "line": 1707,
+        "magnitude_columns": [
+          69,
+          78
+        ],
+        "value_columns": [
+          55,
+          67
+        ]
+      },
+      "quantity": "binding_energy_per_nucleon",
+      "raw_row": "  23   78   55  133 Cs       -88070.943       0.008      8409.9786     0.0003  B-   -517.4310     0.9920  132 905451.958       0.008",
+      "reported_magnitude": "0.0003",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "8409.9786",
+      "z": 55
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground": {
+      "a": 1,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z0:A1:ground",
+      "locator": {
+        "line": 37,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "0  1    1    0    1  n         8071.31806     0.00044       0.0        0.0     B-    782.3470     0.0004    1 008664.91590     0.00047",
+      "reported_magnitude": "0.00044",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "8071.31806",
+      "z": 0
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground": {
+      "a": 1,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A1:ground",
+      "locator": {
+        "line": 38,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  -1    0    1    1 H          7288.971064    0.000013      0.0        0.0     B-      *                    1 007825.031898    0.000014",
+      "reported_magnitude": "0.000013",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "7288.971064",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground": {
+      "a": 2,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A2:ground",
+      "locator": {
+        "line": 39,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "0  0    1    1    2 H         13135.722895    0.000015   1112.2831     0.0002  B-      *                    2 014101.777844    0.000015",
+      "reported_magnitude": "0.000015",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "13135.722895",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground": {
+      "a": 3,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z1:A3:ground",
+      "locator": {
+        "line": 40,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "0  1    2    1    3 H         14949.81090     0.00008    2827.2654     0.0003  B-     18.59202    0.00006   3 016049.28132     0.00008",
+      "reported_magnitude": "0.00008",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "14949.81090",
+      "z": 1
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground": {
+      "a": 3,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A3:ground",
+      "locator": {
+        "line": 41,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  -1    1    2    3 He        14931.21888     0.00006    2572.68044    0.00015 B- -13736#      2000#        3 016029.32197     0.00006",
+      "reported_magnitude": "0.00006",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "14931.21888",
+      "z": 2
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground": {
+      "a": 4,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z2:A4:ground",
+      "locator": {
+        "line": 44,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "   0    2    2    4 He         2424.91587     0.00015    7073.9156     0.0002  B- -22898.2740   212.1320    4 002603.25413     0.00016",
+      "reported_magnitude": "0.00015",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "2424.91587",
+      "z": 2
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground": {
+      "a": 129,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z53:A129:ground",
+      "locator": {
+        "line": 1636,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  23   76   53  129 I        -88507.176       3.153      8435.9908     0.0244  B-    188.8936     3.1534  128 904983.643       3.385",
+      "reported_magnitude": "3.153",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "-88507.176",
+      "z": 53
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground": {
+      "a": 132,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z54:A132:ground",
+      "locator": {
+        "line": 1689,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  24   78   54  132 Xe       -89278.97451     0.00507    8427.6229     0.0003  B-  -2126.2813     1.0359  131 904155.08346     0.00544",
+      "reported_magnitude": "0.00507",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "-89278.97451",
+      "z": 54
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground": {
+      "a": 132,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A132:ground",
+      "locator": {
+        "line": 1690,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  22   77   55  132 Cs       -87152.693       1.036      8405.5878     0.0079  B-   1282.2099     1.4773  131 906437.740       1.112",
+      "reported_magnitude": "1.036",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "-87152.693",
+      "z": 55
+    },
+    "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground": {
+      "a": 133,
+      "catalog_uncertainty_kind": "source_reported_magnitude_convention_not_reconstructed",
+      "convention": "AME2020 neutral-atom mass table; neutron reference at Z=0,A=1",
+      "convention_evidence": "source_convention",
+      "estimated": false,
+      "id": "ame2020:e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307:mass_excess:Z55:A133:ground",
+      "locator": {
+        "line": 1707,
+        "magnitude_columns": [
+          43,
+          54
+        ],
+        "value_columns": [
+          29,
+          42
+        ]
+      },
+      "quantity": "mass_excess",
+      "raw_row": "  23   78   55  133 Cs       -88070.943       0.008      8409.9786     0.0003  B-   -517.4310     0.9920  132 905451.958       0.008",
+      "reported_magnitude": "0.008",
+      "source_id": "ame2020",
+      "source_sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "state": "ground",
+      "uncertainty_convention": "one_standard_deviation",
+      "unit": "keV",
+      "value": "-88070.943",
+      "z": 55
+    }
+  },
+  "typed_m3_acceptance": false
+}

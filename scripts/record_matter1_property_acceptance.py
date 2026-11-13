@@ -149,6 +149,17 @@ def validate_lane_reports(reports):
                      type(data['counts']['element_z_coverage']) is int and data['counts']['element_z_coverage'] == 118 and
                      type(data['counts']['pilot_isotopes']) is int and data['counts']['pilot_isotopes'] == 6,
                      'Property identity coverage incomplete or source acquisition promoted to physical prediction')
+    mass = data.get('mass_derivations', {})
+    counts = mass.get('counts', {})
+    expected_counts = {'records': 24, 'numeric': 15, 'null': 9, 'isotopes': 6}
+    evidence.require(counts == expected_counts and all(type(v) is int for v in counts.values()) and
+                     mass.get('scope') == 'complete_six_isotope_pilot_mass_derivations' and
+                     mass.get('physical_budget_complete') is False and
+                     mass.get('typed_m3_acceptance') is False,
+                     'Mass derivation coverage incomplete or uncertainty scope promoted')
+    adoption = mass.get('covariance_adoption')
+    evidence.require(type(adoption) is dict and adoption.get('status') in ('not_adopted', 'partial', 'adopted'),
+                     'Mass covariance adoption disposition is missing')
     evidence.require(model['status'] == 'PASS_PROPERTY_MODEL_ORIGINAL_INPUT_REPLAY' and
                      type(model['native_pilots']) is int and model['native_pilots'] == 6 and
                      model['comparison_checked'] is True and model['physical_prediction_complete'] is False and
@@ -193,6 +204,7 @@ def record(checks, output):
         'status': 'RECORDED_PROPERTY_SCOPED_ACCEPTANCE', 'data_coverage_disposition': data_disposition,
         'data_acquisition_complete': reports['properties']['acquisition_complete'],
         'missing_source_families': reports['properties']['missing_source_families'],
+        'mass_derivations': reports['properties']['mass_derivations'],
         'native_diagnostic_execution': 'six_pilots_replayed', 'physical_property_laws': 'missing_premise',
         'whole_law_disposition': 'incomplete_missing_premises', 'physical_prediction_complete': False,
         'independent_empirical_predictions_verified': 0,

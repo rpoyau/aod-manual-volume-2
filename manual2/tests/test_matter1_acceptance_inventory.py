@@ -96,6 +96,7 @@ class AcceptanceInventoryTests(unittest.TestCase):
         from manual2.scripts import matter1_property_model as model
         expected = expected_output_paths(ROOT)
         self.assertTrue({'data/m1/properties/model/' + name for name in model.OUTPUTS} <= expected)
+        self.assertIn('data/m1/properties/mass_derivations.json', expected)
         self.assertTrue(any(name.startswith('data/m1/campaign/cases/') for name in expected))
         for name in ('record_matter1_acceptance.py', 'record_matter1_isotope_acceptance.py'):
             text = (ROOT / 'scripts' / name).read_text()
@@ -185,7 +186,11 @@ class AcceptanceInventoryTests(unittest.TestCase):
     def test_property_acquisition_gaps_and_physical_status_cannot_be_promoted(self):
         reports = {'properties': {'status': 'PASS_ELEMENT_PROPERTY_CATALOG', 'acquisition_complete': False,
                     'missing_source_families': ['atomic_levels_lines'], 'physical_predictions_executed': 0,
-                    'counts': {'element_z_coverage': 118, 'pilot_isotopes': 6}},
+                    'counts': {'element_z_coverage': 118, 'pilot_isotopes': 6},
+                    'mass_derivations': {'scope': 'complete_six_isotope_pilot_mass_derivations',
+                        'counts': {'records': 24, 'numeric': 15, 'null': 9, 'isotopes': 6},
+                        'physical_budget_complete': False, 'typed_m3_acceptance': False,
+                        'covariance_adoption': {'status': 'not_adopted'}}},
             'property-model': {'status': 'PASS_PROPERTY_MODEL_ORIGINAL_INPUT_REPLAY', 'native_pilots': 6,
                 'comparison_checked': True, 'physical_prediction_complete': False,
                 'whole_law_disposition': 'incomplete_missing_premises'}}
@@ -194,7 +199,13 @@ class AcceptanceInventoryTests(unittest.TestCase):
                    lambda d: d['properties'].__setitem__('physical_predictions_executed', 1),
                    lambda d: d['property-model'].__setitem__('physical_prediction_complete', True),
                    lambda d: d['property-model'].__setitem__('comparison_checked', False),
-                   lambda d: d['properties'].__setitem__('status', 'PASS_FAKE_SUCCESS')]
+                   lambda d: d['properties'].__setitem__('status', 'PASS_FAKE_SUCCESS'),
+                   lambda d: d['properties'].pop('mass_derivations'),
+                   lambda d: d['properties']['mass_derivations']['counts'].__setitem__('numeric', 13),
+                   lambda d: d['properties']['mass_derivations']['counts'].__setitem__('null', 0),
+                   lambda d: d['properties']['mass_derivations'].__setitem__('physical_budget_complete', True),
+                   lambda d: d['properties']['mass_derivations'].__setitem__('typed_m3_acceptance', True),
+                   lambda d: d['properties']['mass_derivations'].__setitem__('covariance_adoption', None)]
         for mutate in changes:
             bad = deepcopy(reports); mutate(bad)
             with self.assertRaises(core.EvidenceError): properties.validate_lane_reports(bad)

@@ -38,6 +38,12 @@ Helmut Hellwig, Robert F.~C. Vessot, Martin~W. Levine, Paul~W. Zitzewitz,
 \newblock Printed p. 200: one-sigma uncertainty 0.002 Hz.
   \url{https://tf.nist.gov/general/pdf/13.pdf}.
 
+\bibitem{iupac-ame-i}
+W.~J. Huang, M.~Wang, F.~G. Kondev, G.~Audi, and S.~Naimi.
+\newblock The {AME} 2020 atomic mass evaluation ({I}). evaluation of input
+  data, and adjustment procedures.
+\newblock {\em Chinese Physics C}, 45:030002, 2021.
+
 \bibitem{jcgm100}
 {Joint Committee for Guides in Metrology}.
 \newblock Evaluation of measurement data: Guide to the expression of

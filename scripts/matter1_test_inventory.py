@@ -21,7 +21,7 @@ OPTIMIZED_MODULES = frozenset({
     'test_matter1_witnessed_retention', 'test_matter1_retention_adapter',
     'test_matter1_m3_observation', 'test_matter1_m3_metrology',
     'test_matter1_data_classes', 'test_matter1_external_transitions',
-    'test_matter1_properties', 'test_matter1_property_model',
+    'test_matter1_properties', 'test_matter1_mass_covariance', 'test_matter1_property_model',
     'test_matter1_coupled_preparations', 'test_matter1_preparation_workflow',
     'test_matter1_m3_producer',
 })

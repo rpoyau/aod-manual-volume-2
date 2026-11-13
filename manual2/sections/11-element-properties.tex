@@ -58,9 +58,39 @@ decay channels and state assignments apply to the curated isotope set of
 Standard atomic weight and isotope abundance describe a stated material or
 terrestrial composition convention. They remain separate from the mass of an
 individual isotope. Mass excess, binding energy, separation energy and decay
-energy retain their source definitions and electron conventions. A derived
-difference requires compatible input masses and a covariance treatment before
-it can acquire an uncertainty.
+energy retain their source definitions and electron conventions. The separate
+24-row mass calculation retains 15 numerical results and nine missing-input
+entries. For binding energy \(B=A b\), the exact mass number scales both the
+reported value per nucleon and its quoted uncertainty magnitude; it does not
+create \(A\) independent measurements.
+
+For a mass combination \(Q=\sum_i c_iX_i\), repeated occurrences of the same
+source quantity are combined first. A compatible covariance matrix gives
+\(\operatorname{Var}(Q)=c^{\mathsf T}\Sigma c\), the affine covariance rule of
+\mainsection{prop:m3-finite-law}. AME2020 identifies its quoted uncertainties
+as one standard deviation\cite[p.~030002-2]{iupac-ame-i}. If their covariance
+is unspecified, write these magnitudes as \(u_i\). With
+\(w_i=|c_i|u_i\) and \(S=\sum_iw_i\), the possible standard deviation lies
+between \(\max(0,2\max_iw_i-S)\) and \(S\). This conditional range is neither
+a hard error interval nor an adopted covariance or complete physical budget.
+
+Deuterium illustrates the shared inputs:
+\(S_n(\mathrm D)=S_p(\mathrm D)
+=\mathrm{ME}(\mathrm H)+\mathrm{ME}(n)-\mathrm{ME}(\mathrm D)
+=2224.566229\,\mathrm{keV}\).
+The two expressions are the same source-derived quantity, not independent
+observations. Their conditional standard-deviation range is
+\([0.000412,0.000468]\,\mathrm{keV}\). The separately rounded binding-energy
+route gives \(2224.5662\,\mathrm{keV}\); both source reductions are retained.
+
+A separate calculation combines the precise atomic masses of AME2020
+Table~A\cite[Table~A]{iupac-ame} with its published covariance. Six light-nuclide
+reductions retain their full mutual covariance in \((10^{-9}\,\mathrm u)^2\).
+The chosen compatibility criterion requires the covariance's standard deviation
+to lie within half a last displayed digit of the quoted marginal uncertainty.
+Caesium-133 fails this criterion, leaving its three reductions unresolved.
+The uncertain mass-to-energy coefficient is not applied; its dependence on
+the mass inputs remains unassigned.
 
 For the retained pilot histories, write \(q_i\) for each generic bounded
 cadence in its configuration-specific window. One deliberately hypothetical

@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = Path('manual2/data/m1/properties')
 INPUTS = BASE / 'inputs.json'
 INPUTS_SHA256 = 'acf8fb6ad5a6e1f33f61e0f647dc2545b705be2d89667f791b380172d03cd169'
-OUTPUTS = ('definitions.json', 'states.json', 'catalog.json', 'coverage.json', 'source_manifest.json')
+OUTPUTS = ('definitions.json', 'states.json', 'catalog.json', 'coverage.json', 'source_manifest.json', 'mass_derivations.json')
 PILOTS = ((1,1,'H'),(1,2,'H'),(1,3,'H'),(2,3,'He'),(2,4,'He'),(55,133,'Cs'))
 SCHEMA = 'matter1.element-properties.v1'
 MISSING_FAMILIES = ('atomic_ground_states_ionization','electron_affinities','atomic_levels_lines','nuclear_moments_radii')
@@ -370,7 +370,15 @@ def build(root=ROOT):
       'interpretation':'All-118 identity coverage is not numeric-source completeness or physical-prediction validation.'}
     manifest={'schema':'matter1.property-sources.v1','sources':sources,'acquisition_attempts':inputs.get('acquisition_attempts',[]),
       'input_sha256':sha(root/INPUTS),'offline_reproducible':True,'new_external_targets_are_retrospective':True}
-    return dict(zip(OUTPUTS,(definitions,states,catalog,coverage,manifest)))
+    if __package__:
+        from .matter1_mass_derivations import build as mass_derivations
+    else:
+        from matter1_mass_derivations import build as mass_derivations
+    products = {'definitions.json': definitions, 'states.json': states,
+                'catalog.json': catalog, 'coverage.json': coverage, 'source_manifest.json': manifest,
+                'mass_derivations.json': mass_derivations(root, ame, catalog, source_byid['ame2020'], pilots=PILOTS)}
+    require(set(products) == set(OUTPUTS), 'Property output inventory differs')
+    return products
 
 
 def verify(root=ROOT):
@@ -378,8 +386,10 @@ def verify(root=ROOT):
     for name,value in expected.items():
         require((root/BASE/name).read_bytes()==canonical(value),'Property output differs: '+name)
     coverage=expected['coverage.json']
+    mass=expected['mass_derivations.json']
     return {'status':'PASS_ELEMENT_PROPERTY_CATALOG','schema':'matter1.property-verification.v1',
       'counts':coverage['summary'],'acquisition_complete':coverage['acquisition_complete'],
       'missing_source_families':coverage['missing_source_families'],'physical_predictions_executed':0,
       'outputs_sha256':{name:sha(root/BASE/name) for name in OUTPUTS},
+      'mass_derivations':{key:mass[key] for key in ('scope','counts','physical_budget_complete','typed_m3_acceptance','covariance_adoption')},
       'scope':'Byte-bound source parsing, exact decimal reductions and identity/uncertainty validation only.'}

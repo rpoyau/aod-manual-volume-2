@@ -292,9 +292,11 @@
     "manual2/data/m1/preparation_workflow/reference_preparations.json": "f84c9e9eec15c2ead1a05d9b4d104e22db05b917534e0e7342ab81908c2e6d74",
     "manual2/data/m1/preparation_workflow/uncertainty.json": "97dc4f84645dce29fb8d3c0bccb48144f064fd87c015bda2c5b68ff6ab2b9786",
     "manual2/data/m1/properties/catalog.json": "81923ed6a5adbcb995d92699ead7723b6b02ad880d8b299304b11914fdaabb24",
+    "manual2/data/m1/properties/covariance_inputs.json": "2431db81fe58f3973efa0658b19abb9c118c1880d36a21202a525db9ffaaee7c",
     "manual2/data/m1/properties/coverage.json": "841e45e220f7f718f0ec0abf804daa6a03989605149b44ed555d41575675a5db",
     "manual2/data/m1/properties/definitions.json": "d98d9b4fbb4410e23062910833e4af8f4f2da0a4027b58d66a83810242b00470",
     "manual2/data/m1/properties/inputs.json": "acf8fb6ad5a6e1f33f61e0f647dc2545b705be2d89667f791b380172d03cd169",
+    "manual2/data/m1/properties/mass_derivations.json": "5f808fce1d4280a98f071f7d4799a677fc83afb9fe73b191e5ce4175332f52f6",
     "manual2/data/m1/properties/model/comparison.json": "ab80890b4f9e68ba08be05d3ada195075734b75f8412769464cff80ba472ac59",
     "manual2/data/m1/properties/model/controls/feedback_off.json": "6c5981c80cf00f21a6f988ab93e74c116241a6c94850af2349356d37f7b4058c",
     "manual2/data/m1/properties/model/controls/fixed_path.json": "f8a839834b29ed9cd5184ba5244d0c332beebfa8a898342f1b540b8c6b81ca9c",
@@ -348,7 +350,7 @@
     "manual2/figures/matter1_figure_manifest.json": "a38b33db641309b7818223154eede78ee1f54457d5c18134a245c983980390b9",
     "manual2/main.tex": "b6841b5fbe070a9a12223b748681e774e46eb7fbc964bea487af8dab4fbc0a3d",
     "manual2/preamble.tex": "ec9bbd15cf8da977ad39521963fbe16cc7a25dd919e1786fb53b82419ffef539",
-    "manual2/refs.bib": "454ea85011099af2658c52615e49922347df26509621d60c43abe36be497993e",
+    "manual2/refs.bib": "d915de0f36a51f8defb327d3e2caa7e8dc752b7b2f518f759cf482a906c97c29",
     "manual2/sections/00_scope.tex": "e1c54f3894cf58c7c15520c515d96850a2e2ef547251bf6886ca7ad5c8951ad6",
     "manual2/sections/01-scope-and-spine.tex": "81fcc321a79f8958edef8c16219f89425bf862338b3025bb5fa7e83e9f977118",
     "manual2/sections/02-coord0-enclosures.tex": "c97d8b09fdc26ae003c775d0a51111b88a826108ebdfd9b83d993ea81469d551",
@@ -360,7 +362,7 @@
     "manual2/sections/08-isotope-survival.tex": "ee892cb94a417cfe01607bb7d028da407296109b19fbc407b74bd093e8ba1448",
     "manual2/sections/09_prediction_test_fixture_registry.tex": "435dd8181ab324c92569f4bf5bbed2a5af79b25448310d810172694ebe27b230",
     "manual2/sections/10-all-element-campaign.tex": "6c78aa1668a8f4ca3ded366b16c2970d78ced34955f57c255439d379f2554a42",
-    "manual2/sections/11-element-properties.tex": "f90debdaa64a77950ac9aceecc67adb14be174983f0af3d6db343778c70979af",
+    "manual2/sections/11-element-properties.tex": "5ac31115cbc90096d261b0344cb42f20a11fa6f65cf60f1a9a386c1d37bb3235",
     "manual2/sections/12-coupled-preparation-pilots.tex": "b566dbcbfd6f024f2492910d1256af63240aa2a7eb09c3c546d3ba6e0f0a660b",
     "manual2/sections/generated_elements_longtable.tex": "fcb9c59933db5283e2fe46bb70efc31d4016e13a9d903f51f519b13698451da2",
     "manual2/sections/generated_isotope_anchors.tex": "9f0deffbd9df4642abb89b4d93da2f8f4dd4ed16b03cc0ff492bae6eb4da35b5",
@@ -369,9 +371,9 @@
     "manual2/sections/generated_isotope_superheavy.tex": "ef5c811d1d4437cb2e6c1bb7e9b0f1a2f4c59ad2415f01fa75a4f3d02bf271e9"
   },
   "published_artifacts": {
-    "main.pdf": "a6f92368be95ce0c8a208c93bca426e321b1f6757218b80b7c3a894dda634131",
-    "manual2/main.pdf": "e1832f54d62d45becf0edda75c30c89f75d352508f6fb295b3640b0e721d8162",
-    "manual2.pdf": "7e46f1c49daf8482c44e4cde46f04752ecc32bfe05982c3ba5c8ef3397df0bb9"
+    "main.pdf": "d8d06a529431095869258cb95fe1faa373d1c05c261e76fdbe870087f2914547",
+    "manual2/main.pdf": "ffd5f88be2ffbb9f6860577ac9734f18d64fb27137ee971315233ba379024c5d",
+    "manual2.pdf": "c9d521c371afde758b2f5b92bc409ec7914245a744d63f9921e85818f651d624"
   },
   "main_pages": 70,
   "commands": [

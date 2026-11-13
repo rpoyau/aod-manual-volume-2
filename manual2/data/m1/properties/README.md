@@ -18,8 +18,9 @@ The existing AME2020 raw table supplies neutral atomic masses, mass excesses,
 binding energy per nucleon and beta-minus energies. Additional binding energies,
 neutron/proton separation energies and alpha-decay Q values use explicit decimal
 reductions of those masses. They retain systematics markers and input identity;
-derived separation/Q uncertainties stay absent because joint covariance was not
-acquired. A positive Q is not an observation of a decay branch.
+the unchanged catalog retains absent separation/Q uncertainties from its original
+adoption, which did not acquire joint covariance. A positive Q is not an
+observation of a decay branch.
 
 NUBASE2020 supplies verbatim spin/parity, decay-mode and isotopic-abundance fields.
 Tentative and estimated designations survive; source text is not silently turned
@@ -61,12 +62,64 @@ its level and reference-level IDs. Multiple transitions are separate records;
 an additional source for the same selected transition must be marked alternative
 rather than silently replacing or duplicating the adopted result.
 
-`build(root)` returns all five generated dictionaries. `verify(root)` rebuilds
+`build(root)` returns the five original generated dictionaries and the additive
+`mass_derivations.json`. `verify(root)` rebuilds
 in memory, compares exact bytes and returns a scoped receipt.
 `validate_catalog(catalog, states, definitions, sources=None)` checks the public
 identity, quantity, uncertainty and selection contract. A consumer requiring
 authentic retained inputs must also call `verify`; schema validity alone does not
 authenticate scientific provenance.
+
+## Mass reductions and shared inputs
+
+`mass_derivations.json` records the 24 binding/separation/alpha-Q entries for the
+six pilots: 15 exact nominal reductions and nine missing-input nulls. Source
+quantity identity includes the source, locator and field; equal numerical values
+do not merge distinct operands. Repeated occurrences of one source quantity are
+combined before uncertainty propagation. Binding energy uses `B = A b` and scales
+the quoted magnitude by the exact integer `A`, preserving its qualification.
+
+For `Q = sum(c_i X_i)`, the conditional standard-deviation range is
+`[max(0, 2 max(w_i) - S), S]`, where `w_i = abs(c_i) u_i` and `S = sum(w_i)`.
+The retained AME2020 Part I, printed page030002-2 (PDFpage3), identifies quoted
+uncertainties as one standard deviation. The original catalog qualifications
+remain historical; this new source binding does not rewrite them. The range
+uses those marginal magnitudes without choosing their covariance. It is not a
+hard error interval, confidence interval or selected covariance.
+Missing magnitudes remain missing. Different output endpoints need not be
+attainable under one common covariance matrix.
+
+Deuterium has the same source expression for neutron and proton separation:
+`ME(H-1) + ME(n) - ME(H-2) = 2224.566229 keV`, with conditional SD range
+`[0.000412, 0.000468] keV`. These are the same source-derived quantity.
+The binding-energy route retains `2224.5662 keV`; its `0.000029 keV` difference
+comes from the separately rounded source fields. A further identity is
+`Sn(He-4) - Sp(He-4) = Sn(H-3) - Sp(He-3) = 763.754976 keV`.
+The nine numerical separation/Q rows have coefficient rank seven; this is
+algebraic rank, not seven independent experiments.
+
+The separately bound `covariance_inputs.json` retains the official covariance
+archive and both AME2020 papers. All ten required nuclides and 55 matrix entries
+are present. Six light-nuclide separation calculations use the precise atomic
+masses in Part II Table A (printed page030003-2, PDFpage3). Their `C Sigma C^T`
+is retained in `(nano-u)^2`, including shared-output dependence. Published
+coefficients are preserved exactly and the selected matrix passes exact PSD
+checking; displayed square roots use ten significant digits, round half even.
+
+The three Cs calculations remain held: the Cs-133 covariance diagonal falls
+outside the declared nearest-last-place compatibility interval for its retained
+marginal uncertainty. This is a chosen conservative check, not a claim about a
+universal AME rounding policy or missing Cs covariance. Neither the matrix nor
+the printed marginal is altered. The new mass-unit means are separate from the
+unchanged baseline keV values and binding-energy-per-nucleon fields.
+
+Part I Table A (printed page030002-3, PDFpage4) supplies the mass-to-energy
+coefficient and its standard uncertainty. It is retained as context and not
+applied; its dependence on the mass inputs is unresolved. Current M3 supplies
+raw affine evaluation and moment propagation. Matter I owns units and source
+interpretation; typed M3 acceptance, a complete physical budget and native mass
+prediction are not claimed. The original catalog and source manifest remain
+byte-preserved.
 
 ## Explicit offline source adoption
 
