@@ -252,7 +252,6 @@ class PropertyTests(unittest.TestCase):
             if source.get('pdf_path'):paths.add(source['pdf_path'])
         binding=mass.producer.verify(self.root);vendor=mass.producer.VENDOR
         paths.add(str(vendor/'binding.json'))
-        paths.add(str(vendor/binding['producer_handoff']['path']))
         paths.update(str(vendor/'current'/name) for name in binding['files'])
         paths.update(mass.covariance.input_paths(self.root))
         for name in paths:

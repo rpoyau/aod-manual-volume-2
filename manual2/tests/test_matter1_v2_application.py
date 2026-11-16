@@ -1,4 +1,4 @@
-"""Persisted request integrity and incomplete evidence cannot become success."""
+"""Persisted scientific conservation integrity and incomplete evidence cannot become success."""
 import hashlib
 import json
 from pathlib import Path
@@ -16,17 +16,18 @@ import record_matter1_v2_acceptance as receipt
 
 
 class V2ApplicationTests(unittest.TestCase):
-    def test_v1_and_available_request_preserved(self):
+    def test_historical_scientific_inputs_preserved(self):
         result = binding.verify(ROOT)
         self.assertEqual(result['status'], 'PASS_V2_CONSERVATION')
-        self.assertEqual(result['mentioned_latest_archive']['integrity'], 'not_verified')
+        self.assertEqual(result['v1_files'], 20)
+        self.assertNotIn('request_files', result)
 
     def test_persisted_omission_and_v1_edit_reject_both_modes_without_repair(self):
         request = json.loads((ROOT / binding.REQUEST).read_bytes())
         for omit in (False, True):
             with self.subTest(omit=omit), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
-                for group in ('v1_sha256', 'request_sha256'):
+                for group in ('v1_sha256',):
                     for name in request[group]:
                         target = root / name
                         target.parent.mkdir(parents=True, exist_ok=True)

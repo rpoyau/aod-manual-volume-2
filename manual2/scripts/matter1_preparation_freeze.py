@@ -1,4 +1,4 @@
-"""Freeze an actual coupled-preparation readout through the current M3 API."""
+"""Freeze an actual coupled-preparation readout through the current AOD API."""
 from copy import deepcopy
 from dataclasses import asdict
 from fractions import Fraction as Q
@@ -7,12 +7,12 @@ from pathlib import Path
 from unittest.mock import patch
 
 import matter1_coupled_preparations as coupled
-import matter1_m3_producer as producer
+import matter1_aod_producer as producer
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_NAMES = ('manual2/scripts/matter1_preparation_freeze.py',
                 'manual2/scripts/matter1_coupled_preparations.py',
-                'manual2/scripts/matter1_m3_producer.py')
+                'manual2/scripts/matter1_aod_producer.py')
 
 
 def original(root=ROOT, modules=None):

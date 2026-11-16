@@ -12,18 +12,19 @@ import unittest
 
 OPTIMIZED_MODULES = frozenset({
     'test_matter1_acceptance_inventory',
-    'test_matter1_application', 'test_matter1_data', 'test_matter1_folding',
+    'test_matter1_application',
+    'test_matter1_source_boundary', 'test_matter1_data', 'test_matter1_folding',
     'test_matter1_temporal', 'test_matter1_hyperfine', 'test_matter1_stateful',
     'test_matter1_metrology', 'test_matter1_atomic', 'test_matter1_bipm',
-    'test_matter1_v2_application', 'test_matter1_m3', 'test_matter1_m3_evidence',
+    'test_matter1_v2_application', 'test_matter1_aod_exports', 'test_matter1_aod_evidence',
     'test_matter1_bipm_precision', 'test_matter1_isotopes', 'test_matter1_survival',
     'test_matter1_isotope_integration', 'test_matter1_constructed_coupling',
     'test_matter1_witnessed_retention', 'test_matter1_retention_adapter',
-    'test_matter1_m3_observation', 'test_matter1_m3_metrology',
+    'test_matter1_temporal_observation', 'test_matter1_metrology_comparison',
     'test_matter1_data_classes', 'test_matter1_external_transitions',
     'test_matter1_properties', 'test_matter1_mass_covariance', 'test_matter1_property_model',
     'test_matter1_coupled_preparations', 'test_matter1_preparation_workflow',
-    'test_matter1_m3_producer',
+    'test_matter1_aod_producer',
 })
 
 

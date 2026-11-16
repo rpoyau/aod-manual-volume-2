@@ -27,7 +27,7 @@ DATA = Path('manual2/data/m1/constructed_coupling')
 PROFILE = 'matter1:constructed-coupling-r02:v1'
 PAIRED_PROFILE = 'matter1:paired-aggregate-configurations:v1'
 MEMBERS_SHA256 = '72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b'
-PACKET_NOTE_SHA256 = 'c1fac55a2de9c924ba4c5febf4d3475b1b60ecf1be818e4a298baebe80cda4bd'
+SCIENTIFIC_MEMBERS_SHA256 = '46f6d4e3a596bf8abede60060c4293c53feac8a0c160876c512ce0530f06b3c4'
 R02_CASES = ('baseline', 'add_346_to_parent', 'same_addition_feedback_disabled', 'one_fewer_346_constituent')
 CASE_IDS = tuple('r02/'+case for case in R02_CASES) + ('configurations/Fl-286', 'configurations/Fl-289')
 ORIGINAL_FILES = ('checks.json', 'constructed_state.json', 'closures.csv', 'windowed_relations.csv',
@@ -48,20 +48,28 @@ def digest(value):
 
 
 def check_sources(root):
+    """Verify scientific inputs and return the original packet identity for frozen recipes.
+
+    The historical member count describes the original selected packet, not the
+    current admission subset. Task history is not an execution dependency.
+    """
     root = Path(root)
     verify_adapter(root)
     packet = root/DATA/'source_packet'
     require(sha(packet/'ORIGINAL_MEMBER_BINDINGS.json') == MEMBERS_SHA256, 'R02 member authority changed')
-    require(sha(packet/'PACKET_NOTE.md') == PACKET_NOTE_SHA256, 'R02 packet scope changed')
+    require(sha(packet/'SCIENTIFIC_MEMBER_BINDINGS.json') == SCIENTIFIC_MEMBERS_SHA256, 'Scientific member authority changed')
     members = read_json(packet/'ORIGINAL_MEMBER_BINDINGS.json')
+    selected = read_json(packet/'SCIENTIFIC_MEMBER_BINDINGS.json')
+    require(selected['original_member_manifest_sha256'] == MEMBERS_SHA256, 'Original scientific provenance changed')
     require({str(p.relative_to(packet)) for p in packet.rglob('*') if p.is_file()} ==
-            set(members['members']) | {'ORIGINAL_MEMBER_BINDINGS.json', 'PACKET_NOTE.md'},
-            'R02 selected packet inventory differs')
-    for name, binding in members['members'].items():
+            set(selected['members']) | {'ORIGINAL_MEMBER_BINDINGS.json', 'SCIENTIFIC_MEMBER_BINDINGS.json'},
+            'Scientific packet inventory differs')
+    for name, binding in selected['members'].items():
+        require(members['members'].get(name) == binding, 'Scientific membership changed: ' + name)
         path = packet/name
         require(path.stat().st_size == binding['bytes'] and sha(path) == binding['sha256'], 'R02 original member changed: '+name)
     manifest = read_json(packet/'BUNDLE_MANIFEST.json')['sha256']
-    for name, binding in members['members'].items():
+    for name, binding in selected['members'].items():
         if name != 'BUNDLE_MANIFEST.json':
             require(manifest[binding['original_archive_member']] == binding['sha256'], 'Original archive membership differs')
     bindings = read_json(packet/'source_bindings.json')
@@ -300,4 +308,7 @@ def verify(root, artifact_root=None):
                     'Whole constructed artifact differs from original-context execution: '+name)
     return {'profile': PROFILE, 'status': 'passed', 'outputs_verified': len(OUTPUTS),
             'r02_original_outputs_reproduced': 52, 'paired_configurations': ['Fl-286', 'Fl-289'],
-            'larger_control': 'Og-294', 'physical_isotope_prediction': False}
+            'larger_control': 'Og-294', 'physical_isotope_prediction': False,
+            'source_admission': {'scientific_members_verified': len(read_json(root/DATA/'source_packet/SCIENTIFIC_MEMBER_BINDINGS.json')['members']),
+                'scientific_manifest_sha256': SCIENTIFIC_MEMBERS_SHA256,
+                'historical_packet_members': 39, 'task_history_required': False}}

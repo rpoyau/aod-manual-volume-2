@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT/'manual2/scripts'))
 import matter1_preparation_workflow as w
 import matter1_coupled_preparations as c
-import matter1_m3_producer as p
+import matter1_aod_producer as p
 
 
 class PreparationWorkflowTests(unittest.TestCase):

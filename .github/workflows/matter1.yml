@@ -19,12 +19,12 @@ jobs:
       MPLCONFIGDIR: /tmp/matter1-mpl
     steps:
       - uses: actions/checkout@v4
-      - name: Provision exact M3 upstream dependency
+      - name: Provision exact AOD upstream dependency
         uses: actions/checkout@v4
         with:
           repository: rpoyau/aod
-          ref: 8c3149b9d3d924b80b9385b178da4ba2c39175e8
-          path: .m3-upstream
+          ref: dc1a434c8fc2b7b958e44d7da63277c7856a8d67
+          path: .aod-upstream
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
@@ -67,13 +67,13 @@ jobs:
           python -B scripts/check_matter1_application.py | tee /tmp/matter1-checks/conservation.json
           python -B scripts/check_matter1_campaign_preservation.py | tee /tmp/matter1-checks/campaign-preservation.json
           python -B manual2/scripts/verify_matter1_campaign.py --products-only | tee /tmp/matter1-checks/campaign-products.json
-          for lane in folding temporal hyperfine stateful metrology bipm bipm_precision atomic isotopes survival constructed_coupling witnessed_retention m3_observation retention_adapter m3_metrology; do
+          for lane in folding temporal hyperfine stateful metrology bipm bipm_precision atomic isotopes survival constructed_coupling witnessed_retention temporal_observation retention_adapter metrology_comparison; do
             python -B "manual2/scripts/verify_matter1_${lane}.py" | tee "/tmp/matter1-checks/${lane}.json"
             python -B -O "manual2/scripts/verify_matter1_${lane}.py" > "/tmp/matter1-checks/${lane}-optimized.json"
           done
           python -B scripts/check_matter1_v2_application.py | tee /tmp/matter1-checks/v2-conservation.json
-          python -B scripts/check_matter1_m3_consumer.py --upstream-root .m3-upstream | tee /tmp/matter1-checks/m3-consumer.json
-          python -B -O scripts/check_matter1_m3_consumer.py --upstream-root .m3-upstream > /tmp/matter1-checks/m3-consumer-optimized.json
+          python -B scripts/check_matter1_aod_consumer.py --upstream-root .aod-upstream | tee /tmp/matter1-checks/aod-consumer.json
+          python -B -O scripts/check_matter1_aod_consumer.py --upstream-root .aod-upstream > /tmp/matter1-checks/aod-consumer-optimized.json
           node manual2/scripts/check_matter1_companion.cjs --screenshots-dir /tmp/matter1-checks/browser | tee /tmp/matter1-checks/browser.json
       - name: Build paired publication and verify actual PDF references
         run: |
@@ -124,12 +124,12 @@ jobs:
             manual2/data/m1/survival/
             manual2/data/m1/constructed_coupling/
             manual2/data/m1/witnessed_retention/
-            manual2/data/m1/m3_metrology/
+            manual2/data/m1/metrology_comparison/
             manual2/data/m1/campaign/
-            manual2/data/m1/m3_observation/
+            manual2/data/m1/temporal_observation/
             manual2/vendor/aod_m3_metrology/
             manual2/vendor/aod_m3/
-            manual2/vendor/aod_m3_producer/
+            manual2/vendor/aod_producer/
             /tmp/matter1-checks/
             /tmp/matter1-paired-build/*-console.txt
             /tmp/matter1-paired-build/manual2/*-console.txt

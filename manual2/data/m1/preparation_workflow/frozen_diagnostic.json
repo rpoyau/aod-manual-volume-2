@@ -1223,13 +1223,13 @@
               "scope": "declared:matter1-construction:inner"
             }
           ],
-          "preparation_sha256": "8fca9410e2d4bb55e68044c069a4f22de492cad8d90987e1bbcddb7e25b46c32"
+          "preparation_sha256": "5b3c03da9ccaa07e4b09527fad178868152e5249b83592e36d8c3ac0e8e59a06"
         }
       ],
       "epoch_seconds": "0",
       "frozen_before_validation": true,
       "id": "matter1:coupled-preparation:stipulated-unit-gains:v1",
-      "law_sha256": "4c6729fbac786491a5767096302ef185faf77fff922d8680f70b16e9fcd96a44",
+      "law_sha256": "fb299b5c26d05b2aaf4b25cb47db4a42d62bbc683925d715654109242f8ab165",
       "physical_applicability": "unknown",
       "reference_gain": "1",
       "schema": "aod_temporal_observation_v1",
@@ -13085,11 +13085,11 @@
     "preparation": {
       "id": "matter1:coupled-neutral-H1:one-round:v1",
       "parameters": {
-        "checkpoint_sha256": "c104faba3103f785a27258083ba0b7130f53fefa79f44cbfcd897f6e46a07d90",
+        "checkpoint_sha256": "30f89d18581c6dfdebd25741ff765d3fcfcd454f7271c233e0a356d9bb1b0bd8",
         "code_sha256": {
-          "manual2/scripts/matter1_coupled_preparations.py": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-          "manual2/scripts/matter1_m3_producer.py": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7",
-          "manual2/scripts/matter1_preparation_freeze.py": "e7d4855f446714f89d049879ba64dfee77fd42737d6a6a0b859e617b201bbfc9"
+          "manual2/scripts/matter1_aod_producer.py": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa",
+          "manual2/scripts/matter1_coupled_preparations.py": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+          "manual2/scripts/matter1_preparation_freeze.py": "dfbea19717bb9fdfe8fbb7db32f570331e8fd6e580da826ea0e02a24f1cbf20c"
         },
         "comparison": "Actual proton-motif/electron-motif internal pair; no physical clock identification",
         "original_config": {
@@ -13119,11 +13119,11 @@
             "selected_original_members": 39
           },
           "historical_helper_sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef",
-          "implementation_sha256": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-          "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
-          "producer_binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
-          "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
-          "producer_loader_sha256": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7"
+          "implementation_sha256": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+          "native_sha256": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+          "producer_binding_sha256": "73d17f07afbfa92c3edb0459283088a3e6b4be02727747e8f3277bf6c076193b",
+          "producer_commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
+          "producer_loader_sha256": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa"
         }
       }
     },
@@ -16626,11 +16626,11 @@
         "payload": {
           "id": "matter1:coupled-neutral-H1:one-round:v1",
           "parameters": {
-            "checkpoint_sha256": "c104faba3103f785a27258083ba0b7130f53fefa79f44cbfcd897f6e46a07d90",
+            "checkpoint_sha256": "30f89d18581c6dfdebd25741ff765d3fcfcd454f7271c233e0a356d9bb1b0bd8",
             "code_sha256": {
-              "manual2/scripts/matter1_coupled_preparations.py": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-              "manual2/scripts/matter1_m3_producer.py": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7",
-              "manual2/scripts/matter1_preparation_freeze.py": "e7d4855f446714f89d049879ba64dfee77fd42737d6a6a0b859e617b201bbfc9"
+              "manual2/scripts/matter1_aod_producer.py": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa",
+              "manual2/scripts/matter1_coupled_preparations.py": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+              "manual2/scripts/matter1_preparation_freeze.py": "dfbea19717bb9fdfe8fbb7db32f570331e8fd6e580da826ea0e02a24f1cbf20c"
             },
             "comparison": "Actual proton-motif/electron-motif internal pair; no physical clock identification",
             "original_config": {
@@ -16660,16 +16660,16 @@
                 "selected_original_members": 39
               },
               "historical_helper_sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef",
-              "implementation_sha256": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-              "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
-              "producer_binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
-              "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
-              "producer_loader_sha256": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7"
+              "implementation_sha256": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+              "native_sha256": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+              "producer_binding_sha256": "73d17f07afbfa92c3edb0459283088a3e6b4be02727747e8f3277bf6c076193b",
+              "producer_commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
+              "producer_loader_sha256": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa"
             }
           }
         },
         "role": "model",
-        "sha256": "8fca9410e2d4bb55e68044c069a4f22de492cad8d90987e1bbcddb7e25b46c32"
+        "sha256": "5b3c03da9ccaa07e4b09527fad178868152e5249b83592e36d8c3ac0e8e59a06"
       }
     ]
   },
@@ -16678,22 +16678,22 @@
     "plan": {
       "calibration_source_ids": [],
       "code_bindings": {
-        "contracts/scientific/ERROR_BUDGET.json": "d0e1b02709b32464d95dad29342748702593ea889b201aad71ee9d071bd6a257",
-        "contracts/scientific/MAP_CONTRACT.json": "8887596e94ff8361bb25dc863716ab2e33e5964d655c4e90a31686e7a2601dd0",
-        "contracts/scientific/TEMPORAL_METROLOGY.json": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
-        "contracts/scientific/TEMPORAL_OBSERVATION.json": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
-        "manual/scripts/aod_m3_experimental.py": "ae8e8ed027b60fdb42e0d6ce51465785cacb0e72b5e02986822bbc4aa4c3f45b",
-        "manual/scripts/aod_m3_metrology.py": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
-        "manual/scripts/aod_m3_temporal.py": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
-        "manual/scripts/aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
-        "manual/scripts/aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+        "contracts/scientific/ERROR_BUDGET.json": "8ea33dabcf681e01d459f170b31c10b59fdf9e63ea708c64ac6ed7c1be62a57f",
+        "contracts/scientific/MAP_CONTRACT.json": "3d6766979397c7732e6cd88793cf6befb9fa48fa69267598cfcf0d781a300aea",
+        "contracts/scientific/TEMPORAL_METROLOGY.json": "a81b261fca3be6202a1fb02d6334e60751b25d1e0c9ff5ef89bb50ba44145da9",
+        "contracts/scientific/TEMPORAL_OBSERVATION.json": "b02344dcaa98c3de1b7453d868b332b2bd537f08c9c2e92de048e337c6747e69",
+        "manual/scripts/aod_experimental_comparison.py": "791b711e732471506eaeb8cc742cf30ae368d2db49c65ad96d61c450f0fedbd1",
+        "manual/scripts/aod_mapping_error.py": "eb32fc25e05f878c70459689a89341d106c021a8db7ecf611e71646888060bf7",
+        "manual/scripts/aod_native_closure_wave.py": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+        "manual/scripts/aod_temporal_metrology.py": "636157fcc88eb10c7f9df8a1592a5faf002dd2de17758183e378e79e750bc4b7",
+        "manual/scripts/aod_temporal_observation.py": "35c786adeac653ac9348424e915e3b0df98b8fc61ec7c6226bf82819540f7086"
       },
       "comparison_criterion": {
         "kind": "signed_residual",
         "uncertainty": "joint_if_supplied_else_partial"
       },
       "exposure": "declared_fixture",
-      "original_context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+      "original_context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
       "output_definition": {
         "estimator": "propagated_mean",
         "name": "count"
@@ -16856,7 +16856,7 @@
     },
     "schema": "aod.m3.prediction-plan.v1",
     "source_id": "matter1:coupled-neutral-H1:complete-plan",
-    "source_sha256": "f3946688962f0675a78cf44a27a61a6d0359e62e93fa82cc7b5e2813d1531eda"
+    "source_sha256": "3bfd3c008f6c1c09e191a5142f0067630339a9cee10395a839de5d342462de6a"
   },
   "prediction": {
     "chronology": "declared plan and replay; no independent time-of-freeze proof",
@@ -16880,22 +16880,22 @@
       "plan": {
         "calibration_source_ids": [],
         "code_bindings": {
-          "contracts/scientific/ERROR_BUDGET.json": "d0e1b02709b32464d95dad29342748702593ea889b201aad71ee9d071bd6a257",
-          "contracts/scientific/MAP_CONTRACT.json": "8887596e94ff8361bb25dc863716ab2e33e5964d655c4e90a31686e7a2601dd0",
-          "contracts/scientific/TEMPORAL_METROLOGY.json": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
-          "contracts/scientific/TEMPORAL_OBSERVATION.json": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
-          "manual/scripts/aod_m3_experimental.py": "ae8e8ed027b60fdb42e0d6ce51465785cacb0e72b5e02986822bbc4aa4c3f45b",
-          "manual/scripts/aod_m3_metrology.py": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
-          "manual/scripts/aod_m3_temporal.py": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
-          "manual/scripts/aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
-          "manual/scripts/aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+          "contracts/scientific/ERROR_BUDGET.json": "8ea33dabcf681e01d459f170b31c10b59fdf9e63ea708c64ac6ed7c1be62a57f",
+          "contracts/scientific/MAP_CONTRACT.json": "3d6766979397c7732e6cd88793cf6befb9fa48fa69267598cfcf0d781a300aea",
+          "contracts/scientific/TEMPORAL_METROLOGY.json": "a81b261fca3be6202a1fb02d6334e60751b25d1e0c9ff5ef89bb50ba44145da9",
+          "contracts/scientific/TEMPORAL_OBSERVATION.json": "b02344dcaa98c3de1b7453d868b332b2bd537f08c9c2e92de048e337c6747e69",
+          "manual/scripts/aod_experimental_comparison.py": "791b711e732471506eaeb8cc742cf30ae368d2db49c65ad96d61c450f0fedbd1",
+          "manual/scripts/aod_mapping_error.py": "eb32fc25e05f878c70459689a89341d106c021a8db7ecf611e71646888060bf7",
+          "manual/scripts/aod_native_closure_wave.py": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+          "manual/scripts/aod_temporal_metrology.py": "636157fcc88eb10c7f9df8a1592a5faf002dd2de17758183e378e79e750bc4b7",
+          "manual/scripts/aod_temporal_observation.py": "35c786adeac653ac9348424e915e3b0df98b8fc61ec7c6226bf82819540f7086"
         },
         "comparison_criterion": {
           "kind": "signed_residual",
           "uncertainty": "joint_if_supplied_else_partial"
         },
         "exposure": "declared_fixture",
-        "original_context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+        "original_context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
         "output_definition": {
           "estimator": "propagated_mean",
           "name": "count"
@@ -17058,7 +17058,7 @@
       },
       "schema": "aod.m3.prediction-plan.v1",
       "source_id": "matter1:coupled-neutral-H1:complete-plan",
-      "source_sha256": "f3946688962f0675a78cf44a27a61a6d0359e62e93fa82cc7b5e2813d1531eda"
+      "source_sha256": "3bfd3c008f6c1c09e191a5142f0067630339a9cee10395a839de5d342462de6a"
     },
     "propagation": {
       "covariance_units": [
@@ -17258,14 +17258,14 @@
         }
       ],
       "dependence": {
-        "context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+        "context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
         "kind": "shared_original_context",
         "reason": "deterministic views of the same declared context; no stochastic law supplied",
         "stochastic_cross_covariance": null
       },
       "epoch_seconds": "0",
-      "operator_sha256": "670f1583bcdce8c6fca79a2a8cc0562335a57ab008e9a51bf73ae5ce0f593706",
-      "original_context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+      "operator_sha256": "2824a77f5ae53d8256c8a2ebbac81280cf9afee9531a2bdde3eee6621d4a5799",
+      "original_context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
       "outputs": {
         "count": {
           "quantity": "compared_reclosures",
@@ -17273,7 +17273,7 @@
           "value": "2"
         }
       },
-      "prediction_sha256": "e6db8ad10938fbca0bc02f335f6bc2c5e779311463458879d01c7545e8d51fae",
+      "prediction_sha256": "c28e86c1f0c21f5ce2ae9f010b9257e2fe8920397ee5c16b215f657673c7ce1d",
       "schema": "aod.temporal.readouts.v1",
       "source_dependencies": [
         {
@@ -17281,11 +17281,11 @@
           "payload": {
             "id": "matter1:coupled-neutral-H1:one-round:v1",
             "parameters": {
-              "checkpoint_sha256": "c104faba3103f785a27258083ba0b7130f53fefa79f44cbfcd897f6e46a07d90",
+              "checkpoint_sha256": "30f89d18581c6dfdebd25741ff765d3fcfcd454f7271c233e0a356d9bb1b0bd8",
               "code_sha256": {
-                "manual2/scripts/matter1_coupled_preparations.py": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-                "manual2/scripts/matter1_m3_producer.py": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7",
-                "manual2/scripts/matter1_preparation_freeze.py": "e7d4855f446714f89d049879ba64dfee77fd42737d6a6a0b859e617b201bbfc9"
+                "manual2/scripts/matter1_aod_producer.py": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa",
+                "manual2/scripts/matter1_coupled_preparations.py": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+                "manual2/scripts/matter1_preparation_freeze.py": "dfbea19717bb9fdfe8fbb7db32f570331e8fd6e580da826ea0e02a24f1cbf20c"
               },
               "comparison": "Actual proton-motif/electron-motif internal pair; no physical clock identification",
               "original_config": {
@@ -17315,16 +17315,16 @@
                   "selected_original_members": 39
                 },
                 "historical_helper_sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef",
-                "implementation_sha256": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-                "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
-                "producer_binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
-                "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
-                "producer_loader_sha256": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7"
+                "implementation_sha256": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+                "native_sha256": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+                "producer_binding_sha256": "73d17f07afbfa92c3edb0459283088a3e6b4be02727747e8f3277bf6c076193b",
+                "producer_commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
+                "producer_loader_sha256": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa"
               }
             }
           },
           "role": "model",
-          "sha256": "8fca9410e2d4bb55e68044c069a4f22de492cad8d90987e1bbcddb7e25b46c32"
+          "sha256": "5b3c03da9ccaa07e4b09527fad178868152e5249b83592e36d8c3ac0e8e59a06"
         }
       ],
       "window": [
@@ -17394,7 +17394,7 @@
           "reference": 2
         },
         "directional_rcd_status": "not_admitted_by_count_projection",
-        "source_context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+        "source_context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
         "window": [
           0,
           5619
@@ -17423,9 +17423,9 @@
     },
     "schema": "aod.m3.frozen-prediction.v1",
     "source_dependencies": {
-      "matter1:coupled-neutral-H1:complete-plan": "f3946688962f0675a78cf44a27a61a6d0359e62e93fa82cc7b5e2813d1531eda",
+      "matter1:coupled-neutral-H1:complete-plan": "3bfd3c008f6c1c09e191a5142f0067630339a9cee10395a839de5d342462de6a",
       "matter1:coupled-neutral-H1:exact-readout": "8d7a49a52af71209135fa295483201e5574d5d56592234f8cef9daa895ef392b",
-      "matter1:coupled-neutral-H1:original-setup": "8fca9410e2d4bb55e68044c069a4f22de492cad8d90987e1bbcddb7e25b46c32",
+      "matter1:coupled-neutral-H1:original-setup": "5b3c03da9ccaa07e4b09527fad178868152e5249b83592e36d8c3ac0e8e59a06",
       "matter1:coupled-neutral-H1:readout-law": "4b6020e21ffb186b1c48455fb11648a765d0e8e1d580ff6a9b468c1d1f2501ca"
     }
   },
@@ -17440,22 +17440,22 @@
           "native-count": {
             "calibration_source_ids": [],
             "code_bindings": {
-              "contracts/scientific/ERROR_BUDGET.json": "d0e1b02709b32464d95dad29342748702593ea889b201aad71ee9d071bd6a257",
-              "contracts/scientific/MAP_CONTRACT.json": "8887596e94ff8361bb25dc863716ab2e33e5964d655c4e90a31686e7a2601dd0",
-              "contracts/scientific/TEMPORAL_METROLOGY.json": "337e9900c9ec11667a3795827eb6b9059eca85efbc2d488fb77e15da7fe1be33",
-              "contracts/scientific/TEMPORAL_OBSERVATION.json": "e6ef0e7e9c1a25da52dafa1234b49806796a068c2ad88ba4e9441951eb9d9f13",
-              "manual/scripts/aod_m3_experimental.py": "ae8e8ed027b60fdb42e0d6ce51465785cacb0e72b5e02986822bbc4aa4c3f45b",
-              "manual/scripts/aod_m3_metrology.py": "d2f53146257b1d29939587abc167f87e9e810f904660b3bfd81a5015ef6e9618",
-              "manual/scripts/aod_m3_temporal.py": "1cfc0ecebc1d4c5eb0b22184af171f4d60e9630a211dedbd66ae5a12df920aec",
-              "manual/scripts/aod_mapping_error.py": "77afd00aac413fbaf7b4386d40f79be318d7d813081c6db17ffce1cb6c41f480",
-              "manual/scripts/aod_native_closure_wave.py": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf"
+              "contracts/scientific/ERROR_BUDGET.json": "8ea33dabcf681e01d459f170b31c10b59fdf9e63ea708c64ac6ed7c1be62a57f",
+              "contracts/scientific/MAP_CONTRACT.json": "3d6766979397c7732e6cd88793cf6befb9fa48fa69267598cfcf0d781a300aea",
+              "contracts/scientific/TEMPORAL_METROLOGY.json": "a81b261fca3be6202a1fb02d6334e60751b25d1e0c9ff5ef89bb50ba44145da9",
+              "contracts/scientific/TEMPORAL_OBSERVATION.json": "b02344dcaa98c3de1b7453d868b332b2bd537f08c9c2e92de048e337c6747e69",
+              "manual/scripts/aod_experimental_comparison.py": "791b711e732471506eaeb8cc742cf30ae368d2db49c65ad96d61c450f0fedbd1",
+              "manual/scripts/aod_mapping_error.py": "eb32fc25e05f878c70459689a89341d106c021a8db7ecf611e71646888060bf7",
+              "manual/scripts/aod_native_closure_wave.py": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+              "manual/scripts/aod_temporal_metrology.py": "636157fcc88eb10c7f9df8a1592a5faf002dd2de17758183e378e79e750bc4b7",
+              "manual/scripts/aod_temporal_observation.py": "35c786adeac653ac9348424e915e3b0df98b8fc61ec7c6226bf82819540f7086"
             },
             "comparison_criterion": {
               "kind": "signed_residual",
               "uncertainty": "joint_if_supplied_else_partial"
             },
             "exposure": "declared_fixture",
-            "original_context_sha256": "a09a3913522d7f2644bc8e401f0a2eb23b3a95ea9f1336a1215ddba799e4ffd3",
+            "original_context_sha256": "8d5bd0d8ae5c4f8e42b6e2ba0c7c3f58ffc92539ec7d664541570500b024c231",
             "output_definition": {
               "estimator": "propagated_mean",
               "name": "count"
@@ -17619,7 +17619,7 @@
         }
       },
       "role": "model",
-      "sha256": "f3946688962f0675a78cf44a27a61a6d0359e62e93fa82cc7b5e2813d1531eda"
+      "sha256": "3bfd3c008f6c1c09e191a5142f0067630339a9cee10395a839de5d342462de6a"
     },
     "matter1:coupled-neutral-H1:exact-readout": {
       "id": "matter1:coupled-neutral-H1:exact-readout",
@@ -17688,11 +17688,11 @@
       "payload": {
         "id": "matter1:coupled-neutral-H1:one-round:v1",
         "parameters": {
-          "checkpoint_sha256": "c104faba3103f785a27258083ba0b7130f53fefa79f44cbfcd897f6e46a07d90",
+          "checkpoint_sha256": "30f89d18581c6dfdebd25741ff765d3fcfcd454f7271c233e0a356d9bb1b0bd8",
           "code_sha256": {
-            "manual2/scripts/matter1_coupled_preparations.py": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-            "manual2/scripts/matter1_m3_producer.py": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7",
-            "manual2/scripts/matter1_preparation_freeze.py": "e7d4855f446714f89d049879ba64dfee77fd42737d6a6a0b859e617b201bbfc9"
+            "manual2/scripts/matter1_aod_producer.py": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa",
+            "manual2/scripts/matter1_coupled_preparations.py": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+            "manual2/scripts/matter1_preparation_freeze.py": "dfbea19717bb9fdfe8fbb7db32f570331e8fd6e580da826ea0e02a24f1cbf20c"
           },
           "comparison": "Actual proton-motif/electron-motif internal pair; no physical clock identification",
           "original_config": {
@@ -17722,16 +17722,16 @@
               "selected_original_members": 39
             },
             "historical_helper_sha256": "ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef",
-            "implementation_sha256": "ca1dae33f3094467d2007d19d5f0aa094b00d893bad2b154a8687a413f546144",
-            "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
-            "producer_binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
-            "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
-            "producer_loader_sha256": "08e9f1f84b0eeb483b1c5d17d768d8063d1159ca048f967c8b81057f76da72e7"
+            "implementation_sha256": "68d6cac69061bb78539862663b2d76ad6c9078e54e2f79c400bef66868fbfcae",
+            "native_sha256": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+            "producer_binding_sha256": "73d17f07afbfa92c3edb0459283088a3e6b4be02727747e8f3277bf6c076193b",
+            "producer_commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
+            "producer_loader_sha256": "eed456a93a42bcaf7d025d613c9ab996f1ac87bda310e5bf4f04aa405e96eefa"
           }
         }
       },
       "role": "model",
-      "sha256": "8fca9410e2d4bb55e68044c069a4f22de492cad8d90987e1bbcddb7e25b46c32"
+      "sha256": "5b3c03da9ccaa07e4b09527fad178868152e5249b83592e36d8c3ac0e8e59a06"
     },
     "matter1:coupled-neutral-H1:readout-law": {
       "id": "matter1:coupled-neutral-H1:readout-law",

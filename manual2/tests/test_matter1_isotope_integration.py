@@ -12,9 +12,9 @@ import isotope_preservation as preservation
 import check_matter1_reproduction as reproduction
 
 class IsotopeIntegrationTests(unittest.TestCase):
-    def test_frozen_data_skills_and_geometry_are_preserved(self):
+    def test_frozen_scientific_data_and_geometry_are_preserved(self):
         report=preservation.verify(ROOT)
-        self.assertEqual(report['preserved_files'],70)
+        self.assertEqual(report['preserved_files'],59)
         self.assertEqual(report['archived_ui_files'],4)
         self.assertEqual(report['active_ui'],'verified_successor')
 
@@ -49,8 +49,8 @@ class IsotopeIntegrationTests(unittest.TestCase):
         self.assertIsNone(fl['half_life']['value_seconds'])
         self.assertEqual(fl['support_coordinates']['r_n'],70)
 
-    def test_reproduction_snapshot_detects_bound_historical_log_mutation(self):
-        name='manual2/data/m1/constructed_coupling/source_packet/historical_checks/checks_test_normal.log'
+    def test_reproduction_snapshot_detects_scientific_source_mutation(self):
+        name='manual2/data/m1/constructed_coupling/source_packet/contract.json'
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);target=root/name
             target.parent.mkdir(parents=True);shutil.copy2(ROOT/name,target)
@@ -59,7 +59,7 @@ class IsotopeIntegrationTests(unittest.TestCase):
             self.assertIn(name,before)
             build_log.write_text('changed build output\n')
             self.assertEqual(reproduction.snapshot(root),before)
-            target.write_bytes(target.read_bytes()+b'\nchanged historical evidence\n')
+            target.write_bytes(target.read_bytes()+b'\nchanged scientific source\n')
             self.assertNotEqual(reproduction.snapshot(root),before)
 
 if __name__=='__main__':unittest.main()

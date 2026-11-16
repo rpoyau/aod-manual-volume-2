@@ -7,10 +7,10 @@ import matter1_foundation as foundation
 
 APPLICATION = 'manual2/scripts/matter1_constructed_coupling.py'
 RECEIPT = Path('manual2/evidence/constructed-source-rebind-2026-11-09.json')
-RECEIPT_SHA256 = 'fa1584a222a5e02c8cfd74036ca5ac6f257ce2afe42465700752f978fa7b3c1a'
+RECEIPT_SHA256 = '9128a4d24e536dea7bc4393a842ab6fac43af6c788a3d2c62a840ddab9671848'
 RETENTION_APPLICATION = 'manual2/scripts/matter1_retention_adapter.py'
 RETENTION_RECEIPT = Path('manual2/evidence/retention-source-rebind-2026-11-09.json')
-RETENTION_RECEIPT_SHA256 = '5db133d4bc95831d87caf0d0cfdf535ead35a81614966b46f5477c6bdc379925'
+RETENTION_RECEIPT_SHA256 = '006cbb6e2c226af436f4ce4b0f38eab7f3995cd0956e60593180cfb1ab95ab38'
 UNCHANGED_RECIPES = {
     'manual2/scripts/generate_matter1_constructed_coupling.py',
     'manual2/scripts/verify_matter1_constructed_coupling.py',

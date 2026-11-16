@@ -55,7 +55,7 @@ def verify_foundation(root):
     actual = foundation_files(root)
     require(actual == binding['files'], 'Pinned Main source/input mismatch')
     require(manifest_digest(actual) == binding['source_digest'], 'Foundation manifest digest mismatch')
-    from m3_preservation import binding as verify_successor
+    from scientific_preservation import binding as verify_successor
     verify_successor(root)
     return binding
 

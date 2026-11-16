@@ -21,10 +21,11 @@ class CoupledPreparationTests(unittest.TestCase):
 
     def test_current_producer_with_unchanged_historical_helpers(self):
         binding = self.result['source_binding']
-        self.assertEqual(binding['producer_commit'], m.PRODUCER)
+        self.assertEqual(binding['producer_commit'], m.producer.HEAD)
+        self.assertEqual(m.protocol(ROOT)['producer_commit'], m.producer.HEAD)
         self.assertEqual(binding['historical_helper_sha256'], m.LEGACY_SHA)
         self.assertEqual(binding['producer_loader_sha256'], hashlib.sha256(
-            (ROOT/'manual2/scripts/matter1_m3_producer.py').read_bytes()).hexdigest())
+            (ROOT/'manual2/scripts/matter1_aod_producer.py').read_bytes()).hexdigest())
         session = m.initialize(self.config, ROOT)
         self.assertIs(session.construction.module.n, m.producer.load(ROOT).native)
 

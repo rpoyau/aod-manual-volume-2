@@ -21,6 +21,12 @@ CODE_SHA=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 SOURCE_BINDING_SHA='232b335d691adb4c1bd9f575b4746cf03021ab2b1f3fbca3ca9923af057c77ef'
 NATIVE_SHA='3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf'
 EXTRA_SOURCE_SHA={'original/README.md': 'c01de09c59a031c0bf8f4b34172542516a792522dac21e191b6e0edeadd675bb', 'original/SHA256SUMS.json': '7e80ecbf40f06a1ed01c540b069d1ecc2226c7e4e307433a0b5570bc150a874e', 'original/check_finite_afc.py': 'a9019a7a64ad0ab49f5f76422bb246cc3ed397756f06ba45ed53cc85d66a8373', 'original/retention_fixture.py': '02ade8705bc3f45879f8ed8859ece7e90f18be5b548cb9076ac319475a65b757', 'original/test_retention_fixture.py': '3531d9d3febe91d234a394081c8b1c8183bf912f031f254d34dd9f7ef1626faf', 'migration.json': 'ea755fdea0849f4ea8feccfe1b3f37b5921d596264b32b5fd2cf11c01e5bbfe9'}
+# Original document identities remain recipe provenance. Their detached bytes are
+# not scientific runtime inputs and are not verified by the current replay.
+HISTORICAL_DOCUMENT_SHA={
+    'inputs/owner_plan.md':'d3ed657888a6a3c63b13dd34b92a38557189aaccda81775144598267c053859c',
+    'original/README.md':'c01de09c59a031c0bf8f4b34172542516a792522dac21e191b6e0edeadd675bb',
+}
 PRODUCTS=('prediction.json','survival.csv','two_history_comparison.csv','terminal_counts.csv','finite_kernels.json','sha256.json')
 
 
@@ -55,12 +61,21 @@ def canonical(value):
 def digest(value):return hashlib.sha256(canonical(value)).hexdigest()
 
 
+def current_source_hashes(record):
+    sources={**record['sha256'],**EXTRA_SOURCE_SHA}
+    for name,sha in HISTORICAL_DOCUMENT_SHA.items():
+        require(sources.get(name)==sha,'Changed historical document identity: '+name)
+    return {name:sha for name,sha in sources.items() if name not in HISTORICAL_DOCUMENT_SHA}
+
+
 def verify_sources(root=ROOT):
     root=Path(root);base=root/DATA
     require(hashlib.sha256((base/'source_bindings.json').read_bytes()).hexdigest()==SOURCE_BINDING_SHA,
             'Changed original source-binding manifest')
     record=json.loads((base/'source_bindings.json').read_text())
-    for name,sha in {**record['sha256'],**EXTRA_SOURCE_SHA}.items():
+    for name in HISTORICAL_DOCUMENT_SHA:
+        require(not (base/name).exists(),'Historical document is not a runtime input: '+name)
+    for name,sha in current_source_hashes(record).items():
         require(hashlib.sha256((base/name).read_bytes()).hexdigest()==sha,'Changed bound source: '+name)
     require(hashlib.sha256((root/'manual2/scripts/matter1_witnessed_retention.py').read_bytes()).hexdigest()==CODE_SHA,
             'Root implementation differs from executing implementation')
@@ -662,12 +677,17 @@ def generate(root=ROOT):
 def verify(root=ROOT):
     """Read-only full replay; no generation or repair of persisted files."""
     root=Path(root);products=generate(root)
-    source_names=set(json.loads((root/DATA/'source_bindings.json').read_text())['sha256'])
-    expected_names=source_names|set(EXTRA_SOURCE_SHA)|set(PRODUCTS)|{'source_bindings.json'}
+    sources=current_source_hashes(json.loads((root/DATA/'source_bindings.json').read_text()))
+    expected_names=set(sources)|set(PRODUCTS)|{'source_bindings.json'}
     actual_names={p.relative_to(root/DATA).as_posix() for p in (root/DATA).rglob('*') if p.is_file()}
     require(actual_names==expected_names,'Incomplete or unexpected retention files')
     for name,expected in products.items():
         require((root/DATA/name).read_bytes()==expected,'Persisted retention artifact differs: '+name)
     return {'schema_version':1,'status':'passed','model_id':MODEL_ID,'products':list(PRODUCTS),
             'kernels':20,'original_case_hashes_verified':True,'physical_prediction':False,
+            'source_boundary':{
+                'historical_source_binding_sha256':SOURCE_BINDING_SHA,
+                'current_sources_verified':sources,
+                'historical_documents_not_runtime_verified':dict(HISTORICAL_DOCUMENT_SHA),
+            },
             'file_sha256':{name:hashlib.sha256(value).hexdigest() for name,value in products.items()}}

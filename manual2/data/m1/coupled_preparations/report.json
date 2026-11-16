@@ -1055,9 +1055,9 @@
       "z": 1
     }
   ],
-  "producer_commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+  "producer_commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
   "profile": "matter1:coupled-preparations:v1",
-  "protocol_sha256": "2b0856139dc51f280716556be745c1f4acbb3bcd821b98781590582805f02d97",
+  "protocol_sha256": "e36fabac629470658b632aecb20114a4432b604bb10846405ff67829b6ba0fc9",
   "sample_domains": {
     "H1-E0": {
       "criterion_passed": true,

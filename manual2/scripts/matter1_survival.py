@@ -15,7 +15,7 @@ import hashlib
 from pathlib import Path
 
 from matter1_atomic import ValidationError, canonical, digest, read_json, require, rational
-from matter1_m3 import legacy_mapping as mapping, verify_legacy_vendor as verify_vendor
+from matter1_aod_exports import legacy_mapping as mapping, verify_legacy_vendor as verify_vendor
 from matter1_foundation import prior_m3_source_bytes
 
 DATA = Path('manual2/data/m1/survival')

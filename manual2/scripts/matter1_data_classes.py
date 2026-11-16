@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = 'manual2/data/m1/'
 REGISTRY = BASE + 'classification/data_cards.json'
 LOCK = 'manual2/evidence/data-classes/source-bindings.json'
-LOCK_SHA256 = 'c7cb00b17666e3b23fbc6e56165de81d5c0e6cc310d646925e2da6ac52ccba52'
+LOCK_SHA256 = '90dc52b698601a33366c62f9b8b8e99a189b59b28511b134fae129879ad72f31'
 AUTHORITY_COMMIT = '71cbcf7e637ababcde3b2e073fb4ceec4b1681b9'
 AUTHORITY_TREE = '3ab04df3793beda481b4fb7ed0d628ba6765da70'
 SUPPORT = {'D0': 'exact internal fixture', 'O0': 'observable-map fixture'}
@@ -115,7 +115,7 @@ def specifications():
         _spec('conventional-hyperfine-benchmark', 'atomic/benchmark.json', ['/rows','/approximation','/input_uncertainties'], None, 'Benchmark manifest', CLAIMS[1], ['demonstration'],
               'Conventional spin-only Hamiltonian with measured/defining zero-field inputs', 'External calibrated benchmark, including its stated approximations', 'frequency and field-shift Hz', 'Partial benchmark uncertainty; no precision-spectroscopy claim', None,
               'A conventional calibrated calculation is not native AOD output; zero-field agreement is calibration.', ['/classification','/native_atomic_prediction','/uncertainty_status','/zero_field_agreement_role']),
-        _spec('source-metrology-reductions', 'm3_metrology/metrology_report.json', ['/hydrogen','/cesium','/isotope_applications/livermorium'], None, 'Benchmark manifest', CLAIMS[2], ['derived external'],
+        _spec('source-metrology-reductions', 'metrology_comparison/metrology_report.json', ['/hydrogen','/cesium','/isotope_applications/livermorium'], None, 'Benchmark manifest', CLAIMS[2], ['derived external'],
               'Published H Table IV/VI and Cs realization records; selected Lv event delays', 'Source-bound metrological reductions with acquisition protocols', 'source frequency/correction Hz and individual event delay seconds', 'Published uncertainty retained; full model/realization covariance not silently supplied', None,
               'Source reductions are distinct from atomic prediction and half-life estimates from individual delays.', ['/independent_physical_prediction','/physical_calibration','/complete_physical_uncertainty']),
         _spec('finite-survival-internal-audit', 'survival/survival_report.json', ['/exact_assertions','/causal_control','/statuses','/native_medians'], 'D0', 'Exact fixture', CLAIMS[1], ['internal'],

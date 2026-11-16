@@ -18,10 +18,10 @@ LANES = ('stateful', 'metrology', 'bipm', 'atomic')
 
 
 def criteria(root, actual_ids):
-    rows = list(csv.DictReader(io.StringIO((root / 'manual2/evidence/v2-request/SI_ACCEPTANCE.csv').read_text())))
+    rows = list(csv.DictReader(io.StringIO((root / 'manual2/tests/criteria/si_checks.csv').read_text())))
     old.require(len(rows) == 18 and {r['id'] for r in rows} == {f'SI-{n:02}' for n in range(1, 19)}, '18 SI IDs required')
     for row in rows:
-        old.require(row.pop('status') == 'PLANNED', 'request criterion was promoted')
+        old.require('status' not in row, 'Assertion inventory cannot contain execution status')
         number = row['id'][3:]
         matches = sorted(t for t in actual_ids if '.test_matter1_metrology.' in t and f'.test_si_{number}_' in t)
         if number == '13':

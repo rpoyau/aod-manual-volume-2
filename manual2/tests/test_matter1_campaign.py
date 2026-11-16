@@ -100,7 +100,7 @@ class CampaignReplayTests(unittest.TestCase):
     def test_CAMP_08_real_hydrogen_inventory_executes_without_targets(self):
         original_open=Path.open
         forbidden=('isotopes/curation.json','isotopes/catalog.json','atomic/evaluation_target.json',
-                   'm3_metrology/current/hydrogen/','m3_metrology/current/cesium/')
+                   'metrology_comparison/current/hydrogen/','metrology_comparison/current/cesium/')
         def guarded(path,*args,**kwargs):
             if any(part in str(path) for part in forbidden):
                 raise AssertionError('Prediction opened evaluation input: '+str(path))

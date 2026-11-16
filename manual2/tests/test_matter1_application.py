@@ -1,4 +1,4 @@
-"""Request/conservation guards mutate persisted copies, never the checkout."""
+"""Scientific conservation guards mutate persisted copies, never the checkout."""
 import hashlib
 import json
 from pathlib import Path
@@ -19,10 +19,11 @@ class ApplicationBindingTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         report = json.loads(result.stdout)
         self.assertEqual(report['baseline_numeric_comparisons'], 3024)
-        self.assertEqual(report['tracked_skill_files'], 11)
+        self.assertEqual(report['preserved_files'], 74)
+        self.assertNotIn('tracked_skill_files', report)
 
     def test_persisted_manifest_omission_and_changed_source_reject_read_only(self):
-        original = json.loads((ROOT / 'manual2/evidence/fusion-request.json').read_bytes())
+        original = json.loads((ROOT / 'manual2/contracts/REFERENCE_CONSERVATION.json').read_bytes())
         for omitted in (False, True):
             with self.subTest(omitted=omitted), tempfile.TemporaryDirectory() as tmp:
                 root = Path(tmp)
@@ -37,7 +38,8 @@ class ApplicationBindingTests(unittest.TestCase):
                 (root / name).write_bytes((root / name).read_bytes() + b'\n% hostile source edit\n')
                 if omitted:
                     receipt['preservation_sha256'].pop(name)
-                (root / 'manual2/evidence/fusion-request.json').write_text(json.dumps(receipt))
+                (root / 'manual2/contracts').mkdir(parents=True, exist_ok=True)
+                (root / 'manual2/contracts/REFERENCE_CONSERVATION.json').write_text(json.dumps(receipt))
                 def snapshot():
                     return {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
                             for p in root.rglob('*') if p.is_file()}
@@ -50,7 +52,7 @@ class ApplicationBindingTests(unittest.TestCase):
                     self.assertEqual(snapshot(), before)
 
     def test_acceptance_inventory_retains_39_unique_request_ids(self):
-        plan = json.loads((ROOT / 'manual2/evidence/fusion-acceptance-plan.json').read_bytes())
+        plan = json.loads((ROOT / 'manual2/tests/criteria/reference_checks.json').read_bytes())
         # Entry schema is also checked by the replayable acceptance runner.
         records = plan['records']
         self.assertEqual(len(records), 39)

@@ -17,7 +17,7 @@
     "reference_structural_RD": 5,
     "transferred_to_aggregate": false
   },
-  "assessment_sha256": "55ee73199d90a7c76f73f8905b4c4a40825fe24068903afa371d79639ae9b007",
+  "assessment_sha256": "05632dc3b0158c285861fdf86a7dfc5228caf562a750e886dc07e980e1cac55d",
   "cases": {
     "configurations/Fl-286": {
       "actual_construction": {
@@ -1219,7 +1219,7 @@
   },
   "physical_half_life": null,
   "profile": "matter1:retention-adapter-assessment:v1",
-  "retention_application_sha256": "41efc8776783de7ce47b792d4b99c1e7f06c42cfd77b72db2bcbc6dbb0ad4913",
+  "retention_application_sha256": "52fc31b00e152b14b7390f64ce2a92d47d558be949d47afaf3f37c2d40cd30b6",
   "schema": "matter1-retention-adapter-assessment-v1",
   "scientific_obligations": {
     "SURV-ATOM-01": "Physical isotope/state/preparation identification and resolved internal nuclear dynamics remain unprovided.",

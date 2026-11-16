@@ -1,4 +1,4 @@
-"""Versioned finite coupled preparations using the authenticated M3 producer.
+"""Versioned finite coupled preparations using the authenticated AOD producer.
 
 The inventory, ring, lag bridge and response law are declared application
 choices. Native current and retention diagnostics are not atomic frequencies or
@@ -19,12 +19,11 @@ import random
 import sys
 
 import matter1_campaign_engine as legacy
-import matter1_m3_producer as producer
+import matter1_aod_producer as producer
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = Path('manual2/data/m1/coupled_preparations')
 PROFILE = 'matter1:coupled-preparations:v1'
-PRODUCER = '8c3149b9d3d924b80b9385b178da4ba2c39175e8'
 LEGACY_SHA = 'ede36a2934a38d9e442fed1bf47b18b248d51b188bc64bdc1f6ad9b26a1f75ef'
 PILOTS = tuple((f'H{a}-E{e}', a, e) for a in (1, 2, 3) for e in (0, 1))
 SAMPLE_SEEDS = tuple(range(20261111, 20261143))
@@ -68,12 +67,12 @@ def source_binding(root=ROOT):
             'Authenticated historical campaign helpers changed')
     require(path.read_bytes() == Path(legacy.__file__).read_bytes(),
             'Executing historical helper differs from requested source')
-    loader_path = root/'manual2/scripts/matter1_m3_producer.py'
+    loader_path = root/'manual2/scripts/matter1_aod_producer.py'
     require(loader_path.read_bytes() == Path(producer.__file__).read_bytes(),
             'Executing producer loader differs from requested source')
     api = producer.load(root)
     recipe = legacy.bound.check_sources(root)
-    return api, {'producer_commit': PRODUCER,
+    return api, {'producer_commit': api.binding['upstream_head'],
         'native_sha256': hashlib.sha256(Path(api.native.__file__).read_bytes()).hexdigest(),
         'producer_binding_sha256': digest(api.binding),
         'producer_loader_sha256': hashlib.sha256(loader_path.read_bytes()).hexdigest(),
@@ -658,8 +657,9 @@ def controls(root=ROOT):
         'pressure_memory': pressure_memory_control(root)}
 
 
-def protocol():
-    return {'schema_version': 1, 'profile': PROFILE, 'producer_commit': PRODUCER,
+def protocol(root=ROOT):
+    return {'schema_version': 1, 'profile': PROFILE,
+        'producer_commit': producer.verify(root)['upstream_head'],
         'pilot_setups': [{'id': name, 'config': default_config(1, a, e, rounds=1)} for name, a, e in PILOTS],
         'law': legacy.RULE, 'law_role': 'Authenticated application choices reused with successor native admission.',
         'finite_domains': 'All six pilots at one round; H1-E1 also two rounds; at most six binary choices.',
@@ -674,7 +674,7 @@ def protocol():
 
 
 def build_report(root=ROOT):
-    fixed = protocol(); pilots = {}; exact = {}; samples = {}; summaries = []
+    fixed = protocol(root); pilots = {}; exact = {}; samples = {}; summaries = []
     for name, a, e in PILOTS:
         config = default_config(1, a, e, rounds=1)
         run = run_case(config, root); pilots[name] = run
@@ -700,7 +700,7 @@ def build_report(root=ROOT):
         'scope': 'Declared preparation intervention; differing topology/window are explicit operands, not a physical electron-effect claim.'}
         for a in (1, 2, 3)]
     report = {'schema_version': 1, 'profile': PROFILE, 'protocol_sha256': digest(fixed),
-        'producer_commit': PRODUCER, 'pilots': summaries, 'paired_preparations': pairs,
+        'producer_commit': fixed['producer_commit'], 'pilots': summaries, 'paired_preparations': pairs,
         'exact_domains': {k: {'path_count': len(v['paths']), 'total_probability': v['total_probability'],
             'means': v['means'], 'covariance': v['covariance'], 'observable_order': v['observable_order']} for k, v in exact.items()},
         'sample_domains': {k: {x: v[x] for x in ('sample_size', 'criterion_passed', 'max_path_frequency_error', 'epsilon')}

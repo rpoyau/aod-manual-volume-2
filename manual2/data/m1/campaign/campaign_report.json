@@ -54,7 +54,7 @@
       "scope": "Reproduction"
     }
   ],
-  "comparison_sha256": "0e9fcd37ca5b2314c1e83c29ceb2460056ab25e82df056a93e2fdd409d42a5f7",
+  "comparison_sha256": "c1f853e7f75bed738b72f89f3ed62e723fad765b8709df43043f7432d4e98a8e",
   "configuration_results": 135,
   "coverage": {
     "distinct_Z_A": 135,
@@ -79,7 +79,7 @@
   "independent_physical_prediction": false,
   "manifest_sha256": "22c0edb2301de95f3487941dd4e452efa0deafe29bc1513f27be563a1db89b27",
   "physical_prediction_objective": "unresolved_observation_and_state_identification",
-  "prediction_sha256": "b5ff00f9388dfdaf4a5f915d6398798e44fef4a07183799152c71e298e83887b",
+  "prediction_sha256": "3f1d79ec8e8a128af586d8aec9fe6c39450049c3b9bc7a2cdb0ef82b139aed6a",
   "profile": "matter1:all-elements-campaign:v1",
   "schema_version": 1,
   "stopping_policy": {

@@ -339,5 +339,64 @@ class RetentionTests(unittest.TestCase):
             self.assertEqual(before,{p:(hashlib.sha256(p.read_bytes()).hexdigest(),p.stat().st_mtime_ns)
                     for p in (ROOT/r.DATA).rglob('*') if p.is_file()})
 
+    def test_WR_39_current_replay_discloses_unverified_historical_documents(self):
+        receipt=r.verify(ROOT)
+        boundary=receipt['source_boundary']
+        self.assertEqual(boundary['historical_source_binding_sha256'],r.SOURCE_BINDING_SHA)
+        self.assertEqual(boundary['historical_documents_not_runtime_verified'],{
+            'inputs/owner_plan.md':'d3ed657888a6a3c63b13dd34b92a38557189aaccda81775144598267c053859c',
+            'original/README.md':'c01de09c59a031c0bf8f4b34172542516a792522dac21e191b6e0edeadd675bb',
+        })
+        sources=boundary['current_sources_verified']
+        self.assertEqual(len(sources),13)
+        self.assertIn('contract.json',sources)
+        self.assertIn('upstream/manual/scripts/aod_native_closure_wave.py',sources)
+        self.assertFalse(set(sources)&set(r.HISTORICAL_DOCUMENT_SHA))
+        for name,sha in sources.items():
+            self.assertEqual(hashlib.sha256((ROOT/r.DATA/name).read_bytes()).hexdigest(),sha)
+        for name in r.HISTORICAL_DOCUMENT_SHA:self.assertFalse((ROOT/r.DATA/name).exists())
+
+    def test_WR_40_historical_documents_cannot_reenter_runtime_inputs(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=self.fixture(folder)
+            for name in r.HISTORICAL_DOCUMENT_SHA:
+                with self.subTest(name=name):
+                    path=root/r.DATA/name;path.write_text('Historical task document')
+                    try:
+                        with self.assertRaisesRegex(ValueError,'Historical document is not a runtime input'):
+                            r.verify_sources(root)
+                    finally:path.unlink()
+
+    def test_WR_41_every_scientific_source_remains_required_and_hash_bound(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=self.fixture(folder)
+            for name in r.current_source_hashes(r.verify_sources(root)):
+                with self.subTest(name=name):
+                    path=root/r.DATA/name;original=path.read_bytes()
+                    try:
+                        path.unlink()
+                        with self.assertRaises(OSError):r.verify_sources(root)
+                        path.write_bytes(original+b'\nchanged')
+                        with self.assertRaisesRegex(ValueError,'Changed bound source'):
+                            r.verify_sources(root)
+                    finally:path.write_bytes(original)
+
+    def test_WR_42_unbound_file_cannot_use_the_historical_exclusion(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=self.fixture(folder)
+            (root/r.DATA/'inputs/unbound_plan.md').write_text('Not an admitted source')
+            with self.assertRaisesRegex(ValueError,'Incomplete or unexpected retention files'):
+                r.verify(root)
+
+    def test_WR_43_historical_identities_cannot_be_removed_or_redefined(self):
+        record=r.verify_sources(ROOT)
+        for value in (None,'0'*64):
+            with self.subTest(value=value):
+                changed=deepcopy(record)
+                if value is None:del changed['sha256']['inputs/owner_plan.md']
+                else:changed['sha256']['inputs/owner_plan.md']=value
+                with self.assertRaisesRegex(ValueError,'Changed historical document identity'):
+                    r.current_source_hashes(changed)
+
 
 if __name__=='__main__':unittest.main(verbosity=2)

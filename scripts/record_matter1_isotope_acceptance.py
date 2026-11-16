@@ -11,26 +11,26 @@ from isotope_preservation import verify as preservation
 GROUPS={
  'test_matter1_isotopes':('ISO','source_catalog_quantities_status_and_provenance'),
  'test_matter1_survival':('SURV','declared_history_ensemble_and_retrospective_conditional_test'),
- 'test_matter1_m3':('M3','exact_source_binding_typed_maps_and_uncertainty_guards'),
- 'test_matter1_m3_evidence':('F1','persisted_exact_evidence_typing_and_claim_binding_not_physical_uncertainty'),
+ 'test_matter1_aod_exports':('M3','exact_source_binding_typed_maps_and_uncertainty_guards'),
+ 'test_matter1_aod_evidence':('F1','persisted_exact_evidence_typing_and_claim_binding_not_physical_uncertainty'),
  'test_matter1_bipm_precision':('PREC','conditional_printed_zero_policy_not_source_precision'),
  'test_matter1_isotope_integration':('INT','frozen_data_and_explicit_successor_conservation'),
  'test_matter1_constructed_coupling':('CC','constructed_aggregate_cadence_and_paired_configuration_not_physical_isotope_admission'),
  'test_matter1_witnessed_retention':('WR','committed_response_burden_and_later_retention_under_a_declared_finite_law'),
  'test_matter1_retention_adapter':('RA','replayed_aggregate_construction_and_explicit_missing_retention_premises'),
- 'test_matter1_m3_observation':('OBS','typed_M3_observation_context_and_original_input_replay_not_physical_calibration'),
- 'test_matter1_m3_metrology':('MET','source_bound_comparison_reductions_and_missing_input_dispositions_not_atomic_prediction'),
+ 'test_matter1_temporal_observation':('OBS','typed_M3_observation_context_and_original_input_replay_not_physical_calibration'),
+ 'test_matter1_metrology_comparison':('MET','source_bound_comparison_reductions_and_missing_input_dispositions_not_atomic_prediction'),
 }
 
 
 # Only completed inputs consumed below belong to this receipt. Runner journals,
 # this command's stdout and later acceptance outputs are deliberately excluded.
 LANES = ('isotopes', 'survival', 'bipm_precision', 'constructed_coupling',
-         'witnessed_retention', 'retention_adapter', 'm3_observation', 'm3_metrology')
+         'witnessed_retention', 'retention_adapter', 'temporal_observation', 'metrology_comparison')
 EVIDENCE_INPUTS = tuple(sorted(
     [name + suffix + '.json' for name in LANES for suffix in ('', '-optimized')]
-    + ['tests.txt', 'tests-optimized.txt', 'browser.json', 'm3-consumer.json',
-       'm3-consumer-optimized.json', 'publication.json', 'reproduction.json']))
+    + ['tests.txt', 'tests-optimized.txt', 'browser.json', 'aod-consumer.json',
+       'aod-consumer-optimized.json', 'publication.json', 'reproduction.json']))
 QUANTITY_ROUTES = ('bounds', 'conversion', 'finite_joint_law', 'metadata',
                    'multi_output', 'nonlinear_moments', 'published',
                    'published_moments', 'shared_cancel', 'shared_reinforce')
@@ -64,9 +64,9 @@ def validate_m3_consumer(root, receipt, historical_metrology, historical_observa
     """
     root = Path(root)
     sys.path.insert(0, str(root / 'manual2/scripts'))
-    import matter1_m3_producer as producer
-    import matter1_m3 as historical
-    import matter1_m3_metrology as old_metrology
+    import matter1_aod_producer as producer
+    import matter1_aod_exports as historical
+    import matter1_metrology_comparison as old_metrology
     import matter1_coupled_preparations as coupled
     import matter1_preparation_workflow as workflow
     from publication_support import verify_foundation
@@ -101,7 +101,7 @@ def validate_m3_consumer(root, receipt, historical_metrology, historical_observa
     for key in ('status', 'profile', 'report_sha256', 'physical_calibration'):
         evidence.check_equal(typed[key], historical_observation[key],
                              'historical observation receipt stale: ' + key)
-    original = evidence.read_json(root / 'manual2/data/m1/m3_observation/observation_report.json')
+    original = evidence.read_json(root / 'manual2/data/m1/temporal_observation/observation_report.json')
     expected_cases = {}
     for name, item in original['cases'].items():
         record = item['prediction']['complete_temporal_record']
@@ -157,18 +157,18 @@ def record(checks,output):
    evidence.require(all(test in logs[m]['methods'] for m in logs),'missing assertion '+test)
    rows.append({'id':f'{prefix}-{i:02}', 'test_id':test,'assertion_scope':scope,'outcome':'executed_scope_pass','modes':['normal','optimized']})
  sys.path.insert(0,str(root/'manual2/scripts'))
- import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention,matter1_retention_adapter,matter1_m3_observation,matter1_m3_metrology
+ import matter1_isotopes,matter1_survival,matter1_bipm_precision,matter1_constructed_coupling,matter1_witnessed_retention,matter1_retention_adapter,matter1_temporal_observation,matter1_metrology_comparison
  reports={}
- for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention),('retention_adapter',matter1_retention_adapter),('m3_observation',matter1_m3_observation),('m3_metrology',matter1_m3_metrology)]:
+ for name,module in [('isotopes',matter1_isotopes),('survival',matter1_survival),('bipm_precision',matter1_bipm_precision),('constructed_coupling',matter1_constructed_coupling),('witnessed_retention',matter1_witnessed_retention),('retention_adapter',matter1_retention_adapter),('temporal_observation',matter1_temporal_observation),('metrology_comparison',matter1_metrology_comparison)]:
   reports[name]=module.verify(root)
   for suffix in ('','-optimized'):
    evidence.check_equal(reports[name],evidence.read_json(checks/(name+suffix+'.json')),name+suffix+' receipt stale')
  browser=evidence.read_json(checks/'browser.json')
  evidence.require(browser['status']=='PASS' and len(browser['isotope_checks'])==6,'browser isotope coverage missing')
  evidence.require(all(r['source_switch'] and r['chain_navigation'] and r['unknown_and_stable_distinct'] and not r['horizontal_overflow'] and r['minimum_badge_contrast']>=7 for r in browser['isotope_checks']),'isotope browser assertion failed')
- m3=evidence.read_json(checks/'m3-consumer.json')
- evidence.check_equal(m3,evidence.read_json(checks/'m3-consumer-optimized.json'),'M3 mode mismatch')
- validate_m3_consumer(root, m3, reports['m3_metrology'], reports['m3_observation'],
+ m3=evidence.read_json(checks/'aod-consumer.json')
+ evidence.check_equal(m3,evidence.read_json(checks/'aod-consumer-optimized.json'),'M3 mode mismatch')
+ validate_m3_consumer(root, m3, reports['metrology_comparison'], reports['temporal_observation'],
                       replay_current_coupled(root))
  publication=evidence.read_json(checks/'publication.json');reproduction=evidence.read_json(checks/'reproduction.json')
  evidence.require(publication['status']=='PASS_PUBLICATION','publication failed')

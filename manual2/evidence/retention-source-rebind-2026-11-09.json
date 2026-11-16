@@ -3,7 +3,7 @@
   "archive": "manual2/evidence/pre-m3-main/rebind-2026-11-08/manual2/scripts/matter1_retention_adapter.py",
   "before_sha256": "8cc549a78c52a527f14d7d22d13db59af2e8ccc320555d6e62d6bbe6d78a0b5f",
   "constructed_adapter_receipt": "manual2/evidence/constructed-source-rebind-2026-11-09.json",
-  "constructed_adapter_receipt_sha256": "fa1584a222a5e02c8cfd74036ca5ac6f257ce2afe42465700752f978fa7b3c1a",
+  "constructed_adapter_receipt_sha256": "9128a4d24e536dea7bc4393a842ab6fac43af6c788a3d2c62a840ddab9671848",
   "historical_consumer_head": "fedad377608bf3fee3364e4a79b3578f3f96dc2b",
   "identity_policy": "Existing implementation_sha256 and constructed_application_sha256 fields identify the historical recipes. This receipt separately binds the actual current retention executor; the constructed adapter receipt binds its actual current executor.",
   "new_physical_premises": false,

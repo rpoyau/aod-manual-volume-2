@@ -1406,10 +1406,10 @@
   ],
   "physical_budget_complete": false,
   "producer": {
-    "binding_sha256": "a7fc7c6bb6fc4332e9ac151ae0afeb0a4211cc9fa18d5769adb3391905cea4ec",
-    "commit": "8c3149b9d3d924b80b9385b178da4ba2c39175e8",
+    "binding_sha256": "73d17f07afbfa92c3edb0459283088a3e6b4be02727747e8f3277bf6c076193b",
+    "commit": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
     "route": "mapping.evaluate and mapping.propagate raw exact affine arithmetic",
-    "tree": "b2b55cbcf18354828f7b34418ab3fa26d747a927"
+    "tree": "7a120ca70c571074a720f99919a6a5776d355075"
   },
   "rows": [
     {

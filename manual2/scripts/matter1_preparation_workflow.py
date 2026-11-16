@@ -14,7 +14,7 @@ from pathlib import Path
 import matter1_campaign as history
 import matter1_properties as properties
 import matter1_coupled_preparations as coupled
-import matter1_m3_producer as producer
+import matter1_aod_producer as producer
 import matter1_preparation_freeze as freeze
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -290,7 +290,7 @@ def build_predictions(root=ROOT):
     modules = producer.load(root)
     source_names = ('manual2/scripts/matter1_preparation_workflow.py',
                     'manual2/scripts/matter1_coupled_preparations.py',
-                    'manual2/scripts/matter1_m3_producer.py',
+                    'manual2/scripts/matter1_aod_producer.py',
                     'manual2/scripts/matter1_preparation_freeze.py',
                     'manual2/data/m1/reference_inputs.csv')
     sources = {name: hashlib.sha256((root/name).read_bytes()).hexdigest() for name in source_names}

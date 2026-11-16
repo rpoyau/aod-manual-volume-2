@@ -1,6 +1,6 @@
 # Alpha↔Omega Dynamics — Manual Volume II: Matter I
 
-A compact elemental reference for Z = 1–118, downstream of AOD M3 and AFC v2.4. Main and the new paired-preparation workflow consume the verified local M3 successor `8c3149b`, with exact [producer exports](manual2/vendor/aod_m3_producer/binding.json). The earlier [observation exports](manual2/vendor/aod_m3/binding.json), [metrology companion](manual2/vendor/aod_m3_metrology/binding.json) and campaign retain `71cbcf7` for historical replay. The survival model keeps its original binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
+A compact elemental reference for Z = 1–118, downstream of AOD and AFC v2.4. Main and the new paired-preparation workflow consume the exact producer identified by the current source binding, with exact [producer exports](manual2/vendor/aod_producer/binding.json). The earlier [observation exports](manual2/vendor/aod_m3/binding.json), [metrology companion](manual2/vendor/aod_m3_metrology/binding.json) and campaign retain `71cbcf7` for historical replay. The survival model keeps its original binding. The nine nested enclosure surfaces, local roles and seat-order line visualize the declared relations. Eight additional positions are explicitly unfilled reference slots.
 
 This revision preserves the candidate’s element identities, positions, local counts and conditional support values. The element ledger retains its **static relational reference** profile: element-wide admission and native execution remain pending. A separately scoped finite folding application now executes declared traversal, retained-return, mapped-fold, recurrence, causal-response and retention predicates. Its finite witnesses do not establish complete AOD motif admission or an atomic prediction. Reference A values retain their candidate provenance and unresolved original selection policy.
 
@@ -26,7 +26,7 @@ python -B manual2/scripts/generate_matter1_preparation_workflow.py --execute-ref
 ```
 
 [Joint native uncertainty](manual2/data/m1/preparation_workflow/uncertainty.json)
-uses the executed finite histories and the current M3 quantity dispatcher,
+uses the executed finite histories and the current AOD quantity dispatcher,
 retaining covariance. [Comparison records](manual2/data/m1/preparation_workflow/comparisons.json)
 keep the published H/D/T values, original uncertainty conventions and reference
 dependence. Electron-coupled hyperfine is inapplicable to bare nuclei. Physical
@@ -40,12 +40,12 @@ python -B manual2/scripts/verify_matter1_coupled_preparations.py
 python -B -O manual2/scripts/verify_matter1_coupled_preparations.py
 python -B manual2/scripts/verify_matter1_preparation_workflow.py
 python -B -O manual2/scripts/verify_matter1_preparation_workflow.py
-python -B scripts/check_matter1_m3_consumer.py --upstream-root /path/to/aod-at-8c3149b
+python -B scripts/check_matter1_aod_consumer.py --upstream-root /path/to/aod-at-bound-commit
 ```
 
-The successor is a local detached producer. Hosted checks require that exact
-dependency to be available to GitHub; local verification does not establish a
-hosted workflow result.
+The producer checkout must match the exact commit in the current binding.
+Hosted checks require that dependency to be available to GitHub; local
+verification does not establish a hosted workflow result.
 
 ## Data classes before calculations
 
@@ -114,9 +114,9 @@ reference selections and their unresolved selection provenance.
 The [engine](manual2/scripts/matter1_campaign_engine.py) extends actual inner
 return histories before binding a new outer closure to those prefixes. Its
 declared orientation kernel and traversal pacing consume previously committed
-returned-current responses. Current native admission uses the exact M3 export;
+returned-current responses. Current native admission uses the exact AOD export;
 the reused historical construction recipe has a separate binding. All prior
-R02/R03 data and the static PDF/SVG chart are preserved. The companion adds
+aggregate-coupling/witnessed-retention data and the static PDF/SVG chart are preserved. The companion adds
 bounded cadence, lag and survival views with a separate campaign record selector.
 
 The campaign's cadence is a return-count ratio within each configuration's
@@ -149,14 +149,14 @@ all campaign cases in a disposable directory before comparing their bytes.
 AI-assisted work follows [`AGENTS.md`](AGENTS.md) and the pinned four portable
 skills from [`rpoyau/aod-skills`](https://github.com/rpoyau/aod-skills). The
 scientific dependency is separately pinned to [`rpoyau/aod`](https://github.com/rpoyau/aod).
-See [dependency setup and scope](docs/ai-dependencies.md). The five original
-`.agents/skills/` snapshots remain unchanged as historical review inputs.
+See [dependency setup and scope](docs/dependencies.md). Historical authoring
+snapshots and task records are detached from the scientific tree.
 
 `manual2/data/m1/` is canonical. Its version-2 schema separates reference inputs, structural fields, assigned classifications and pending admission/execution. `support_sum` replaces the legacy `rd_fuse` name; `support_declaration` has no certificate semantics. The three existing `manual2/data/` compatibility files must match their canonical counterparts byte for byte.
 
 `manual2/evidence/pr1_baseline_ledger_v1.csv`, `input_manifest.json` and `historical_sources.json` bind the reviewed PR and small historical excerpts. The 118×6 v94 placement comparison is separate from observable coverage and the r24 declaration joins. Predecessor deferred/unscored/not-executed statuses are retained. Whole historical ZIPs are comparison evidence, not runtime dependencies.
 
-`manual2/evidence/foundation-source.json` pins the exact reviewed M3 Main mathematical sources and text; the prior release sources and executors are archived under `pre-m3-main/`. The paired build produces an exact source/PDF/AUX/FLS receipt, then resolves semantic Manual citations against that same Main build. A fresh checkout must run this paired build before publication verification; ignored AUX/FLS/binding files are recreated, never accepted merely because their timestamps look current.
+`manual2/evidence/foundation-source.json` pins the exact reviewed AOD Main mathematical sources and text; the prior release sources and executors are archived under `pre-m3-main/`. The paired build produces an exact source/PDF/AUX/FLS receipt, then resolves semantic Manual citations against that same Main build. A fresh checkout must run this paired build before publication verification; ignored AUX/FLS/binding files are recreated, never accepted merely because their timestamps look current.
 
 ## Environment
 
@@ -189,7 +189,7 @@ python3 -B -O manual2/scripts/verify_matter1_ledger.py --check-data
 python3 -B manual2/scripts/check_matter1_figure.py
 python3 -B scripts/check_matter1_application.py
 python3 -B scripts/check_matter1_v2_application.py
-for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival constructed_coupling witnessed_retention retention_adapter m3_observation m3_metrology; do
+for lane in folding temporal hyperfine stateful metrology bipm atomic bipm_precision isotopes survival constructed_coupling witnessed_retention retention_adapter temporal_observation metrology_comparison; do
   python3 -B "manual2/scripts/verify_matter1_${lane}.py"
   python3 -B -O "manual2/scripts/verify_matter1_${lane}.py"
 done
@@ -264,9 +264,9 @@ The folding and hyperfine sections follow one branch–hinge–return constructi
 
 `manual2/data/m1/hyperfine/` stores two isotopes, four hyperfine states, two transitions and five primary sources. The historical hydrogen uncertainty is **0.002 Hz**, visually bound to printed page 200 of Hellwig et al. The hydrogen target was previously exposed, so the known pilot is retrospective. The quoted H/Cs ratio is external reference arithmetic; predicted ratio and empirical score remain null. A physical observation map still requires isotope-specific P2 construction and P3 coupling/recurrence in addition to the P4a source inventory. A later model freeze does not establish independent prediction.
 
-The new generators accept `--root SOURCE_REPO --output-root OUTPUT_REPO`; they write only owned generated outputs. Verification always reads persisted inputs and outputs. `manual2/evidence/fusion-request.json` binds the execution request, unchanged skills, foundation, static inputs and chart. The 39-ID acceptance records distinguish actual finite assertions and guard results from unresolved native and physical dependencies.
+The generators accept `--root SOURCE_REPO --output-root OUTPUT_REPO` and write only owned outputs. Verification reads persisted inputs and results. `manual2/contracts/REFERENCE_CONSERVATION.json` binds the scientific reference inputs; `manual2/tests/criteria/reference_checks.json` declares 39 scoped assertions. Source integrity and finite assertions do not establish physical predictions.
 
-The committed `manual2/evidence/fusion-acceptance-results.json` records the 39 scoped results and hashes the supporting logs in `manual2/evidence/fusion-checks/`. After rerunning the commands into a checks directory, use `python3 -B scripts/record_matter1_acceptance.py --checks-dir CHECKS --output RESULT.json` to record a new receipt. This recorder validates complete successful logs and current source/test/model bindings; it does not execute tests or independently attest plain logs. CI records its own receipt from that run.
+After running the checks into an external directory, `python3 -B scripts/record_matter1_acceptance.py --checks-dir CHECKS --output RESULT.json` records their scoped outcomes. The recorder validates complete successful logs and current source/test/model bindings; it does not run tests or independently attest plain logs. Store execution receipts and raw logs outside the scientific source tree. CI records its own outputs.
 
 ## Stateful v2 and the Cs/H prediction attempt
 
@@ -285,11 +285,11 @@ python3 -B manual2/scripts/predict_matter1_atomic.py --output /tmp/matter1-predi
 python3 -B manual2/scripts/compare_matter1_atomic.py --prediction /tmp/matter1-prediction.json --target manual2/data/m1/atomic/evaluation_target.json --output /tmp/matter1-comparison.json
 ```
 
-`manual2/evidence/v2-request.json` pins the available 63,942-byte R02 archive and six contract documents. The later approximately 136 KB / 42-entry archive mentioned in the handoff was not attached among the available files; its integrity is not claimed. The explicit amendments in the execution message govern the added target separation, intervention and rounding checks.
+`manual2/contracts/OBSERVATION_CONSERVATION.json` preserves the historical folding, temporal and hyperfine inputs and results. The SI assertion inventory lives in `manual2/tests/criteria/si_checks.csv`; the measurement equations and physical qualifications remain in the owning Manual sections and metrology inputs. Historical execution requests and reviews are detached from scientific admission.
 
 The additional 18 SI and five prediction criteria are recorded with actual assertion scope by `scripts/record_matter1_v2_acceptance.py`. It consumes the complete normal/optimized test logs and lane receipts, reruns read-only lane verification, and records the atomic objective as incomplete. The original 39 criteria remain separately recorded. CI exercises both receipts, all tests, persisted hostile mutations, paired publication, browser/export checks and disposable reproduction. Passing software tests does not promote atomic admission or physical prediction status.
 
-## Isotopes, M3 and the survival experiment
+## Isotopes, AOD and the survival experiment
 
 The catalog contains 27 isotope/state records and 29 source records at a declared 1 November 2026 snapshot. Og/Lv/Fl family coverage includes tentative assignments, isomer candidates and unobserved targets with distinct statuses. ENSDF adopted values remain the default; newer experimental results are selectable source records, never silently averaged. NUBASE2020 cross-checks are separate. H-1/Cs-133 anchor records, Fe-56/Pb-208 benchmarks and Ni-62 binding-energy control have their own scopes. Pb-208's alpha partial-life lower limit is distinct from observational stability. Fl-298 is unobserved and has no scored empirical half-life.
 
@@ -297,15 +297,15 @@ The compact view retains all chart coordinates and original structural colors by
 
 The new survival model enumerates an exact stochastic ensemble of retained histories. Committed paired currents change subsequent loss weights. Its common baseline median is in `(6,7]` coupled reference returns; changing the common loss gain gives `(4,5]`, changing capacity gives `(2,3]`, and disabling feedback at return 2 leaves the median censored beyond 8. These are executed declared-model results. Applying the same constructed state and shared reference map to different isotopes predicts equal half-lives; the separately frozen retrospective comparison rejects that specialization. No isotope-specific capacity or hazard was fitted, and no physical isotope half-life is claimed. Native isotope construction, loss-observation identification and reference/SI gain remain explicit dependencies.
 
-M3's exact finite-law mapping module is vendored byte-for-byte with its source binding. CI additionally checks out the exact upstream commit and replays its actual Matter I consumer integration in normal and optimized Python; this lane cannot silently skip. The older v1/v2 data and all 118 placements/126 slots remain byte-preserved. The separate BIPM precision successor preserves 105 point results while recording unresolved printed-zero precision and rejecting the targeted sigma mutation.
+AOD's exact finite-law mapping module is vendored byte-for-byte with its source binding. CI additionally checks out the exact upstream commit and replays its actual Matter I consumer integration in normal and optimized Python; this lane cannot silently skip. The older v1/v2 data and all 118 placements/126 slots remain byte-preserved. The separate BIPM precision successor preserves 105 point results while recording unresolved printed-zero precision and rejecting the targeted sigma mutation.
 
-See `manual2/data/m1/isotopes/README.md`, `manual2/data/m1/survival/`, and `manual2/evidence/m3-migration.md` for exact premises, source locators and unresolved dependencies. The complete element ledger remains in the Manual appendix. Generation is explicit; verification never repairs persisted files.
+See `manual2/data/m1/isotopes/README.md`, `manual2/data/m1/survival/` for exact premises, source locators and unresolved dependencies. The complete element ledger remains in the Manual appendix. Generation is explicit; verification never repairs persisted files.
 
 ## Witnessed coupling and retention
 
-Two separately bound examples extend the isotope-survival section. `constructed_coupling/` preserves the R02 engine and its four original experiments, with complete constituent formation, scope maps, directed contacts and return histories. Five aggregate fields evolve while their inner formation histories remain retained. The same update law gives four parent returns over 1,940 reference bips for the declared Fl-286 construction, 1,920 for Fl-289, and 1,902 for the Og-294 control. Each window starts after its own parent formation and ends at the same execution cut. The isotope labels do not enter the update law.
+Two separately bound examples extend the isotope-survival section. `constructed_coupling/` preserves the aggregate-coupling engine and its four original experiments, with complete constituent formation, scope maps, directed contacts and return histories. Five aggregate fields evolve while their inner formation histories remain retained. The same update law gives four parent returns over 1,940 reference bips for the declared Fl-286 construction, 1,920 for Fl-289, and 1,902 for the Og-294 control. Each window starts after its own parent formation and ends at the same execution cut. The isotope labels do not enter the update law.
 
-`witnessed_retention/` retains the distinct R03 square-return model. The raw unit and closure capacity are both 5. Opposite signed responses cancel while their burden remains: the exact third-return survivals are 5/6 for net memory and 2/3 for burden. The feedback, window and pending-background controls retain complete committed histories and exposed inner lineage. The earlier common-surrogate survival model, its nine-point curves and retrospective rejection are unchanged.
+`witnessed_retention/` retains the distinct witnessed-retention square-return model. The raw unit and closure capacity are both 5. Opposite signed responses cancel while their burden remains: the exact third-return survivals are 5/6 for net memory and 2/3 for burden. The feedback, window and pending-background controls retain complete committed histories and exposed inner lineage. The earlier common-surrogate survival model, its nine-point curves and retrospective rejection are unchanged.
 
 The examples and their adapters use explicit generators and read-only complete replay:
 
@@ -316,18 +316,18 @@ python3 -B manual2/scripts/verify_matter1_witnessed_retention.py
 python3 -B -O manual2/scripts/verify_matter1_witnessed_retention.py
 python3 -B manual2/scripts/verify_matter1_retention_adapter.py
 python3 -B -O manual2/scripts/verify_matter1_retention_adapter.py
-python3 -B manual2/scripts/verify_matter1_m3_observation.py
-python3 -B -O manual2/scripts/verify_matter1_m3_observation.py
+python3 -B manual2/scripts/verify_matter1_temporal_observation.py
+python3 -B -O manual2/scripts/verify_matter1_temporal_observation.py
 ```
 
 Their `generate_matter1_*.py` commands accept `--root SOURCE_REPO --output-root OUTPUT_REPO`. The complete reproduction check regenerates these lanes in a disposable directory; CI and the scoped isotope acceptance recorder include their tests. Full constructed-coupling replay takes several minutes.
 
-The two examples have separate state, reference and capacity choices. `retention_adapter/assessment.json` binds the actual Fl-286, Fl-289 and Og-294 constructions and records the missing normalization, capacity and loss mappings. It does not select a combined retention law. `m3_observation/observation_report.json` consumes the exact M3 observation interface with independently reconstructed R03 histories, preparation, directed contacts and pending returns. Its replay binds the complete observation context; it supplies no physical clock calibration. Physical isotope half-life remains unresolved and Fl-298 remains unscored.
+The two examples have separate state, reference and capacity choices. `retention_adapter/assessment.json` binds the actual Fl-286, Fl-289 and Og-294 constructions and records the missing normalization, capacity and loss mappings. It does not select a combined retention law. `temporal_observation/observation_report.json` consumes the exact AOD observation interface with independently reconstructed witnessed-retention histories, preparation, directed contacts and pending returns. Its replay binds the complete observation context; it supplies no physical clock calibration. Physical isotope half-life remains unresolved and Fl-298 remains unscored.
 
-## M3 metrology applications
+## AOD metrology applications
 
 The application profile `matter1:m3-metrology:applications:v1` consumes the
-committed M3 comparison method. It preserves all five R03 cases and the existing
+committed AOD comparison method. It preserves all five witnessed-retention cases and the existing
 four atomic countermodel outputs. Predictions are replayed from original inputs
 before the comparison loads the retrospective H target. The recorded measurement
 window remains unmatched to the simulation; neither gain witness is selected.
@@ -338,7 +338,7 @@ rounded mean. The NIST-F2 typical and August 2013 uncertainty records retain
 separate identities. Correction ownership, source dependence and unknown physical
 uncertainty remain explicit.
 
-The preserved H-2/H-3 M3 application records retain their historical `missing_input`
+The preserved H-2/H-3 AOD application records retain their historical `missing_input`
 results for preparation, observation law, target provenance and apparatus
 records. The separate D/T source supplement adds acquired target evidence
 without rewriting those historical executions or supplying a physical map.
@@ -348,17 +348,16 @@ actual timestamp resolution and calibration still missing. These records do not
 change the isotope catalog or the existing Fl/Og construction studies.
 
 ```sh
-python3 -B manual2/scripts/verify_matter1_m3_metrology.py
-python3 -B -O manual2/scripts/verify_matter1_m3_metrology.py
+python3 -B manual2/scripts/verify_matter1_metrology_comparison.py
+python3 -B -O manual2/scripts/verify_matter1_metrology_comparison.py
 # Explicit regeneration, separate from verification:
-python3 -B manual2/scripts/generate_matter1_m3_metrology.py --output-root /tmp/matter1-metrology
+python3 -B manual2/scripts/generate_matter1_metrology_comparison.py --output-root /tmp/matter1-metrology
 ```
 
-The three artifacts under `manual2/data/m1/m3_metrology/` separate prediction,
+The three artifacts under `manual2/data/m1/metrology_comparison/` separate prediction,
 comparison and the application report. `PASS_M3_METROLOGY_APPLICATIONS` verifies
 those declared computations and source bindings; physical calibration remains
-unestablished. See the [adoption record](manual2/evidence/m3-metrology-adoption.md)
-for exact source ownership and historical preservation.
+unestablished. The vendor bindings identify each exact scientific source; current and historical producers retain separate identities.
 
 
 ## Element and isotope properties
@@ -379,7 +378,7 @@ Six native pilot histories and matched controls are implemented separately from
 the sourced values. Their frozen protocol exposes missing state, phase, energy,
 mass and realization laws. The common-gain bridge family fails its declared
 retrospective H/D/T ratio diagnostic; no completed physical atomic prediction is
-claimed. See the [milestone record](manual2/evidence/element-properties/README.md).
+claimed. See the [property catalog and source scope](manual2/data/m1/properties/README.md).
 
 ```sh
 python3 -B manual2/scripts/verify_matter1_properties.py

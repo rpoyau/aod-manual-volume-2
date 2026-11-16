@@ -6,10 +6,10 @@ import hashlib
 from pathlib import Path
 
 if __package__:
-    from . import matter1_m3_producer as producer
+    from . import matter1_aod_producer as producer
     from . import matter1_mass_covariance as covariance
 else:
-    import matter1_m3_producer as producer
+    import matter1_aod_producer as producer
     import matter1_mass_covariance as covariance
 
 SCHEMA = 'matter1.mass-derivations.v1'

@@ -79,7 +79,7 @@ capability of up to \(125\,\mathrm{MS/s}\) does not specify the actual timestamp
 resolution or its calibration; those inputs remain missing from a complete
 timing comparison.
 
-\aodprovenance{The event records in \path{manual2/data/m1/m3_metrology/} bind
+\aodprovenance{The event records in \path{manual2/data/m1/metrology_comparison/} bind
 the retained source under \path{manual2/data/m1/isotopes/sources/}; the adopted
 half-life catalog remains separate.}
 \aodliteraturenote{The two chains and detector acquisition: Gates et al.,
@@ -166,7 +166,7 @@ the common capacity to zero gives \((2,3]\). Disabling new response commits at r
 return 2 and first differs at return 3: \(1\) versus \(5/6\). This controlled change
 therefore affects subsequent loss rather than merely annotating a precomputed trace.
 
-The finite law is evaluated with the exact M3 mapping implementation and
+The finite law is evaluated with the exact finite-law mapping implementation and
 \mainequation{eq:m3-finite-law}. For the retained indicator at return 8, its expectation
 is \(211/576\) and its variance is \((211/576)(365/576)\). This ensemble spread is
 distinct from uncertainty about the nuclear model or the experimental calibration.
@@ -250,15 +250,17 @@ passing them does not certify nuclear admission.}
 \subsection{Constructed-field cadence}
 \label{manual2:constructed-coupling}
 \paragraph{Setup.}
-The R02 constructed-coupling law assigns 118 distinct \(3{:}3{:}6\) and
+The aggregate constructed-coupling law assigns 118 distinct \(3{:}3{:}6\) and
 176 distinct \(3{:}4{:}6\) constituent formation waves to an Og-294 candidate.
 Their scope maps bind the inner certificates to an outer construction with
 15,508 outward occurrences and structural \(RD=31{,}017\). The 294 inner
 formation histories remain fixed while five aggregate fields evolve: parent,
 reference and three coupled backgrounds. This is a declared aggregate reduction;
 the constituent assignment does not establish a nuclear configuration.
-The third background is present in every case; the feedback intervention changes
-its influence on the parent.
+The third background receives parent returns in every case; the feedback
+intervention enables its influence on the parent. Compatible seating is assumed
+only for the native same-current state check. It supplies no seating slowdown or
+nuclear retention capacity.
 
 \paragraph{Derivation.}
 Each new outer reclosure emits a contact with its committed prefix. The common
@@ -309,7 +311,7 @@ directed contacts and window records. Recurrence uses
 \subsection{Witnessed response, burden and retention}
 \label{manual2:witnessed-retention}
 \paragraph{Setup.}
-The separate R03 law prepares four candidate square returns, two reference
+The witnessed-retention law prepares four candidate square returns, two reference
 returns, three background \(3{:}4{:}6\) returns and two outer-parent formation
 returns. The parent folds the evolving candidate wave; reference and background
 remain external. Each round completes the reference and background comparisons,
@@ -317,7 +319,7 @@ decides from prior committed responses, then executes a candidate return or an
 open exit. An accepted return commits the response for a later decision.
 The raw normalization unit is \(u=5\), the reference cross-return's structural
 RD. Raw closure capacity is \(C^{\mathrm{close}}=5\), hence diagnostic capacity
-one. These choices belong to R03.
+one. These choices belong to the witnessed-retention model.
 
 \paragraph{Derivation.}
 With \(C_{3,e}=1\), active committed contributions \(e\in A_h\) supply
@@ -366,7 +368,7 @@ window remains fixed. Neither operation erases a contribution. A relief of a
 fixed retained group would require its own recorded rebalancing operation.
 \begin{table}[H]
 \centering\small
-\caption{R03 survival after three new reference returns.}
+\caption{Witnessed-retention survival after three new reference returns.}
 \label{tab:manual2-witnessed-survival}
 \begin{tabular}{@{}lc@{}}
 \toprule
@@ -447,7 +449,7 @@ Og-294 & 118 & 176 & 15508 & 31017\\
 \bottomrule
 \end{tabular}
 \end{table}
-The common R02 update and contact laws act on the five aggregate fields;
+The aggregate-coupling update and contact laws act on the five aggregate fields;
 the constituent formation histories remain fixed. No isotope-specific capacity,
 hazard or lifetime multiplier enters this construction.
 Counting after formation cuts \(61469\), \(62285\) and \(63037\), respectively,
@@ -457,10 +459,10 @@ to the common cut \(4\times10^9\) gives parent/reference counts
 their return cuts and reference exposures differ.
 
 \paragraph{Specialization.}
-A combined R02--R03 model requires an explicit map of states, retained scopes,
+A model combining aggregate coupling and witnessed retention requires an explicit map of states, retained scopes,
 event order, active contribution groups, normalization, capacity, reference
-exposure and the loss/exposure operation. R02's reference has structural RD 61;
-R03's square cross-return has RD 5. The latter's raw capacity 5 is a choice of
+exposure and the loss/exposure operation. The aggregate-coupling reference has structural RD 61;
+the witnessed-retention square cross-return has RD 5. The latter's raw capacity 5 is a choice of
 that protocol. It does not supply a nuclear aggregate capacity. A positive
 burden or surplus alone supplies no loss predicate.
 
@@ -484,5 +486,5 @@ a configuration change therefore have distinct witnessed effects.
 \aodprovenance{\path{matter1:paired-aggregate-configurations:v1} binds the common
 law and separate preparations under \path{manual2/data/m1/constructed_coupling/}.
 \path{manual2/data/m1/retention_adapter/} records their adapter assessment;
-\path{manual2/data/m1/m3_observation/} binds the R03 observation report.
-The R02 and R03 examples retain their separate law identities.}
+\path{manual2/data/m1/temporal_observation/} binds the witnessed-retention observation report.
+The aggregate-coupling and witnessed-retention examples retain their separate law identities.}

@@ -20,7 +20,7 @@ import sys
 sys.dont_write_bytecode = True
 
 REPO = Path(__file__).resolve().parents[1]
-PLAN = Path('manual2/evidence/fusion-acceptance-plan.json')
+PLAN = Path('manual2/tests/criteria/reference_checks.json')
 RECEIPTS = ('ledger', 'ledger-optimized', 'figure', 'conservation', 'publication', 'browser',
             'reproduction', 'folding', 'folding-optimized', 'temporal', 'temporal-optimized',
             'hyperfine', 'hyperfine-optimized')
@@ -164,13 +164,13 @@ def validate_receipts(directory):
         require(Path(path).name == path, 'hyperfine input path not portable')
         require(sha(read_bytes(REPO / 'manual2/data/m1/hyperfine' / path)) == digest, f'hyperfine input changed: {path}')
     conservation = receipts['conservation']
-    for key, value in {'status': 'PASS_CONSERVATION', 'source_unchanged': False, 'preservation_scope': 'Original receipt bytes archived; active M3 sources, adapters and isotope UI are explicit separately checked successors', 'elements': 118, 'slots': 126,
+    for key, value in {'status': 'PASS_CONSERVATION', 'source_unchanged': False, 'preservation_scope': 'Historical scientific sources retained; active sources, adapters and isotope UI are separately checked successors', 'elements': 118, 'slots': 126,
                        'baseline_numeric_comparisons': 3024, 'v94_placement_field_comparisons': 708,
-                       'r24_declaration_joins': 118, 'tracked_skill_entry_points': 5, 'tracked_skill_files': 11}.items():
+                       'r24_declaration_joins': 118}.items():
         expect(conservation, key, value, 'conservation')
-    request = read_json(REPO / 'manual2/evidence/fusion-request.json')
-    expect(conservation, 'historical_request_head', request['base_head'], 'conservation')
-    expect(conservation, 'historical_request_tree', request['base_tree'], 'conservation')
+    request = read_json(REPO / 'manual2/contracts/REFERENCE_CONSERVATION.json')
+    expect(conservation, 'historical_source_head', request['base_head'], 'conservation')
+    expect(conservation, 'historical_source_tree', request['base_tree'], 'conservation')
     for name, expected in request['preservation_sha256'].items():
         path = Path(name)
         require(not path.is_absolute() and '..' not in path.parts, 'preservation path not portable')
@@ -241,7 +241,7 @@ def receipts_for(row):
 
 
 def input_inventory(output):
-    patterns = ('.agents/skills/**/*', '.github/workflows/matter1.yml', '*.tex', '*.bib', 'sections/**/*.tex',
+    patterns = ('manual2/tests/criteria/**/*', 'manual2/contracts/**/*', '.github/workflows/matter1.yml', '*.tex', '*.bib', 'sections/**/*.tex',
                 'appendices/**/*.tex', 'manual2/**/*.bib', 'README.md', 'requirements-matter1.txt', 'package.json',
                 'bib/**/*', 'scripts/*.py', 'manual2/**/*.tex', 'manual2/scripts/*.py', 'manual2/scripts/*.cjs',
                 'manual2/tests/*.py', 'manual2/data/**/*', 'manual2/evidence/*.json', 'manual2/evidence/*.csv',
@@ -269,7 +269,7 @@ def record(checks_dir, output):
     plan = read_json(REPO / PLAN)
     rows = plan['records']
     ids = {f'P0-{n:02d}' for n in range(1, 3)} | {f'P1-{n:02d}' for n in range(1, 10)} | {f'P2-{n:02d}' for n in range(1, 7)} | {f'P3-{n:02d}' for n in range(1, 6)} | {f'P4-{n:02d}' for n in range(1, 4)} | {f'P5-{n:02d}' for n in range(1, 7)} | {f'F-{n:02d}' for n in range(1, 9)}
-    require(len(rows) == 39 and {r['id'] for r in rows} == ids, 'acceptance plan does not contain all 39 unique criteria')
+    require(len(rows) == 39 and {r['id'] for r in rows} == ids, 'assertion inventory does not contain all 39 unique criteria')
     logs = {'normal': parse_test_log(checks_dir / 'tests.txt'), 'optimized': parse_test_log(checks_dir / 'tests-optimized.txt')}
     actual_ids = source_test_ids()
     require(set(logs['normal']['methods']) == actual_ids, 'normal log does not contain exactly the current complete test suite')
@@ -288,7 +288,7 @@ def record(checks_dir, output):
     outcomes = []
     for original in rows:
         row = deepcopy(original)
-        require(row['outcome'] == 'not_run' and row['scope_classification'] == scope_for(row), f"{row['id']}: plan outcome/scope promoted")
+        require('outcome' not in row and row['scope_classification'] == scope_for(row), f"{row['id']}: assertion outcome/scope promoted")
         for field in ('subject', 'stimulus', 'expected', 'assertion_scope', 'remaining_dependency'):
             require(isinstance(row[field], str) and bool(row[field].strip()), f"{row['id']}: required criterion/scope field missing")
         observed = []
@@ -311,8 +311,7 @@ def record(checks_dir, output):
         outcomes.append(row)
     report = {
         'schema_version': 1, 'document_kind': 'executed_scoped_acceptance_receipt', 'record_count': len(outcomes),
-        'request_archive_sha256': plan['request_archive_sha256'], 'request_acceptance_sha256': plan['request_acceptance_sha256'],
-        'acceptance_plan_sha256': sha(read_bytes(REPO / PLAN)),
+        'assertion_inventory_sha256': sha(read_bytes(REPO / PLAN)),
         'interpretation': 'All recorded assertions passed in their stated scope. Finite geometry, declared-model execution, guard rejection and publication integrity do not establish native motif admission, atomic prediction or empirical agreement.',
         'evidence_binding_scope': 'Supplied successful test/check outputs plus current source/test/model hashes at recording. Plain logs are not independently attested execution provenance. Run the listed commands separately before recording; no tests are run by this recorder.',
         'native_admission_status': 'pending', 'atomic_mapping_status': 'pending', 'physical_empirical_status': 'not_compared',

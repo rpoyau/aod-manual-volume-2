@@ -1,13 +1,12 @@
-# AI guidance and skill provenance
+# Authoring guidance
 
 Start with [the repository instructions](../AGENTS.md). Current work uses the four
 portable skills in the separately bound
 [`aod-skills`](https://github.com/rpoyau/aod-skills) repository. See
-[dependencies.json](dependencies.json) and [setup instructions](../docs/ai-dependencies.md).
+[dependencies.json](dependencies.json) and [dependency instructions](../docs/dependencies.md).
 
-The five directories under `skills/` are historical inputs retained for previous
-Matter I reviews and preservation checks. Their authentic files and assets remain
-unchanged. In particular, the canonical `axiomatic-fundamentalism` entry point
-must be selected by its explicit external path to avoid confusing it with the
-same-named historical snapshot here. The root instructions record the existing
-owner-resolved scope and the separate scientific dependency on upstream `aod`.
+Select each current skill by its explicitly bound external path. Historical
+authoring snapshots and task reviews are detached from this scientific tree;
+they are not inputs to calculation or source admission. The root instructions
+record the current owner amendments and the separate scientific dependency on
+upstream `aod`.

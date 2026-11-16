@@ -13,11 +13,11 @@ FOUNDATION = Path('manual2/evidence/foundation-source.json')
 REBIND = Path('manual2/evidence/m3-source-rebind.json')
 SUCCESSOR = Path('manual2/evidence/m3-source-rebind-2026-11-08.json')
 PRIOR_ARCHIVE = ARCHIVE / 'rebind-2026-11-08'
-FOUNDATION_SHA256 = '5b1016fe93357ed6e8a8465c9e6f1415c92e58a1f366958fd09400b2d3d1f332'
+FOUNDATION_SHA256 = '437665f3ef1e7d79fe7dce7b0f69271631a4cb82a279d4cc91f7139b03d1e9f3'
 M3_ARCHIVE = ARCHIVE / 'rebind-2026-11-11'
 M3_FOUNDATION_SHA256 = '3741e275bfdba1566321058c71eb7c9ed9eacaf8edafcd3bd6b87157c8b082e1'
-CURRENT_SUCCESSOR = Path('manual2/evidence/m3-source-rebind-2026-11-11.json')
-CURRENT_SUCCESSOR_SHA256 = '15cd97e874d2028ae712e97fa107e843a2457eaa6ab6ff88f45ca1de3b2fb196'
+CURRENT_SUCCESSOR = Path('manual2/evidence/producer-source-rebind.json')
+CURRENT_SUCCESSOR_SHA256 = '380bb360cfd86bb987a63f10fa233339810da1116b052349e9a3bc6525b962d2'
 REBIND_SHA256 = 'd6387c4c6e24e558a00264d455fdea82906940eb9122378b8a2002492a096513'
 SUCCESSOR_SHA256 = '64f032fe6885d4cd6de870b1808c4700b352be7187fe6655bd3fac49571606b6'
 PRIOR_FOUNDATION_SHA256 = '7c2117141de36d94f18fd21b178a243c3923495a9f1c494579b21f9e7f9fe921'
@@ -94,7 +94,7 @@ def binding(root):
             'Preservation: current producer chain mismatch')
     require(not successor['files'] and current['files'] == active['files'],
             'Preservation: producer identity rebind changed Main')
-    from matter1_m3_producer import BINDING_SHA256
+    from matter1_aod_producer import BINDING_SHA256
     producer = _record(root, Path(successor['producer_binding']), BINDING_SHA256,
                        'current producer binding changed')
     require(successor['producer_binding_sha256'] == BINDING_SHA256
@@ -166,7 +166,7 @@ def historical_property_digest(root):
     root = Path(root)
     historical_m3_binding(root)
     record = _record(root, Path('manual2/evidence/property-source-rebind-2026-11-11.json'),
-                     '7b0fadb4d8d57c44ba52e4d2891b2e91abbc57c5ba35bc52c11f7e4566ebca02', 'unreviewed property source adapter')
+                     'd2c424538d61c278245eef1d9c998a8fde8e818973a589de2052018f0fe4647e', 'unreviewed property source adapter')
     require(record['historical_foundation_sha256'] == M3_FOUNDATION_SHA256
             and record['active_foundation_sha256'] == FOUNDATION_SHA256,
             'Preservation: property foundation chain changed')

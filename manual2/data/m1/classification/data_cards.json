@@ -184,7 +184,7 @@
           ],
           "path": "manual2/data/m1/campaign/prediction.json",
           "selected_sha256": "788ab966a155c3d5eb928882feb4bee016d4228f18fface830f976c0bb8ea1a5",
-          "sha256": "450754040872d8c9685292022c6f112184e3a8137b4bab5b12d523184c4b412a"
+          "sha256": "a25eaafa8d6426ef0392ad49797364e4de7ad1e395ddf6c743afc75086af58bf"
         }
       ],
       "claim_class": "declared model/simulation",
@@ -599,9 +599,9 @@
             "/cesium",
             "/isotope_applications/livermorium"
           ],
-          "path": "manual2/data/m1/m3_metrology/metrology_report.json",
+          "path": "manual2/data/m1/metrology_comparison/metrology_report.json",
           "selected_sha256": "71bf107951984e27b1a425e0ee2c9f54a6ec13a390a60e1e0f0bdfc6d3494a0a",
-          "sha256": "0c8700e2f95812f4a35ec085b4c57ba9b9a6081d887112d1727020a6e2282ac7"
+          "sha256": "9d0d2084610712aebb8f2dfb7e16dea47bf19d6aa032997281ecdf3d4144e4c8"
         }
       ],
       "claim_class": "metrology record",
@@ -613,7 +613,7 @@
         "epsilon_report": null,
         "sigma_input": "Published uncertainty retained; full model/realization covariance not silently supplied",
         "src": [
-          "manual2/data/m1/m3_metrology/metrology_report.json"
+          "manual2/data/m1/metrology_comparison/metrology_report.json"
         ]
       },
       "decimal_display": {
@@ -768,6 +768,6 @@
   "scope": "Classification overlay for selected existing artifact families/components; not scientific replay, native admission, physical prediction or empirical scoring.",
   "source_lock": {
     "path": "manual2/evidence/data-classes/source-bindings.json",
-    "sha256": "c7cb00b17666e3b23fbc6e56165de81d5c0e6cc310d646925e2da6ac52ccba52"
+    "sha256": "90dc52b698601a33366c62f9b8b8e99a189b59b28511b134fae129879ad72f31"
   }
 }

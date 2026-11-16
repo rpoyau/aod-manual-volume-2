@@ -9,7 +9,7 @@ import unittest
 
 from manual2.scripts import matter1_mass_covariance as c
 from manual2.scripts import matter1_properties as p
-from manual2.scripts import matter1_m3_producer as producer
+from manual2.scripts import matter1_aod_producer as producer
 
 
 class MassCovarianceTests(unittest.TestCase):

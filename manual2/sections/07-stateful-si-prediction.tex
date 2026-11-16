@@ -20,9 +20,9 @@ The controlled pair changes only the declared capacity. Its common prefix is ide
 
 In the persisted pair, capacity changes from 100 to 2 at cut 40, and loss commits at cut 41. The affected returns at cuts 47, 54, 61 and 68 disappear; completed contacts decrease from eight to two. With the first completion retained as the lineage anchor, the finite-window reclosure-count ratio changes from \(6/5\) to \(2/5\). These are counts over the declared window, not a stationary frequency estimate.
 
-The separate R03 model in \secref{manual2:witnessed-retention} compares signed
+The separate witnessed-retention model in \secref{manual2:witnessed-retention} compares signed
 response with nonnegative burden at fixed raw capacity 5. Its square-return
-protocol and capacity do not transfer to the aggregate R02 parent of
+protocol and capacity do not transfer to the aggregate-coupling parent of
 \secref{manual2:constructed-coupling} without a separately declared adapter.
 
 \paragraph{Specialization.}
@@ -103,7 +103,7 @@ A shared endpoint offset cancels only when the measurement equation takes its di
 \paragraph{Calibration.}
 Each budget component records its unit, source, validity window, correction sign, covariance group and inclusion in any aggregate. An already included realization contribution is not added again as an independent term. The reported measurand distinguishes local proper time from a coordinated time scale; only applicable external motion, potential and transfer corrections enter. A later calibration may revise a retrospective report, but it cannot be represented as available to an earlier online computation.
 
-The frozen v2 records retain first-order diagnostic budgets and their original one-percent marginal guards. Those guards do not prove nonlinear adequacy: the M3 successor checks exhibit a near-cancelled product whose exact variance is 50.90005 times its first-order value, and a zero-derivative interval with nonzero exact variance. \mainequation{eq:m3-finite-law} supplies full finite-law propagation when that joint law is supplied; covariance alone does not complete a nonlinear model.
+The frozen v2 records retain first-order diagnostic budgets and their original one-percent marginal guards. Those guards do not prove nonlinear adequacy: the full finite-law checks exhibit a near-cancelled product whose exact variance is 50.90005 times its first-order value, and a zero-derivative interval with nonzero exact variance. \mainequation{eq:m3-finite-law} supplies full finite-law propagation when that joint law is supplied; covariance alone does not complete a nonlinear model.
 
 The persisted positive examples exercise declared synthetic maps and uncertainty budgets. They do not invent a clock calibration certificate. A materially incomplete physical budget produces a scoped partial result; independent finite-model execution continues.
 
@@ -112,13 +112,13 @@ One exact synthetic budget yields \(\widehat T=1\,\mathrm{s}\) and \(u_c^2=4904\
 \paragraph{Falsification.}
 The integration checks reject covariance with incorrect units, ordering, asymmetry or a negative quadratic direction; unknown material terms, duplicate aggregate inclusion, stale scope and future calibration are tested separately. Nonlinear and discrete cases cannot acquire a complete precision claim by using only a linear derivative.
 
-\aodprovenance{\path{manual2/data/m1/metrology/}; the application contract is preserved in \path{manual2/evidence/v2-request/SI_ANCHOR_CONTRACT.md}.}
+\aodprovenance{\path{manual2/data/m1/metrology/}; the corresponding checks are specified in \path{manual2/tests/criteria/si_checks.csv}.}
 \aodliteraturenote{Realization and proper time: CCTF~\cite{bipm-mise-second}. Measurement models and correlated uncertainty: JCGM~\cite{jcgm100,jcgm6}.}
 
 \subsection{Source-bound metrological comparisons}
 \label{manual2:m3-metrology}
 \paragraph{Setup.}
-The M3 application binds the R03 observations of
+The typed observation application binds the witnessed-retention observations of
 \secref{manual2:witnessed-retention} and the four diagnostic outputs of
 \eqnref{eq:manual2-observation-freedom}. Each calculation retains its original
 inputs before the historical hydrogen target is read. The target's measurement
@@ -160,7 +160,7 @@ histories, duplicate corrections and unsupported promotion of unknown terms
 invalidate the corresponding record. Exact endpoint subtraction alone does
 not establish a matched physical observation.
 
-\aodprovenance{\path{manual2/data/m1/m3_metrology/} separates predictions,
+\aodprovenance{\path{manual2/data/m1/metrology_comparison/} separates predictions,
 comparisons and the application report. Typed mappings use
 \mainsection{sec:m3-maps}; exact propagation requires the joint law of
 \mainequation{eq:m3-finite-law}.}
@@ -172,7 +172,7 @@ Fountain realization: Heavner et al.~\cite{heavner-nist-f2-2014}.}
 The BIPM adjustment input retains 153 rows, including seven effectively excluded by enlarged uncertainties, and 1,168 correlation coefficients. The output contains 14 frequency estimates and their covariance. Raw bytes, source metadata and prior target exposure are preserved.
 
 \paragraph{Derivation.}
-The source README describes a ratio basis, while the numerical matrix is consistent with squared hertz. Under this documented interpretation, ratios to the exact Cs definition use \(\Sigma_{\nu/\nu_{\mathrm{Cs}}}=\Sigma_\nu/\nu_{\mathrm{Cs}}^2\); general ratios use their full Jacobian. Exact rational intervals propagate the nearest-rounding cells of covariance inputs and printed frequencies. All 105 calculated uncertainty intervals overlap the corresponding squared output-uncertainty rounding cells. This includes cases where a point estimate alone lies outside the last-digit interval of the output. The preserved check used a nearest-rounding cell for every token. The separate M3 precision successor identifies 26 printed-zero cells affecting 13 ratios: their formatting or underflow convention is not supplied by the source. Treating those zeros as point transcriptions is a conditional numerical check, not a source-exact uncertainty claim. All 105 point results are preserved; a one-percent sigma mutation in the selected affected ratio is rejected under that conditional policy.
+The source README describes a ratio basis, while the numerical matrix is consistent with squared hertz. Under this documented interpretation, ratios to the exact Cs definition use \(\Sigma_{\nu/\nu_{\mathrm{Cs}}}=\Sigma_\nu/\nu_{\mathrm{Cs}}^2\); general ratios use their full Jacobian. Exact rational intervals propagate the nearest-rounding cells of covariance inputs and printed frequencies. All 105 calculated uncertainty intervals overlap the corresponding squared output-uncertainty rounding cells. This includes cases where a point estimate alone lies outside the last-digit interval of the output. The preserved check used a nearest-rounding cell for every token. The separate printed-zero precision check identifies 26 printed-zero cells affecting 13 ratios: their formatting or underflow convention is not supplied by the source. Treating those zeros as point transcriptions is a conditional numerical check, not a source-exact uncertainty claim. All 105 point results are preserved; a one-percent sigma mutation in the selected affected ratio is rejected under that conditional policy.
 
 \paragraph{Specialization.}
 The recommendation multiplies standard uncertainty by \(2.35\), hence covariance by \(2.35^2\). This is distinct from a coverage factor. The adjustment's added fractional term \(5.324065020\times10^{-17}\) is already represented in its outputs and is not appended again. Adjusted estimates and their contributing measurements are not independent observations of one another.

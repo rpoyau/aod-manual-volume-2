@@ -345,7 +345,7 @@ def comparison(root,manifest,prediction,cases):
     require(canonical(prediction)==canonical(_assemble_prediction(root,manifest,cases)),
             'Comparison prediction differs from bound campaign cases')
     catalog=_evaluation(root)
-    import matter1_m3_metrology_vendor as vendor
+    import matter1_metrology_vendor as vendor
     api=vendor.metrology(root)
     hydrogen=api.load_profile('hydrogen')
     cesium=api.load_profile('cesium')
@@ -366,7 +366,7 @@ def comparison(root,manifest,prediction,cases):
             'comparison_status':'physical_loss_and_clock_maps_unestablished',
             'uncertainty':{'model':'unknown','realization':'unknown','shared_source_covariance':'unknown'},
             'overlapping_measurements_averaged':False})
-    from matter1_m3_metrology import isotope_inputs
+    from matter1_metrology_comparison import isotope_inputs
     return {'schema_version':1,'profile':PROFILE,'prediction_sha256':digest(prediction),
         'evaluation_catalog_sha256':sha(Path(root)/'manual2/data/m1/isotopes/catalog.json'),
         'rows':rows,'hydrogen_source_reductions':hydrogen_reductions,

@@ -2,9 +2,9 @@
 from pathlib import Path
 import hashlib
 import json
-from m3_preservation import preserved_digest as previous_digest
+from scientific_preservation import preserved_digest as previous_digest
 RECEIPT = Path('manual2/evidence/isotope-preservation.json')
-RECEIPT_SHA256 = '6ae7bed4df23beb17e322003a48d54ebc0da5a9681c829cf45727985252d7da8'
+RECEIPT_SHA256 = 'f9fab948c33b3cfe3fcb9c6ec667d02017ce5713e2a9b8bb63b5e25557ab1bb4'
 def receipt(root):
     data=(Path(root)/RECEIPT).read_bytes()
     if hashlib.sha256(data).hexdigest()!=RECEIPT_SHA256:
