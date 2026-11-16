@@ -1,0 +1,40 @@
+291 Lv                                                                                                                               291 Lv
+116    175                                                      From ENSDF                                                           116    175
+
+
+
+                                                                 Adopted Levels
+
+                                                                     History
+                                      Type           Author            Citation           Literature Cutoff Date
+                                 Full Evaluation    C. Morse    NDS 182, 130 (2022).           14-Sep-2021
+
+Q(β− )=−4409 SY; S(n)=5855 SY; S(p)=2837 SY; Q(α)=1.089×104 9              2021Wa16
+∆Q(β− )=863, ∆S(n)=833, ∆S(p)=859 (2021WA16).
+S(2n)=13356 SY 801, S(2p)=4800 SY 806, Q(εp)=1224 SY 938 (2021WA16).
+Experimental Q(α)=1.089E+4 7 (2006Og05).
+291 Lv has been produced in two experiments at JINR through the 245 Cm(48 Ca,2n) reaction using the U400 cyclotron coupled to
+
+     DGFRS (2004Og07,2006Og05). An additional event that was tentatively identified as originating from 293 Lv in 2012HO12 was
+     later reassigned to 291 Lv in 2016HO09. Four events have been observed in total. Candidate events were selected by the
+     observation of chains of time- and position-correlated α decays, initiated with the implantation of evaporation residues in a
+     position-sensitive focal-plane detector, and terminated by spontaneous fission. Positive identification of 291 Lv was based on
+     comparison of the known properties of the daughter nuclei to those of the observed decay chains.
+Half-lives, branching ratios, and α-decay energies in this evaluation have been computed from the individual events listed in the
+     references above. Half-life uncertainties have been computed according to the method of 1984SC13. An additional 10 keV
+     systematic uncertainty is assumed for the α-decay energies, which is added in quadrature to the averaged statistical uncertainty.
+
+                                                                  291 Lv Levels
+
+
+
+ E(level)        T1/2                                                             Comments
+  0          19 ms +17−6      %α=100; %SF≤20
+                              E(level): Assumed ground state.
+                              T1/2 : From four events.
+
+
+
+
+                                                                      1
+

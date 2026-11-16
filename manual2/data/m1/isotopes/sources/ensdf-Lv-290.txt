@@ -1,0 +1,123 @@
+290 Lv                                                                                                                      290 Lv
+116    174 -1                                    From ENSDF - Evaluated January 2019                                        116    174 -1
+
+
+
+                                                                Adopted Levels
+
+                                                                   History
+                                    Type           Author              Citation        Literature Cutoff Date
+                               Full Evaluation   Balraj Singh     NDS 156, 70 (2019)       31-Jan-2019
+
+S(n)=7400 SY; S(p)=2760 SY; Q(α)=11000 70      2017Wa10
+Estimated uncertainties (2017Wa10): ∆S(n)=820, ∆S(p)=1040.
+S(2n)=13980 (theory,1997Mo25). S(2p)=4420 1040, Q(εp)=340 880 (syst,2017Wa10).
+2012Og06, 2006Og05, 2004Og10 (also 2011Og07, 2009Og07, 2007Og05, 2005Og03, 2005OgZZ, 2004OgZZ, 2004Mo15,
+    2003OgZZ, 2002OgZX): 290 Lv produced as α daughter of 294 Og in four correlated decay chains. See 294 Og Adopted Levels for
+    details.
+
+2006Og05,2004Og07 (also 2004Og05): 290 Lv produced in 245 Cm(48 Ca,3n),E=255, 249, 243 MeV reaction at FLNR-JINR-Dubna
+   facility using DGFRS separator, optimized for the production of 290 ,291 Lv. The typical beam intensity was 1.2 pµA. The target
+   was enriched to 98.7%. Collaboration of JINR, Russia, and LLNL, USA. A total of 12 correlated decay chains was observed: nine
+   by 2006Og05 and three in 2004Og07 with the following history:
+
+Event #1: Energy of the evaporation residue (EVR)=11.7 MeV (2006Og05).
+Eα1 =11150 keV 310, ∆tα1 =0.207 ms, assigned to 290 Lv.
+Eα2 =10080 keV 310, ∆tα2 =107.8 ms, assigned to 286 Fl α decay.
+ESF =170 MeV, ∆tSF =1.929 ms, assigned to 282 Cn SF decay.
+
+Event #2: Energy of the evaporation residue=10.2 MeV (2006Og05).
+Eα1 =10810 keV 120, ∆tα1 =20.1 ms, assigned to 290 Lv.
+Eα2 =10050 keV 120, ∆tα2 =54.1 ms, assigned to 286 Fl α decay.
+ESF =188 MeV, ∆tSF =1.636 ms, assigned to 282 Cn SF decay.
+
+Event #3: Energy of the evaporation residue=13.3 MeV (2006Og05).
+Eα1 =10800 keV 500, ∆tα1 =10.0 ms, assigned to 290 Lv.
+Eα2 =10190 keV 110, ∆tα2 =137.9 ms, assigned to 286 Fl α decay.
+ESF =192 MeV, ∆tSF =1.020 ms, assigned to 282 Cn SF decay.
+
+Event #4: Energy of the evaporation residue=12.7 MeV (2006Og05).
+Eα1 =10890 keV 80, ∆tα1 =5.251 ms, assigned to 290 Lv.
+Eα2 =10200 keV 500, ∆tα2 =40.3 ms, assigned to 286 Fl α decay.
+ESF =193 MeV, ∆tSF =1.929 ms, assigned to 282 Cn SF decay.
+
+Event #5: Energy of the evaporation residue=11.3 MeV (2006Og05).
+Eα1 missing α.
+Eα2 =10220 keV 110, ∆tα2 =62.9 ms, assigned to 286 Fl, α decay.
+ESF =209 MeV, ∆tSF =0.746 ms, assigned to 282 Cn SF decay.
+
+Event #6: Energy of the evaporation residue=11.2 MeV (2006Og05).
+Eα1 missing α.
+ESF =176 MeV, ∆tSF =876.5 ms, assigned to 286 Fl SF decay.
+
+Event #7: Energy of the evaporation residue=11.7 MeV (2006Og05).
+Eα1 =10870 keV 110, ∆tα1 =0.792 ms, assigned to 290 Lv.
+Eα2 =10230 keV 110, ∆tα2 =339.3 ms, assigned to 286 Fl α decay.
+ESF missing SF.
+
+Event #8: Energy of the evaporation residue=8.4 MeV (2006Og05).
+Eα1 missing α.
+ESF =203 MeV, ∆tSF =252.3 ms, assigned to 286 Fl SF decay.
+
+
+
+
+                                                                    1
+290 Lv                                                                                                                      290 Lv
+116    174 -2                                               From ENSDF                                                      116    174 -2
+
+
+
+                                                       Adopted Levels (continued)
+
+Event #9: Energy of the evaporation residue=14.7 MeV (2006Og05).
+Eα1 =10600 keV 500, ∆tα1 =22.29 ms, assigned to 290 Lv.
+ESF =205 MeV, ∆tSF =126.4 ms, assigned to 286 Fl SF decay.
+
+Event #10: Energy of the evaporation residue=12.7 MeV (2004Og07).
+Eα1 =10880 keV 80, ∆tα1 =0.233 ms, assigned to 290 Lv.
+ESF =193 MeV, ∆tSF =328 ms, assigned to 286 Fl SF decay.
+
+Event #11: Energy of the evaporation residue=15.6 MeV (2004Og07).
+Eα1 missing α.
+ESF =176 MeV, ∆tSF =914 ms, assigned to 286 Fl SF decay.
+
+Event #12: Energy of the evaporation residue=11.9 MeV (2004Og07).
+Eα1 missing α.
+Eα2 =10030 keV 310, ∆tα2 =505 ms, assigned to 286 Fl α decay.
+ESF =169 MeV, ∆tSF =1.448 ms, assigned to 282 Cn SF decay.
+
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 142 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                               290 Lv Levels
+
+
+
+                                                      Cross Reference (XREF) Flags
+
+                                                      A    294 Og α decay (0.58 ms)
+
+
+ E(level)       Jπ       T1/2        XREF                                             Comments
+  0             0+   8.3 ms +35−19   A       %α=100 (2016Ho09); %SF≤8 (2016Ho09)
+                                             Only the α decay mode has been observed.
+                                             E(level): the reported activity is assumed to belong to the g.s. of 290 Lv.
+                                             T1/2 : 8.3 ms +35−19 (2017Og01,2015Og05 reviews); 8.3 ms +36−19 (2016Ho09
+                                               review). In 2016Ho09 review, two separate half-lives of 0.32 ms +26−10 and 14.9 ms
+                                               +103−10 are assigned based on the statistical analysis of all the events observed by
+                                               the Dubna group. Measurements: 8.3 ms +35−19 (2012Og06, from 11 events, one in
+                                               2012Og06 and 10 in 2006Og05). Others: 7.1 ms +32−17 (2006Og05,2011Og07); 15
+                                               ms +26−6 (2004Og07,2004Og12,2005Og03 from two events); 29 ms +140−33
+                                               (2002OgZX).
+                                             Eα=10.85 MeV 7 (2017Og01,2015Og05 reviews; 10.84 MeV 8 in 2011Og07 review);
+                                               10.85 MeV 6 (2016Ho09 review). Measurements: 10850 70 (2012Og06, from a total
+                                               of 11 events); 10840 80 (2006Og05).
+                                             Production σ=3.7 pb +36−18 at E*=37.9 MeV; 1.9 pb +21−10 at E*=42.7 MeV
+                                               (2006Og05); ≈1 pb at E*=(2004Og07).
+
+
+
+
+                                                                   2
+

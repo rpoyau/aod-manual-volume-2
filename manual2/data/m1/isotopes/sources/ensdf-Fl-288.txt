@@ -1,0 +1,265 @@
+288 Fl                                                                                                                            288 Fl
+114 174 -1                                        From ENSDF - Evaluated January 2019                                             114 174 -1
+
+
+
+                                                                 Adopted Levels
+
+                                                                     History
+                                     Type            Author              Citation          Literature Cutoff Date
+                               Full Evaluation    Balraj Singh    NDS 156, 148 (2019)           31-Jan-2019
+
+Q(β− )=−4730 SY; S(n)=7100 SY; S(p)=2490 SY; Q(α)=10072 13          2017Wa10
+Estimated uncertainties (2017Wa10): 970 for Q(β− ), 1010 for S(n), 1080 for S(p).
+Q(α)=10.080 MeV 20 (2017Ka66), 10.074 MeV 15 (2016Ho09), 10.07 MeV 3 (2015Og05,2017Og01).
+S(2n)=12870 1040 (syst,2017Wa10). S(2p)=6450 (theory,1997Mo25).
+EVR=Evaporation Residues.
+
+The 288 Fl nuclide has been identified by Dubna-Livermore-ORNL collaboration (2004Og12, also many other papers from this
+   group), and later independently by the GSI group using TASCA separator (2012Ho12). A total of 27 EVR-α-SF correlated decay
+   chains have been reported. Additionally, 288 Fl is also produced as alpha-daughter of 292 Lv, for which ten EVR-α-α-SF correlated
+   decay chains have been reported (see 292 Lv Adopted Levels).
+
+Experiments at FLNR-JINR-Dubna, using U-400 cyclotron and Dubna gas-filled recoil separator (DGFRS):
+288 Fl nuclide produced directly in experiments using nuclear reactions at FLNR-JINR-Dubna, and UNILAC-GSI laboratories. The
+
+     analyses of the experiments at Dubna were also done independently at the Lawrence Livermore National Laboratory (LLNL). The
+     radioactive targets were fabricated at the Oak Ridge National Laboratory (ORNL).
+
+2017Ka66 (also 2014MoZV): three correlated events were reported in 248 Cm(48 Ca,4n),E=261.6 MeV reaction using RIKEN Linear
+   Accelerator (RILAC) and gas-filled recoil ion separator (GARIS). Two EVR-α-α-SF correlated events and the following one
+   tentative EVR-α-α-α-SF event were observed, all starting from 292 Lv, with production σ=3.1 pb +28−18. All three events
+   produced 288 Fl. See 292 Lv Adopted Levels for details.
+
+2004Og07, 2004Og12 (also 2004OgZZ): 288 Fl formed in 244 Pu(48 Ca,4n),E=243,250,257 MeV (E*=41,47,51 MeV) at Dubna.
+     Measured EVR-α-SF events, T1/2 , Eα, production σ, excitation functions. Based on their analysis of events assigned to 289 Fl in
+     the present work, 2004Og07 point out that two events assigned to 288 Fl in their earlier studies
+     (2000Og05,2000Og07,2001Og01,2001Og02, 2001Og06,2002Og03,2002Og09,2002Og13) belonged to 289 Fl, instead.
+History of 12 EVR-α-SF correlated events (2004Og07), where ∆t values are time differences between successive decays.
+Event #1: Energy of the evaporation residue (EVR)=7.7 MeV: 2004Og07.
+Eα1 =9.98 MeV 8, ∆t1=0.826 s, assigned to 288 Fl.
+ESF =229 MeV, ∆t2 =0.177 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #2: Energy of the EVR=11.9 MeV: 2004Og07.
+Eα1 =2.9 MeV, ∆t1 =0.838 s, assigned to 288 Fl.
+ESF =225 MeV, ∆t2 =0.168 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #3: Energy of the EVR=9.8 MeV: 2004Og07.
+Eα1 missed.
+ESF =191 MeV, ∆t2 =0.565 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #4: Energy of the EVR=12.2 MeV: 2004Og07.
+Eα1 =10.02 MeV 7, ∆t1 =0.378 s, assigned to 288 Fl.
+ESF =137 MeV, ∆t2=0.326 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #5: Energy of the EVR=11.5 MeV: 2004Og07.
+Eα1 =9.97 MeV 7, ∆t1=0.427 s, assigned to 288 Fl.
+ESF =230 MeV, ∆t2 =0.072 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #6: Energy of the EVR=7.4 MeV: 2004Og07.
+Eα1 =9.91 MeV 9, ∆t1 =0.676 s, assigned to 288 Fl.
+ESF =150 MeV, ∆t2 =0.007 s, assigned to 284 Cn.
+
+
+
+                                                                      1
+288 Fl                                                                                                                         288 Fl
+114 174 -2                                                    From ENSDF                                                       114 174 -2
+
+
+
+                                                         Adopted Levels (continued)
+
+284 Cn decays by SF.
+
+Event #7: Energy of the EVR=11.5 MeV: 2004Og07.
+Eα1 =9.92 MeV 8, ∆t1 =0.083 s, assigned to 288 Fl.
+ESF =221 MeV, ∆t2 =0.028 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #8: Energy of the EVR=12.1 MeV: 2004Og07.
+Eα1 =9.93 MeV 8, ∆t1 =0.188 s, assigned to 288 Fl.
+ESF =205 MeV, ∆t2 =0.130 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #9: Energy of the EVR=11.8 MeV: 2004Og07.
+Eα1 =9.9 MeV 6, ∆t1 =0.930 s, assigned to 288 Fl.
+ESF =155 MeV, ∆t2 =0.069 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #10: Energy of the EVR=11.2 MeV: 2004Og07.
+Eα1 =9.94 MeV 7, ∆t1 =0.391 s, assigned to 288 Fl.
+ESF =221 MeV, ∆t2 =0.389 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #11: Energy of the EVR=11.7 MeV: 2004Og07.
+Eα1 =9.87 MeV 9, ∆t1 =0.823 s, assigned to 288 Fl.
+ESF =194 MeV, ∆t2 =0.063 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #12: Energy of the EVR=11.0 MeV: 2004Og07.
+Eα1 =10.05 MeV 19, ∆t1 =4.468 s, assigned to 288 Fl.
+ESF =199 MeV, ∆t2 =0.123 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #13: Energy of the EVR=9.5 MeV: 2004Og12.
+Eα1 =9.86 MeV 45, ∆t1 =3.852 s, assigned to 288 Fl.
+ESF =202 MeV, ∆t2 =0.202 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+
+2010Ei01: 244 Pu(48 Ca,4n),E=233-251 MeV at Dubna. Investigated deposition pattern of Fl on a gold surface using
+     thermochromatography technique and using the COLD apparatus, and found that Fl is as volatile as simultaneously studied elements
+     Hg, At, and Cn. Two correlated events were assigned to 288 Fl.
+Event #1: Energy of the evaporation residue (EVR)=9.95 MeV: 2010Ei01.
+Eα1 =9.95 MeV, assigned to 288 Fl.
+ESF =62 MeV, ∆t2 =0.109 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #2: Energy of the EVR=9.81 MeV: 2010Ei01.
+Eα1 =9.81 MeV, assigned to 288 Fl.
+ESF =108 MeV, ∆t2 =0.104 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+
+Experiments at GSI, using universal linear accelerator (UNILAC), Transactinide Separator and Chemistry Apparatus (TASCA) and
+   Cryo-Online Multidetector for Physics And Chemistry of Transactinides (COMPACT):
+
+2010Du06, 2011Ga19: 244 Pu(48 Ca,4n),E=259.4, 254.6 MeV; beam extracted from an electron cyclotron resonance (ECR) ion
+   source and accelerated by the universal linear accelerator (UNILAC) at the GSI. Target=438 µg/cm2 244 Pu enriched to 97.9%
+   purity backed with a 2.22 µm thick Ti foil. Product and beam nuclei were separated using the Transactinide Separator and
+   Chemistry Apparatus (TASCA) based on magnetic rigidity. Evaporation residues were implanted into the focal plane detector
+   consisting of two 300 µm thick double sided silicon strip detectors (DSSSDs) after passing through a multiwire proportional
+   counter (MWPC). Two single sided silicon strip detectors (SSSSDs) mounted behind the DSSSDs to suppress light, low-ionizing
+   particle detection and an additional eight SSSSDs were mounted upstream in a five-sided box configuration to detect alpha particles
+   and SF fragments escaping the DSSSDs. A Ge cluster detector with seven Ge crystals was mounted behind the Al backplate of the
+
+
+
+                                                                    2
+288 Fl                                                                                                                            288 Fl
+114 174 -3                                                     From ENSDF                                                         114 174 -3
+
+
+
+                                                          Adopted Levels (continued)
+
+     TASCA detection chamber for αγ coincidences. Measured EVR-α, EVR-SF correlations; deduced half life, Eα, production α.
+History of 11 EVR-α-SF correlated events (2010Du06,2011Ga19):
+Event #1: Energy of the evaporation residue=6.51 MeV: 2010Du06,2011Ga19.
+Eα1 =9982 keV, ∆t1 =0.242 s, assigned to 288 Fl.
+ESF =196 MeV, ∆t2 =0.130 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #2: Energy of the EVR=7.60 MeV: 2010Du06,2011Ga19.
+Eα1 =9814 keV, ∆t1 =1.348 s, assigned to 288 Fl.
+ESF =272 MeV, ∆t2 =0.059 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #3: Energy of the EVR=5.97 MeV: 2010Du06,2011Ga19.
+Eα1 =10062 keV, ∆t1 =0.649 s, assigned to 288 Fl.
+ESF =163 MeV, ∆t2 =0.171 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #4: Energy of the EVR=8.69 MeV: 2010Du06,2011Ga19.
+Eα1 =9915 keV, ∆t1 =0.446 s, assigned to 288 Fl.
+ESF =194 MeV, ∆t2 =0.087 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #5: Energy of the EVR=7.99 MeV: 2010Du06,2011Ga19.
+Eα1 =9919 keV, ∆t1 =1.164 s, assigned to 288 Fl.
+ESF =222 MeV, ∆t2 =0.343 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #6: Energy of the EVR=9.10 MeV: 2010Du06,2011Ga19.
+Eα1 =9980 keV, ∆t1 =0.242 s, assigned to 288 Fl.
+ESF =180 MeV, ∆t2 =0.026 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #7: Energy of the EVR=13.22 MeV: 2010Du06,2011Ga19.
+Eα1 =9947 keV, ∆t1 =0.763 s, assigned to 288 Fl.
+ESF =198 MeV, ∆t2 =0.029 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #8: Energy of the EVR=7.35 MeV: 2010Du06,2011Ga19.
+Eα1 =9700 keV, ∆t1 =0.823 s, assigned to 288 Fl.
+ESF =170 MeV, ∆t2 =0.063 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #9: Energy of the EVR=8.67 MeV: 2010Du06,2011Ga19.
+Eα1 =9965 keV, ∆t1 =0.482 s, assigned to 288 Fl.
+ESF =161 MeV, ∆t2 =0.401 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #10: Energy of the EVR=8.458 MeV: 2011Ga19.
+Eα1 =9947 keV, ∆t1 =1.132 s, assigned to 288 Fl.
+ESF =210 MeV, ∆t2 =0.043 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+Event #11: Energy of the EVR=7.605 MeV: 2011Ga19.
+Eα1 =9848 keV, ∆t1 =0.921 s, assigned to 288 Fl.
+ESF =196 MeV, ∆t2 =0.390 s, assigned to 284 Cn.
+284 Cn decays by SF.
+
+2014Ya33: 288 ,289 Fl produced in 244 Pu(48 Ca,xn),(48 Ca,4n) reaction, and separated in-flight using TASCA-COMPACT-GSI
+     separator, with the detection of two atoms, one each assigned to 288 Fl and 289 Fl. The adsorption behavior of Fl and Cn isotopes
+     was studied together with their homologues Pb, Hg and Rn in groups 14 and 12 using isothermal gas chromatography and
+     thermochromatography techniques. The Fl atoms adsorbed on Au surface formed a metal-metal but indicated higher inertness
+     compared to homologue Pb in the group. It was concluded that Fl is a volatile metal, the least reactive one in group 14, and not as
+     inert as a noble gas.
+Event #1: 2014Ya33.
+
+
+
+                                                                      3
+288 Fl                                                                                                                       288 Fl
+114 174 -4                                                   From ENSDF                                                      114 174 -4
+
+
+
+                                                       Adopted Levels (continued)
+
+Eα1 =9.65 MeV, assigned to 288 Fl.
+ESF =134 MeV, ∆t2 =0.650 s, assigned to 284 Cn.
+
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 160 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                               288 Fl Levels
+
+
+
+                                                      Cross Reference (XREF) Flags
+
+                                                      A     292 Lv α decay (12.8 ms)
+
+
+ E(level)    Jπ        T1/2         XREF                                               Comments
+  0          0+   0.64 s +14−10     A        %α=100 (2016Ho09); %SF≤3 (2016Ho09)
+                                             Only the α decay mode has been observed.
+                                             E(level): the reported activity is assumed to belong to the g.s. of 288 Fl.
+                                             T1/2 : 644 ms +138−97 (recommended by 2016Ho09, also 0.66 s +14−10 in
+                                               2015Og05,2017Og01). The recommended value does not include T1/2 =274 ms
+                                               +500−108 from 2017Ka66 (also 2014MoZV), however its inclusion will not affect the
+                                               adopted value significantly. Others: 0.52 s +22−13 (2011Ga19, earlier value was 0.47 s
+                                               +24−12 in 2010Du06); 0.80 s +32−18 (2004Og12,2005Og03,2011Og07; 0.63 s +27−14
+                                               in 2004Og07).
+                                             Theoretical Q(α)=9.1 MeV, and α-decay half-life=631 s (1997Mo25).
+                                             Eα=9.934 MeV 15 (2016Ho09); 9.94 MeV 2 (2017Ka66); 9.93 MeV 3
+                                               (2015Og05,2017Og01,2011Ga19); 9.95 MeV 7
+                                               (2004Og12,2004Og07,2005Og03,2011Og07) from 288 Fl α decay.
+                                             E(level): no x-rays or γ-rays were observed in prompt coincidence with any EVR
+                                               implant or α-particle (2011Ga19).
+                                             Maximum production σ=9.8 pb +39−31 (2010Du06,2011Ga19), 5.3 pb +36−21
+                                               (2004Og07).
+
+
+
+
+                                                                   4
+

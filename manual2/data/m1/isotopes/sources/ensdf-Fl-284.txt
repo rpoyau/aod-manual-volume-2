@@ -1,0 +1,57 @@
+284 Fl                                                                                                                             284 Fl
+114 170                                                         From ENSDF                                                         114 170
+
+
+
+                                                                Adopted Levels
+
+                                                                    History
+                                    Type            Author              Citation          Literature Cutoff Date
+                               Full Evaluation   Balraj Singh    NDS 156, 148 (2019)           31-Jan-2019
+
+S(n)=7790 CA; S(p)=3070 SY; Q(α)=10800 SY             2017Wa10,1997Mo25
+Estimated uncertainties (2017Wa10): ∆S(p)=930, ∆Q(α)=300.
+S(p) and Q(α) from 2017Wa10, S(n) from 1997Mo25.
+S(2p)=4630 930, Q(ε)=150 900 (syst, 2017Wa10). S(2n)=14300 (theory,1997Mo25).
+2015Ut02: 284 Fl identified in 239 Pu,240 Pu(48 Ca,4n), E=245,250 MeV at U400 cyclotron of FLNR-JINR facility. Targets=240 Pu
+    enriched to 98.97% at ORNL facility, and 92% enriched at JINR facility, with average thickness of 0.39 mg/cm2 4 for mixed
+    ORNL/JINR 240 Pu material. Evaporation residues (ERs) were separated from the incident beam ions, scattered particles, and
+    transfer reaction products by the DGFRS based on magnetic rigidities. Recoils passed through a tof system of two multiwire
+    proportional counters (MWPCs), and were implanted in the DSSD detector system (0.3-mm thick double-sided silicon strip
+    detectors) placed at the final focus of the DGFRS. Events related to Z=114 were identified by detecting time and position correlated
+    events corresponding to their implantation and subsequent SF decay; EVR-SF correlations. Five events were observed, four in
+    240 Pu(48 Ca,4n) reaction and one in 239 Pu(48 Ca,3n) reaction.
+
+2015Ut02 discuss observation of three SF events with low energies and decay times of 16.3, 16.9 and 55.3 µs, which may
+    correspond to SF isomers, but based on implantation energy and average decay half-life of 19 µs, authors conclude that these
+    activities most likely originate from other nuclides.
+2018Ut02: 240 Pu(48 Ca,4n),E=250 MeV at JINR-Dubna. Several SF decays with measured evaporation residue energy, decay time,
+    and SF energy assigned to the decay of 284 Fl from three observed events, and other eight events with 1-ms activity could belong to
+    284 Fl or 282 Cn, the latter through α2n-channel.
+
+Note that the 284 Fl nuclide is reported by only the Dubna group. An independent observation by another experimental group is
+    needed for a confirmed existence of this nuclide.
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 62 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                                 284 Fl Levels
+
+
+
+ E(level)   Jπ         T1/2                                                        Comments
+  0         0+     2.5 ms +18−8     %SF=100 (2016Ho09); %α≤25 (2016Ho09)
+                                    Only the SF decay mode has been observed.
+                                    The α decay is less likely from theoretical half-life of 85 s for α decay (1997Mo25). 2016Ho09
+                                      review article gives %α≤25.
+                                    E(level): it is assumed that the observed activity is associated with the g.s.
+                                    Production σ=2.6 pb +33−17 (2015Ut02) in 240 Pu(48 Ca,4n) reaction at 250 MeV; 0.23 pb +59−20
+                                      in 239 Pu(48 Ca,3n) at 245 MeV.
+                                    T1/2 : measured by 2015Ut02 from five EVR-SF correlated events leading to SF decay of 284 Fl.
+                                      The same value is given in 2017Og01 review. Other: 2.0 ms +27−7 (2016Ho09 review, half-life
+                                      based on the analysis of three correlated events).
+
+
+
+
+                                                                     1
+

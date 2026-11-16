@@ -1,0 +1,121 @@
+{
+  "geometry_sha256": "ce4b8f6ea9c1095393e6ae76074aa68fd2554c978234a1aba4412ad00bd82501",
+  "model_id": "m1:sequential-fold-recurrence:v2",
+  "parameter_provenance": "Declared finite scenario inputs; no isotope or frequency targets consumed.",
+  "parameters": {
+    "boundary_weight": "1",
+    "capacity_schedule": [
+      {
+        "capacity": "100",
+        "from_cut": 0
+      },
+      {
+        "capacity": "2",
+        "from_cut": 40
+      }
+    ],
+    "contact_completion_cuts": [
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60,
+      64
+    ],
+    "end_cut": 68,
+    "inner_cycles": 4,
+    "oriented_current": "1",
+    "outer_dwell_samples": {
+      "outer_minus": 1,
+      "outer_plus": 0
+    },
+    "phase_biases": {
+      "outer_minus": "-1/4",
+      "outer_plus": "1/4"
+    }
+  },
+  "rule": {
+    "burden_domain": "declared_boundary_load",
+    "clock_domain": "declared_model_commit_index",
+    "contact_rule": "start_with_retained_returned_pair_bind_on_completion_only_if_recurrent",
+    "loss_rule": "burden_exceeding_capacity_commits_absorbing_outer_plus_loss_at_next_cut",
+    "name": "retention_gated_oriented_edge_sequencer_v2",
+    "optional_dwell": "zero_edge_hinge_samples",
+    "ordering": [
+      "commit_previous_response",
+      "advance_retained_paths",
+      "advance_retained_contact",
+      "compare_committed_histories",
+      "queue_next_response"
+    ],
+    "radiation_identification": "not_asserted",
+    "readmission": "not_implemented_no_automatic_readmission",
+    "structural_hinge": "mandatory_turn_vertex_role_not_an_added_H1_edge",
+    "support_map": "contact_two_H1_edges_plus_one_structural_hinge_support_unit"
+  },
+  "schema_version": 2,
+  "source_bindings": [
+    {
+      "labels": [
+        "eq:atomic-h1",
+        "eq:hinge-grammar"
+      ],
+      "path": "sections/03_afc_basis.tex",
+      "sha256": "d5b648c0c74afe8c34a344d5069e78b5be5d9a98851ce1abcc6c0f9d1df8c6d3"
+    },
+    {
+      "labels": [
+        "eq:closure-trace",
+        "eq:closure-certificate",
+        "eq:closure-phase-step-count",
+        "eq:return-identity",
+        "eq:beat-reclosure",
+        "eq:closure-phase-window"
+      ],
+      "path": "sections/04_cut_running_fractal_tesseract.tex",
+      "sha256": "887a26c3c4f713b514aeb28f36bbf6361e648671dccbe3bfbda88a430c6bdb9b"
+    },
+    {
+      "labels": [
+        "eq:branch-hinge-rd",
+        "eq:fold-outer-closure",
+        "eq:expose-inner-lineage",
+        "eq:hinge-chirality-tag"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    {
+      "labels": [
+        "eq:wave-update-trace",
+        "eq:coupling-trace",
+        "eq:rcd-coupling",
+        "eq:rcd-additive-realization",
+        "eq:cadence-ratio",
+        "eq:count-comparator-realization"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    },
+    {
+      "labels": [
+        "eq:sadar-operator-expanded",
+        "eq:sadar-orientation-antisymmetry",
+        "eq:temporal-sadar-burden",
+        "eq:closure-residual",
+        "eq:shedding-excess"
+      ],
+      "path": "sections/06_field.tex",
+      "sha256": "2f51bb5ab1bdd0053f4887f5f00ba8db6aaf70786d563091d32cecde4a2c6ccc"
+    }
+  ],
+  "statuses": {
+    "empirical_status": "not_tested",
+    "execution_status": "declared_inputs",
+    "native_admission_status": "pending",
+    "native_atomic_mapping_status": "not_established",
+    "record_class": "sequential_declared_finite_model"
+  }
+}

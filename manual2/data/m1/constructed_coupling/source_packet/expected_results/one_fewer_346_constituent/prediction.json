@@ -1,0 +1,69 @@
+{
+  "base_prefix_sha256": "5dd2f2c412173d0f1783f65bc69634753402f579da74eff4b068309fd107be5d",
+  "base_trajectory_sha256": "0fd738fa18837c0fe94ed811d6ebfce4f349421710000d7e6e2244c36b4036de",
+  "case": "one_fewer_346_constituent",
+  "classification": "deterministic declared finite construction; not an isotope decay prediction",
+  "contract_sha256": "30eba08dfd83d8507d40996cc3801dff7813def1f8d382a2717c0b3588b95b85",
+  "effective_inventory": {
+    "N": 175,
+    "Z": 118
+  },
+  "field_trajectory_sha256": {
+    "B0": "f40c9c4501a9fa179b71acb5f03df1cbdb3dae7a8b45d47369ff318967378a70",
+    "B1": "f487cf5c55be13fb3804db9fea84a8471280f615c911f68b95371a1b710af357",
+    "B2": "4bd30920d7e842a94fee6475a8a8a705e588db0b5387fb5d5b74357a5e2cd203",
+    "P": "925b0828a27f84f426bf3d0086c1e65798b936c39a753c8eacbea11e0e2e28a5",
+    "R": "2b10c32a587a82b7c5a47227bdf6ad163c0dd7de8774ecf6b3dc5b9555e38930"
+  },
+  "file_sha256": {
+    "atomic_and_hinge_events.jsonl.gz": "a8bde0f21e8ee7e1f8c519bb8f16a28771fd6d88e0933d7bcb83ccb2516f3552",
+    "checks.json": "25a053cb8106171c980f2aa50b9db81d48220f2d0eb99b41bd20608558ee374f",
+    "click_and_rcd_events.jsonl.gz": "100ca3d3e214017ecc98eb6cd9017e15ac41fc6fdf76bcf3011a8a0337d5d034",
+    "closures.csv": "b2b76095aaf999bb3692f967d6ebf2b47646f805598ff565db79e05a330eaf74",
+    "constructed_state.json": "910907f08307dd5ae624b267723343bf4bcd125d1ff53e0bffbf99bd504d9588",
+    "directional_rd_rcd.csv": "50486f092d382179ac4dd0fb5dc82d8571dbaec3f69c11101cb7ceee6f447c32",
+    "nonnegative_load_terms.jsonl.gz": "c14af01470f3fe0825d420925aba29c825ea11cb516b58afff31e9fde63ed090",
+    "outer_return_witnesses.jsonl.gz": "5585e29eeb39117ec0d41b5baf64f7f8e1a2035633d692084ca13aeafc14a368",
+    "pressure_events.jsonl.gz": "54eba1a6ea6f336a5739d259a6003ca7cf82d13bf636751972b2c7505d2f4000",
+    "terminal_survival.csv": "45db7d47faf78632ecde7696d726fcbbfc44235d207b729b81ba716f5f4743f4",
+    "tick_events.jsonl.gz": "983ffc8c4e900b21591448098c43810338972411ca0c497c4472f8893d82e1af",
+    "windowed_relations.csv": "d59f8220b468cb9767d65c3e30def146c28ab8f325dc6a9515bc847e9b3d50c3"
+  },
+  "final_counts": {
+    "case": "one_fewer_346_constituent",
+    "closures_per_atomic_traversal": "4/128127",
+    "closures_per_reference_bip": "4/1909",
+    "hi_inclusive": 4000000000,
+    "kind": "cumulative",
+    "lag_drift": -1905,
+    "lo_exclusive": 62765,
+    "load_contact_count": 3747,
+    "new_parent_closures": 4,
+    "parent_atomic_traversals": 128127,
+    "parent_capacity": null,
+    "parent_loss": null,
+    "parent_structural_RD": 30881,
+    "parent_window_load": 226466451,
+    "phase_bias": "0",
+    "reference_bips": 1909,
+    "reference_structural_RD": 61,
+    "seconds": null,
+    "unwrapped_lag_end": -1905,
+    "unwrapped_lag_start": 0
+  },
+  "formation_cut": 62765,
+  "half_life": null,
+  "horizon_cut": 4000000000,
+  "implementation_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+  "physical_isotope_closures_until_decay": null,
+  "prediction_sha256": "957606709c5bcac8964eeca890d97fa295a261c316241989d49c0098c89b4da4",
+  "schema": "counted-construction-v1",
+  "seconds": null,
+  "source_binding_sha256": "532e4635d1657aba7a711cbca4be941ed9a2b47eef8acad9ec878bd735d59f40",
+  "unresolved": [
+    "physical nuclear identification",
+    "resolved inner nuclear evolution",
+    "parent closure capacity",
+    "loss/transformation and daughter witness"
+  ]
+}

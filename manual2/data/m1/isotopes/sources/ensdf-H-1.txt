@@ -1,0 +1,54 @@
+1H                                                                                                                                     1H
+1 0                                                                     From ENSDF                                                     1 0
+
+
+
+                                                                         Adopted Levels
+
+                                                                              History
+                                          Type              Author                Citation        Literature Cutoff Date
+                                     Full Evaluation     Balraj Singh      NDS 106, 601 (2005)          31-Oct-2005
+
+
+For scattering reactions: (γ,γ′ ); (e,e′ ); (p,p′ ); (n,n′ ), see separate datasets.
+1 H(ν,ν′ ): 2002Ze02: measured ratio of neutral to charged current cross sections.
+
+Mesic atom: 2003Ma73, 2003Go12, 2003An33, 2001Sc40, 2000Po33.
+The x-ray spectra from Kaonic atom: 2005Il01, 2005Be40, 2000Iw01, 1999Na46.
+Hyperfine structure for muonic atom: 2005Ba69.
+Anti-protonic x rays: 2000Bo58, 1999Au08.
+
+                                                                            1 H Levels
+
+
+
+                                                                Cross Reference (XREF) Flags
+
+                                                                A      1 n β− decay (613.9 s)
+
+
+ E(level)      Jπ       T1/2     XREF                                                        Comments
+  0.0         1/2+     stable    A          µ=+2.792847351 28 (2004Ei01)
+                                            Electric dipole moment<0.54×10−23 ecm 6 (2004Ei01,2003Dm02). Other: 1989Ch51.
+                                            Charge radius=0.870 fm 8 (2004Ei01). Measurements: 2001Es10, 2000Me30, 2000Ro08.
+                                            Jπ : measurements: 1930He02, 1929Mu01, 1927De01.
+                                            T1/2 : >2.1×1029 y (independent of decay mode) (2004Ei01,2004Ah03). T>1031 to 1033 y for
+                                               mode-dependent decays (2004Ei01) Measurements: 2004Ah03, 2003Ba42, 2003Zd01,
+                                               2001Tr12, 2000Be56, 1999Mc01, 1998Sh31, 1998Al14, 1991Be53, 1989Ph02. Possible decay
+                                               modes are listed in detail by 2004Ei01.
+                                            µ: 2004Ei01 adopt value from 2005Mo16 (2002 CODATA (http://physics.nist.gov/constants))
+                                               recommended value.
+                                            µ: NMR method. Measurements: 1981Gr24, 1975Ph03, 1974Pe07, 1974Gu06, 1972Wi02,
+                                               1972Ma81 (reevaluation by 1983Ma84), 1972Lu05, 1970Fy01, 1968Kl02, 1967Pe09,
+                                               1967Ma17, 1966My01, 1966Be50, 1965Ma25, 1963Sa04, 1963Sa05, 1963Vi04, 1962Ya08,
+                                               1962Ya07, 1962Pi04, 1961Ca20, 1961Bo11, 1959Li54, 1958Dr05, 1956Wi46, 1956Wi41,
+                                               1956Tr19, 1955Co36, 1951Ga31, 1951Je10, 1951So34, 1950Th07, 1950Bl73, 1950St88 (also
+                                               1949Ro15), 1949Ta01, 1939Ke12. See also reviews by 2005St24, 1976Fu06 and 1969Fu11.
+                                               Other related measurements: 2005Ka25, 2001Ge11, 2000La08, 1999Sc21, 1998Hu02,
+                                               1998Ad21, 1997Ka77, 1997Se18, 1997Wa28.
+
+
+
+
+                                                                               1
+

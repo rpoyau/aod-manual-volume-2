@@ -1,0 +1,117 @@
+286 Fl                                                                                                                      286 Fl
+114 172 -1                                      From ENSDF - Evaluated January 2019                                         114 172 -1
+
+
+
+                                                               Adopted Levels
+
+                                                                  History
+                                   Type            Author             Citation        Literature Cutoff Date
+                              Full Evaluation   Balraj Singh     NDS 156, 70 (2019)        31-Jan-2019
+
+S(n)=7300 SY; S(p)=3250 SY; Q(α)=10370 30      2017Wa10
+Estimated uncertainties (2017Wa10): ∆S(n)=760, ∆S(p)=1040.
+S(2n)=13290 930, S(2p)=5350 1040 (syst,2017Wa10).
+2012Og06, 2006Og05, 2004Og10 (also 2011Og07, 2009Og07, 2007Og05, 2005Og03, 2005OgZZ, 2004OgZZ, 2004Mo15,
+    2003OgZZ, 2002OgZX): 286 Fl produced as α grand-daughter of 294 Og in four correlated decay chains. See 294 Og Adopted Levels
+    for details.
+
+2006Og05, 2004Og07, 2004Og05: 286 Fl produced as α daughter of 290 Lv in 12 correlated decay chains. See 290 Lv Adopted
+   Levels for details.
+
+2004Og12, 2004OgZZ, 2004Og10: 286 Fl produced in 242 Pu(48 Ca,4n),E=244,250 MeV reaction at FLNR-JINR-Dubna using
+    DGFRS separator. A total of nine EVR-α/SF-SF correlated decay chains reported, seven at E=244 MeV and two at E=250 MeV.
+    The α/SF event was attributed to 286 Fl in five of the decay chains.
+History of EVR-α/SF-SF decay chain (2004Og12,2004OgZZ,2004Og10):
+
+Event #1: Energy of the evaporation residue (EVR)=10.9 MeV (2004Og12).
+Eα1 =10.10 MeV 15, ∆tα1 =14.2 ms, assigned to 286 Fl α decay.
+ESF =213 MeV, ∆tSF =0.978 ms, assigned to 282 Cn SF decay.
+
+Event #2: Energy of the evaporation residue (EVR)=11.5 MeV (2004Og12).
+ESF =201 MeV, ∆tSF =181 ms, assigned to 286 Fl SF decay.
+
+Event #3: Energy of the evaporation residue (EVR)=13.0 MeV (2004Og12).
+Eα1 =10.25 MeV 10, ∆tα1 =84.7 ms, assigned to 286 Fl α decay.
+ESF =189 MeV, ∆tSF =0.458 ms, assigned to 282 Cn SF decay.
+
+Event #4: Energy of the evaporation residue (EVR)=12.9 MeV (2004Og12).
+ESF =162 MeV, ∆tSF =135 ms, assigned to 286 Fl SF decay.
+
+Event #5: Energy of the evaporation residue (EVR)=10.3 MeV (2004Og12).
+Eα1 =10.20 MeV 6, ∆tα1 =185 ms, assigned to 286 Fl α decay.
+ESF =164 MeV, ∆tSF =1.586 ms, assigned to 282 Cn SF decay.
+
+Event #6: Energy of the evaporation residue (EVR)=13.3 MeV (2004Og12).
+ESF =218 MeV, ∆tSF =41.4 ms, assigned to 286 Fl SF decay.
+
+Event #7: Energy of the evaporation residue (EVR)=8.9 MeV (2004Og12).
+ESF =182 MeV, ∆tSF =335 ms, assigned to 286 Fl SF decay.
+
+Event #8: Energy of the evaporation residue (EVR)=10.5 MeV (2004Og12).
+ESF =228 MeV, ∆tSF =603 ms, assigned to 286 Fl SF decay.
+
+Event #9: Energy of the evaporation residue (EVR)=13.3 MeV (2004Og12).
+Eα1 =10.34 MeV 22, ∆tα1 =150 ms, assigned to 286 Fl α decay.
+ESF =211 MeV, ∆tSF =0.143 ms, assigned to 282 Cn SF decay.
+
+
+
+
+                                                                   1
+286 Fl                                                                                                                       286 Fl
+114 172 -2                                                   From ENSDF                                                      114 172 -2
+
+
+
+                                                       Adopted Levels (continued)
+
+2010El06, 2009St21: 286 Fl produced in 242 Pu(48 Ca,4n), E=256, 263 MeV at LBNL cyclotron facility using the BGS separator.
+    Signals from multiwire proportional counters (MWPC) and focal plane detector (FPD) were used to distinguish implantation events
+    from radioactive decay events in the FPD. Z=114 events were identified by detecting time and position correlated events
+    corresponding to their implantation and subsequent radioactive decay chain terminating in SF decay.
+History of decay chains in 2010El06 and 2009St21:
+Event #1: Energy of the evaporation residue (EVR)=14.37 MeV (2010El06).
+Eα1 =10.31 MeV 10, ∆t1 =76 ms, assigned to 286 Fl α decay.
+E(SF)=205.4 MeV, ∆t(SF)=522 µs, assigned to 282 Cn SF decay.
+
+Event #2: Energy of the evaporation residue (EVR)=11.55 MeV (2009St21).
+Eα1 =10.23 MeV 4, ∆t1 =0.3009 s, assigned to 286 Fl α decay.
+E(SF)=214.5 MeV, ∆t(SF)=3.6 ms, assigned to 282 Cn SF decay.
+
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 154 primary references dealing with
+    the half-lives and other aspects of nuclear structure in this mass region.
+
+                                                               286 Fl Levels
+
+
+
+                                                      Cross Reference (XREF) Flags
+
+                                                      A     290 Lv α decay (8.3 ms)
+
+
+ E(level)    Jπ        T1/2         XREF                                              Comments
+  0          0+   166 ms +40−27     A        %α=60 +10−11; %SF=40 +11−10 (2017Og01,2015Og05)
+                                             Decay modes: others: %α=52, %SF=48 (2016Ho09 review); %α=50, %SF=50
+                                               (2012Og06).
+                                             E(level): the reported activity is assumed to belong to the g.s. of 286 Fl.
+                                             T1/2 : from 2016Ho09 review, analysis of all the 27 correlated decay chains reported,
+                                               25 in JINR-Dubna work and two in LBNL-Berkeley work. Other: 0.12 s +4−2
+                                               (2017Og01 and 2015Og05 reviews, also 2012Og06 from analysis of 20 chains out of
+                                               a total of 25 observed correlated decay chains in 2012Og06, 2006Og05, 2004Og07
+                                               and 2004Og12).
+                                             Eα=10.21 MeV 4 (2017Og01, 2015Og05 and 2016Ho09 reviews). Measurements:
+                                               10190 60 (2012Og06, from analysis of 12 events out of a total of 25 observed events
+                                               in Dubna work, one in 2012Og06 study, and the rest in previous studies at Dubna);
+                                               10.21 MeV 6 (2004Og12); 10.23 MeV 4 (2009St21); 10.31 MeV 10 (2010El06).
+                                             Production σ=1.4 pb +32−12 in 242 Pu(48 Ca,4n),E=244 MeV at center-of-target
+                                               (2009St21), later adjusted to 3.1 pb +49−26 by 2010El06; 0.6 ps +9−5 in
+                                               242 Pu(48 Ca,4n),E=256 MeV (2010El06); 4.5 pb +36−19 in 242 Pu(48 Ca,4n),E=238
+                                               MeV (2004Og12).
+
+
+
+
+                                                                   2
+

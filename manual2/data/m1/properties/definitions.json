@@ -1,0 +1,204 @@
+{
+  "axes": {
+    "entity": [
+      "element",
+      "atom",
+      "isotope",
+      "atomic_isotope"
+    ],
+    "exposure": [
+      "retrospective"
+    ],
+    "method": [
+      "measured",
+      "evaluated",
+      "estimated",
+      "derived",
+      "theoretical",
+      "semiempirical",
+      "definition",
+      "not_available"
+    ],
+    "value_kind": [
+      "numeric",
+      "text",
+      "unknown",
+      "lower_limit",
+      "upper_limit",
+      "interval",
+      "not_applicable"
+    ]
+  },
+  "policies": [
+    "Decimal strings preserve reported digits; they do not make physical measurements exact.",
+    "Uncertainty magnitude, statistical convention, distribution and covariance are distinct.",
+    "NUBASE systematics/tentative markers remain visible; an absent source does not imply absent physical data.",
+    "Element-reference A selections remain inherited unresolved choices, not standard atomic weights.",
+    "Bulk-material properties require material/phase/temperature/pressure identity and are outside this atom/isotope catalog."
+  ],
+  "properties": [
+    {
+      "definition": "CIAAW standard atomic weight for normal materials, with interval where specified; distinct from isotope mass and sample composition.",
+      "entity_kind": "element",
+      "id": "standard_atomic_weight",
+      "unit": "1"
+    },
+    {
+      "definition": "Ground-state electronic configuration, isotope unspecified unless explicitly assigned.",
+      "entity_kind": "atom",
+      "id": "ground_configuration",
+      "unit": "text"
+    },
+    {
+      "definition": "Ground-state term and angular momentum designation with source qualifiers.",
+      "entity_kind": "atom",
+      "id": "ground_term",
+      "unit": "text"
+    },
+    {
+      "definition": "Minimum energy to remove an electron from the stated charge-state ground state; q0 and q1 give first and second ionization separately.",
+      "entity_kind": "atom",
+      "id": "ionization_energy",
+      "unit": "eV"
+    },
+    {
+      "definition": "Energy released on attachment to the stated neutral ground state; positive denotes bound anion under the declared source convention.",
+      "entity_kind": "atom",
+      "id": "electron_affinity",
+      "unit": "eV"
+    },
+    {
+      "definition": "Selected electronic level energy relative to the specified spectrum ground state.",
+      "entity_kind": "atom",
+      "id": "excitation_energy",
+      "unit": "cm^-1"
+    },
+    {
+      "definition": "Selected observed or Ritz wavelength, with medium and transition retained.",
+      "entity_kind": "atom",
+      "id": "line_wavelength",
+      "unit": "nm"
+    },
+    {
+      "definition": "State-, frequency- and tensor-component-specific atomic polarizability in the explicitly stated source convention.",
+      "entity_kind": "atom",
+      "id": "polarizability",
+      "unit": "a0^3"
+    },
+    {
+      "definition": "Specified transition frequency response to magnetic field; sublevels, field regime and order required.",
+      "entity_kind": "atom",
+      "id": "zeeman_coefficient",
+      "unit": "Hz/T"
+    },
+    {
+      "definition": "Specified transition quadratic electric-field response; sublevels, field regime and order required.",
+      "entity_kind": "atom",
+      "id": "stark_coefficient",
+      "unit": "Hz/(V/m)^2"
+    },
+    {
+      "definition": "Neutral-atom atomic mass from AME2020; not bare nuclear mass and not standard atomic weight.",
+      "entity_kind": "isotope",
+      "id": "atomic_mass",
+      "unit": "u"
+    },
+    {
+      "definition": "AME2020 neutral-atom mass excess relative to A atomic mass units.",
+      "entity_kind": "isotope",
+      "id": "mass_excess",
+      "unit": "keV"
+    },
+    {
+      "definition": "AME2020 reported binding energy per nucleon, retaining evaluation/systematics markers.",
+      "entity_kind": "isotope",
+      "id": "binding_energy_per_nucleon",
+      "unit": "keV"
+    },
+    {
+      "definition": "A times the AME2020 binding energy per nucleon; exact multiplication of the reported decimal.",
+      "entity_kind": "isotope",
+      "id": "binding_energy",
+      "unit": "keV"
+    },
+    {
+      "definition": "ME(Z,A-1)+ME(neutron)-ME(Z,A), neutral-atom mass-excess convention; joint input covariance not supplied.",
+      "entity_kind": "isotope",
+      "id": "neutron_separation_energy",
+      "unit": "keV"
+    },
+    {
+      "definition": "ME(Z-1,A-1)+ME(H-1)-ME(Z,A), neutral-atom mass-excess convention; electron binding corrections not separately reconstructed.",
+      "entity_kind": "isotope",
+      "id": "proton_separation_energy",
+      "unit": "keV"
+    },
+    {
+      "definition": "ME(parent)-ME(daughter)-ME(He-4), neutral-atom mass-excess convention. A positive Q does not establish an observed decay branch.",
+      "entity_kind": "isotope",
+      "id": "alpha_decay_q",
+      "unit": "keV"
+    },
+    {
+      "definition": "AME2020 reported beta-minus energy with its source uncertainty; sign is retained.",
+      "entity_kind": "isotope",
+      "id": "beta_minus_q",
+      "unit": "keV"
+    },
+    {
+      "definition": "NUBASE nuclear spin/parity designation; tentative parentheses, direct-measurement * and systematics # remain visible.",
+      "entity_kind": "isotope",
+      "id": "spin_parity",
+      "unit": "text"
+    },
+    {
+      "definition": "NUBASE verbatim decay-mode/intensity record; not normalized into unsupported probabilities.",
+      "entity_kind": "isotope",
+      "id": "decay_branching",
+      "unit": "text"
+    },
+    {
+      "definition": "NUBASE source-reported abundance qualification; not a universal sample composition.",
+      "entity_kind": "isotope",
+      "id": "isotopic_abundance",
+      "unit": "text"
+    },
+    {
+      "definition": "State-specific nuclear magnetic dipole moment; no spin-only inferred value.",
+      "entity_kind": "isotope",
+      "id": "magnetic_dipole_moment",
+      "unit": "nuclear_magneton"
+    },
+    {
+      "definition": "State-specific nuclear electric quadrupole moment.",
+      "entity_kind": "isotope",
+      "id": "electric_quadrupole_moment",
+      "unit": "b"
+    },
+    {
+      "definition": "State-specific root-mean-square nuclear charge radius.",
+      "entity_kind": "isotope",
+      "id": "charge_radius",
+      "unit": "fm"
+    },
+    {
+      "definition": "Energy of the named isomer relative to its stated ground-state endpoint; candidate assignments remain tentative.",
+      "entity_kind": "isotope",
+      "id": "isomer_excitation_energy",
+      "unit": "keV"
+    },
+    {
+      "definition": "Ground-state hyperfine separation with explicit isotope, electronic state and reference dependence.",
+      "entity_kind": "atomic_isotope",
+      "id": "hyperfine_frequency",
+      "unit": "Hz"
+    },
+    {
+      "definition": "Frequency difference for one stated electronic transition between two explicit isotope/state endpoints, retaining sign convention.",
+      "entity_kind": "atomic_isotope",
+      "id": "isotope_shift",
+      "unit": "Hz"
+    }
+  ],
+  "schema": "matter1.property-definitions.v1"
+}

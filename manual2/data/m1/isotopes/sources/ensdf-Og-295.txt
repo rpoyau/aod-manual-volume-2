@@ -1,0 +1,25 @@
+295 Og                                                                                                                         295 Og
+118    177                                                   From ENSDF                                                        118    177
+
+
+
+                                                        Adopted Levels:unobserved
+
+                                                                  History
+                                    Type           Author           Citation          Literature Cutoff Date
+                               Full Evaluation   C. Morse     NDS 182, 130 (2022).         14-Sep-2021
+
+
+2016HO09 searched for production of element 120 using the 248 Cm(54 Cr,3n) reaction at GSI. Three correlated α decays were
+   observed, followed by a high-energy event which could be spontaneous fission, were observed. The energy and decay time of the
+   final α decay are in agreement with the properties of 291 Lv. However, an implantation event could not be identified
+   unambiguously. The time between the final α decay and the potential spontaneous-fission event is also much longer than most other
+   published data.
+2017HE11 presents a reanalysis of the data in 2016HO09 and concludes that the three events are background events rather than a
+   decay chain.
+
+
+
+
+                                                                   1
+

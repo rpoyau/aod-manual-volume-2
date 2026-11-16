@@ -1,0 +1,36 @@
+285 Fl                                                                                                                            285 Fl
+114 171                                                       From ENSDF                                                          114 171
+
+
+
+                                                               Adopted Levels
+
+                                                                   History
+                                      Type          Author           Citation           Literature Cutoff Date
+                                Full Evaluation    C. Morse    NDS 182, 167 (2022)           14-Sep-2021
+
+S(n)=5919 SY; S(p)=2948 SY; Q(α)=1.056×104 7            2021Wa16
+∆S(n)=770, ∆S(p)=669 (2021WA16).
+S(2p)=4983 SY 736, Q(εp)=1228 SY 863 (2021WA16).
+285 Fl has been observed in the 242 Pu(48 Ca,5n) reaction at LBNL (2010EL06) and the 240 Pu(48 Ca,3n) reaction at JINR
+
+     (2015UT02,2018UT02). Events were identified based on the observation of chains of α-decaying nuclei terminated by spontaneous
+     fission. The observed decay properties were compared to those in the literature in order to assign decays to specific nuclei.
+Half-lives, branching ratios, and α-decay energies in this evaluation have been computed from the individual events listed in the
+     references above. Half-life uncertainties have been computed according to the method of 1984SC13. An additional 10 keV
+     systematic uncertainty is assumed for the α-decay energies, which is added in quadrature to the averaged statistical uncertainty.
+
+                                                                 285 Fl Levels
+
+
+
+ E(level)         T1/2                                                           Comments
+  0         101 ms +59−27      %α=100; %SF≤12.5
+                               E(level): Assumed ground state.
+                               T1/2 : From seven events.
+
+
+
+
+                                                                    1
+

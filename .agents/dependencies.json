@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "bound_on": "2026-11-16",
+  "authoring_dependency": {
+    "repository": "https://github.com/rpoyau/aod-skills",
+    "commit": "f260750a4d817dec45044ce31a9fa9748b612086",
+    "tree": "4750b4ad87d0dd71e05c84aa1684b0435316651b",
+    "status_at_binding": "reviewed_cleanup_candidate",
+    "source_bindings_path": "SOURCE_BINDINGS.json",
+    "source_bindings_sha256": "75433ec23abfa49193741c57ff0861387a96875fca5d194c50eb72d44d4f67e0",
+    "entry_points": [
+      {
+        "name": "aod",
+        "entry_point": "skills/aod/SKILL.md",
+        "sha256": "8c1b32c2c882cf5627c33df9779b5d62c1797059cb38796438179cb51e56d024",
+        "directory_tree": "5d60bab51f167e0cbbce77c1c73260154c1cd5b0"
+      },
+      {
+        "name": "axiomatic-fundamentalism",
+        "entry_point": "skills/axiomatic-fundamentalism/SKILL.md",
+        "sha256": "e9eda07cd964192ac84bcae8628990153f683ad3ef77722b7f95f0f6d524a76f",
+        "directory_tree": "cf94cca496eb7f63da719be09ae7885dba40dbab"
+      },
+      {
+        "name": "afc",
+        "entry_point": "skills/afc/SKILL.md",
+        "sha256": "1a01dbfbf8705cd01c3c5a34afb064a081278ebb338c01f4aab2a312d83895a4",
+        "directory_tree": "7149b2557a25d99bed75668923b4961fc5791911"
+      },
+      {
+        "name": "general-mechanics",
+        "entry_point": "skills/general-mechanics/SKILL.md",
+        "sha256": "94c7efc8671eaaa4a2b5f857b59a8d90fdadceafcb208dac11d59c984c9330b5",
+        "directory_tree": "a6e21cb6dccdd6f6e464c1cc62387b78d101a452"
+      }
+    ],
+    "scope": "Portable authoring/review guidance; does not certify current AOD source or scientific results.",
+    "loading": "Read explicit paths from a verified external checkout; no automatic discovery or global installation implied.",
+    "project_history_required": false,
+    "scientific_build_dependency": false
+  },
+  "scientific_dependency": {
+    "repository": "https://github.com/rpoyau/aod",
+    "foundation_binding": "manual2/evidence/foundation-source.json",
+    "rebind_record": "manual2/evidence/m3-source-rebind.json",
+    "vendor_binding": "manual2/vendor/aod_m3/binding.json",
+    "required_consumer_check": "scripts/check_matter1_aod_consumer.py",
+    "scope": "Main source and M3 executable have separate exact commit and authority bindings. Consume both foundation and vendor bindings; verify Main bytes against the executable checkout. No floating upstream main."
+  }
+}

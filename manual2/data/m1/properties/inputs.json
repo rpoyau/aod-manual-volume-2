@@ -1,0 +1,231 @@
+{
+  "acquisition_attempts": [
+    {
+      "detail": "Sandbox DNS failed; escalation aborted. No response bytes retained. Absence refers to this package, not availability of physical data.",
+      "family": "atomic_ground_states_ionization",
+      "status": "not_acquired_network_permission_not_obtained",
+      "url": "https://physics.nist.gov/cgi-bin/ASD/ie.pl"
+    },
+    {
+      "family": "electron_affinities",
+      "status": "not_acquired",
+      "url": "https://webbook.nist.gov/chemistry/"
+    },
+    {
+      "family": "atomic_levels_lines",
+      "status": "not_acquired",
+      "url": "https://physics.nist.gov/asd"
+    },
+    {
+      "family": "nuclear_moments_radii",
+      "status": "not_acquired",
+      "url": "https://www-nds.iaea.org/"
+    }
+  ],
+  "adoptions": [
+    {
+      "parser": "curated_property_records_v1",
+      "records": [
+        {
+          "record": {
+            "conditions": {},
+            "entity_id": "isotope:H-1:ground",
+            "exposure": "retrospective",
+            "id": "magnetic_dipole_moment:isotope:H-1:ground:ensdf-historical",
+            "locator": "PDF page 1, ground-state row, magnetic moment; evaluation 2005",
+            "method": "evaluated",
+            "physical_prediction": false,
+            "property": "magnetic_dipole_moment",
+            "qualification": "Dated ENSDF evaluation retained as historical source; not a current recommended value. Moment units follow ENSDF conventions; last-digit uncertainty retained.",
+            "selection_status": "adopted",
+            "source_id": "ensdf-H-1-text",
+            "uncertainty": {
+              "coverage": null,
+              "distribution": null,
+              "kind": "reported_last_digit_magnitude",
+              "value": "0.000000028"
+            },
+            "unit": "nuclear_magneton",
+            "value": "2.792847351",
+            "value_kind": "numeric"
+          },
+          "source_match": "µ=+2.792847351 28"
+        },
+        {
+          "record": {
+            "conditions": {},
+            "entity_id": "isotope:H-1:ground",
+            "exposure": "retrospective",
+            "id": "charge_radius:isotope:H-1:ground:ensdf-historical",
+            "locator": "PDF page 1, ground-state charge-radius comment; evaluation 2005",
+            "method": "evaluated",
+            "physical_prediction": false,
+            "property": "charge_radius",
+            "qualification": "Dated ENSDF evaluation retained as historical source; not a current recommended value. Moment units follow ENSDF conventions; last-digit uncertainty retained.",
+            "selection_status": "adopted",
+            "source_id": "ensdf-H-1-text",
+            "uncertainty": {
+              "coverage": null,
+              "distribution": null,
+              "kind": "reported_last_digit_magnitude",
+              "value": "0.008"
+            },
+            "unit": "fm",
+            "value": "0.870",
+            "value_kind": "numeric"
+          },
+          "source_match": "Charge radius=0.870 fm 8"
+        }
+      ],
+      "source_id": "ensdf-H-1-text"
+    },
+    {
+      "parser": "curated_property_records_v1",
+      "records": [
+        {
+          "record": {
+            "conditions": {},
+            "entity_id": "isotope:Cs-133:ground",
+            "exposure": "retrospective",
+            "id": "magnetic_dipole_moment:isotope:Cs-133:ground:ensdf-historical",
+            "locator": "PDF page 1, ground-state row; October 2010 evaluation",
+            "method": "evaluated",
+            "physical_prediction": false,
+            "property": "magnetic_dipole_moment",
+            "qualification": "Dated ENSDF evaluation retained as historical source; not a current recommended value. Moment units follow ENSDF conventions; last-digit uncertainty retained.",
+            "selection_status": "adopted",
+            "source_id": "ensdf-Cs-133-text",
+            "uncertainty": {
+              "coverage": null,
+              "distribution": null,
+              "kind": "reported_last_digit_magnitude",
+              "value": "0.000003"
+            },
+            "unit": "nuclear_magneton",
+            "value": "2.582025",
+            "value_kind": "numeric"
+          },
+          "source_match": "µ=+2.582025 3"
+        },
+        {
+          "record": {
+            "conditions": {},
+            "entity_id": "isotope:Cs-133:ground",
+            "exposure": "retrospective",
+            "id": "electric_quadrupole_moment:isotope:Cs-133:ground:ensdf-historical",
+            "locator": "PDF page 1, ground-state row; October 2010 evaluation",
+            "method": "evaluated",
+            "physical_prediction": false,
+            "property": "electric_quadrupole_moment",
+            "qualification": "Dated ENSDF evaluation retained as historical source; not a current recommended value. Moment units follow ENSDF conventions; last-digit uncertainty retained.",
+            "selection_status": "adopted",
+            "source_id": "ensdf-Cs-133-text",
+            "uncertainty": {
+              "coverage": null,
+              "distribution": null,
+              "kind": "reported_last_digit_magnitude",
+              "value": "0.00014"
+            },
+            "unit": "b",
+            "value": "-0.00371",
+            "value_kind": "numeric"
+          },
+          "source_match": "Q=−0.00371 14"
+        }
+      ],
+      "source_id": "ensdf-Cs-133-text"
+    }
+  ],
+  "atomic_adoptions": [],
+  "schema": "matter1.property-inputs.v1",
+  "sources": [
+    {
+      "acquired_on": "2026-11-01",
+      "citation": "AME2020 mass table",
+      "id": "ame2020",
+      "method": "retained_official_source",
+      "path": "manual2/data/m1/isotopes/sources/ame2020.txt",
+      "sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "title": "AME2020 mass table",
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+    },
+    {
+      "acquired_on": "2026-11-01",
+      "citation": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+      "id": "nubase2020",
+      "method": "retained_official_source",
+      "path": "manual2/data/m1/isotopes/sources/nubase2020.txt",
+      "sha256": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+      "title": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+    },
+    {
+      "acquired_on": "2026-11-11",
+      "citation": "Inherited 118-element reference selections",
+      "id": "reference-inputs",
+      "method": "retained_bound_application_record",
+      "path": "manual2/data/m1/reference_inputs.csv",
+      "sha256": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232",
+      "title": "Inherited 118-element reference selections",
+      "url": "https://github.com/rpoyau/aod-manual-volume-2/pull/1"
+    },
+    {
+      "acquired_on": "2026-11-11",
+      "citation": "Retained isotope catalog and source selections",
+      "id": "isotope-catalog",
+      "method": "retained_bound_application_record",
+      "path": "manual2/data/m1/isotopes/catalog.json",
+      "sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+      "title": "Retained isotope catalog and source selections",
+      "url": "https://github.com/rpoyau/aod-manual-volume-2/pull/1"
+    },
+    {
+      "acquired_on": "2026-11-11",
+      "citation": "Historical H measurement and Cs defining-anchor inventory",
+      "id": "hyperfine-inventory",
+      "method": "retained_bound_application_record",
+      "path": "manual2/data/m1/hyperfine/target_inventory.json",
+      "sha256": "487f08751082a1fe528c46350b16153984a54d3c1ea3c517744b5008a5f64b42",
+      "title": "Historical H measurement and Cs defining-anchor inventory",
+      "url": "https://github.com/rpoyau/aod-manual-volume-2/pull/1"
+    },
+    {
+      "acquired_on": "2026-11-11",
+      "citation": "D/T source supplement with shared hydrogen reference",
+      "id": "dt-catalog",
+      "method": "retained_bound_application_record",
+      "path": "manual2/data/m1/external_transitions/catalog.json",
+      "sha256": "30251fef71a7304b3b71830e6c5110398afe9d1604fde0f919cbf4bcfd489f1a",
+      "title": "D/T source supplement with shared hydrogen reference",
+      "url": "https://github.com/rpoyau/aod-manual-volume-2/pull/1"
+    },
+    {
+      "acquired_on": "2026-11-01",
+      "citation": "ENSDF adopted H-1",
+      "evaluation_date": "2005",
+      "id": "ensdf-H-1-text",
+      "literature_cutoff": "2005-10-31",
+      "method": "retained_official_evaluation_text",
+      "path": "manual2/data/m1/isotopes/sources/ensdf-H-1.txt",
+      "pdf_path": "manual2/data/m1/isotopes/sources/ensdf-H-1.pdf",
+      "pdf_sha256": "45c7a4429afd1d4f3dc82d0ce68e998854d4d355cc151a38ba6f6c9823d28114",
+      "sha256": "ec6cb17c9d440d24e3b4a0cb633d957af08070a8feffb79900bfca804823c604",
+      "title": "ENSDF adopted H-1 retained text",
+      "url": "https://www.nndc.bnl.gov/ensnds/1/H/adopted.pdf"
+    },
+    {
+      "acquired_on": "2026-11-01",
+      "citation": "ENSDF adopted Cs-133",
+      "evaluation_date": "2011",
+      "id": "ensdf-Cs-133-text",
+      "literature_cutoff": "2010-10-31",
+      "method": "retained_official_evaluation_text",
+      "path": "manual2/data/m1/isotopes/sources/ensdf-Cs-133.txt",
+      "pdf_path": "manual2/data/m1/isotopes/sources/ensdf-Cs-133.pdf",
+      "pdf_sha256": "a60c4e0aac5c0fcc0b40835f778c9a5cd3fa31ceba09edd8070715e5725df2be",
+      "sha256": "be3c982576b571a8692c94412d6caa143dc628f079d6be787ad2182575ee2562",
+      "title": "ENSDF adopted Cs-133 retained text",
+      "url": "https://www.nndc.bnl.gov/ensnds/133/Cs/adopted.pdf"
+    }
+  ]
+}

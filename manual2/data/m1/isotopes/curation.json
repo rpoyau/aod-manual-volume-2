@@ -1,0 +1,2386 @@
+{
+  "catalog_id": "matter1-isotopes-20261101-v1",
+  "coverage": {
+    "limitations": [
+      "Ground-state assignment for superheavy activities is generally assumed.",
+      "XUNDL is an unevaluated experimental compilation.",
+      "Half-life intervals do not supply a joint error distribution or independence.",
+      "Coverage is the explicitly retrieved source snapshot, not a claim of all future isotopes.",
+      "Tentative isomer records are not merged with adopted ground-state entries."
+    ],
+    "other_targets": [
+      "Fl-298:ground"
+    ],
+    "outside_observed_scope": [
+      {
+        "id": "Og-293:ground",
+        "reason": "NUBASE half-life1#ms estimated; no accepted observed record in snapshot"
+      },
+      {
+        "id": "Fl-291:ground",
+        "reason": "NUBASE half-life10#s estimated; no accepted observed record in snapshot"
+      }
+    ],
+    "primary_families": {
+      "Fl": [
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290
+      ],
+      "Lv": [
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294
+      ],
+      "Og": [
+        294,
+        295
+      ]
+    },
+    "tentative_isomers": [
+      "Fl-289:m_candidate",
+      "Lv-293:m_candidate"
+    ]
+  },
+  "default_isotopes": {
+    "Cs": "Cs-133:ground",
+    "Fe": "Fe-56:ground",
+    "Fl": "Fl-289:ground",
+    "H": "H-1:ground",
+    "Lv": "Lv-293:ground",
+    "Ni": "Ni-62:ground",
+    "Og": "Og-294:ground",
+    "Pb": "Pb-208:ground"
+  },
+  "isotopes": [
+    {
+      "A": 1,
+      "N": 0,
+      "Z": 1,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "H-1:ground",
+      "limits": [
+        {
+          "channel": "all_modes",
+          "confidence": "not_explicit_in_adopted_record",
+          "locator": "PDF page1, ground-state T1/2 comment",
+          "measurement": {
+            "confidence": "not_explicit_in_adopted_record",
+            "kind": "lower_limit",
+            "original": ">2.1\u00d710^29 y",
+            "original_unit": "y",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": null,
+            "uncertainty_plus_seconds": null,
+            "unit_conversion": "Julian year = 365.25 days = 31557600 s",
+            "value_seconds": "6.62709600E+36"
+          },
+          "relation": ">",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl",
+        "line": 27,
+        "raw": "001 0010   1H       7288.971064   0.000013                            stbl              1/2+*         06          1920 IS=99.9855 78",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "1/2+*"
+      },
+      "selection_source": "ensdf-H-1",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "1/2+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "H",
+      "updates": []
+    },
+    {
+      "A": 56,
+      "N": 30,
+      "Z": 26,
+      "binding_energy_per_nucleon": {
+        "locator": "line547",
+        "raw": "   4   30   26   56 Fe       -60607.163       0.268      8790.3563     0.0048  B-  -4566.6455     0.4104   55 934935.537       0.287",
+        "role": "binding_control_not_AOD_derivation",
+        "source_id": "ame2020",
+        "uncertainty_keV": "0.0048",
+        "value_keV": "8790.3563"
+      },
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Fe-56:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl",
+        "line": 755,
+        "raw": "056 0260   56Fe   -60607.16       0.27                                stbl              0+            11          1923 IS=91.754 106",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Fe-56",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fe-56"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Fe",
+      "updates": []
+    },
+    {
+      "A": 62,
+      "N": 34,
+      "Z": 28,
+      "binding_energy_per_nucleon": {
+        "locator": "line629",
+        "raw": "   6   34   28   62 Ni       -66746.440       0.425      8794.5555     0.0069  B-  -3958.8965     0.4751   61 928344.753       0.455",
+        "role": "binding_control_not_AOD_derivation",
+        "source_id": "ame2020",
+        "uncertainty_keV": "0.0069",
+        "value_keV": "8794.5555"
+      },
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Ni-62:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl",
+        "line": 880,
+        "raw": "062 0280   62Ni   -66746.4        0.4                                 stbl              0+            12          1934 IS=3.6345 40",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Ni-62",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Ni-62"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Ni",
+      "updates": []
+    },
+    {
+      "A": 133,
+      "N": 78,
+      "Z": 55,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Cs-133:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl",
+        "line": 2671,
+        "raw": "133 0550   133Cs  -88070.943      0.008                               stbl              7/2+*         11          1921 IS=100",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "7/2+*"
+      },
+      "selection_source": "ensdf-Cs-133",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cs-133"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "7/2+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Cs",
+      "updates": []
+    },
+    {
+      "A": 208,
+      "N": 126,
+      "Z": 82,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "observationally_stable",
+        "original": "stable",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Pb-208:ground",
+      "limits": [
+        {
+          "channel": "alpha",
+          "confidence": "90% confidence level",
+          "daughter": {
+            "A": 204,
+            "Z": 80,
+            "id": "Hg-204:ground",
+            "symbol": "Hg"
+          },
+          "locator": "PDF page6, section4.5.4, equation(5)",
+          "measurement": {
+            "confidence": "90% confidence level",
+            "kind": "lower_limit",
+            "original": ">2.6\u00d710^21 y at90% C.L.",
+            "original_unit": "y",
+            "quantity": "channel_partial_half_life",
+            "uncertainty_minus_seconds": null,
+            "uncertainty_plus_seconds": null,
+            "unit_conversion": "Julian year = 365.25 days = 31557600 s",
+            "value_seconds": "8.20497600E+28"
+          },
+          "relation": ">",
+          "source_id": "pb-alpha2012"
+        }
+      ],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "No measured infinite half-life is assigned."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "stbl       >2.6Zy",
+        "line": 4828,
+        "raw": "208 0820   208Pb  -21748.5        1.1                                 stbl       >2.6Zy 0+            07          1927 IS=52.4 70;A ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Pb-208",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Pb-208"
+        },
+        {
+          "locator": "PDF page6, section4.5.4, equation(5)",
+          "role": "channel_specific_limit",
+          "source_id": "pb-alpha2012"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Pb",
+      "updates": []
+    },
+    {
+      "A": 280,
+      "N": 168,
+      "Z": 112,
+      "decay_channels": [
+        {
+          "branching_original": "%SF approximately100",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "xundl2025",
+          "status": "observed"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "10 US +18-4",
+        "original_unit": "us",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.000004",
+        "uncertainty_plus_seconds": "0.000018",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.000010"
+      },
+      "id": "Cn-280:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "5#    ms",
+        "line": 5806,
+        "raw": "280 1120   280Cn  155650#       580#                                    5#    ms        0+                             A ?;SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Cn-280 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn",
+      "updates": []
+    },
+    {
+      "A": 282,
+      "N": 170,
+      "Z": 112,
+      "decay_channels": [
+        {
+          "branching_original": "%SF=100",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Cn-282",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%alpha<=7",
+          "daughter": {
+            "A": 278,
+            "Z": 110,
+            "id": "Ds-278:ground",
+            "symbol": "Ds"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Cn-282",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.96 ms +35\u221220",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.00020",
+        "uncertainty_plus_seconds": "0.00035",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.00096"
+      },
+      "id": "Cn-282:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "1.1   ms 0.3",
+        "line": 5818,
+        "raw": "282 1120   282Cn  158830#       550#                                    1.1   ms 0.3    0+            19          2004 SF~100; A ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Cn-282",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-282"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn",
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": ".88 ms (+.19/\u2212.13)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.00013",
+            "uncertainty_plus_seconds": "0.00019",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.00088"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "A": 285,
+      "N": 173,
+      "Z": 112,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 281,
+            "Z": 110,
+            "id": "Ds-281:ground",
+            "symbol": "Ds"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Cn-285",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<6",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Cn-285",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "33 s +10\u22126",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "6",
+        "uncertainty_plus_seconds": "10",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "33"
+      },
+      "id": "Cn-285:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "30      s 8",
+        "line": 5830,
+        "raw": "285 1120   285Cn  165090#       510#                               *   30      s 8                    05          2004 A=100",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Cn-285",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-285"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn",
+      "updates": []
+    },
+    {
+      "A": 284,
+      "N": 170,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%SF=100",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-284",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%alpha<=25",
+          "daughter": {
+            "A": 280,
+            "Z": 112,
+            "id": "Cn-280:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-284",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "2.5 ms +18\u22128",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0008",
+        "uncertainty_plus_seconds": "0.0018",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0025"
+      },
+      "id": "Fl-284:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "3.1   ms 1.3",
+        "line": 5828,
+        "raw": "284 1140   284Fl  168780#       660#                                    3.1   ms 1.3    0+            19          2015 SF~100;A ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Fl-284",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-284"
+        },
+        {
+          "locator": "XUNDL Fl-284 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": [
+        {
+          "decay_channels": [
+            {
+              "branching_original": "Complement of reported %SF=76 +9\u221219; no independent uncertainty calculated",
+              "daughter": {
+                "A": 280,
+                "Z": 112,
+                "id": "Cn-280:ground",
+                "symbol": "Cn"
+              },
+              "mode": "alpha",
+              "source_id": "xundl2025",
+              "status": "observed"
+            },
+            {
+              "branching_original": "%SF=76 +9\u221219",
+              "daughter": null,
+              "mode": "spontaneous_fission",
+              "source_id": "xundl2025",
+              "status": "observed"
+            }
+          ],
+          "half_life": {
+            "confidence": "not_specified_in_XUNDL_compilation",
+            "kind": "measured",
+            "original": "2.5 ms (+1.2/\u2212.6)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.0006",
+            "uncertainty_plus_seconds": "0.0012",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.0025"
+          },
+          "locator": "XUNDL Fl-284 level record",
+          "overlap": "Source overlaps prior daughter analyses; not averaged here.",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ]
+    },
+    {
+      "A": 285,
+      "N": 171,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 281,
+            "Z": 112,
+            "id": "Cn-281:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-285",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=12.5",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-285",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "101 ms +59\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.059",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.101"
+      },
+      "id": "Fl-285:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "210     ms 100",
+        "line": 5833,
+        "raw": "285 1140   285Fl  170930#       400#                                  210     ms 100                  15          2010 A~100;SF<20",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Fl-285",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-285"
+        },
+        {
+          "locator": "XUNDL Fl-285 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "not_specified_in_XUNDL_compilation",
+            "kind": "measured",
+            "original": "86 ms (+43/\u221221)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.021",
+            "uncertainty_plus_seconds": "0.043",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.086"
+          },
+          "locator": "XUNDL Fl-285 level record",
+          "overlap": "Source overlaps prior daughter analyses; not averaged here.",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ]
+    },
+    {
+      "A": 286,
+      "N": 172,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=60 +10\u221211",
+          "daughter": {
+            "A": 282,
+            "Z": 112,
+            "id": "Cn-282:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-286",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF=40 +11\u221210",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-286",
+          "status": "observed"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "166 ms +40\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.040",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.166"
+      },
+      "id": "Fl-286:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "130     ms 30",
+        "line": 5837,
+        "raw": "286 1140   286Fl  171610#       550#                                  130     ms 30     0+            19          2004 A=59 11;SF=41 11",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Fl-286",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-286"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": [
+        {
+          "channel_partial_half_lives": [
+            {
+              "alpha_energy": "10.18 MeV",
+              "branching_estimate": "31/56",
+              "channel": "alpha_main",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "191 ms (+31/\u221223)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.023",
+                "uncertainty_plus_seconds": "0.031",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "0.191"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            },
+            {
+              "alpha_energy": "9.57 MeV",
+              "branching_estimate": "1/56",
+              "channel": "alpha_rare",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "5900 ms (+1000/\u2212700)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.7",
+                "uncertainty_plus_seconds": "1",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "5.9"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            },
+            {
+              "alpha_energy": null,
+              "branching_estimate": "24/56",
+              "channel": "spontaneous_fission",
+              "locator": "PDF page11 (Supplemental Material page3), TableII",
+              "measurement": {
+                "confidence": "source_asymmetric_interval; no Gaussian law imported",
+                "kind": "measured",
+                "original": "247 ms (+40/\u221230)",
+                "original_unit": "ms",
+                "quantity": "channel_partial_half_life",
+                "uncertainty_minus_seconds": "0.03",
+                "uncertainty_plus_seconds": "0.04",
+                "unit_conversion": "decimal SI prefix",
+                "value_seconds": "0.247"
+              },
+              "qualification": "TableII footnotes: branching ratios are estimates; printed partial-half-life uncertainties exclude branching uncertainty.",
+              "source_id": "gates2024",
+              "uncertainty_status": "incomplete_branching_uncertainty"
+            }
+          ],
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": "106 ms (+17/\u221213)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.013",
+            "uncertainty_plus_seconds": "0.017",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.106"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "A": 287,
+      "N": 173,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 283,
+            "Z": 112,
+            "id": "Cn-283:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-287",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<5",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-287",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.40 s +13\u22128",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.08",
+        "uncertainty_plus_seconds": "0.13",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.40"
+      },
+      "id": "Fl-287:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "510     ms 120",
+        "line": 5840,
+        "raw": "287 1140   287Fl  173930#       620#                                  510     ms 120                  05          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Fl-287",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-287"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 288,
+      "N": 174,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 284,
+            "Z": 112,
+            "id": "Cn-284:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-288",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=3",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-288",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.64 s +14\u221210",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.10",
+        "uncertainty_plus_seconds": "0.14",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.64"
+      },
+      "id": "Fl-288:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "653     ms 113",
+        "line": 5844,
+        "raw": "288 1140   288Fl  174920#       760#                                  653     ms 113    0+            19          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Fl-288",
+      "source_records": [
+        {
+          "locator": "PDF page 4, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-288"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 285,
+            "Z": 112,
+            "id": "Cn-285:ground",
+            "symbol": "Cn"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Fl-289",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<6",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Fl-289",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "2.4 s +8\u22125",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.5",
+        "uncertainty_plus_seconds": "0.8",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "2.4"
+      },
+      "id": "Fl-289:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "2.1    s 0.6",
+        "line": 5847,
+        "raw": "289 1140   289Fl  177470#       510#                                    2.1    s 0.6                  05          2004 A~100;SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Fl-289",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-289"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "tentative_isomer",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "NUBASE quoted uncertainty; no distribution imported",
+        "kind": "measured",
+        "original": "1.1 +/- .8 s",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.8",
+        "uncertainty_plus_seconds": "0.8",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "1.1"
+      },
+      "id": "Fl-289:m_candidate",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "NUBASE2020 isomer entry from2012; not separately adopted in the selected ENSDF ground-state evaluation. Do not merge state populations or treat the assignment as confirmed."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "1.1    s 0.8",
+        "line": 5848,
+        "raw": "289 1141   289Flm 178220#       470#        750#       280#             1.1    s 0.8                              2012 A=100",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "nubase2020",
+      "source_records": [
+        {
+          "locator": "fixed-width row 289 1141",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 290,
+      "N": 176,
+      "Z": 114,
+      "decay_channels": [
+        {
+          "branching_original": "%epsilon+%beta+ approximately 100",
+          "daughter": {
+            "A": 290,
+            "Z": 113,
+            "id": "Nh-290:ground",
+            "symbol": "Nh"
+          },
+          "mode": "electron_capture_or_beta_plus",
+          "source_id": "ensdf-Fl-290",
+          "status": "tentative"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "tentative_assignment",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "19 s +91\u22129",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "9",
+        "uncertainty_plus_seconds": "91",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "19"
+      },
+      "id": "Fl-290:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "Adopted Levels:tentative; competing chain assignments are unresolved.",
+        "No measured value is promoted to a confirmed isotope assignment."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "80      s 60",
+        "line": 5852,
+        "raw": "290 1140   290Fl  178730#       700#                                   80      s 60     0+            19          2016 A~100; SF ?; B+<50",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Fl-290",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-290"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 298,
+      "N": 184,
+      "Z": 114,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "unobserved_model_target",
+      "exposure": "unscored_target_no_measured_value",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "Unobserved model target; no half-life assigned",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Fl-298:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "Requested N=184 model target. This does not assert magicity, admission or stability."
+      ],
+      "selection_source": "target-declaration",
+      "source_records": [
+        {
+          "locator": "Fl-298 record",
+          "role": "selected_comparison",
+          "source_id": "target-declaration"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "not_established",
+      "symbol": "Fl",
+      "updates": []
+    },
+    {
+      "A": 288,
+      "N": 172,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha approximately 100",
+          "daughter": {
+            "A": 284,
+            "Z": 114,
+            "id": "Fl-284:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "xundl2025",
+          "status": "observed"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "2.0 MS +23-7",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0007",
+        "uncertainty_plus_seconds": "0.0023",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0020"
+      },
+      "id": "Lv-288:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "Experimental 2025Og03 result compiled by XUNDL; not an adopted ENSDF evaluation."
+      ],
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Lv-288 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-288"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 289,
+      "N": 173,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha approximately 100",
+          "daughter": {
+            "A": 285,
+            "Z": 114,
+            "id": "Fl-285:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "xundl2025",
+          "status": "observed"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_specified_in_XUNDL_compilation",
+        "kind": "measured",
+        "original": "2.4 MS +44-9",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0009",
+        "uncertainty_plus_seconds": "0.0044",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0024"
+      },
+      "id": "Lv-289:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "Experimental 2025Og03 result compiled by XUNDL; not an adopted ENSDF evaluation."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "16#    ms",
+        "line": 5850,
+        "raw": "289 1160   289Lv  184460#       500#                             RN    16#    ms                      00               A ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Lv-289 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-289"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 290,
+      "N": 174,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 286,
+            "Z": 114,
+            "id": "Fl-286:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Lv-290",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=8",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Lv-290",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "event_times": [
+        {
+          "locator": "PDF page1, Event#1",
+          "original": "Event#1 delta_talpha1=0.207 ms",
+          "quantity": "event_waiting_time",
+          "role": "single_event_not_half_life",
+          "source_id": "ensdf-Lv-290",
+          "value_seconds": ".000207"
+        }
+      ],
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "8.3 ms +35\u221219",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0019",
+        "uncertainty_plus_seconds": "0.0035",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0083"
+      },
+      "id": "Lv-290:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "9     ms 3",
+        "line": 5854,
+        "raw": "290 1160   290Lv  185030#       550#                                    9     ms 3      0+            19          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Lv-290",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-290"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": [
+        {
+          "half_life": {
+            "confidence": "source_asymmetric_interval; no Gaussian law imported",
+            "kind": "measured",
+            "original": "8.2 ms (+3.2/\u22121.8)",
+            "original_unit": "ms",
+            "quantity": "total_half_life",
+            "uncertainty_minus_seconds": "0.0018",
+            "uncertainty_plus_seconds": "0.0032",
+            "unit_conversion": "decimal SI prefix",
+            "value_seconds": "0.0082"
+          },
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "overlap": "Includes previous experiments and present two chains; not independent of ENSDF/NUBASE samples; not averaged here.",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ]
+    },
+    {
+      "A": 291,
+      "N": 175,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 287,
+            "Z": 114,
+            "id": "Fl-287:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Lv-291",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=20",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Lv-291",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "19 ms +17\u22126",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.006",
+        "uncertainty_plus_seconds": "0.017",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.019"
+      },
+      "id": "Lv-291:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "26     ms 12",
+        "line": 5857,
+        "raw": "291 1160   291Lv  187240#       620#                                   26     ms 12                   05          2004 A~100;SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Lv-291",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-291"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 292,
+      "N": 176,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 288,
+            "Z": 114,
+            "id": "Fl-288:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Lv-292",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=9",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Lv-292",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "12.8 ms +70\u221233",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.0033",
+        "uncertainty_plus_seconds": "0.0070",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.0128"
+      },
+      "id": "Lv-292:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "16     ms 6",
+        "line": 5860,
+        "raw": "292 1160   292Lv  188130#       760#                                   16     ms 6      0+            19          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Lv-292",
+      "source_records": [
+        {
+          "locator": "PDF page 3, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-292"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 293,
+      "N": 177,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 289,
+            "Z": 114,
+            "id": "Fl-289:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Lv-293",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=12.5",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Lv-293",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "95 ms +63\u221227",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.027",
+        "uncertainty_plus_seconds": "0.063",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.095"
+      },
+      "id": "Lv-293:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "70     ms 30",
+        "line": 5862,
+        "raw": "293 1160   293Lv  190570#       520#                                   70     ms 30                   05          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Lv-293",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-293"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 293,
+      "N": 177,
+      "Z": 116,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "tentative_isomer",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "NUBASE quoted uncertainty; no distribution imported",
+        "kind": "measured",
+        "original": "80 +/- 60 ms",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.060",
+        "uncertainty_plus_seconds": "0.060",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.080"
+      },
+      "id": "Lv-293:m_candidate",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "NUBASE2020 isomer entry from2012; not separately adopted in the selected ENSDF ground-state evaluation. Do not merge state populations or treat the assignment as confirmed."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "80     ms 60",
+        "line": 5863,
+        "raw": "293 1161   293Lvm 191290#       470#        720#       290#            80     ms 60                               2012 A=100",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "nubase2020",
+      "source_records": [
+        {
+          "locator": "fixed-width row 293 1161",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 294,
+      "N": 178,
+      "Z": 116,
+      "decay_channels": [
+        {
+          "branching_original": "not quantified",
+          "daughter": {
+            "A": 290,
+            "Z": 114,
+            "id": "Fl-290:ground",
+            "symbol": "Fl"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Lv-294",
+          "status": "tentative"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "tentative_assignment",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "No measured half-life in adopted tentative record",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Lv-294:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "One RIKEN chain admits three alternative assignments; theoretical 18 ms alpha value is not a measured total half-life."
+      ],
+      "selection_source": "ensdf-Lv-294",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-294"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "symbol": "Lv",
+      "updates": []
+    },
+    {
+      "A": 294,
+      "N": 176,
+      "Z": 118,
+      "decay_channels": [
+        {
+          "branching_original": "%alpha=100",
+          "daughter": {
+            "A": 290,
+            "Z": 116,
+            "id": "Lv-290:ground",
+            "symbol": "Lv"
+          },
+          "mode": "alpha",
+          "source_id": "ensdf-Og-294",
+          "status": "observed"
+        },
+        {
+          "branching_original": "%SF<=20",
+          "daughter": null,
+          "mode": "spontaneous_fission",
+          "source_id": "ensdf-Og-294",
+          "status": "upper_limit"
+        }
+      ],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "measured",
+        "original": "0.58 ms +44\u221218",
+        "original_unit": "ms",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": "0.00018",
+        "uncertainty_plus_seconds": "0.00044",
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": "0.00058"
+      },
+      "id": "Og-294:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [],
+      "nubase_crosscheck": {
+        "half_life_raw": "0.7  ms 0.3",
+        "line": 5867,
+        "raw": "294 1180   294Og  199320#       550#                                     0.7  ms 0.3    0+            05          2004 A~100; SF ?",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": "0+"
+      },
+      "selection_source": "ensdf-Og-294",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-294"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Og",
+      "updates": []
+    },
+    {
+      "A": 295,
+      "N": 177,
+      "Z": 118,
+      "decay_channels": [],
+      "empirical_agreement": "not_tested",
+      "empirical_status": "unobserved_rejected_candidate",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "half_life": {
+        "confidence": "not_explicit_in_adopted_record",
+        "kind": "unknown",
+        "original": "Unobserved; candidate chain rejected in reanalysis",
+        "original_unit": "s",
+        "quantity": "total_half_life",
+        "uncertainty_minus_seconds": null,
+        "uncertainty_plus_seconds": null,
+        "unit_conversion": "decimal SI prefix",
+        "value_seconds": null
+      },
+      "id": "Og-295:ground",
+      "limits": [],
+      "model_execution": "not_executed",
+      "native_admission": "not_established",
+      "notes": [
+        "ENSDF2022: 2017HE11 interprets the 2016HO09 candidate as background; NUBASE2020 finite entry is not accepted as observation."
+      ],
+      "nubase_crosscheck": {
+        "half_life_raw": "680    ms 540",
+        "line": 5868,
+        "raw": "295 1180   295Og  201370#       660#                                   680    ms 540                              2006 A~100",
+        "scope": "crosscheck_only_no_promotion_or_averaging",
+        "source_id": "nubase2020",
+        "spin_raw": ""
+      },
+      "selection_source": "ensdf-Og-295",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-295"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "not_established",
+      "symbol": "Og",
+      "updates": []
+    }
+  ],
+  "schema_version": 1,
+  "selection_policy": "ENSDF_adopted_default; named newer reports separately selectable; NUBASE crosscheck only; no averaging",
+  "snapshot_date": "2026-11-01",
+  "sources": [
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2025",
+      "id": "discovery-Lv-288",
+      "kind": "discovery_compilation",
+      "literature_cutoff": null,
+      "path": "sources/discovery-Lv-288.pdf",
+      "sha256": "dce271bd3c9ad9f960b2ed3d337796e7ee233e8c50ef30369f6c46c628e598c2",
+      "text_path": "sources/discovery-Lv-288.txt",
+      "text_sha256": "5e89939e135b061ec014ee118d24ac0b04789272e6fabea40366c588bb579b18",
+      "title": "NNDC/FRIB discovery record Lv-288",
+      "url": "https://www.nndc.bnl.gov/discovery/abstracts/116/288.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2025",
+      "id": "discovery-Lv-289",
+      "kind": "discovery_compilation",
+      "literature_cutoff": null,
+      "path": "sources/discovery-Lv-289.pdf",
+      "sha256": "fda667dbd722855d73ba332401b1027783826cb63136b44e5e36d2381d953fa4",
+      "text_path": "sources/discovery-Lv-289.txt",
+      "text_sha256": "ab38207e0bec928995a8e8a4c62eda9c17481d36f21afbf7b4a785243c5fd8eb",
+      "title": "NNDC/FRIB discovery record Lv-289",
+      "url": "https://www.nndc.bnl.gov/discovery/abstracts/116/289.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Cn-282",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Cn-282.pdf",
+      "sha256": "98ec4b4ac182f2ef595f33b8c64169a5bb16fc1f7e52d8386042c3a322cdcdf7",
+      "text_path": "sources/ensdf-Cn-282.txt",
+      "text_sha256": "01999ba6e5bcc7cc66e56032ad2410fca304890f5524611cdd8e9f483861c4c2",
+      "title": "ENSDF adopted Cn-282",
+      "url": "https://www.nndc.bnl.gov/ensnds/282/Cn/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Cn-285",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Cn-285.pdf",
+      "sha256": "6f5174384bb64107f06662286816717dddcd73b46c09beb62d620b15ce3ad34f",
+      "text_path": "sources/ensdf-Cn-285.txt",
+      "text_sha256": "e0afa76d3b11a7eab38795fc358e8fb116f64c20ba80c2dc74647e8d1125168e",
+      "title": "ENSDF adopted Cn-285",
+      "url": "https://www.nndc.bnl.gov/ensnds/285/Cn/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2011",
+      "id": "ensdf-Cs-133",
+      "kind": "evaluated",
+      "literature_cutoff": "2010-10-31",
+      "path": "sources/ensdf-Cs-133.pdf",
+      "sha256": "a60c4e0aac5c0fcc0b40835f778c9a5cd3fa31ceba09edd8070715e5725df2be",
+      "text_path": "sources/ensdf-Cs-133.txt",
+      "text_sha256": "be3c982576b571a8692c94412d6caa143dc628f079d6be787ad2182575ee2562",
+      "title": "ENSDF adopted Cs-133",
+      "url": "https://www.nndc.bnl.gov/ensnds/133/Cs/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2011",
+      "id": "ensdf-Fe-56",
+      "kind": "evaluated",
+      "literature_cutoff": "2009-10-29",
+      "path": "sources/ensdf-Fe-56.pdf",
+      "sha256": "87a1ddd39254994573fe027a6726c0de20fd5453940f84ee56985e7ad4a05639",
+      "text_path": "sources/ensdf-Fe-56.txt",
+      "text_sha256": "d013f1c204dbc58a16d42df1772bc4c2905a227ef1cc3e929aaad1c6f91be5c9",
+      "title": "ENSDF adopted Fe-56",
+      "url": "https://www.nndc.bnl.gov/ensnds/56/Fe/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Fl-284",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Fl-284.pdf",
+      "sha256": "2788240fe7e2d48b38505352d37a6fda3bbfd6683ef67d30dcd8eb7ba5966164",
+      "text_path": "sources/ensdf-Fl-284.txt",
+      "text_sha256": "7fb17ca6432cefaa935e565c3011ba67649072cb126c0514a710be22dd16081d",
+      "title": "ENSDF adopted Fl-284",
+      "url": "https://www.nndc.bnl.gov/ensnds/284/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Fl-285",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Fl-285.pdf",
+      "sha256": "e0a6b7f7f9ce5b80023bf874ba4733db758538370a4ccc8b31cd42bd6826586d",
+      "text_path": "sources/ensdf-Fl-285.txt",
+      "text_sha256": "26b4ae2de8bc1975f2c42a1874b9d345927a35aa5e727a42533e1e901bb20d44",
+      "title": "ENSDF adopted Fl-285",
+      "url": "https://www.nndc.bnl.gov/ensnds/285/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Fl-286",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Fl-286.pdf",
+      "sha256": "acce6f090948903ac70f17ad053404a5fc283d2404eb0bcc6d7fa8bb57d41558",
+      "text_path": "sources/ensdf-Fl-286.txt",
+      "text_sha256": "a2c2da3f6d3e8b2b6cf982bac6fbfa3d1a81d836ad1bad0ac90b0e20fb94ab51",
+      "title": "ENSDF adopted Fl-286",
+      "url": "https://www.nndc.bnl.gov/ensnds/286/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Fl-287",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Fl-287.pdf",
+      "sha256": "ce015e76d091984a5d8b9aa320ae04f8380f63d560ecd35cd34a292fc0bab6f8",
+      "text_path": "sources/ensdf-Fl-287.txt",
+      "text_sha256": "f28e206617576a1b0363ab14cda08e146d4cf86b228cb9b6e56b7656a6ed0d2b",
+      "title": "ENSDF adopted Fl-287",
+      "url": "https://www.nndc.bnl.gov/ensnds/287/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Fl-288",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Fl-288.pdf",
+      "sha256": "e9eb1f426d4eead239051bbc4d7cc6fdbd7255bd3c026781abd14be15ed9792e",
+      "text_path": "sources/ensdf-Fl-288.txt",
+      "text_sha256": "4fe08635a6b5d4a2c885fef2ea5127b6d0e82f945c9a6959099abfb27f93c577",
+      "title": "ENSDF adopted Fl-288",
+      "url": "https://www.nndc.bnl.gov/ensnds/288/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Fl-289",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Fl-289.pdf",
+      "sha256": "4791c97b825558577b9a245d93b536d4f2022d7727c95552bd9ba50a6647cd22",
+      "text_path": "sources/ensdf-Fl-289.txt",
+      "text_sha256": "501b0cdb96587713c0fe83c04f48bdb15de2790afde729a5c6e4d7c5f075dc7e",
+      "title": "ENSDF adopted Fl-289",
+      "url": "https://www.nndc.bnl.gov/ensnds/289/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Fl-290",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Fl-290.pdf",
+      "sha256": "aaa88426282d7d8c583a613f895a1c2dfd5f1d1eaea26a306ef18a56fda9d763",
+      "text_path": "sources/ensdf-Fl-290.txt",
+      "text_sha256": "06a0b767b8304282c306ceacf651e49e213ea843a45c5a8b480d766b0f9151d6",
+      "title": "ENSDF adopted Fl-290",
+      "url": "https://www.nndc.bnl.gov/ensnds/290/Fl/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2005",
+      "id": "ensdf-H-1",
+      "kind": "evaluated",
+      "literature_cutoff": "2005-10-31",
+      "path": "sources/ensdf-H-1.pdf",
+      "sha256": "45c7a4429afd1d4f3dc82d0ce68e998854d4d355cc151a38ba6f6c9823d28114",
+      "text_path": "sources/ensdf-H-1.txt",
+      "text_sha256": "ec6cb17c9d440d24e3b4a0cb633d957af08070a8feffb79900bfca804823c604",
+      "title": "ENSDF adopted H-1",
+      "url": "https://www.nndc.bnl.gov/ensnds/1/H/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Lv-290",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Lv-290.pdf",
+      "sha256": "77dd0a28307889486d1890dc016f0b1c895ee3f1ed19a239740b0eab4e8ee5dd",
+      "text_path": "sources/ensdf-Lv-290.txt",
+      "text_sha256": "3b7028fd84251de79d9db09e54b39f77cc4b6bd99322af395ee1abef8aecda51",
+      "title": "ENSDF adopted Lv-290",
+      "url": "https://www.nndc.bnl.gov/ensnds/290/Lv/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Lv-291",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Lv-291.pdf",
+      "sha256": "1ee06a9e6c742d988f5be74a2aa2c5e8cefc373d9dcfb84a94f1ced5f658bc60",
+      "text_path": "sources/ensdf-Lv-291.txt",
+      "text_sha256": "de0b9bbffc680ea25937df59abf604fb453d70eab5839b1bbedd1522c4e4be1a",
+      "title": "ENSDF adopted Lv-291",
+      "url": "https://www.nndc.bnl.gov/ensnds/291/Lv/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Lv-292",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Lv-292.pdf",
+      "sha256": "3075e720f45f0bae12c3ecdefdc287b347a4dff72424d301fa94cdf443b511c0",
+      "text_path": "sources/ensdf-Lv-292.txt",
+      "text_sha256": "d6b2cc0793ed96f2eb67f8a2126207def1f289276025a225766163271e79908a",
+      "title": "ENSDF adopted Lv-292",
+      "url": "https://www.nndc.bnl.gov/ensnds/292/Lv/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Lv-293",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Lv-293.pdf",
+      "sha256": "c93b66548c8c21d4b312079776448ab70c055168551bc96d6c319a6ae8c5f398",
+      "text_path": "sources/ensdf-Lv-293.txt",
+      "text_sha256": "fa0edf0a8e74be11744029836e472549e16488ac6d8c429371146bd3ec6fcbcd",
+      "title": "ENSDF adopted Lv-293",
+      "url": "https://www.nndc.bnl.gov/ensnds/293/Lv/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Lv-294",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Lv-294.pdf",
+      "sha256": "18a96ee51282aa22ba29b086c5d823dd27af925037f820e6e17446d8678a89c3",
+      "text_path": "sources/ensdf-Lv-294.txt",
+      "text_sha256": "adbe5f9820a86656eca6ffb69df5c7cfac0fea35964e4c4184ab3285fd1bbda5",
+      "title": "ENSDF adopted Lv-294",
+      "url": "https://www.nndc.bnl.gov/ensnds/294/Lv/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2025",
+      "id": "ensdf-Ni-62",
+      "kind": "evaluated",
+      "literature_cutoff": "2023-06-30",
+      "path": "sources/ensdf-Ni-62.pdf",
+      "sha256": "08cf1a908952bdab8ca11caf64e2b1b8ee370a264f92d9a427c351f87b5af057",
+      "text_path": "sources/ensdf-Ni-62.txt",
+      "text_sha256": "2b7748801e2fd9490c053f3a5d28909acc24355c2343530a2bc3cbb65f0fbb8a",
+      "title": "ENSDF adopted Ni-62",
+      "url": "https://www.nndc.bnl.gov/ensnds/62/Ni/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2019",
+      "id": "ensdf-Og-294",
+      "kind": "evaluated",
+      "literature_cutoff": "2019-01-31",
+      "path": "sources/ensdf-Og-294.pdf",
+      "sha256": "105ba7ae5bc990f08de19817595265882b7bfded642ec5e946ec79080f87e35e",
+      "text_path": "sources/ensdf-Og-294.txt",
+      "text_sha256": "6e9ac62727ab19f019e366067f091e4f1951122336cf239168de759f33ea5ee4",
+      "title": "ENSDF adopted Og-294",
+      "url": "https://www.nndc.bnl.gov/ensnds/294/Og/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2022",
+      "id": "ensdf-Og-295",
+      "kind": "evaluated",
+      "literature_cutoff": "2021-09-14",
+      "path": "sources/ensdf-Og-295.pdf",
+      "sha256": "7e92ec8a13f040d0e7051dcc02af863919c8d3fe9406824152788d851152b6b0",
+      "text_path": "sources/ensdf-Og-295.txt",
+      "text_sha256": "12c907e5bd05e23cabf22475b9fda0487de64f4951502be7562aa9b1521cd634",
+      "title": "ENSDF adopted Og-295",
+      "url": "https://www.nndc.bnl.gov/ensnds/295/Og/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2007",
+      "id": "ensdf-Pb-208",
+      "kind": "evaluated",
+      "literature_cutoff": "2007-06-01",
+      "path": "sources/ensdf-Pb-208.pdf",
+      "sha256": "cd21a9eec62d89dee5750ae90c9f13457e9a4779e2cdd4cd7f02a80c91ab4557",
+      "text_path": "sources/ensdf-Pb-208.txt",
+      "text_sha256": "351a277e519d4e21ef5d39e077731ccc647c44372abd2fce9a3819e4b603ccf3",
+      "title": "ENSDF adopted Pb-208",
+      "url": "https://www.nndc.bnl.gov/ensnds/208/Pb/adopted.pdf"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2024",
+      "id": "gates2024",
+      "kind": "experiment_and_overlapping_reanalysis",
+      "literature_cutoff": null,
+      "path": "sources/gates2024.pdf",
+      "sha256": "d6094d1fb197893edcca12822dc18d6561da178d37c585a35b30e14aa26a86a9",
+      "text_path": "sources/gates2024.txt",
+      "text_sha256": "10e0b8becd7221474700abf6d97ebdeb4db127c5c618b1e687124be7d4a76bde",
+      "title": "Gates et al., Production of livermorium with a 50Ti beam",
+      "url": "https://arxiv.org/pdf/2407.16079"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2012",
+      "id": "pb-alpha2012",
+      "kind": "experiment",
+      "literature_cutoff": null,
+      "path": "sources/pb-alpha2012.pdf",
+      "sha256": "58ae2ef48e21bbf226ad82fd54341479af47cc10facdb42dd6fa8962f123a2a2",
+      "text_path": "sources/pb-alpha2012.txt",
+      "text_sha256": "51b6989fc3ad6859824a1c920bd9d7222c62df79192d8a67921b38f1f3db59bf",
+      "title": "Beeman et al., New experimental limits on the alpha decays of lead isotopes",
+      "url": "https://arxiv.org/pdf/1212.2422"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2021",
+      "id": "nubase2020",
+      "kind": "evaluation_crosscheck",
+      "literature_cutoff": "2020",
+      "path": "sources/nubase2020.txt",
+      "sha256": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+      "title": "Kondev et al., NUBASE2020, Chinese Phys. C 45 030001",
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/nubase_4.mas20"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2021",
+      "id": "ame2020",
+      "kind": "evaluated_mass",
+      "literature_cutoff": "2020",
+      "path": "sources/ame2020.txt",
+      "sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "title": "AME2020 mass table",
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2026-06",
+      "id": "xundl2025",
+      "kind": "unevaluated_experiment",
+      "literature_cutoff": null,
+      "path": "sources/xundl2025.html",
+      "retrieval": {
+        "endpoint": "https://www.nndc.bnl.gov/ensdf/EnsdfDispatcherServlet",
+        "fields": {
+          "checkxundl": [
+            "280112002,280CN",
+            "284114005,284FL",
+            "285114008,285FL",
+            "288116001,288LV",
+            "289116002,289LV"
+          ],
+          "choosexundl": "ENSDF text format",
+          "dbclass": "xundl",
+          "page-source": "coupled-xun"
+        },
+        "method": "POST"
+      },
+      "sha256": "22f0ca992a9862c95836cd6da6281ee23e3a376cbee0185c49428d1d56f012f3",
+      "text_path": "sources/xundl2025.txt",
+      "text_sha256": "7ee7e621bd8af4400d9e2b525049fac675c16359a446f2cf0cf9614d76ce60b1",
+      "title": "NNDC XUNDL compilation of Oganessian et al., PRC112 014603 (2025)",
+      "url": "https://www.nndc.bnl.gov/ensdf/DSfromRefServlet?kn=2025OG03&searchType=references"
+    },
+    {
+      "accessed_on": "2026-11-01",
+      "evaluation_date": "2026-11-01",
+      "id": "target-declaration",
+      "kind": "authored_model_target",
+      "literature_cutoff": null,
+      "path": "target-declaration.json",
+      "sha256": "f08e6e557708aa9602a8f0227909274651e05d10c13725a522380509ac3327d3",
+      "title": "Approved Fl-298 model target declaration",
+      "url": null
+    }
+  ]
+}

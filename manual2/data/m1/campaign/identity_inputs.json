@@ -1,0 +1,668 @@
+{
+  "records": [
+    {
+      "A": 1,
+      "N": 0,
+      "Z": 1,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "H-1:ground",
+      "selection_source": "ensdf-H-1",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-H-1"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "1/2+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "H"
+    },
+    {
+      "A": 56,
+      "N": 30,
+      "Z": 26,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fe-56:ground",
+      "selection_source": "ensdf-Fe-56",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fe-56"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Fe"
+    },
+    {
+      "A": 62,
+      "N": 34,
+      "Z": 28,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Ni-62:ground",
+      "selection_source": "ensdf-Ni-62",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Ni-62"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Ni"
+    },
+    {
+      "A": 133,
+      "N": 78,
+      "Z": 55,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Cs-133:ground",
+      "selection_source": "ensdf-Cs-133",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cs-133"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "7/2+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Cs"
+    },
+    {
+      "A": 208,
+      "N": 126,
+      "Z": 82,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Pb-208:ground",
+      "selection_source": "ensdf-Pb-208",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Pb-208"
+        },
+        {
+          "locator": "PDF page6, section4.5.4, equation(5)",
+          "role": "channel_specific_limit",
+          "source_id": "pb-alpha2012"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "symbol": "Pb"
+    },
+    {
+      "A": 280,
+      "N": 168,
+      "Z": 112,
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Cn-280:ground",
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Cn-280 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn"
+    },
+    {
+      "A": 282,
+      "N": 170,
+      "Z": 112,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Cn-282:ground",
+      "selection_source": "ensdf-Cn-282",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-282"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn"
+    },
+    {
+      "A": 285,
+      "N": 173,
+      "Z": 112,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Cn-285:ground",
+      "selection_source": "ensdf-Cn-285",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Cn-285"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Cn"
+    },
+    {
+      "A": 284,
+      "N": 170,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-284:ground",
+      "selection_source": "ensdf-Fl-284",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-284"
+        },
+        {
+          "locator": "XUNDL Fl-284 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 285,
+      "N": 171,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-285:ground",
+      "selection_source": "ensdf-Fl-285",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-285"
+        },
+        {
+          "locator": "XUNDL Fl-285 level record",
+          "role": "newer_experimental_compilation",
+          "source_id": "xundl2025"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 286,
+      "N": 172,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-286:ground",
+      "selection_source": "ensdf-Fl-286",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-286"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 287,
+      "N": 173,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-287:ground",
+      "selection_source": "ensdf-Fl-287",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-287"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 288,
+      "N": 174,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-288:ground",
+      "selection_source": "ensdf-Fl-288",
+      "source_records": [
+        {
+          "locator": "PDF page 4, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-288"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-289:ground",
+      "selection_source": "ensdf-Fl-289",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-289"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "empirical_status": "tentative_isomer",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-289:m_candidate",
+      "selection_source": "nubase2020",
+      "source_records": [
+        {
+          "locator": "fixed-width row 289 1141",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "symbol": "Fl"
+    },
+    {
+      "A": 290,
+      "N": 176,
+      "Z": 114,
+      "empirical_status": "tentative_assignment",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Fl-290:ground",
+      "selection_source": "ensdf-Fl-290",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Fl-290"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "symbol": "Fl"
+    },
+    {
+      "A": 298,
+      "N": 184,
+      "Z": 114,
+      "empirical_status": "unobserved_model_target",
+      "exposure": "unscored_target_no_measured_value",
+      "id": "Fl-298:ground",
+      "selection_source": "target-declaration",
+      "source_records": [
+        {
+          "locator": "Fl-298 record",
+          "role": "selected_comparison",
+          "source_id": "target-declaration"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "not_established",
+      "symbol": "Fl"
+    },
+    {
+      "A": 288,
+      "N": 172,
+      "Z": 116,
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-288:ground",
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Lv-288 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-288"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 289,
+      "N": 173,
+      "Z": 116,
+      "empirical_status": "reported_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-289:ground",
+      "selection_source": "xundl2025",
+      "source_records": [
+        {
+          "locator": "Lv-289 record",
+          "role": "selected_experimental_compilation",
+          "source_id": "xundl2025"
+        },
+        {
+          "locator": "PDF page 1",
+          "role": "discovery_confirmation",
+          "source_id": "discovery-Lv-289"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 290,
+      "N": 174,
+      "Z": 116,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-290:ground",
+      "selection_source": "ensdf-Lv-290",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-290"
+        },
+        {
+          "locator": "PDF page11 (Supplemental Material page3), TableI, including-this-work column",
+          "role": "newer_overlapping_reanalysis",
+          "source_id": "gates2024"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 291,
+      "N": 175,
+      "Z": 116,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-291:ground",
+      "selection_source": "ensdf-Lv-291",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-291"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 292,
+      "N": 176,
+      "Z": 116,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-292:ground",
+      "selection_source": "ensdf-Lv-292",
+      "source_records": [
+        {
+          "locator": "PDF page 3, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-292"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 293,
+      "N": 177,
+      "Z": 116,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-293:ground",
+      "selection_source": "ensdf-Lv-293",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-293"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 293,
+      "N": 177,
+      "Z": 116,
+      "empirical_status": "tentative_isomer",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-293:m_candidate",
+      "selection_source": "nubase2020",
+      "source_records": [
+        {
+          "locator": "fixed-width row 293 1161",
+          "role": "tentative_isomer_crosscheck",
+          "source_id": "nubase2020"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "symbol": "Lv"
+    },
+    {
+      "A": 294,
+      "N": 178,
+      "Z": 116,
+      "empirical_status": "tentative_assignment",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Lv-294:ground",
+      "selection_source": "ensdf-Lv-294",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Lv-294"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "symbol": "Lv"
+    },
+    {
+      "A": 294,
+      "N": 176,
+      "Z": 118,
+      "empirical_status": "evaluated_observed",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Og-294:ground",
+      "selection_source": "ensdf-Og-294",
+      "source_records": [
+        {
+          "locator": "PDF page 2, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-294"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "source_reported",
+        "value": "0+"
+      },
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "symbol": "Og"
+    },
+    {
+      "A": 295,
+      "N": 177,
+      "Z": 118,
+      "empirical_status": "unobserved_rejected_candidate",
+      "exposure": "retrospective_source_seen_before_model_freeze",
+      "id": "Og-295:ground",
+      "selection_source": "ensdf-Og-295",
+      "source_records": [
+        {
+          "locator": "PDF page 1, ground-state row",
+          "role": "selected_evaluation",
+          "source_id": "ensdf-Og-295"
+        }
+      ],
+      "spin_parity": {
+        "assignment": "not_established",
+        "value": null
+      },
+      "state": "ground",
+      "state_assignment": "not_established",
+      "symbol": "Og"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Frozen isotope identity/state projection; no lifetime, transition-frequency, event-delay or correction values.",
+  "source_catalog_sha256": "b25ca90dad87219f5582ad01ec1e55f48467db54621f241675b79392a6cd41e4"
+}

@@ -1,0 +1,68 @@
+\section{Quarantined External Comparison}\label{manual2:app:quarantined-external}
+
+\subsection{Target records and numeric policy}\label{manual2:app:qext-scope}
+Declare each external record before its comparison map. A measured target
+identifies the quantity, isotope and state where applicable, acquisition
+coordinate, value, unit, uncertainty and source locator. An exact defining
+value has the separate form of a calibration anchor. Limits, observational
+stability and unmeasured quantities retain their own meanings; they are not
+ordinary point targets.
+
+The hydrogen record in \tabref{tab:manual2-hyperfine-inputs} is a dated measured
+transition frequency with reported one-sigma uncertainty; the caesium record
+is the defining frequency anchor. Its physical realization has separate
+uncertainty records. The isotope tables of \secref{manual2:isotope-survival}
+carry evaluated total or partial half-lives, source qualifications and nuclear
+state assignments. The Lv records of \secref{manual2:lv-event-records} are
+individual implantation-to-decay delays. These quantities have different
+measurement protocols and report coordinates.
+The D/T frequencies of \secref{manual2:dt-target-data} carry a shared
+hydrogen-reference dependence. Their derived-external coordinates are distinct
+from an independent absolute-frequency experiment.
+
+For each displayed measured decimal retain
+\begin{equation}
+(x_{\mathrm{disp}},u_x,\mathrm{unit}(x),\mathrm{src}(x),\mathrm{round}(x),\mathrm{scope}(x)).
+\label{eq:manual2-decimal-precision}
+\end{equation}
+The Manual display scopes are internal, external, measured, derived external,
+value map and demonstration. They identify the displayed value's role; they
+do not turn a decimal transcription into an exact physical measurement.
+The integer reference A and the count pair \((Z,A-Z)\) retain their separate
+bookkeeping roles.
+
+\subsection{Observable-map comparisons}\label{manual2:app:qext-audit}
+An O0 record binds a native or declared-model candidate, its observation/value
+map and a measured target record before evaluating
+\begin{equation}
+\Qext(\nu_{Z,\AO};\mathcal T_Z).
+\label{eq:manual2-qext}
+\end{equation}
+The candidate and inputs are fixed before the evaluation target is joined.
+The map supplies a common quantity, coordinate and applicable window. Residuals
+belong to that coordinate; a standardized residual additionally requires the
+applicable uncertainty and dependence model. External constants and measured
+values enter this reporting layer, not the native D.E.C. calculation.
+
+The hydrogen/caesium reference ratio is a derived external value. The corrected
+Table IV and Table VI hydrogen values in \secref{manual2:m3-metrology} are
+source reductions. The observation-family residuals in
+\secref{manual2:stateful-si} are conditional countermodel comparisons with an
+exposed target. None supplies the atomic observation law: the finite histories
+and caesium normalization admit multiple hydrogen reports. Likewise, the
+bounded campaign return ratios of \secref{manual2:all-element-campaign} require
+a state-to-emitted-phase map and a common measurement protocol before an atomic
+frequency comparison. An isotope half-life additionally requires a
+state-dependent loss observation and a realized time coordinate.
+
+\aodprovenance{\mainsection{subsec:external-comparison-quarantine}; AOD Manual I
+at commit \texttt{71cbcf7}, \path{manual/sections/00_scope.tex}, labels
+\texttt{manual:record-forms} and \texttt{manual:exact-arithmetic-presentation};
+\path{manual/appendices/B_quarantined_external_comparison.tex},
+\texttt{manual:external-comparison}.}
+\aodliteraturenote{Historical hydrogen measurement: Hellwig et al.~\cite{hellwig1970}.
+Defining reference: BIPM~\cite{bipm-second}. Isotope evaluations:
+ENSDF~\cite{isotopes-ensdf} and NUBASE2020~\cite{isotopes-nubase2020}.
+General mass and spectral sources: Wang et al.~\cite{iupac-ame};
+NIST ASD~\cite{nist-asd}. These citations do not assign a provenance to the
+original element reference-A selections.}

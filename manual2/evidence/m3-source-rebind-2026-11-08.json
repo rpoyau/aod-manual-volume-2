@@ -1,0 +1,65 @@
+{
+  "archive": "manual2/evidence/pre-m3-main/rebind-2026-11-08",
+  "files": [
+    {
+      "after_sha256": "c47c04f45b584dc284a576301a8af43507725c207f8fd5a0bda583ab17822e04",
+      "before_sha256": "099d3475e6f7f82cd2eb942cd82cbf4c187a6872d803ce07c169a1e2200de6f4",
+      "path": "appendices/B_curling_curls.tex",
+      "upstream_path": "appendices/B_curling_curls.tex"
+    },
+    {
+      "after_sha256": "4a2dc17b601c85e84fac6ea215f99f072227c7600500c0faf305bae53739e03f",
+      "before_sha256": "8ba9c388162d31e5a5b3a86b8818a958b909b537bfa13fb807123d564d61adf7",
+      "path": "appendices/H_combinatorics_rd_tests.tex",
+      "upstream_path": "appendices/H_combinatorics_rd_tests.tex"
+    },
+    {
+      "after_sha256": "d52b8b2548bd61534a2b18c664284fdb14ec7ac7fe1d8b715c47483ca8e09d11",
+      "before_sha256": "887a26c3c4f713b514aeb28f36bbf6361e648671dccbe3bfbda88a430c6bdb9b",
+      "path": "sections/04_cut_running_fractal_tesseract.tex",
+      "upstream_path": "sections/04_cut_running_fractal_tesseract.tex"
+    },
+    {
+      "after_sha256": "a46d92b6eb2dba5c461b0a8db1e0374384fb578be5c3ebbc8ec62cdd8150a06f",
+      "before_sha256": "6e58c2213d8a11e288915d47d90965787aba148caa3d8f3bc065739216cf00e4",
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "upstream_path": "sections/05_curl_closure_duon_current.tex"
+    },
+    {
+      "after_sha256": "74f2b76195fe5dd760540cdcf46a72f615022950ab07e38e4585ad77b643de88",
+      "before_sha256": "79e16685826aee15273fbcddc0a59d5f14f75dbf3671e43ae261fcd6fc9acf70",
+      "path": "sections/06_field.tex",
+      "upstream_path": "sections/06_field.tex"
+    },
+    {
+      "after_sha256": "2add34566c97406939bfa6c67b1d6acef99ad13c22422ec5edc0800df7e52d2b",
+      "before_sha256": "bbd265de629de74ae43be75ff5146406b5dda80c380bf02507725a98d233404d",
+      "path": "sections/06_wave_state_relational_time.tex",
+      "upstream_path": "sections/06_wave_state_relational_time.tex"
+    },
+    {
+      "after_sha256": "759a6a8cae5f02bd1ddaf6c28057dbd7c4e87440ef49a0a5559e75f2b137c2e5",
+      "before_sha256": "c3cb4e5a8e8c435e741bd040b84674c7786ecb47b6852bbe8198c4e8674eae22",
+      "path": "sections/07_cell_measures_mappings.tex",
+      "upstream_path": "sections/07_cell_measures_mappings.tex"
+    }
+  ],
+  "previous_foundation_sha256": "7c2117141de36d94f18fd21b178a243c3923495a9f1c494579b21f9e7f9fe921",
+  "previous_manual_head": "fedad377608bf3fee3364e4a79b3578f3f96dc2b",
+  "previous_rebind": "manual2/evidence/m3-source-rebind.json",
+  "previous_rebind_sha256": "d6387c4c6e24e558a00264d455fdea82906940eb9122378b8a2002492a096513",
+  "previous_upstream_head": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+  "previous_upstream_tree": "e284648caba071c00d28b70850c8e557f8dc8d19",
+  "reviewed_main_render": {
+    "pages": 70,
+    "pdf_sha256": "00afc27a1bbe5d158c0176af19cc6415587d2e503e4ea06d6f6ef12487850ea0",
+    "text_hash_policy": "pypdf 6.10.0 extracted text, Unicode whitespace removed; binding complements source hashes and rendering.",
+    "text_sha256": "f5d32baf5dba641039bf6a88f2151fe24514af353e39d7e379a0f61e311b4afe"
+  },
+  "schema_version": 1,
+  "scope": "Exact reviewed M3 Main successor; previous source bindings and historical fixture authorities remain archived without relabelling prior execution.",
+  "source_status": "reviewed_local_PR_43_candidate_at_binding",
+  "upstream_head": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "upstream_repository": "https://github.com/rpoyau/aod",
+  "upstream_tree": "3ab04df3793beda481b4fb7ed0d628ba6765da70"
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "matter1.mass-covariance-inputs.v1",
+  "edition": "AME2020",
+  "sources": [
+    {
+      "id": "ame2020-covariance",
+      "path": "manual2/data/m1/properties/sources/ame2020-covariance.zip",
+      "sha256": "34683516facd856b240178936632cb7952a1cb65579b3b806db4adc50f63f865",
+      "bytes": 6076578,
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/covariance.zip",
+      "acquired_on": "2026-11-12",
+      "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf.",
+      "member": "covariance.mas20",
+      "member_sha256": "2b872779234a035f961a59d82534b174ad4201adb942b3fd10b7617ad9272b0c",
+      "member_unit_header": "Variances and Covariances in nano-amu**2",
+      "encoding": "AAAZZZi: A mass number, Z atomic number, i isomeric state; i=0 for selected ground states",
+      "unit": "(nano-u)^2",
+      "doi": "10.1088/1674-1137/abddaf"
+    },
+    {
+      "id": "ame2020-atomic-masses",
+      "path": "manual2/data/m1/isotopes/sources/ame2020.txt",
+      "sha256": "e8599c6d7f724fac91934e59f1b9de8fb8f63e820f4b39456b790665ed2a3307",
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/mass_1.mas20",
+      "acquired_on": "2026-11-01",
+      "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf. Unrounded electronic mass table.",
+      "quantity": "neutral-atom mass in u; neutron Z=0,A=1 reference",
+      "doi": "10.1088/1674-1137/abddaf"
+    },
+    {
+      "id": "ame2020-part-i",
+      "path": "manual2/data/m1/properties/sources/ame2020-part-i.pdf",
+      "sha256": "876c56676edc32757c62875bc5cc9c589573384d4d7b0af072f9d6103d09be7b",
+      "bytes": 2625079,
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/Huang_2021_Chinese_Phys._C_45_030002.pdf",
+      "acquired_on": "2026-11-12",
+      "citation": "W. J. Huang, M. Wang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (I). Evaluation of input data, and adjustment procedures, Chinese Physics C 45, 030002 (2021). DOI: 10.1088/1674-1137/abddb0.",
+      "doi": "10.1088/1674-1137/abddb0"
+    },
+    {
+      "id": "ame2020-part-ii",
+      "path": "manual2/data/m1/properties/sources/ame2020-part-ii.pdf",
+      "sha256": "b1c2c0a2e3fc5e6cf4806f23e0e08a35bf66025c9e4a018c632f14a1a3b8df8b",
+      "bytes": 2702490,
+      "url": "https://amdc.impcas.ac.cn/masstables/Ame2020/Wang_2021_Chinese_Phys._C_45_030003.pdf",
+      "acquired_on": "2026-11-12",
+      "citation": "M. Wang, W. J. Huang, F. G. Kondev, G. Audi and S. Naimi, The AME 2020 atomic mass evaluation (II). Tables, graphs and references, Chinese Physics C 45, 030003 (2021). DOI: 10.1088/1674-1137/abddaf.",
+      "doi": "10.1088/1674-1137/abddaf"
+    }
+  ],
+  "method": {
+    "covariance": "Published evaluated atomic-mass variance/covariance entries in squared nano-u; no dimensionless correlation normalization is applied.",
+    "statistical_scope": "AME2020 reports one-standard-deviation uncertainties (Part I printed page030002-2, PDFpage3). Published adjusted covariance and mass estimates are used as moment inputs; no Gaussian distribution, finite support or hard error bound is inferred.",
+    "precision": "Retain all covariance decimal digits. Use a complete selected principal submatrix and exact rational PSD check without correction.",
+    "diagonal_compatibility": "Compare squared nearest-last-place interval around the retained atomic-mass uncertainty to the covariance diagonal; failure holds the affected reductions. This explicit compatibility criterion does not replace the published diagonal. Nearest-last-place compatibility is an explicit conservative criterion here, not an authenticated universal AME rounding rule.",
+    "means": "Use precise Part II Table A atomic masses for n,H1,H2,H3,He3,He4 as estimated means, retaining all printed digits. Other required means remain from the electronic table and are not promoted beyond compatible coverage. Baseline mass-excess values are unchanged.",
+    "energy_conversion": {
+      "status": "not_applied",
+      "value": "931494.10242",
+      "standard_uncertainty": "0.00028",
+      "unit": "keV/u",
+      "source_id": "ame2020-part-i",
+      "locator": "Table A, printed page030002-3, PDFpage4, 1u row",
+      "reason": "Native mass-unit covariance only. This coefficient has uncertainty and may share source dependence; no independence or exact conversion is imposed."
+    },
+    "primary_method_reference": "https://cpc.ihep.ac.cn/article/doi/10.1088/1674-1137/abddb0",
+    "primary_precision_reference": "https://cpc.ihep.ac.cn/article/doi/10.1088/1674-1137/abddaf",
+    "primary_documentation_status": "Both official Part I and Part II PDFs retained and hashed; precise Table A transcription visually checked. The nearest-last-place gate remains an explicitly declared compatibility criterion.",
+    "sigma_convention": {
+      "status": "source_confirmed",
+      "kind": "one_standard_deviation",
+      "source_id": "ame2020-part-i",
+      "locator": "Printed page030002-2, PDFpage3, opening paragraph",
+      "systematics_qualification": "Part II printed page030003-5, PDFpage6 identifies # values as partly based on trends from the mass surface. Selected adopted atomic masses have no # marker; this adoption does not erase qualifications elsewhere."
+    }
+  },
+  "precise_atomic_masses": {
+    "source_id": "ame2020-part-ii",
+    "locator": "Table A, printed page030003-2, PDFpage3; atomic mass and uncertainty columns",
+    "unit": "micro-u",
+    "rows": [
+      {
+        "code": 10000,
+        "row_label": "n-1",
+        "mean": "1008664.915904",
+        "sigma": "0.000473"
+      },
+      {
+        "code": 10010,
+        "row_label": "H-1",
+        "mean": "1007825.031898",
+        "sigma": "0.000014"
+      },
+      {
+        "code": 20010,
+        "row_label": "H-2",
+        "mean": "2014101.777844",
+        "sigma": "0.000015"
+      },
+      {
+        "code": 30010,
+        "row_label": "H-3",
+        "mean": "3016049.281320",
+        "sigma": "0.000081"
+      },
+      {
+        "code": 30020,
+        "row_label": "He-3",
+        "mean": "3016029.321967",
+        "sigma": "0.000060"
+      },
+      {
+        "code": 40020,
+        "row_label": "He-4",
+        "mean": "4002603.254130",
+        "sigma": "0.000158"
+      }
+    ]
+  }
+}

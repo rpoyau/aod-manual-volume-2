@@ -1,0 +1,29 @@
+{
+  "assigned_inputs": {
+    "description": "Pressure, lifetime-window classification, shedding and acceptor lists, and cutoff scope are preserved assignments. Their specification is not a derivation from the Axiom or empirical calibration.",
+    "source": "data/m1/model_inputs.json",
+    "status": "declared_model_inputs"
+  },
+  "baseline_main": "4820ccafea05b6bf463239596fb1d64e82d428af",
+  "baseline_path": "manual2/data/m1/matter1_elements_1_118_ledger.csv",
+  "baseline_sha256": "202ab421ab2359b6b9e0838e0d5f39b8a8144b0f5ae03704853655c98db51246",
+  "commit": "421e0cad513758ca1519003714f881bd856a6ee0",
+  "isotope_parameterization": {
+    "formula": "at fixed Z, Delta support_sum = 68 Delta A; placement depends only on Z",
+    "limitations": "An A>=Z parameter value is a model operand, not evidence that the corresponding isotope exists or is stable.",
+    "status": "conditional_arithmetic_only"
+  },
+  "reference_a": {
+    "description": "Preserve the exact supplied A for each of the 118 element references. The prior generator called these reference mass numbers but provided no per-row catalog citation, selection algorithm, uncertainty or stability claim. No most-abundant, standard-weight, stable-isotope or observed-isotope policy is asserted here.",
+    "policy_id": "legacy-reference-a-unresolved",
+    "source_location": "manual2/scripts/verify_matter1_ledger.py:42-55 in PR commit 421e0cad513758ca1519003714f881bd856a6ee0",
+    "status": "selection_provenance_unresolved"
+  },
+  "schema_version": 2,
+  "source_id": "pr1-421e0cad-reference-fixture",
+  "unfilled_a": {
+    "description": "A=round(2.55Z), Z=119..126, preserved from the pinned generator. These are unfilled reference positions; their operands are not an observed isotope catalog.",
+    "policy_id": "legacy-projected-a",
+    "status": "model_fixture_only"
+  }
+}

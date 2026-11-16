@@ -1,0 +1,95 @@
+{
+  "files": {
+    "LICENSE": {
+      "sha256": "bcaee0778a5a742463fae8d3bf66d1dfc37d45b2a92962ad415b730b310d5bf7",
+      "upstream_path": "LICENSE"
+    },
+    "contracts/scientific/CELL_MAPPING_MATHEMATICAL_BINDINGS.json": {
+      "sha256": "a971cb597a9879c433b37184ba81c2b60f25ff35b011363862eb43602e1bf1b7",
+      "upstream_path": "contracts/scientific/CELL_MAPPING_MATHEMATICAL_BINDINGS.json"
+    },
+    "contracts/scientific/CELL_MEASURE_SPEC.json": {
+      "sha256": "75fc35552c419d831d8fcd5dfe1ee1b46dffa4e862535d4b74029f3c2018c9ea",
+      "upstream_path": "contracts/scientific/CELL_MEASURE_SPEC.json"
+    },
+    "contracts/scientific/ERROR_BUDGET.json": {
+      "sha256": "8ea33dabcf681e01d459f170b31c10b59fdf9e63ea708c64ac6ed7c1be62a57f",
+      "upstream_path": "contracts/scientific/ERROR_BUDGET.json"
+    },
+    "contracts/scientific/MAP_CONTRACT.json": {
+      "sha256": "3d6766979397c7732e6cd88793cf6befb9fa48fa69267598cfcf0d781a300aea",
+      "upstream_path": "contracts/scientific/MAP_CONTRACT.json"
+    },
+    "contracts/scientific/TEMPORAL_METROLOGY.json": {
+      "sha256": "a81b261fca3be6202a1fb02d6334e60751b25d1e0c9ff5ef89bb50ba44145da9",
+      "upstream_path": "contracts/scientific/TEMPORAL_METROLOGY.json"
+    },
+    "contracts/scientific/TEMPORAL_OBSERVATION.json": {
+      "sha256": "b02344dcaa98c3de1b7453d868b332b2bd537f08c9c2e92de048e337c6747e69",
+      "upstream_path": "contracts/scientific/TEMPORAL_OBSERVATION.json"
+    },
+    "manual/data/temporal_metrology/cesium/protocol.json": {
+      "sha256": "0de1e3b3dd57eafd5fa0cfd590e32dcc92ace51c140e3127cd68079e4effa34d",
+      "upstream_path": "manual/data/temporal_metrology/cesium/protocol.json"
+    },
+    "manual/data/temporal_metrology/cesium/source/heavner2014.pdf": {
+      "sha256": "85482447888dc5524b7ebf3754ea4fdcde3a80d9c36ae927e5d69d9e9f980eb5",
+      "upstream_path": "manual/data/temporal_metrology/cesium/source/heavner2014.pdf"
+    },
+    "manual/data/temporal_metrology/cesium/source/source_receipt.json": {
+      "sha256": "43fec317110ec9c033a7da5b3858af15e70132fc1e6af480cbe6bc27182c9298",
+      "upstream_path": "manual/data/temporal_metrology/cesium/source/source_receipt.json"
+    },
+    "manual/data/temporal_metrology/hydrogen/protocol.json": {
+      "sha256": "a23711aff19ee6e2e3952b2d43730580c5c96446fd70fae05e37380ecc8e337c",
+      "upstream_path": "manual/data/temporal_metrology/hydrogen/protocol.json"
+    },
+    "manual/data/temporal_metrology/hydrogen/reported_uncertainty.json": {
+      "sha256": "71e2bf4c2891b28f1076fcc9e2b7266943cc330be394585172ed264119a38560",
+      "upstream_path": "manual/data/temporal_metrology/hydrogen/reported_uncertainty.json"
+    },
+    "manual/data/temporal_metrology/hydrogen/source/hellwig1970.pdf": {
+      "sha256": "e8bba435fbb9e6b54f41fa1d60f9c02df8e06b6a73ce8fab323afb3ea7d02dc4",
+      "upstream_path": "manual/data/temporal_metrology/hydrogen/source/hellwig1970.pdf"
+    },
+    "manual/data/temporal_metrology/hydrogen/source/source_receipt.json": {
+      "sha256": "397f81e68f5bfa57db0cee5abbf4c2dea5dec6cbc000c99b623e0ef361750bf7",
+      "upstream_path": "manual/data/temporal_metrology/hydrogen/source/source_receipt.json"
+    },
+    "manual/scripts/aod_cell_measures.py": {
+      "sha256": "0cc093b7ae82833766fd1db1a36fd92b30639f6446da84292caf05b13bb1ed58",
+      "upstream_path": "manual/scripts/aod_cell_measures.py"
+    },
+    "manual/scripts/aod_experimental_comparison.py": {
+      "sha256": "791b711e732471506eaeb8cc742cf30ae368d2db49c65ad96d61c450f0fedbd1",
+      "upstream_path": "manual/scripts/aod_experimental_comparison.py"
+    },
+    "manual/scripts/aod_mapping_error.py": {
+      "sha256": "eb32fc25e05f878c70459689a89341d106c021a8db7ecf611e71646888060bf7",
+      "upstream_path": "manual/scripts/aod_mapping_error.py"
+    },
+    "manual/scripts/aod_native_closure_wave.py": {
+      "sha256": "c63df543db4e75ba708fe4c5383a8e9d418849c7f0128da8b1da1c52c112f6b2",
+      "upstream_path": "manual/scripts/aod_native_closure_wave.py"
+    },
+    "manual/scripts/aod_temporal_metrology.py": {
+      "sha256": "636157fcc88eb10c7f9df8a1592a5faf002dd2de17758183e378e79e750bc4b7",
+      "upstream_path": "manual/scripts/aod_temporal_metrology.py"
+    },
+    "manual/scripts/aod_temporal_observation.py": {
+      "sha256": "35c786adeac653ac9348424e915e3b0df98b8fc61ec7c6226bf82819540f7086",
+      "upstream_path": "manual/scripts/aod_temporal_observation.py"
+    }
+  },
+  "qualifications": [
+    "Native cuts and reclosures are not physical seconds or oscillator cycles; a declared observation law and clock realization are required.",
+    "Results are conditional on the supplied histories, source quantities, joint law or justified moment and bound evidence. Unresolved physical discrepancy and realization terms remain unknown.",
+    "Finite reduction checks apply only to their stated observable, input class and window; no universal reduction or future-response equivalence is inferred.",
+    "The interfaces do not supply an atomic frequency, isotope lifetime, nuclear kernel or independent experimental validation."
+  ],
+  "schema": "matter1.m3-producer-binding.v1",
+  "scope": "Exact producer-relative API closure for native, typed temporal, quantity propagation and frozen comparison operations. Historical generic CLI fixture repositories are not exported. Existing flat 71cb exports remain historical consumer dependencies.",
+  "upstream_head": "dc1a434c8fc2b7b958e44d7da63277c7856a8d67",
+  "upstream_repository": "https://github.com/rpoyau/aod",
+  "upstream_tree": "7a120ca70c571074a720f99919a6a5776d355075"
+}

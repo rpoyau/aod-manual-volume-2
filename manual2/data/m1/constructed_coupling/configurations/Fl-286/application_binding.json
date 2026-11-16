@@ -1,0 +1,167 @@
+{
+  "application_sha256": "e61be2e212e20edf07962fd791ac1af20583f9b00ac78dc1e774c98c1e4bb1f9",
+  "effective_contract_sha256": "e710bf1d479c89e18be79a5abcdf37af9ecae09b896137b7eecc2ae14edd2fcb",
+  "file_sha256": {
+    "atomic_and_hinge_events.jsonl.gz": "8dccab90f4d1f1836b157f5fb710b454dd65e0882d922892da576a094bd1e864",
+    "checks.json": "a1d255e19445f99b7568ae327ac055f3a46b3af8660af14143bd69a343ef7075",
+    "click_and_rcd_events.jsonl.gz": "80cf7c0e22e1a569592309ea54cac695c35cb15464f3660eca665a6f849ca3bd",
+    "closures.csv": "c28f25132734e06de200d89ed313efc76f3c1e89a7b2ddc56d714eb9f74e9373",
+    "constructed_state.json": "eabff6d4e68c624abab7767e8d300acaa188b432981421cbab5bf20e7ba3732f",
+    "directional_rd_rcd.csv": "8b1cb2df54311f899cd8c7eea6942868488d18185feaab6aa5bf3debcfecf851",
+    "input_context.json": "6edfddb3e72663ff88f4dc097b3aa11dc6f88aab1748388949ac78af1f02fe7f",
+    "nonnegative_load_terms.jsonl.gz": "2f3230c29c2b35615e04c7ff1fa294e0e7a832b37a5fa9a6d282d0a87b2534ea",
+    "outer_return_witnesses.jsonl.gz": "67ef75361b563416af1e3aced1cad3ec8150f56797387ec4497e66d412eaab75",
+    "prediction.json": "343603372eb9eddf12679e47a834311806e5befa17955dbe7ef99ec674e029bf",
+    "pressure_events.jsonl.gz": "c8a100b0ac1f6787d421d7757d124d33f09d87953ddcfaa93390a4389d42e854",
+    "terminal_survival.csv": "1b0def2dbb4c8c475858e21c93b3d53d797db9ca667b378dd01d33e82e927175",
+    "tick_events.jsonl.gz": "96245dfb8527918e47dbe09913c0a981cc07b33dd71ea1489e18108dc792c1af",
+    "windowed_relations.csv": "968721a897b640958c074fa424589c69c6630e0161d9fc5f3fc9ccef8cbd1003"
+  },
+  "input_context_sha256": "6edfddb3e72663ff88f4dc097b3aa11dc6f88aab1748388949ac78af1f02fe7f",
+  "profile": "matter1:paired-aggregate-configurations:v1",
+  "source_bindings": {
+    "archive_verification_scope": "selected member bytes and original manifest bindings; full archive is not present",
+    "bound_inputs": 9,
+    "engine_sha256": "f428de05fa7a0f1b30be5959ee6a34160fb74da0f39d83cdef4bee2300fdb2ab",
+    "member_binding_sha256": "72f9f2a84ef2280a9b8d3cd52e6d8c1114da615bfb2c91831501505209c8ea4b",
+    "native_sha256": "3ba98c7097bc104aeb6218265b8531f94f2ca5a35239d0df097aba096675dfdf",
+    "original_archive": {
+      "archive_crc_passed": true,
+      "bytes": 56690064,
+      "filename": "AOD_MatterI_Constructed_Coupling_R02_2026-11-03.zip",
+      "library_file_id": "libfile_2bf2c3d0a198819189cc88c4883deb81",
+      "library_url": "https://chatgpt.com/library?file_id=libfile_2bf2c3d0a198819189cc88c4883deb81&account_id=personal",
+      "manifest_entries_verified": 85,
+      "sha256": "2a689462a43c0cbd53622770ed7463f52426ac0bdd7a6dc7338a5d1c9f1337e8"
+    },
+    "selected_original_members": 39
+  },
+  "summary": {
+    "branch_occurrences": 15116,
+    "capacity_countermodel_status": "unselected algebraic alternatives on the identical committed trace",
+    "capacity_countermodels": [
+      {
+        "capacity": "234639505/2",
+        "residual": "234639505/2",
+        "surplus": "234639505/2"
+      },
+      {
+        "capacity": "234639505",
+        "residual": "0",
+        "surplus": "0"
+      },
+      {
+        "capacity": "234639506",
+        "residual": "-1",
+        "surplus": "0"
+      }
+    ],
+    "channel_clicks": 11458,
+    "channel_ticks": 11458,
+    "counts": {
+      "case": "baseline",
+      "closures_per_atomic_traversal": "4/130843",
+      "closures_per_reference_bip": "1/485",
+      "hi_inclusive": 4000000000,
+      "kind": "cumulative",
+      "lag_drift": -1936,
+      "lo_exclusive": 61469,
+      "load_contact_count": 3814,
+      "new_parent_closures": 4,
+      "parent_atomic_traversals": 130843,
+      "parent_capacity": null,
+      "parent_loss": null,
+      "parent_structural_RD": 30233,
+      "parent_window_load": 234639505,
+      "phase_bias": "0",
+      "reference_bips": 1940,
+      "reference_structural_RD": 61,
+      "seconds": null,
+      "unwrapped_lag_end": -1936,
+      "unwrapped_lag_start": 0
+    },
+    "directed_channels": [
+      [
+        "B0",
+        "B1"
+      ],
+      [
+        "B0",
+        "P"
+      ],
+      [
+        "B0",
+        "R"
+      ],
+      [
+        "B1",
+        "B0"
+      ],
+      [
+        "B1",
+        "P"
+      ],
+      [
+        "B1",
+        "R"
+      ],
+      [
+        "B2",
+        "P"
+      ],
+      [
+        "P",
+        "B0"
+      ],
+      [
+        "P",
+        "B1"
+      ],
+      [
+        "P",
+        "R"
+      ],
+      [
+        "R",
+        "B0"
+      ],
+      [
+        "R",
+        "B1"
+      ],
+      [
+        "R",
+        "P"
+      ]
+    ],
+    "distinct_constituent_waves": 286,
+    "ensemble_median": null,
+    "evolving_aggregate_fields": 5,
+    "finite_execution_status": "horizon reached; loss observable undefined",
+    "internal_nuclear_dynamics": null,
+    "nonnegative_burden": 234639505,
+    "parent_extra_dwell_events": 0,
+    "parent_formation_return_ids": [
+      "b77f7987481bd7e8518d5c3a33d9b89f2437590a281385a0923c17f8ff60c68a",
+      "c852ff96bf84f67193c8931613b523c1f80f6f56e18868b0c959cd0eee29371e"
+    ],
+    "parent_hinges": 4,
+    "parent_identity": "abb48183b5ff4a7506025a02dc63c69c966465a474d15be25f8ce7768d2606a1",
+    "parent_loss_witness": null,
+    "parent_partial_return_atomic_traversals": 9915,
+    "parent_return_cuts": [
+      924412344,
+      1848574689,
+      2772737034,
+      3696899379
+    ],
+    "pending_currents": 0,
+    "physical_seconds": null,
+    "reference_count_at_loss": null,
+    "response_operands": "same committed contact rho and lag as nonnegative_load_terms and click_and_rcd_events",
+    "scope_map_sha256": "abc6ded31b6038644ef106d43f2a8cfe4a3c16eb38f3f4a6501d97cb0a5d7e65",
+    "signed_response_diagnostic": -234639505,
+    "structural_RD": 30233,
+    "survival_probability": null
+  }
+}

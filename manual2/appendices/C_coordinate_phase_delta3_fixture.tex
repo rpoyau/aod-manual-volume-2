@@ -1,0 +1,31 @@
+\section{Exact Parity, Role and Occupancy Comparators}\label{manual2:app:coordinate-phase-delta3}
+
+\subsection{Integer comparators}\label{manual2:app:delta3-form}
+On each complete reference group \(\mathsf C_{2m}\), \(m=3,\ldots,11\):
+\begin{enumerate}
+\item Exactly \(m\) seats have odd local parity and \(m\) even local parity. Against the comparator \(\widehat O_m=m\),
+\[
+\Delta^{\mathbb Z}_{\mathrm{parity},m}=\widehat O_m-O_{\mathrm{even},m}=0.
+\]
+Parity does not determine the assigned operational class.
+\item The declared role projection has \(m-1\) first-branch seats, one hinge seat, \(m-1\) counterbranch seats and one boundary seat. Thus
+\[
+\Delta^{\mathbb Z}_{\mathrm{branch},m}=(m-1)-(m-1)=0.
+\]
+These are counts of visual roles, not traversed edge events.
+\item The terminal group has 14 labelled slots and capacity 22:
+\[
+\Delta^{\mathbb Z}_{\mathsf C_{22}}=14-22=-8.
+\]
+The difference counts eight unfilled reference slots and is not a retention or physical-cutoff residual.
+\end{enumerate}
+
+\subsection{Signed-magnitude record}\label{manual2:app:delta3-lock}
+The comparator representation is
+\[
+\Delta^{\mathbb Z}_k=s_k^{(3)}m_k,\qquad
+s_k^{(3)}\in\{-1,0,+1\},\quad m_k=|\Delta^{\mathbb Z}_k|.
+\]
+The two balanced comparisons give \(\delta_3=(0,0)\); the terminal occupancy comparison gives \(\delta_3=(-1,8)\). These values express the declared integer counts, not a native phase-cycle measurement.
+
+\aodprovenance{\eqnref{eq:matter1-group-selection}, \eqnref{eq:matter1-seat-abc}, \mainsection{subsec:coord-zero-support-enclosure-grouping}; released AOD Manual v41.02, App.~C, for the signed comparator convention.}

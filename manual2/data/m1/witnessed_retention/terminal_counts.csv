@@ -1,0 +1,51 @@
+case,prefix,outcome,probability_mass,parent_reclosures,candidate_reclosures,reference_bips,parent_closures_per_reference_bip,candidate_atomic_traversals,outer_atomic_traversals,terminal_cut,status,candidate_hinges,outer_hinges,candidate_reflections,outer_reflections,dwell_events,channel_ticks,channel_clicks,reference_atomic_traversals,background_atomic_traversals,outer_partial_atomic_traversals
+net_memory,++,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,++,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,++,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+net_memory,+-,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,+-,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,-+,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,-+,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,--,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,--,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+net_memory,--,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+burden,++,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,++,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,++,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+burden,+-,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,+-,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,+-,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+burden,-+,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,-+,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,-+,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+burden,--,+,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,--,-,1/12,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden,--,exit,1/12,2,2,3,2/3,8,10,2417,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,408,2
+burden_feedback_off,++,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,++,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,+-,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,+-,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,-+,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,-+,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,--,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_feedback_off,--,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,++,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,++,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,+-,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,+-,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,-+,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,-+,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,--,+,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_latest_response_window,--,-,1/8,3,3,3,1,12,12,2426,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,408,0
+burden_background_pending,++,+,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,++,-,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,++,exit,71/304,2,2,3,2/3,8,10,2143,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,137,2
+burden_background_pending,+-,+,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,+-,-,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,+-,exit,71/304,2,2,3,2/3,8,10,2143,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,137,2
+burden_background_pending,-+,+,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,-+,-,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,-+,exit,71/304,2,2,3,2/3,8,10,2143,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,137,2
+burden_background_pending,--,+,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,--,-,5/608,3,3,3,1,12,12,2152,retained at the frozen horizon; right-censored within this fixture,3,3,0,0,0,6,6,12,137,0
+burden_background_pending,--,exit,71/304,2,2,3,2/3,8,10,2143,absorbed by declared outer-exit predicate,2,3,0,0,0,6,6,12,137,2

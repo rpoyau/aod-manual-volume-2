@@ -1,0 +1,5452 @@
+{
+  "configurations": [
+    {
+      "a": 1,
+      "electron_count": 1,
+      "id": "Z001-A001",
+      "n": 0,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 1,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      },
+      "record_ids": [
+        "reference:H-1",
+        "H-1:ground"
+      ],
+      "z": 1
+    },
+    {
+      "a": 4,
+      "electron_count": 2,
+      "id": "Z002-A004",
+      "n": 2,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 4,
+        "electron_count": 2,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 2
+      },
+      "record_ids": [
+        "reference:He-4"
+      ],
+      "z": 2
+    },
+    {
+      "a": 7,
+      "electron_count": 3,
+      "id": "Z003-A007",
+      "n": 4,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 7,
+        "electron_count": 3,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 3
+      },
+      "record_ids": [
+        "reference:Li-7"
+      ],
+      "z": 3
+    },
+    {
+      "a": 9,
+      "electron_count": 4,
+      "id": "Z004-A009",
+      "n": 5,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 9,
+        "electron_count": 4,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 4
+      },
+      "record_ids": [
+        "reference:Be-9"
+      ],
+      "z": 4
+    },
+    {
+      "a": 11,
+      "electron_count": 5,
+      "id": "Z005-A011",
+      "n": 6,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 11,
+        "electron_count": 5,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 5
+      },
+      "record_ids": [
+        "reference:B-11"
+      ],
+      "z": 5
+    },
+    {
+      "a": 12,
+      "electron_count": 6,
+      "id": "Z006-A012",
+      "n": 6,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 12,
+        "electron_count": 6,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 6
+      },
+      "record_ids": [
+        "reference:C-12"
+      ],
+      "z": 6
+    },
+    {
+      "a": 14,
+      "electron_count": 7,
+      "id": "Z007-A014",
+      "n": 7,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 14,
+        "electron_count": 7,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 7
+      },
+      "record_ids": [
+        "reference:N-14"
+      ],
+      "z": 7
+    },
+    {
+      "a": 16,
+      "electron_count": 8,
+      "id": "Z008-A016",
+      "n": 8,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 16,
+        "electron_count": 8,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 8
+      },
+      "record_ids": [
+        "reference:O-16"
+      ],
+      "z": 8
+    },
+    {
+      "a": 19,
+      "electron_count": 9,
+      "id": "Z009-A019",
+      "n": 10,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 19,
+        "electron_count": 9,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 9
+      },
+      "record_ids": [
+        "reference:F-19"
+      ],
+      "z": 9
+    },
+    {
+      "a": 20,
+      "electron_count": 10,
+      "id": "Z010-A020",
+      "n": 10,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 20,
+        "electron_count": 10,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 10
+      },
+      "record_ids": [
+        "reference:Ne-20"
+      ],
+      "z": 10
+    },
+    {
+      "a": 23,
+      "electron_count": 11,
+      "id": "Z011-A023",
+      "n": 12,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 23,
+        "electron_count": 11,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 11
+      },
+      "record_ids": [
+        "reference:Na-23"
+      ],
+      "z": 11
+    },
+    {
+      "a": 24,
+      "electron_count": 12,
+      "id": "Z012-A024",
+      "n": 12,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 24,
+        "electron_count": 12,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 12
+      },
+      "record_ids": [
+        "reference:Mg-24"
+      ],
+      "z": 12
+    },
+    {
+      "a": 27,
+      "electron_count": 13,
+      "id": "Z013-A027",
+      "n": 14,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 27,
+        "electron_count": 13,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 13
+      },
+      "record_ids": [
+        "reference:Al-27"
+      ],
+      "z": 13
+    },
+    {
+      "a": 28,
+      "electron_count": 14,
+      "id": "Z014-A028",
+      "n": 14,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 28,
+        "electron_count": 14,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 14
+      },
+      "record_ids": [
+        "reference:Si-28"
+      ],
+      "z": 14
+    },
+    {
+      "a": 31,
+      "electron_count": 15,
+      "id": "Z015-A031",
+      "n": 16,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 31,
+        "electron_count": 15,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 15
+      },
+      "record_ids": [
+        "reference:P-31"
+      ],
+      "z": 15
+    },
+    {
+      "a": 32,
+      "electron_count": 16,
+      "id": "Z016-A032",
+      "n": 16,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 32,
+        "electron_count": 16,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 16
+      },
+      "record_ids": [
+        "reference:S-32"
+      ],
+      "z": 16
+    },
+    {
+      "a": 35,
+      "electron_count": 17,
+      "id": "Z017-A035",
+      "n": 18,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 35,
+        "electron_count": 17,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 17
+      },
+      "record_ids": [
+        "reference:Cl-35"
+      ],
+      "z": 17
+    },
+    {
+      "a": 40,
+      "electron_count": 18,
+      "id": "Z018-A040",
+      "n": 22,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 40,
+        "electron_count": 18,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 18
+      },
+      "record_ids": [
+        "reference:Ar-40"
+      ],
+      "z": 18
+    },
+    {
+      "a": 39,
+      "electron_count": 19,
+      "id": "Z019-A039",
+      "n": 20,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 39,
+        "electron_count": 19,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 19
+      },
+      "record_ids": [
+        "reference:K-39"
+      ],
+      "z": 19
+    },
+    {
+      "a": 40,
+      "electron_count": 20,
+      "id": "Z020-A040",
+      "n": 20,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 40,
+        "electron_count": 20,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 20
+      },
+      "record_ids": [
+        "reference:Ca-40"
+      ],
+      "z": 20
+    },
+    {
+      "a": 45,
+      "electron_count": 21,
+      "id": "Z021-A045",
+      "n": 24,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 45,
+        "electron_count": 21,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 21
+      },
+      "record_ids": [
+        "reference:Sc-45"
+      ],
+      "z": 21
+    },
+    {
+      "a": 48,
+      "electron_count": 22,
+      "id": "Z022-A048",
+      "n": 26,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 48,
+        "electron_count": 22,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 22
+      },
+      "record_ids": [
+        "reference:Ti-48"
+      ],
+      "z": 22
+    },
+    {
+      "a": 51,
+      "electron_count": 23,
+      "id": "Z023-A051",
+      "n": 28,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 51,
+        "electron_count": 23,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 23
+      },
+      "record_ids": [
+        "reference:V-51"
+      ],
+      "z": 23
+    },
+    {
+      "a": 52,
+      "electron_count": 24,
+      "id": "Z024-A052",
+      "n": 28,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 52,
+        "electron_count": 24,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 24
+      },
+      "record_ids": [
+        "reference:Cr-52"
+      ],
+      "z": 24
+    },
+    {
+      "a": 55,
+      "electron_count": 25,
+      "id": "Z025-A055",
+      "n": 30,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 55,
+        "electron_count": 25,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 25
+      },
+      "record_ids": [
+        "reference:Mn-55"
+      ],
+      "z": 25
+    },
+    {
+      "a": 56,
+      "electron_count": 26,
+      "id": "Z026-A056",
+      "n": 30,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 56,
+        "electron_count": 26,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 26
+      },
+      "record_ids": [
+        "reference:Fe-56",
+        "Fe-56:ground"
+      ],
+      "z": 26
+    },
+    {
+      "a": 59,
+      "electron_count": 27,
+      "id": "Z027-A059",
+      "n": 32,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 59,
+        "electron_count": 27,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 27
+      },
+      "record_ids": [
+        "reference:Co-59"
+      ],
+      "z": 27
+    },
+    {
+      "a": 58,
+      "electron_count": 28,
+      "id": "Z028-A058",
+      "n": 30,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 58,
+        "electron_count": 28,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 28
+      },
+      "record_ids": [
+        "reference:Ni-58"
+      ],
+      "z": 28
+    },
+    {
+      "a": 62,
+      "electron_count": 28,
+      "id": "Z028-A062",
+      "n": 34,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 62,
+        "electron_count": 28,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 28
+      },
+      "record_ids": [
+        "Ni-62:ground"
+      ],
+      "z": 28
+    },
+    {
+      "a": 63,
+      "electron_count": 29,
+      "id": "Z029-A063",
+      "n": 34,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 63,
+        "electron_count": 29,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 29
+      },
+      "record_ids": [
+        "reference:Cu-63"
+      ],
+      "z": 29
+    },
+    {
+      "a": 64,
+      "electron_count": 30,
+      "id": "Z030-A064",
+      "n": 34,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 64,
+        "electron_count": 30,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 30
+      },
+      "record_ids": [
+        "reference:Zn-64"
+      ],
+      "z": 30
+    },
+    {
+      "a": 69,
+      "electron_count": 31,
+      "id": "Z031-A069",
+      "n": 38,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 69,
+        "electron_count": 31,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 31
+      },
+      "record_ids": [
+        "reference:Ga-69"
+      ],
+      "z": 31
+    },
+    {
+      "a": 74,
+      "electron_count": 32,
+      "id": "Z032-A074",
+      "n": 42,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 74,
+        "electron_count": 32,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 32
+      },
+      "record_ids": [
+        "reference:Ge-74"
+      ],
+      "z": 32
+    },
+    {
+      "a": 75,
+      "electron_count": 33,
+      "id": "Z033-A075",
+      "n": 42,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 75,
+        "electron_count": 33,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 33
+      },
+      "record_ids": [
+        "reference:As-75"
+      ],
+      "z": 33
+    },
+    {
+      "a": 80,
+      "electron_count": 34,
+      "id": "Z034-A080",
+      "n": 46,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 80,
+        "electron_count": 34,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 34
+      },
+      "record_ids": [
+        "reference:Se-80"
+      ],
+      "z": 34
+    },
+    {
+      "a": 79,
+      "electron_count": 35,
+      "id": "Z035-A079",
+      "n": 44,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 79,
+        "electron_count": 35,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 35
+      },
+      "record_ids": [
+        "reference:Br-79"
+      ],
+      "z": 35
+    },
+    {
+      "a": 84,
+      "electron_count": 36,
+      "id": "Z036-A084",
+      "n": 48,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 84,
+        "electron_count": 36,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 36
+      },
+      "record_ids": [
+        "reference:Kr-84"
+      ],
+      "z": 36
+    },
+    {
+      "a": 85,
+      "electron_count": 37,
+      "id": "Z037-A085",
+      "n": 48,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 85,
+        "electron_count": 37,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 37
+      },
+      "record_ids": [
+        "reference:Rb-85"
+      ],
+      "z": 37
+    },
+    {
+      "a": 88,
+      "electron_count": 38,
+      "id": "Z038-A088",
+      "n": 50,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 88,
+        "electron_count": 38,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 38
+      },
+      "record_ids": [
+        "reference:Sr-88"
+      ],
+      "z": 38
+    },
+    {
+      "a": 89,
+      "electron_count": 39,
+      "id": "Z039-A089",
+      "n": 50,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 89,
+        "electron_count": 39,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 39
+      },
+      "record_ids": [
+        "reference:Y-89"
+      ],
+      "z": 39
+    },
+    {
+      "a": 90,
+      "electron_count": 40,
+      "id": "Z040-A090",
+      "n": 50,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 90,
+        "electron_count": 40,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 40
+      },
+      "record_ids": [
+        "reference:Zr-90"
+      ],
+      "z": 40
+    },
+    {
+      "a": 93,
+      "electron_count": 41,
+      "id": "Z041-A093",
+      "n": 52,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 93,
+        "electron_count": 41,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 41
+      },
+      "record_ids": [
+        "reference:Nb-93"
+      ],
+      "z": 41
+    },
+    {
+      "a": 98,
+      "electron_count": 42,
+      "id": "Z042-A098",
+      "n": 56,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 98,
+        "electron_count": 42,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 42
+      },
+      "record_ids": [
+        "reference:Mo-98"
+      ],
+      "z": 42
+    },
+    {
+      "a": 98,
+      "electron_count": 43,
+      "id": "Z043-A098",
+      "n": 55,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 98,
+        "electron_count": 43,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 43
+      },
+      "record_ids": [
+        "reference:Tc-98"
+      ],
+      "z": 43
+    },
+    {
+      "a": 102,
+      "electron_count": 44,
+      "id": "Z044-A102",
+      "n": 58,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 102,
+        "electron_count": 44,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 44
+      },
+      "record_ids": [
+        "reference:Ru-102"
+      ],
+      "z": 44
+    },
+    {
+      "a": 103,
+      "electron_count": 45,
+      "id": "Z045-A103",
+      "n": 58,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 103,
+        "electron_count": 45,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 45
+      },
+      "record_ids": [
+        "reference:Rh-103"
+      ],
+      "z": 45
+    },
+    {
+      "a": 106,
+      "electron_count": 46,
+      "id": "Z046-A106",
+      "n": 60,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 106,
+        "electron_count": 46,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 46
+      },
+      "record_ids": [
+        "reference:Pd-106"
+      ],
+      "z": 46
+    },
+    {
+      "a": 107,
+      "electron_count": 47,
+      "id": "Z047-A107",
+      "n": 60,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 107,
+        "electron_count": 47,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 47
+      },
+      "record_ids": [
+        "reference:Ag-107"
+      ],
+      "z": 47
+    },
+    {
+      "a": 114,
+      "electron_count": 48,
+      "id": "Z048-A114",
+      "n": 66,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 114,
+        "electron_count": 48,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 48
+      },
+      "record_ids": [
+        "reference:Cd-114"
+      ],
+      "z": 48
+    },
+    {
+      "a": 115,
+      "electron_count": 49,
+      "id": "Z049-A115",
+      "n": 66,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 115,
+        "electron_count": 49,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 49
+      },
+      "record_ids": [
+        "reference:In-115"
+      ],
+      "z": 49
+    },
+    {
+      "a": 120,
+      "electron_count": 50,
+      "id": "Z050-A120",
+      "n": 70,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 120,
+        "electron_count": 50,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 50
+      },
+      "record_ids": [
+        "reference:Sn-120"
+      ],
+      "z": 50
+    },
+    {
+      "a": 121,
+      "electron_count": 51,
+      "id": "Z051-A121",
+      "n": 70,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 121,
+        "electron_count": 51,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 51
+      },
+      "record_ids": [
+        "reference:Sb-121"
+      ],
+      "z": 51
+    },
+    {
+      "a": 130,
+      "electron_count": 52,
+      "id": "Z052-A130",
+      "n": 78,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 130,
+        "electron_count": 52,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 52
+      },
+      "record_ids": [
+        "reference:Te-130"
+      ],
+      "z": 52
+    },
+    {
+      "a": 127,
+      "electron_count": 53,
+      "id": "Z053-A127",
+      "n": 74,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 127,
+        "electron_count": 53,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 53
+      },
+      "record_ids": [
+        "reference:I-127"
+      ],
+      "z": 53
+    },
+    {
+      "a": 132,
+      "electron_count": 54,
+      "id": "Z054-A132",
+      "n": 78,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 132,
+        "electron_count": 54,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 54
+      },
+      "record_ids": [
+        "reference:Xe-132"
+      ],
+      "z": 54
+    },
+    {
+      "a": 133,
+      "electron_count": 55,
+      "id": "Z055-A133",
+      "n": 78,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 133,
+        "electron_count": 55,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 55
+      },
+      "record_ids": [
+        "reference:Cs-133",
+        "Cs-133:ground"
+      ],
+      "z": 55
+    },
+    {
+      "a": 138,
+      "electron_count": 56,
+      "id": "Z056-A138",
+      "n": 82,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 138,
+        "electron_count": 56,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 56
+      },
+      "record_ids": [
+        "reference:Ba-138"
+      ],
+      "z": 56
+    },
+    {
+      "a": 139,
+      "electron_count": 57,
+      "id": "Z057-A139",
+      "n": 82,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 139,
+        "electron_count": 57,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 57
+      },
+      "record_ids": [
+        "reference:La-139"
+      ],
+      "z": 57
+    },
+    {
+      "a": 140,
+      "electron_count": 58,
+      "id": "Z058-A140",
+      "n": 82,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 140,
+        "electron_count": 58,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 58
+      },
+      "record_ids": [
+        "reference:Ce-140"
+      ],
+      "z": 58
+    },
+    {
+      "a": 141,
+      "electron_count": 59,
+      "id": "Z059-A141",
+      "n": 82,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 141,
+        "electron_count": 59,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 59
+      },
+      "record_ids": [
+        "reference:Pr-141"
+      ],
+      "z": 59
+    },
+    {
+      "a": 142,
+      "electron_count": 60,
+      "id": "Z060-A142",
+      "n": 82,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 142,
+        "electron_count": 60,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 60
+      },
+      "record_ids": [
+        "reference:Nd-142"
+      ],
+      "z": 60
+    },
+    {
+      "a": 145,
+      "electron_count": 61,
+      "id": "Z061-A145",
+      "n": 84,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 145,
+        "electron_count": 61,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 61
+      },
+      "record_ids": [
+        "reference:Pm-145"
+      ],
+      "z": 61
+    },
+    {
+      "a": 152,
+      "electron_count": 62,
+      "id": "Z062-A152",
+      "n": 90,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 152,
+        "electron_count": 62,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 62
+      },
+      "record_ids": [
+        "reference:Sm-152"
+      ],
+      "z": 62
+    },
+    {
+      "a": 153,
+      "electron_count": 63,
+      "id": "Z063-A153",
+      "n": 90,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 153,
+        "electron_count": 63,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 63
+      },
+      "record_ids": [
+        "reference:Eu-153"
+      ],
+      "z": 63
+    },
+    {
+      "a": 158,
+      "electron_count": 64,
+      "id": "Z064-A158",
+      "n": 94,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 158,
+        "electron_count": 64,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 64
+      },
+      "record_ids": [
+        "reference:Gd-158"
+      ],
+      "z": 64
+    },
+    {
+      "a": 159,
+      "electron_count": 65,
+      "id": "Z065-A159",
+      "n": 94,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 159,
+        "electron_count": 65,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 65
+      },
+      "record_ids": [
+        "reference:Tb-159"
+      ],
+      "z": 65
+    },
+    {
+      "a": 164,
+      "electron_count": 66,
+      "id": "Z066-A164",
+      "n": 98,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 164,
+        "electron_count": 66,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 66
+      },
+      "record_ids": [
+        "reference:Dy-164"
+      ],
+      "z": 66
+    },
+    {
+      "a": 165,
+      "electron_count": 67,
+      "id": "Z067-A165",
+      "n": 98,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 165,
+        "electron_count": 67,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 67
+      },
+      "record_ids": [
+        "reference:Ho-165"
+      ],
+      "z": 67
+    },
+    {
+      "a": 166,
+      "electron_count": 68,
+      "id": "Z068-A166",
+      "n": 98,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 166,
+        "electron_count": 68,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 68
+      },
+      "record_ids": [
+        "reference:Er-166"
+      ],
+      "z": 68
+    },
+    {
+      "a": 169,
+      "electron_count": 69,
+      "id": "Z069-A169",
+      "n": 100,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 169,
+        "electron_count": 69,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 69
+      },
+      "record_ids": [
+        "reference:Tm-169"
+      ],
+      "z": 69
+    },
+    {
+      "a": 174,
+      "electron_count": 70,
+      "id": "Z070-A174",
+      "n": 104,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 174,
+        "electron_count": 70,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 70
+      },
+      "record_ids": [
+        "reference:Yb-174"
+      ],
+      "z": 70
+    },
+    {
+      "a": 175,
+      "electron_count": 71,
+      "id": "Z071-A175",
+      "n": 104,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 175,
+        "electron_count": 71,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 71
+      },
+      "record_ids": [
+        "reference:Lu-175"
+      ],
+      "z": 71
+    },
+    {
+      "a": 180,
+      "electron_count": 72,
+      "id": "Z072-A180",
+      "n": 108,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 180,
+        "electron_count": 72,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 72
+      },
+      "record_ids": [
+        "reference:Hf-180"
+      ],
+      "z": 72
+    },
+    {
+      "a": 181,
+      "electron_count": 73,
+      "id": "Z073-A181",
+      "n": 108,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 181,
+        "electron_count": 73,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 73
+      },
+      "record_ids": [
+        "reference:Ta-181"
+      ],
+      "z": 73
+    },
+    {
+      "a": 184,
+      "electron_count": 74,
+      "id": "Z074-A184",
+      "n": 110,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 184,
+        "electron_count": 74,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 74
+      },
+      "record_ids": [
+        "reference:W-184"
+      ],
+      "z": 74
+    },
+    {
+      "a": 187,
+      "electron_count": 75,
+      "id": "Z075-A187",
+      "n": 112,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 187,
+        "electron_count": 75,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 75
+      },
+      "record_ids": [
+        "reference:Re-187"
+      ],
+      "z": 75
+    },
+    {
+      "a": 192,
+      "electron_count": 76,
+      "id": "Z076-A192",
+      "n": 116,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 192,
+        "electron_count": 76,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 76
+      },
+      "record_ids": [
+        "reference:Os-192"
+      ],
+      "z": 76
+    },
+    {
+      "a": 193,
+      "electron_count": 77,
+      "id": "Z077-A193",
+      "n": 116,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 193,
+        "electron_count": 77,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 77
+      },
+      "record_ids": [
+        "reference:Ir-193"
+      ],
+      "z": 77
+    },
+    {
+      "a": 195,
+      "electron_count": 78,
+      "id": "Z078-A195",
+      "n": 117,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 195,
+        "electron_count": 78,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 78
+      },
+      "record_ids": [
+        "reference:Pt-195"
+      ],
+      "z": 78
+    },
+    {
+      "a": 197,
+      "electron_count": 79,
+      "id": "Z079-A197",
+      "n": 118,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 197,
+        "electron_count": 79,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 79
+      },
+      "record_ids": [
+        "reference:Au-197"
+      ],
+      "z": 79
+    },
+    {
+      "a": 202,
+      "electron_count": 80,
+      "id": "Z080-A202",
+      "n": 122,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 202,
+        "electron_count": 80,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 80
+      },
+      "record_ids": [
+        "reference:Hg-202"
+      ],
+      "z": 80
+    },
+    {
+      "a": 205,
+      "electron_count": 81,
+      "id": "Z081-A205",
+      "n": 124,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 205,
+        "electron_count": 81,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 81
+      },
+      "record_ids": [
+        "reference:Tl-205"
+      ],
+      "z": 81
+    },
+    {
+      "a": 208,
+      "electron_count": 82,
+      "id": "Z082-A208",
+      "n": 126,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 208,
+        "electron_count": 82,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 82
+      },
+      "record_ids": [
+        "reference:Pb-208",
+        "Pb-208:ground"
+      ],
+      "z": 82
+    },
+    {
+      "a": 209,
+      "electron_count": 83,
+      "id": "Z083-A209",
+      "n": 126,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 209,
+        "electron_count": 83,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 83
+      },
+      "record_ids": [
+        "reference:Bi-209"
+      ],
+      "z": 83
+    },
+    {
+      "a": 209,
+      "electron_count": 84,
+      "id": "Z084-A209",
+      "n": 125,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 209,
+        "electron_count": 84,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 84
+      },
+      "record_ids": [
+        "reference:Po-209"
+      ],
+      "z": 84
+    },
+    {
+      "a": 210,
+      "electron_count": 85,
+      "id": "Z085-A210",
+      "n": 125,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 210,
+        "electron_count": 85,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 85
+      },
+      "record_ids": [
+        "reference:At-210"
+      ],
+      "z": 85
+    },
+    {
+      "a": 222,
+      "electron_count": 86,
+      "id": "Z086-A222",
+      "n": 136,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 222,
+        "electron_count": 86,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 86
+      },
+      "record_ids": [
+        "reference:Rn-222"
+      ],
+      "z": 86
+    },
+    {
+      "a": 223,
+      "electron_count": 87,
+      "id": "Z087-A223",
+      "n": 136,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 223,
+        "electron_count": 87,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 87
+      },
+      "record_ids": [
+        "reference:Fr-223"
+      ],
+      "z": 87
+    },
+    {
+      "a": 226,
+      "electron_count": 88,
+      "id": "Z088-A226",
+      "n": 138,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 226,
+        "electron_count": 88,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 88
+      },
+      "record_ids": [
+        "reference:Ra-226"
+      ],
+      "z": 88
+    },
+    {
+      "a": 227,
+      "electron_count": 89,
+      "id": "Z089-A227",
+      "n": 138,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 227,
+        "electron_count": 89,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 89
+      },
+      "record_ids": [
+        "reference:Ac-227"
+      ],
+      "z": 89
+    },
+    {
+      "a": 232,
+      "electron_count": 90,
+      "id": "Z090-A232",
+      "n": 142,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 232,
+        "electron_count": 90,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 90
+      },
+      "record_ids": [
+        "reference:Th-232"
+      ],
+      "z": 90
+    },
+    {
+      "a": 231,
+      "electron_count": 91,
+      "id": "Z091-A231",
+      "n": 140,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 231,
+        "electron_count": 91,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 91
+      },
+      "record_ids": [
+        "reference:Pa-231"
+      ],
+      "z": 91
+    },
+    {
+      "a": 238,
+      "electron_count": 92,
+      "id": "Z092-A238",
+      "n": 146,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 238,
+        "electron_count": 92,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 92
+      },
+      "record_ids": [
+        "reference:U-238"
+      ],
+      "z": 92
+    },
+    {
+      "a": 237,
+      "electron_count": 93,
+      "id": "Z093-A237",
+      "n": 144,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 237,
+        "electron_count": 93,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 93
+      },
+      "record_ids": [
+        "reference:Np-237"
+      ],
+      "z": 93
+    },
+    {
+      "a": 244,
+      "electron_count": 94,
+      "id": "Z094-A244",
+      "n": 150,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 244,
+        "electron_count": 94,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 94
+      },
+      "record_ids": [
+        "reference:Pu-244"
+      ],
+      "z": 94
+    },
+    {
+      "a": 243,
+      "electron_count": 95,
+      "id": "Z095-A243",
+      "n": 148,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 243,
+        "electron_count": 95,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 95
+      },
+      "record_ids": [
+        "reference:Am-243"
+      ],
+      "z": 95
+    },
+    {
+      "a": 247,
+      "electron_count": 96,
+      "id": "Z096-A247",
+      "n": 151,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 247,
+        "electron_count": 96,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 96
+      },
+      "record_ids": [
+        "reference:Cm-247"
+      ],
+      "z": 96
+    },
+    {
+      "a": 247,
+      "electron_count": 97,
+      "id": "Z097-A247",
+      "n": 150,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 247,
+        "electron_count": 97,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 97
+      },
+      "record_ids": [
+        "reference:Bk-247"
+      ],
+      "z": 97
+    },
+    {
+      "a": 251,
+      "electron_count": 98,
+      "id": "Z098-A251",
+      "n": 153,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 251,
+        "electron_count": 98,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 98
+      },
+      "record_ids": [
+        "reference:Cf-251"
+      ],
+      "z": 98
+    },
+    {
+      "a": 252,
+      "electron_count": 99,
+      "id": "Z099-A252",
+      "n": 153,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 252,
+        "electron_count": 99,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 99
+      },
+      "record_ids": [
+        "reference:Es-252"
+      ],
+      "z": 99
+    },
+    {
+      "a": 257,
+      "electron_count": 100,
+      "id": "Z100-A257",
+      "n": 157,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 257,
+        "electron_count": 100,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 100
+      },
+      "record_ids": [
+        "reference:Fm-257"
+      ],
+      "z": 100
+    },
+    {
+      "a": 258,
+      "electron_count": 101,
+      "id": "Z101-A258",
+      "n": 157,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 258,
+        "electron_count": 101,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 101
+      },
+      "record_ids": [
+        "reference:Md-258"
+      ],
+      "z": 101
+    },
+    {
+      "a": 259,
+      "electron_count": 102,
+      "id": "Z102-A259",
+      "n": 157,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 259,
+        "electron_count": 102,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 102
+      },
+      "record_ids": [
+        "reference:No-259"
+      ],
+      "z": 102
+    },
+    {
+      "a": 266,
+      "electron_count": 103,
+      "id": "Z103-A266",
+      "n": 163,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 266,
+        "electron_count": 103,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 103
+      },
+      "record_ids": [
+        "reference:Lr-266"
+      ],
+      "z": 103
+    },
+    {
+      "a": 267,
+      "electron_count": 104,
+      "id": "Z104-A267",
+      "n": 163,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 267,
+        "electron_count": 104,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 104
+      },
+      "record_ids": [
+        "reference:Rf-267"
+      ],
+      "z": 104
+    },
+    {
+      "a": 268,
+      "electron_count": 105,
+      "id": "Z105-A268",
+      "n": 163,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 268,
+        "electron_count": 105,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 105
+      },
+      "record_ids": [
+        "reference:Db-268"
+      ],
+      "z": 105
+    },
+    {
+      "a": 269,
+      "electron_count": 106,
+      "id": "Z106-A269",
+      "n": 163,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 269,
+        "electron_count": 106,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 106
+      },
+      "record_ids": [
+        "reference:Sg-269"
+      ],
+      "z": 106
+    },
+    {
+      "a": 270,
+      "electron_count": 107,
+      "id": "Z107-A270",
+      "n": 163,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 270,
+        "electron_count": 107,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 107
+      },
+      "record_ids": [
+        "reference:Bh-270"
+      ],
+      "z": 107
+    },
+    {
+      "a": 277,
+      "electron_count": 108,
+      "id": "Z108-A277",
+      "n": 169,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 277,
+        "electron_count": 108,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 108
+      },
+      "record_ids": [
+        "reference:Hs-277"
+      ],
+      "z": 108
+    },
+    {
+      "a": 278,
+      "electron_count": 109,
+      "id": "Z109-A278",
+      "n": 169,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 278,
+        "electron_count": 109,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 109
+      },
+      "record_ids": [
+        "reference:Mt-278"
+      ],
+      "z": 109
+    },
+    {
+      "a": 281,
+      "electron_count": 110,
+      "id": "Z110-A281",
+      "n": 171,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 281,
+        "electron_count": 110,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 110
+      },
+      "record_ids": [
+        "reference:Ds-281"
+      ],
+      "z": 110
+    },
+    {
+      "a": 282,
+      "electron_count": 111,
+      "id": "Z111-A282",
+      "n": 171,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 282,
+        "electron_count": 111,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 111
+      },
+      "record_ids": [
+        "reference:Rg-282"
+      ],
+      "z": 111
+    },
+    {
+      "a": 280,
+      "electron_count": 112,
+      "id": "Z112-A280",
+      "n": 168,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 280,
+        "electron_count": 112,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 112
+      },
+      "record_ids": [
+        "Cn-280:ground"
+      ],
+      "z": 112
+    },
+    {
+      "a": 282,
+      "electron_count": 112,
+      "id": "Z112-A282",
+      "n": 170,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 282,
+        "electron_count": 112,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 112
+      },
+      "record_ids": [
+        "Cn-282:ground"
+      ],
+      "z": 112
+    },
+    {
+      "a": 285,
+      "electron_count": 112,
+      "id": "Z112-A285",
+      "n": 173,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 285,
+        "electron_count": 112,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 112
+      },
+      "record_ids": [
+        "reference:Cn-285",
+        "Cn-285:ground"
+      ],
+      "z": 112
+    },
+    {
+      "a": 286,
+      "electron_count": 113,
+      "id": "Z113-A286",
+      "n": 173,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 286,
+        "electron_count": 113,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 113
+      },
+      "record_ids": [
+        "reference:Nh-286"
+      ],
+      "z": 113
+    },
+    {
+      "a": 284,
+      "electron_count": 114,
+      "id": "Z114-A284",
+      "n": 170,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 284,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-284:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 285,
+      "electron_count": 114,
+      "id": "Z114-A285",
+      "n": 171,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 285,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-285:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 286,
+      "electron_count": 114,
+      "id": "Z114-A286",
+      "n": 172,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 286,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-286:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 287,
+      "electron_count": 114,
+      "id": "Z114-A287",
+      "n": 173,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 287,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-287:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 288,
+      "electron_count": 114,
+      "id": "Z114-A288",
+      "n": 174,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 288,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-288:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 289,
+      "electron_count": 114,
+      "id": "Z114-A289",
+      "n": 175,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 289,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "reference:Fl-289",
+        "Fl-289:ground",
+        "Fl-289:m_candidate"
+      ],
+      "z": 114
+    },
+    {
+      "a": 290,
+      "electron_count": 114,
+      "id": "Z114-A290",
+      "n": 176,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 290,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-290:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 298,
+      "electron_count": 114,
+      "id": "Z114-A298",
+      "n": 184,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 298,
+        "electron_count": 114,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 114
+      },
+      "record_ids": [
+        "Fl-298:ground"
+      ],
+      "z": 114
+    },
+    {
+      "a": 290,
+      "electron_count": 115,
+      "id": "Z115-A290",
+      "n": 175,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 290,
+        "electron_count": 115,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 115
+      },
+      "record_ids": [
+        "reference:Mc-290"
+      ],
+      "z": 115
+    },
+    {
+      "a": 288,
+      "electron_count": 116,
+      "id": "Z116-A288",
+      "n": 172,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 288,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-288:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 289,
+      "electron_count": 116,
+      "id": "Z116-A289",
+      "n": 173,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 289,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-289:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 290,
+      "electron_count": 116,
+      "id": "Z116-A290",
+      "n": 174,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 290,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-290:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 291,
+      "electron_count": 116,
+      "id": "Z116-A291",
+      "n": 175,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 291,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-291:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 292,
+      "electron_count": 116,
+      "id": "Z116-A292",
+      "n": 176,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 292,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-292:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 293,
+      "electron_count": 116,
+      "id": "Z116-A293",
+      "n": 177,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 293,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "reference:Lv-293",
+        "Lv-293:ground",
+        "Lv-293:m_candidate"
+      ],
+      "z": 116
+    },
+    {
+      "a": 294,
+      "electron_count": 116,
+      "id": "Z116-A294",
+      "n": 178,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 294,
+        "electron_count": 116,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 116
+      },
+      "record_ids": [
+        "Lv-294:ground"
+      ],
+      "z": 116
+    },
+    {
+      "a": 294,
+      "electron_count": 117,
+      "id": "Z117-A294",
+      "n": 177,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 294,
+        "electron_count": 117,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 117
+      },
+      "record_ids": [
+        "reference:Ts-294"
+      ],
+      "z": 117
+    },
+    {
+      "a": 294,
+      "electron_count": 118,
+      "id": "Z118-A294",
+      "n": 176,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 294,
+        "electron_count": 118,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 118
+      },
+      "record_ids": [
+        "reference:Og-294",
+        "Og-294:ground"
+      ],
+      "z": 118
+    },
+    {
+      "a": 295,
+      "electron_count": 118,
+      "id": "Z118-A295",
+      "n": 177,
+      "physical_loss_rule": null,
+      "physical_observation_map": null,
+      "preparation": {
+        "environment": "declared_finite_coupling_only",
+        "kind": "generic_neutral_constituent_inventory",
+        "physical_atomic_state": null
+      },
+      "recipe": {
+        "a": 295,
+        "electron_count": 118,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 118
+      },
+      "record_ids": [
+        "Og-295:ground"
+      ],
+      "z": 118
+    }
+  ],
+  "coverage": {
+    "distinct_Z_A": 135,
+    "elements": 118,
+    "isotope_state_records": 27,
+    "reference_records": 118,
+    "reference_slots_preserved": 126,
+    "source_records": 145
+  },
+  "input_sha256": {
+    "identity_inputs.json": "fd2f46dd80fdbc87bcf1db574bae224a59370aedc159e4a72408d92cbdf23491",
+    "reference_inputs.csv": "1ab139f127467ad77b25d873522fa253e713c6cad1fad21a3589726b0450f232"
+  },
+  "physical_predictions": null,
+  "profile": "matter1:all-elements-campaign:v1",
+  "records": [
+    {
+      "a": 1,
+      "configuration_id": "Z001-A001",
+      "id": "reference:H-1",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "H",
+      "z": 1
+    },
+    {
+      "a": 4,
+      "configuration_id": "Z002-A004",
+      "id": "reference:He-4",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "He",
+      "z": 2
+    },
+    {
+      "a": 7,
+      "configuration_id": "Z003-A007",
+      "id": "reference:Li-7",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Li",
+      "z": 3
+    },
+    {
+      "a": 9,
+      "configuration_id": "Z004-A009",
+      "id": "reference:Be-9",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Be",
+      "z": 4
+    },
+    {
+      "a": 11,
+      "configuration_id": "Z005-A011",
+      "id": "reference:B-11",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "B",
+      "z": 5
+    },
+    {
+      "a": 12,
+      "configuration_id": "Z006-A012",
+      "id": "reference:C-12",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "C",
+      "z": 6
+    },
+    {
+      "a": 14,
+      "configuration_id": "Z007-A014",
+      "id": "reference:N-14",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "N",
+      "z": 7
+    },
+    {
+      "a": 16,
+      "configuration_id": "Z008-A016",
+      "id": "reference:O-16",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "O",
+      "z": 8
+    },
+    {
+      "a": 19,
+      "configuration_id": "Z009-A019",
+      "id": "reference:F-19",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "F",
+      "z": 9
+    },
+    {
+      "a": 20,
+      "configuration_id": "Z010-A020",
+      "id": "reference:Ne-20",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ne",
+      "z": 10
+    },
+    {
+      "a": 23,
+      "configuration_id": "Z011-A023",
+      "id": "reference:Na-23",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Na",
+      "z": 11
+    },
+    {
+      "a": 24,
+      "configuration_id": "Z012-A024",
+      "id": "reference:Mg-24",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Mg",
+      "z": 12
+    },
+    {
+      "a": 27,
+      "configuration_id": "Z013-A027",
+      "id": "reference:Al-27",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Al",
+      "z": 13
+    },
+    {
+      "a": 28,
+      "configuration_id": "Z014-A028",
+      "id": "reference:Si-28",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Si",
+      "z": 14
+    },
+    {
+      "a": 31,
+      "configuration_id": "Z015-A031",
+      "id": "reference:P-31",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "P",
+      "z": 15
+    },
+    {
+      "a": 32,
+      "configuration_id": "Z016-A032",
+      "id": "reference:S-32",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "S",
+      "z": 16
+    },
+    {
+      "a": 35,
+      "configuration_id": "Z017-A035",
+      "id": "reference:Cl-35",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cl",
+      "z": 17
+    },
+    {
+      "a": 40,
+      "configuration_id": "Z018-A040",
+      "id": "reference:Ar-40",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ar",
+      "z": 18
+    },
+    {
+      "a": 39,
+      "configuration_id": "Z019-A039",
+      "id": "reference:K-39",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "K",
+      "z": 19
+    },
+    {
+      "a": 40,
+      "configuration_id": "Z020-A040",
+      "id": "reference:Ca-40",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ca",
+      "z": 20
+    },
+    {
+      "a": 45,
+      "configuration_id": "Z021-A045",
+      "id": "reference:Sc-45",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sc",
+      "z": 21
+    },
+    {
+      "a": 48,
+      "configuration_id": "Z022-A048",
+      "id": "reference:Ti-48",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ti",
+      "z": 22
+    },
+    {
+      "a": 51,
+      "configuration_id": "Z023-A051",
+      "id": "reference:V-51",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "V",
+      "z": 23
+    },
+    {
+      "a": 52,
+      "configuration_id": "Z024-A052",
+      "id": "reference:Cr-52",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cr",
+      "z": 24
+    },
+    {
+      "a": 55,
+      "configuration_id": "Z025-A055",
+      "id": "reference:Mn-55",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Mn",
+      "z": 25
+    },
+    {
+      "a": 56,
+      "configuration_id": "Z026-A056",
+      "id": "reference:Fe-56",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Fe",
+      "z": 26
+    },
+    {
+      "a": 59,
+      "configuration_id": "Z027-A059",
+      "id": "reference:Co-59",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Co",
+      "z": 27
+    },
+    {
+      "a": 58,
+      "configuration_id": "Z028-A058",
+      "id": "reference:Ni-58",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ni",
+      "z": 28
+    },
+    {
+      "a": 63,
+      "configuration_id": "Z029-A063",
+      "id": "reference:Cu-63",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cu",
+      "z": 29
+    },
+    {
+      "a": 64,
+      "configuration_id": "Z030-A064",
+      "id": "reference:Zn-64",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Zn",
+      "z": 30
+    },
+    {
+      "a": 69,
+      "configuration_id": "Z031-A069",
+      "id": "reference:Ga-69",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ga",
+      "z": 31
+    },
+    {
+      "a": 74,
+      "configuration_id": "Z032-A074",
+      "id": "reference:Ge-74",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ge",
+      "z": 32
+    },
+    {
+      "a": 75,
+      "configuration_id": "Z033-A075",
+      "id": "reference:As-75",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "As",
+      "z": 33
+    },
+    {
+      "a": 80,
+      "configuration_id": "Z034-A080",
+      "id": "reference:Se-80",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Se",
+      "z": 34
+    },
+    {
+      "a": 79,
+      "configuration_id": "Z035-A079",
+      "id": "reference:Br-79",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Br",
+      "z": 35
+    },
+    {
+      "a": 84,
+      "configuration_id": "Z036-A084",
+      "id": "reference:Kr-84",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Kr",
+      "z": 36
+    },
+    {
+      "a": 85,
+      "configuration_id": "Z037-A085",
+      "id": "reference:Rb-85",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Rb",
+      "z": 37
+    },
+    {
+      "a": 88,
+      "configuration_id": "Z038-A088",
+      "id": "reference:Sr-88",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sr",
+      "z": 38
+    },
+    {
+      "a": 89,
+      "configuration_id": "Z039-A089",
+      "id": "reference:Y-89",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Y",
+      "z": 39
+    },
+    {
+      "a": 90,
+      "configuration_id": "Z040-A090",
+      "id": "reference:Zr-90",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Zr",
+      "z": 40
+    },
+    {
+      "a": 93,
+      "configuration_id": "Z041-A093",
+      "id": "reference:Nb-93",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Nb",
+      "z": 41
+    },
+    {
+      "a": 98,
+      "configuration_id": "Z042-A098",
+      "id": "reference:Mo-98",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Mo",
+      "z": 42
+    },
+    {
+      "a": 98,
+      "configuration_id": "Z043-A098",
+      "id": "reference:Tc-98",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Tc",
+      "z": 43
+    },
+    {
+      "a": 102,
+      "configuration_id": "Z044-A102",
+      "id": "reference:Ru-102",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ru",
+      "z": 44
+    },
+    {
+      "a": 103,
+      "configuration_id": "Z045-A103",
+      "id": "reference:Rh-103",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Rh",
+      "z": 45
+    },
+    {
+      "a": 106,
+      "configuration_id": "Z046-A106",
+      "id": "reference:Pd-106",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pd",
+      "z": 46
+    },
+    {
+      "a": 107,
+      "configuration_id": "Z047-A107",
+      "id": "reference:Ag-107",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ag",
+      "z": 47
+    },
+    {
+      "a": 114,
+      "configuration_id": "Z048-A114",
+      "id": "reference:Cd-114",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cd",
+      "z": 48
+    },
+    {
+      "a": 115,
+      "configuration_id": "Z049-A115",
+      "id": "reference:In-115",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "In",
+      "z": 49
+    },
+    {
+      "a": 120,
+      "configuration_id": "Z050-A120",
+      "id": "reference:Sn-120",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sn",
+      "z": 50
+    },
+    {
+      "a": 121,
+      "configuration_id": "Z051-A121",
+      "id": "reference:Sb-121",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sb",
+      "z": 51
+    },
+    {
+      "a": 130,
+      "configuration_id": "Z052-A130",
+      "id": "reference:Te-130",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Te",
+      "z": 52
+    },
+    {
+      "a": 127,
+      "configuration_id": "Z053-A127",
+      "id": "reference:I-127",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "I",
+      "z": 53
+    },
+    {
+      "a": 132,
+      "configuration_id": "Z054-A132",
+      "id": "reference:Xe-132",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Xe",
+      "z": 54
+    },
+    {
+      "a": 133,
+      "configuration_id": "Z055-A133",
+      "id": "reference:Cs-133",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cs",
+      "z": 55
+    },
+    {
+      "a": 138,
+      "configuration_id": "Z056-A138",
+      "id": "reference:Ba-138",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ba",
+      "z": 56
+    },
+    {
+      "a": 139,
+      "configuration_id": "Z057-A139",
+      "id": "reference:La-139",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "La",
+      "z": 57
+    },
+    {
+      "a": 140,
+      "configuration_id": "Z058-A140",
+      "id": "reference:Ce-140",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ce",
+      "z": 58
+    },
+    {
+      "a": 141,
+      "configuration_id": "Z059-A141",
+      "id": "reference:Pr-141",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pr",
+      "z": 59
+    },
+    {
+      "a": 142,
+      "configuration_id": "Z060-A142",
+      "id": "reference:Nd-142",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Nd",
+      "z": 60
+    },
+    {
+      "a": 145,
+      "configuration_id": "Z061-A145",
+      "id": "reference:Pm-145",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pm",
+      "z": 61
+    },
+    {
+      "a": 152,
+      "configuration_id": "Z062-A152",
+      "id": "reference:Sm-152",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sm",
+      "z": 62
+    },
+    {
+      "a": 153,
+      "configuration_id": "Z063-A153",
+      "id": "reference:Eu-153",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Eu",
+      "z": 63
+    },
+    {
+      "a": 158,
+      "configuration_id": "Z064-A158",
+      "id": "reference:Gd-158",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Gd",
+      "z": 64
+    },
+    {
+      "a": 159,
+      "configuration_id": "Z065-A159",
+      "id": "reference:Tb-159",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Tb",
+      "z": 65
+    },
+    {
+      "a": 164,
+      "configuration_id": "Z066-A164",
+      "id": "reference:Dy-164",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Dy",
+      "z": 66
+    },
+    {
+      "a": 165,
+      "configuration_id": "Z067-A165",
+      "id": "reference:Ho-165",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ho",
+      "z": 67
+    },
+    {
+      "a": 166,
+      "configuration_id": "Z068-A166",
+      "id": "reference:Er-166",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Er",
+      "z": 68
+    },
+    {
+      "a": 169,
+      "configuration_id": "Z069-A169",
+      "id": "reference:Tm-169",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Tm",
+      "z": 69
+    },
+    {
+      "a": 174,
+      "configuration_id": "Z070-A174",
+      "id": "reference:Yb-174",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Yb",
+      "z": 70
+    },
+    {
+      "a": 175,
+      "configuration_id": "Z071-A175",
+      "id": "reference:Lu-175",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Lu",
+      "z": 71
+    },
+    {
+      "a": 180,
+      "configuration_id": "Z072-A180",
+      "id": "reference:Hf-180",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Hf",
+      "z": 72
+    },
+    {
+      "a": 181,
+      "configuration_id": "Z073-A181",
+      "id": "reference:Ta-181",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ta",
+      "z": 73
+    },
+    {
+      "a": 184,
+      "configuration_id": "Z074-A184",
+      "id": "reference:W-184",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "W",
+      "z": 74
+    },
+    {
+      "a": 187,
+      "configuration_id": "Z075-A187",
+      "id": "reference:Re-187",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Re",
+      "z": 75
+    },
+    {
+      "a": 192,
+      "configuration_id": "Z076-A192",
+      "id": "reference:Os-192",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Os",
+      "z": 76
+    },
+    {
+      "a": 193,
+      "configuration_id": "Z077-A193",
+      "id": "reference:Ir-193",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ir",
+      "z": 77
+    },
+    {
+      "a": 195,
+      "configuration_id": "Z078-A195",
+      "id": "reference:Pt-195",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pt",
+      "z": 78
+    },
+    {
+      "a": 197,
+      "configuration_id": "Z079-A197",
+      "id": "reference:Au-197",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Au",
+      "z": 79
+    },
+    {
+      "a": 202,
+      "configuration_id": "Z080-A202",
+      "id": "reference:Hg-202",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Hg",
+      "z": 80
+    },
+    {
+      "a": 205,
+      "configuration_id": "Z081-A205",
+      "id": "reference:Tl-205",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Tl",
+      "z": 81
+    },
+    {
+      "a": 208,
+      "configuration_id": "Z082-A208",
+      "id": "reference:Pb-208",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pb",
+      "z": 82
+    },
+    {
+      "a": 209,
+      "configuration_id": "Z083-A209",
+      "id": "reference:Bi-209",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Bi",
+      "z": 83
+    },
+    {
+      "a": 209,
+      "configuration_id": "Z084-A209",
+      "id": "reference:Po-209",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Po",
+      "z": 84
+    },
+    {
+      "a": 210,
+      "configuration_id": "Z085-A210",
+      "id": "reference:At-210",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "At",
+      "z": 85
+    },
+    {
+      "a": 222,
+      "configuration_id": "Z086-A222",
+      "id": "reference:Rn-222",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Rn",
+      "z": 86
+    },
+    {
+      "a": 223,
+      "configuration_id": "Z087-A223",
+      "id": "reference:Fr-223",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Fr",
+      "z": 87
+    },
+    {
+      "a": 226,
+      "configuration_id": "Z088-A226",
+      "id": "reference:Ra-226",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ra",
+      "z": 88
+    },
+    {
+      "a": 227,
+      "configuration_id": "Z089-A227",
+      "id": "reference:Ac-227",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ac",
+      "z": 89
+    },
+    {
+      "a": 232,
+      "configuration_id": "Z090-A232",
+      "id": "reference:Th-232",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Th",
+      "z": 90
+    },
+    {
+      "a": 231,
+      "configuration_id": "Z091-A231",
+      "id": "reference:Pa-231",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pa",
+      "z": 91
+    },
+    {
+      "a": 238,
+      "configuration_id": "Z092-A238",
+      "id": "reference:U-238",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "U",
+      "z": 92
+    },
+    {
+      "a": 237,
+      "configuration_id": "Z093-A237",
+      "id": "reference:Np-237",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Np",
+      "z": 93
+    },
+    {
+      "a": 244,
+      "configuration_id": "Z094-A244",
+      "id": "reference:Pu-244",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Pu",
+      "z": 94
+    },
+    {
+      "a": 243,
+      "configuration_id": "Z095-A243",
+      "id": "reference:Am-243",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Am",
+      "z": 95
+    },
+    {
+      "a": 247,
+      "configuration_id": "Z096-A247",
+      "id": "reference:Cm-247",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cm",
+      "z": 96
+    },
+    {
+      "a": 247,
+      "configuration_id": "Z097-A247",
+      "id": "reference:Bk-247",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Bk",
+      "z": 97
+    },
+    {
+      "a": 251,
+      "configuration_id": "Z098-A251",
+      "id": "reference:Cf-251",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cf",
+      "z": 98
+    },
+    {
+      "a": 252,
+      "configuration_id": "Z099-A252",
+      "id": "reference:Es-252",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Es",
+      "z": 99
+    },
+    {
+      "a": 257,
+      "configuration_id": "Z100-A257",
+      "id": "reference:Fm-257",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Fm",
+      "z": 100
+    },
+    {
+      "a": 258,
+      "configuration_id": "Z101-A258",
+      "id": "reference:Md-258",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Md",
+      "z": 101
+    },
+    {
+      "a": 259,
+      "configuration_id": "Z102-A259",
+      "id": "reference:No-259",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "No",
+      "z": 102
+    },
+    {
+      "a": 266,
+      "configuration_id": "Z103-A266",
+      "id": "reference:Lr-266",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Lr",
+      "z": 103
+    },
+    {
+      "a": 267,
+      "configuration_id": "Z104-A267",
+      "id": "reference:Rf-267",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Rf",
+      "z": 104
+    },
+    {
+      "a": 268,
+      "configuration_id": "Z105-A268",
+      "id": "reference:Db-268",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Db",
+      "z": 105
+    },
+    {
+      "a": 269,
+      "configuration_id": "Z106-A269",
+      "id": "reference:Sg-269",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Sg",
+      "z": 106
+    },
+    {
+      "a": 270,
+      "configuration_id": "Z107-A270",
+      "id": "reference:Bh-270",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Bh",
+      "z": 107
+    },
+    {
+      "a": 277,
+      "configuration_id": "Z108-A277",
+      "id": "reference:Hs-277",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Hs",
+      "z": 108
+    },
+    {
+      "a": 278,
+      "configuration_id": "Z109-A278",
+      "id": "reference:Mt-278",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Mt",
+      "z": 109
+    },
+    {
+      "a": 281,
+      "configuration_id": "Z110-A281",
+      "id": "reference:Ds-281",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ds",
+      "z": 110
+    },
+    {
+      "a": 282,
+      "configuration_id": "Z111-A282",
+      "id": "reference:Rg-282",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Rg",
+      "z": 111
+    },
+    {
+      "a": 285,
+      "configuration_id": "Z112-A285",
+      "id": "reference:Cn-285",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Cn",
+      "z": 112
+    },
+    {
+      "a": 286,
+      "configuration_id": "Z113-A286",
+      "id": "reference:Nh-286",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Nh",
+      "z": 113
+    },
+    {
+      "a": 289,
+      "configuration_id": "Z114-A289",
+      "id": "reference:Fl-289",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 290,
+      "configuration_id": "Z115-A290",
+      "id": "reference:Mc-290",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Mc",
+      "z": 115
+    },
+    {
+      "a": 293,
+      "configuration_id": "Z116-A293",
+      "id": "reference:Lv-293",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 294,
+      "configuration_id": "Z117-A294",
+      "id": "reference:Ts-294",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Ts",
+      "z": 117
+    },
+    {
+      "a": 294,
+      "configuration_id": "Z118-A294",
+      "id": "reference:Og-294",
+      "physical_preparation": null,
+      "provenance_kind": "legacy_element_reference",
+      "selection_policy": "legacy-reference-a-unresolved",
+      "selection_source": "pr1-421e0cad-reference-fixture",
+      "state": "unspecified_reference",
+      "state_assignment": "selection_provenance_unresolved",
+      "state_to_configuration_map": null,
+      "symbol": "Og",
+      "z": 118
+    },
+    {
+      "a": 1,
+      "configuration_id": "Z001-A001",
+      "id": "H-1:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-H-1",
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "H",
+      "z": 1
+    },
+    {
+      "a": 56,
+      "configuration_id": "Z026-A056",
+      "id": "Fe-56:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fe-56",
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fe",
+      "z": 26
+    },
+    {
+      "a": 62,
+      "configuration_id": "Z028-A062",
+      "id": "Ni-62:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Ni-62",
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Ni",
+      "z": 28
+    },
+    {
+      "a": 133,
+      "configuration_id": "Z055-A133",
+      "id": "Cs-133:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Cs-133",
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Cs",
+      "z": 55
+    },
+    {
+      "a": 208,
+      "configuration_id": "Z082-A208",
+      "id": "Pb-208:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Pb-208",
+      "state": "ground",
+      "state_assignment": "established_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Pb",
+      "z": 82
+    },
+    {
+      "a": 280,
+      "configuration_id": "Z112-A280",
+      "id": "Cn-280:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "xundl2025",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Cn",
+      "z": 112
+    },
+    {
+      "a": 282,
+      "configuration_id": "Z112-A282",
+      "id": "Cn-282:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Cn-282",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Cn",
+      "z": 112
+    },
+    {
+      "a": 285,
+      "configuration_id": "Z112-A285",
+      "id": "Cn-285:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Cn-285",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Cn",
+      "z": 112
+    },
+    {
+      "a": 284,
+      "configuration_id": "Z114-A284",
+      "id": "Fl-284:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-284",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 285,
+      "configuration_id": "Z114-A285",
+      "id": "Fl-285:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-285",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 286,
+      "configuration_id": "Z114-A286",
+      "id": "Fl-286:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-286",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 287,
+      "configuration_id": "Z114-A287",
+      "id": "Fl-287:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-287",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 288,
+      "configuration_id": "Z114-A288",
+      "id": "Fl-288:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-288",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 289,
+      "configuration_id": "Z114-A289",
+      "id": "Fl-289:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-289",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 289,
+      "configuration_id": "Z114-A289",
+      "id": "Fl-289:m_candidate",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "nubase2020",
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 290,
+      "configuration_id": "Z114-A290",
+      "id": "Fl-290:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Fl-290",
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 298,
+      "configuration_id": "Z114-A298",
+      "id": "Fl-298:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "target-declaration",
+      "state": "ground",
+      "state_assignment": "not_established",
+      "state_to_configuration_map": null,
+      "symbol": "Fl",
+      "z": 114
+    },
+    {
+      "a": 288,
+      "configuration_id": "Z116-A288",
+      "id": "Lv-288:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "xundl2025",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 289,
+      "configuration_id": "Z116-A289",
+      "id": "Lv-289:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "xundl2025",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 290,
+      "configuration_id": "Z116-A290",
+      "id": "Lv-290:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Lv-290",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 291,
+      "configuration_id": "Z116-A291",
+      "id": "Lv-291:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Lv-291",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 292,
+      "configuration_id": "Z116-A292",
+      "id": "Lv-292:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Lv-292",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 293,
+      "configuration_id": "Z116-A293",
+      "id": "Lv-293:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Lv-293",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 293,
+      "configuration_id": "Z116-A293",
+      "id": "Lv-293:m_candidate",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "nubase2020",
+      "state": "m_candidate",
+      "state_assignment": "tentative_isomer",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 294,
+      "configuration_id": "Z116-A294",
+      "id": "Lv-294:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Lv-294",
+      "state": "ground",
+      "state_assignment": "tentative_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Lv",
+      "z": 116
+    },
+    {
+      "a": 294,
+      "configuration_id": "Z118-A294",
+      "id": "Og-294:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Og-294",
+      "state": "ground",
+      "state_assignment": "assumed_ground_state",
+      "state_to_configuration_map": null,
+      "symbol": "Og",
+      "z": 118
+    },
+    {
+      "a": 295,
+      "configuration_id": "Z118-A295",
+      "id": "Og-295:ground",
+      "physical_preparation": null,
+      "provenance_kind": "curated_isotope_state",
+      "selection_policy": "preserved_curated_record",
+      "selection_source": "ensdf-Og-295",
+      "state": "ground",
+      "state_assignment": "not_established",
+      "state_to_configuration_map": null,
+      "symbol": "Og",
+      "z": 118
+    }
+  ],
+  "schema_version": 1,
+  "state_resolution": "Separate records share a generic inventory when no state-preparation map is established.",
+  "stopping_policy": {
+    "internal_rounds": 3,
+    "new_outer_reclosures": 1,
+    "physical_survival_horizon": null,
+    "rule": "Complete the declared internal rounds, then one outer reclosure; no physical decay stopping claim."
+  },
+  "unresolved_dependencies": [
+    "physical_preparation_to_constructed_state",
+    "native_FRG_ring_gate_for_atomic_coupling",
+    "atomic_state_to_emitted_phase_observation_map",
+    "isotope_state_dependent_retention_capacity_and_loss_observable",
+    "decay_channel_and_daughter_identification",
+    "reference_reclosures_to_realized_SI_cycles",
+    "matched_apparatus_window_and_complete_joint_uncertainty"
+  ]
+}

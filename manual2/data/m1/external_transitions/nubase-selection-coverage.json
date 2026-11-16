@@ -1,0 +1,1352 @@
+{
+  "scope": "read-only exact Z,A ground-record crosscheck; not selection authority or physical state mapping",
+  "selected_configuration_count": 135,
+  "missing": [
+    [
+      114,
+      298
+    ],
+    [
+      116,
+      288
+    ],
+    [
+      116,
+      294
+    ]
+  ],
+  "rows": [
+    {
+      "z": 1,
+      "a": 1,
+      "line": 27,
+      "raw": "001 0010   1H       7288.971064   0.000013                            stbl              1/2+*         06          1920 IS=99.9855 78",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2+*"
+    },
+    {
+      "z": 2,
+      "a": 4,
+      "line": 33,
+      "raw": "004 0020   4He      2424.91587    0.00015                             stbl              0+            98          1908 IS=99.9998 2",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 3,
+      "a": 7,
+      "line": 47,
+      "raw": "007 0030   7Li     14907.105      0.004                               stbl              3/2-*         03          1921 IS=95.15 171",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 4,
+      "a": 9,
+      "line": 63,
+      "raw": "009 0040   9Be     11348.45       0.08                                stbl              3/2-*         06          1921 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 5,
+      "a": 11,
+      "line": 81,
+      "raw": "011 0050   11B      8667.708      0.012                               stbl              3/2-*         12          1920 IS=80.35 44",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 6,
+      "a": 12,
+      "line": 94,
+      "raw": "012 0060   12C         0.0        0.0                                 stbl              0+            17          1919 IS=98.94 6",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 7,
+      "a": 14,
+      "line": 116,
+      "raw": "014 0070   14N      2863.4168     0.0002                              stbl              1+*           01          1920 IS=99.6205 247",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1+*"
+    },
+    {
+      "z": 8,
+      "a": 16,
+      "line": 135,
+      "raw": "016 0080   16O     -4737.0021     0.0003                              stbl              0+            99          1919 IS=99.757 11",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 9,
+      "a": 19,
+      "line": 164,
+      "raw": "019 0090   19F     -1487.4451     0.0008                              stbl              1/2+*         96          1920 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2+*"
+    },
+    {
+      "z": 10,
+      "a": 20,
+      "line": 176,
+      "raw": "020 0100   20Ne    -7041.9322     0.0015                              stbl              0+            98          1913 IS=90.48 3",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 11,
+      "a": 23,
+      "line": 211,
+      "raw": "023 0110   23Na    -9529.8535     0.0018                              stbl              3/2+*         21          1921 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 12,
+      "a": 24,
+      "line": 226,
+      "raw": "024 0120   24Mg   -13933.578      0.013                               stbl              0+            07          1920 IS=78.965 49",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 13,
+      "a": 27,
+      "line": 264,
+      "raw": "027 0130   27Al   -17196.86       0.05                                stbl              5/2+*         11          1922 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 14,
+      "a": 28,
+      "line": 278,
+      "raw": "028 0140   28Si   -21492.7971     0.0005                              stbl              0+            13          1920 IS=92.2545 37",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 15,
+      "a": 31,
+      "line": 315,
+      "raw": "031 0150   31P    -24440.5444     0.0007                              stbl              1/2+*         13          1920 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2+*"
+    },
+    {
+      "z": 16,
+      "a": 32,
+      "line": 331,
+      "raw": "032 0160   32S    -26015.5371     0.0013                              stbl              0+            11          1920 IS=94.85 255",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 17,
+      "a": 35,
+      "line": 374,
+      "raw": "035 0170   35Cl   -29013.53       0.04                                stbl              3/2+*         11          1919 IS=75.8 2",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 18,
+      "a": 40,
+      "line": 454,
+      "raw": "040 0180   40Ar   -35039.9000     0.0022                              stbl              0+            17          1920 IS=99.6035 250",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 19,
+      "a": 39,
+      "line": 440,
+      "raw": "039 0190   39K    -33807.195      0.005                               stbl              3/2+*         18          1921 IS=93.2581 44",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 20,
+      "a": 40,
+      "line": 458,
+      "raw": "040 0200   40Ca   -34846.402      0.020                               stbl       >9.9Zy 0+            17          1922 IS=96.941 156;2B+ ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">9.9Zy",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 21,
+      "a": 45,
+      "line": 551,
+      "raw": "045 0210   45Sc   -41072.3        0.7                                 stbl              7/2-*         08          1923 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2-*"
+    },
+    {
+      "z": 22,
+      "a": 48,
+      "line": 610,
+      "raw": "048 0220   48Ti   -48492.95       0.07                                stbl              0+            06          1923 IS=73.72 3",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 23,
+      "a": 51,
+      "line": 664,
+      "raw": "051 0230   51V    -52203.11       0.10                                stbl              7/2-*         16          1924 IS=99.750 10",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2-*"
+    },
+    {
+      "z": 24,
+      "a": 52,
+      "line": 680,
+      "raw": "052 0240   52Cr   -55419.51       0.11                                stbl              0+            15          1923 IS=83.789 18",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 25,
+      "a": 55,
+      "line": 737,
+      "raw": "055 0250   55Mn   -57712.54       0.26                                stbl              5/2-*         08          1923 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2-*"
+    },
+    {
+      "z": 26,
+      "a": 56,
+      "line": 755,
+      "raw": "056 0260   56Fe   -60607.16       0.27                                stbl              0+            11          1923 IS=91.754 106",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 27,
+      "a": 59,
+      "line": 817,
+      "raw": "059 0270   59Co   -62229.8        0.4                                 stbl              7/2-*         18          1923 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2-*"
+    },
+    {
+      "z": 28,
+      "a": 58,
+      "line": 798,
+      "raw": "058 0280   58Ni   -60228.9        0.3                                 stbl       >700Ey 0+            10          1921 IS=68.0769 190;2B+ ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">700Ey",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 28,
+      "a": 62,
+      "line": 880,
+      "raw": "062 0280   62Ni   -66746.4        0.4                                 stbl              0+            12          1934 IS=3.6345 40",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 29,
+      "a": 63,
+      "line": 897,
+      "raw": "063 0290   63Cu   -65579.9        0.4                                 stbl              3/2-*         09          1923 IS=69.15 15",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 30,
+      "a": 64,
+      "line": 916,
+      "raw": "064 0300   64Zn   -66004.0        0.6                                 stbl       >60Py  0+            07          1922 IS=49.17 75;2B+ ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">60Py",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 31,
+      "a": 69,
+      "line": 1015,
+      "raw": "069 0310   69Ga   -69327.8        1.2                                 stbl              3/2-*         14          1923 IS=60.108 50",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 32,
+      "a": 74,
+      "line": 1118,
+      "raw": "074 0320   74Ge   -73422.451      0.013                               stbl              0+            06          1923 IS=36.52 12",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 33,
+      "a": 75,
+      "line": 1138,
+      "raw": "075 0330   75As   -73034.2        0.9                                 stbl              3/2-*         13          1920 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 34,
+      "a": 80,
+      "line": 1234,
+      "raw": "080 0340   80Se   -77759.5        0.9                                 stbl              0+            05          1922 IS=49.80 36;2B- ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 35,
+      "a": 79,
+      "line": 1218,
+      "raw": "079 0350   79Br   -76068.1        1.0                                 stbl              3/2-*         16          1920 IS=50.65 9",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 36,
+      "a": 84,
+      "line": 1325,
+      "raw": "084 0360   84Kr   -82439.345      0.004                               stbl              0+            09          1920 IS=56.987 15",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 37,
+      "a": 85,
+      "line": 1348,
+      "raw": "085 0370   85Rb   -82167.341      0.005                               stbl              5/2-*         14          1921 IS=72.17 2",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2-*"
+    },
+    {
+      "z": 38,
+      "a": 88,
+      "line": 1414,
+      "raw": "088 0380   88Sr   -87921.629      0.006                               stbl              0+            14          1923 IS=82.58 35",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 39,
+      "a": 89,
+      "line": 1435,
+      "raw": "089 0390   89Y    -87711.2        0.3                                 stbl              1/2-*         13          1923 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2-*"
+    },
+    {
+      "z": 40,
+      "a": 90,
+      "line": 1458,
+      "raw": "090 0400   90Zr   -88772.55       0.12                                stbl              0+            20          1924 IS=51.45 4",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 41,
+      "a": 93,
+      "line": 1536,
+      "raw": "093 0410   93Nb   -87212.8        1.5                                 stbl              9/2+*         11          1932 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "9/2+*"
+    },
+    {
+      "z": 42,
+      "a": 98,
+      "line": 1680,
+      "raw": "098 0420   98Mo   -88115.98       0.17                                stbl       >100Ty 0+            20          1930 IS=24.292 80;2B- ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">100Ty",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 43,
+      "a": 98,
+      "line": 1681,
+      "raw": "098 0430   98Tc   -86432          3                                     4.2   My 0.3    6+*           20          1955 B-=100;B+=0",
+      "half_life_field": "4.2",
+      "half_life_unit": "My",
+      "half_life_uncertainty": "0.3",
+      "spin_parity": "6+*"
+    },
+    {
+      "z": 44,
+      "a": 102,
+      "line": 1778,
+      "raw": "102 0440   102Ru  -89106.4        0.4                                 stbl              0+            09          1931 IS=31.55 14",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 45,
+      "a": 103,
+      "line": 1798,
+      "raw": "103 0450   103Rh  -88031.7        2.3                                 stbl              1/2-*         09          1934 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2-*"
+    },
+    {
+      "z": 46,
+      "a": 106,
+      "line": 1862,
+      "raw": "106 0460   106Pd  -89907.5        1.1                                 stbl              0+            08          1935 IS=27.33 3",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 47,
+      "a": 107,
+      "line": 1888,
+      "raw": "107 0470   107Ag  -88406.7        2.4                                 stbl              1/2-*         08          1924 IS=51.839 8",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2-*"
+    },
+    {
+      "z": 48,
+      "a": 114,
+      "line": 2044,
+      "raw": "114 0480   114Cd  -90014.93       0.28                                stbl       >92Py  0+            12          1925 IS=28.754 81;2B- ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">92Py",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 49,
+      "a": 115,
+      "line": 2070,
+      "raw": "115 0490   115In  -89536.357      0.012                               441     Ty 25     9/2+*         12          1924 IS=95.719 52;B-=100",
+      "half_life_field": "441",
+      "half_life_unit": "Ty",
+      "half_life_uncertainty": "25",
+      "spin_parity": "9/2+*"
+    },
+    {
+      "z": 50,
+      "a": 120,
+      "line": 2212,
+      "raw": "120 0500   120Sn  -91097.7        0.9                                 stbl              0+            02          1926 IS=32.58 9",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 51,
+      "a": 121,
+      "line": 2247,
+      "raw": "121 0510   121Sb  -89599.2        2.5                                 stbl              5/2+*         10          1922 IS=57.21 5",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 52,
+      "a": 130,
+      "line": 2566,
+      "raw": "130 0520   130Te  -87352.960      0.011                               791     Ey 21     0+            01          1924 IS=34.08 62;2B-=100",
+      "half_life_field": "791",
+      "half_life_unit": "Ey",
+      "half_life_uncertainty": "21",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 53,
+      "a": 127,
+      "line": 2460,
+      "raw": "127 0530   127I   -88983          4                                   stbl              5/2+*         11          1920 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 54,
+      "a": 132,
+      "line": 2638,
+      "raw": "132 0540   132Xe  -89278.975      0.005                               stbl              0+            05          1920 IS=26.909 55",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 55,
+      "a": 133,
+      "line": 2671,
+      "raw": "133 0550   133Cs  -88070.943      0.008                               stbl              7/2+*         11          1921 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2+*"
+    },
+    {
+      "z": 56,
+      "a": 138,
+      "line": 2811,
+      "raw": "138 0560   138Ba  -88261.81       0.25                                stbl              0+            17          1925 IS=71.70 29",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 57,
+      "a": 139,
+      "line": 2838,
+      "raw": "139 0570   139La  -87222.4        0.6                                 stbl              7/2+*         16          1924 IS=99.91119 71",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2+*"
+    },
+    {
+      "z": 58,
+      "a": 140,
+      "line": 2866,
+      "raw": "140 0580   140Ce  -88074.2        1.3                                 stbl              0+            18          1925 IS=88.449 51",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 59,
+      "a": 141,
+      "line": 2893,
+      "raw": "141 0590   141Pr  -86014.5        1.5                                 stbl              5/2+*         14          1924 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 60,
+      "a": 142,
+      "line": 2921,
+      "raw": "142 0600   142Nd  -85950.1        1.3                                 stbl              0+            11          1924 IS=27.153 40",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 61,
+      "a": 145,
+      "line": 3003,
+      "raw": "145 0610   145Pm  -81267.5        2.8                                  17.7    y 0.4    5/2+          09          1951 EC=100;A=2.8e-7",
+      "half_life_field": "17.7",
+      "half_life_unit": "y",
+      "half_life_uncertainty": "0.4",
+      "spin_parity": "5/2+"
+    },
+    {
+      "z": 62,
+      "a": 152,
+      "line": 3189,
+      "raw": "152 0620   152Sm  -74763.0        1.0                                 stbl              0+            13          1933 IS=26.74 9",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 63,
+      "a": 153,
+      "line": 3220,
+      "raw": "153 0630   153Eu  -73367.5        1.2                                 stbl       >550Py 5/2+*         20          1933 IS=52.19 6",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">550Py",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 64,
+      "a": 158,
+      "line": 3364,
+      "raw": "158 0640   158Gd  -70690.0        1.0                                 stbl              0+            17          1933 IS=24.84 8",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 65,
+      "a": 159,
+      "line": 3393,
+      "raw": "159 0650   159Tb  -69532.6        1.1                                 stbl              3/2+*         12          1933 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 66,
+      "a": 164,
+      "line": 3532,
+      "raw": "164 0660   164Dy  -65967.6        0.7                                 stbl              0+            17          1934 IS=28.260 54",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 67,
+      "a": 165,
+      "line": 3556,
+      "raw": "165 0670   165Ho  -64898.0        0.8                                 stbl              7/2-*         06          1934 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2-*"
+    },
+    {
+      "z": 68,
+      "a": 166,
+      "line": 3588,
+      "raw": "166 0680   166Er  -64924.1        0.3                                 stbl              0+            08          1934 IS=33.503 36",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 69,
+      "a": 169,
+      "line": 3669,
+      "raw": "169 0690   169Tm  -61274.7        0.7                                 stbl              1/2+*         08          1934 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2+*"
+    },
+    {
+      "z": 70,
+      "a": 174,
+      "line": 3804,
+      "raw": "174 0700   174Yb  -56944.521      0.011                               stbl              0+            99          1934 IS=32.025 80",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 71,
+      "a": 175,
+      "line": 3841,
+      "raw": "175 0710   175Lu  -55165.7        1.2                                 stbl              7/2+*         04          1934 IS=97.401 13",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2+*"
+    },
+    {
+      "z": 72,
+      "a": 180,
+      "line": 4003,
+      "raw": "180 0720   180Hf  -49779.5        1.4                                 stbl              0+            15          1934 IS=35.08 33",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 73,
+      "a": 181,
+      "line": 4033,
+      "raw": "181 0730   181Ta  -48439.1        1.6                                 stbl              7/2+*         06          1932 IS=99.98799 32",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "7/2+*"
+    },
+    {
+      "z": 74,
+      "a": 184,
+      "line": 4125,
+      "raw": "184 0740   184W   -45705.5        0.7                                 stbl       >8.9Zy 0+            10          1930 IS=30.64 2;A ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">8.9Zy",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 75,
+      "a": 187,
+      "line": 4208,
+      "raw": "187 0750   187Re  -41216.5        0.7                                  41.6   Gy 0.02   5/2+*         09          1931 IS=62.60 5;B-=100;A=0",
+      "half_life_field": "41.6",
+      "half_life_unit": "Gy",
+      "half_life_uncertainty": "0.02",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 76,
+      "a": 192,
+      "line": 4359,
+      "raw": "192 0760   192Os  -35882.3        2.3                                 stbl       >53Ey  0+            12          1931 IS=40.78 32;2B- ?;A ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">53Ey",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 77,
+      "a": 193,
+      "line": 4391,
+      "raw": "193 0770   193Ir  -34536.3        1.3                                 stbl              3/2+*         17          1935 IS=62.7 2",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 78,
+      "a": 195,
+      "line": 4452,
+      "raw": "195 0780   195Pt  -32793.9        0.5                                 stbl       >6.3Ey 1/2-*         14          1935 IS=33.775 240;A ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">6.3Ey",
+      "spin_parity": "1/2-*"
+    },
+    {
+      "z": 79,
+      "a": 197,
+      "line": 4512,
+      "raw": "197 0790   197Au  -31139.8        0.5                                 stbl              3/2+*         05          1935 IS=100",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "3/2+*"
+    },
+    {
+      "z": 80,
+      "a": 202,
+      "line": 4654,
+      "raw": "202 0800   202Hg  -27345.3        0.7                                 stbl              0+            08          1920 IS=29.74 13",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 81,
+      "a": 205,
+      "line": 4748,
+      "raw": "205 0810   205Tl  -23820.8        1.2                                 stbl              1/2+*         20          1931 IS=70.485 44",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": "",
+      "spin_parity": "1/2+*"
+    },
+    {
+      "z": 82,
+      "a": 208,
+      "line": 4828,
+      "raw": "208 0820   208Pb  -21748.5        1.1                                 stbl       >2.6Zy 0+            07          1927 IS=52.4 70;A ?",
+      "half_life_field": "stbl",
+      "half_life_unit": "",
+      "half_life_uncertainty": ">2.6Zy",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 83,
+      "a": 209,
+      "line": 4850,
+      "raw": "209 0830   209Bi  -18258.6        1.4                                  20.1   Ey 0.8    9/2-*         15          1924 IS=100;A=100",
+      "half_life_field": "20.1",
+      "half_life_unit": "Ey",
+      "half_life_uncertainty": "0.8",
+      "spin_parity": "9/2-*"
+    },
+    {
+      "z": 84,
+      "a": 209,
+      "line": 4851,
+      "raw": "209 0840   209Po  -16366.0        1.8                                 124      y 3      1/2-*         15          1949 A=99.546 7;B+=0.454 7",
+      "half_life_field": "124",
+      "half_life_unit": "y",
+      "half_life_uncertainty": "3",
+      "spin_parity": "1/2-*"
+    },
+    {
+      "z": 85,
+      "a": 210,
+      "line": 4879,
+      "raw": "210 0850   210At  -11972          8                                     8.1    h 0.4    (5)+*         14          1949 B+=99.825 20;A=0.175 20",
+      "half_life_field": "8.1",
+      "half_life_unit": "h",
+      "half_life_uncertainty": "0.4",
+      "spin_parity": "(5)+*"
+    },
+    {
+      "z": 86,
+      "a": 222,
+      "line": 5117,
+      "raw": "222 0860   222Rn   16372.0        1.9                                   3.8215 d 0.0002 0+            11          1899 A=100",
+      "half_life_field": "3.8215",
+      "half_life_unit": "d",
+      "half_life_uncertainty": "0.0002",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 87,
+      "a": 223,
+      "line": 5131,
+      "raw": "223 0870   223Fr   18382.3        1.9                                  22.00   m 0.07   3/2-*         01          1939 B-~100;A=0.006",
+      "half_life_field": "22.00",
+      "half_life_unit": "m",
+      "half_life_uncertainty": "0.07",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 88,
+      "a": 226,
+      "line": 5169,
+      "raw": "226 0880   226Ra   23667.6        1.9                                   1.600 ky 0.007  0+            96          1898 A=100;14C=2.6e-9 6;2B- ?",
+      "half_life_field": "1.600",
+      "half_life_unit": "ky",
+      "half_life_uncertainty": "0.007",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 89,
+      "a": 227,
+      "line": 5182,
+      "raw": "227 0890   227Ac   25849.5        1.9                                  21.772  y 0.003  3/2-*         16          1851 B-=98.62 36;A=1.38 36",
+      "half_life_field": "21.772",
+      "half_life_unit": "y",
+      "half_life_uncertainty": "0.003",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 90,
+      "a": 232,
+      "line": 5242,
+      "raw": "232 0900   232Th   35446.7        1.4                                  14.0   Gy 0.1    0+            06          1898 IS=99.98 2;A=100;SF=1.1e-9 4;24Ne+26Ne<2.78e-10;2B- ?",
+      "half_life_field": "14.0",
+      "half_life_unit": "Gy",
+      "half_life_uncertainty": "0.1",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 91,
+      "a": 231,
+      "line": 5233,
+      "raw": "231 0910   231Pa   33424.3        1.8                                  32.65  ky 0.20   3/2-*         13          1918 IS=100;A=100;SF<3e-10;24Ne=13.4e-10 17;23F=9.9e-13",
+      "half_life_field": "32.65",
+      "half_life_unit": "ky",
+      "half_life_uncertainty": "0.20",
+      "spin_parity": "3/2-*"
+    },
+    {
+      "z": 92,
+      "a": 238,
+      "line": 5320,
+      "raw": "238 0920   238U    47307.7        1.5                                   4.463 Gy 0.003  0+            15          1896 IS=99.2742 10;A=100;SF=5.44e-5 7;2B-=2.2e-10 3",
+      "half_life_field": "4.463",
+      "half_life_unit": "Gy",
+      "half_life_uncertainty": "0.003",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 93,
+      "a": 237,
+      "line": 5308,
+      "raw": "237 0930   237Np   44871.6        1.1                                   2.144 My 0.007  5/2+*         06          1948 A=100;SF<2e-10;30Mg<4e-12",
+      "half_life_field": "2.144",
+      "half_life_unit": "My",
+      "half_life_uncertainty": "0.007",
+      "spin_parity": "5/2+*"
+    },
+    {
+      "z": 94,
+      "a": 244,
+      "line": 5408,
+      "raw": "244 0940   244Pu   59806.0        2.3                                  81.3   My 0.3    0+            17          1954 A=99.877 6;SF=0.123 6;2B-<7.3e-9",
+      "half_life_field": "81.3",
+      "half_life_unit": "My",
+      "half_life_uncertainty": "0.3",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 95,
+      "a": 243,
+      "line": 5396,
+      "raw": "243 0950   243Am   57175.0        1.4                                   7.350 ky 0.009  5/2-*         14          1950 A=100;SF=3.7e-9 9",
+      "half_life_field": "7.350",
+      "half_life_unit": "ky",
+      "half_life_uncertainty": "0.009",
+      "spin_parity": "5/2-*"
+    },
+    {
+      "z": 96,
+      "a": 247,
+      "line": 5460,
+      "raw": "247 0960   247Cm   65533          4                                    15.6   My 0.5    9/2-*         15          1954 A=100",
+      "half_life_field": "15.6",
+      "half_life_unit": "My",
+      "half_life_uncertainty": "0.5",
+      "spin_parity": "9/2-*"
+    },
+    {
+      "z": 97,
+      "a": 247,
+      "line": 5463,
+      "raw": "247 0970   247Bk   65490          5                                     1.38  ky 0.25   3/2-          15          1965 A~100;SF ?",
+      "half_life_field": "1.38",
+      "half_life_unit": "ky",
+      "half_life_uncertainty": "0.25",
+      "spin_parity": "3/2-"
+    },
+    {
+      "z": 98,
+      "a": 251,
+      "line": 5512,
+      "raw": "251 0980   251Cf   74135          4                                   898      y 44     1/2+          13          1954 A~100;SF ?",
+      "half_life_field": "898",
+      "half_life_unit": "y",
+      "half_life_uncertainty": "44",
+      "spin_parity": "1/2+"
+    },
+    {
+      "z": 99,
+      "a": 252,
+      "line": 5527,
+      "raw": "252 0990   252Es   77290         50                                   471.7    d 1.9    (4+)          06          1956 A=78 2;EC=22 2",
+      "half_life_field": "471.7",
+      "half_life_unit": "d",
+      "half_life_uncertainty": "1.9",
+      "spin_parity": "(4+)"
+    },
+    {
+      "z": 100,
+      "a": 257,
+      "line": 5602,
+      "raw": "257 1000   257Fm   88590          4                                   100.5    d 0.2    9/2+          13          1964 A=99.790 4;SF=0.210 4",
+      "half_life_field": "100.5",
+      "half_life_unit": "d",
+      "half_life_uncertainty": "0.2",
+      "spin_parity": "9/2+"
+    },
+    {
+      "z": 101,
+      "a": 258,
+      "line": 5616,
+      "raw": "258 1010   258Md   91690          3                                *   51.59   d 0.29   8-#           17          1970 A~100;B+<0.0015;B-<0.0015",
+      "half_life_field": "51.59",
+      "half_life_unit": "d",
+      "half_life_uncertainty": "0.29",
+      "spin_parity": "8-#"
+    },
+    {
+      "z": 102,
+      "a": 259,
+      "line": 5629,
+      "raw": "259 1020   259No   94079          6                                    58      m 5      9/2+          13          1973 A=75 4;EC=25 4;SF<10",
+      "half_life_field": "58",
+      "half_life_unit": "m",
+      "half_life_uncertainty": "5",
+      "spin_parity": "9/2+"
+    },
+    {
+      "z": 103,
+      "a": 266,
+      "line": 5699,
+      "raw": "266 1030   266Lr  111660#       540#                                   22      h 14                   19          2014 SF=100",
+      "half_life_field": "22",
+      "half_life_unit": "h",
+      "half_life_uncertainty": "14",
+      "spin_parity": ""
+    },
+    {
+      "z": 104,
+      "a": 267,
+      "line": 5708,
+      "raw": "267 1040   267Rf  113440#       580#                                    2.5    h 1.5                  05          2004 SF=100",
+      "half_life_field": "2.5",
+      "half_life_unit": "h",
+      "half_life_uncertainty": "1.5",
+      "spin_parity": ""
+    },
+    {
+      "z": 105,
+      "a": 268,
+      "line": 5719,
+      "raw": "268 1050   268Db  117060#       530#                                   29      h 3                    19          2004 SF~100;B+ ?; A ?",
+      "half_life_field": "29",
+      "half_life_unit": "h",
+      "half_life_uncertainty": "3",
+      "spin_parity": ""
+    },
+    {
+      "z": 106,
+      "a": 269,
+      "line": 5727,
+      "raw": "269 1060   269Sg  119690#       370#                                    5      m 2                    19          2010 A~100;SF ?",
+      "half_life_field": "5",
+      "half_life_unit": "m",
+      "half_life_uncertainty": "2",
+      "spin_parity": ""
+    },
+    {
+      "z": 107,
+      "a": 270,
+      "line": 5734,
+      "raw": "270 1070   270Bh  124230#       300#                                    3.8    m 3.0                  19          2007 A=100",
+      "half_life_field": "3.8",
+      "half_life_unit": "m",
+      "half_life_uncertainty": "3.0",
+      "spin_parity": ""
+    },
+    {
+      "z": 108,
+      "a": 277,
+      "line": 5779,
+      "raw": "277 1080   277Hs  141380#       450#                               *   12     ms 9                    14          2010 SF~100; A ?",
+      "half_life_field": "12",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "9",
+      "spin_parity": ""
+    },
+    {
+      "z": 109,
+      "a": 278,
+      "line": 5788,
+      "raw": "278 1090   278Mt  145770#       580#                                    6      s 3                    19          2010 A=100",
+      "half_life_field": "6",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "3",
+      "spin_parity": ""
+    },
+    {
+      "z": 110,
+      "a": 281,
+      "line": 5809,
+      "raw": "281 1100   281Ds  153270#       490#                               *   14      s 3                    05          2004 SF=90 7;A=10 7",
+      "half_life_field": "14",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "3",
+      "spin_parity": ""
+    },
+    {
+      "z": 111,
+      "a": 282,
+      "line": 5817,
+      "raw": "282 1110   282Rg  157740#       590#                                  130      s 50                   19          2010 A=100",
+      "half_life_field": "130",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "50",
+      "spin_parity": ""
+    },
+    {
+      "z": 112,
+      "a": 280,
+      "line": 5806,
+      "raw": "280 1120   280Cn  155650#       580#                                    5#    ms        0+                             A ?;SF ?",
+      "half_life_field": "5#",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 112,
+      "a": 282,
+      "line": 5818,
+      "raw": "282 1120   282Cn  158830#       550#                                    1.1   ms 0.3    0+            19          2004 SF~100; A ?",
+      "half_life_field": "1.1",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "0.3",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 112,
+      "a": 285,
+      "line": 5830,
+      "raw": "285 1120   285Cn  165090#       510#                               *   30      s 8                    05          2004 A=100",
+      "half_life_field": "30",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "8",
+      "spin_parity": ""
+    },
+    {
+      "z": 113,
+      "a": 286,
+      "line": 5836,
+      "raw": "286 1130   286Nh  169960#       590#                                   12      s 5                    19          2010 A=100",
+      "half_life_field": "12",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "5",
+      "spin_parity": ""
+    },
+    {
+      "z": 114,
+      "a": 284,
+      "line": 5828,
+      "raw": "284 1140   284Fl  168780#       660#                                    3.1   ms 1.3    0+            19          2015 SF~100;A ?",
+      "half_life_field": "3.1",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "1.3",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 114,
+      "a": 285,
+      "line": 5833,
+      "raw": "285 1140   285Fl  170930#       400#                                  210     ms 100                  15          2010 A~100;SF<20",
+      "half_life_field": "210",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "100",
+      "spin_parity": ""
+    },
+    {
+      "z": 114,
+      "a": 286,
+      "line": 5837,
+      "raw": "286 1140   286Fl  171610#       550#                                  130     ms 30     0+            19          2004 A=59 11;SF=41 11",
+      "half_life_field": "130",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "30",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 114,
+      "a": 287,
+      "line": 5840,
+      "raw": "287 1140   287Fl  173930#       620#                                  510     ms 120                  05          2004 A~100; SF ?",
+      "half_life_field": "510",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "120",
+      "spin_parity": ""
+    },
+    {
+      "z": 114,
+      "a": 288,
+      "line": 5844,
+      "raw": "288 1140   288Fl  174920#       760#                                  653     ms 113    0+            19          2004 A~100; SF ?",
+      "half_life_field": "653",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "113",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 114,
+      "a": 289,
+      "line": 5847,
+      "raw": "289 1140   289Fl  177470#       510#                                    2.1    s 0.6                  05          2004 A~100;SF ?",
+      "half_life_field": "2.1",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "0.6",
+      "spin_parity": ""
+    },
+    {
+      "z": 114,
+      "a": 290,
+      "line": 5852,
+      "raw": "290 1140   290Fl  178730#       700#                                   80      s 60     0+            19          2016 A~100; SF ?; B+<50",
+      "half_life_field": "80",
+      "half_life_unit": "s",
+      "half_life_uncertainty": "60",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 115,
+      "a": 290,
+      "line": 5853,
+      "raw": "290 1150   290Mc  182790#       590#                                  840     ms 360                  19          2010 A=100",
+      "half_life_field": "840",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "360",
+      "spin_parity": ""
+    },
+    {
+      "z": 116,
+      "a": 289,
+      "line": 5850,
+      "raw": "289 1160   289Lv  184460#       500#                             RN    16#    ms                      00               A ?",
+      "half_life_field": "16#",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "",
+      "spin_parity": ""
+    },
+    {
+      "z": 116,
+      "a": 290,
+      "line": 5854,
+      "raw": "290 1160   290Lv  185030#       550#                                    9     ms 3      0+            19          2004 A~100; SF ?",
+      "half_life_field": "9",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "3",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 116,
+      "a": 291,
+      "line": 5857,
+      "raw": "291 1160   291Lv  187240#       620#                                   26     ms 12                   05          2004 A~100;SF ?",
+      "half_life_field": "26",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "12",
+      "spin_parity": ""
+    },
+    {
+      "z": 116,
+      "a": 292,
+      "line": 5860,
+      "raw": "292 1160   292Lv  188130#       760#                                   16     ms 6      0+            19          2004 A~100; SF ?",
+      "half_life_field": "16",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "6",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 116,
+      "a": 293,
+      "line": 5862,
+      "raw": "293 1160   293Lv  190570#       520#                                   70     ms 30                   05          2004 A~100; SF ?",
+      "half_life_field": "70",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "30",
+      "spin_parity": ""
+    },
+    {
+      "z": 117,
+      "a": 294,
+      "line": 5866,
+      "raw": "294 1170   294Ts  196400#       590#                                   70     ms 30                   19          2010 A=100",
+      "half_life_field": "70",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "30",
+      "spin_parity": ""
+    },
+    {
+      "z": 118,
+      "a": 294,
+      "line": 5867,
+      "raw": "294 1180   294Og  199320#       550#                                     0.7  ms 0.3    0+            05          2004 A~100; SF ?",
+      "half_life_field": "0.7",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "0.3",
+      "spin_parity": "0+"
+    },
+    {
+      "z": 118,
+      "a": 295,
+      "line": 5868,
+      "raw": "295 1180   295Og  201370#       660#                                   680    ms 540                              2006 A~100",
+      "half_life_field": "680",
+      "half_life_unit": "ms",
+      "half_life_uncertainty": "540",
+      "spin_parity": ""
+    }
+  ],
+  "input_bindings": {
+    "manual2/data/m1/isotopes/sources/nubase2020.txt": "1585a5eea86c5e17e90307c7e6e786d060049c4039e392a261ff6db977df9859",
+    "manual2/data/m1/campaign/manifest.json": "6267de1336cd527cb6047e9e880caa8779fa0494f71e79c8bf721c463546cfc4"
+  },
+  "repository_head": "c00ff65d19af1f07ada842f62921cd593090fed6",
+  "source_version": "NUBASE2020, published2021; literature cutoff2020",
+  "candidate_ground_state_rows_matched": 132,
+  "cautions": [
+    "Exact Z,A matching is not evidence that a legacyreference was selected from this source",
+    "NUBASE ground/isomer labels and systematics flags are retained",
+    "Newer evaluated/experimental records may supersede older evaluated values without erasing them"
+  ]
+}

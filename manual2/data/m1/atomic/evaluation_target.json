@@ -1,0 +1,15 @@
+{
+  "classification": "retrospective_measurement",
+  "covariance_status": "unknown; no independence assumed",
+  "exposure_status": "known_before_model_selection",
+  "frequency_hz": "1420405751.768",
+  "isotope": "H-1",
+  "locator": "printed page 200; rendered evidence bound in v1 inventory",
+  "observable": "unperturbed_ground_state_hyperfine_frequency",
+  "prediction_measurement_covariance_hz2": null,
+  "profile": "matter1-atomic-map-obstruction-v2",
+  "schema_version": 1,
+  "source": "https://tf.nist.gov/general/pdf/13.pdf",
+  "source_uncertainty_scope": "published_aggregate_one_sigma; no independent recombination",
+  "standard_uncertainty_hz": "0.002"
+}

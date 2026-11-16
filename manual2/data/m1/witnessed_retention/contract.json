@@ -1,0 +1,33 @@
+{
+  "schema": "witnessed-cancellation-retention-v1",
+  "scope": "declared finite retention fixture; no isotope or physical decay identification",
+  "candidate_reference": "the existing two Q4 square routes and reference square, with admitted return certificates",
+  "formation_returns": {"candidate": 4, "reference": 2, "background": 3, "outer_parent": 2},
+  "formation_reason": "fixed preparation offset makes candidate minus reference bip count one when a new reference return has completed and the next candidate return is pending",
+  "background": "one admitted recurring 3:4:6 field, advanced and contacted each round; a separate intervention holds its second new return pending",
+  "parent": "certified outer closure retaining the evolving candidate inner wave; reference and background are external coupled fields",
+  "horizon": {"new_reference_returns": 3, "allowed_cut_window": [0,100000]},
+  "protocol": "complete the actual reference return and bound cross-return; complete the background return and bound cross-return; decide with the preceding committed response state; execute candidate return or open exit; commit response and fold the next outer return",
+  "lag": "unwrapped candidate minus sender bip counts in the committed prefix, zero phase bias; orientation sign is separate",
+  "reflection": "neutral directional reflection in baseline; a separate reverse-direction witness control adds one reflected hinge count per contact",
+  "pressure": "one participating channel per sender; C3=1; rho is the last-two-contact RCD duration, clipped in its declared integer count domain to the frozen window length",
+  "response": "for each accepted candidate returned response, signed current adds sum(rho*lag*orientation); carried burden adds sum(rho*abs(lag)); immutable contributions retain both cross-return witnesses",
+  "normalization": "u is the structural RD of the certified reference square cross-return; report and diagnostic coordinates divide raw response and burden by the same frozen u",
+  "capacity": {"diagnostic_units": "1", "raw_rule": "C_close=u", "status": "declared fixture capacity, not inferred nuclear capacity"},
+  "kernel": "X=max(0, selected_raw_load-C_close)/u; weights=(1,1,X); normalize exactly",
+  "loss": "positive-weight open exit follows two actual H1 edges; a computed exoshedding record binds the selected load and prior outer certificate; exposure preserves the retained candidate wave; absorption is only the existing declared diagnostic loss predicate",
+  "cases": ["net_memory", "burden", "burden_feedback_off", "burden_latest_response_window", "burden_background_pending"],
+  "controls": {
+    "burden_feedback_off": "after two committed responses, gate their use in the next decision to zero; preserve the complete signed and burden histories",
+    "burden_latest_response_window": "only the most recent committed response group participates; earlier events remain in retained history with an explicit window-exclusion disposition",
+    "burden_background_pending": "at the second measured reference return, commit the first H1 edge of the background return and hold completion pending through the horizon; contacts bind its existing recurring prefix",
+    "orientation": "++ and --, +- and -+ use opposite current orientations while preserving actual cadence comparisons",
+    "direction": "recompute forward and reverse RCD from separately bound directional traces",
+    "passive_observer": "turn optional observation copies on/off without changing transition inputs"
+  },
+  "physical_seconds": null,
+  "isotope_state_assignment": null,
+  "experimental_inputs": [],
+  "fit_parameters": [],
+  "freeze": "written before first execution; all common choices remain fixed across the declared comparisons"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "matter1-renderer-lock-v1",
+  "profile": "matter1-linux-x86_64-cpython-3.12.14-pypi-v1",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "requirements_sha256": "912b2c1f1c70127f3ec307917fd0e22e3feaa8a13feebcc186e02df3df3a367d",
+  "renderer": {
+    "packages": {
+      "cffi": "2.1.1",
+      "charset-normalizer": "3.5.2",
+      "contourpy": "1.4.0",
+      "cryptography": "50.0.2",
+      "cycler": "0.12.1",
+      "fonttools": "4.67.0",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.8",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "pdfminer.six": "20251230",
+      "pdfplumber": "0.11.9",
+      "pillow": "13.0.0",
+      "pycparser": "3.11",
+      "pyparsing": "3.3.3",
+      "pypdf": "6.10.0",
+      "pypdfium2": "5.14.0",
+      "python-dateutil": "3.0.0",
+      "six": "1.17.0",
+      "tzdata": "2026.5"
+    },
+    "freetype": "2.6.1",
+    "native_modules_sha256": {
+      "matplotlib.ft2font": "f6727c0992a5438a909fc91b76fa42c96b1d174873a68db35ffababd8cb4244f",
+      "matplotlib._path": "1632ed5fe6f8aec5876861e8e66dbb8d80558c5ce75880c96e24965e478deea3",
+      "matplotlib.backends._backend_agg": "0104a4b4e648668f9678b8e271d296bb4730617955ea819ca90ed684debfd2c3"
+    },
+    "fonts_sha256": {
+      "normal": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+      "bold": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167"
+    }
+  },
+  "scope": "Release figure generation and exact reproduction. No native dynamics or empirical claim. Fonts and native binaries come from the hash-pinned wheels."
+}

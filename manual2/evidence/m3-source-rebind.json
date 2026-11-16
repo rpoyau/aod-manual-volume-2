@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "after_sha256": "422d585b3f317ea52ebe8f7401119ad3e0be526dadd8d9fcd26ec72bdccce8d7",
+      "before_sha256": "2572c1f108ecd2a623fcc9908aa3c4d5166846745837d4567a66d0b36e277547",
+      "path": "appendices/A_fractal_address_bip_biz.tex",
+      "upstream_path": "appendices/A_fractal_address_bip_biz.tex"
+    },
+    {
+      "after_sha256": "4fba7d700d717e096d1bbf72770841199e0958ba0d3939e89c0b82e68858043a",
+      "before_sha256": "19fff3769f4b9f97af4984cffa070d0177d4529c56b7592e5d443330cf23a740",
+      "path": "appendices/C_stochastic_crowning.tex",
+      "upstream_path": "appendices/C_stochastic_crowning.tex"
+    },
+    {
+      "after_sha256": "f13d9d66140fb5b3e4a65dd626f9341c8be666f29fd8e26d040d19be152f314e",
+      "before_sha256": "eb25fed23c31d421b9efc59cc44cbc7a8f58764a812f92dfc12c0c3f24a47fa1",
+      "path": "appendices/D_cycle_shedding_demonstration.tex",
+      "upstream_path": "appendices/D_cycle_shedding_demonstration.tex"
+    },
+    {
+      "after_sha256": "29c9bcb1359639548f3d25e35ca7b3e50454f5f17d37f57bfad877b26a5f5f77",
+      "before_sha256": "236b0253fb0f717bdb85dd19200e758bac67d4c5a56ba8c5971ac0d2d8ef8ebc",
+      "path": "appendices/G_symbolic_cancellation_check.tex",
+      "upstream_path": "appendices/G_symbolic_cancellation_check.tex"
+    },
+    {
+      "after_sha256": "8ba9c388162d31e5a5b3a86b8818a958b909b537bfa13fb807123d564d61adf7",
+      "before_sha256": "9ccf229e4506375a031e9542642f89e2990db23bf0e16981769a093ef8c06e80",
+      "path": "appendices/H_combinatorics_rd_tests.tex",
+      "upstream_path": "appendices/H_combinatorics_rd_tests.tex"
+    },
+    {
+      "after_sha256": "531e83d989969c81089a09c0f7bbab56cc02e3f35495f7b5701958160ac6a704",
+      "before_sha256": "ed8cbd12785bcbe747d0e38d51e71827eb9786f51a821a5434396d2ef5789eef",
+      "path": "appendices/I_path_complexity_prototype_quarantine.tex",
+      "upstream_path": "appendices/I_path_complexity_prototype_quarantine.tex"
+    },
+    {
+      "after_sha256": "1648c6a5d8afebf4a94e8761b2e4faa6efb2632f9e719dd5c407409f3751d93a",
+      "before_sha256": "439182eaa6832f2f937da6f478878f2db3e74bb67d68160469e10855f456ba8b",
+      "path": "main.tex",
+      "upstream_path": "main.tex"
+    },
+    {
+      "after_sha256": "6e58c2213d8a11e288915d47d90965787aba148caa3d8f3bc065739216cf00e4",
+      "before_sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16",
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "upstream_path": "sections/05_curl_closure_duon_current.tex"
+    },
+    {
+      "after_sha256": "79e16685826aee15273fbcddc0a59d5f14f75dbf3671e43ae261fcd6fc9acf70",
+      "before_sha256": "2f51bb5ab1bdd0053f4887f5f00ba8db6aaf70786d563091d32cecde4a2c6ccc",
+      "path": "sections/06_field.tex",
+      "upstream_path": "sections/06_field.tex"
+    },
+    {
+      "after_sha256": "bbd265de629de74ae43be75ff5146406b5dda80c380bf02507725a98d233404d",
+      "before_sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb",
+      "path": "sections/06_wave_state_relational_time.tex",
+      "upstream_path": "sections/06_wave_state_relational_time.tex"
+    },
+    {
+      "after_sha256": "310b4860c1710b8191725d9c40ff1fc05bd45a7ed818f0891e1fbd8fa58feae1",
+      "before_sha256": "d75cb4543a68abb2a935053a36a3a53319ed9d097e7e3839ff11d9f074b70320",
+      "path": "sections/08_awareness_learning_mindfulness.tex",
+      "upstream_path": "sections/08_awareness_learning_mindfulness.tex"
+    },
+    {
+      "after_sha256": "c3cb4e5a8e8c435e741bd040b84674c7786ecb47b6852bbe8198c4e8674eae22",
+      "before_sha256": null,
+      "path": "sections/07_cell_measures_mappings.tex",
+      "upstream_path": "sections/07_cell_measures_mappings.tex"
+    }
+  ],
+  "previous_foundation_sha256": "267ec6f0ae1f785a47e8901021ec3db19f8fbbcb2a8ae0c90f8127e5b8cfe8f1",
+  "previous_manual_head": "f2dcf01450d5443ba83d207adfade9a27d3d2a7f",
+  "schema_version": 1,
+  "scope": "Exact full M3 Main source adoption; historical fixture source bytes remain archived, not relabelled as executed against M3.",
+  "source_status": "open_PR_43_candidate_at_binding",
+  "upstream_head": "b78b48dd7aa1608dbb7141e9814e33c3cfcf900b",
+  "upstream_tree": "e284648caba071c00d28b70850c8e557f8dc8d19"
+}

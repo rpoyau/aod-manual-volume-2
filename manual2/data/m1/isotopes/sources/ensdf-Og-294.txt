@@ -1,0 +1,136 @@
+294 Og     -1                                                                                                                       294 Og     -1
+118    176                                         From ENSDF - Evaluated January 2019                                              118    176
+
+
+
+                                                                   Adopted Levels
+
+                                                                      History
+                                      Type            Author              Citation          Literature Cutoff Date
+                                 Full Evaluation    Balraj Singh     NDS 156, 70 (2019)          31-Jan-2019
+
+S(n)=7480 SY; S(p)=2210 SY; Q(α)=11861 30             2017Wa10,2018Br13
+S(n) and S(p) from 2017Wa10. Q(α) from Eα value in 2018Br13.
+Estimated uncertainties (2017Wa10): ∆S(n)=970, ∆S(p)=1050.
+S(2p)=3360 1040, Q(εp)=1510 890 (syst,2017Wa10). S(2n)=14070 (1997Mo25,theory).
+Q(α) is from Eα=11.70 MeV 3 (2018Br13, from analysis of a total of five decay chains observed for the decay of 294 Og in
+     different experiments. Other: 11840 keV 70 (2017Wa10).
+294 Og observed only in experiments at FLNR-JINR-Dubna, in collaboration with LLNL and ORNL laboratories in USA.
+
+2006Og05, 2004Og10, 2004Og12 (also 2009Og07,2007Og05,2005Og03, 2005OgZZ,2004Og05,2003OgZZ,2002OgZX): discovery of
+     Z=118 (Og) element through the identification of 294 Og nuclide decaying by three successive α-decay chains: 290 Lv, 286 Fl and
+     282 Cn, which decays by SF. 294 Og from 249 Cf(48 Ca,3n),E=251 MeV; >98% enriched 249 Cf rotating target. The compound
+
+     nucleus 297 Og formed at 32.1-36.6 MeV. Facility: U400 cyclotron with the Dubna gas-filled recoil separator (DGFRS) of the
+     Flerov Laboratory of Nuclear Reactions (FLNR), Joint Institute for Nuclear Research in Dubna (JINR), in collaboration with
+     LLNL, USA. Evaporation residues recoiling from the target were separated by the DGFRS in flight from 48 Ca beam ions, transfer
+     reaction products and scattered particles. Multiwire proportional counter for TOF measurement; semiconductor focal-plane detector
+     array with 12 vertical position-sensitive strips surrounded by eight side detectors without position sensitivity. The α particles were
+     measured in the range of 9.9 MeV to 12.0 MeV. FWHM=70-120 keV for α particles absorbed in the focal-plane detector, 280-410
+     keV for α particles that escaped the focal-plane detector and were registered by the side detector.
+History of three events observed: two correlated decay chains detected in the experiment at E(48 Ca=251 MeV) reported by
+     2006Og05, and one correlated decay chain in an earlier experiment (2004Og10) at E(48 Ca=245 MeV). 2004Mo15 pointed out that
+     the mass assignment in their work may be off by one unit. 2005St38 analyzed probability of observing a random event in their
+     work.
+
+Event #1: Energy of the evaporation residue=13.2 MeV (2004Og10).
+Eα1 =11650 60, ∆tα1 =2.549 ms, assigned to 294 Og.
+Eα2 =10710 170, ∆tα2 =42.1 ms, assigned to 290 Lv.
+ESF =207 MeV, ∆tSF =517.6 ms, assigned to 286 Fl SF decay.
+
+Event #2: Energy of the evaporation residue=13.7 MeV (2006Og05).
+Eα1 =11800 500, ∆tα1 =0.847 ms, assigned to 294 Og.
+Eα2 =10800 90, ∆tα2 =0.098 ms, assigned to 290 Lv.
+Eα3 =10160 90, ∆tα3 =153.0 ms, assigned to 286 Fl; decays by α and 70% by SF mode.
+ESF =202 MeV, ∆tSF =2.70 ms, assigned to 282 Cn SF decay.
+
+Event #3: Energy of the evaporation residue=10.4 MeV (2006Og05).
+Eα1 =11650 100, ∆tα1 =0.465 ms, assigned to 294 Og.
+Eα2 =10840 100, ∆tα2 =1.012 ms, assigned to 290 Lv.
+ESF =157 MeV, ∆tSF =11.39 ms, assigned to 286 Fl SF decay.
+
+2012Og06 (also 2011Og07): 249 Cf(48 Ca,3n),E=251.7 MeV; 249 Cf from decay of 249 Bk target; rotating 249 Bk radioactive target.
+   249 Bk radioactive target was produced in neutron irradiation of Cm and Am targets in high flux isotope reactor at ORNL. The
+
+   chemically purified 12.7 mg of 249 Bk (about half of the total 249 Bk material produced at ORNL) containing 0.51 mg of 249 Cf
+   with no other detectable impurities was shipped to JINR. Six targets were prepared at RIAR facility in Russia, each target with a
+   thickness of 0.33 mg/cm2 deposited on 0.72 mg/cm2 thick Ti foils, and mounted on a disk that was rotated at 1700 rpm
+   perpendicular to the beam direction. U-400 cyclotron with the Dubna gas-filled recoil separator (DGFRS) of the Flerov Laboratory
+   of Nuclear Reactions, Joint Institute for Nuclear Research in Dubna (JINR). Evaporation residues passing through the DGFRS
+   separator registered by time-of-flight system. Focal plane detector system: two 6x6 cm2 Si detectors, each of 16 strips with position
+   sensitivity in the vertical direction. These detectors were surrounded by six similar 6x6 cm2 Si side detectors without position
+   sensitivity. Behind the focal plane detectors, two veto Si detectors, similar to the side detectors, were mounted for detecting or
+   rejecting signals from high-energy long-range charged particles produced in direct reactions of 48 Ca with the DGFRS materials.
+
+
+
+                                                                       1
+294 Og     -2                                                                                                                  294 Og     -2
+118    176                                                    From ENSDF                                                       118    176
+
+
+
+                                                         Adopted Levels (continued)
+
+   Measured Eα, half-lives, α-α correlations. FWHM for α particles was 34-73 keV. Collaboration: JINR and RIAR, Russia; LLNL,
+   ORNL, University of Tennessee and Vanderbilt university.
+One event was assigned to the decay of 294 Og in 2012Og06; two events were assigned earlier in 2006Og05 and one in 2004Og10.
+
+Event #4 (2012Og06):
+Excitation energy of the compound nucleus 297 Og=11.63 MeV.
+Eα1 =11.679 MeV 65, ∆tα1 =0.135 ms, assigned to 294 Og.
+Eα2 =10.848 MeV 65, ∆tα2 =29.437 ms, assigned to 290 Lv.
+ESF =219.3 MeV, ∆tSF =3.486 ms, assigned to 286 Fl, decays by α and SF.
+
+2018Br13: E(48 Ca)=252,258 MeV beam from U400 cyclotron of JINR-Dubna was incident on a mixed Cf target (50.6% 249 Cf,
+   13.1% 250 Cf and 36.3% 252 Cf) obtained from >30 year old 252 Cf samples at ORNL. The Cf target was fabricated at ORNL as 12
+   segments, each with a layer of 309 µg/cm2 thick Cf, containing a total of 1 mg of mixed Cf source. Fragments were separated by
+   Dubna Gas-filled recoil separator (DGFRS), and ions were tagged with time-of-flight (TOF) in two pentane filled multi-wire
+   proportional counters (MWPC). Focal plane detector array for the detection of α particles, designed and assembled at ORNL, was a
+   double-sided silicon detector (DSSD) consisting of 48 horizontal strips on front side and 128 vertical strips on the back side for
+   position resolution. The escaped α particles were detected in a box of six Si detectors surrounding the focal plane detector. A veto
+   detector was placed behind the focal plane detector to reject light particles. Calibration of the detector system and assessment of
+   target condition was carried out using Yb(48 Ca,xn) reaction producing α-decaying isotopes of 216 Th to 220 Th. Measured recoil-α
+   correlated events, and production cross section. Deduced one event assigned to the decay of 294 Og through 294 Og → 290 Lv →
+   286 Fl. Reevaluated T        294 Og decay, and Eα emitted in this decay by combining the previous data for four observed events
+                         1/2 of
+   and the one in the present work. Comparison with several theoretical predictions of half-lives of α decay of 294 Og and its Q(α).
+
+Event #1: Energy of the evaporation residue=6.315 MeV (2018Br13).
+Eα1 =11717 30, ∆tα1 =0.185 ms, assigned to 294 Og.
+Eα2 =10861 140, ∆tα2 =9.026 ms, assigned to 290 Lv.
+ESF =181.8 MeV, ∆tSF =119.497 ms, assigned to 286 Fl SF decay.
+
+For theoretical studies, consult Nuclear Science References (NSR) database at NNDC, BNL for 143 primary references dealing with
+    the half-lives, fission barriers and other aspects of nuclear structure in this mass region.
+
+                                                                 294 Og Levels
+
+
+
+ E(level)       Jπ       T1/2                                                      Comments
+  0             0+   0.58 ms +44−18   %α=100 (2016Ho09); %SF≤20 (2016Ho09)
+                                      Only the α decay mode has been observed. %SF≤20 (2016Ho09), ≤50 (2006Og05). 2018Br13
+                                        searched for SF decay mode of 294 Og, but presence of a large number of SF events, possibly
+                                        from SF decay of 258 No, obscured any SF activity from 294 Og.
+                                      E(level): observed activity is assumed to correspond to the g.s. of 294 Og.
+                                      T1/2 : from evaluation by 2018Br13 based on observation of a total of five decay chains for
+                                        294 Og in different experiments). one observed by 2018Br13, one by 2012Og06, two by
+                                        2006Og05, and one by 2004Og12. Others: 2012Og06 (also 2017Og01 and 2015Og05 reviews)
+                                        gave T1/2 =0.69 ms +64−22 ms from four observed events. Value of 0.69 ms +69−23 is listed
+                                        in 2016Ho09 review. Earlier values: 0.89 ms +107−31 (from three
+                                        events,2006Og05,2011Og07); 1.8 ms +750−13 (2004Og12, from one event at 95% confidence
+                                        level, or 1.8 ms +84−8 at 68% confidence level).
+                                      Cross section for production=0.9 pb +32−8 (2018Br13) at E* =35.2 MeV 22 and 36.4 MeV 22;
+                                        0.30 pb +70−26 (2012Og06) at E* =26.6-37.5 MeV; and 0.5 pb +16−3 (2006Og05) at
+                                        E* =32.1-36.6 MeV, where E* is the excitation energy of the compound nucleus of 297 Og.
+                                      Eα=11.70 MeV 3 (evaluated by 2018Br13 from five observed decay chains, one in their
+                                        experiment, and four in previous experiments, as mentioned above in comment for T1/2 ).
+                                        Others: 11.66 MeV 6 (2012Og06, from four events); 11650 60 (2006Og05, 2011Og07 from
+                                        three events).
+
+
+
+
+                                                                     2
+

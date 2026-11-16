@@ -1,0 +1,30 @@
+\section{Exact Arithmetic Fixtures}\label{manual2:app:simulation-fixtures}
+
+\subsection{Scope}\label{manual2:app:sim-scope}
+These are arithmetic fixtures. They do not claim simulated native trajectories or certified closure. The inherited four-step convention is in \mainappendix{app:path-complexity-quarantine}; polynomial support is in \mainappendix{app:combinatorics-rd-tests}.
+
+\subsection{Four-step decompositions}\label{manual2:app:four-step}
+For \(L=4c_L+r_L\), \(r_L\in\{0,1,2,3\}\), the outer even indices give
+\[
+\begin{aligned}
+6&=4(1)+2,&8&=4(2)+0,&10&=4(2)+2,\\
+12&=4(3)+0,&14&=4(3)+2,&16&=4(4)+0,\\
+18&=4(4)+2,&20&=4(5)+0,&22&=4(5)+2.
+\end{aligned}
+\]
+Even \(L\) has remainder 0 or 2; an odd index has remainder 1 or 3. This division identity is not a theorem that every closure has four steps. The inherited history-weighted load requires its declared histories and weights (\mainequation{app:proto:eq:four-step-load}).
+
+\subsection{Labelled-reference occupancy}\label{manual2:app:occupancy}
+The 126 declared slots and 118 element labels give
+\[
+\frac{118}{126}=\frac{59}{63},\qquad
+\frac{N_{\mathrm{labelled}}(\mathsf C_{22})}{22}=\frac{14}{22}=\frac7{11},
+\qquad
+\frac{N_{\mathrm{unfilled}}(\mathsf C_{22})}{22}=\frac8{22}=\frac4{11}.
+\]
+These are exact occupancy fractions, independent of assigned TTL values and native retention.
+
+\subsection{Falsification}\label{manual2:app:sim-falsification}
+Non-integer quotient/remainder, an invalid remainder, or disagreement with the labelled-slot counts fails the corresponding arithmetic fixture. It does not by itself falsify a native execution that has not been performed.
+
+\aodprovenance{\mainappendix{app:proto:statements}, \mainappendix{app:proto:falsification}, \eqnref{eq:matter1-gamma-m}.}

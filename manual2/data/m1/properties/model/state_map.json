@@ -1,0 +1,207 @@
+{
+  "profile": "matter1:element-properties:pilot-obstruction:v1",
+  "rows": [
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:H-1:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:H-1:ground",
+      "native_config": {
+        "a": 1,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    },
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:H-2:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:H-2:ground",
+      "native_config": {
+        "a": 2,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    },
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:H-3:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:H-3:ground",
+      "native_config": {
+        "a": 3,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    },
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:He-3:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:He-3:ground",
+      "native_config": {
+        "a": 3,
+        "electron_count": 2,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 2
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    },
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:He-4:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:He-4:ground",
+      "native_config": {
+        "a": 4,
+        "electron_count": 2,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 2
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    },
+    {
+      "charge_scope": "neutral inventory count; no electronic state identified",
+      "entity_id": "atomic-isotope:Cs-133:q0:ground",
+      "generic_inventory_identified": true,
+      "isotope_entity_id": "isotope:Cs-133:ground",
+      "native_config": {
+        "a": 133,
+        "electron_count": 55,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 55
+      },
+      "operative_distinctions": [
+        "Z",
+        "A",
+        "electron_count",
+        "rounds",
+        "seed",
+        "feedback"
+      ],
+      "physical_state_correspondence": "unestablished",
+      "unrepresented_physical_distinctions": [
+        "electronic wavefunction/configuration",
+        "nuclear spin",
+        "hyperfine sublevel",
+        "apparatus/environment"
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "state_separation_obstruction": {
+    "consequence": "This adapter cannot infer a state splitting from distinctions that have not entered a justified native preparation map.",
+    "operative_configurations": [
+      {
+        "a": 1,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      },
+      {
+        "a": 1,
+        "electron_count": 1,
+        "feedback": true,
+        "rounds": 3,
+        "seed": 20261109,
+        "z": 1
+      }
+    ],
+    "request_status": "distinct requested roles; no quantum labels or physical admission invented",
+    "requests": [
+      "H-1:requested-lower-spectroscopy-state",
+      "H-1:requested-upper-spectroscopy-state"
+    ],
+    "same_configuration": true
+  }
+}

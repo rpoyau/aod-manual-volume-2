@@ -1,0 +1,67 @@
+{
+  "atomic_word_scope": "Main atomic H1 events are indivisible encoded distinction events; that terminology alone does not identify an atomic spectroscopy state.",
+  "items": [
+    {
+      "evidence_needed": "Retained state-specific construction and support-accessor witnesses; external I,J,F labels alone are insufficient.",
+      "id": "ATOM-01",
+      "premise": "Cs/H hyperfine state configurations under one AOD construction",
+      "source_labels": [
+        "eq:key-proposed-admitted-trace"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "countermodel_prediction_sha256": "19996e532960fd3bbd9f808cd44e9d73bc92a7ba2a79e39861280689036c220b",
+      "evidence_needed": "Fix relative gain across Cs/H without tested H splitting; discriminate the explicit lambda countermodels.",
+      "id": "ATOM-02",
+      "premise": "Atomic update and cycle/phase observation law",
+      "source_labels": [
+        "eq:wave-update-trace",
+        "eq:rcd-duration-participation",
+        "eq:cadence-ratio"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "evidence_needed": "Applicable calibration, parameter/model uncertainty and shared-reference budget; partial conditional reports remain possible.",
+      "id": "ATOM-03",
+      "premise": "Physical realization/uncertainty and common-reference covariance",
+      "status": "unresolved"
+    },
+    {
+      "evidence_needed": "Eligible additional target/condition with exposure and selection history; known H is retrospective.",
+      "id": "ATOM-04",
+      "premise": "Independent empirical evaluation design",
+      "status": "unresolved"
+    }
+  ],
+  "next_experiment": "Supply one target-independent atomic state-to-observable law; execute it on both species, freeze its prediction artifact, then score H without retuning.",
+  "objective_status": "incomplete",
+  "schema_version": 1,
+  "source_bindings": [
+    {
+      "label_lines": {
+        "eq:key-proposed-admitted-trace": 156
+      },
+      "labels": [
+        "eq:key-proposed-admitted-trace"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    {
+      "label_lines": {
+        "eq:cadence-ratio": 114,
+        "eq:rcd-duration-participation": 69,
+        "eq:wave-update-trace": 33
+      },
+      "labels": [
+        "eq:wave-update-trace",
+        "eq:rcd-duration-participation",
+        "eq:cadence-ratio"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    }
+  ]
+}

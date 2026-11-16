@@ -1,0 +1,9 @@
+case,kind,lo_exclusive,hi_inclusive,new_parent_closures,reference_bips,parent_atomic_traversals,closures_per_reference_bip,closures_per_atomic_traversal,phase_bias,unwrapped_lag_start,unwrapped_lag_end,lag_drift,parent_structural_RD,reference_structural_RD,parent_window_load,load_contact_count,parent_capacity,parent_loss,seconds
+add_346_to_parent,cumulative,63037,1000000000,1,513,31886,1/513,1/31886,0,0,-512,-512,31017,61,15445475,977,,,
+add_346_to_parent,cumulative,63037,2000000000,2,1002,63644,1/501,1/31822,0,0,-1000,-1000,31017,61,71059374,2160,,,
+add_346_to_parent,cumulative,63037,3000000000,3,1463,95400,3/1463,1/31800,0,0,-1460,-1460,31017,61,159784928,3306,,,
+add_346_to_parent,cumulative,63037,4000000000,4,1902,127156,2/951,1/31789,0,0,-1898,-1898,31017,61,278833758,4419,,,
+add_346_to_parent,disjoint,63037,1000000000,1,513,31886,1/513,1/31886,0,0,-512,-512,31017,61,15445475,977,,,
+add_346_to_parent,disjoint,1000000000,2000000000,1,489,31758,1/489,1/31758,0,-512,-1000,-488,31017,61,55613899,1183,,,
+add_346_to_parent,disjoint,2000000000,3000000000,1,461,31756,1/461,1/31756,0,-1000,-1460,-460,31017,61,88725554,1146,,,
+add_346_to_parent,disjoint,3000000000,4000000000,1,439,31756,1/439,1/31756,0,-1460,-1898,-438,31017,61,119048830,1113,,,

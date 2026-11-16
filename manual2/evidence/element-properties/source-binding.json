@@ -1,0 +1,47 @@
+{
+  "schema": "matter1.element-properties-source.v1",
+  "date": "2026-11-11",
+  "manual_base_commit": "d44b26b554edf90075c0c96da0c0ca245009799a",
+  "manual_base_tree": "eac88f2ade7997f565812c1573c46d62c65e25a5",
+  "scientific_dependency": "71cbcf7e637ababcde3b2e073fb4ceec4b1681b9",
+  "authoring_dependency": {
+    "repository": "https://github.com/rpoyau/aod-skills",
+    "commit": "630af16a7c51fb8836e603eb54c67bf8560fb463",
+    "tree": "9d571826e270b79e3c43aac7ebbf259a6372b1e1",
+    "status_at_binding": "canonical_main",
+    "source_bindings_path": "SOURCE_BINDINGS.json",
+    "source_bindings_sha256": "8ca4df7146540b29ce34bd573261624df87015a8200e433edb8fb6e7191fb3e5",
+    "entry_points": [
+      {
+        "name": "aod",
+        "entry_point": "skills/aod/SKILL.md",
+        "sha256": "6a5926d2fd86db985d901aa92d7d0f44493849015242cded0a5a9350eb8e3cdc",
+        "directory_tree": "8e50720d97716d0e3eb5ba7da3dc6e5af5a426ea"
+      },
+      {
+        "name": "axiomatic-fundamentalism",
+        "entry_point": "skills/axiomatic-fundamentalism/SKILL.md",
+        "sha256": "4eeaba030dd15d44c96f8cd0021f090c38abdf8b3922269bea0381336eca5b10",
+        "directory_tree": "8e251d4eb6764c328f9ff20c1c04565c62c91db1"
+      },
+      {
+        "name": "afc",
+        "entry_point": "skills/afc/SKILL.md",
+        "sha256": "296b57b18dc7158daba511f554a46af66f753157b0ceefbf0a80cb6b96b3eee3",
+        "directory_tree": "1f99ce9761bcaed69724f2bad4551d6df375e195"
+      },
+      {
+        "name": "general-mechanics",
+        "entry_point": "skills/general-mechanics/SKILL.md",
+        "sha256": "01158467b37d3afff06d01a35eed496ac094f267decfe99c816821376b8cc306",
+        "directory_tree": "aa20ce1a6498bf8c48a35582580044adffcd0061"
+      }
+    ],
+    "scope": "Portable authoring/review guidance; does not certify current AOD source or scientific results.",
+    "loading": "Read explicit paths from a verified external checkout; no automatic discovery or global installation implied.",
+    "project_history_required": false,
+    "scientific_build_dependency": false
+  },
+  "scope": "Additive external property catalog, application research and display; imported Main and historical numerical records remain bound. Physical law completion is assessed separately from software verification.",
+  "source_authority": "Current open Matter I PR1 and Main PR43 candidates; no merge or release is asserted."
+}

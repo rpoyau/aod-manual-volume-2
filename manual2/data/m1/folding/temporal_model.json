@@ -1,0 +1,129 @@
+{
+  "comparison": {
+    "biases": {
+      "outer_minus": "-1/4",
+      "outer_plus": "1/4"
+    },
+    "contact_cuts": [
+      35,
+      40,
+      45,
+      52
+    ],
+    "cuts": [
+      43,
+      47,
+      54
+    ],
+    "duration_map": {
+      "domain": "declared_model_commit_index",
+      "forward_reflections": [
+        1,
+        1
+      ],
+      "kind": "declared_additive_reflection_count",
+      "reverse_reflections": [
+        2,
+        2
+      ]
+    },
+    "window_start": 20
+  },
+  "geometry_sha256": "ce4b8f6ea9c1095393e6ae76074aa68fd2554c978234a1aba4412ad00bd82501",
+  "model_id": "m1:finite-fold-recurrence:v1",
+  "response": {
+    "boundary_weight": "1",
+    "burden_domain": "declared_boundary_load",
+    "capacities": [
+      "10",
+      "10",
+      "3"
+    ],
+    "oriented_current": "1",
+    "radiation_identification": "not_asserted",
+    "retention_rule": "At k+1 retain outer_plus iff the committed compatible burden at k does not exceed the declared capacity; expose retained inner provenance otherwise.",
+    "route_destination": "m1:declared-excess-reservoir"
+  },
+  "schema_version": 1,
+  "source_bindings": [
+    {
+      "labels": [
+        "eq:atomic-h1",
+        "eq:hinge-grammar"
+      ],
+      "path": "sections/03_afc_basis.tex",
+      "sha256": "d5b648c0c74afe8c34a344d5069e78b5be5d9a98851ce1abcc6c0f9d1df8c6d3"
+    },
+    {
+      "labels": [
+        "eq:closure-trace",
+        "eq:closure-certificate",
+        "eq:closure-phase-step-count",
+        "eq:return-identity",
+        "eq:beat-reclosure",
+        "eq:closure-phase-window"
+      ],
+      "path": "sections/04_cut_running_fractal_tesseract.tex",
+      "sha256": "887a26c3c4f713b514aeb28f36bbf6361e648671dccbe3bfbda88a430c6bdb9b"
+    },
+    {
+      "labels": [
+        "eq:branch-hinge-rd",
+        "eq:fold-outer-closure",
+        "eq:expose-inner-lineage",
+        "eq:hinge-chirality-tag"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "f1d08ad9116b83d63a9180ee0132b719f6966effaad4e47300498bc15bf7fc16"
+    },
+    {
+      "labels": [
+        "eq:wave-update-trace",
+        "eq:coupling-trace",
+        "eq:rcd-coupling",
+        "eq:rcd-additive-realization",
+        "eq:cadence-ratio",
+        "eq:count-comparator-realization"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbe6e0b7917940a6320b79be467ffbe8591ca1ec7b8aa0ffe1626cee320de2bb"
+    },
+    {
+      "labels": [
+        "eq:sadar-operator-expanded",
+        "eq:sadar-orientation-antisymmetry",
+        "eq:temporal-sadar-burden",
+        "eq:closure-residual",
+        "eq:shedding-excess"
+      ],
+      "path": "sections/06_field.tex",
+      "sha256": "2f51bb5ab1bdd0053f4887f5f00ba8db6aaf70786d563091d32cecde4a2c6ccc"
+    }
+  ],
+  "statuses": {
+    "atomic_mapping_status": "pending",
+    "empirical_status": "not_tested",
+    "native_admission_status": "pending",
+    "native_execution_status": "not_claimed",
+    "record_class": "declared_finite_folding_model"
+  },
+  "support_map": {
+    "branch_unit": "one_support_unit_per_H1_traversal",
+    "kind": "declared_count_to_support_fixture",
+    "structural_hinge_support": 1,
+    "warning": "The declared support map is not an admitted RD accessor or a duration identity."
+  },
+  "update_rule": {
+    "clock_domain": "declared_model_commit_index",
+    "initialization_samples_per_cycle": 1,
+    "inner_cycles": 4,
+    "name": "declared_oriented_edge_sequencer",
+    "outer_cycles": 5,
+    "outer_dwell_samples": {
+      "outer_minus": 1,
+      "outer_plus": 0
+    },
+    "predictive_status": "finite_model_only_no_atomic_prediction",
+    "rule": "At k+1 commit the next declared edge; after a return commit a distinct next-start sample; optional dwell is a zero-edge hinge sample."
+  }
+}

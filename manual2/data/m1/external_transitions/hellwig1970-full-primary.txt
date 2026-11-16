@@ -1,0 +1,760 @@
+200                                      IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT, VOL. IM-19, NO. 4, NOVEMBER 1970
+
+
+
+              Measurement of the Unperturbed Hydrogen
+                   Hyperfine Transition Frequency
+              HELMUT HELLWIG, MEMBER, IEEE, ROBERT F. C. VESSOT, MARTIN W. LEVINE,
+                    PAUL W. ZITZEWITZ, DAVID W. ALLAN, AND DAVID J. GLAZE
+
+
+
+   Abstracl-The results of a joint experiment aimed primarily at the storage vessel. A detailed discussion of these effects is
+determination of the frequency of the H1 hyperfine transition found in [2]. They can be measured and accounted for
+(F = 1, mF =O) cf ( F = 0, mF 0) is reported. In terms of the                                                                with the
+frequency of the Cs133 hyperfine transition ( F = 4, mF = 0) c-* ( F =
+                                                                       with fractional uncertainties of less than
+3, m F O), defined as 9192 631 770 Hz, fortheunperturbedhydrogen       exception of the wall-collision effect (wall shift). Thus, the
+transition frequency the value                                         measurement of the unperturbed hydrogen transition
+                    VH   = 1420 405 751.768 HZ                           frequency involves primarily a measurement of the wall
+                                                                         shift. We performed two different and independent'
+is obtained. This result is the mean of two independent evaluations measurements, which are referred to hereafter as experi-
+against the same cesium reference, which differ by 2 X 1 0 - 3 Hz.
+We estimate the one-sigma uncertainty of the value vH also to be ment 1 and experiment 2.
+2 X 10-2 Hz. One evaluation is based on wall-shift experiments at           Experiment 1 relies on a previous determination of the
+Harvard University; the other is a result of a new wall-shift meas- wall shift at Harvard University [3]: as a result of this
+urement using many storage bulbs of dflerent sizes at the National wall-shift evaluation the Harvard reference maser has a
+Bureau of Standards. The experimental procedures and the applied known wall shift. A comparison between the frequency
+corrections are described. Results for the wall s h i t and for the fre-
+quency of hydrogen are compared with previously published values, of this maser and a cesium primary frequency standard"
+and error limits of the experiments are discussed.                       (NBS-111), using a different maser as a transfer standard,
+                                                                         gave a value for the unperturbed hydrogen hyperfine
+                         I. INTRODUCTION                                 transition frequency. Experiment 2 is a separate and new
+
+
+A        SERIES of measurements involving hydrogen measurement of the wall-shift correction with, however,
+          masers, cesium beam frequency standards, and an important difference from any previous wall-shift
+          the NBS clock system was made at the National measurement: the reference oscillator that was used in
+Bureau of Standards (NBS) in Boulder, Colo., during the the measurement of the frequency of the maser equipped
+period from November 1969 to February 1970. The with storage bulbs of different sizes was directly related
+original purpose of these experiments was an evaluation to the frequency of a cesium primary frequency standard
+of the stability performance of the involved systems and (NBS-111). Wall-shift correction and hydrogen-cesium
+devices. A report of these results will be made elsewhere [l]. comparison in experiment 2 were thus not separate steps
+   A unique opportunity thereby existed for a remeasure- but were integral parts of the same measurement.
+ment of the frequency of the unperturbed hydrogen (H')                      The published values of the unperturbed hydrogen
+hyperfine transition ( F = 1, m F = 0) tf ( F = 0, m p = 0)              hyperfine   transition frequency disagree among themselves
+                                   hyperfine transition (F = 4,
+in terms of the cesium ( C S ' ~ ~ )                                     considerably     more than is expected. from the published
+m F = 0 ) * ( F = 3, m F = 0 ) ,defined as 9192 631 770 Hz.              values   of  the  accuracy. In addition, there has been an
+This paper reports the results of our frequency measure-                 almost  exclusive    usage of one particular wall-shift correc- 1
+ments.                                                                   tion in the  various  publications of the hydrogen frequency.
+   The hydrogen maser frequency differs from the un-                     (See  Tables   I and  11.) These were further motivations for
+perturbed atomic transition frequency because of a variety               our  measurements.
+of effects including cavity pulling, spin exchange, magnetic                The value for the hydrogen hyperfine transition fre-
+fields, second-order Doppler (related to the temperature of              quency   may be written as
+the storage vessel), and collisions with the walls of the                                 V H = (1420 405 751+     vi) HZ            (1)
+                                                                                                                                           t
+  Manuscript received June 5, 1970; revised July 13, 1970. This      and we shall discuss in the following only vA.
+paper was presented at the 1970 Conference on Precision Electro-       The wall-shift correction may be writtedas approxi-
+magnetic Measurements, Boulder, Colo., and the experiments at        mately
+Harvard University were supported by NASA.                                             I
+  H. Hellwig, D. W. Allan, and D. J. Glaze are with the Atomic
+Frequency and Time Standards Section, National Bureau of Stand-
+ards, Boulder, Colo. 80302.
+                                                                                     Avw 9 (K/D)D       + aI(T - TJl                (2)
+  R. F. C. Vessot and M. W. Levine are with the Smithsonian
+Astrophysical Observatory, Cambridge, Mass. 02138.                      1 They are not completely independent in the sense that a common
+  P. W. Zitzewitz was with the Lyman Laboratory of Physics,          cesium reference (NBS-111) was used.
+Harvard University, Cambridge, Mass. 02138. He is now with the          2 For our purposes a cesium primary frequency standard is an
+Department of Physics, University of Western Ontario, London,        apparatus that has been experimentally evaluated in relation to
+Ont., Canada.                                                        all known perturbing effects (41.
+      EELLWIQ et d.:EYDROQENHYPERFINE TRANSITIONFFWUENCY
+
+                                                                 TABLE I
+                                                            WALGQEIETRESULTS
+
+                                          Appmximsta
+                                       Year of Measure-     Number of                                 Am*D
+            Author and Reference             ment              Bulb               Teflon            (mHs. cm)
+
+     Crampton d d [5]                         1963               2                                   470 f 47           not
+                                                                                                      at 35°C           measured
+     Vanier and Veseot [SI                 1963-1964             4                                    528 f 5        -(5 f 1) x lo-,
+                                                                                                      at 40°C
+                                                                             1962
+     Mathur d al. [7]                         1964                4          FEP-I20                 513 f 76           not
+                                                                             Blend 33                at 35°C            measured
+                                                                             53.9 percent eolids
+                                                                             lW
+                                                                             D iPont
+     Elkins d al. [SI                         1968               2           Teflon D                 1993 f 75         not
+                                                                                                      (tempera-         measured
+                                                                                                     ture not
+                                                                                                     given)
+     Zitsewits d al. [3]                   1988-1969             18          FEP-120                 386 f 8        -(12 f 1) x lo”
+                                                                             Blend B-107             at 40°C
+                                                                             54.5 percent eolids
+                                                                             Du Pont
+                                                                             1967
+     Menoud and Raciie 191, (101           1988-1969             2           FEP-120                 515 f 28           not
+                                                                             Du Pont                 at 40°C            measured
+     Hdwig d aZ. [this paper]              1969-1970             11          TFE                     528 f 17           not
+                                                                             Blend 42                at 24°C            measured
+                                                                             34.3 percent, solids
+                                                                             Du Pont
+                                                                             1969
+
+
+
+      where TIis the reference temperature, usually chosen at                             11. MEASUREMENT      PROCEDURES
+      40°C, T is the operating temperature of the storage bulb,
+      al is the wall-shift temperature coefficient, D is the                  Experiment 1 involved a transportation of the portable
+      diameter of the storage bulb, and K is the wall-shift hydrogen maser of the Smithsonian Astrophysical Ob-
+      coefficient.                                                         servatory (SAO) first to the Lyman Laboratory of Physics
+         To our knowledge only five independent wall-shift a t Harvard University (HU) and then to the Atomic Fre-
+      measurements have been published in the past; one quency and Time Standards Section of the National
+      reason for this must be sought in the rather tedious and Bureau of Standards (NBS). The SA0 maser is described
+      time-consuming experimental effort necessary. The six in detail in [20].At HU its frequency was compared with
+      published results are summarized in Table I together the HU reference hydrogen maser. The wall shift of the
+      with the results of this paper. Table I gives the author(s) HU maser was known from a previous evaluation [3].
+      and bibliographic reference, the year(s) of the actual Both masers were tuned and the appropriate bias correc-
+‘
+      experiment, the number of bulbs different in coating tions (see Section 111) were applied. From the thus
+        nd/or size, the type and year of purchase of the T e f l ~ n , ~corrected difference frequency of both masers the wall-
+    \&,
+      a d the values Avw.D and a1 of (2) together with the shift correction of the SA0 maser could be inferred as
+      accuracy claims.                                                     Avw = +20.19 mHz. This experiment was done in De-
+         I n Table I1 we l i t and compare values for v;. Given            cember    1969. The SA0 maser was brought to NBS,
+      are the author(s) and published reference, the year(s) of            where  its frequency was referenced to cesium on January
+      the actual measurement, the Teflon that was used in the              22  and 23,  1970.
+     storage bulb of the hydrogen maser, the applied wall-                    Experiment    2 involved the NBS experimental hydrogen
+     shift correction listed by the corresponding author from              maser   NBS-H2.      Its general configuration is similar to
+     Table I, the hydrogen maser type that was used, the                   the  Varian  H-10  hydrogen   masers. During the period from
+     cesium reference standard, and the value for v/i. The                 November      1969  to  January   1970 this maser was suc-
+     values for vl: are rounded in the last digit.                         cessively  equipped    with  bulbs of different sizes ranging
+         A discussion of Tables I and I1 will be postponed until           from  7.5  to  20 cm   in diameter.  A total of 15 frequency
+     the end of this paper where we will take a critical look a t determinations was made of which 11 were used for
+     them in connection with a discussion of our new values.               the final analysis. Each individual measurement was
+                                                                           made with a reference frequency source whose frequency
+          Trade names and the names of manufacturers are used in this
+                                                                           was known in terms of cesium (NBS-111) [19]. Thus
+     paper for the sole purpose of conveying scientific and technical the measurement of the wall shift was simultaneously
+     information, and their citation is not to be construed as an endorse- the measurement of the hydrogen-cesium ratio, and the
+     ment or approval of commercial products or services by the authors’
+     organizations.                                                        value for zero wall shift was obtained by extrapolating
+202                                                                IEEE TRANSACTIONS ON INSTRUMENTATION AXD MEASUREMENT, NOVEMBE.H i970
+
+                                                                    TABLE I1
+
+
+
+
+ Author and Reference
+                      Approximate
+                      Year of Meas-
+                        urement         Teflon Used
+                                                     + Related -+
+                                                                     Wall Shift
+                                                                   From Reference
+                                                                                                          Cesium Reference
+                                                                                                                               I      VI€'
+                                                                                                                                     (mHz)
+
+Crampton et al. [5]       1963        TFE                           Crampton            Harvard          NC 2001                    800 f 28
+                                      852-201                       et al.       laboratory
+                                      Du Pont                       (1963)
+                                                                               - t Y Pe
+Vanier et al. [11]        1963        FEP                          Vanier-Yessot Varian                  several Cs                 827 f 20
+                                      Du Pont                      (1963-1964)   laboratory              clocks
+                                      Lot 10144                                  type                    via Loran C
+                      -
+Peters et ul. [l2]                                                 Vanier-Vessot        Varian H-10      H P 5060 A                 778 rt 16
+                                                                   (1963-1964)
+Peters and                1964        FEP
+                                                               I   Vanier-Vesso t                        LSRH                       785 & 16
+  Kartaschoff (131
+          ~
+
+
+
+
+Johnson and
+  McGunigal [14]
+                          1965    1   FEP
+                                      Du Pont
+                                                                   (1963-1964)
+                                                                   1-anier-Vessot
+                                                                   (1963-1964)      !   Varian H-10
+                                                                                                         laboratory type
+                                                                                                         H P 5060 A
+                                                                                                                               II   781 f 16
+
+Vessot et al. [I51        1965        FEP                          vanier-Vessot    j   Varian ~ - 1 0   NBS-I11                    786 f 2
+                                      Du Pont                      (1963-1 964)
+Becker and                1966   TFE                               Vanier-Vessot        PTB-H2           H P 5060 A                 756 f 3
+  Fischer [16]                   852-201                           (1963-1964)          laboratory
+                               - Du Pont         ~        .-
+                                                                                        type
+Becker and                1967   TFE                               Vanier-Vessot        PTB-H2           PTBlaboratorv-        1    7581 2
+  Fischer [16]                   852-201                           (1963-1964)          laboratory       type C2 and
+                                 Du Pont                                                type             H P 5061 A
+Mungall et al. [33]       1968        FEP-120                      Vanier-Vessot        NRC              NRC laboratory             778
+                                      Du Pont                      (1963-1964)          laboratory       long cesium            (an explicit ac-
+                                      Drum 10020                                        type             beam standard          curacy claim was
+                                                                                                                                not made)
+                                                                                                                               -
+Chi et al. (171                       FEP-120                                                            4 units HP 5061 A          777 f 3
+                                      Interchemical                (1963-1964)                           1 unit HP 5060 A
+                                      vanaflex (1967)
+
+Menoud and                1969    1   FEP-120
+                                      Du Pont
+                                                     c Related -+
+                                                               I Menoud-
+                                                                   Racine
+                                                                                    1   LSRH-H2
+                                                                                        laboratory
+                                                                                                         Oscillatom 3
+                                                                                                         (Ebauches )
+                                                                                                                                    778 f 4
+
+
+
+
+                                                                                                                               r-734
+ Racine [9], [lo)
+                                                                   (1968-1969)          type
+Bangham [IS]              1969        PTFE                         Vanier-Vessot        NPL              NPL
+                                                                   (1963-1964)          laboratory       laboratory
+                                                                                        type             t Y Pe                              25
+
+Hellwig et al.,
+ experiment 1
+                          1970    I   FEP-120
+                                      Blend B-107
+                                                     +-   Related --t
+                                                              I Zitzewitz           i   Dortable
+                                                                                        S A 0 maser
+                                                                                                         NBS-I11
+                                                                                                         via NBS clock
+                                                                                                                                    769 f 2
+  [this paper]                                                                          transferred
+                                                                                        from HU          x
+                                                                                                         s tem and
+                                                                                                           ASA-NP3 H-maser
+                                                                                                                           '
+
+
+
+
+Hellwig et al.,           1970        TFE
+                                                     +-- Related -+
+                                                                    this            i   NBS-H2           NBS-111                    767 f 2
+ experiment 2
+  [this paper]
+                                      Blend 42
+                                      Du Pont
+                                      (1969)
+                                                                    Paper
+                                                                    (1969-1970)     1
+                                                                                    !   laboratory
+                                                                                        type
+                                                                                                         via NBS clock
+                                                                                                         s stem and
+                                                                                                         SASA-NP3 H-maser
+
+
+
+the measured data to 1/D = O(D              bulb diameter).                stage an intermediate frequency of ( v M - 2 8 4 ~ ~and
+                                                                                                                                )
+    Fig. 1 shows the measurement system used in both                       for the final beat frequency
+experiments. The receiver for the output frequency v M
+                                                                                                                                                  (3)
+of the hydrogen maser is basically a triple-superheterodyne
+system. The first intermediate frequency is in the MHz                     By comparison with (1) we see that V S M 405 kHz. The
+range, the second in the kHz range, and the third is                       maser frequency v M in terms of the reference frequency
+adjusted by means of a synthesizer (output frequency                       v R can then be calculated from (3). If v R is given in terms
+u s ) to a slow beat frequency v B of the order of 1 Hz.                   of the cesium transition frequency the hydrogen-cesium
+If the external reference frequency v R is chosen to be                    ratio can be computed using the appropriate corrections.
+nominally 5 MHz we have at the output of the second                        A measurement precision of a few parts in l O I 3 was
+HELLWID et U2.z HYDROGEN HYPERFINE TRANSITION FREQUENCY                                                                                                                  203
+
+
+
+
+                                                    sL   5 Y H I INOYNIU
+                                               UR
+
+
+
+                                                              5 YHIOUTWT
+
+                                                                                  75   30   I   IO    I5   20   25   30   5      0    15    20   25   33   5   0    15   20
+                                                                                  NOV'69             DEC '69                         JAN ' 7 0                 FEB '70
+
+
+                 Y
+                  E
+                      - u
+                       ("-284"
+                                 R
+                                     )-v
+                                           S
+                                                                                                                          DATE
+
+                                                                           Fig. 2. Fractional frequency offset of NP3 from YUTC(NBS). Derived
+Fig. 1. Measurement system used for determining frequency                    from a M a y avera of the time error of NP3 with respect to
+           ratio between two frequency standards.                            UTC(NBS): 6 clocg. Zero on the vertical scale corresponds
+                                                                             t 0 YUTC(NB6).
+
+
+desired. To take vI1 directly from the output of a cesium                                        TABLE I11
+standard would have meant averaging times of many                                  SUMMARY      OF  BIASCORRECTIONS
+hours to attain this precision. This would have been
+awkward in experiment 1 and prohibitive for experiment Offset of WTC(NBS) from YAT(NBS)                                     AWTC
+
+2 since the NBS-H2 maser had no temperature control,            Offset  of NASA-NP3        frequency  from YUTC(NBS)        AVN
+a limitation that necessitated a fast measurement tech-         Wall  shift                                                 AVW
+nique (30 minutes maximum duration).                            Second-order Doppler                                        AVD
+    Fortunately we also had available the hydrogen maser Thermalization                                                     AVT
+standard NP3 of the National Aeronautics and Space Magnetic field (Zeeman)                                                  AVZ
+Administration (NASA). Its design is described in [21].
+                                                                Spin-exchange collision
+The most important features of this maser for the present
+purpose are its stability and the provision of synthesized Cavity tuning
+standard output frequencies. We used one of its outputs
+on nominally vg = 5 MHz. However, the NASA maser
+not only served as a highly stable frequency source The wall-shift correction was discussed previously in
+allowing short- and long-term measurements with a Section I, and (2)) a semiempirical equation, was given.
+precision of a few parts in 1013 but also as a calibrated For (2) it is assumed that the wall shift is proportional
+transfer standard. As indicated in Fig. 1, the frequency to the wall-collision rate of the hydrogen atoms, i.e.,
+of the NASA maser was constantly monitored by the to the inverse diameter of a spherical storage bulb.
+NBS clock ensemble, which consisted of six commercial              The second-order Doppler effect in the hydrogen maser
+cesium standards. The clock ensemble generates the due to the thermal motion of the atoms necessitates a
+atomic time scale AT(NBS) with the frequency vAT(NBS); correction of [15]
+this frequency is set by calibration with the primary
+                                                                                                A V O = ClTs                        (4)
+frequency standard. The most recent calibration had
+been made in May 1969 with the NBS-I11 cesium beam. where C1 = +1.9557 X lo-' Hz-K-'. We assume here
+A coordinated universal time scale is generated from that thermal equilibrium between the kinetic energy
+AT(NBS) and is called UTC(NBS) with a frequency of the hydrogen atoms and the walls of the storage bulb
+of vUTC(NB6) -       - vAT(NBs)       +
+                                   AVUTC.During the course is established. T, is then the temperature of the storage
+of the measurements we had A v U T C = -299.995 X lo-''         bulb.
+v ~ T ( N B H ) . The nominal output of the NASA hydrogen          If the kinetic energy of the atoms is not fully in equi-
+standard NP3 was synthesized to reflect a coordinated           librium     with the temperature of the storage bulb, we
+universal time scale (UTC) [17]. Fig. 2 shows a plot of         will  commit    an error in using T s . We should then introduce
+the fractional frequency of NP3 referenced to v U T C ( N B ~ ) a  correctio.1    A v T , which relates to the difference between
+
+(zero on the vertical scale) versus time. From Fig. 2 we        the   bulb    temperature        and the effective temperature of
+can derive the correction AvN as the offset of NP3 from         the    stored    atoms.       Preliminary     theoretical calculations
+vUTC(NS,,) evaluated at the nominal hydrogen frequency.         of   the    thermalization         process   indicate    [22] that AvT
+Several additional corrections are necessary to relate the      should     be  sufficiently     small   to warrant    A v T = 0 within
+
+frequency of the hydrogen maser to the unperturbed              our    uncertainty        limits.   Some   preliminary     experimental
+transition frequency in hydrogen. They are summarized results based on velocity selection in an atomic hydrogen
+in Table I11 together with those already mentioned. beam support this assumption [23].
+204                                                     IEEE TRANSACTIONSON INSTRUMENTATIONAND MEASUREMENT, NOVEMBER 1970
+
+
+   A magnetic field H causes a Zeeman effect on the               From Table 111 and (3)-(7) we are now able to calculate
+energy level structure of hydrogen, and the corresponding       the unperturbed hydrogen transition frequency referenced
+frequency correction is given by [15]                           to NBS-I11 as
+                        Avz = C2B5                        (5)   VH   = 284vR   + + + AVUTC
+                                                                                 VS    VB
+
+
+where C, = -2750 Hz ' G-,, and      zz
+                                     denotes the average                          + AVN+ AVW+ AVD+ Avz,                    (8)
+of the squared magnetic field over the volume of the
+                                                                where 2S4vR = 1420 000 000.0000Hz with v R = 5 MHz.
+bulb. It is possible to measure the average magnetic            All corrections AV are taken at the nominal hydrogen
+field I? by inducing transitions among the magnetic
+                                                                frequency.
+sublevels of the F = 1 state and observing a change in
+the amplitude of the maser signal. This Zeeman frequency                                     RESULTS
+                                                                               111. EXPERIMENTAL
+is given by [I51                                                  We will now discuss the experimental results that we
+                        fZ =                                  obtained   in experiments 1 and 2 together with the un-
+                                                              certainty contributions associated with each of the
+where C , = +1.4 X 10" Hz-G-'. The error that one is frequency corrections. We begin with experiment 1;
+forced to commit by substituting H z from (6) for         z'  its results are summarized in Table IV.
+in (5) in order to obtain Avz is negligible because very          The synthesizer was set a t us = 405 794.4200 Hz;
+low and homogeneous magnetic fields (IHI < 1 mG) no uncertainty is associated with this value.
+are typically used.                                               The period of the beat frequency was measured; the
+   The last two corrections from Table 111, A v S E and beat frequency v B is listed in Table IV. I n order to obtain
+AvC, must be discussed together. The effects of spin this value the maser had to be tuned. This can be done
+exchange in combination with cavity tuning have been only with a certain precision. From the experimental
+treated extensively in the literature [24]-[27]. The net results we estimate the associated uncertainty as f 3 X
+result is that spin-exchange frequency shift and cavity 10-l~.
+pulling have a similar functional relationship to the             The fractional frequency offset of UTC(NBS) agahst
+atomic-resonance linewidth. As a consequence, cavity AT(NBS) is nominally A v ~ T =~ -299.995 X lo-''
+pulling and spin-exchange shifts cancel each other when v ~ ~as (                     Table~ IV;) no uncertainty is involved.
+                                                                           listed~ in ~
+the maser is "tuned," or                                          The actual synthesized output frequency of the NASA
+                        +
+                  (AVC A v ~ ~ ) t " n e d= 0.            (7) hydrogen maser standard deviated by a small amount
+                                                               A v N from the frequency v ~ T C ( N B B ) . For the date of our
+A "tuned" condition is here defined as a setting of the experiment we can take the corresponding bias correction
+ maser cavity such that the output frequency of the directly from Fig. 2 and obtain A v N = -0.0015 Hs.
+maser v,,, is independent of changes in the hydrogen There is some uncertainty in this value due to the estimate
+pressure (beam intensity).                                    of the accuracy capability of NBS-111 (lu = 5 X
+   In experiment 1 the SA0 maser was tuned in separate [19]) and due to the frequency dispersion of AT(NBS)
+runs, both manually and automatically using its own since it was calibrated (May 1969). The actual uncertainty
+automatic cavity servo, until the output frequency was (one sigma) during the time of the measurement was
+unaffected by changes in the beam flux. The actual ~9 x 1 0 - l ~ . ~
+tuning element was a varactor diode mounted inside                We have already discussed the fact that the wall-shift
+the cavity. Details of this procedure can be found in correction was obtained by a comparison between the
+ [20]. Averaging times of about 10-100 seconds were portable SA0 maser and the HU reference maser. The
+ used to measure vB.                                          wall shift of the HU maser was measured in early 1969;
+    In experiment 2 the beat frequency v B for the tuned a one-sigma confidence interval of 6 0 . 5 mHz was assigned
+condition was calculated from four measurements of to this measurement [3]. However, we have to consider
+ the maser frequency at two cavity settings and two the possibility of secular changes of the physical pro-
+ beam intensities using a linear interp~lation.~     The two perties of the wall coating since that time. Preliminary
+ cavity settings corresponded to maser frequencies that measurements at HU indicate that the associated un-
+ were typically a few parts in 10l2 above and below v,,, certainty could be as large as 2 mHz. A correction of
+ (tuned). In this procedure, the cavity settings did not -2 mHz seems most likely [28] and would put the value
+have to be known in an absolute sense but had to be of experiment 1 very close to that of experiment 2. We
+ reproducible to AvM/vM z                 This was assured in are not applying this correction, however, because we
+separate experiments. The actual tuning element was do not yet consider this result conclusive. The combination
+ also a varactor diode mounted inside the cavity. One of the original measurement uncertainty and this bulb-
+ complete measurement of v B took typically 15 minutes aging effect thus leads to a total uncertainty of f 2 mHs.
+ at averaging times of about 10 seconds.
+                                                                    This value has been confirmed by comparisons between the
+  This technique was also used in the comparison between the
+  4                                                             rates of AT(NBS) and AT(U.S. Naval Observatory) as well as
+SA0 maser and the HU reference maser.                           AT(NRC) over the past year.
+                       VS             VB              b T C            AVN          AVW           AVD            AVZ
+
+Observed           synthesizer     electronic    -299.995 X           Fig. 2   beat frequency   Tbulb =      fz = 1020Hz
+  quantity         setting         counter                                     at HU             47OC
+                                   measurement                                                  (320.15’K)
+Bias              +405 794.4200    -0.1193          -42.61 15        -0.0015      +0.0202       +0.0627       -0.0015
+  corrections
+  (Hz)
+Bias                   -           f0.0004             -            f0.0013       *0.0020       f0.0001       f0.00002
+  uncertainties
+  (HZ1
+
+
+
+
+    The second-order Doppler correction for the SA0 maser procedures. All coatings, first and second ones, passed
+ is calculated from the bulb temperature using (4). The the (‘water drop test” (tested after their use in the maser).
+ temperature was (47 f 0.5)OC maintained by the auto- The coatings were transparent and appeared only slightly
+ matic temperature control of the SA0 maser. This leads milky. All bulbs, except bulb 1, were new and never coated
+ to the values for Avo and its uncertainty in Table IV. before.
+ The last correction in Table IV is the frequency change        The first column in Table V gives the identification
+ due to the Zeeman effect. A Zeeman resonance frequency numbers of the bulbs. The second column lists the dates
+ of 1020 Hz was measured, and Avz can be calculated of their measurements in the hydrogen maser. I n the
+ from (5) and (6). The Zeeman frequency was typically third column we find several remarks; in the fourth, the
+stable to about =t5 Hz. This leads to a negligible un- nominal diameter is given; and in the fifth column we
+ certainty.                                                  find the accurate inverse diameter that was determined
+    From (8) and Table IV we can now calculate the from a volume measurement. The sixth column gives
+ result for vH, the unperturbed hydrogen hyperfine fre- the temperature of the bulb (actually the temperature
+ quency. Its uncertainty is calculated as the square root of the cavity was measured) a t the time of the measure-
+ of the sum of the squared individual contributions since ment. The NBS-H2 maser used in this experiment had
+ they are independent of each other. From                    no temperature control of its own. Therefore the tem-
+    Experiment 1 :                                           peratures for the various measurements differ slightly.
+                                                             The seventh column lists the Zeeman resonance frequency.
+           V H = 1420 405 751.7691 =t 0.0024 Hz.
+                                                             The eighth column gives the beat frequency v B of the
+   We now discuss the results of experiment 2. A total tuned maser. In the ninth column the beat frequency
+of 15 measurements of different coatings and bulb sizes v B (corrected) is corrected for the offsets AvN of the
+were made. As coating material we used Du Pont’s TFE NASA hydrogen standard according to Fig. 2. The last
+Teflon, Blend 42, Lot 8842, 34.3 percent solids, purchased column lists the standard deviation of several (more
+in 1969.                                                     than ten, typically) independent tunings of the maser.
+   The actual coating solution consisted of 50 percent A plot of the beat frequency v B (without the AvN cor-
+Teflon, 40 percent distilled water, and 10 percent Triton rection) as a function of the inverse bulb diameter is
+X-100 (Fbhm and Haas). The bulbs were thoroughly shown in Fig. 3. No oscillations were possible with bulb
+cleaned with diluted sulfuric acid, and the coating solution no. 4 since this bulb caused a significant reduction of
+was applied and then dried by circulating dry nitrogen the cavity &. Bulbs 1*, 5*, 6*, and 10* were excluded
+gas through the bulb. The baking was done at 38OOC from the final analysis (indicated by the asterisk).
+for one-half hour while oxygen was circulated through           They all showed obvious differences from all other
+the bulb. The bulbs were heated up rapidly in about          bulbs, as we now describe. Bulb 1* was a previously
+15 minutes; the cooling after baking took about 1 hour       used  one, stripped of its old coating with hydrofluoric
+although the initial drop in temperature to below 300°C acid, and recoated. It showed up in the graph with a
+occurred rather rapidly within a few minutes. The bulbs far too hi511 vB, Le., a larger wall shift than the other
+were heated up to above 300°C immediately before bulbs. This may be explained by its surface roughness
+setting them into the maser. They were put hot into leading to an effectively larger surface area. A second
+the mmer, which was then pumped down immediately. coating ( I t ) apparently smoothed out this roughness
+Some bulbs (indicated by a dagger in Table V) received and brought this bulb in line with the others.
+a second Teflon coating on top of their first one. The          Bulbs 5* and 6* received extremely thin, almost
+procedure was identical to the one described previously, invisible coatings, but they passed the water drop test.
+including the cleaning of the first coat with acid. No They responded with somewhat lower values of v B , i.e.,
+problems were encountered in any of the many coating less wall shift than the rest of the bulbs. A second coat
+206                                                                                                    IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT, NOVEMBER 1970
+
+                                                                                                        TABLE V
+                                                                OF THE UNPERTURBED
+                                                      DETERMINATION              HYDROGEN
+                                                                                        FREQUENCY
+                                                                      EXPERIMENT
+                                                                               2
+
+                                                                                       Nominal Inverse
+  Bulb            Date of                                                              Diameter Diameter                                                  (Z2)
+  No.           Measurement                           Remarks                           (inch)   (cm-l)                                       (22)     (corrected )
+   I*           Nov. 25, '69                 old bulb,                                     6                0.0608    24.0        252        -0.7191    -0.7206       1.4
+                                             glass etched
+   1'           Dec. 16, '69                 old bulb                                      6                0.0608    23.7        256        -0.7094    -0.7107       0.9
+                                             glass etched
+   2            Dec. 5, '69                                                                6                0.0599    24.1       233         -0.7114    -0.7129       0.9
+   2t           Jan. 16, '70                                                               6                0.0599    24.1       215         -0.7105    -0.7124       1.0
+   3            Dee. 10 ,'69                                                               6                0.0597    23.7        271        -0.7095    -0.7109       0.8
+   4                                         very heavy bulb                               5                         no oscilla ins possil
+   5*           Nov. 28, '69                 very thin coating                             5                0.0786    23.8        255        -0.7172    -0.7186       0.7
+   5t           Jan. 9, '70                                                                5                0.0786    24.0        262        -0.7210    -0.7228       1.5
+   6*           Dee. 1, '69                  very thin coating                             4                0.0975    24.0        265        -0.7226    -0.7241       2.3
+   6t           Jan. 5, '70                                                                4                0.0975    23.8        277        -0.7313    -0.7328       1.3
+   7            Dec. 19, '69                                                               4                0.101     24.0        255        -0.7319    -0.7336       1 .o
+   7t           Dee. 24, '69                                                               4                0.101     23.8        250        -0.7299    -0.7316       0.9
+   8            Jan. 8, '70                                                                4                0.103     24.1        263        -0.7330    -0.7347       0.6
+   9            Jan. 13, '70                                                               6                0.0655    23.8        252        -0.7106    -0.7125       1.1
+   10*          Dec. 29, '69                 no spin-exchange                              3                0.134     23.9        248        -0.741     -0.743        7.0
+                                             tuning possible
+   11           Jan. 28, '70                                                               8                0.0504    23.7        244        -0.7052    -0.7069       1 .o
+
+
+  * Indicates zero weight given in final analysis.
+  t Indicates a second Teflon coating.
+
+
+
+                                                                                                                 of the n = 11 points from the straight line was calculated
+                                                                                                                 to be u = 0.00108He. We can now estimate the confidence
+                                                                                                                 interval w of the intercept a t 1/D = 0 from [29],
+
+
+
+                                                                                                                 where CY is the confidence level, t is the student t, and
+                                                                                                                 x = 1/D. For one-sigma confidence we calculate w =
+                                                                                                                 0.0012 Hz.
+                                                                                                                    Table VI summarizes this result and all other pertinent
+                                                                                                                 data analogously to Table IV. The synthesizer was set
+        "   '   2   3    1      5        6        7           0       9    1   0   i   i       2   3    1    4
+                               N V E R P BULB D I A M T E R       il0':m   1                                     a t u s = 405 795.0000 He, and the beat frequency us
+                                                                                                                 (corrected) in Table VI is the frequency at the intercept
+Fig. 3. Wall-shift measurement and hydrogen-cesium comparlsoii
+  from experiment 2 using the NBS-H2 hydrogen maser. As plotted,                                                 and is thus the frequency for AuW = 0. It contains the
+  the beat frequency VB does not contain the AVN correction. See                                                 correction AvM that was already applied in Table V. The
+  Table V for both uB and VB (corrected). See Fig. 2 for the AP.,
+  correction.                                                                                                    uncertainty associated with AuN is the same as in Table IV
+                                                                                                                 and was discussed there. For the Doppler correction AvD
+                                                                                                                 we use the mean value for the temperatures listed in
+(5t and 6t) brought them to values compatible with the                                                           Table V. The uncertainty of the temperature measure-
+majority of the bulbs. We have no good explanation                                                               ment is again estimated at +0.5"C, which well includes
+for this effect.                                                                                                 the systematic differences of the temperatures of the
+   Bulb 10* was so small that oscillations were barely                                                           individual measurements. The mean Zeeman frequency
+possible. For this reason the spin-exchange tuning pro-                                                          of all measurements (Table V) is f Z M 245 He (175 pG),
+cedure, which required a reduction in beam intensity,                                                            which leads to a correction of only 0.1 mHz. The indi-
+could not be used. The uncertainty in its v B value was                                                          vidual measurements of fZ spread around this mean bv st,
+therefore prohibitively large for its inclusion in the final                                                     most f30 Hz, which corresponds to a negligible variation
+analysis.                                                                                                        of the bias of fO.02 mHz. This value is listed as bias un-
+   The "good" bulbs were used in a linear, least-squares                                                         certainty of Avz in Table VI.
+fit whereby each measurement point was weighted ac-                                                                 From (8) and Table VI we can now calculate v R , the
+cording to its variance (nz from Table V). The intercept                                                         unperturbed hydrogen hyperfine frequency. The un-
+at 1/D = 0, which corresponds to AvW = 0, was obtained                                                           certainty is the square root of the sum of the squared
+as u s (corrected) = -0.6798 Hz. The standard deviation                                                          individual contributions, analogousIy to experiment 1.
+       HELLWIG et al. : HYDROGEN HYPERFINE TRANSITION FREQUENCY
+
+                                                                 TABLE VI
+                                                       SUMMARY
+                                                            OF RESULTS
+                                                                     FROM EXPERIMENT
+                                                                                  2
+
+
+                                             I   (corrected)
+                                                     yB
+                                                                        AWTC            1       AVN
+
+- --   Observed
+        quantity
+                              synthesizer
+                              setting        I     Fig. 2
+                                                   and
+                                                   Table V
+                                                                   -299.995 X 10-lo            Fig. 2       Fig. 3
+                                                                                                                        I    Tbuib =
+                                                                                                                              23.9"C
+                                                                                                                            (297.05"K)
+                                                                                                                                         I   fz = 245 HZ
+
+
+       Bias                  +405 795.0000        -0.6798             -42.6115                jncluded     included     1    +0.0581     I -0.0001
+         corrections
+         (Hz)                                                                               (corrected)
+                                                                                                           in VB
+                                                                                                          (corrected)   I                I
+       Bias
+         uncertainties
+                         1        -          I   f0.0012       I         -              I     *0.0013        -          I   fO.0001      1    *0.00002
+
+
+         VH   = 1420 405 751.7667 f 0.0018 Hz
+
+
+       Experiment 2:                                                             our reference (NBS-111). We feel that our quoted error
+                                                                                 limits, as documented in this paper, are realistic and
+                   V H = 1420 405 751.7667 z t 0.0018 Hz.
+                                                                                 meaningful .
+         Fig. 3 and Table V allow a calculation of the wall-                        The only question not yet completely settled is the
+       shift coefficient K'(at 24OC), where                                      problem of thermalization in the bulb. Although there
+                          K' = Kj1     + ( ~ ( 2 4- 40)].              (10)
+                                                                                 is evidence [22], [23] that a somewhat incomplete ther-
+                                                                                 malization will not cause an observable bias correction
+       For experiment 2 we find (for TFE-Teflon)                                 today, we encourage experimentation towards clarifying
+                                                                                 this point in view of the possibility of future, more accurate
+                             K' = +0.528 Hz-cm.
+                                                                                 measurements.
+       From Table I (experiment 1) we calculate for the value                       A comparison of our kesults with those obtained pre-
+       of Zitzewitz et al. (FEP-Teflon) at the same temperature                  viously is made in Table 11. The range of values for v H
+       usingK' = +1.192K                                                         totaling about 6 X lo-" (90 mHz) far exceeds any quoted
+                                                                                 uncertainties and therefore requires some critical dis-
+                             K' = +0.460 Hz.cm.
+                                                                                 cussion. We surely can not explain deviations of this
+       The difference between these values is only about 13                      magnitude by differences in the cesium reference standards
+       percent despite the fact that two different kinds of Teflon               alone. Cesium beam tubes are extensively studied and
+       were measured: the homopolymer TFE (tetrafluoroe-                         intercompared devices. The uncertainty to be attributed
+       thylene polymer) and the copolymer FEP (TFE plus                          to the cesium standards that have been used could be as
+       hexafluoropropylene).                                                     high as 2 X lo-" (28 mHz) before 1964, 1 X lo-" in
+                                                                                 1964, 3 to 5 X lo-'' (4-7 mHz) between 1965 and 1966,
+                            IV. CONCLUSIONS                                      and 1 to 3 X lo-'' (1.44 mHz) since then. A larger
+         The values for v B from experiments 1 and 2 are well                    uncertainty in the wall-shift correction as compared to
+       within each other's error limits. The uncertainties assigned              those quoted in the past is the most likely explanation
+       to the two values are not much different. We therefore                    for most of the discrepancies. It is evident that the wall
+       take the mean of both as the most probable value of the                   shift is not a constant of nature, but largely depends on
+       unperturbed hydrogen transition frequency                                 the kind of Teflon (including differences from year to
+                                                                                 year due to the manufacturing process) and on the many
+                    VH   = 1420 405 751.768 f 0.002 Hz.
+                                                                                 complex parameters involved in the actual coating pro-
+         This result is based on the two most extensive wall-                    cedure. This is evidenced in Table I (compare also [3]),
+       shift evaluations that have been carried out so far, as                   in the exclusion of bulbs from the wall-shift evaluation
+       evidenced in Table I. Furthermore, the hydrogen-cesium                    as indicated by the asterisks in Table V, and in [3] where
+       comparison was done while a direct link existed to the                    we observed wall shifts that were up to 50 percent different
+       wall-shift correction data. In experiment 1 this link was                 from the wall shifts of "good" bulbs. Two statements
+       provided by the preservation of the results of the Harvard                can be made in consequence: 1) using only a few bulbs
+       wall-shift experiment [3] in the HU reference maser,                      (e.g., two) for a wall-shift measurement can lead to
+       and the calibration of the SA0 maser against this ref-                    highly erroneous results, and 2) the use of a wall-shift
+       erence. In experiment 2 the link was established by the                   correction not directly related to the hydrogen maser
+       simultaneous, integral wall-shift/hydrogen-cesium com-                    that is used in a v H determination may also lead to errors
+       parison experiment. In addition we used one of the best                   far exceeding those quoted in Table 11. If we check the
+       evaluated cesium standards currently in existence as                      values listed in Table I1 against the above two state-
+208                                                   IEEE TRANSACTIONS ON INSTRUMENTATIOM AND MEASUREMENT, NOVEMBER            1970
+
+ments, we find that the majority of the values do not         Dr. F. R. Petersen. A. S. Risley’s and H. E. Bell’s help in
+have the direct experimental link required by statement       preparing NBS-H2 for the experiments is gratefully
+2) between the bulb used in the hydrogen maser and            acknowledged.
+the applied wall-shift correction. Furthermore, they are
+correlated through the almost exclusive use of one par-                                  REFERENCES
+ticular wall-shift evaluation that we believe to be a           [l] A. S. Risley et al., “Long-term frequency stability of a N F A
+valid one at the time of its measurement but that should             Erototype hydrogen maser,” presented a t the Conf. on Precision
+not be used in the sense of a universal correction (state-             lectromametic Measurements. Boulder, Colo., June 1970.
+                                                                [2] D. Kle pn& et al., “Hydrogen &er principles and techniques,”
+ment 2)). Only the values of Crampton et al. and Menoud              Phw. leu., vol. 138, pp. A972-A983, 1965.
+and Racine are based on a direct relationship between           [3] P. W. Zitzewitz, E; E . Uzgiris, and N. F. Pamsey, “Recent
+                                                                     results concerning the hydrogen maser wall s l f t problem,’’ Rev.
+the hydrogen-cesium measurement and a wall-shift                     SCi. ZnstT., VOl. 41, pp. 81-86, 1970.
+determination; unfortunately, however, only two bulbs           [4] R. E. Beehler, R. C. Mockler, and J. M. Richardson, “Cesium
+were used in each case and statement 1) applies. The                 beam atomic time and frequency standards,” Metrologia, vol. 1,
+                                                                     pp. 114-131, 1965.
+only values not affected by either statement are those         [5] S. B. Crampton, D. Kleppner, and N. F. Ramsey, “Hyperfine
+of this paper.                                                       separation of ground-state atomic hydrogen,” Phys. Rev. Lett.,
+                                                                     V O ~ . 11, pp. 338-340, 1963.
+   The discussion of discrepancies in past values of v H       -r61- J. Vanier and R. F. C. Vessot. “H-maser wall-shift,” Metrolosia,
+                                                                                                                                    - .
+that is given above should not, however, be interpreted              V O ~ .6, pp. 52-53, 1970.
+                                                                [7] B. S. Mathur, S. B. Crampton, D. Kleppner, and R. F. Ramsey,
+to imply that a frequency standard based on hydrogen                 “Hyperfine separation of tritium,” Phys. Rev., vol. 158, pp.
+storage is necessarily inferior to a cesium standard.                14-17, 1967.
+First, the uncertainties due to the cesium comparison           [8] L. P. Elkina, G. A. Elkin, and G. M. Strakhovskii, “Measure-
+                                                                     ment of the frequency drift of a hydrogen standard owing to
+and those due to the wall-shift correction contribute                atomic impacts on the flask walls,” Zzmeritel’naya Tekh., vol. 6,
+about equally to the uncertainty that we assign to our               p. 91, 1968; transl. in Meas. Tech., pp. 841-842, 1968.
+                                                                [9] C. Menoud and J. &cine, “Rbsultats nouveaux obtenus
+measurements of vH. Furthermore, a more recent meas-                 avec les masers ti hydroghne H2 et H3 du LSRH,” PTOC.
+urement of v H has been reported [30], which was based               Colbq. Internatl. Chronomt%rie (Pans), pp. A&l-A&12, Sep-
+                                                                     tember 1969.
+on an independent wall-shift evaluation and which was         [lo] -,          ‘‘Stabi1,iiit und Genauigkeit der Frequenz von Wasser-
+also referenced with transfer standards to the cesium                stoff-Masern, 2. Angew. Math. Phys., vol. 20, pp. 578-584,
+                                                                     1969.
+standard NBS-111. This new value of v H is almost iden-       [Ill J. Vanier, H. E. Peters, and R. F. C. Vessot, “Exchange col-
+tical with the results of this paper.                                lisions,,,wall interactions, and resettabilit of the hydrogen
+   Second, new experimental developments that promise                maser, ZEEE Trans. Instrum. Meas., vol. fM-13, pp. 185-188,
+                                                                     December 1964.
+a reduction in the wall-shift limitation have evolved         [12] H. E. Peters, J. Holloway, A. S. Bagley, and L. S. Cutler,
+recently. They include the big storage vessel [31], the              “Hydro,gen maser and cesium beam tube frequency standard
+                                                                     companson,” Appl. Phys. Lett., vol. 6, pp. 34-35, 1965.
+deformable storage bulb [28], and the operation at elevated   [13] H. E. Peters and P. Kartaschoff, “Hydrogen maser frequency
+bulb temperatures [30], [32]. Thus, hydrogen storage                 comparison with Swiss cesium atomic beam standard,” Appl.
+                                                                     Phys. Lett., vol. 6, pp. 35-36, 1965.
+devices should be considered serious competitors for          [14] E. H. Johnson and T. E. McGu+gal, “Hydrogen maser
+the primary standard of the future, a pIace now held                 frequency comparison with a cesium standard,” NASA,
+                                                                     Tech. Note TND-3292, April 1966.
+by the cesium beam standard.                                  [15] R. Vessot, H. Peters, J. Vanier, R. Beehler, D. Halford, R.
+                                                                     Harrach, D. M a n , D. Glaze, C. Snider, J. Barnes, L. Cutler,
+                    ACIWOWLEDGMENT                                   and L. Bodily, “An intercomparison of hydrogen and cesium
+                                                                     frequency standards,” ZEEE Trans. Instrum. Meas., vol.
+   The following laboratories with their apparatus par-              IM-15, p. 165-176, December 1966.
+                                                              [16] G. Becier and B. Fischer, “Beitrag zum internationalen
+ticipated in these experiments: 1) the Atomic Frequency              Wasserstofimaser Vergleich mit transportabler Atomuhr,”
+and Time Standards Section of the National Bureau of                 PTB-Mitt., V O ~ .78, pp. 177-183, 1968.
+                                                              [17] A. R. Chi, F. G. Major, .and J.. E. Lavery, “Frequency com-
+Standards with a laboratory-type hydrogen maser, des-                parison of five commercial cesium standards with a NASA
+ignated NBS-H2, and the NBS clock system that was                    experimental hydrogen maser,” PTOC.Z E W (Letters), vol. 58,
+calibrated by the evaluated cesium primary frequency                 pp. 142-143, January 1970; also PTOC.94th Ann. Symp. 07t
+                                                                     Frequency Conlrol (Fort Monmouth, N. J.), 1970 (to be pub-
+standard NBS-111, 2) the Smithsonian Astrophysical                   lished).
+Observatory with a portable hydrogen maser, and 3) the        [IS] M. Bangham “Hydrogen maser work at the National Physical
+                                                                     Laboratory, PTOC.Colbq. Internail. ChronoWtrie (Park),
+Lyman Laboratory of Physics of Harvard University                      p. A7-1-A7-13, 1969.
+with the Harvard reference hydrogen maser. We are             [19] b.     J. Glaze, “Improvements in atomic cesium beam-frequency
+                                                                     standards a t the National Bureau of Standards,” PTOC.XVZ
+grateful for the support received from our respective                General Assembly of U R N : Progress in Radio Science, 1966-
+                                                                      1959 (Ottawa, Canada), August 1969 (to he published); also
+organizations, which made this joint experiment possible.             ZEEE Trans. Instrum. Meas., vol. IM-19, pp. 156-160, August
+   We owe special thanks to H. E. Peters and E. H.                 .I\-,_
+                                                                   IYIU.
+
+Johnson for making available their NASA hydrogen                   R. Vessot, M. Levine, L. Cutler, M. Baker, and L. Mueller,
+                                                                   “Progress in the development of hydrogen masers,” PTOC.22nd
+maser standard NP3, which greatly facilitated our mea-             Ann. Symp. on Frequency Control (Fort Monmouth, N. J.),
+surements. The U. S. Army Electronics Command kindly               pp. 605-620, 1968.
+                                                                   H. E. Peters, T. E. McGunigal, and E. H. Johnson, “Atomic
+made available several storage bulbs, two of which were            hydrogen standards for NASA tracking stations,” PTOC.M r d
+used in the experiment. The original design and con-               Ann. Symp. on Frequency Control (Fort Monmouth, N. J.),
+                                                                   pp. 297-304, 1969.
+struction of the NBS-H2 hydrogen maser is the work of              P. W. Zitzewitz, “Surface collision frequency shifts in the
+          IEZ%2 TRANBACI’IONSO N INSTRUMENTATION AND MEASUREMENT, VOL. IM-19,NO. 4,NOVEMBER 1970                                                      209
+              atomic hydrogen maser,” Ph.D. dissertation, Harvard Uni-                 [29]M. G. Natrella, “Experimental statistics,” NBS, Washington,
+                versity, Cambridge, Mass.,1970.                                            D. C., Handbook 91, p. 5-18,.1963.
+           I231 H.E.Peters, private communication.
+           (241 N. F. Rrtmsey, “The atomic hydrogen maser,” Metrologh,
+                                                                                       [30]R.F.C.Vessot and         d
+                                                                                                                 W. Levine, “Studies of hydrogen maser
+                                                                                           wall shift and relaxatim rates for high molecular weight
+                ~ l 1, .pp. 7-15, 1965.                                                     polytetrafhoroethylene, Proc. 94th Ann. Symp. on Frequenw
+           1251 S. B. Crampton, “Spin exchange shifts in the hydrogen maser,”               Conirol (Fort Monmouth, N. J.), 1970 (to be published).
+__   --   [26] J. tanier and R. F.  8..
+                P h 8. Rev., vol. 158, p 57-61, 1967.
+                                           Vessot, “Cavity tuning and pressure
+                dependence of frequency in the hydrogen m e r , ” Appl. Phys.
+                                                                                       1311 E. E. Uzgiris and N. F. Ramsey, “Multiple region hydrogen
+                                                                                            m w r with reduced wall shift,” Phys. Rev. A, vol. 1, pp. 424-
+                                                                                            446,1970.
+                Leu. vol. 4, pp. 122-123, 1964.                                        [32JP. W. Zitzewitz, “Surface collision frequency shifts in the
+          {27] H. kellwi        “Hydro n spin exchange frequency shifts,”                   atomic hydrogen maser,” Proc. 84th Ann. Symp.on Frepency
+                NBS, B o d e r , Colo., %ch. Note 387, 1970.                                Control (Fort Monmouth, N. J.), 1970 (to        pubhshed).
+          [%I P. D6bel ‘‘Hydrogen “ e r with deformable storage bulb ”                 1331 A. G. Mungall, D. Morns, H. Daams and R. Bailey, “Atomic
+                Proc. @tPAnn. S p p . 9 Frequency Control (Fort Monmouth,                   hydrogen maser development at the dational Research Council
+                N.J.), 1970 {to be pubhshed).                                               of Canada,” Metrobgia, vol. 4,pp. 87-94, 1968.
+
+
+                                                   Reprinted by permission from IEEE TRANSACTIONS ON
+                                                       INSTRUMENTATION A N D MEASUREMENT
+                                                               Vol. IM-19, No. 4, November 1970
+                                              Copyright @ 1970, by the Institute of Electrical and Electronics Engineers, Inc.
+                                                                      PRINTED I N T H E U.S.A.
+                                                                                NRC 11548
+

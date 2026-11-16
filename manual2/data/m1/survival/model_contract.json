@@ -1,0 +1,339 @@
+{
+  "cases": [
+    {
+      "A": 1,
+      "N": 0,
+      "Z": 1,
+      "id": "H-1:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 0,
+      "r_n": 0,
+      "r_p": 1,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "H"
+    },
+    {
+      "A": 133,
+      "N": 78,
+      "Z": 55,
+      "id": "Cs-133:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 27,
+      "r_n": 24,
+      "r_p": 1,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Cs"
+    },
+    {
+      "A": 56,
+      "N": 30,
+      "Z": 26,
+      "id": "Fe-56:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 13,
+      "r_n": 4,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Fe"
+    },
+    {
+      "A": 62,
+      "N": 34,
+      "Z": 28,
+      "id": "Ni-62:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 14,
+      "r_n": 6,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Ni"
+    },
+    {
+      "A": 208,
+      "N": 126,
+      "Z": 82,
+      "id": "Pb-208:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 41,
+      "r_n": 44,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Pb"
+    },
+    {
+      "A": 294,
+      "N": 176,
+      "Z": 118,
+      "id": "Og-294:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 59,
+      "r_n": 58,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Og"
+    },
+    {
+      "A": 290,
+      "N": 174,
+      "Z": 116,
+      "id": "Lv-290:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 58,
+      "r_n": 58,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Lv"
+    },
+    {
+      "A": 286,
+      "N": 172,
+      "Z": 114,
+      "id": "Fl-286:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 57,
+      "r_n": 58,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Fl"
+    },
+    {
+      "A": 293,
+      "N": 177,
+      "Z": 116,
+      "id": "Lv-293:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 58,
+      "r_n": 61,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Lv"
+    },
+    {
+      "A": 289,
+      "N": 175,
+      "Z": 114,
+      "id": "Fl-289:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 57,
+      "r_n": 61,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Fl"
+    },
+    {
+      "A": 298,
+      "N": 184,
+      "Z": 114,
+      "id": "Fl-298:ground",
+      "interpretation": "formal_2p_2n_groups_not_physical_alpha_clusters",
+      "q": 57,
+      "r_n": 70,
+      "r_p": 0,
+      "state_assignment": "external_identity_label_only_no_native_state_identification",
+      "symbol": "Fl"
+    }
+  ],
+  "exposure": "Og/Lv/Fl evaluated lifetimes were available before this model; comparisons are retrospective.",
+  "geometry": {
+    "alpha_route": [
+      "L",
+      "E"
+    ],
+    "coordinate_scope": "one_injective_Q4_encoding_per_declared_lineage",
+    "exit": [
+      "O",
+      "L"
+    ],
+    "incoming_ancestor": "I",
+    "nuclear_identification": "hypothetical_route_labels_only",
+    "reference": [
+      "O",
+      "A",
+      "B",
+      "I",
+      "O"
+    ],
+    "retained_hinge_role": {
+      "minus": "D",
+      "plus": "B",
+      "reference": "B"
+    },
+    "return_minus": [
+      "O",
+      "C",
+      "D",
+      "I",
+      "O"
+    ],
+    "return_plus": [
+      "O",
+      "A",
+      "B",
+      "I",
+      "O"
+    ],
+    "sf_route": [
+      "L",
+      "F"
+    ],
+    "vertices": {
+      "A": "1000",
+      "B": "1001",
+      "C": "0100",
+      "D": "0101",
+      "E": "1010",
+      "F": "0110",
+      "I": "0001",
+      "L": "0010",
+      "O": "0000"
+    }
+  },
+  "horizon_reference_returns": 8,
+  "initial_memory": "0",
+  "initial_witnessed_returns_per_lineage": 2,
+  "parameter_provenance": "Common exact demonstration inputs selected without consuming isotope lifetime values; no fitted parameters.",
+  "profile": "m1:finite-history-retention-survival:v3",
+  "rule": {
+    "clock": "count of completed reference reclosures after two initial witnessed returns",
+    "excess": "X=max(0,abs(R)-C)",
+    "exit_partition": "alpha-labelled and SF-labelled routes each have conditional weight 1",
+    "isotope_assignment": "identity-insensitive surrogate; no species-specific native construction",
+    "kernel": "(w_plus,w_minus,w_exit)=(1,1,lambda*X); P=w/sum(w)",
+    "loss": "absorbing outer loss; prior events and inner lineage retained",
+    "memory": "R=sum(committed oriented returned-current responses)",
+    "merge_policy": "none; every finite choice prefix remains a distinct history",
+    "order": [
+      "complete_reference_return",
+      "bind_committed_prefix_contact",
+      "normalize_admissible_weights",
+      "execute_selected_path",
+      "commit_paired_response_for_next_contact"
+    ],
+    "response": "retained plus/minus return commits antisymmetric (sigma,-sigma); R_next=R+sigma",
+    "support_specialization": "declared p=2 and lag=1/2 give response magnitude 1; not an admitted RD accessor"
+  },
+  "schema_version": 3,
+  "scientific_dependencies": [
+    {
+      "id": "SURV-ATOM-01",
+      "requires": "Isotope/state-specific admitted native configurations and support accessors.",
+      "status": "unresolved"
+    },
+    {
+      "id": "SURV-ATOM-02",
+      "requires": "Independent state-to-kernel/retention/loss-channel law selecting the common parameters or replacing the surrogate.",
+      "status": "unresolved"
+    },
+    {
+      "id": "SURV-ATOM-03",
+      "requires": "Observation map connecting loss and reference reclosure to physical decay and calibrated elapsed time.",
+      "status": "unresolved"
+    },
+    {
+      "id": "SURV-ATOM-04",
+      "requires": "Realization, model discrepancy and cross-source uncertainty/covariance; external confidence convention.",
+      "status": "unresolved"
+    }
+  ],
+  "source_bindings": [
+    {
+      "labels": [
+        "eq:atomic-h1",
+        "eq:hinge-grammar"
+      ],
+      "path": "sections/03_afc_basis.tex",
+      "sha256": "d5b648c0c74afe8c34a344d5069e78b5be5d9a98851ce1abcc6c0f9d1df8c6d3"
+    },
+    {
+      "labels": [
+        "eq:closure-certificate",
+        "eq:closure-phase-step-count"
+      ],
+      "path": "sections/04_cut_running_fractal_tesseract.tex",
+      "sha256": "887a26c3c4f713b514aeb28f36bbf6361e648671dccbe3bfbda88a430c6bdb9b"
+    },
+    {
+      "labels": [
+        "eq:expose-inner-lineage",
+        "eq:key-proposed-admitted-trace"
+      ],
+      "path": "sections/05_curl_closure_duon_current.tex",
+      "sha256": "6e58c2213d8a11e288915d47d90965787aba148caa3d8f3bc065739216cf00e4"
+    },
+    {
+      "labels": [
+        "eq:admitted-kernel",
+        "eq:cadence-ratio",
+        "eq:wave-update-trace"
+      ],
+      "path": "sections/06_wave_state_relational_time.tex",
+      "sha256": "bbd265de629de74ae43be75ff5146406b5dda80c380bf02507725a98d233404d"
+    },
+    {
+      "labels": [
+        "eq:sadar-orientation-antisymmetry",
+        "eq:closure-residual",
+        "eq:shedding-excess"
+      ],
+      "path": "sections/06_field.tex",
+      "sha256": "79e16685826aee15273fbcddc0a59d5f14f75dbf3671e43ae261fcd6fc9acf70"
+    },
+    {
+      "labels": [
+        "eq:m3-finite-law",
+        "prop:m3-atomic-gain"
+      ],
+      "path": "sections/07_cell_measures_mappings.tex",
+      "sha256": "c3cb4e5a8e8c435e741bd040b84674c7786ecb47b6852bbe8198c4e8674eae22"
+    },
+    {
+      "labels": [
+        "propagate",
+        "joint_moments"
+      ],
+      "path": "manual2/vendor/aod_m3/aod_mapping_error.py",
+      "sha256": "b1d414e32819d3a601834883e112634bdffd7df82d742de9ede5580c96e620fc"
+    }
+  ],
+  "statuses": {
+    "construction": "declared_Q4_finite_predicate_model",
+    "empirical_agreement": "not_claimed",
+    "execution": "executed_exact_finite_histories",
+    "native_isotope_state_map": "not_established",
+    "native_motif_admission": "not_established",
+    "physical_loss_map": "not_established",
+    "physical_uncertainty": "unknown",
+    "reference_clock_map": "not_established"
+  },
+  "target_policy": "predictor_reads_only_contract_and_bound_mathematical_sources",
+  "uncertainty_policy": {
+    "calibration": "not_performed",
+    "covariance": "not_assumed_independent",
+    "ensemble_spread": "exact_declared_joint_law",
+    "finite_arithmetic": "exact_rational",
+    "physical_model": "unknown"
+  },
+  "unobserved_target": "Fl-298:ground",
+  "variants": {
+    "baseline": {
+      "capacity": "1",
+      "disable_feedback_from_count": null,
+      "loss_gain": "1"
+    },
+    "capacity_0": {
+      "capacity": "0",
+      "disable_feedback_from_count": null,
+      "loss_gain": "1"
+    },
+    "feedback_off": {
+      "capacity": "1",
+      "disable_feedback_from_count": 2,
+      "loss_gain": "1"
+    },
+    "loss_gain_2": {
+      "capacity": "1",
+      "disable_feedback_from_count": null,
+      "loss_gain": "2"
+    }
+  }
+}

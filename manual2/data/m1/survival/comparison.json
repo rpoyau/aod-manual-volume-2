@@ -1,0 +1,307 @@
+{
+  "catalog_sha256": "5af6922968b63c2dde5baf38bd62e9f131a4c226e177826aaaa039888a84f437",
+  "classification": "retrospective_conditional_model_comparison",
+  "comparisons": [
+    {
+      "classification": "retrospective_conditional_model_comparison",
+      "conditional_model_ratio": "1",
+      "confidence_interpretation": "descriptive_source_envelopes_only_not_joint_confidence_or_significance",
+      "denominator": "Lv-290:ground",
+      "dependence": "experimental_overlap_possible_no_independence_or_covariance_assumed",
+      "equality_in_reported_envelope": false,
+      "measured_ratio": "29/415",
+      "numerator": "Og-294:ground",
+      "outcome": "conditional_identity_insensitive_shared_clock_specialization_disagrees_with_reported_envelopes",
+      "source_records": {
+        "Lv-290:ground": "ensdf-Lv-290",
+        "Og-294:ground": "ensdf-Og-294"
+      },
+      "source_reported_uncertainty_envelope_ratio": [
+        "2/59",
+        "51/320"
+      ]
+    },
+    {
+      "classification": "retrospective_conditional_model_comparison",
+      "conditional_model_ratio": "1",
+      "confidence_interpretation": "descriptive_source_envelopes_only_not_joint_confidence_or_significance",
+      "denominator": "Fl-286:ground",
+      "dependence": "experimental_overlap_possible_no_independence_or_covariance_assumed",
+      "equality_in_reported_envelope": false,
+      "measured_ratio": "1/20",
+      "numerator": "Lv-290:ground",
+      "outcome": "conditional_identity_insensitive_shared_clock_specialization_disagrees_with_reported_envelopes",
+      "source_records": {
+        "Fl-286:ground": "ensdf-Fl-286",
+        "Lv-290:ground": "ensdf-Lv-290"
+      },
+      "source_reported_uncertainty_envelope_ratio": [
+        "16/515",
+        "59/695"
+      ]
+    },
+    {
+      "classification": "retrospective_conditional_model_comparison",
+      "conditional_model_ratio": "1",
+      "confidence_interpretation": "descriptive_source_envelopes_only_not_joint_confidence_or_significance",
+      "denominator": "Fl-289:ground",
+      "dependence": "experimental_overlap_possible_no_independence_or_covariance_assumed",
+      "equality_in_reported_envelope": false,
+      "measured_ratio": "19/480",
+      "numerator": "Lv-293:ground",
+      "outcome": "conditional_identity_insensitive_shared_clock_specialization_disagrees_with_reported_envelopes",
+      "source_records": {
+        "Fl-289:ground": "ensdf-Fl-289",
+        "Lv-293:ground": "ensdf-Lv-293"
+      },
+      "source_reported_uncertainty_envelope_ratio": [
+        "17/800",
+        "79/950"
+      ]
+    }
+  ],
+  "conventional_benchmark": [
+    {
+      "calibrating_half_life_seconds": "29/50000",
+      "classification": "conventional_exponential_benchmark_calibrated_to_each_measurement",
+      "constant_hazard_per_second_display": "1195.081345793009154167641588720994082889",
+      "display_precision_decimal_digits": 40,
+      "display_rounding": "decimal_context_half_even",
+      "half_life_source_envelope_seconds": [
+        "1/2500",
+        "51/50000"
+      ],
+      "hazard_interval_exact_expression": "[ln(2)/T_upper, ln(2)/T_lower]",
+      "hazard_interval_per_second_display": [
+        "679.5560593724954013894432563315456549760",
+        "1732.867951399863273543080303645441420189"
+      ],
+      "interval_interpretation": "monotonic_image_of_source_reported_envelopes_not_joint_confidence",
+      "isotope": "Og-294:ground",
+      "law": "S(t)=exp(-lambda*t), lambda=ln(2)/T_half",
+      "mean_lifetime_interval_exact_expression": "[T_lower/ln(2), T_upper/ln(2)]",
+      "mean_lifetime_interval_seconds_display": [
+        "0.0005770780163555853629439698724007568549707",
+        "0.001471548941706742675507123174621929980175"
+      ],
+      "mean_lifetime_seconds_display": "0.0008367631237155987762687563149810974397075",
+      "native_AOD_prediction": false,
+      "samples": [
+        {
+          "survival": "1",
+          "time_seconds": "0"
+        },
+        {
+          "survival": "1/2",
+          "time_seconds": "29/50000"
+        },
+        {
+          "survival": "1/4",
+          "time_seconds": "29/25000"
+        },
+        {
+          "survival": "1/16",
+          "time_seconds": "29/12500"
+        }
+      ],
+      "source": "ensdf-Og-294",
+      "uncertainty": "source_uncertainty_not_reduced_or_refitted"
+    },
+    {
+      "calibrating_half_life_seconds": "83/10000",
+      "classification": "conventional_exponential_benchmark_calibrated_to_each_measurement",
+      "constant_hazard_per_second_display": "83.51170850119823005026893029616585157536",
+      "display_precision_decimal_digits": 40,
+      "display_rounding": "decimal_context_half_even",
+      "half_life_source_envelope_seconds": [
+        "4/625",
+        "59/5000"
+      ],
+      "hazard_interval_exact_expression": "[ln(2)/T_upper, ln(2)/T_lower]",
+      "hazard_interval_per_second_display": [
+        "58.74128648813095842518916283543869220979",
+        "108.3042469624914545964425189778400887618"
+      ],
+      "interval_interpretation": "monotonic_image_of_source_reported_envelopes_not_joint_confidence",
+      "isotope": "Lv-290:ground",
+      "law": "S(t)=exp(-lambda*t), lambda=ln(2)/T_half",
+      "mean_lifetime_interval_exact_expression": "[T_lower/ln(2), T_upper/ln(2)]",
+      "mean_lifetime_interval_seconds_display": [
+        "0.009233248261689365807103517958412109679531",
+        "0.01702380148248976820684711123582232722163"
+      ],
+      "mean_lifetime_seconds_display": "0.01197436883937839628108737485231570474064",
+      "native_AOD_prediction": false,
+      "samples": [
+        {
+          "survival": "1",
+          "time_seconds": "0"
+        },
+        {
+          "survival": "1/2",
+          "time_seconds": "83/10000"
+        },
+        {
+          "survival": "1/4",
+          "time_seconds": "83/5000"
+        },
+        {
+          "survival": "1/16",
+          "time_seconds": "83/2500"
+        }
+      ],
+      "source": "ensdf-Lv-290",
+      "uncertainty": "source_uncertainty_not_reduced_or_refitted"
+    },
+    {
+      "calibrating_half_life_seconds": "83/500",
+      "classification": "conventional_exponential_benchmark_calibrated_to_each_measurement",
+      "constant_hazard_per_second_display": "4.175585425059911502513446514808292578768",
+      "display_precision_decimal_digits": 40,
+      "display_rounding": "decimal_context_half_even",
+      "half_life_source_envelope_seconds": [
+        "139/1000",
+        "103/500"
+      ],
+      "hazard_interval_exact_expression": "[ln(2)/T_upper, ln(2)/T_lower]",
+      "hazard_interval_per_second_display": [
+        "3.364792138640511210763262725525128971240",
+        "4.986670363740613736814619578835802648025"
+      ],
+      "interval_interpretation": "monotonic_image_of_source_reported_envelopes_not_joint_confidence",
+      "isotope": "Fl-286:ground",
+      "law": "S(t)=exp(-lambda*t), lambda=ln(2)/T_half",
+      "mean_lifetime_interval_exact_expression": "[T_lower/ln(2), T_upper/ln(2)]",
+      "mean_lifetime_interval_seconds_display": [
+        "0.2005346106835659136230295306592630071023",
+        "0.2971951784231264619161444842863897803099"
+      ],
+      "mean_lifetime_seconds_display": "0.2394873767875679256217474970463140948128",
+      "native_AOD_prediction": false,
+      "samples": [
+        {
+          "survival": "1",
+          "time_seconds": "0"
+        },
+        {
+          "survival": "1/2",
+          "time_seconds": "83/500"
+        },
+        {
+          "survival": "1/4",
+          "time_seconds": "83/250"
+        },
+        {
+          "survival": "1/16",
+          "time_seconds": "83/125"
+        }
+      ],
+      "source": "ensdf-Fl-286",
+      "uncertainty": "source_uncertainty_not_reduced_or_refitted"
+    },
+    {
+      "calibrating_half_life_seconds": "19/200",
+      "classification": "conventional_exponential_benchmark_calibrated_to_each_measurement",
+      "constant_hazard_per_second_display": "7.296286111157319046497180225875542821847",
+      "display_precision_decimal_digits": 40,
+      "display_rounding": "decimal_context_half_even",
+      "half_life_source_envelope_seconds": [
+        "17/250",
+        "79/500"
+      ],
+      "hazard_interval_exact_expression": "[ln(2)/T_upper, ln(2)/T_lower]",
+      "hazard_interval_per_second_display": [
+        "4.387007471898388034286279249735294734655",
+        "10.19334089058743102084164884497318482464"
+      ],
+      "interval_interpretation": "monotonic_image_of_source_reported_envelopes_not_joint_confidence",
+      "isotope": "Lv-293:ground",
+      "law": "S(t)=exp(-lambda*t), lambda=ln(2)/T_half",
+      "mean_lifetime_interval_exact_expression": "[T_lower/ln(2), T_upper/ln(2)]",
+      "mean_lifetime_interval_seconds_display": [
+        "0.09810326278044951170047487830812866534501",
+        "0.2279458164604562183628680995982989577134"
+      ],
+      "mean_lifetime_seconds_display": "0.1370560288844515236991928446951797530555",
+      "native_AOD_prediction": false,
+      "samples": [
+        {
+          "survival": "1",
+          "time_seconds": "0"
+        },
+        {
+          "survival": "1/2",
+          "time_seconds": "19/200"
+        },
+        {
+          "survival": "1/4",
+          "time_seconds": "19/100"
+        },
+        {
+          "survival": "1/16",
+          "time_seconds": "19/50"
+        }
+      ],
+      "source": "ensdf-Lv-293",
+      "uncertainty": "source_uncertainty_not_reduced_or_refitted"
+    },
+    {
+      "calibrating_half_life_seconds": "12/5",
+      "classification": "conventional_exponential_benchmark_calibrated_to_each_measurement",
+      "constant_hazard_per_second_display": "0.2888113252333105455905133839409069033648",
+      "display_precision_decimal_digits": 40,
+      "display_rounding": "decimal_context_half_even",
+      "half_life_source_envelope_seconds": [
+        "19/10",
+        "16/5"
+      ],
+      "hazard_interval_exact_expression": "[ln(2)/T_upper, ln(2)/T_lower]",
+      "hazard_interval_per_second_display": [
+        "0.2166084939249829091928850379556801775236",
+        "0.3648143055578659523248590112937771410924"
+      ],
+      "interval_interpretation": "monotonic_image_of_source_reported_envelopes_not_joint_confidence",
+      "isotope": "Fl-289:ground",
+      "law": "S(t)=exp(-lambda*t), lambda=ln(2)/T_half",
+      "mean_lifetime_interval_exact_expression": "[T_lower/ln(2), T_upper/ln(2)]",
+      "mean_lifetime_interval_seconds_display": [
+        "2.741120577689030473983856893903595061111",
+        "4.616624130844682903551758979206054839765"
+      ],
+      "mean_lifetime_seconds_display": "3.462468098133512177663819234404541129824",
+      "native_AOD_prediction": false,
+      "samples": [
+        {
+          "survival": "1",
+          "time_seconds": "0"
+        },
+        {
+          "survival": "1/2",
+          "time_seconds": "12/5"
+        },
+        {
+          "survival": "1/4",
+          "time_seconds": "24/5"
+        },
+        {
+          "survival": "1/16",
+          "time_seconds": "48/5"
+        }
+      ],
+      "source": "ensdf-Fl-289",
+      "uncertainty": "source_uncertainty_not_reduced_or_refitted"
+    }
+  ],
+  "interpretation": "The equal-state/shared-clock specialization fails the reported half-life envelopes. The isotope-dependent construction or observation premises must change; the data do not select a replacement law.",
+  "native_atomic_agreement": "not_tested_atomic_map_unestablished",
+  "physical_uncertainty_status": "incomplete_no_combined_significance_or_sigma_score",
+  "prediction_sha256": "b7e786ee96426116faa35dc1a2eab70875a412e6b49c1f329f9c097fde5403ea",
+  "profile": "m1:finite-history-retention-survival:v3",
+  "schema_version": 3,
+  "unscored": [
+    {
+      "id": "Fl-298:ground",
+      "reason": "unobserved_model_target_no_measurement"
+    }
+  ]
+}

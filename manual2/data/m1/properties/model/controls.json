@@ -1,0 +1,28 @@
+{
+  "baseline_outer_cut": 14904,
+  "baseline_path_probability": "25/484",
+  "comparison_class": "matched_admissible_path_intervention_not_unconditional_sampling_test",
+  "feedback_off_outer_cut": 13257,
+  "feedback_off_path_probability": "1/64",
+  "fixed_orientation_path": [
+    1,
+    1,
+    -1,
+    -1,
+    1,
+    1
+  ],
+  "passive_observation": null,
+  "passive_rng_equal": true,
+  "passive_trajectory_equal": true,
+  "physical_causal_effect_established": false,
+  "pilot": "H-1",
+  "profile": "matter1:element-properties:pilot-obstruction:v1",
+  "raw_sha256": {
+    "feedback_off": "6c5981c80cf00f21a6f988ab93e74c116241a6c94850af2349356d37f7b4058c",
+    "fixed_path": "f8a839834b29ed9cd5184ba5244d0c332beebfa8a898342f1b540b8c6b81ca9c",
+    "passive": "64b8e47cbee98080702bc1e6b7edddc94e374176c24b8e0fcbf51a52c09a9de9"
+  },
+  "same_first_round": true,
+  "same_orientation_path": true
+}

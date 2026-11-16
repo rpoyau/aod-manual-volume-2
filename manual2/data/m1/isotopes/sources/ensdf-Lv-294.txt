@@ -1,0 +1,44 @@
+294 Lv                                                                                                                         294 Lv
+116    178                                                      From ENSDF                                                     116    178
+
+
+
+                                                         Adopted Levels:tentative
+
+                                                                   History
+                                    Type            Author             Citation        Literature Cutoff Date
+                               Full Evaluation   Balraj Singh     NDS 156, 70 (2019)        31-Jan-2019
+
+Q(β− )=1970 CA; S(n)=7280 CA; S(p)=2960 CA; Q(α)=10970 CA            1997Mo25
+S(2n)=13200, S(2p)=4930 (1997Mo25,theory).
+2017Ka66: tentative assignment to 294 Lv in 248 Cm(48 Ca,2n),E=261.6 MeV (E* =41.3 MeV reaction using RIKEN Linear
+    Accelerator (RILAC) and gas-filled recoil ion separator (GARIS). One EVR-α-α-SF correlated event (chain #4) was interpreted in
+    three ways, one being 294 Lv → 290 Fl → 286 Cn decay chain, while the other two involved (48 Ca,3n) channel producing 293 Lv →
+    289 Fl → 285 Cn, and 293 Lv → 289 Fl → 285 Cn → 281 Ds chains.
+History of Chain #4 (2017Ka66):
+Chain #4 (first interpretation): Energy of EVR=19.0 MeV.
+Eα1 missing α, ∆t1 =?, assigned to 293 Lv.
+Eα2 =9.72 MeV 3,∆t2 =0.66 s-τ(293 Lv), assigned to 289 Fl.
+Eα3 missing α, ∆t3 ?, assigned to 285 Cn.
+ESF =221 MeV, ∆t4 =12.19−τ(285 Cn s, assigned to 281 Ds: SF decay.
+Chain #4 (second interpretation): Energy of EVR=19.0 MeV.
+Eα1 missing α, ∆t1 =?, assigned to 293 Lv.
+Eα2 =9.72 MeV 3,∆t2 =0.66 s-τ(293 Lv), assigned to 289 Fl.
+ESF =221 MeV, ∆t3 =12.19 s, assigned to 285 Cn: SF decay.
+Chain #4 (third interpretation): Energy of EVR=19.0 MeV.
+Eα1 not observed, ∆t1 =?, assigned to 294 Lv.
+Eα2 =9.72 MeV 3,∆t2 =0.66 s-τ(294 Lv), assigned to 290 Fl.
+ESF =221 MeV, ∆t3 =12.19 s, assigned to 286 Cn: SF decay.
+
+                                                                 294 Lv Levels
+
+
+
+ E(level)    Jπ                                                          Comments
+ 0?          0+   α decay mode is most likely, as theoretical T1/2 (α)=18 ms and T1/2 (β)>100 s (1997Mo25).
+
+
+
+
+                                                                    1
+
